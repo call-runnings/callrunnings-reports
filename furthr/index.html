@@ -1,671 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Furthr — Call Runnings Reports</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Call Runnings Report — Furthr</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --indigo: #6060D0;
-    --deep-indigo: #4D53AB;
-    --periwinkle: #A0B0E0;
-    --teal: #3090C0;
-    --ink: #0A0A0A;
-    --white: #FFFFFF;
-    --green: #32B241;
-    --red: #FC3A33;
-    --orange: #FE6601;
-    --skin: #F5B97D;
-    --glass: rgba(255,255,255,0.09);
-    --glass-border: rgba(255,255,255,0.14);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: #5558C8;
-    background-image:
-      radial-gradient(ellipse 80% 60% at 20% 10%, #7068D8 0%, transparent 60%),
-      radial-gradient(ellipse 60% 80% at 80% 90%, #3890C8 0%, transparent 55%),
-      radial-gradient(ellipse 50% 50% at 50% 50%, #5558C8 0%, #4048A8 100%);
-    min-height: 100vh;
-    font-family: 'Poppins', 'Nunito', Arial, sans-serif;
-    color: var(--white);
-    padding-bottom: 80px;
-  }
-
-  /* ── HEADER ── */
-  .site-header {
-    padding: 32px 48px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .wordmark {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.5);
-  }
-  .wordmark span { color: var(--teal); }
-
-  .header-tag {
-    font-size: 11px;
-    color: rgba(255,255,255,0.35);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
-  /* ── HERO ── */
-  .hero {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 48px 48px 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: end;
-    gap: 24px;
-  }
-
-  .hero-text {}
-
-  .campaign-label {
-    display: inline-block;
-    background: rgba(48,144,192,0.25);
-    border: 1px solid rgba(48,144,192,0.4);
-    color: var(--teal);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-bottom: 14px;
-  }
-
-  .hero h1 {
-    font-size: clamp(36px, 5vw, 60px);
-    font-weight: 700;
-    line-height: 1.05;
-    color: var(--white);
-    margin-bottom: 10px;
-  }
-
-  .hero-aside {
-    font-style: italic;
-    font-size: 15px;
-    color: rgba(255,255,255,0.5);
-    font-weight: 400;
-    margin-bottom: 0;
-  }
-
-  .hero-illustration {
-    width: 180px;
-    opacity: 0.85;
-    flex-shrink: 0;
-  }
-
-  /* ── TAB NAV ── */
-  .tab-nav-wrap {
-    max-width: 1100px;
-    margin: 36px auto 0;
-    padding: 0 48px;
-  }
-
-  .tab-nav {
-    display: flex;
-    gap: 4px;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  .tab-nav::-webkit-scrollbar { display: none; }
-
-  .tab-btn {
-    flex-shrink: 0;
-    background: none;
-    border: none;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1px;
-    padding: 10px 20px;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.4);
-    cursor: pointer;
-    transition: color 0.2s, border-color 0.2s;
-    letter-spacing: 0.04em;
-    white-space: nowrap;
-  }
-
-  .tab-btn:hover { color: rgba(255,255,255,0.75); }
-
-  .tab-btn.active {
-    color: var(--white);
-    border-bottom-color: var(--orange);
-  }
-
-  /* ── REPORT PANELS ── */
-  .reports-wrap {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 48px;
-  }
-
-  .report-panel {
-    display: none;
-    animation: fadeUp 0.35s ease both;
-  }
-  .report-panel.active { display: block; }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  /* ── STAT ROW ── */
-  .stat-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin: 32px 0 28px;
-  }
-
-  @media (max-width: 640px) {
-    .stat-row { grid-template-columns: repeat(2, 1fr); }
-  }
-
-  .stat-card {
-    background: var(--glass);
-    border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    padding: 20px 16px;
-    text-align: center;
-  }
-
-  .stat-number {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 6px;
-    color: var(--white);
-  }
-  .stat-number.orange { color: var(--orange); }
-  .stat-number.teal   { color: var(--teal); }
-  .stat-number.green  { color: var(--green); }
-
-  .stat-label {
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: rgba(255,255,255,0.45);
-  }
-
-  /* ── SECTION CARDS ── */
-  .section-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 16px;
-  }
-
-  .section-grid.full { grid-template-columns: 1fr; }
-
-  @media (max-width: 720px) {
-    .section-grid { grid-template-columns: 1fr; }
-    .hero { grid-template-columns: 1fr; }
-    .hero-illustration { display: none; }
-    .site-header, .hero, .tab-nav-wrap, .reports-wrap { padding-left: 20px; padding-right: 20px; }
-  }
-
-  .card {
-    background: var(--glass);
-    border: 1px solid var(--glass-border);
-    border-radius: 20px;
-    padding: 28px 28px 24px;
-  }
-
-  .card-title {
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 4px;
-  }
-
-  .card-aside {
-    font-style: italic;
-    font-size: 12px;
-    color: rgba(255,255,255,0.42);
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  /* ── SUMMARY ── */
-  .summary-body p {
-    font-size: 13px;
-    line-height: 1.7;
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 10px;
-  }
-  .summary-body p:last-child { margin-bottom: 0; }
-
-  /* ── COMPETITOR TABLE ── */
-  .comp-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 12px;
-  }
-
-  .comp-table th {
-    text-align: left;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: rgba(255,255,255,0.4);
-    padding: 0 10px 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
-
-  .comp-table td {
-    padding: 10px 10px 10px 0;
-    color: rgba(255,255,255,0.78);
-    vertical-align: top;
-    line-height: 1.5;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    font-size: 12px;
-  }
-
-  .comp-table tr:last-child td { border-bottom: none; }
-
-  .comp-name { font-weight: 600; color: var(--white); }
-  .comp-freq { color: rgba(255,255,255,0.4); font-size: 11px; white-space: nowrap; }
-
-  .badge {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    padding: 2px 8px;
-    border-radius: 10px;
-  }
-  .badge-neg  { background: rgba(252,58,51,0.18);  color: #FC3A33; }
-  .badge-neu  { background: rgba(160,176,224,0.18); color: var(--periwinkle); }
-  .badge-warn { background: rgba(254,102,1,0.18);  color: var(--orange); }
-
-  /* ── OBJECTIONS ── */
-  .objection {
-    border-left: 2px solid var(--orange);
-    padding: 2px 0 2px 14px;
-    margin-bottom: 20px;
-  }
-  .objection:last-child { margin-bottom: 0; }
-
-  .obj-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 2px;
-  }
-
-  .obj-freq {
-    font-size: 11px;
-    color: rgba(255,255,255,0.38);
-    font-style: italic;
-    margin-bottom: 6px;
-  }
-
-  .obj-quote {
-    font-style: italic;
-    font-size: 12px;
-    color: rgba(255,255,255,0.58);
-    line-height: 1.55;
-    margin-bottom: 6px;
-    padding: 8px 12px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 8px;
-  }
-
-  .obj-body {
-    font-size: 12px;
-    color: rgba(255,255,255,0.72);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  /* ── QUESTIONS ── */
-  .question {
-    padding-bottom: 16px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .question:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-  .q-text {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--teal);
-    margin-bottom: 2px;
-  }
-
-  .q-freq {
-    font-size: 11px;
-    color: rgba(255,255,255,0.38);
-    font-style: italic;
-    margin-bottom: 5px;
-  }
-
-  .q-body {
-    font-size: 12px;
-    color: rgba(255,255,255,0.72);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  /* ── THEMES ── */
-  .theme {
-    padding-bottom: 18px;
-    margin-bottom: 18px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .theme:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-  .theme-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 6px;
-  }
-
-  .theme-body {
-    font-size: 12px;
-    color: rgba(255,255,255,0.72);
-    line-height: 1.65;
-    margin: 0;
-  }
-
-  .theme-quote {
-    font-style: italic;
-    font-size: 12px;
-    color: rgba(255,255,255,0.5);
-    margin-top: 6px;
-    padding-left: 10px;
-    border-left: 2px solid rgba(255,255,255,0.15);
-  }
-
-  /* ── FOOTER ── */
-  .report-footer {
-    max-width: 1100px;
-    margin: 40px auto 0;
-    padding: 0 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 24px;
-  }
-
-  .footer-left {
-    font-size: 13px;
-    color: rgba(255,255,255,0.7);
-  }
-  .footer-left strong { color: var(--white); display: block; font-size: 15px; }
-  .footer-left span { color: var(--teal); font-size: 12px; font-weight: 600; }
-
-  .footer-right {
-    font-size: 10px;
-    color: rgba(255,255,255,0.2);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: right;
-  }
-
-  /* ── CHARACTER IMAGE ── */
-  .character-wrap {
-    position: fixed;
-    bottom: 0;
-    right: 32px;
-    width: 120px;
-    opacity: 0.18;
-    pointer-events: none;
-    z-index: 0;
-  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#0d0f1a 0%,#141728 60%,#1a1d35 100%);min-height:100vh;color:#fff;padding:0}
+  .header{padding:32px 48px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:20px}
+  .header img{height:80px;display:block}
+  .header-text h1{font-size:22px;font-weight:700;color:#fff}
+  .header-text p{font-size:13px;color:rgba(200,216,240,0.6);margin-top:4px}
+  .tabs{display:flex;gap:6px;padding:20px 48px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+  .tab{padding:9px 22px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(200,216,240,0.5);border:1px solid rgba(255,255,255,0.1);border-bottom:none;border-radius:8px 8px 0 0;cursor:pointer;transition:all 0.15s}
+  .tab.active,.tab:hover{background:rgba(96,96,208,0.2);color:#fff;border-color:rgba(96,96,208,0.4)}
+  .panel{display:none;padding:32px 48px 48px;max-width:900px}
+  .panel.active{display:block}
+  .stats-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:28px}
+  .stat-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:14px;text-align:center}
+  .stat-value{font-size:26px;font-weight:700;line-height:1}
+  .stat-label{font-size:9px;color:rgba(200,216,240,0.45);text-transform:uppercase;letter-spacing:0.1em;margin-top:5px}
+  .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:24px 28px;margin-bottom:16px;backdrop-filter:blur(8px)}
+  .card h2{font-size:14px;font-weight:700;color:#C8D8F0;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(48,144,192,0.3)}
+  .content{font-size:13px;color:rgba(200,216,240,0.85);line-height:1.8}
+  blockquote{margin:14px 0 4px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:3px solid #3090C0;border-radius:0 8px 8px 0;font-size:12px;color:#C8D8F0;font-style:italic;line-height:1.6}
+  .footer{text-align:center;padding:32px 48px;font-size:11px;color:rgba(200,216,240,0.3);border-top:1px solid rgba(255,255,255,0.06);letter-spacing:0.08em}
 </style>
 </head>
 <body>
+<div class="header">
+  <img src="../assets/logo_bobsled.png" alt="Call Runnings">
+  <div class="header-text">
+    <h1>Furthr — Monthly Report</h1>
+    <p>Prepared by Call Runnings</p>
+  </div>
+</div>
+<div class="tabs">
+    <button class="tab active" onclick="showTab(0)">April 2026</button>
+  </div>
 
-<!-- Header -->
-<header class="site-header">
-  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" alt="Call Runnings" style="height:112px; width:auto;">
-  <div class="header-tag">Client Reports Portal</div>
-</header>
-
-<!-- Hero -->
-<div class="hero">
-  <div class="hero-text">
-    <div class="campaign-label">Furthr</div>
-    <h1>Campaign Reports</h1>
+      <div class="panel active" id="panel-0">
+        
+        <div class="stats-grid">
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">1518</div>
+              <div class="stat-label">Total Calls</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#32B241">134</div>
+              <div class="stat-label">Conversations</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#FE6601">9</div>
+              <div class="stat-label">Meetings Booked</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">1287</div>
+              <div class="stat-label">No Answer</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">0</div>
+              <div class="stat-label">Voicemail</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">3</div>
+              <div class="stat-label">Gatekeeper</div>
+            </div>
+          
+        </div>
+        
+      <div class="card">
+        <h2>Campaign Overview</h2>
+        <div class="content">During April 2026, Call Runnings executed 1,518 calls on behalf of Furthr, achieving 134 conversations and securing 9 meetings. This represents a conversation rate of 8.8% and a meeting conversion rate of 6.7% from conversations. The campaign targeted sustainability managers and ESG professionals to discuss carbon reporting and scope three emissions solutions. Of the conversations held, 24 prospects were identified as 'Activated' (demonstrating strong interest or fit), whilst 59 indicated they were definitively not interested. The primary challenge was reach, with 1,287 calls resulting in no answer. The campaign successfully identified decision-makers across various sectors including NHS trusts, housing associations, galleries, universities, and commercial organisations.</div>
+        
+      </div>
     
-  </div>
-  <img class="hero-illustration" src="https://drive.google.com/uc?id=1NW3H3sIIuNT1ZO84ScELc67tkBYu6tymqrMOQE8UjR4" alt="" onerror="this.style.display='none'">
-</div>
-
-<!-- Tab nav -->
-<div class="tab-nav-wrap">
-  <nav class="tab-nav" role="tablist">
-    <button class="tab-btn active" onclick="showTab('apr2026', this)" role="tab" aria-selected="true">April 2026</button>
-    <!-- Future months appended here -->
-  </nav>
-</div>
-
-<!-- Reports -->
-<div class="reports-wrap">
-
-  <!-- ════════════ APRIL 2026 ════════════ -->
-  <div class="report-panel active" id="apr2026">
-
-    <!-- Stats -->
-    <div class="stat-row">
-      <div class="stat-card">
-        <div class="stat-number">3,126</div>
-        <div class="stat-label">Dials</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number teal">519</div>
-        <div class="stat-label">Conversations</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number orange">9</div>
-        <div class="stat-label">Meetings booked</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-number green">38</div>
-        <div class="stat-label">Activated</div>
-      </div>
-    </div>
-
-    <!-- Row 1: Summary + Competitor intel -->
-    <div class="section-grid">
-
       <div class="card">
-        <div class="card-title">What happened this period</div>
+        <h2>Competitor & Market Intelligence</h2>
+        <div class="content">The market is notably crowded with established providers. Watershed emerged as a recognised platform, with one prospect stating they "use a platform called Watershed for carbon reporting and aren't looking to change." PlanetMark appeared multiple times, with prospects reporting recent partnerships: "They've partnered with PlanetMark for their carbon footprint verification" and another noting "they're currently using PlanetMark and managing it themselves." Trace software was mentioned as an existing solution during a company merger scenario. Netscope was cited by one prospect who "is currently using Netscope for tracking their carbon emissions" having just started in January. Gallery-specific solutions were also noted, with one prospect explaining they "use the Gallery Climate Coalition and Judy Bicycle Alban Calculators for carbon logging, which are free and work well for them." The sentiment towards existing providers was generally positive, with prospects expressing satisfaction and stability. Several mentioned consultancy arrangements, with one noting an "ongoing contract until April 1, 2027" and another describing their solution as "straightforward and cost-effective." The data gathering process was notably not seen as problematic by some: one prospect "didn't find data gathering too tricky" with their current platform. The competitive landscape is further complicated by prospects feeling overwhelmed, with one stating they are "satisfied with their current processes and overwhelmed by the number of carbon platforms available."</div>
         
-        <div class="summary-body">
-          <p>Nine meetings booked across 3,126 dials — the strongest result of any campaign in the portfolio this period. The Scope 3 pitch is landing. Most prospects know exactly what you're talking about and broadly agree it's a problem.</p>
-          <p>The main friction isn't the message. It's timing and incumbency. Most larger organisations already have a process or a partner in place, even if that process is held together with spreadsheets and goodwill. Mid-market companies without a dedicated sustainability headcount are the clearest opportunity right now.</p>
-          <p>A number of conversations ended with "call me back in June or July" — not losses, but pipeline. Worth tracking deliberately.</p>
-        </div>
       </div>
-
+    
       <div class="card">
-        <div class="card-title">Competitor &amp; market intelligence</div>
+        <h2>Common Objections</h2>
+        <div class="content">The dominant objection category was existing provider satisfaction and contractual commitments. Multiple prospects cited long-term contracts: "they have a solution in place that is contractually set for three years," "ongoing contract until April 1, 2027," and one who "recently entered a procurement phase, indicating they've already made a decision." This reveals a market with typical 1-3 year contract cycles. Timing objections were prevalent, with prospects requesting follow-up at specific intervals: "suggested reaching out in six months," "reach out again in July or August," "follow up in a couple of months once their financial year has calmed down," and "follow up next year." Budget constraints appeared as a significant barrier, particularly for smaller organisations. One prospect stated explicitly: "She has no budget for software and is currently using an external consultant for annual reporting. Expressed interest in managing it in-house but struggles to get business sign-off." Another mentioned "time and budget constraints" whilst finding the offering relevant. Wrong contact objections revealed organisational complexity, with carbon reporting often centralised: "carbon reporting is managed at the group level in Germany and not under his responsibility," and another noting "Each country operates independently, and they have their own tools for data submission." Several prospects indicated they were no longer in relevant roles or had left companies, suggesting high turnover in sustainability positions. The internal capability objection emerged from organisations confident in their current approach: "they are managing these internally and feel confident in their progress" and "they have a well-established sustainability team and are meeting their targets without any current challenges."</div>
         
-        <table class="comp-table">
-          <thead>
-            <tr>
-              <th>Competitor</th>
-              <th>What was said</th>
-              <th>Freq</th>
-              <th>Signal</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="comp-name">Schneider Electric</span></td>
-              <td>Named as parent company's Scope 3 partner at group level.</td>
-              <td><span class="comp-freq">1</span></td>
-              <td><span class="badge badge-neg">Lost</span></td>
-            </tr>
-            <tr>
-              <td><span class="comp-name">Carbon Architecture</span></td>
-              <td>Incumbent carbon reporting partner already active.</td>
-              <td><span class="comp-freq">1</span></td>
-              <td><span class="badge badge-neg">Lost</span></td>
-            </tr>
-            <tr>
-              <td><span class="comp-name">In-house processes</span></td>
-              <td>"We've been doing it since 2006 — we do that internally." Most common barrier by distance.</td>
-              <td><span class="comp-freq">~10</span></td>
-              <td><span class="badge badge-warn">Barrier</span></td>
-            </tr>
-            <tr>
-              <td><span class="comp-name">Group programmes</span><br><em style="font-size:10px;color:rgba(255,255,255,0.35)">DHL, Skanska etc.</em></td>
-              <td>Carbon reporting managed at EU/US parent level. UK contact isn't the decision-maker.</td>
-              <td><span class="comp-freq">~4</span></td>
-              <td><span class="badge badge-neu">Org barrier</span></td>
-            </tr>
-          </tbody>
-        </table>
       </div>
-
-    </div>
-
-    <!-- Row 2: Objections + Questions -->
-    <div class="section-grid">
-
+    
       <div class="card">
-        <div class="card-title">Common objections</div>
+        <h2>Prospect Questions & Information Requests</h2>
+        <div class="content">Whilst explicit questions were limited in these transcripts, prospects' information-gathering behaviour revealed their priorities. Several prospects requested email follow-ups with information they could review or share internally: "Suggested I could send information for her to circulate later," "agreed to receive an email with information that he can forward to his colleague," and "requested one email with information, emphasising not to spam him." This indicates a preference for considered evaluation rather than immediate decisions. Prospects demonstrated interest in understanding differentiation and capability, with one agreeing to "check out our website" and another expressing that they would "keep us in mind for the future." The referral pattern showed prospects attempting to direct calls appropriately: "He referred me to Paloma Hemosa, who handles the reporting annually" and "suggested contacting someone at the group level for ESG reporting." One prospect's curiosity about data sourcing emerged: "He was curious about their source" regarding how their contact information was obtained, suggesting sensitivity around data privacy. The methodology gap became apparent with one NHS contact who "isn't currently measuring scope 3 emissions due to unclear methodology," indicating that some organisations recognise gaps but lack clarity on solutions. Prospects also revealed interest in efficiency improvements, particularly around scope three: one "finds time-consuming" the current spreadsheet approach to "scope three reporting" and expressed interest in "more efficient solutions."</div>
         
-
-        <div class="objection">
-          <div class="obj-title">We already handle it internally</div>
-          <div class="obj-freq">~8 conversations</div>
-          <div class="obj-quote">"We've been doing it since 2006 — we do that internally."</div>
-          <p class="obj-body">Confident and well-established. The opening, if there is one, is around time investment and whether the data meets audit or investor-reporting standards.</p>
-        </div>
-
-        <div class="objection">
-          <div class="obj-title">Managed at group or parent level</div>
-          <div class="obj-freq">~4 conversations</div>
-          <div class="obj-quote">"It's some kind of incentive by our DHL — the corporate side based in Germany."</div>
-          <p class="obj-body">Structural. The UK contact often can't refer upwards either. Worth noting if the group-level function is a named contact that could be approached directly.</p>
-        </div>
-
-        <div class="objection">
-          <div class="obj-title">Going through internal changes</div>
-          <div class="obj-freq">~5 conversations</div>
-          <div class="obj-quote">"We're just going through internal changes so I actually won't be able to make any decisions until after then."</div>
-          <p class="obj-body">Several contacts proactively named a June or July follow-up window. These are warm.</p>
-        </div>
       </div>
-
+    
       <div class="card">
-        <div class="card-title">What prospects asked</div>
+        <h2>Market Themes</h2>
+        <div class="content">Four dominant themes emerged from the conversations. First, market maturity and saturation: the carbon reporting space has moved beyond early adoption, with most organisations already having solutions in place. The statement "overwhelmed by the number of carbon platforms available" captures this well. Organisations are in implementation and optimisation phases rather than initial procurement. Second, the scope three challenge remains persistent. Multiple conversations referenced scope three specifically, with prospects noting it as "time-consuming," collected "manually through a provider," and "not easy" even with systems in place. One prospect confirmed "their scope three is externally verified," indicating the complexity and need for external validation. The NHS contact revealed sector-specific challenges: "unclear methodology" for measuring scope three emissions with "ongoing updates to the NHS portal." Third, organisational restructuring is affecting sustainability priorities. One prospect reported "a company restructure leading to less emphasis on ESG, and any existing targets have been put on hold," whilst another "moved out of ESG and is now focused on industry engagement." Job changes were frequent, with multiple prospects no longer in sustainability roles or having left companies entirely. This suggests the sustainability function is still finding its stable place within organisational structures. Fourth, the in-house versus outsourced dynamic is evolving. Several prospects manage reporting themselves whilst others use consultancies. One specifically "expressed interest in managing it in-house but struggles to get business sign-off," revealing tension between desired autonomy and organisational support. The free tools mentioned by the gallery sector indicate that smaller organisations seek cost-effective solutions. Finally, timing and capacity constraints were ubiquitous. Prospects cited "urgent priorities due to new OGM regulations," being in "SPTI reporting phase," and general bandwidth issues. The sustainability function appears under-resourced relative to expanding requirements.</div>
         
-
-        <div class="question">
-          <div class="q-text">"Do you provide a platform, or what exactly is it you provide?"</div>
-          <div class="q-freq">~4 conversations</div>
-          <p class="q-body">Asked by prospects who are genuinely evaluating — not a brushoff. They want to understand the product format before committing to a longer conversation.</p>
-        </div>
-
-        <div class="question">
-          <div class="q-text">"What sort of embedded carbon? What materials?"</div>
-          <div class="q-freq">~2 conversations — construction sector</div>
-          <p class="q-body">Construction contacts engage more technically. They want to know whether you're talking about embodied carbon in materials, supply chain Scope 3, or both. A more specific answer for this vertical would help.</p>
-        </div>
       </div>
-
-    </div>
-
-    <!-- Row 3: Market themes (full width) -->
-    <div class="section-grid full">
+    
       <div class="card">
-        <div class="card-title">What the market is telling us</div>
+        <h2>Recommended Actions</h2>
+        <div class="content">Based on the intelligence gathered, we recommend five specific actions:<br><br>1. **Implement a 12-18 month nurture cycle targeting contracted prospects.** With multiple prospects citing contracts expiring in 2027 and beyond, build a systematic follow-up programme aligned to contract end dates. Focus messaging on procurement preparation, evaluation criteria, and emerging requirements that incumbents may not address. Prospects explicitly invited future contact ("follow up next year," "reach out again in July or August"), creating permission-based touchpoints.<br><br>2. **Develop scope three-specific positioning and methodology content.** This emerged as the persistent pain point even among organisations with existing solutions. Create resources addressing "time-consuming" manual processes, verification requirements, and methodology clarity. The NHS prospect's "unclear methodology" challenge represents a segment opportunity. Consider offering scope three audits or assessments as a lower-commitment entry point.<br><br>3. **Create a budget justification toolkit for sustainability managers.** The prospect who "struggles to get business sign-off" despite wanting to move in-house represents a common scenario. Develop ROI frameworks, time-saving calculators, and risk mitigation narratives that sustainability managers can use internally. Address the "time and budget constraints" objection proactively by quantifying the cost of current approaches.<br><br>4. **Build referral pathways for wrong-contact scenarios.** Multiple conversations identified alternative contacts ("Paloma Hemosa," "Sam Davies," "Olivia Fernandez"). Create a systematic approach to warm handoffs where the original contact introduces Furthr, increasing conversion likelihood. Consider offering group-level demonstrations where reporting is centralised, addressing the "managed at the group level in Germany" structural challenge.<br><br>5. **Launch competitor displacement campaigns targeting recent implementations.** Prospects using Netscope "just started this process in January" and others who "recently started using their services" are in the critical evaluation period where early challenges emerge. Target organisations 3-6 months into new implementations with content addressing common transition difficulties, integration gaps, and optimisation opportunities. Those who "aren't currently measuring scope 3 emissions" despite having platforms represent cross-sell opportunities.</div>
         
-
-        <div class="section-grid" style="margin:0; gap:20px;">
-
-          <div>
-            <div class="theme">
-              <div class="theme-title">Scope 3 is universally validated — but most large targets already have something in place</div>
-              <p class="theme-body">Nobody disputes the problem. The challenge is that for larger organisations, an existing process is almost always running. The real opportunity is mid-market companies that haven't yet formalised their approach, particularly those without a dedicated sustainability headcount.</p>
-            </div>
-
-            <div class="theme">
-              <div class="theme-title">Sustainability redundancies are creating churn in the contact pool</div>
-              <p class="theme-body">Several contacts across the period had recently been made redundant or were in transition. Some organisations appear to be quietly deprioritising sustainability headcount. This affects list quality and means existing contacts need re-qualifying more frequently than in previous periods.</p>
-            </div>
-          </div>
-
-          <div>
-            <div class="theme">
-              <div class="theme-title">Construction and NHS contacts are a different conversation</div>
-              <p class="theme-body">Construction contacts engage technically and ask about embodied carbon in materials. NHS contacts are constrained by procurement frameworks and group-level authority. Both sub-markets are worth a tailored pitch angle rather than the general Scope 3 opener.</p>
-              <div class="theme-quote">"We're actually doing a base carbon analysis of building an inventory at the moment. And Scope 3 is definitely something we struggle with."</div>
-            </div>
-
-            <div class="theme">
-              <div class="theme-title">The "call me back in June/July" pipeline is real</div>
-              <p class="theme-body">Multiple contacts across the period gave a specific future window rather than a flat no. These aren't polite brushoffs — they named months. Track these deliberately as warm pipeline rather than closed conversations.</p>
-            </div>
-          </div>
-
-        </div>
       </div>
-    </div>
-
-  </div>
-  <!-- ════════════ END APRIL 2026 ════════════ -->
-
-</div>
-
-<!-- Footer -->
-<footer class="report-footer">
-  <div class="footer-left">
-    Thanks,<br>
-    <strong>Mark</strong>
-    <span>Call Runnings</span>
-  </div>
-  <div class="footer-right">
-    Phone first, always<br>
-    callrunnings.co.uk
-  </div>
-</footer>
-
+    
+      </div>
+    
+<div class="footer">PHONE FIRST, ALWAYS</div>
 <script>
-  function showTab(panelId, btn) {
-    document.querySelectorAll('.report-panel').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b => {
-      b.classList.remove('active');
-      b.setAttribute('aria-selected', 'false');
-    });
-    document.getElementById(panelId).classList.add('active');
-    btn.classList.add('active');
-    btn.setAttribute('aria-selected', 'true');
-  }
+function showTab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
+}
 </script>
-
 </body>
 </html>
