@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Runnings Report — Merritt</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#4D6BC0 0%,#6060D0 55%,#7B7BE3 100%);min-height:100vh;color:#fff;padding:0}
+  .header{padding:32px 48px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:20px}
+  .header img{height:80px;display:block}
+  .header-text h1{font-size:22px;font-weight:700;color:#fff}
+  .header-text p{font-size:13px;color:rgba(255,255,255,0.72);margin-top:4px}
+  .tabs{display:flex;gap:6px;padding:20px 48px 0;border-bottom:1px solid rgba(255,255,255,0.15)}
+  .tab{padding:9px 22px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);border-bottom:none;border-radius:8px 8px 0 0;cursor:pointer;transition:all 0.15s}
+  .tab.active,.tab:hover{background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.4)}
+  .panel{display:none;padding:32px 48px 48px;max-width:900px}
+  .panel.active{display:block}
+  .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:28px}
+  .stat-card{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:14px;text-align:center}
+  .stat-value{font-size:26px;font-weight:700;line-height:1}
+  .stat-label{font-size:9px;color:rgba(255,255,255,0.65);text-transform:uppercase;letter-spacing:0.1em;margin-top:5px}
+  .card{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:24px 28px;margin-bottom:16px;backdrop-filter:blur(8px)}
+  .card h2{font-size:14px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.2)}
+  .content{font-size:13px;color:rgba(255,255,255,0.88);line-height:1.8}
+  blockquote{margin:14px 0 4px;padding:10px 16px;background:rgba(48,144,192,0.18);border-left:3px solid #3090C0;border-radius:0 8px 8px 0;font-size:12px;color:#fff;font-style:italic;line-height:1.6}
+  .footer{text-align:center;padding:32px 48px;font-size:11px;color:rgba(255,255,255,0.45);border-top:1px solid rgba(255,255,255,0.12);letter-spacing:0.08em}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" alt="Call Runnings">
+  <div class="header-text">
+    <h1>Merritt — Monthly Report</h1>
+    <p>Prepared by Call Runnings</p>
+  </div>
+</div>
+<div class="tabs">
+    <button class="tab active" onclick="showTab(0)">April 2026</button>
+  </div>
+
+      <div class="panel active" id="panel-0">
+        
+        <div class="stats-grid">
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">738</div>
+              <div class="stat-label">Total Dials</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#3090C0">70</div>
+              <div class="stat-label">Connected</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#3090C0">61</div>
+              <div class="stat-label">Conversations</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#FE6601">1</div>
+              <div class="stat-label">Meetings</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#32B241">2</div>
+              <div class="stat-label">Activated</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">14</div>
+              <div class="stat-label">No, Not Now</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">39</div>
+              <div class="stat-label">No, Not Ever</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">0</div>
+              <div class="stat-label">No, Not Me (Ref)</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">4</div>
+              <div class="stat-label">No, Not Me (No Ref)</div>
+            </div>
+          
+        </div>
+        
+      <div class="card">
+        <h2>Campaign Overview — April 2026</h2>
+        <div class="content">April 2026 represented a solid volume of outreach activity on behalf of Merritt, with a total of 738 dials made across the month. Of those, 70 calls connected and 61 progressed into meaningful conversations with prospects.<br><br>The month yielded 1 meeting booked and 2 activations — prospects who have moved into an engaged or pipeline stage. The breakdown of outcomes from conversations is as follows:<br><br>- Meetings Booked: 1<br>- Activated: 2<br>- No, Not Now: 14<br>- No, Not Ever: 39<br>- No, Not Me (Referred): 0<br>- No, Not Me (No Referral): 4<br><br>The conversation-to-connection rate of 87% indicates that when calls were answered, prospects were generally willing to engage briefly. However, the proportion of 'No, Not Ever' outcomes (39 of 61 conversations) suggests that a significant share of the prospect list requires refinement to improve targeting precision. The 14 'No, Not Now' responses represent a meaningful pool of prospects who have acknowledged relevance but are not yet ready to engage, making them strong candidates for structured follow-up sequences in the coming months.</div>
+        
+      </div>
+    
+      <div class="card">
+        <h2>Competitor & Market Intelligence — Who Else Is in the Room</h2>
+        <div class="content">Across the April conversations, several named competitors and alternative recruitment channels were referenced by prospects. These mentions provide direct insight into the competitive landscape Merritt is operating within.<br><br>Bright Purple was referenced by one prospect, Nigel, who stated that his organisation primarily hires through them. His tone was matter-of-fact and loyalty-indicating, suggesting Bright Purple holds an established position as a preferred supplier in at least one of the verticals reached this month. The door was left open for Merritt to step in if hiring volumes increase.<br><br>LinkedIn was cited by Barry as a primary sourcing channel, used in conjunction with an internal recruitment function. This reflects a common self-sufficiency model where businesses believe organic LinkedIn advertising is sufficient for their needs, particularly for lower-volume hiring. This sentiment was not hostile but rather presented as an established workflow.<br><br>Internal recruitment teams were mentioned by multiple prospects — including Yogi, Pamela from Mytek, and Nathan — as the reason external support was not needed. In Pamela's case, she explicitly noted that the decision to use only internal recruitment was one she personally disagreed with, which is a valuable signal: internal mandates, not genuine satisfaction, are sometimes the barrier rather than a lack of need.<br><br>A preferred recruiter relationship was noted by Sue, who indicated her company works exclusively with one recruiter and would not consider alternatives until their new fiscal year in October.<br><br>Overall, the competitive picture this month is characterised by incumbent relationships, internal team structures, and LinkedIn self-service — rather than dissatisfaction with Merritt's offering. The opportunity lies in positioning Merritt as a complement to or upgrade on these existing arrangements, particularly where internal teams are under-resourced or where preferred supplier relationships are creating bottlenecks.</div>
+        <blockquote>"He primarily hires through Bright Purple and indicated the potential need for our services in the future if they expand."</blockquote><blockquote>"She doesn't agree with this decision and declined my offer to send a link to our job board with 30,000 candidates."</blockquote><blockquote>"They currently use an internal recruitment company and primarily post ads on LinkedIn."</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Common Objections — What the Market Is Saying</h2>
+        <div class="content">The following objections emerged repeatedly across April's conversations and reflect genuine market conditions rather than isolated hesitations.<br><br>1. 'We're not hiring right now.'<br>This was the single most common objection of the month, surfacing across a wide range of company sizes and sectors. Prospects including Martina, Yogi, Jess, James, and Antoine all indicated a current freeze or pause on sales hiring. In several cases, this was linked to restructuring, pending acquisitions, or existing team capacity. This is a timing objection rather than a rejection of value, and many of these conversations ended with openness to future contact.<br><br>2. 'We have an internal team or preferred supplier.'<br>Multiple prospects deflected with reference to internal talent acquisition functions or exclusive recruiter relationships. This objection signals process entrenchment rather than satisfaction, particularly where internal mandates are driving the decision rather than results.<br><br>3. 'I'm not the right person.'<br>Four conversations resulted in a 'No, Not Me' outcome with no referral provided. Additionally, prospects such as Charlene and Nathan acknowledged they were not the correct contact but could not or did not direct us to the appropriate decision-maker. This points to a list quality and stakeholder mapping issue that is costing potential pipeline.<br><br>4. 'We use a channel model, not direct sales.'<br>James and Simon both indicated their business models do not involve direct sales headcount, making recruitment for sales reps genuinely irrelevant to them. This is a targetability issue rather than an objection to Merritt's proposition per se.<br><br>5. 'We're not ready yet — come back in a few months.'<br>Several prospects including Jason, Martina, Sue, and Barry Hurst indicated genuine future intent but were not at a point of active need. Barry Hurst notably provided his direct email address and requested a four-week follow-up, and Sue indicated October as a natural re-engagement point aligned with her company's fiscal year.</div>
+        <blockquote>"Future hiring depends on the performance of their existing sales team."</blockquote><blockquote>"They are not hiring currently due to a potential acquisition."</blockquote><blockquote>"He's currently developing a partner network and will only hire trusted individuals he already knows for now."</blockquote><blockquote>"They're managing the process in-house."</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Prospect Questions — What Decision-Makers Want to Know</h2>
+        <div class="content">Whilst the volume of inbound questions from prospects was limited given the nature of outbound cold calling, several recurring areas of curiosity emerged that signal what matters most to decision-makers when they do engage.<br><br>1. Candidate quality and specificity<br>Prospects who engaged positively — such as Peter — moved quickly to ask about candidate profiles and whether they could be shared with hiring teams. This indicates that proof of candidate calibre is the primary lever for converting interest into action. The job board at merit.io was referenced in multiple calls as a tangible asset that prospects could explore independently, suggesting it is functioning as a credibility anchor.<br><br>2. The role of AI in recruitment<br>Barry raised the topic of AI and video assessments unprompted, noting the importance of maintaining a human element. This reflects a broader market awareness of AI-driven recruitment tools and a degree of scepticism or caution around over-automation. Merritt's positioning on this point may be worth sharpening.<br><br>3. Relevance to non-traditional sales models<br>Several prospects questioned or clarified whether Merritt's offering applied to channel models, partner ecosystems, or indirect sales structures. This suggests that the proposition as communicated may be perceived as primarily relevant to direct sales teams, potentially excluding a wider segment of addressable market.<br><br>4. Process and next steps<br>Engaged prospects such as Peter and Barry Hurst were quick to outline a preferred next step — sharing information with a hiring team, or reconnecting at a specific date. This willingness to self-direct the follow-up is a positive signal and indicates that when the conversation lands well, prospects are motivated to manage their own pipeline of recruitment support.</div>
+        <blockquote>"He expressed interest and requested an email with company details and candidate profiles to share with their hiring team."</blockquote><blockquote>"Barry noted the importance of maintaining a human element in recruitment amid the use of AI."</blockquote><blockquote>"He provided his email as b.hurst@ibrightutilities.co.uk for future communication."</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Market Themes — Broader Patterns from the Frontline</h2>
+        <div class="content">Taken together, the April conversations paint a coherent picture of the current market environment for sales recruitment. Several broader themes stand out.<br><br>Hiring caution is widespread but not permanent. Across the majority of conversations, the underlying message was not 'we will never need this' but rather 'we are not ready right now.' Restructuring, acquisition activity, fiscal year constraints, and performance-dependent headcount plans are all contributing to a pause in active hiring across a meaningful share of the prospect base. This is a cyclical and structural condition rather than a permanent state, and positions the 'No, Not Now' segment as a significant future opportunity.<br><br>Internal recruitment is both a barrier and a vulnerability. The recurrence of internal talent teams as a reason not to engage externally is notable, but Pamela's comment from Mytek — where she personally disagreed with the internal-only mandate — reveals that these structures are not always working as well as they appear from the outside. Where internal teams are stretched or where hiring quality is quietly suffering, Merritt's proposition has a natural entry point.<br><br>Prospect lists contain a meaningful proportion of mismatched contacts. A notable share of conversations this month involved individuals who had left their companies, were between roles themselves, operated on non-direct sales models, or were simply not the right stakeholder. This dilutes call efficiency and suggests that data hygiene and stakeholder identification are areas where improvement would have a direct impact on campaign results.<br><br>Personal transitions are creating unexpected touchpoints. Several individuals — including Louise, Alex, and the former Simon at Fuse — were themselves in career transition. Whilst these contacts do not represent immediate hiring opportunities, redirecting them to merit.io positions Merritt helpfully and builds goodwill within the professional community. These interactions, though low in commercial value now, are consistent with a relationship-first brand posture.<br><br>Company instability is present in the market. One prospect's company was noted to be in administration, another had been sold, and others were mid-acquisition. This reflects a degree of structural turbulence in the broader market that is suppressing immediate hiring intent but may accelerate demand once situations resolve.</div>
+        <blockquote>"The company has been sold."</blockquote><blockquote>"A company is currently in administration."</blockquote><blockquote>"They are not hiring currently due to a potential acquisition."</blockquote><blockquote>"He's currently working on restructuring his teams."</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Recommended Actions — What We Suggest for May and Beyond</h2>
+        <div class="content">Based on everything heard across April's activity, we recommend the following actions to improve campaign performance and market positioning going forward.<br><br>1. Build a structured 'No, Not Now' follow-up sequence.<br>With 14 prospects expressing timing-based hesitation and several providing specific re-engagement windows — including Barry Hurst (four weeks), Sue (October), Martina and Jason (six months) — there is a ready-built pipeline of warm contacts that should be managed through a disciplined follow-up cadence. Each of these should be entered into a dated callback schedule with personalised context from the original conversation retained. This is low-cost, high-probability pipeline development.<br><br>2. Sharpen prospect list targeting to exclude non-direct sales models.<br>A recurring theme this month was prospects whose business model — channel-only, partner ecosystem, or distribution — means they do not hire direct sales reps at all. Filtering out companies that operate purely on indirect or channel models before dialling would reduce wasted conversations and improve the ratio of genuinely addressable prospects per session.<br><br>3. Prioritise stakeholder identification before or during calls.<br>A number of conversations stalled because the individual reached was not a hiring decision-maker and could not or would not provide a referral. Where gatekeepers or non-decision-makers are encountered, a structured approach to surfacing the correct contact — whether through a direct question, LinkedIn research, or a request for a warm introduction — would reduce the 'No, Not Me (No Referral)' outcomes and open additional pathways into target accounts.<br><br>4. Develop a specific response to the AI-in-recruitment conversation.<br>Barry's unprompted reference to AI and the importance of human judgement in recruitment suggests this is becoming a topic that prospects are thinking about. Merritt would benefit from having a clear, confident point of view on how its use of AI and video assessments complements rather than replaces the human element — this could become a differentiating talking point rather than a source of friction.<br><br>5. Use merit.io more proactively as a proof point during calls.<br>The job board was referenced in multiple calls as a resource offered to prospects and individuals in transition alike. Where prospects express scepticism about candidate quality or claim they can manage sourcing independently via LinkedIn, merit.io's scale — 30,000 candidates — is a concrete and credible counter. Embedding this figure more consistently into early-stage conversations could help shift perception from 'recruiter' to 'talent platform' and reduce the friction created by internal recruitment objections.</div>
+        <blockquote>"She declined my offer to send a link to our job board with 30,000 candidates."</blockquote><blockquote>"Barry noted the importance of maintaining a human element in recruitment amid the use of AI."</blockquote><blockquote>"He provided his email for future communication and is currently working on restructuring his teams."</blockquote>
+      </div>
+    
+      </div>
+    
+<div class="footer">PHONE FIRST, ALWAYS</div>
+<script>
+function showTab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
+}
+</script>
+</body>
+</html>
