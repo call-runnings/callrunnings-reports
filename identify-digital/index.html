@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Runnings Report — Identify Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#0d0f1a 0%,#141728 60%,#1a1d35 100%);min-height:100vh;color:#fff;padding:0}
+  .header{padding:32px 48px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:20px}
+  .header img{height:80px;display:block}
+  .header-text h1{font-size:22px;font-weight:700;color:#fff}
+  .header-text p{font-size:13px;color:rgba(200,216,240,0.6);margin-top:4px}
+  .tabs{display:flex;gap:6px;padding:20px 48px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+  .tab{padding:9px 22px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(200,216,240,0.5);border:1px solid rgba(255,255,255,0.1);border-bottom:none;border-radius:8px 8px 0 0;cursor:pointer;transition:all 0.15s}
+  .tab.active,.tab:hover{background:rgba(96,96,208,0.2);color:#fff;border-color:rgba(96,96,208,0.4)}
+  .panel{display:none;padding:32px 48px 48px;max-width:900px}
+  .panel.active{display:block}
+  .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:28px}
+  .stat-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:14px;text-align:center}
+  .stat-value{font-size:26px;font-weight:700;line-height:1}
+  .stat-label{font-size:9px;color:rgba(200,216,240,0.45);text-transform:uppercase;letter-spacing:0.1em;margin-top:5px}
+  .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:24px 28px;margin-bottom:16px;backdrop-filter:blur(8px)}
+  .card h2{font-size:14px;font-weight:700;color:#C8D8F0;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(48,144,192,0.3)}
+  .content{font-size:13px;color:rgba(200,216,240,0.85);line-height:1.8}
+  blockquote{margin:14px 0 4px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:3px solid #3090C0;border-radius:0 8px 8px 0;font-size:12px;color:#C8D8F0;font-style:italic;line-height:1.6}
+  .footer{text-align:center;padding:32px 48px;font-size:11px;color:rgba(200,216,240,0.3);border-top:1px solid rgba(255,255,255,0.06);letter-spacing:0.08em}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="../assets/logo_bobsled.png" alt="Call Runnings">
+  <div class="header-text">
+    <h1>Identify Digital — Monthly Report</h1>
+    <p>Prepared by Call Runnings</p>
+  </div>
+</div>
+<div class="tabs">
+    <button class="tab active" onclick="showTab(0)">April 2026</button>
+  </div>
+
+      <div class="panel active" id="panel-0">
+        
+        <div class="stats-grid">
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">501</div>
+              <div class="stat-label">Total Dials</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#3090C0">86</div>
+              <div class="stat-label">Connected</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#3090C0">62</div>
+              <div class="stat-label">Conversations</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#FE6601">3</div>
+              <div class="stat-label">Meetings</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#32B241">1</div>
+              <div class="stat-label">Activated</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">4</div>
+              <div class="stat-label">No, Not Now</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">48</div>
+              <div class="stat-label">No, Not Ever</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">1</div>
+              <div class="stat-label">No, Not Me (Ref)</div>
+            </div>
+          
+            <div class="stat-card">
+              <div class="stat-value" style="color:#C8D8F0">2</div>
+              <div class="stat-label">No, Not Me (No Ref)</div>
+            </div>
+          
+        </div>
+        
+      <div class="card">
+        <h2>Campaign Overview</h2>
+        <div class="content">During April 2026, the campaign achieved 501 total dials, resulting in 86 connected calls and 62 substantive conversations. The month delivered 3 meetings booked with 1 activated prospect, demonstrating engagement with qualified opportunities.<br><br>Disposition breakdown shows: 4 prospects indicated 'No, Not Now' - representing timing challenges rather than outright rejection. 48 prospects responded with 'No, Not Ever' - primarily due to existing systems or lack of relevance. 1 prospect provided a referral ('No, Not Me - Ref'), whilst 2 indicated the solution wasn't relevant to them without referrals ('No, Not Me - No Ref').<br><br>The conversion rate from conversations to meetings (4.8%) reflects a market characterised by established incumbent solutions and recent implementations. However, the quality of engaged prospects shows genuine pain points around existing system limitations and contract renewal windows.</div>
+        
+      </div>
+    
+      <div class="card">
+        <h2>Competitor & Market Intelligence</h2>
+        <div class="content">Seven distinct competitor platforms were mentioned across conversations, indicating a mature and crowded marketplace.<br><br>Simpro emerged as a significant competitor, with one prospect having 'conducted extensive due diligence over 12 months' before implementation. The prospect noted they were 'in the implementation phase' and already 'working on automating processes to reduce manual work', suggesting Simpro positions strongly on automation capabilities.<br><br>Job Watch was mentioned with notably negative sentiment. One prospect described it as 'becoming expensive and less effective', revealing potential vulnerabilities in established solutions. This prospect is 'considering options for a custom job management platform' with their contract ending in December.<br><br>HubSpot appeared in the CRM/booking space, with one prospect stating they 'use HubSpot for booking and timesheets' and feel they are 'ahead of the game with their IT systems'.<br><br>Paper Drop was mentioned as a recent implementation for 'streamline processes like booking jobs and timesheets'.<br><br>PinPro surfaced following a company merger, described as 'challenging but are committed to for now', suggesting integration difficulties post-acquisition.<br><br>Netsuite featured as an enterprise ERP solution with one prospect having an 'in-house expert who has been working on their ERP system for over a year'.<br><br>The competitive landscape reveals three distinct market segments: enterprises using major ERP systems (Netsuite, Simpro), mid-market using specialised field service platforms (Job Watch, PinPro, Paper Drop), and businesses leveraging general CRM tools (HubSpot) adapted for field operations.</div>
+        <blockquote>"conducted extensive due diligence over 12 months before choosing Simpro"</blockquote><blockquote>"currently tied to a system called Job Watch that has been becoming expensive and less effective"</blockquote><blockquote>"they found challenging but are committed to for now"</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Common Objections</h2>
+        <div class="content">The dominant objection category was existing systems already in place, appearing in approximately 60% of substantive conversations. These fell into three subcategories:<br><br>1. Recent Implementations: Multiple prospects had just completed system deployments, creating a 'honeymoon period' objection. One stated 'they recently implemented a system, Paper Drop' whilst another noted 'recently signed off on a new software solution (Simpro) and are in the implementation phase'. This reveals a market with active purchasing behaviour, but also a 12-18 month exclusion window post-purchase.<br><br>2. In-House Development: A significant subset of prospects had invested in bespoke solutions. One mentioned they 'have a fully bespoke ERP system in place', another stated they have 'their own software developer' handling tasks internally, and one noted they are 'nearing completion of their own app integrated with their system'. This suggests businesses of certain scale prefer build over buy, likely due to specific workflow requirements.<br><br>3. Long-Term Investments: Several prospects emphasised sunk costs in existing platforms. One remarked on a CRM system they've 'invested significant resources into it over the past 10 years', revealing switching costs as a significant barrier.<br><br>Timing objections formed the second category, with prospects citing immediate operational pressures. Examples included 'currently focused on implementing AI and moving offices', 'heading into a meeting', and one who was 'overwhelmed with tasks today'. These suggest decision-makers are time-poor and require compelling reasons to prioritise new evaluations.<br><br>Irrelevance objections appeared where prospects operated under parent company systems ('work under larger firms' systems and adapt to their requirements') or had structural differences (contractors vs employed field staff). This indicates list quality and qualification criteria require refinement.<br><br>Notably, price was never mentioned as an objection, suggesting cost is not the primary barrier - rather, change management and timing dominate the decision calculus.</div>
+        <blockquote>"recently signed off on a new software solution (Simpro) and are in the implementation phase"</blockquote><blockquote>"have a fully bespoke ERP system in place for managing jobs, timesheets, and risk assessments"</blockquote><blockquote>"currently focused on implementing AI and moving offices, making it hard to fit in new projects"</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Prospect Questions</h2>
+        <div class="content">Direct questions from prospects were relatively infrequent, suggesting the opening proposition may not be generating sufficient curiosity or may be reaching prospects at low-intent moments.<br><br>The most significant question category related to data sourcing. One prospect asked 'how I obtained his contact information', revealing sensitivity around GDPR and contact appropriateness when personal mobile numbers are reached. This indicates the importance of leading with business contact channels and having a clear, compliant data provenance statement prepared.<br><br>Availability questions dominated gatekeeper interactions, with multiple instances of 'asked for my name and reason for calling to check the availability'. This is standard gatekeeping protocol but reveals that value propositions must work through intermediaries, not just decision-makers.<br><br>One prospect requested clarification around timing, asking 'when would be a better time to call back', suggesting openness to future conversation if approached at the right moment.<br><br>The scarcity of detailed technical or capability questions indicates conversations are often not progressing beyond initial positioning. However, the one prospect who did engage substantively (Harrison from Maine Electrical) 'shared challenges with RAMs and job management', demonstrating that when pain points are surfaced, dialogue becomes collaborative rather than defensive.<br><br>The absence of pricing, implementation timeline, or integration capability questions suggests conversations are concluding before reaching the evaluation stage - prospects are making relevance decisions based on current state (satisfied with existing system) rather than exploring potential future state improvements.</div>
+        <blockquote>"asked how I obtained his contact information"</blockquote><blockquote>"shared challenges with RAMs and job management"</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Market Themes</h2>
+        <div class="content">Four distinct themes emerged from April's conversations:<br><br>1. Digital Maturity Divide: The market exhibits a clear split between digitally mature organisations and those still transitioning from paper. One prospect noted they are 'moving away from paper' but not ready for new solutions, whilst another stated they 'feel they are ahead of the game with their IT systems'. This suggests a barbell market structure - sophisticated buyers have already selected enterprise platforms, whilst emerging buyers aren't yet ready for purchase. The middle market (dissatisfied with current tools) represents the viable opportunity zone.<br><br>2. The In-House Development Trend: A notable number of field service businesses are building proprietary solutions. Multiple prospects mentioned having 'their own IT department and contractors' creating 'a tailored app for their needs', whilst another had 'an in-house IT team that has already automated their tasks with their own system'. This trend likely reflects either highly specific workflow requirements that off-the-shelf solutions don't address, or previous negative experiences with vendor platforms. One prospect explicitly mentioned 'frustrations about a previous app investment that didn't perform as promised', validating this hypothesis.<br><br>3. Contract Renewal Windows as Opportunity Moments: The prospect using Job Watch who noted their 'contract ends in December' and plans to 'start looking around June or July' reveals the critical importance of timing. Multiple conversations indicated satisfaction is often inertia rather than enthusiasm. The prospect committed to Simpro after '12 months' of evaluation, suggesting enterprise sales cycles remain extended and early engagement is essential.<br><br>4. Operational Overwhelm: Decision-makers consistently presented as time-constrained. Phrases like 'overwhelmed with tasks today', 'heading into a meeting', 'in the middle of something', and 'more projects than they can handle' appeared throughout conversations. One prospect was even 'filming' when called. This theme suggests two strategic implications: outreach must be exceptionally respectful of time, and positioning should emphasise time savings and operational relief rather than requiring significant evaluation investment.<br><br>A subsidiary theme emerged around organisational structure affecting buying decisions. Prospects operating as subcontractors ('work under larger firms' systems'), those within large conglomerates ('part of a large French conglomerate'), and merged entities ('their company merged') demonstrated different decision-making authorities and requirements, suggesting firmographic qualification criteria should include ownership structure and operational independence.</div>
+        <blockquote>"frustrations about a previous app investment that didn't perform as promised"</blockquote><blockquote>"contract ends in December... likely start looking around June or July"</blockquote><blockquote>"conducted extensive due diligence over 12 months"</blockquote><blockquote>"currently have more projects than they can handle"</blockquote>
+      </div>
+    
+      <div class="card">
+        <h2>Recommended Actions</h2>
+        <div class="content">Based on April's intelligence, we recommend five strategic adjustments:<br><br>1. Implement Contract Expiry Tracking & Nurture Sequencing: The Job Watch prospect with a December contract end provides a blueprint. Develop a systematic approach to identify prospects' current contract end dates during discovery, then enter them into timed nurture sequences that activate 4-6 months before renewal decisions. Given the '12 months' evaluation cycle mentioned by the Simpro buyer, earlier engagement is critical. Create content specifically for the 'evaluation phase' that can be shared with prospects who acknowledge future need but have timing constraints.<br><br>2. Develop Competitive Displacement Messaging for Identified Pain Points: Job Watch's reputation as 'becoming expensive and less effective' represents an opportunity. Create targeted content addressing common pain points with incumbent solutions (cost creep, degrading effectiveness, poor support) that can be deployed when these competitors are mentioned. Focus particularly on the post-implementation reality vs. promise gap, as one prospect mentioned 'frustrations about a previous app investment that didn't perform as promised'. Position around risk mitigation and realistic expectation-setting.<br><br>3. Refine Targeting to Exclude Recent Implementers & Subcontractor-Heavy Firms: Approximately 25% of conversations reached prospects who had recently implemented systems or operated under parent company platforms. Enhance list qualification to exclude companies showing recent case studies, press releases, or reviews mentioning competitor implementations within the past 18 months. Similarly, identify and deprioritise businesses whose revenue model centres on subcontracting to larger firms, as they typically lack system autonomy.<br><br>4. Create a 'Build vs. Buy' Positioning Track: The frequency of in-house development mentions suggests a market segment that defaults to custom builds. Develop specific messaging and content addressing total cost of ownership, ongoing maintenance burden, feature development velocity, and opportunity cost of internal IT resources. The prospect who stated their in-house app 'has a long way to go before it's fully mastered' reveals the underestimated complexity. Testimonials from businesses who attempted builds before purchasing could be particularly compelling.<br><br>5. Establish a 'Time-Respect' Protocol for Ultra-Busy Prospects: Given the operational overwhelm theme, test an alternative approach for time-constrained prospects: instead of requesting meeting time, offer to send a 3-minute video demonstrating one specific capability relevant to their mentioned challenge, with no follow-up unless they respond. This respects their time constraints whilst maintaining visibility. For prospects like the one who was 'overwhelmed with tasks today' but showed interest in 'managing jobs, time sheets, and risk assessments technology', this low-friction approach may generate better medium-term conversion than traditional meeting requests.</div>
+        
+      </div>
+    
+      </div>
+    
+<div class="footer">PHONE FIRST, ALWAYS</div>
+<script>
+function showTab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
+}
+</script>
+</body>
+</html>
