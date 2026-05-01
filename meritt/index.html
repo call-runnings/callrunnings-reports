@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Runnings — Meritt</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:#5558C8;background-image:radial-gradient(ellipse 80% 60% at 20% 10%,#7068D8 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,#3890C8 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 50% 50%,#5558C8 0%,#4048A8 100%);min-height:100vh;color:#fff;padding-bottom:80px}
+
+  /* ── Hero ── */
+  .hero{position:relative;overflow:hidden;padding:40px 56px 0;display:flex;align-items:flex-end;justify-content:space-between;min-height:220px;border-bottom:1px solid rgba(255,255,255,0.12)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,8,40,0.45) 0%,rgba(10,8,40,0.1) 60%,transparent 100%);pointer-events:none}
+  .hero-left{position:relative;z-index:2;padding-bottom:36px}
+  .hero-logo{height:52px;display:block;margin-bottom:24px}
+  .hero-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.55);margin-bottom:8px}
+  .hero-title{font-size:32px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:6px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,0.65);font-weight:400}
+  .hero-illustration{position:relative;z-index:1;height:200px;width:auto;object-fit:contain;object-position:bottom;flex-shrink:0;margin-left:32px;opacity:0.95;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.25))}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;gap:0;padding:0 56px;border-bottom:2px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.12)}
+  .tab{padding:14px 28px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.45);border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all 0.15s;letter-spacing:0.04em}
+  .tab.active,.tab:hover{color:#fff;border-bottom-color:#FE6601}
+
+  /* ── Panel ── */
+  .panel{display:none;padding:32px 56px 64px;max-width:960px}
+  .panel.active{display:block}
+
+  /* ── Footer ── */
+  .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
+  .footer-logo{height:28px;opacity:0.45}
+  .footer-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-left">
+    <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="hero-logo" alt="Call Runnings">
+    <div class="hero-eyebrow">Monthly Market Intelligence Report</div>
+    <h1 class="hero-title">Meritt</h1>
+    <div class="hero-sub">Prepared by Call Runnings</div>
+  </div>
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
+</div>
+<div class="tabs">
+    <button class="tab active" onclick="showTab(0)">April 2026</button>
+  </div>
+
+    <div class="panel active" id="panel-0">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">738</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">61</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">1</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">2</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">14</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">39</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">4</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div>
+  <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">April 2026 was a month defined by structural friction rather than outright rejection. The market felt cautious — not hostile — with the majority of conversations landing in a holding pattern of internal restructuring, recent hires, or acquisition uncertainty. Where doors opened, they opened thoughtfully: prospects were willing to talk, willing to connect, and in several cases willing to revisit in a defined timeframe. That considered receptiveness is a meaningful signal beneath what the headline numbers might suggest.</div>
+    
+  </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:4px">Competitor & Market Intelligence</div>
+        </div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" style="height:64px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04)">
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">Competitor</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">What was Said</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Freq</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Internal recruitment teams</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple prospects cited having in-house talent acquisition functions as their primary reason for not engaging. Pamela at Mytek noted they are 'managing the process in-house' despite personally disagreeing with the decision. Yogi mentioned a 'talent acquisition team in place' as the reason to end the conversation.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~5</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">LinkedIn (job advertising)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Barry mentioned his company 'primarily post ads on LinkedIn' as their current recruitment approach, positioning it as a sufficient alternative to Meritt's platform.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Bright Purple</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Nigel referenced Bright Purple as his primary hiring partner, indicating they 'primarily hires through Bright Purple' but acknowledged potential need for Meritt if hiring needs expand.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Preferred/retained recruiters</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Sue mentioned working with 'a preferred recruiter' and not expecting to move outside that relationship until their new fiscal year in October.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Channel and partner hiring models</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">James noted his company 'operate on a channel model and do not hire direct sales reps,' and Chris mentioned building a partner network and only hiring people he already knows personally — both structural alternatives to traditional sales headcount.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr></tbody>
+      </table>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Common Objections</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/yes-and-no.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not hiring right now</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~12 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They have closed vacancies currently and aren't hiring for sales roles. Future hiring depends on the performance of their existing sales team."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the dominant objection of the month and in most cases reflected a genuine temporary pause rather than a fundamental lack of need. Prospects like Martina, Jess, and Sue all indicated conditions under which hiring would resume. This objection should be treated as a timing challenge, not a closed door — the priority is to secure specific follow-up dates rather than accepting a vague 'not now'.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">We handle recruitment internally</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They currently use an internal recruitment company and primarily post ads on LinkedIn."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several organisations have invested in internal talent functions and use that as a reason to disengage. Notably, at least one internal stakeholder (Pamela at Mytek) personally disagreed with this policy — suggesting there is latent dissatisfaction with the internal model that isn't being surfaced. Messaging that speaks to what internal teams can't do — speed, specialist networks, AI screening — may help reframe this objection.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Wrong person / not involved in hiring</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He indicated he isn't the right person to discuss hiring plans and referenced an internal talent team, though he couldn't recall their names."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring issue was reaching contacts who had no visibility into hiring decisions or who had moved roles entirely. This points to a contact data quality issue rather than a market receptiveness issue. Improving targeting to verified hiring managers and HR leads would reduce wasted conversations significantly.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Recent hire or team already built out</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They've recently hired and have a talent acquisition team in place, so there's no current opportunity for further conversation."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Some prospects had genuinely just completed a hiring cycle and were in a consolidation phase. This is a natural market rhythm. These contacts are worth flagging for re-engagement in Q3/Q4 once new headcount plans typically form, rather than being marked as permanently closed.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Acquisition, restructure, or administration</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They are not hiring currently due to a potential acquisition and may be looking for a new role himself."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Organisational instability — whether acquisition, restructure, or in one case administration — rendered several conversations unproductive through no fault of the proposition. These contacts should be monitored rather than followed up immediately; once structural uncertainty resolves, hiring activity often accelerates sharply.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Only hires people they already know</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He's currently developing a partner network and will only hire trusted individuals he already knows for now."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This trust-based hiring objection typically reflects early-stage companies where founders are still building their core team personally. It is a genuine cultural barrier in the short term. Positioning merit.io as a discovery tool for warm introductions — rather than cold candidate supply — may be more compelling for this audience.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">What Prospects Asked</div>
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send company details and candidate profiles?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Peter's request for written materials and candidate profiles before involving his hiring team is a classic evaluation step — it suggests genuine interest but a need to socialise the proposition internally. This is a strong buying signal and indicates that a well-structured one-pager or sample candidate deck could be a meaningful conversion tool.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">What is merit.io and how does the job board work?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">References to merit.io came up organically across several calls — both as a tool offered to displaced salespeople and as a resource mentioned to hiring managers. The fact that it is being introduced mid-conversation suggests prospects are receptive once they hear about it, but it may not be leading the pitch strongly enough. Proactively positioning the scale of the platform (30,000 candidates was mentioned in one call) earlier in conversations could accelerate interest.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">How do you screen candidates — what's the AI element?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Barry raised the importance of maintaining a human element alongside AI in recruitment, implying he had questions about how the screening process works in practice. This suggests that where AI-assisted screening is part of the Meritt proposition, prospects want reassurance that it enhances rather than replaces human judgement. A clear, confident explanation of the process could neutralise this concern before it becomes a blocker.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Market Themes</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/shopkeepers.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The market is paused, not closed</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">The overwhelming tone of April's conversations was one of temporary suspension rather than structural disinterest. Hiring freezes, team restructures, and fiscal year transitions are creating a gap between acknowledged need and active buying. Prospects are not saying sales recruitment is irrelevant — they are saying the timing is wrong. This distinction matters enormously for how the pipeline is managed over the coming quarter.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Internal recruitment is the dominant incumbent</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Across multiple conversations, in-house talent teams and LinkedIn job posting emerged as the default incumbent rather than any named external recruiter. This means Meritt is frequently competing not against another agency but against the perceived sufficiency of doing it internally. The commercial case for Meritt needs to address this directly — particularly around speed, quality, and the hidden cost of internal-only hiring.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Contact data quality is limiting reach</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable portion of April's calls were lost to stale data — people who had left companies, organisations in administration, incorrect contacts, and unreachable numbers. This is suppressing the campaign's true conversion rate on live, relevant prospects. Improving data hygiene and implementing a pre-call verification step where possible would materially improve the efficiency of each dialling session.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Displaced salespeople are an untapped audience touchpoint</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several calls unexpectedly landed on salespeople who had recently been made redundant or were between roles. In each case, merit.io was offered as a resource and received warmly. While these individuals are not immediate revenue opportunities, they represent a goodwill channel and a potential talent supply pipeline that reinforces the platform's value to hiring managers. A lightweight process for capturing these contacts could build long-term brand equity.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Future pipeline is building through agreed follow-ups</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A healthy number of prospects — including Martina, Barry (at iBright Utilities), Sue, and Jason — agreed to specific future touchpoints, with timelines ranging from four weeks to six months. This represents a structured pipeline of warm re-engagements rather than cold outreach, and should be treated as a priority follow-up list heading into May and beyond.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Recommended Actions</div>
+      </div>
+      <div style="padding:6px 24px 6px">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Prioritise follow-up with the four prospects who gave explicit timelines and contact details — Barry at iBright Utilities (four weeks, b.hurst@ibrightutilities.co.uk), Sue (end of year), Martina (six months), and Jason (six months) — and build these into a structured re-engagement sequence with personalised context from the original conversation.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a concise written asset — a one-page overview with sample candidate profiles or a brief case study — to deploy when prospects like Peter request something to share with their hiring team internally. This removes friction at the handoff stage and increases the likelihood of a meeting being arranged.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Audit and refresh the contact data being used for outreach, with particular focus on verifying current role and company status before dialling. The volume of calls lost to leavers, wrong contacts, and companies in administration suggests a data quality issue that is suppressing results independent of the proposition or approach.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Strengthen the opening positioning around merit.io's candidate pool scale and AI-assisted screening, leading with the platform's tangible differentiators earlier in calls rather than introducing them reactively. Given the prevalence of internal recruitment as the default incumbent, a compelling first-60-seconds case for why Meritt outperforms in-house hiring would address the most common barrier directly.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Create a lightweight tracking mechanism for displaced salespeople encountered during calls — capturing their details for the merit.io job board pipeline. This builds a warm talent pool that can be referenced in future conversations with hiring managers, reinforcing the platform's depth and relevance.</p>
+      </div></div>
+    </div></div>
+    </div>
+<div class="footer">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
+  <span class="footer-tag">Phone First, Always</span>
+</div>
+<script>
+function showTab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
+}
+</script>
+</body>
+</html>
