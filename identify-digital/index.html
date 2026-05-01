@@ -3,133 +3,283 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Call Runnings Report — Identify Digital</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Call Runnings — Identify Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#4D6BC0 0%,#6060D0 55%,#7B7BE3 100%);min-height:100vh;color:#fff;padding:0}
-  .header{padding:32px 48px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:20px}
-  .header img{height:80px;display:block}
-  .header-text h1{font-size:22px;font-weight:700;color:#fff}
-  .header-text p{font-size:13px;color:rgba(255,255,255,0.72);margin-top:4px}
-  .tabs{display:flex;gap:6px;padding:20px 48px 0;border-bottom:1px solid rgba(255,255,255,0.15)}
-  .tab{padding:9px 22px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);border-bottom:none;border-radius:8px 8px 0 0;cursor:pointer;transition:all 0.15s}
-  .tab.active,.tab:hover{background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.4)}
-  .panel{display:none;padding:32px 48px 48px;max-width:900px}
+  body{font-family:'Poppins',sans-serif;background:#5558C8;background-image:radial-gradient(ellipse 80% 60% at 20% 10%,#7068D8 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,#3890C8 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 50% 50%,#5558C8 0%,#4048A8 100%);min-height:100vh;color:#fff;padding-bottom:80px}
+
+  /* ── Hero ── */
+  .hero{position:relative;overflow:hidden;padding:40px 56px 0;display:flex;align-items:flex-end;justify-content:space-between;min-height:220px;border-bottom:1px solid rgba(255,255,255,0.12)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,8,40,0.45) 0%,rgba(10,8,40,0.1) 60%,transparent 100%);pointer-events:none}
+  .hero-left{position:relative;z-index:2;padding-bottom:36px}
+  .hero-logo{height:52px;display:block;margin-bottom:24px}
+  .hero-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.55);margin-bottom:8px}
+  .hero-title{font-size:32px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:6px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,0.65);font-weight:400}
+  .hero-illustration{position:relative;z-index:1;height:200px;width:auto;object-fit:contain;object-position:bottom;flex-shrink:0;margin-left:32px;opacity:0.95;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.25))}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;gap:0;padding:0 56px;border-bottom:2px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.12)}
+  .tab{padding:14px 28px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.45);border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all 0.15s;letter-spacing:0.04em}
+  .tab.active,.tab:hover{color:#fff;border-bottom-color:#FE6601}
+
+  /* ── Panel ── */
+  .panel{display:none;padding:32px 56px 64px;max-width:960px}
   .panel.active{display:block}
-  .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:28px}
-  .stat-card{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:14px;text-align:center}
-  .stat-value{font-size:26px;font-weight:700;line-height:1}
-  .stat-label{font-size:9px;color:rgba(255,255,255,0.65);text-transform:uppercase;letter-spacing:0.1em;margin-top:5px}
-  .card{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:24px 28px;margin-bottom:16px;backdrop-filter:blur(8px)}
-  .card h2{font-size:14px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.2)}
-  .content{font-size:13px;color:rgba(255,255,255,0.88);line-height:1.8}
-  blockquote{margin:14px 0 4px;padding:10px 16px;background:rgba(48,144,192,0.18);border-left:3px solid #3090C0;border-radius:0 8px 8px 0;font-size:12px;color:#fff;font-style:italic;line-height:1.6}
-  .footer{text-align:center;padding:32px 48px;font-size:11px;color:rgba(255,255,255,0.45);border-top:1px solid rgba(255,255,255,0.12);letter-spacing:0.08em}
+
+  /* ── Footer ── */
+  .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
+  .footer-logo{height:28px;opacity:0.45}
+  .footer-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
 </style>
 </head>
 <body>
-<div class="header">
-  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" alt="Call Runnings">
-  <div class="header-text">
-    <h1>Identify Digital — Monthly Report</h1>
-    <p>Prepared by Call Runnings</p>
+<div class="hero">
+  <div class="hero-left">
+    <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="hero-logo" alt="Call Runnings">
+    <div class="hero-eyebrow">Monthly Market Intelligence Report</div>
+    <h1 class="hero-title">Identify Digital</h1>
+    <div class="hero-sub">Prepared by Call Runnings</div>
   </div>
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
 </div>
 <div class="tabs">
     <button class="tab active" onclick="showTab(0)">April 2026</button>
   </div>
 
-      <div class="panel active" id="panel-0">
-        
-        <div class="stats-grid">
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">501</div>
-              <div class="stat-label">Total Dials</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#3090C0">86</div>
-              <div class="stat-label">Connected</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#3090C0">62</div>
-              <div class="stat-label">Conversations</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#FE6601">3</div>
-              <div class="stat-label">Meetings</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#32B241">1</div>
-              <div class="stat-label">Activated</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">4</div>
-              <div class="stat-label">No, Not Now</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">48</div>
-              <div class="stat-label">No, Not Ever</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">1</div>
-              <div class="stat-label">No, Not Me (Ref)</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">2</div>
-              <div class="stat-label">No, Not Me (No Ref)</div>
-            </div>
-          
+    <div class="panel active" id="panel-0">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">501</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">62</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">3</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">1</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">4</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">48</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">1</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">2</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div>
+  <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">April 2026 was a month of genuine market contact — the field service sector is clearly active, opinionated, and mid-movement on technology decisions. A meaningful portion of conversations revealed prospects who are either freshly committed to a new system, deep in implementation, or cautiously watching a home-built solution take shape. The market is not dormant; it is in transition, and that transition is creating both short-term resistance and identifiable future opportunity. The calls that landed best were the ones that found prospects who recognised the pain — manual processes, ageing or expensive platforms, and the operational drag of paper-based workflows — even when the timing wasn't right to act.</div>
+    
+  </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:4px">Competitor & Market Intelligence</div>
         </div>
-        
-      <div class="card">
-        <h2>Campaign Overview — April 2026</h2>
-        <div class="content">April 2026 represented a solid foundation month for Identify Digital's outbound campaign. Across 501 total dials, we achieved 86 connected calls and 62 meaningful conversations — a connection rate of 17.2% and a conversation rate of 12.4% against total dials. From those conversations, 3 meetings were booked and 1 prospect was fully activated, demonstrating early-stage pipeline generation in what remains a considered, relationship-led market.<br><br>The full disposition breakdown for the month is as follows:<br><br>• Total Dials: 501<br>• Connected Calls: 86<br>• Conversations: 62<br>• Meetings Booked: 3<br>• Activated: 1<br>• No, Not Now: 4<br>• No, Not Ever: 48<br>• No, Not Me (Referred): 1<br>• No, Not Me (No Referral): 2<br><br>The volume of 'No, Not Ever' dispositions (48) is the most significant figure to contextualise. In a market where bespoke and embedded software solutions are commonplace, a high proportion of firm rejections is expected at this stage of a campaign — many prospects are mid-implementation, locked into existing contracts, or operating with in-house development capability. The 'No, Not Now' category (4) and the referral generated (1) represent meaningful signals worthy of structured follow-up. Overall, April has delivered useful market intelligence, a live pipeline, and a clear picture of where the addressable opportunity sits.</div>
-        
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" style="height:64px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
       </div>
-    
-      <div class="card">
-        <h2>Competitor & Market Intelligence — What the Market Is Using</h2>
-        <div class="content">A notable volume of prospects across April's conversations referenced existing software solutions, giving us a clear view of the competitive landscape Identify Digital is operating within. The following platforms were mentioned directly by name:<br><br>**Simpro** — Referenced by one prospect who had spent 12 months conducting due diligence before selecting it. He described the process as thorough and deliberate, suggesting Simpro is winning deals at the enterprise-consideration level. The sentiment was one of commitment and investment rather than enthusiasm.<br><br>**HubSpot** — Mentioned by one prospect as the tool being used for booking and timesheet management. He expressed confidence in his current setup, describing his business as 'ahead of the game' with IT systems. This represents an unconventional use of HubSpot and may indicate a gap that a purpose-built solution could address.<br><br>**PinPro** — Named by a prospect whose company had recently merged and adopted this platform for field management. He acknowledged the platform was 'challenging' but described the business as committed to it for now, suggesting latent dissatisfaction.<br><br>**Job Watch** — One of the more commercially valuable intelligence points of the month. A prospect described Job Watch as 'becoming expensive and less effective,' and confirmed he would likely begin evaluating alternatives from June or July, with a contract end date in December. This is a warm future opportunity.<br><br>**Paper Drop** — Referenced by one prospect as a recently implemented solution for job booking and timesheets. Sentiment was neutral and the implementation was recent, making re-engagement unlikely in the short term.<br><br>**NetSuite (ERP)** — One prospect mentioned an in-house ERP built on NetSuite, with a dedicated internal resource working on it for over a year. This reflects a growing trend of businesses investing significant internal resource into customising off-the-shelf ERP platforms rather than procuring purpose-built field service tools.<br><br>**In-house / bespoke development** — Several prospects referenced entirely self-built platforms, including one actively trialling an in-house developed job management platform, another whose company had a fully bespoke ERP, and a third whose internal IT team had automated processes entirely. One prospect explicitly mentioned having their own software developer on staff. This pattern of internal development is a consistent and recurring competitive force in this market.</div>
-        <blockquote>"They've been becoming expensive and less effective — Stuart, on Job Watch"</blockquote><blockquote>"He conducted extensive due diligence over 12 months before choosing Simpro"</blockquote><blockquote>"They found it challenging but are committed to it for now — on PinPro"</blockquote><blockquote>"They built specific solutions internally"</blockquote>
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04)">
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">Competitor</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">What was Said</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Freq</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Simpro</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Paul had completed twelve months of due diligence before selecting Simpro and was already in implementation. A deeply considered, locked-in decision with no near-term re-evaluation likely.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Job Watch</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Stuart described Job Watch as 'becoming expensive and less effective' — he's actively dissatisfied and is planning to look for alternatives from around June or July as his contract approaches its December end.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">HubSpot (repurposed for field ops)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Dominic mentioned using HubSpot for booking and timesheets, framing it as a sign they were 'ahead of the game' — using a CRM tool to cover field service functions rather than a dedicated platform.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">PinPro</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Matthew's merged company had moved to PinPro for field management. He acknowledged it was challenging but said they were committed to it for now. No immediate opportunity.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Paper Drop</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">James had recently implemented Paper Drop to handle job booking and timesheets. He confirmed they were set up and the timing wasn't right for a conversation.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">NetSuite (ERP with in-house customisation)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">David referenced an in-house expert who had spent over a year building out their NetSuite ERP. A heavily invested internal solution with no appetite for change.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">In-house / bespoke development</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple prospects — including Gavin (fully bespoke ERP), Nathan (own software developer), Chris (in-house IT team with automated systems), Andy (near-completion proprietary app), and Ben (trialling an in-house platform) — cited internal builds as their reason for not engaging.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~5</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Parent company / group-mandated systems</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Darren works under larger firms' systems and adapts to their requirements. Tristan's business is part of a large French conglomerate. Neither had autonomy over technology decisions.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr></tbody>
+      </table>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Common Objections</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/yes-and-no.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
       </div>
-    
-      <div class="card">
-        <h2>Common Objections — What the Market Is Saying</h2>
-        <div class="content">The objections encountered throughout April were consistent and revealing. Rather than reflecting a resistance to the value proposition itself, the majority point to timing and incumbency challenges rather than a fundamental mismatch between product and market need.<br><br>**1. 'We already have something in place'**<br>The most frequent objection of the month. Prospects cited a wide range of existing solutions — from enterprise platforms like Simpro and NetSuite to bespoke internal builds. The sheer variety of tools being used suggests the market is fragmented, with no single dominant solution, which represents an ongoing opportunity. Many of these systems appear to have been adopted out of necessity rather than strategic choice.<br><br>**2. 'We're currently mid-implementation'**<br>Several prospects were in active implementation phases and were unwilling to consider alternatives mid-process. This is a timing objection rather than a permanent 'no.' These prospects represent future pipeline if re-engaged at the right moment.<br><br>**3. 'We handle it in-house'**<br>A recurring theme across multiple calls was the presence of internal IT resource — developers, ERP specialists, or dedicated technical staff — who had built or were building bespoke solutions. This reflects a market segment that understands the problem intimately but has chosen self-sufficiency. The key question for these prospects is sustainability and ongoing maintenance cost.<br><br>**4. 'It's not relevant to how we operate'**<br>Some prospects indicated that their business model — for example, working entirely as a subcontractor under larger firms' systems — meant that the offering simply did not apply to them. This is a useful data point for refining targeting criteria going forward.<br><br>**5. 'Now isn't the right time'**<br>Beyond implementation, other timing barriers included office moves, AI integration projects, and general business change. One prospect referenced a previous poor experience with an app investment that had not delivered on its promises, which contributed to his reluctance to engage. This suggests that trust and proof of delivery will be important conversion factors in this market.</div>
-        <blockquote>"We're currently focused on implementing AI and moving offices, making it hard to fit in new projects"</blockquote><blockquote>"They work under larger firms' systems and adapt to their requirements"</blockquote><blockquote>"A previous app investment that didn't perform as promised"</blockquote><blockquote>"We have only two ASMs and handle contractors adequately — we're covered"</blockquote>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Already committed to a recently implemented system</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~6 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He conducted extensive due diligence over 12 months before choosing Simpro, so no immediate opportunities for us."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the single most common reason for a firm 'no' in April. Prospects like Paul, James (Paper Drop), Matthew (PinPro), and others had made recent, considered technology decisions and were not willing to revisit them. These are not lost causes permanently — they are prospects who will become re-evaluators when their current system disappoints or their contract ends. The priority is to log contract timelines where known and re-enter the conversation at the right moment.</p>
       </div>
-    
-      <div class="card">
-        <h2>Prospect Questions — What Prospects Wanted to Know</h2>
-        <div class="content">Where prospects did engage in dialogue, their questions and comments revealed a consistent set of concerns. These are worth understanding as they indicate what messaging and materials need to address in order to move prospects further through the funnel.<br><br>**1. 'Where did you get my details?'**<br>At least one prospect directly questioned how his contact information had been obtained, referencing that the call reached his personal mobile. This signals a sensitivity around data sourcing that is present in the market and should be anticipated with a clear, confident response regarding data compliance and sourcing methodology.<br><br>**2. 'Can you send me something to look at first?'**<br>Multiple prospects, rather than agreeing to a meeting, requested email literature before committing to further conversation. This was the preferred lower-commitment entry point for several engaged prospects. It suggests that some decision-makers in this market want to self-educate before engaging in a live dialogue.<br><br>**3. Implicit question: 'How is this different from what I already have?'**<br>Prospects who were using existing systems — particularly those who described their current setup positively — were implicitly asking for differentiation. The challenge of a bespoke or custom platform needs to be communicated in contrast to the limitations of off-the-shelf or internally built alternatives.</div>
-        <blockquote>"He asked how I obtained his contact information"</blockquote><blockquote>"She requested an email with information instead of a meeting right now"</blockquote><blockquote>"He will reach out once he has looked over the material"</blockquote>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">We handle it in-house</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They have an in-house IT team that has already automated their tasks with their own system."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A significant cluster of prospects cited internal development — bespoke ERPs, proprietary apps, or dedicated software developers — as their reason for disengaging. This objection often signals a business that has invested heavily in a solution and has organisational pride attached to it. However, prospects like Andy, who admitted their app was 'still being assessed', and Ben, who acknowledged their platform 'has a long way to go', suggest the in-house objection can mask underlying uncertainty. Probing questions about reliability, maintenance cost, and scalability may open these conversations back up.</p>
       </div>
-    
-      <div class="card">
-        <h2>Market Themes — Broader Patterns from the Field</h2>
-        <div class="content">Across the full set of April conversations, several macro-level themes emerged that paint a detailed picture of the field service software market as it stands today.<br><br>**Theme 1: The market is saturated with partial solutions**<br>Prospects are not operating without systems — they are operating with systems that partially work. From HubSpot being used for timesheets, to bespoke ERPs built over years of internal effort, to platforms described as 'challenging' but persisted with — the pattern is one of tolerated imperfection rather than genuine satisfaction. This is a commercially important distinction: the opportunity is not to replace nothing, but to replace something that is not truly fit for purpose.<br><br>**Theme 2: In-house development is a growing competitive force**<br>A meaningful proportion of prospects had invested — or were actively investing — in building their own solutions. This reflects both the availability of development resource and the complexity of their operational needs. However, bespoke internal builds carry long-term risks around maintenance, scalability, and staff dependency that represent a compelling angle for re-engagement at the right moment.<br><br>**Theme 3: Decision fatigue and prior investment create inertia**<br>Several prospects referenced prior purchasing decisions — sometimes made after extensive due diligence — and were unwilling to revisit those decisions even where the current solution was imperfect. The investment of time, money, and organisational change into an existing platform creates a psychological and financial barrier to switching. Messaging that acknowledges this cost of change and articulates a low-friction transition path may help overcome this inertia.<br><br>**Theme 4: Timing is a genuine and recurrent barrier**<br>The number of prospects who were mid-implementation, mid-office-move, mid-AI-project, or simply 'heading into a meeting' reflects a busy, operationally stretched market. Many of the 'not now' responses were genuinely situational rather than dismissive. A structured re-engagement cadence timed to contract renewals, implementation completions, and seasonal lulls could convert several of these contacts into future pipeline.<br><br>**Theme 5: Trust in technology providers has been damaged by past experience**<br>At least one prospect explicitly referenced a previous app investment that had not delivered on its promises. This erosion of trust is likely more widespread than explicitly stated and represents an important backdrop to every conversation. Proof points, case studies, and transparent communication about implementation timelines will be important in building credibility with this audience.</div>
-        <blockquote>"Frustrations about a previous app investment that didn't perform as promised"</blockquote><blockquote>"Their platform has a long way to go before it's fully mastered"</blockquote><blockquote>"Job Watch has been becoming expensive and less effective"</blockquote><blockquote>"We're nearing completion of our own app but are still assessing its effectiveness"</blockquote>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right time — too much going on</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They are currently focused on implementing AI and moving offices, making it hard to fit in new projects."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects acknowledged the relevance of the proposition but cited competing priorities — office moves, AI implementation projects, trade shows, or simply being mid-transition. Ian's response was particularly telling: he expressed genuine frustration with a previous technology investment that underdelivered, which suggests he is a future candidate once his current pressures ease. These prospects warrant a structured follow-up cadence rather than a hard close attempt.</p>
       </div>
-    
-      <div class="card">
-        <h2>Recommended Actions — April 2026</h2>
-        <div class="content">Based on the intelligence gathered throughout April, the following actions are recommended to strengthen pipeline, improve conversion, and ensure the campaign is positioned to capitalise on the market patterns identified.<br><br>**1. Prioritise and formalise the Job Watch re-engagement opportunity**<br>The prospect currently using Job Watch — who described it as 'becoming expensive and less effective' and confirmed a likely evaluation window opening in June or July — represents one of the highest-value leads of the month. A structured follow-up should be scheduled for early June, and in the interim, tailored content addressing the specific limitations of legacy job management platforms should be sent. Contract end date: December. This prospect should be treated as a priority warm lead.<br><br>**2. Build a re-engagement sequence for mid-implementation prospects**<br>Several prospects declined engagement solely because they are mid-implementation of a recently adopted solution. These contacts should not be permanently disqualified. A lightweight re-engagement cadence — scheduled 6 to 9 months from the point of first contact — would allow outreach at a time when early-stage implementation frustrations are likely to have surfaced. One prospect explicitly invited a follow-up in six months.<br><br>**3. Develop email nurture content for the 'send me something first' segment**<br>A recurring prospect behaviour was the request for email literature before committing to a meeting. Rather than treating this as a soft rejection, it should be supported with a short, well-structured email sequence that speaks directly to common pain points — manual timesheet processes, job booking inefficiencies, and risk assessment management. This content should be ready to deploy immediately following any call where a prospect requests information, and should include a clear and low-friction call to action.<br><br>**4. Refine targeting to reduce calls to structurally misaligned prospects**<br>A proportion of conversations this month revealed structural mismatches — prospects working entirely as subcontractors under client systems, prospects who had retired or sold their businesses, and contacts who had no involvement in relevant decision-making. Reviewing and tightening the target criteria — particularly around company type, ownership status, and decision-maker seniority — would improve the quality of conversations and reduce wasted dials.<br><br>**5. Introduce social proof and case study material into the opening narrative**<br>Given the evidence of damaged trust from prior technology investments, and the prevalence of prospects who are committed to hard-won existing solutions, the conversational approach would benefit from leading with credibility signals earlier in the call. References to similar businesses that have successfully transitioned — with specific, quantified outcomes — would help address the scepticism that appears to be present across a significant portion of this market. This is particularly important when speaking to prospects who have previously been let down by software providers.</div>
-        <blockquote>"I'll send him some information to review and follow up in early June — on Stuart"</blockquote><blockquote>"Follow up in six months to see if their solution has worked out — Andy"</blockquote><blockquote>"She's not interested in meetings at the moment but would reach out if the info seems relevant — Jen"</blockquote>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Happy with current setup / not broke, won't fix</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He has everything covered with different programs for managing jobs and is happy with their current setup."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A number of prospects — James (field service), Jason, Steve, Peter — gave variants of 'we're fine as we are.' This is the hardest objection to move because it reflects a lack of perceived pain rather than a timing or budget issue. The implication for messaging is that the opening hook needs to introduce tension earlier — surfacing the cost of manual processes or the risk of incumbent systems becoming obsolete — before the prospect self-categorises as 'covered'.</p>
       </div>
-    
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">No decision-making authority / wrong contact</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Tom informed me that I reached his personal mobile rather than a work number. He asked how I obtained his contact information."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A portion of calls reached individuals who were retired, had sold their business, were no longer in a relevant role, or were contacted on personal numbers. This points to a data quality issue worth reviewing with the data provider. Tom specifically asked how his details were obtained — a reputational consideration worth flagging for data hygiene purposes.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">What Prospects Asked</div>
       </div>
-    
-<div class="footer">PHONE FIRST, ALWAYS</div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">How did you get my contact details?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Tom's direct question about data sourcing — and the fact that he was reached on a personal mobile — highlights the importance of data accuracy and the sensitivity prospects have around personal contact information. When this question arises, a clear and confident answer about the data provider (as given referencing Surf) is essential. It also signals that data quality checks should be a recurring part of campaign hygiene.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send me an email with information instead?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Both Jen and Liam redirected the conversation towards email rather than committing to a meeting or call. This is a common deflection, but Liam's response was more substantive — he acknowledged the relevance of the topic and gave a specific email address, suggesting genuine interest at a low-commitment level. For these prospects, a well-constructed follow-up email that mirrors the pain points discussed in the call is the most productive next step, with a clear and soft call to action.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">When should I call back? / Can you call back later?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">A recurring pattern across the month was prospects asking for a callback at a better time — Gary (call back in the morning), Steve (call back in an hour), Simon (try again later), Nigel (on holiday, call back). While these are not warm leads, they do represent contacts who did not reject the proposition outright. The conversion potential here depends entirely on whether the follow-up actually happens and whether the second call catches the prospect in a more receptive moment.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Market Themes</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/shopkeepers.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The market is mid-cycle, not static</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A striking number of prospects in April were in the middle of something — implementing a new system, building an app, merging with another company, or preparing to move offices. This is not a dormant market; it is a market in active transition. For Identify Digital, this means the pipeline is not primarily about prospects who will never buy, but about prospects who are not ready yet — and timing re-entry correctly will be critical.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Incumbent dissatisfaction is present but quiet</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Stuart's situation with Job Watch — expensive, declining in effectiveness, contract ending in December — is likely not unique. Several other prospects mentioned platforms that were described as difficult (PinPro), not fully mastered (Ben's in-house tool), or compromised by other priorities (Ian's AI project complications). The market contains a meaningful cohort of users who are tolerating their current solution rather than championing it, and these prospects are worth identifying and revisiting on a structured timeline.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">In-house development is a growing objection category</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Five separate prospects cited internal development as their reason for not engaging — ranging from fully bespoke ERPs to near-complete proprietary apps to dedicated internal software teams. This suggests a segment of the field service market that is investing in building rather than buying. However, prospects like Andy and Ben revealed cracks in this confidence, with Andy suggesting a six-month review and Ben admitting their platform had 'a long way to go'. The in-house objection deserves a specific counter-narrative around the long-term cost and risk of maintaining custom solutions.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Referral potential is largely untapped</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Harrison at Maine Electrical mentioned his brother works at a related company, Severn Trent. Jason — though personally out of the workforce — provided a referral to Mike, the MD at Greens. These are early signals that the network around engaged prospects can yield secondary contacts. A light-touch referral ask, embedded naturally into discovery conversations, could extend the reach of each productive call without additional dials.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Data quality is affecting reach at the margins</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A small but notable portion of calls reached individuals who were retired, had sold or closed their business, or were contacted on personal rather than work numbers. Andrew was closing his business within two months; Lee was retired and frustrated by sales calls; Tom was reached on a personal mobile. While these represent a small fraction of dials, they represent wasted effort and, in Tom's case, a potential reputational touchpoint. A periodic data audit would reduce this friction.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Recommended Actions</div>
+      </div>
+      <div style="padding:6px 24px 6px">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a structured follow-up sequence for Stuart (Job Watch contract ending December 2026) — re-engage in early June as discussed, with a focused message around the cost and disruption of staying on a declining platform. This is one of the highest-value prospects from the month.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Create a dedicated 'future pipeline' tracker for prospects who cited implementation timelines or self-suggested review windows — specifically Andy (six months), Ian (post-office move and AI project), and Matthew (PinPro commitment under review). Schedule re-contact dates now rather than relying on recall.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a specific counter-narrative for the in-house development objection — focusing on the total cost of ownership, maintenance burden, and scalability risk of custom-built solutions. This objection appeared five times in April and will recur; a practised, non-confrontational response that plants a seed of doubt without alienating the prospect will compound in value over time.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Follow up promptly and meaningfully with Liam at Connolly Limited (norbury@connollylimited.co.uk) — he engaged with the automation and time-loss angle and requested literature. A targeted email that reflects the specific conversation, with a low-friction next step, gives this contact the best chance of converting.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Conduct a data quality review with the data provider, Surf — specifically targeting the accuracy of job titles, employment status, and contact type (work vs. personal numbers). The volume of calls reaching retired individuals, business closures, and personal mobiles in April suggests a cleanliness issue that is suppressing conversion rates at the top of the funnel.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">6</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Explore the referral opportunity surfaced by Harrison at Maine Electrical — his mention of a brother at Severn Trent is a warm introduction waiting to be activated. A direct ask during the follow-up call on Thursday would be a natural and low-effort way to extend the conversation into a new account.</p>
+      </div></div>
+    </div></div>
+    </div>
+<div class="footer">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
+  <span class="footer-tag">Phone First, Always</span>
+</div>
 <script>
 function showTab(i){
   document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
