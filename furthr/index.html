@@ -3,133 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Call Runnings Report — Furthr</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Call Runnings — Furthr</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#4D6BC0 0%,#6060D0 55%,#7B7BE3 100%);min-height:100vh;color:#fff;padding:0}
-  .header{padding:32px 48px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:20px}
-  .header img{height:80px;display:block}
-  .header-text h1{font-size:22px;font-weight:700;color:#fff}
-  .header-text p{font-size:13px;color:rgba(255,255,255,0.72);margin-top:4px}
-  .tabs{display:flex;gap:6px;padding:20px 48px 0;border-bottom:1px solid rgba(255,255,255,0.15)}
-  .tab{padding:9px 22px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.2);border-bottom:none;border-radius:8px 8px 0 0;cursor:pointer;transition:all 0.15s}
-  .tab.active,.tab:hover{background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.4)}
-  .panel{display:none;padding:32px 48px 48px;max-width:900px}
+  body{font-family:'Poppins',sans-serif;background:#5558C8;background-image:radial-gradient(ellipse 80% 60% at 20% 10%,#7068D8 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,#3890C8 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 50% 50%,#5558C8 0%,#4048A8 100%);min-height:100vh;color:#fff;padding-bottom:80px}
+
+  /* ── Hero ── */
+  .hero{position:relative;overflow:hidden;padding:40px 56px 0;display:flex;align-items:flex-end;justify-content:space-between;min-height:220px;border-bottom:1px solid rgba(255,255,255,0.12)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,8,40,0.45) 0%,rgba(10,8,40,0.1) 60%,transparent 100%);pointer-events:none}
+  .hero-left{position:relative;z-index:2;padding-bottom:36px}
+  .hero-logo{height:52px;display:block;margin-bottom:24px}
+  .hero-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.55);margin-bottom:8px}
+  .hero-title{font-size:32px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:6px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,0.65);font-weight:400}
+  .hero-illustration{position:relative;z-index:1;height:200px;width:auto;object-fit:contain;object-position:bottom;flex-shrink:0;margin-left:32px;opacity:0.95;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.25))}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;gap:0;padding:0 56px;border-bottom:2px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.12)}
+  .tab{padding:14px 28px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.45);border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all 0.15s;letter-spacing:0.04em}
+  .tab.active,.tab:hover{color:#fff;border-bottom-color:#FE6601}
+
+  /* ── Panel ── */
+  .panel{display:none;padding:32px 56px 64px;max-width:960px}
   .panel.active{display:block}
-  .stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:28px}
-  .stat-card{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:14px;text-align:center}
-  .stat-value{font-size:26px;font-weight:700;line-height:1}
-  .stat-label{font-size:9px;color:rgba(255,255,255,0.65);text-transform:uppercase;letter-spacing:0.1em;margin-top:5px}
-  .card{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.15);border-radius:18px;padding:24px 28px;margin-bottom:16px;backdrop-filter:blur(8px)}
-  .card h2{font-size:14px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.2)}
-  .content{font-size:13px;color:rgba(255,255,255,0.88);line-height:1.8}
-  blockquote{margin:14px 0 4px;padding:10px 16px;background:rgba(48,144,192,0.18);border-left:3px solid #3090C0;border-radius:0 8px 8px 0;font-size:12px;color:#fff;font-style:italic;line-height:1.6}
-  .footer{text-align:center;padding:32px 48px;font-size:11px;color:rgba(255,255,255,0.45);border-top:1px solid rgba(255,255,255,0.12);letter-spacing:0.08em}
+
+  /* ── Footer ── */
+  .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
+  .footer-logo{height:28px;opacity:0.45}
+  .footer-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
 </style>
 </head>
 <body>
-<div class="header">
-  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" alt="Call Runnings">
-  <div class="header-text">
-    <h1>Furthr — Monthly Report</h1>
-    <p>Prepared by Call Runnings</p>
+<div class="hero">
+  <div class="hero-left">
+    <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="hero-logo" alt="Call Runnings">
+    <div class="hero-eyebrow">Monthly Market Intelligence Report</div>
+    <h1 class="hero-title">Furthr</h1>
+    <div class="hero-sub">Prepared by Call Runnings</div>
   </div>
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
 </div>
 <div class="tabs">
     <button class="tab active" onclick="showTab(0)">April 2026</button>
   </div>
 
-      <div class="panel active" id="panel-0">
-        
-        <div class="stats-grid">
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">1606</div>
-              <div class="stat-label">Total Dials</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#3090C0">186</div>
-              <div class="stat-label">Connected</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#3090C0">145</div>
-              <div class="stat-label">Conversations</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#FE6601">9</div>
-              <div class="stat-label">Meetings</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#32B241">26</div>
-              <div class="stat-label">Activated</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">25</div>
-              <div class="stat-label">No, Not Now</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">63</div>
-              <div class="stat-label">No, Not Ever</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">8</div>
-              <div class="stat-label">No, Not Me (Ref)</div>
-            </div>
-          
-            <div class="stat-card">
-              <div class="stat-value" style="color:#C8D8F0">13</div>
-              <div class="stat-label">No, Not Me (No Ref)</div>
-            </div>
-          
+    <div class="panel active" id="panel-0">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1606</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">145</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">9</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">26</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">25</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">63</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">8</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">13</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div>
+  <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">April 2026 was a month defined by a market that is broadly aware of its carbon reporting obligations but largely satisfied — at least for now — with the solutions it already has in place. The overall tone of conversations was polite and professionally engaged, but the dominant response was one of existing commitment: to long-term contracts, in-house tools, incumbent consultants, or group-level mandates that remove individual decision-making power from the contacts being reached. Rather than a market that doesn't see the value of what Furthr offers, this feels like a market that believes it has already solved the problem, even where the evidence suggests otherwise.</div>
+    
+  </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:4px">Competitor & Market Intelligence</div>
         </div>
-        
-      <div class="card">
-        <h2>Campaign Overview</h2>
-        <div class="content">In April 2026, the Furthr campaign generated 1,606 total dials, resulting in 186 connected calls and 145 full conversations. From those conversations, 9 meetings were booked and 26 prospects were marked as Activated — indicating meaningful engagement or expressed future interest. A further 25 prospects responded with 'No, Not Now', suggesting timing rather than fundamental disinterest. 63 prospects were categorised as 'No, Not Ever', reflecting a firm rejection of the proposition. Of the 21 prospects who indicated the call had reached the wrong person, 8 provided a referral to a more relevant contact, while 13 did not. Overall, the campaign delivered a solid base of market intelligence alongside its pipeline activity, with the conversation-to-meeting rate reflecting a competitive and well-defended market.</div>
-        
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" style="height:64px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
       </div>
-    
-      <div class="card">
-        <h2>Competitor & Market Intelligence</h2>
-        <div class="content">Several named and unnamed third-party solutions were referenced by prospects during conversations, offering a useful view of the competitive landscape Furthr operates within.<br><br>Mondra was mentioned explicitly by one prospect, who noted they are under a long-term contract with the platform, making any near-term switch effectively off the table. The sentiment was not negative toward Furthr, but the contractual lock-in presented a structural barrier.<br><br>PlanetMark was referenced by a prospect currently using them for carbon accounting. Interestingly, this prospect was not entirely closed — they indicated they are not looking to expand until autumn and expressed a specific interest in breaking down emissions by fuel type, a capability gap worth noting. A follow-up meeting was scheduled from this conversation.<br><br>SAP was mentioned in the context of a larger organisation's scope three reporting infrastructure, where a third-party solution had been integrated directly into SAP systems. This signals that in enterprise environments, carbon reporting tools are often evaluated through the lens of ERP compatibility.<br><br>Schneider Electric was cited not as a direct competitor but as a prior employer of a sustainability manager, who felt their experience there had equipped them sufficiently for their current role — suggesting that platform familiarity and professional confidence can act as soft barriers to adoption.<br><br>Several prospects referenced unnamed consultants and internal tools as their current solution, with phrases such as 'we already have consultants and internal tools' and 'we write our own code' indicating a preference in some organisations for bespoke or advisory-led approaches over SaaS platforms. The perception that platforms in this space can be 'too expensive and lacking needed flexibility' was raised directly by one prospect, which is a meaningful signal about how Furthr may be positioned relative to custom-built alternatives.</div>
-        <blockquote>""We already have consultants and internal tools for their carbon reporting needs.""</blockquote><blockquote>""They are managing their carbon emissions well and do not need further assistance at this time.""</blockquote><blockquote>""Their in-house system for tracking carbon emissions is sufficient — they write their own code and have previously looked into platforms like ours, but found them too expensive and lacking needed flexibility.""</blockquote><blockquote>""They have a solution in place that is contractually set for three years.""</blockquote>
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04)">
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">Competitor</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">What was Said</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Freq</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">PlanetMark</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect confirmed they are currently engaged with PlanetMark for carbon accounting but are not looking to expand until autumn, and expressed specific interest in breaking down emissions by fuel type — a gap their current setup may not address.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Mondra</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Prospect stated they work with Mondra under a long-term contract, making any alternative solution not immediately relevant.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">SAP (third-party integration)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A sustainability manager described colleagues handling broader scope three reporting through third-party integration into SAP systems, indicating embedded enterprise infrastructure.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">In-house / bespoke internal tools</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple prospects referenced proprietary internal systems. One stated directly: 'they write their own code and have previously looked into platforms like ours, but found them too expensive and lacking needed flexibility.'</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~3</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">External sustainability consultants</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Several prospects indicated reliance on third-party consultants for carbon reporting, with comments such as 'they already have consultants and internal tools for their carbon reporting needs' and references to associates handling calculations alongside Excel.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~4</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Schneider Electric (prior employer experience)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A recently appointed sustainability manager referenced their previous experience at Schneider Electric as the basis for being 'well-equipped' in their current role, particularly around scope three. Suggested connecting on LinkedIn rather than engaging further.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Head office / group-level mandates</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">At least one prospect indicated that sustainability reporting and carbon data management are handled centrally by their head office, removing them from the decision entirely.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Excel-based processes</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A small charity described using 'an associate for calculations and Excel' but acknowledged they 'expect data management to become more challenging as data volume increases' — flagging Excel as a future vulnerability rather than a long-term solution.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
+      </tr></tbody>
+      </table>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Common Objections</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/yes-and-no.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
       </div>
-    
-      <div class="card">
-        <h2>Common Objections</h2>
-        <div class="content">The following objections recurred consistently across the April conversations and reveal important structural dynamics in the market.<br><br>1. Already Have a Solution in Place<br>This was the single most common objection, appearing across multiple call types and sectors. Prospects cited consultants, internal tools, bespoke code, and named platforms as reasons they were not actively looking. In several cases, these arrangements were contractually fixed for one to three years, making near-term conversion unlikely regardless of proposition strength. This suggests a market with relatively high incumbent stickiness.<br><br>2. Not the Right Person / Handled Elsewhere<br>A notable portion of calls reached individuals who confirmed sustainability and carbon reporting sit with a different team — often head office, a dedicated ESG function, or a named colleague. This reflects the growing specialisation of sustainability roles within larger organisations and suggests that contact data may benefit from more granular role-level targeting.<br><br>3. Too Busy / Bad Timing<br>Many prospects did not object to the proposition itself but simply could not engage at the time of the call. Callbacks were requested ranging from later the same day to the following week, indicating genuine openness in some cases but a fragmented ability to commit time to new conversations.<br><br>4. Not Relevant to Our Business Model<br>Several prospects indicated that the nature of their organisation — including a social housing provider and a small charity — meant their carbon reporting requirements were limited in scope or volume, and that Furthr's solution felt designed for a different type of organisation. This points to a potential need for sector-specific messaging.<br><br>5. Cold Call Aversion / TPS Registration<br>A small number of prospects declined to engage on principle, citing TPS registration or a general preference against cold calling. One prospect hung up immediately upon being told it was a cold call. These contacts represent hard stops rather than addressable objections.</div>
-        <blockquote>""Their focus on social housing doesn't require much on carbon capture — they work with a consultant and don't have extensive reporting needs like the private sector.""</blockquote><blockquote>""Sustainability reporting and carbon data management are handled by their head office, and he doesn't get involved in those matters.""</blockquote><blockquote>""They don't take cold calls as they are registered with the telephone preference service.""</blockquote><blockquote>""They are not in the market for our services and did not want to engage further.""</blockquote>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Already have a solution in place</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~11 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They work with Mondra for their needs and it is a long-term contract, making my offer not relevant at this time."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the single most dominant objection of the month and reflects a market that has moved past the awareness stage. Prospects are not questioning whether carbon reporting requires a solution — they believe they already have one. The strategic opportunity lies in probing what that solution cannot do: fuel-type breakdowns, scalability, flexibility, cost. Furthr's messaging should be calibrated to address the limitations of entrenched solutions rather than leading with the problem itself.</p>
       </div>
-    
-      <div class="card">
-        <h2>Prospect Questions</h2>
-        <div class="content">While full prospect questions were not always captured verbatim in the transcripts, recurring themes in prospect responses reveal the questions and concerns that were active in their minds during these conversations.<br><br>Data Source and Contact Origin<br>One prospect, Jasmine, directly asked how her personal number had been obtained — a question that reflects growing awareness around data privacy and the provenance of contact databases. This was handled constructively in the call, with the rep offering guidance on how she could remove her details from data sources.<br><br>Scope Three Complexity and Future Readiness<br>Several prospects who were not immediately interested still referenced their scope three emissions workload as an area of anticipated growth or challenge. One contact at a charity acknowledged that 'data management will become more challenging as data volume increases' — signalling awareness of a future pain point even where no immediate need existed.<br><br>Breaking Down Emissions by Fuel Type<br>One prospect with a current PlanetMark arrangement specifically flagged an interest in granular emissions breakdowns by fuel type as a capability they would want in future. This is a specific, functional question that reveals where existing solutions may be falling short.<br><br>Platform Flexibility and Cost<br>The prospect who builds their own internal tools raised a pointed concern about whether third-party platforms offer sufficient flexibility relative to their cost. This implies a question of 'why would we pay for something we can customise ourselves?' that Furthr's proposition may need to address directly in future conversations.</div>
-        <blockquote>""Curious about how I got her personal number.""</blockquote><blockquote>""Data management will become more challenging as data volume increases.""</blockquote><blockquote>""Expressed future interest in breaking down emissions by fuel type.""</blockquote><blockquote>""Found them too expensive and lacking needed flexibility.""</blockquote>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Handled by head office or another team</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Sustainability reporting and carbon data management are handled by their head office, and he doesn't get involved in those matters."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A structural objection that reflects genuine organisational reality in larger businesses. The contact reached is not the decision-maker and often cannot provide a referral. This signals a need to improve contact targeting at the research stage — specifically identifying whether sustainability decisions are made locally or centrally before the dial is placed, to avoid wasted conversations with non-influencers.</p>
       </div>
-    
-      <div class="card">
-        <h2>Market Themes</h2>
-        <div class="content">Across the full set of April conversations, several broader themes emerged that reflect where the sustainability reporting market currently sits.<br><br>Maturity is Uneven Across Organisations<br>The market is clearly not at a uniform stage of readiness. Some prospects have operated dedicated carbon emissions programmes for several years across all scopes, while others — particularly smaller charities and organisations in sectors like social housing — are managing reporting manually with Excel and an associate. This unevenness suggests that a single-message approach is unlikely to resonate across the full addressable market.<br><br>Scope Three is a Growing But Still Complex Area<br>Scope three emissions appeared repeatedly as both a current workload and a future concern. Some organisations have delegated it to colleagues or third parties; others are actively working on it but feel they have it under control. The language around scope three was notably more cautious and complex than that around scope one and two, suggesting it remains the area of greatest uncertainty — and therefore greatest opportunity — for a data solution.<br><br>Contractual Lock-In is a Significant Timing Constraint<br>Multiple prospects referenced existing contracts ranging from long-term Mondra arrangements to unnamed three-year agreements. This is less a reflection of satisfaction with current solutions and more a structural timing issue. The market may be more accessible in 12 to 18 months as these contracts come up for renewal.<br><br>Internally Built Solutions Signal a Sophistication Gap<br>Several organisations have invested in writing their own code or developing internal systems for carbon tracking. This reflects a segment of the market that is technically sophisticated but potentially under-served by off-the-shelf platforms. Their objections are not about the need for better data management — they are about whether any external platform can match the specificity of what they have built themselves.<br><br>Role Fragmentation is Increasing<br>A recurring pattern across calls was the diffusion of sustainability responsibilities — with scope one and two handled by one team, scope three by another, and overall ESG strategy sitting at head office or with a separate function. This fragmentation means that reaching the right decision-maker requires more precise targeting and that any single contact is unlikely to represent the full buying picture.</div>
-        <blockquote>""Their team has been working on carbon emissions for several years and doesn't need assistance — they focus on scope one and two, while colleagues handle the broader scope three with third-party integration into SAP systems.""</blockquote><blockquote>""Managing scope three emissions has been manageable due to cooperative contractors — currently using an associate for calculations and Excel, but expects data management to become more challenging as data volume increases.""</blockquote><blockquote>""Their previous experience at Schneider Electric has left them well-equipped for their current role and they are strong in scope three reporting.""</blockquote>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Too expensive / not flexible enough</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They write their own code and have previously looked into platforms like ours, but found them too expensive and lacking needed flexibility."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A perception objection tied to prior experience rather than current pricing. This is recoverable — particularly where the product has evolved since those earlier evaluations. It points to an opportunity to reintroduce Furthr to prospects who have previously investigated but not converted, with a focus on what has changed and where flexibility has improved.</p>
       </div>
-    
-      <div class="card">
-        <h2>Recommended Actions</h2>
-        <div class="content">Based on the intelligence gathered across April's conversations, we recommend the following actions for the Furthr campaign going forward.<br><br>1. Build a Contract Renewal Tracking Sequence<br>Given the frequency with which prospects cited existing contracts as a barrier — including named multi-year agreements — we recommend establishing a structured follow-up sequence for these contacts timed to their anticipated contract renewal windows. Where a timeframe was mentioned (e.g. 'not until autumn', 'three-year contract'), those prospects should be flagged and re-engaged at the appropriate point with a targeted message about re-evaluation.<br><br>2. Develop Sector-Specific Messaging for Lower-Complexity Organisations<br>Several prospects in sectors such as social housing, charities, and smaller organisations indicated that Furthr's proposition felt designed for larger or more complex businesses. A lighter-touch or entry-level value narrative that speaks to organisations managing reporting manually — and anticipating growth in data volume — could unlock a segment that is currently rejecting the conversation too early.<br><br>3. Address the Flexibility and Cost Perception Directly<br>The objection that platforms in this space are 'too expensive and lacking needed flexibility' relative to bespoke internal solutions is specific enough to warrant a direct response in the pitch. We recommend developing a clear, concise rebuttal or proof point — ideally supported by a case study — that demonstrates Furthr's adaptability and total cost of ownership relative to in-house development.<br><br>4. Sharpen Contact Targeting to Reach Scope Three Decision-Makers<br>A significant number of conversations were redirected because the contact reached did not own the sustainability reporting function — or specifically did not own scope three. Given that scope three is Furthr's most relevant territory, we recommend refining the contact criteria to prioritise titles and functions directly associated with supply chain emissions, ESG data, or sustainability reporting rather than broader sustainability management.<br><br>5. Capitalise on the Fuel-Type Breakdown Interest as a Conversation Hook<br>One prospect explicitly raised the desire to break down emissions by fuel type as an unmet need within their current platform. This is a specific, functional capability gap that may resonate with other prospects in similar positions. We recommend testing whether this use case — granular fuel-type emissions analysis — can be introduced earlier in the pitch as a hook for prospects who believe their current solution is 'good enough', as it speaks to a level of analytical depth that generic carbon accounting tools may not offer.</div>
-        <blockquote>""Not looking to expand until autumn — expressed future interest in breaking down emissions by fuel type.""</blockquote><blockquote>""In-house system is sufficient — they write their own code and have previously looked into platforms like ours, but found them too expensive and lacking needed flexibility.""</blockquote><blockquote>""Sustainability reporting and carbon data management are handled by their head office.""</blockquote><blockquote>""Data management will become more challenging as data volume increases.""</blockquote>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right time / busy</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~8 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He was about to go into a meeting and requested an email instead."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A high volume of calls landed at genuinely inconvenient moments. While some of these reflect unavoidable timing, the pattern suggests that call scheduling and time-of-day targeting may need refinement. The positive framing is that most of these prospects did not object to the proposition — they simply weren't available. Converting these into firm callbacks is a sequencing priority.</p>
       </div>
-    
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Doesn't handle sustainability / wrong person</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He mentioned that he does not handle sustainability reporting, which is not his responsibility."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Reflects data accuracy challenges within the prospect list. A portion of dials are reaching contacts whose roles have shifted or were incorrectly categorised. These conversations have limited value unless a referral is obtained. Building a consistent referral ask into these calls — as was done successfully in at least one instance — would convert these otherwise lost dials into intelligence.</p>
       </div>
-    
-<div class="footer">PHONE FIRST, ALWAYS</div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Registered with TPS / do not call</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They don't take cold calls as they are registered with the telephone preference service."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A compliance-related objection that requires immediate list scrubbing. Beyond the legal obligation, these interactions carry reputational risk if not handled promptly and correctly. Records should be updated in real time when TPS registration is flagged.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Prefers email over calls</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"She expressed she's not interested in any selling and prefers emails over calls. She mentioned needing space and time after the call to consider any potential solutions in the future."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A softer objection that nonetheless signals a willingness to remain in conversation via a different channel. These prospects should not be treated as lost — they represent a warm email audience. A structured follow-up email sequence tailored to their specific context (scope of reporting, current tools, scale) would be an appropriate next step.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">What Prospects Asked</div>
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">How did you get my personal number?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">This question came up in multiple calls and reflects growing awareness among professionals about data sourcing and personal privacy. It signals a degree of discomfort with cold outreach to personal devices, and in one case led to a productive redirection to a work email. When this question arises, having a clear, honest and reassuring response — as well as an immediate pivot to professional contact details — is essential both for compliance and for preserving the relationship.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you call back at a specific time?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~9 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">The high frequency of this request reflects genuine openness to a conversation, just not at that moment. These are among the most valuable outcomes of the month when followed through correctly — a scheduled callback is a soft commitment. It reveals that the proposition is not being rejected outright, but that timing and context matter. Tracking and honouring these precisely is a direct path to increasing meetings from the existing pipeline.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send an email instead?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Prospects requesting email are often in environments where calls feel disruptive, or they want the opportunity to evaluate quietly before committing to a conversation. This is an evaluation-stage behaviour — they are not dismissing the proposition, they are managing their own process. A strong email follow-up with a clear, specific hook relevant to their context (e.g., scope three data complexity, contract renewal timing) gives this group a genuine reason to re-engage.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Market Themes</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/shopkeepers.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The 'Solved It Already' Mindset</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">The most consistent pattern across April's conversations was the belief among sustainability contacts that their current setup — whether a consultant, a platform, an in-house tool, or a combination — is sufficient. This is less a reflection of genuine capability than of unfamiliarity with the ceiling of those solutions. The conversations that broke through this mindset did so by surfacing specific limitations, such as the inability to disaggregate emissions by fuel type or the coming strain on Excel-based processes as data scales.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Scope Three Complexity is Real but Often Delegated</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects acknowledged managing scope three emissions but noted that it was handled by colleagues, third parties, or head office rather than themselves. This suggests that while scope three complexity is understood as a genuine challenge, organisations are distributing responsibility rather than consolidating it. Furthr's outreach may benefit from mapping this distributed ownership more explicitly, and targeting the individuals who own the most complex or high-volume portions of scope three reporting.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Long-Term Contracts Are Blocking Near-Term Conversion</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Multiple prospects referenced being locked into existing contracts — some explicitly multi-year — as the primary reason for disengagement. This is a timing objection as much as a preference one. These contacts represent a high-value future pipeline if re-engagement is timed to contract renewal windows. Capturing indicative renewal dates during these conversations, even informally, would allow for precisely timed re-outreach.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Excel Remains a Widespread but Fragile Baseline</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable subset of prospects — particularly smaller organisations and charities — are still relying on Excel and associate-level resource for emissions calculations. One prospect explicitly acknowledged that this approach would not scale as data volumes grow, describing it as something 'they are addressing in the background.' This is a strong signal of latent demand among organisations that have not yet formalised their approach, and who are aware of the problem but have not yet acted on it.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Decision Authority is Often Misaligned with Contact Data</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring challenge this month was reaching individuals who either no longer hold the role indicated in the data, or who are adjacent to sustainability without owning it directly. In some cases this produced useful referrals; in others the call ended without a path forward. Improving the alignment between contact data and actual decision authority — particularly in larger organisations where sustainability sits across multiple functions — would meaningfully increase the quality of conversations.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Recommended Actions</div>
+      </div>
+      <div style="padding:6px 24px 6px">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Prioritise follow-up on the PlanetMark prospect who has a confirmed call scheduled for Wednesday the 22nd at 12 PM with Dara — this is the warmest opportunity in the pipeline and should be treated as a priority meeting. Their stated interest in emissions disaggregation by fuel type should be addressed directly in that conversation.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a structured callback tracker for all prospects who requested a specific recall time this month — multiple individuals gave precise windows, and converting these agreed callbacks into meetings is the single highest-leverage activity available from April's dial volume.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a dedicated email follow-up sequence for prospects who prefer written communication over calls, with tailored messaging based on their stated situation (e.g., current tool limitations, upcoming contract renewals, growing data volumes) — do not treat email-preference prospects as inactive; treat them as a warm audience on a different channel.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Identify all prospects who mentioned being locked into existing contracts and log indicative renewal timescales where possible — schedule re-engagement outreach to coincide with renewal windows, positioning Furthr as the logical evaluation option before they recommit.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Refine the contact targeting criteria to reduce the proportion of dials reaching individuals who do not own or influence sustainability decisions — where head office or group-level control is confirmed, escalate outreach to group-level contacts rather than leaving these accounts dormant.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">6</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Audit the prospect data list against the Telephone Preference Service register before the next campaign cycle to ensure compliance and to avoid reputational risk from repeated contact with TPS-registered individuals.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">7</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Introduce a consistent, low-pressure referral ask into calls where the prospect confirms they are not the right person — the instance this month where a correct contact name (Tom Taylor) was obtained demonstrates that this approach works and should be applied systematically.</p>
+      </div></div>
+    </div></div>
+    </div>
+<div class="footer">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
+  <span class="footer-tag">Phone First, Always</span>
+</div>
 <script>
 function showTab(i){
   document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
