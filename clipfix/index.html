@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Runnings — Clipfix</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:#5558C8;background-image:radial-gradient(ellipse 80% 60% at 20% 10%,#7068D8 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,#3890C8 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 50% 50%,#5558C8 0%,#4048A8 100%);min-height:100vh;color:#fff;padding-bottom:80px}
+
+  /* ── Hero ── */
+  .hero{position:relative;overflow:hidden;padding:40px 56px 0;display:flex;align-items:flex-end;justify-content:space-between;min-height:220px;border-bottom:1px solid rgba(255,255,255,0.12)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,8,40,0.45) 0%,rgba(10,8,40,0.1) 60%,transparent 100%);pointer-events:none}
+  .hero-left{position:relative;z-index:2;padding-bottom:36px}
+  .hero-logo{height:52px;display:block;margin-bottom:24px}
+  .hero-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.55);margin-bottom:8px}
+  .hero-title{font-size:32px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:6px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,0.65);font-weight:400}
+  .hero-illustration{position:relative;z-index:1;height:200px;width:auto;object-fit:contain;object-position:bottom;flex-shrink:0;margin-left:32px;opacity:0.95;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.25))}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;gap:0;padding:0 56px;border-bottom:2px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.12)}
+  .tab{padding:14px 28px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.45);border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all 0.15s;letter-spacing:0.04em}
+  .tab.active,.tab:hover{color:#fff;border-bottom-color:#FE6601}
+
+  /* ── Panel ── */
+  .panel{display:none;padding:32px 56px 64px;max-width:960px}
+  .panel.active{display:block}
+
+  /* ── Meetings expandable ── */
+  details[open] summary span:first-child{transform:rotate(90deg);display:inline-block}
+  details summary::-webkit-details-marker{display:none}
+
+  /* ── Footer ── */
+  .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
+  .footer-logo{height:28px;opacity:0.45}
+  .footer-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-left">
+    <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="hero-logo" alt="Call Runnings">
+    <div class="hero-eyebrow">Monthly Market Intelligence Report</div>
+    <h1 class="hero-title">Clipfix</h1>
+    <div class="hero-sub">Prepared by Call Runnings</div>
+  </div>
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
+</div>
+<div class="tabs">
+    <button class="tab active" onclick="showTab(0)">April 2026</button>
+  </div>
+
+    <div class="panel active" id="panel-0">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">371</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">32</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">0</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">2</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">2</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">20</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">4</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">2</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div>
+  <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">April 2026 was a month defined by a crowded market and well-defended status quos. The majority of conversations revealed prospects who are not in active buying mode — not because the problem Clipfix solves is unfamiliar to them, but because many believe they already have it covered. Video, diagnostics, and remote troubleshooting are concepts that have landed in this market; the challenge is that prospects are pointing to a wide variety of incumbent tools — from WhatsApp and generic video conferencing platforms to bespoke ERP-integrated diagnostic software — as evidence that the need is met. The overall atmosphere was polite but resistant, with very few conversations developing into genuine discovery.</div>
+    
+  </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:4px">Competitor & Market Intelligence</div>
+        </div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" style="height:64px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04)">
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">Competitor</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">What was Said</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Freq</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Grip (video conferencing platform)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Two separate prospects — Emily and Helen — named Grip as their current solution. Helen had just signed a new two-year contract and suggested a follow-up in 18 months. Emily said they are 'satisfied' and not looking to review.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">WhatsApp (video)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A representative at Shakir's company said they 'already use WhatsApp videos' for live diagnostics and saw no current challenge with their process. Positioned as a free, frictionless workaround rather than a formal solution.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">IFS (AI-based ERP with diagnostics)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Vicky explained their products already have 'advanced diagnostic software' and that they are implementing 'an AI-based ERP solution through IFS' that addresses their needs. She framed Clipfix as redundant given this investment.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">VRA (internal system)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Lindsay mentioned they use VRA to resolve similar issues and were not looking to change. She did not elaborate on the system but was clear it was already handling the problem.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Surf (contact data provider)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Josiah mentioned Surf as their contact data provider during a conversation about troubleshooting tools. Noted as contextual intelligence rather than a direct competitor.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Unnamed German video/group platform</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Rebecca mentioned their current video call system is 'group-driven' and may be from a German company. Decisions are made collectively, making unilateral adoption of a new tool unlikely.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Proprietary boiler diagnostic system</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Paul noted that their service engineers 'already have a system to view boilers live with customers.' He did not name the provider. This suggests an embedded, role-specific tool that Clipfix would need to displace.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr></tbody>
+      </table>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Common Objections</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/yes-and-no.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">We already have a solution in place</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~10 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Their products already have advanced diagnostic software, making my solution less relevant."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the single most common reason for rejection this month, surfacing across sectors and roles. The objection is rarely about price or timing — it is about perceived redundancy. Prospects are not saying the problem does not exist; they are saying it is already solved. This means the sales conversation needs to shift from problem-awareness to differentiation: what does Clipfix do that their current tool — whether WhatsApp, Grip, or an ERP integration — cannot? Specific capability gaps, measurable outcomes, and case comparisons will be essential to breaking through this objection.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not relevant to my role</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He clarified that he works in industrial commercial, not housing, and stated their operations are already effective with good software in place."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring theme was reaching contacts who were either in the wrong department or whose job function simply did not intersect with the Clipfix use case. Maintenance, warehousing, and industrial commercial roles came up specifically. This points to a contact data and targeting issue as much as a messaging one. Tightening the ideal contact profile — likely customer service leadership, technical support management, or field service operations — would reduce this friction significantly.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">We do not take or handle many inbound calls</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They provide technical support as a final line, meaning they handle few inbound calls. He felt my offering wouldn't be relevant to their operations."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Some prospects — particularly those operating as OEM last-line support or with highly engineer-led models — do not see themselves as a contact centre in the traditional sense. This suggests the Clipfix proposition may need a secondary framing for field-service-heavy businesses, emphasising remote triage and engineer dispatch reduction rather than call centre efficiency.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Group or committee decision-making means I cannot act unilaterally</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Decisions are made at a group level, making it unlikely they'd adopt changes."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">In at least two conversations, the obstacle was not personal reluctance but organisational structure. One prospect explicitly framed their video platform as 'group-driven.' These are not dead-ends but longer-cycle opportunities that require multi-threaded outreach — ideally identifying who sits on the decision-making group and engaging them directly.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Recently signed a contract with an existing provider</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"She mentioned they already use a similar service, Grip, and just signed a new two-year contract."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Helen's situation at her company is a clear timing objection backed by a contractual lock-in. She proactively suggested a follow-up in 18 months, which is a genuine pipeline opportunity. These contacts should be placed into a long-cycle nurture sequence with a hard diary note to re-engage at the appropriate time.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">What Prospects Asked</div>
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">How did you get my personal contact number?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Lindsay's question about data sourcing is a signal worth taking seriously. Even if asked only once explicitly, it reflects an underlying concern about data provenance that likely exists more broadly. In regulated sectors and among more senior contacts, this question can derail a call before the pitch lands. Having a clear, confident, and concise answer to this — referencing the legitimate data source — is important for maintaining credibility in the opening seconds of a call.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send information by email for me to review?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Several prospects — including Samson, Mark Evans, and Reese — asked for email materials rather than continuing the conversation live. This is a mixed signal: it can indicate genuine curiosity or polite deflection. In Samson's case it came with an explicit interest in MPS scores, suggesting real relevance. The follow-up emails sent in response to these requests represent warm touchpoints and should be treated as active pipeline, not just courtesy sends.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Market Themes</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/shopkeepers.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Video is normalised — but not standardised</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Prospects across April consistently referenced video as something they already use, but the tools vary wildly: WhatsApp, Grip, proprietary OEM software, and generic conferencing platforms all came up. There is no dominant standard in place. This fragmentation is an opportunity — Clipfix can position itself as the purposebuilt alternative to ad hoc workarounds, rather than competing with a single entrenched platform.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The gatekeeper and data quality problem is compressing true conversation rates</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable portion of dials this month resulted in gatekeepers, voicemails, retired contacts, or individuals who had left their organisations. In several cases, the person called had not worked at the target company for months or years. Improving data recency and directline access would meaningfully increase the number of decision-maker conversations available from the same volume of dials.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Referrals are an underutilised asset</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Two conversations this month produced named referrals — Robert Ball at Valento (head of customer technical services) and a potential internal forward at British Gas via Reese. These warm introductions are the highest-quality leads generated in April and deserve prioritised follow-up. The fact that they emerged from conversations that were otherwise dead ends suggests a more deliberate referral-asking strategy could yield more of the same.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Sector fit matters more than vertical breadth</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Conversations with contacts in warehouse operations, industrial commercial, and OEM last-line support consistently produced the objection that Clipfix is simply not relevant to their role. Conversely, conversations touching on boiler servicing, field engineering dispatch, and customer-facing technical support showed clearer resonance. Focusing outreach on sectors where inbound technical troubleshooting is a daily operational reality — rather than casting broadly — would increase conversion rates.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Prospects in contract lock-in are tomorrow's pipeline</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Helen's two-year Grip contract and similar situations where prospects are recently renewed represent a distinct category of opportunity. These are not rejections — they are time-shifted possibilities. Building a structured re-engagement sequence for these contacts, timed to the end of their contract periods, would convert what currently looks like lost calls into future meetings.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Recommended Actions</div>
+      </div>
+      <div style="padding:6px 24px 6px">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Prioritise follow-up on the four warm contacts from April — Chris Goggin (Renault UK, chris.goggin@renaultuk.com), Mark Evans (Hoval, mark.evans@hoval.com), Samson (HRU Breakdown and Repairs), and Reese (British Gas, restart@britishgas.co.uk) — each has either agreed to receive materials or indicated openness to further contact. These should be treated as active pipeline and followed up within the first week of May.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Pursue the Robert Ball referral at Valento (head of customer technical services) directly — this was a named, role-specific referral provided voluntarily by Mark, who recently left the business. A warm introduction framed around Mark's endorsement will carry significantly more weight than a cold approach.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Audit and refresh the contact data to remove stale records — at least two calls this month connected with individuals who had left their organisations, one as long ago as 2016. Scrubbing leavers and updating contact lists before the next campaign cycle will reduce wasted dials and protect the credibility of the outreach.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a specific rebuttal to the 'we already use video' objection — whether the incumbent is WhatsApp, Grip, or an ERP-integrated tool, the current response is not consistently breaking through. A short, sharp differentiation statement that names what Clipfix delivers that generic video cannot — focused on outcomes like reduced engineer visits, faster resolution, or NPS improvement — should be built into the call framework.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Create a contract-expiry nurture sequence for Helen and any similar prospects identified going forward — Helen explicitly said to follow up in 18 months. Logging this with a hard reminder and a lightweight keep-in-touch cadence (quarterly at most) will ensure this opportunity is not lost to a calendar gap.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">6</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Tighten the target contact profile to prioritise customer service managers, technical support leads, and field service operations roles — conversations with maintenance staff, warehouse managers, and industrial commercial contacts consistently produced irrelevance objections. Narrowing the call list to roles with direct accountability for inbound technical customer contact will improve conversation quality and reduce time spent on mismatched prospects.</p>
+      </div></div>
+    </div></div>
+    </div>
+<div class="footer">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
+  <span class="footer-tag">Phone First, Always</span>
+</div>
+<script>
+function showTab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
+}
+</script>
+</body>
+</html>
