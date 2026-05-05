@@ -1,0 +1,109 @@
+{
+  "months": [
+    {
+      "month": "October 2025",
+      "stats": {
+        "totalCalls": 1338,
+        "connected": 170,
+        "conversations": 121,
+        "meetings": 10,
+        "dispositions": {
+          "Activated": 13,
+          "No, Not Now": 28
+        }
+      },
+      "sections": [],
+      "handovers": []
+    },
+    {
+      "month": "November 2025",
+      "stats": {
+        "totalCalls": 1619,
+        "connected": 175,
+        "conversations": 126,
+        "meetings": 13,
+        "dispositions": {
+          "Activated": 20,
+          "No, Not Now": 23
+        }
+      },
+      "sections": [],
+      "handovers": []
+    },
+    {
+      "month": "December 2025",
+      "stats": {
+        "totalCalls": 1565,
+        "connected": 196,
+        "conversations": 136,
+        "meetings": 12,
+        "dispositions": {
+          "Activated": 22,
+          "No, Not Now": 17
+        }
+      },
+      "sections": [],
+      "handovers": []
+    },
+    {
+      "month": "January 2026",
+      "stats": {
+        "totalCalls": 1604,
+        "connected": 172,
+        "conversations": 135,
+        "meetings": 9,
+        "dispositions": {
+          "Activated": 13,
+          "No, Not Now": 22
+        }
+      },
+      "sections": [],
+      "handovers": []
+    },
+    {
+      "month": "February 2026",
+      "stats": {
+        "totalCalls": 1566,
+        "connected": 146,
+        "conversations": 114,
+        "meetings": 11,
+        "dispositions": {
+          "Activated": 23,
+          "No, Not Now": 15
+        }
+      },
+      "sections": [],
+      "handovers": []
+    },
+    {
+      "month": "March 2026",
+      "stats": {
+        "totalCalls": 2445,
+        "connected": 262,
+        "conversations": 201,
+        "meetings": 14,
+        "dispositions": {
+          "Activated": 35,
+          "No, Not Now": 28
+        }
+      },
+      "sections": [],
+      "handovers": []
+    },
+    {
+      "month": "April 2026",
+      "stats": {
+        "totalCalls": 1565,
+        "connected": 186,
+        "conversations": 144,
+        "meetings": 9,
+        "dispositions": {
+          "Activated": 26,
+          "No, Not Now": 25
+        }
+      },
+      "sections": [],
+      "handovers": []
+    }
+  ]
+}
