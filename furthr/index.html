@@ -28,6 +28,10 @@
   .panel{display:none;padding:32px 56px 64px;max-width:960px}
   .panel.active{display:block}
 
+  /* ── Meetings expandable ── */
+  details[open] summary span:first-child{transform:rotate(90deg);display:inline-block}
+  details summary::-webkit-details-marker{display:none}
+
   /* ── Footer ── */
   .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
   .footer-logo{height:28px;opacity:0.45}
@@ -45,18 +49,180 @@
   <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
 </div>
 <div class="tabs">
-    <button class="tab active" onclick="showTab(0)">April 2026</button>
-  </div>
+    <button class="tab " onclick="showTab(0)">October 2025</button>
+  
+    <button class="tab " onclick="showTab(1)">November 2025</button>
+  
+    <button class="tab " onclick="showTab(2)">December 2025</button>
+  
+    <button class="tab " onclick="showTab(3)">January 2026</button>
+  
+    <button class="tab " onclick="showTab(4)">February 2026</button>
+  
+    <button class="tab " onclick="showTab(5)">March 2026</button>
+  
+    <button class="tab active" onclick="showTab(6)">April 2026</button>
+  <button class="tab" onclick="showTab(7)">All Time</button></div>
 
-    <div class="panel active" id="panel-0">
+    <div class="panel " id="panel-0">
       
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1606</div>
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1338</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">145</div>
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">121</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">10</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">13</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">28</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div></div>
+    </div>
+    <div class="panel " id="panel-1">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1619</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">126</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">13</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">20</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">23</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div></div>
+    </div>
+    <div class="panel " id="panel-2">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1565</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">136</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">12</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">22</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">17</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div></div>
+    </div>
+    <div class="panel " id="panel-3">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1604</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">135</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">9</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">13</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">22</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div></div>
+    </div>
+    <div class="panel " id="panel-4">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1566</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">114</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">11</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">23</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">15</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div></div>
+    </div>
+    <div class="panel " id="panel-5">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">2445</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">201</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">14</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">35</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">28</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">0</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div></div>
+    </div>
+    <div class="panel active" id="panel-6">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1604</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">144</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
@@ -74,7 +240,7 @@
       <div>
   <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
     <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
-    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">April 2026 was a month defined by a market that is broadly aware of its carbon reporting obligations but largely satisfied — at least for now — with the solutions it already has in place. The overall tone of conversations was polite and professionally engaged, but the dominant response was one of existing commitment: to long-term contracts, in-house tools, incumbent consultants, or group-level mandates that remove individual decision-making power from the contacts being reached. Rather than a market that doesn't see the value of what Furthr offers, this feels like a market that believes it has already solved the problem, even where the evidence suggests otherwise.</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">April 2026 was a month of steady ground-level intelligence gathering. The market showed clear signs of life — a meaningful number of prospects engaged in genuine conversation, and several meetings were secured — but the overall picture was one of a space that is increasingly crowded with incumbent solutions. A large proportion of the conversations reached were substantive enough to reveal real buying context, and the pipeline of callbacks and follow-ups built throughout the month suggests there is latent interest that has not yet converted. The month felt like planting seeds rather than harvesting, with the market broadly aware of the carbon reporting category but not yet compelled to move.</div>
     
   </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -96,51 +262,51 @@
         <tbody>
       <tr>
         <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">PlanetMark</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect confirmed they are currently engaged with PlanetMark for carbon accounting but are not looking to expand until autumn, and expressed specific interest in breaking down emissions by fuel type — a gap their current setup may not address.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect confirmed they are currently engaged with PlanetMark for carbon accounting and not looking to expand until autumn, though they expressed future interest in breaking down emissions by fuel type.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
       </tr>
       <tr>
         <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Mondra</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Prospect stated they work with Mondra under a long-term contract, making any alternative solution not immediately relevant.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Lisa stated that Mondra handles their sustainability data needs under a long-term contract, making Furthr's offer not currently relevant.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">SAP (third-party integration)</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A sustainability manager described colleagues handling broader scope three reporting through third-party integration into SAP systems, indicating embedded enterprise infrastructure.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">SAP integration (third-party)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A sustainability manager noted their colleagues handle scope three reporting with third-party integration into SAP systems, indicating an embedded technical solution already in place.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">In-house / bespoke internal tools</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple prospects referenced proprietary internal systems. One stated directly: 'they write their own code and have previously looked into platforms like ours, but found them too expensive and lacking needed flexibility.'</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Internal/bespoke code</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Claire mentioned her team writes their own code for tracking carbon emissions and has previously evaluated external platforms, finding them too expensive and insufficiently flexible.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">In-house consultants and internal tools</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Emma noted they already have consultants and internal tools for carbon reporting and are not looking to bring in another third party.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~3</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">External sustainability consultants</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Several prospects indicated reliance on third-party consultants for carbon reporting, with comments such as 'they already have consultants and internal tools for their carbon reporting needs' and references to associates handling calculations alongside Excel.</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~4</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Excel and associate-led calculations</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A small charity representative mentioned using an associate for calculations and Excel, acknowledging this may become inadequate as data volume grows.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Schneider Electric (prior employer experience)</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A recently appointed sustainability manager referenced their previous experience at Schneider Electric as the basis for being 'well-equipped' in their current role, particularly around scope three. Suggested connecting on LinkedIn rather than engaging further.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Schneider Electric (prior experience)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A sustainability manager cited their previous experience at Schneider Electric as having equipped them sufficiently for current scope three reporting demands.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Head office / group-level mandates</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">At least one prospect indicated that sustainability reporting and carbon data management are handled centrally by their head office, removing them from the decision entirely.</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Three-year contractual solution (unnamed)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect stated their current solution is contractually locked in for three years, making any new offering irrelevant for now.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
-      </tr>
-      <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Excel-based processes</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A small charity described using 'an associate for calculations and Excel' but acknowledged they 'expect data management to become more challenging as data volume increases' — flagging Excel as a future vulnerability rather than a long-term solution.</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
       </tr></tbody>
       </table>
     </div>
@@ -152,59 +318,51 @@
       <div style="padding:18px 24px">
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Already have a solution in place</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~11 conversations</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Already using a solution or consultant</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~9 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They work with Mondra for their needs and it is a long-term contract, making my offer not relevant at this time."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the single most dominant objection of the month and reflects a market that has moved past the awareness stage. Prospects are not questioning whether carbon reporting requires a solution — they believe they already have one. The strategic opportunity lies in probing what that solution cannot do: fuel-type breakdowns, scalability, flexibility, cost. Furthr's messaging should be calibrated to address the limitations of entrenched solutions rather than leading with the problem itself.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They already have consultants and internal tools for their carbon reporting needs, so they aren't looking to hire another third party."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the dominant objection of the month, appearing across company sizes and sectors. It signals that the category is well understood but that Furthr is entering conversations after the buying decision has already been made. The focus should shift to uncovering contract end dates and positioning around the limitations of current solutions — particularly around flexibility, cost, and scalability — rather than leading with product features.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Handled by head office or another team</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right person / handled elsewhere</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~7 conversations</span>
         </div>
         <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Sustainability reporting and carbon data management are handled by their head office, and he doesn't get involved in those matters."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A structural objection that reflects genuine organisational reality in larger businesses. The contact reached is not the decision-maker and often cannot provide a referral. This signals a need to improve contact targeting at the research stage — specifically identifying whether sustainability decisions are made locally or centrally before the dial is placed, to avoid wasted conversations with non-influencers.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A significant number of contacts, while reachable, had no decision-making authority over sustainability tools. This suggests the contact data may benefit from a review to better target sustainability leads at business-unit or group level. Where referrals were offered, they should be pursued immediately — and where they were not, switchboard escalation is a viable next step.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Too expensive / not flexible enough</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
-        </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They write their own code and have previously looked into platforms like ours, but found them too expensive and lacking needed flexibility."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A perception objection tied to prior experience rather than current pricing. This is recoverable — particularly where the product has evolved since those earlier evaluations. It points to an opportunity to reintroduce Furthr to prospects who have previously investigated but not converted, with a focus on what has changed and where flexibility has improved.</p>
-      </div>
-      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Not the right time / busy</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~8 conversations</span>
-        </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He was about to go into a meeting and requested an email instead."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A high volume of calls landed at genuinely inconvenient moments. While some of these reflect unavoidable timing, the pattern suggests that call scheduling and time-of-day targeting may need refinement. The positive framing is that most of these prospects did not object to the proposition — they simply weren't available. Converting these into firm callbacks is a sequencing priority.</p>
-      </div>
-      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Doesn't handle sustainability / wrong person</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
-        </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He mentioned that he does not handle sustainability reporting, which is not his responsibility."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Reflects data accuracy challenges within the prospect list. A portion of dials are reaching contacts whose roles have shifted or were incorrectly categorised. These conversations have limited value unless a referral is obtained. Building a consistent referral ask into these calls — as was done successfully in at least one instance — would convert these otherwise lost dials into intelligence.</p>
-      </div>
-      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Registered with TPS / do not call</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
-        </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They don't take cold calls as they are registered with the telephone preference service."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A compliance-related objection that requires immediate list scrubbing. Beyond the legal obligation, these interactions carry reputational risk if not handled promptly and correctly. Records should be updated in real time when TPS registration is flagged.</p>
-      </div>
-      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Prefers email over calls</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Locked into a long-term contract</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"She expressed she's not interested in any selling and prefers emails over calls. She mentioned needing space and time after the call to consider any potential solutions in the future."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A softer objection that nonetheless signals a willingness to remain in conversation via a different channel. These prospects should not be treated as lost — they represent a warm email audience. A structured follow-up email sequence tailored to their specific context (scope of reporting, current tools, scale) would be an appropriate next step.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They work with Mondra for their needs and it is a long-term contract, making my offer not relevant at this time."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Contract lock-in is a timing objection rather than a values objection. These prospects should be flagged for re-engagement six to nine months before their contract renewal window. The goal with these contacts is to plant doubt about their current solution's capabilities — particularly around scope three granularity and data volume — so that Furthr is front of mind when they next evaluate.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Platform too expensive or not flexible enough</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Found them too expensive and lacking needed flexibility."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Price and configurability concerns indicate that prospects who have previously evaluated Furthr or similar platforms have unresolved questions about ROI and customisation. This objection warrants a dedicated response in outreach — either a clearer articulation of pricing tiers or proof points around platform flexibility, ideally backed by case studies from comparable organisations.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Prefers not to receive cold calls / registered with TPS</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They don't take cold calls as they are registered with the telephone preference service."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A portion of the market is proactively opted out of cold outreach. This is a data quality and channel issue. Where TPS registrations are flagged, those contacts should be removed promptly and replaced with email or LinkedIn-first outreach to avoid compliance risk and to protect Furthr's brand reputation in the market.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not relevant to our sector or scale</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Their focus on social housing doesn't require much on carbon capture — they work with a consultant for that and don't have extensive reporting needs like the private sector."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Some prospects felt Furthr's proposition was calibrated for larger, more complex organisations. This is worth examining in terms of how the opening pitch is framed — particularly when calling into sectors like social housing, small charities, or niche B2B firms. A more sector-contextualised introduction could reduce early dismissal in these verticals.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -215,23 +373,23 @@
       <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
           <span style="font-size:14px;font-weight:700;color:#3090C0">How did you get my personal number?</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
         </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">This question came up in multiple calls and reflects growing awareness among professionals about data sourcing and personal privacy. It signals a degree of discomfort with cold outreach to personal devices, and in one case led to a productive redirection to a work email. When this question arises, having a clear, honest and reassuring response — as well as an immediate pivot to professional contact details — is essential both for compliance and for preserving the relationship.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Prospects are increasingly aware of data sourcing practices and are questioning the provenance of their contact details. This reveals a growing sensitivity around privacy in the sustainability space — likely professionals who are active on LinkedIn and receive high volumes of outreach. Transparency about data sourcing, offered proactively and confidently, can convert a defensive moment into a trust-building one.</p>
       </div>
       <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
           <span style="font-size:14px;font-weight:700;color:#3090C0">Can you call back at a specific time?</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~9 conversations</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~8 conversations</span>
         </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">The high frequency of this request reflects genuine openness to a conversation, just not at that moment. These are among the most valuable outcomes of the month when followed through correctly — a scheduled callback is a soft commitment. It reveals that the proposition is not being rejected outright, but that timing and context matter. Tracking and honouring these precisely is a direct path to increasing meetings from the existing pipeline.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">The frequency of callback requests suggests genuine but time-pressured prospects rather than outright rejection. Many were mid-meeting or mid-task when reached. This is actually a positive signal — it indicates the contact was not hostile enough to decline outright. Rigorous callback scheduling and follow-through is critical to converting this latent interest into meetings.</p>
       </div>
       <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
           <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send an email instead?</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
         </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Prospects requesting email are often in environments where calls feel disruptive, or they want the opportunity to evaluate quietly before committing to a conversation. This is an evaluation-stage behaviour — they are not dismissing the proposition, they are managing their own process. A strong email follow-up with a clear, specific hook relevant to their context (e.g., scope three data complexity, contract renewal timing) gives this group a genuine reason to re-engage.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Several prospects defaulted to email as their preferred channel, which often functions as a soft deflection but can also represent a genuine preference for asynchronous communication. A strong, concise follow-up email sequence — tailored to the specific context of each call — is essential to keep these prospects warm and move them toward a conversation.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -241,24 +399,24 @@
       </div>
       <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The 'Solved It Already' Mindset</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">The most consistent pattern across April's conversations was the belief among sustainability contacts that their current setup — whether a consultant, a platform, an in-house tool, or a combination — is sufficient. This is less a reflection of genuine capability than of unfamiliarity with the ceiling of those solutions. The conversations that broke through this mindset did so by surfacing specific limitations, such as the inability to disaggregate emissions by fuel type or the coming strain on Excel-based processes as data scales.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Scope three is the pressure point, not scope one or two</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Multiple prospects referenced scope one and two reporting as essentially solved problems within their organisations, while scope three — with its supply chain complexity and third-party dependencies — was consistently flagged as the area of ongoing challenge. One prospect explicitly noted their colleagues handle scope three with third-party SAP integration, and another charity contact acknowledged that data management around scope three was expected to become more difficult as volume grows. Furthr's messaging should lean heavily into scope three as the primary pain point.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Scope Three Complexity is Real but Often Delegated</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects acknowledged managing scope three emissions but noted that it was handled by colleagues, third parties, or head office rather than themselves. This suggests that while scope three complexity is understood as a genuine challenge, organisations are distributing responsibility rather than consolidating it. Furthr's outreach may benefit from mapping this distributed ownership more explicitly, and targeting the individuals who own the most complex or high-volume portions of scope three reporting.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The Excel-to-platform transition is still happening</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A meaningful subset of organisations are still operating with spreadsheet-based approaches, often supplemented by an external associate or consultant. These contacts recognise the limitations but have not yet committed to a platform solution. The window for conversion is open but requires a clear articulation of what the transition looks like in practice — particularly around implementation burden and time-to-value.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Long-Term Contracts Are Blocking Near-Term Conversion</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Multiple prospects referenced being locked into existing contracts — some explicitly multi-year — as the primary reason for disengagement. This is a timing objection as much as a preference one. These contacts represent a high-value future pipeline if re-engagement is timed to contract renewal windows. Capturing indicative renewal dates during these conversations, even informally, would allow for precisely timed re-outreach.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Centralised sustainability functions are blocking frontline access</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">In larger organisations, sustainability reporting is increasingly consolidated at group or head office level, leaving site-level or regional contacts unable to engage meaningfully with new solutions. This structural pattern means that cold outreach to individual sustainability managers at large enterprises is often a dead end unless it is paired with a strategy to access central procurement or group ESG leads directly.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Excel Remains a Widespread but Fragile Baseline</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable subset of prospects — particularly smaller organisations and charities — are still relying on Excel and associate-level resource for emissions calculations. One prospect explicitly acknowledged that this approach would not scale as data volumes grow, describing it as something 'they are addressing in the background.' This is a strong signal of latent demand among organisations that have not yet formalised their approach, and who are aware of the problem but have not yet acted on it.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Prospects are fatigued by cold outreach in this category</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several contacts either hung up immediately, cited TPS registration, or expressed frustration at the volume of calls they receive. This suggests the sustainability reporting space is becoming increasingly saturated with vendor outreach, and that a differentiated opening — one that leads with insight or a specific sector reference rather than a generic product introduction — will be necessary to earn time in this market.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Decision Authority is Often Misaligned with Contact Data</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring challenge this month was reaching individuals who either no longer hold the role indicated in the data, or who are adjacent to sustainability without owning it directly. In some cases this produced useful referrals; in others the call ended without a path forward. Improving the alignment between contact data and actual decision authority — particularly in larger organisations where sustainability sits across multiple functions — would meaningfully increase the quality of conversations.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Future interest is real but seasonally deferred</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring pattern across the month was prospects expressing genuine interest in the category but pointing to autumn or later in the year as their window for evaluation. One contact confirmed they were not looking to expand their current solution until autumn, and several others framed callbacks in terms of months rather than days. This suggests a pipeline-building phase now could yield a strong conversion period in Q3.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -268,34 +426,140 @@
       <div style="padding:6px 24px 6px">
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Prioritise follow-up on the PlanetMark prospect who has a confirmed call scheduled for Wednesday the 22nd at 12 PM with Dara — this is the warmest opportunity in the pipeline and should be treated as a priority meeting. Their stated interest in emissions disaggregation by fuel type should be addressed directly in that conversation.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a dedicated re-engagement sequence for contract-locked prospects — flag their estimated renewal windows and initiate outreach six to nine months prior, leading with a question about how their current solution handles scope three data volume and granularity.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a structured callback tracker for all prospects who requested a specific recall time this month — multiple individuals gave precise windows, and converting these agreed callbacks into meetings is the single highest-leverage activity available from April's dial volume.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a sector-specific opening for social housing, small charities, and other lower-complexity verticals that acknowledges their scale and frames Furthr's value in terms of efficiency and audit-readiness rather than enterprise-level reporting complexity.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a dedicated email follow-up sequence for prospects who prefer written communication over calls, with tailored messaging based on their stated situation (e.g., current tool limitations, upcoming contract renewals, growing data volumes) — do not treat email-preference prospects as inactive; treat them as a warm audience on a different channel.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Prioritise immediate follow-up on all callback-committed contacts from April — the volume of deferred conversations represents the highest-probability pipeline, and each should receive a personalised confirmation email within 24 hours of the agreed callback time.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Identify all prospects who mentioned being locked into existing contracts and log indicative renewal timescales where possible — schedule re-engagement outreach to coincide with renewal windows, positioning Furthr as the logical evaluation option before they recommit.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Review contact data quality to reduce the proportion of calls reaching non-decision-makers — focus on identifying group-level or head-office sustainability leads in larger organisations where frontline contacts consistently deflect to central teams.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Refine the contact targeting criteria to reduce the proportion of dials reaching individuals who do not own or influence sustainability decisions — where head office or group-level control is confirmed, escalate outreach to group-level contacts rather than leaving these accounts dormant.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Create a concise, insight-led follow-up email template for prospects who requested email communication — it should open with a scope three-specific insight or data point rather than a product pitch, to earn attention in an inbox likely to receive multiple vendor approaches.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">6</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Audit the prospect data list against the Telephone Preference Service register before the next campaign cycle to ensure compliance and to avoid reputational risk from repeated contact with TPS-registered individuals.</p>
-      </div>
-      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">7</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Introduce a consistent, low-pressure referral ask into calls where the prospect confirms they are not the right person — the instance this month where a correct contact name (Tom Taylor) was obtained demonstrates that this approach works and should be applied systematically.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Flag PlanetMark as a priority competitive focus — the prospect currently using PlanetMark expressed specific interest in breaking down emissions by fuel type, which represents a direct feature conversation Furthr should be prepared to have in depth as a differentiator during the scheduled Wednesday follow-up.</p>
       </div></div>
     </div></div>
     </div>
+
+  <div class="panel" id="panel-7">
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">All Time — Month-on-Month Comparison</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px">Full campaign history at a glance</div>
+      </div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;min-width:680px">
+          <thead>
+            <tr style="background:rgba(255,255,255,0.04)">
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:left">Month</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(200,216,240,0.5);text-align:center">Dials</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">Connects</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#3090C0;text-align:center">Convos</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#32B241;text-align:center">Activated</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">No, Not Now</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#FE6601;text-align:center">Meetings</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Connect %</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Mtg %</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">October 2025</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1338</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">170</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">121</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">13</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">28</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">10</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">12.7%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">8.3%</td>
+    </tr><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">November 2025</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1619</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">175</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">126</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">20</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">23</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">13</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">10.8%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">10.3%</td>
+    </tr><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">December 2025</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1565</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">196</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">136</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">22</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">17</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">12</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">12.5%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">8.8%</td>
+    </tr><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">January 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1604</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">172</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">135</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">13</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">22</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">9</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">10.7%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">6.7%</td>
+    </tr><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">February 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1566</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">146</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">114</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">23</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">15</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">11</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">9.3%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">9.6%</td>
+    </tr><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">March 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">2445</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">262</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">201</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">35</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">28</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">14</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">10.7%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">7.0%</td>
+    </tr><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">April 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1604</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">185</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">144</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">26</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">25</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">9</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">11.5%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">6.3%</td>
+    </tr></tbody>
+          <tfoot>
+            <tr style="background:rgba(255,255,255,0.06)">
+              <td style="padding:12px 14px;font-weight:800;color:#fff;font-size:13px">Total</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(200,216,240,0.9)">11741</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.65)">1306</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#3090C0">977</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#32B241">152</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.55)">158</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#FE6601">78</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">11.1%</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">8.0%</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
 <div class="footer">
   <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
   <span class="footer-tag">Phone First, Always</span>
