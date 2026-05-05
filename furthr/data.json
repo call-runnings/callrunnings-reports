@@ -92,17 +92,200 @@
     },
     {
       "month": "April 2026",
+      "sections": [
+        {
+          "type": "overview",
+          "title": "Campaign Overview",
+          "content": "April 2026 was a month of steady ground-level intelligence gathering. The market showed clear signs of life — a meaningful number of prospects engaged in genuine conversation, and several meetings were secured — but the overall picture was one of a space that is increasingly crowded with incumbent solutions. A large proportion of the conversations reached were substantive enough to reveal real buying context, and the pipeline of callbacks and follow-ups built throughout the month suggests there is latent interest that has not yet converted. The month felt like planting seeds rather than harvesting, with the market broadly aware of the carbon reporting category but not yet compelled to move.",
+          "content2": "What stood out most was the prevalence of locked-in contracts and established internal processes. Prospects were rarely hostile to the concept of what Furthr offers — in fact, several expressed genuine curiosity — but they arrived at conversations already anchored to existing tools, consultants, or long-term agreements. This created a pattern where interest was present but timing was the blocker, rather than a fundamental rejection of the value proposition. The segment that proved hardest to crack was larger organisations with centralised sustainability functions, where decisions are made at head office level and frontline contacts have no mandate to evaluate new solutions.",
+          "content3": "On the positive side, the conversations that did open up revealed a market that is actively grappling with data complexity — particularly around scope three — and beginning to feel the limits of spreadsheet-based approaches and legacy integrations. Several prospects flagged that their current setups were functional but fragile, and at least one explicitly noted that data management was expected to become more challenging as volume increases. That is a window Furthr should be looking to open wider in the months ahead.",
+          "quotes": []
+        },
+        {
+          "type": "competitor_table",
+          "title": "Competitor & Market Intelligence",
+          "rows": [
+            {
+              "competitor": "PlanetMark",
+              "what_said": "A prospect confirmed they are currently engaged with PlanetMark for carbon accounting and not looking to expand until autumn, though they expressed future interest in breaking down emissions by fuel type.",
+              "freq": 1,
+              "signal": "hot"
+            },
+            {
+              "competitor": "Mondra",
+              "what_said": "Lisa stated that Mondra handles their sustainability data needs under a long-term contract, making Furthr's offer not currently relevant.",
+              "freq": 1,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "SAP integration (third-party)",
+              "what_said": "A sustainability manager noted their colleagues handle scope three reporting with third-party integration into SAP systems, indicating an embedded technical solution already in place.",
+              "freq": 1,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Internal/bespoke code",
+              "what_said": "Claire mentioned her team writes their own code for tracking carbon emissions and has previously evaluated external platforms, finding them too expensive and insufficiently flexible.",
+              "freq": 1,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "In-house consultants and internal tools",
+              "what_said": "Emma noted they already have consultants and internal tools for carbon reporting and are not looking to bring in another third party.",
+              "freq": 3,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Excel and associate-led calculations",
+              "what_said": "A small charity representative mentioned using an associate for calculations and Excel, acknowledging this may become inadequate as data volume grows.",
+              "freq": 1,
+              "signal": "hot"
+            },
+            {
+              "competitor": "Schneider Electric (prior experience)",
+              "what_said": "A sustainability manager cited their previous experience at Schneider Electric as having equipped them sufficiently for current scope three reporting demands.",
+              "freq": 1,
+              "signal": "cold"
+            },
+            {
+              "competitor": "Three-year contractual solution (unnamed)",
+              "what_said": "A prospect stated their current solution is contractually locked in for three years, making any new offering irrelevant for now.",
+              "freq": 1,
+              "signal": "org_barrier"
+            }
+          ]
+        },
+        {
+          "type": "objections",
+          "title": "Common Objections",
+          "items": [
+            {
+              "objection": "Already using a solution or consultant",
+              "freq": 9,
+              "quote": "They already have consultants and internal tools for their carbon reporting needs, so they aren't looking to hire another third party.",
+              "analysis": "This was the dominant objection of the month, appearing across company sizes and sectors. It signals that the category is well understood but that Furthr is entering conversations after the buying decision has already been made. The focus should shift to uncovering contract end dates and positioning around the limitations of current solutions — particularly around flexibility, cost, and scalability — rather than leading with product features."
+            },
+            {
+              "objection": "Not the right person / handled elsewhere",
+              "freq": 7,
+              "quote": "Sustainability reporting and carbon data management are handled by their head office, and he doesn't get involved in those matters.",
+              "analysis": "A significant number of contacts, while reachable, had no decision-making authority over sustainability tools. This suggests the contact data may benefit from a review to better target sustainability leads at business-unit or group level. Where referrals were offered, they should be pursued immediately — and where they were not, switchboard escalation is a viable next step."
+            },
+            {
+              "objection": "Locked into a long-term contract",
+              "freq": 3,
+              "quote": "They work with Mondra for their needs and it is a long-term contract, making my offer not relevant at this time.",
+              "analysis": "Contract lock-in is a timing objection rather than a values objection. These prospects should be flagged for re-engagement six to nine months before their contract renewal window. The goal with these contacts is to plant doubt about their current solution's capabilities — particularly around scope three granularity and data volume — so that Furthr is front of mind when they next evaluate."
+            },
+            {
+              "objection": "Platform too expensive or not flexible enough",
+              "freq": 2,
+              "quote": "Found them too expensive and lacking needed flexibility.",
+              "analysis": "Price and configurability concerns indicate that prospects who have previously evaluated Furthr or similar platforms have unresolved questions about ROI and customisation. This objection warrants a dedicated response in outreach — either a clearer articulation of pricing tiers or proof points around platform flexibility, ideally backed by case studies from comparable organisations."
+            },
+            {
+              "objection": "Prefers not to receive cold calls / registered with TPS",
+              "freq": 4,
+              "quote": "They don't take cold calls as they are registered with the telephone preference service.",
+              "analysis": "A portion of the market is proactively opted out of cold outreach. This is a data quality and channel issue. Where TPS registrations are flagged, those contacts should be removed promptly and replaced with email or LinkedIn-first outreach to avoid compliance risk and to protect Furthr's brand reputation in the market."
+            },
+            {
+              "objection": "Not relevant to our sector or scale",
+              "freq": 3,
+              "quote": "Their focus on social housing doesn't require much on carbon capture — they work with a consultant for that and don't have extensive reporting needs like the private sector.",
+              "analysis": "Some prospects felt Furthr's proposition was calibrated for larger, more complex organisations. This is worth examining in terms of how the opening pitch is framed — particularly when calling into sectors like social housing, small charities, or niche B2B firms. A more sector-contextualised introduction could reduce early dismissal in these verticals."
+            }
+          ]
+        },
+        {
+          "type": "questions",
+          "title": "What Prospects Asked",
+          "items": [
+            {
+              "question": "How did you get my personal number?",
+              "freq": 2,
+              "analysis": "Prospects are increasingly aware of data sourcing practices and are questioning the provenance of their contact details. This reveals a growing sensitivity around privacy in the sustainability space — likely professionals who are active on LinkedIn and receive high volumes of outreach. Transparency about data sourcing, offered proactively and confidently, can convert a defensive moment into a trust-building one."
+            },
+            {
+              "question": "Can you call back at a specific time?",
+              "freq": 8,
+              "analysis": "The frequency of callback requests suggests genuine but time-pressured prospects rather than outright rejection. Many were mid-meeting or mid-task when reached. This is actually a positive signal — it indicates the contact was not hostile enough to decline outright. Rigorous callback scheduling and follow-through is critical to converting this latent interest into meetings."
+            },
+            {
+              "question": "Can you send an email instead?",
+              "freq": 3,
+              "analysis": "Several prospects defaulted to email as their preferred channel, which often functions as a soft deflection but can also represent a genuine preference for asynchronous communication. A strong, concise follow-up email sequence — tailored to the specific context of each call — is essential to keep these prospects warm and move them toward a conversation."
+            }
+          ]
+        },
+        {
+          "type": "themes",
+          "title": "Market Themes",
+          "items": [
+            {
+              "heading": "Scope three is the pressure point, not scope one or two",
+              "body": "Multiple prospects referenced scope one and two reporting as essentially solved problems within their organisations, while scope three — with its supply chain complexity and third-party dependencies — was consistently flagged as the area of ongoing challenge. One prospect explicitly noted their colleagues handle scope three with third-party SAP integration, and another charity contact acknowledged that data management around scope three was expected to become more difficult as volume grows. Furthr's messaging should lean heavily into scope three as the primary pain point."
+            },
+            {
+              "heading": "The Excel-to-platform transition is still happening",
+              "body": "A meaningful subset of organisations are still operating with spreadsheet-based approaches, often supplemented by an external associate or consultant. These contacts recognise the limitations but have not yet committed to a platform solution. The window for conversion is open but requires a clear articulation of what the transition looks like in practice — particularly around implementation burden and time-to-value."
+            },
+            {
+              "heading": "Centralised sustainability functions are blocking frontline access",
+              "body": "In larger organisations, sustainability reporting is increasingly consolidated at group or head office level, leaving site-level or regional contacts unable to engage meaningfully with new solutions. This structural pattern means that cold outreach to individual sustainability managers at large enterprises is often a dead end unless it is paired with a strategy to access central procurement or group ESG leads directly."
+            },
+            {
+              "heading": "Prospects are fatigued by cold outreach in this category",
+              "body": "Several contacts either hung up immediately, cited TPS registration, or expressed frustration at the volume of calls they receive. This suggests the sustainability reporting space is becoming increasingly saturated with vendor outreach, and that a differentiated opening — one that leads with insight or a specific sector reference rather than a generic product introduction — will be necessary to earn time in this market."
+            },
+            {
+              "heading": "Future interest is real but seasonally deferred",
+              "body": "A recurring pattern across the month was prospects expressing genuine interest in the category but pointing to autumn or later in the year as their window for evaluation. One contact confirmed they were not looking to expand their current solution until autumn, and several others framed callbacks in terms of months rather than days. This suggests a pipeline-building phase now could yield a strong conversion period in Q3."
+            }
+          ]
+        },
+        {
+          "type": "actions",
+          "title": "Recommended Actions",
+          "items": [
+            "Build a dedicated re-engagement sequence for contract-locked prospects — flag their estimated renewal windows and initiate outreach six to nine months prior, leading with a question about how their current solution handles scope three data volume and granularity.",
+            "Develop a sector-specific opening for social housing, small charities, and other lower-complexity verticals that acknowledges their scale and frames Furthr's value in terms of efficiency and audit-readiness rather than enterprise-level reporting complexity.",
+            "Prioritise immediate follow-up on all callback-committed contacts from April — the volume of deferred conversations represents the highest-probability pipeline, and each should receive a personalised confirmation email within 24 hours of the agreed callback time.",
+            "Review contact data quality to reduce the proportion of calls reaching non-decision-makers — focus on identifying group-level or head-office sustainability leads in larger organisations where frontline contacts consistently deflect to central teams.",
+            "Create a concise, insight-led follow-up email template for prospects who requested email communication — it should open with a scope three-specific insight or data point rather than a product pitch, to earn attention in an inbox likely to receive multiple vendor approaches.",
+            "Flag PlanetMark as a priority competitive focus — the prospect currently using PlanetMark expressed specific interest in breaking down emissions by fuel type, which represents a direct feature conversation Furthr should be prepared to have in depth as a differentiator during the scheduled Wednesday follow-up."
+          ]
+        }
+      ],
       "stats": {
-        "totalCalls": 1565,
-        "connected": 186,
+        "totalCalls": 1604,
+        "connected": 185,
         "conversations": 144,
         "meetings": 9,
+        "noAnswer": 1358,
+        "voicemail": 0,
+        "gatekeeper": 3,
+        "other": 0,
         "dispositions": {
+          "No, Not Me (No Ref)": 13,
+          "No Answer": 1358,
+          "Other": 36,
+          "Wrong Number": 7,
           "Activated": 26,
-          "No, Not Now": 25
+          "Connected": 2,
+          "Connected - Not Completed": 36,
+          "Meeting Booked": 9,
+          "No, Not Now": 25,
+          "Busy": 2,
+          "DNC": 3,
+          "No, Not Me (Ref)": 8,
+          "No, Not Ever": 63,
+          "Gatekeeper": 3,
+          "Bad Data": 11,
+          "Left Company": 1,
+          "Voicemail - Confirmed": 1
         }
       },
-      "sections": [],
       "handovers": []
     }
   ]
