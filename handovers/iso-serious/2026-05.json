@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "mp2kyqetj3qcp1dmjhb",
+      "savedAt": "2026-05-12T12:01:53.107Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "FlatPeak",
+        "contactName": "Matt Roderick",
+        "jobTitle": "Co-Founder & COO",
+        "phone": "+447718250457",
+        "email": "matt@flatpeak.com",
+        "linkedin": "https://linkedin.com/in/matroderick"
+      },
+      "spiced": {
+        "situation": "Matt is Co-Founder and COO at FlatPeak. He has been aware of ISO 27001 for some time — this is the second contact, with the first call in October 2025 and a follow-up in May 2026. ISO certification has been on his radar but has not progressed. He has personal prior experience with ISO 27001, describing having 'gone through it enough times' before, which means he is not coming in blind. The company appears to be in a growth phase, fielding increasing questions from customers about certification.",
+        "pain": "Matt is experiencing what he described as 'creeping, increasing questions from customers' about ISO certification. There is no acute crisis, but the pressure is building from the customer base rather than from any internal deadline. He is also sceptical about the value of the process itself, having characterised ISO 27001 as '85% box ticking and 10% actual usefulness' — suggesting his pain includes a frustration with the bureaucratic weight of certification, not just the absence of it. He is time-poor and has deprioritised this repeatedly despite acknowledging it needs doing.",
+        "impact": "The growing customer enquiries signal that the absence of ISO 27001 is becoming a friction point in commercial conversations — consistent with the SDR's pitch about it being 'a bit of a bottleneck to bring in more revenue.' While Matt did not explicitly confirm lost deals, the pattern of customers asking 'that sort of thing' suggests it is increasingly affecting trust or eligibility in enterprise or regulated client conversations. The strategic risk is that continued delay allows this to compound as FlatPeak moves upmarket.",
+        "critical_event": "No hard deadline was mentioned. Matt explicitly said 'there's no deadlines.' However, he did say he would like to get certification done this year (2026), and the meeting has been booked for the last week of June 2026. The SDR flagged that the typical process takes three to six months, which Matt did not push back on — meaning if he wants certification by end of year, the window to start is narrowing. This is a soft urgency lever the AE can use, not a genuine critical event.",
+        "decision": "Matt appears to be the primary decision-maker and likely holds sign-off given his Co-Founder and COO title. He referred to 'a couple of things we need to sort out first' without naming other stakeholders, suggesting he is driving this himself. There is no indication of a formal procurement process, committee, or budget cycle. He did mention he has 'a list of a couple of people I want to speak to properly' before deciding, which implies he is comparing providers. No budget figure or approval process was discussed."
+      },
+      "objections": [
+        {
+          "objection": "Not the right time — repeatedly pushed back timing across two calls, first to Q2, then to end of year, then to last week of June.",
+          "response": "The SDR handled this reasonably well by not forcing urgency but did plant the three-to-six month timeline as a soft nudge. The meeting was eventually booked by suggesting a scoping conversation rather than a sales meeting, which lowered the barrier. However, the SDR did not probe what the 'couple of things to sort out first' actually were, which is a gap the AE needs to address."
+        },
+        {
+          "objection": "Scepticism about the value of ISO 27001 — described it as '85% box ticking and 10% actual usefulness' and implied the process is largely template-driven.",
+          "response": "This objection was not addressed at all in either call. The SDR did not challenge or reframe this view. This is the most significant unhandled objection going into the meeting. Matt will likely come in with a transactional mindset, expecting a cheap, fast, templated job. The AE needs to either validate this efficiently and show how ISO Serious delivers exactly that, or carefully reframe where genuine value sits without being preachy about it."
+        },
+        {
+          "objection": "Requested email material rather than committing to a conversation on the first call.",
+          "response": "The SDR handled this acceptably by keeping the door open and securing a callback permission, which eventually led to the May follow-up call and the booked meeting."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the history — Matt knows who you are, you have spoken twice, and he knows this has been on the back burner. Do not treat this as a cold introduction. Start by validating his situation directly: something like, 'You mentioned customers are increasingly asking for this — I wanted to understand what that looks like for you in practice before we talk about anything on our side.' This gets him talking about commercial reality before you pitch anything. The most important thing to probe is what the 'couple of things to sort out first' actually are — these may be internal blockers, competing priorities, or even a co-founder who needs convincing. You need to know whether those blockers have been resolved or whether this meeting is still premature. His '85% box ticking' comment is the framing he will arrive with, so get ahead of it early. Do not be defensive. Instead, use it as an opening: ask him what his previous experience looked like and what he would want to be different this time. This positions ISO Serious as a pragmatic, efficient operator rather than a consultancy trying to inflate scope. Frame the conversation around speed to certification and minimal internal disruption — he wants this done, not drawn out. Use the three-to-six month window the SDR mentioned to create gentle urgency: if he wants this wrapped up in 2026, the conversation is timely. Do not oversell. Matt is experienced, sceptical, and comparing providers. Come in as a peer who is helping him make a practical decision, not a salesperson trying to close him.",
+      "key_quotes": [
+        "It's still on the list of things to do, but it's not got any further left the list.",
+        "There's no deadlines. There's more creeping, increasing questions from customers going. Yeah, that sort of thing.",
+        "I've gone through ISO 27001 enough times. It feels like it's 85% box ticking and 10% actual usefulness.",
+        "I'm sort of holding a list of a couple of people I want to speak to properly. When we sit down and say, right, we need to do this now."
+      ]
+    }
+  ]
+}
