@@ -1,0 +1,174 @@
+{
+  "months": [
+    {
+      "month": "May 2026",
+      "sections": [
+        {
+          "type": "overview",
+          "title": "Campaign Overview",
+          "content": "May 2026 was a month defined by a market that is largely self-sufficient — at least in its own estimation. The majority of conversations revealed prospects who had already found some form of answer to the security questionnaire problem, whether through dedicated tooling, AI-assisted automation, internal workarounds, or simply a low enough volume of questionnaires that the pain hadn't yet crystallised into urgency. The tone across the month was polite but firm: very few prospects were hostile, but equally very few felt the pull of an unsolved problem. Where doors opened, they opened narrowly — a callback agreed here, an email invited there — and the two meetings booked represent genuine interest in a market that took some patience to navigate.\n\nWhat stood out most was the prevalence of prospects who have recently invested in solutions — Vanta, AI tools, public trust centres, home-built platforms — and are now in a period of settling into those decisions. This created a recurring dynamic where Securilix arrived just after the window had closed. That said, several of these conversations surfaced nuance worth tracking: tools were described as handling 'most of the heavy lifting' rather than all of it, and one prospect spoke candidly about 'strict internal thresholds' suggesting workarounds rather than true resolution. The ceiling on these solutions may not be as high as prospects currently believe.\n\nOrganisationally, the month also surfaced a consistent challenge around reaching the right person. A meaningful proportion of connected calls resulted in redirections — to gatekeepers, wrong departments, automated systems, or contacts on leave. Where referrals were given, they were specific and actionable, pointing toward CSOs and senior compliance engineers. The market is reachable, but the path to the right conversation requires persistence and sharper targeting at the contact level.",
+          "quotes": []
+        },
+        {
+          "type": "competitor_table",
+          "title": "Competitor & Market Intelligence",
+          "rows": [
+            {
+              "competitor": "Vanta",
+              "what_said": "Prospect stated they 'already use Vanta and AI tools, effectively managing their questionnaires' and felt 'fully covered' with no gaps in their current solution.",
+              "freq": 1,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "AI tooling (unspecified)",
+              "what_said": "Multiple prospects referenced AI-assisted automation handling their questionnaire process. One said they had 'automated their security questionnaire process using AI, making it no longer an issue.'",
+              "freq": 3,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Public trust centre (self-built)",
+              "what_said": "One prospect described 'building a public trust centre to streamline their security questionnaire process,' finding it effective for engaging with both large enterprises and smaller distributors.",
+              "freq": 1,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Home-built internal solution",
+              "what_said": "A prospect described working on 'a home-baked solution for handling security questionnaires,' indicating active internal development rather than vendor procurement.",
+              "freq": 1,
+              "signal": "cold"
+            },
+            {
+              "competitor": "Existing internal process / compliance team",
+              "what_said": "Several prospects referenced having internal processes or compliance teams in place. One noted 'strict internal thresholds' resulting in very few requests reaching the team.",
+              "freq": 3,
+              "signal": "cold"
+            },
+            {
+              "competitor": "Anecdote (supplies list)",
+              "what_said": "A prospect explained they are 'on an anecdote supplies list, which keeps their sales team from having to deal with' security questionnaires entirely.",
+              "freq": 1,
+              "signal": "barrier"
+            }
+          ]
+        },
+        {
+          "type": "objections",
+          "title": "Common Objections",
+          "items": [
+            {
+              "objection": "Already have a tool or solution in place",
+              "freq": 5,
+              "quote": "They already have a tool in place that handles most of the heavy lifting, so our solution isn't relevant for them currently.",
+              "analysis": "This is the dominant objection of the month and reflects a market that has been actively investing in this problem space. However, language like 'most of the heavy lifting' and 'strict internal thresholds' suggests these solutions are managing volume downwards rather than eliminating the problem. The pitch should probe what falls through the gaps rather than accepting coverage claims at face value."
+            },
+            {
+              "objection": "Security questionnaires are infrequent or not relevant to their business",
+              "freq": 4,
+              "quote": "They receive security questionnaires infrequently — 2 to 6 times every few months. They have found a workaround, indicating it's not a significant issue for them.",
+              "analysis": "A portion of the market simply does not sell into enterprise accounts and therefore rarely encounters security questionnaires. These are genuinely poor-fit prospects. However, the 'workaround' framing among those who do receive them suggests latent inefficiency — low frequency does not mean low effort per questionnaire. Reframing around time-per-response rather than volume may shift the conversation."
+            },
+            {
+              "objection": "Not the right person or not relevant to their role",
+              "freq": 5,
+              "quote": "He indicated that security questionnaires aren't his area. He suggested I reach out to either Andy Hunter (CSO) or Stuart Hall (main DRC engineer).",
+              "analysis": "A recurring pattern this month was reaching contacts who either genuinely sit outside the security questionnaire workflow or who deflected by citing a more relevant colleague. Where specific referrals were given — particularly to CSOs and DRC engineers — these represent warm leads worth pursuing. Where deflections were vague, they may reflect discomfort rather than genuine misdirection."
+            },
+            {
+              "objection": "Bad timing or too busy",
+              "freq": 4,
+              "quote": "He mentioned they have a process in place but is currently focused on more pressing tasks. He suggested I send information via email and follow up in Q1 next year.",
+              "analysis": "Several prospects were not dismissive of the proposition but pushed engagement to a later date. This signals conditional interest rather than a hard no, and these contacts warrant structured follow-up. The volume of 'not now' responses also suggests that May may have landed during a period of competing internal priorities across the sector."
+            },
+            {
+              "objection": "Request to be removed from contact list",
+              "freq": 3,
+              "quote": "He was not interested and requested to have his details removed from our lists.",
+              "analysis": "A small but consistent group of contacts requested removal. This is worth monitoring at the data level — if certain company types or job titles are generating repeated removal requests, it may indicate a targeting mismatch that can be corrected upstream before dials are made."
+            }
+          ]
+        },
+        {
+          "type": "questions",
+          "title": "What Prospects Asked",
+          "items": [
+            {
+              "question": "Can you send information by email instead?",
+              "freq": 3,
+              "analysis": "Prospects requesting email follow-up are rarely signalling strong intent — more often it is a polite deferral. However, in cases where a specific follow-up date was also given, such as Q1 next year, it represents a genuine breadcrumb. Email content sent in response should be concise, problem-led, and timed to arrive ahead of any agreed follow-up call."
+            },
+            {
+              "question": "What exactly does the solution do / what is the company?",
+              "freq": 2,
+              "analysis": "Where prospects asked for clarification on the proposition before disengaging, it suggests the opening framing may not immediately resonate. The question reveals that the value of security questionnaire support is not self-evident to all contacts, particularly those outside sales or pre-sales functions who may not encounter the pain directly."
+            },
+            {
+              "question": "Can you reach out on LinkedIn instead?",
+              "freq": 1,
+              "analysis": "One prospect redirected to LinkedIn as his preferred channel, suggesting a degree of openness that did not extend to the phone conversation itself. This reflects a broader preference among some senior contacts for asynchronous, low-commitment engagement as a first step. LinkedIn outreach following a call where this preference was stated should be treated as a warm touchpoint rather than a cold one."
+            }
+          ]
+        },
+        {
+          "type": "themes",
+          "title": "Market Themes",
+          "items": [
+            {
+              "heading": "The market has been buying — but not necessarily solving",
+              "body": "The most consistent pattern across May was prospects citing recent investment in security questionnaire tooling, from named platforms like Vanta to AI automation and self-built solutions. However, the language used to describe these tools often contained caveats — 'most of the heavy lifting,' 'strict thresholds,' 'a workaround.' The market has spent money on this problem without necessarily closing it, and that gap is worth pressing on in future conversations."
+            },
+            {
+              "heading": "Timing and internal focus are depressing engagement",
+              "body": "A notable share of prospects were not categorically opposed to the proposition but cited competing priorities, internal projects, or personal circumstances such as paternity leave as reasons not to engage. Several suggested follow-up windows months away. This suggests May was a difficult month for new vendor conversations across this segment, and that a portion of these contacts will be more receptive when revisited at the cadence they indicated."
+            },
+            {
+              "heading": "Reaching the right person remains the core operational challenge",
+              "body": "Across the month, a significant number of connected calls did not result in a conversation with a decision-relevant contact. Gatekeepers, automated systems, wrong departments, and absent individuals all featured heavily. Where the right person was not reached, only a small proportion of calls yielded a useful referral. Sharpening contact data — particularly toward CSOs, DRC engineers, and heads of pre-sales — would materially improve the ratio of conversations to dials."
+            },
+            {
+              "heading": "A segment of the market has no enterprise exposure and will never be a fit",
+              "body": "Several prospects made clear that their business model does not involve selling to enterprises, meaning they never receive security questionnaires and have no use case for Securilix. One contact put it plainly: 'they don't sell to businesses.' These contacts represent a targeting issue rather than a sales challenge, and refining the prospect list to exclude B2C or SMB-only businesses would reduce wasted dials and improve overall conversion rates."
+            }
+          ]
+        },
+        {
+          "type": "actions",
+          "title": "Recommended Actions",
+          "items": [
+            "Refine the prospect list to exclude businesses that do not sell into enterprise accounts — contacts who confirmed they have no exposure to security questionnaires represent a structural mismatch that cannot be overcome in the call, and removing them from the data will improve the quality of every subsequent dial.",
+            "Develop a specific rebuttal for the 'we already have a tool' objection that probes coverage gaps rather than accepting the claim — questions such as 'what happens to the questionnaires that fall outside the tool's scope?' or 'how are you handling the edge cases?' are likely to surface residual pain that prospects are not volunteering.",
+            "Prioritise follow-up on contacts who gave a specific callback window or agreed to email outreach — at least three prospects indicated future willingness to engage (including one who suggested Q1, one who agreed to a Monday or Tuesday callback, and one who asked to be reached via LinkedIn), and these represent the warmest pipeline from the month.",
+            "Where referrals to named individuals were given — specifically Andy Hunter (CSO) and Stuart Hall (DRC engineer) — treat these as warm entries and prioritise them in the June dial plan, referencing the conversation in which their name was provided.",
+            "Review targeting at the job title level to ensure dials are weighted toward pre-sales, sales engineering, and security leadership functions, as these roles are most likely to own the security questionnaire problem directly — contacts in operations, general IT, or non-enterprise-facing roles consistently confirmed the proposition was not relevant to them."
+          ]
+        }
+      ],
+      "stats": {
+        "totalCalls": 559,
+        "connected": 51,
+        "conversations": 41,
+        "meetings": 2,
+        "noAnswer": 488,
+        "voicemail": 3,
+        "gatekeeper": 0,
+        "other": 0,
+        "dispositions": {
+          "No Answer": 488,
+          "No, Not Ever": 21,
+          "Connected - Not Completed": 10,
+          "No, Not Me (No Ref)": 4,
+          "Other": 3,
+          "Left Voicemail": 3,
+          "DNC": 7,
+          "Activated": 6,
+          "No, Not Me (Ref)": 5,
+          "Wrong Number": 3,
+          "Left Company": 3,
+          "Meeting Booked": 2,
+          "No, Not Now": 3,
+          "Voicemail - Confirmed": 1
+        }
+      },
+      "handovers": []
+    }
+  ]
+}
