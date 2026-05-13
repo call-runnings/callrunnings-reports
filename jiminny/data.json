@@ -6,9 +6,9 @@
         {
           "type": "overview",
           "title": "Campaign Overview",
-          "content": "May 2026 was a month defined by access and timing challenges more than outright rejection. A significant proportion of conversations ended not because prospects were opposed to Jiminny, but because the moment simply wasn't right — people were between roles, unwell, heading into meetings, travelling, or on leave. The market felt busy and somewhat distracted, and this flavour of resistance was consistent across the board. Where genuine conversations did take place, the responses were largely civil and considered, suggesting that awareness of Jiminny as a brand is present in the market, even if that didn't translate into pipeline this month.",
-          "content2": "The clearest competitive pattern to emerge was the entrenchment of Gong. Multiple prospects referenced it unprompted, not as something they were evaluating but as something they were doubling down on — expanding contracts, integrating it more deeply with their existing stack. This represents a more stubborn barrier than simple incumbent inertia; these are prospects who are actively reinvesting. Alongside this, a recurring structural objection surfaced: a meaningful number of companies pointed to large internal sales enablement or revenue operations teams as the reason Jiminny's proposition wasn't relevant, suggesting that in certain organisational profiles, the problem Jiminny solves is being handled in-house.",
-          "content3": "On a more positive note, the data quality and targeting picture is worth addressing directly. Several calls landed on entirely wrong contacts — freelancers, people who had already left their roles, or individuals with no sales team to speak of. Refining the contact list would likely have a material impact on the quality of conversations in the months ahead. The three activations achieved this month, while modest, came from conversations where genuine curiosity was present, and the pipeline of follow-ups — people who asked to be called back at a later date — represents a tangible base to work from going into June.",
+          "content": "May 2026 was a month defined more by market conditions than by resistance to Jiminny itself. The overall tone across conversations was polite but deflective — prospects were rarely hostile, yet the vast majority were unable to engage meaningfully, whether due to personal circumstances, organisational constraints, or timing. What stood out most was how frequently the blockers were structural rather than attitudinal: people in transition, teams locked into existing contracts, companies mid-cost-cut, and decision-makers sitting in the wrong geography entirely. The market did not push back hard on Jiminny's proposition — it simply wasn't ready to receive it.",
+          "content2": "Where genuine conversations did land, the core challenges were consistent: teams already invested in incumbent solutions like Gong were the most common barrier, and internal capability — large enablement teams, revenue operations functions, or partner-led models — was frequently cited as a reason the offering felt redundant. Small team size also surfaced repeatedly as a disqualifier, with several prospects candidly noting that call recording and coaching analysis only makes sense at a certain scale. These are valuable signals that point toward where Jiminny's ideal customer profile may need sharper definition in outreach targeting.",
+          "content3": "The three activations this month, while modest, were achieved in a market where timing and context were working against the campaign at almost every turn. Several conversations ended with genuine future interest — prospects asking to be followed up in weeks or months, rather than closing the door permanently. The pipeline of 'not right now' contacts is arguably the most actionable output of the month, and how those relationships are nurtured over the coming weeks will likely determine whether June and July see a meaningful conversion uptick.",
           "quotes": []
         },
         {
@@ -17,27 +17,33 @@
           "rows": [
             {
               "competitor": "Gong",
-              "what_said": "Multiple prospects mentioned Gong as their current solution, with at least two explicitly noting they were expanding their contract rather than considering alternatives. One prospect said they are 'already sorted with Gong and expanding their contract.'",
-              "freq": 3,
+              "what_said": "Mentioned by two prospects as their current, actively-used solution. One was expanding their Gong contract, another had an internal team managing it and expressed satisfaction with their setup.",
+              "freq": 2,
               "signal": "barrier"
             },
             {
               "competitor": "Outreach",
-              "what_said": "One prospect mentioned they are using Outreach as part of their current sales tech stack, indicating a decision-maker for this area sits in the US rather than locally.",
+              "what_said": "Referenced by Chris as a tool currently in use, though he was not the decision-maker and directed the conversation toward a US-based contact.",
               "freq": 1,
-              "signal": "org_barrier"
-            },
-            {
-              "competitor": "Internal Sales Enablement Teams",
-              "what_said": "Several prospects cited large, dedicated internal teams as the reason external solutions were unnecessary. One said they have 'a large internal sales enablement team handling coaching and forecasting.'",
-              "freq": 3,
-              "signal": "barrier"
+              "signal": "none"
             },
             {
               "competitor": "Surf",
-              "what_said": "Mentioned by one prospect in passing as a tool they were already aware of, referenced positively in the context of declining Jiminny's proposition.",
+              "what_said": "Mentioned in the context of a prospect who had already heard of the tool and found it relevant — cited approvingly alongside a request to opt out of further contact.",
               "freq": 1,
-              "signal": "cold"
+              "signal": "none"
+            },
+            {
+              "competitor": "Large internal sales enablement teams",
+              "what_said": "Two prospects cited substantial in-house enablement functions as the reason third-party coaching tools were not relevant. One noted 'a large internal sales enablement team handling coaching and forecasting.'",
+              "freq": 2,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Channel/partner-driven model",
+              "what_said": "Matthew explained that 85–90% of their business flows through partners, meaning direct sales intelligence tooling had no natural home in their organisation.",
+              "freq": 1,
+              "signal": "org_barrier"
             }
           ]
         },
@@ -46,40 +52,40 @@
           "title": "Common Objections",
           "items": [
             {
-              "objection": "Already using a competitor solution",
-              "freq": 4,
-              "quote": "They are already sorted with Gong and expanding their contract.",
-              "analysis": "This is the most commercially significant objection of the month. Prospects are not just sitting with existing tools — they are actively renewing and expanding them, which narrows the window for displacement. Messaging that speaks directly to what Jiminny offers that Gong does not, particularly around ease of use, pricing, or specific features, would help create a reason to at least have the conversation."
+              "objection": "Already using a competing tool",
+              "freq": 3,
+              "quote": "They are already sorted with Gong and expanding their contract. No interest in alternatives at this time.",
+              "analysis": "This is the most commercially significant objection in the dataset. Prospects locked into Gong are not just satisfied — they are deepening their investment. Jiminny messaging needs to address this head-on, ideally with a clear articulation of what it offers that Gong does not, particularly around specific use cases such as forecasting accuracy or manager-led coaching workflows. Timing plays a role here too — approaching these accounts at or near contract renewal would be far more productive."
             },
             {
-              "objection": "Not the right time or bad timing",
-              "freq": 8,
-              "quote": "He mentioned he isn't available at the moment. He asked me to call back next week.",
-              "analysis": "A high volume of conversations were cut short by timing rather than genuine disinterest. This is a positive signal in the sense that prospects were not hostile, but it does suggest the follow-up cadence needs to be robust. Every 'call me back' commitment should be treated as a warm lead and actioned promptly."
-            },
-            {
-              "objection": "Cost-cutting or budget freeze",
-              "freq": 2,
-              "quote": "They are currently in a cost-cutting phase and not interested in new investments.",
-              "analysis": "Budget constraints are surfacing in a small but notable number of accounts. This objection is worth monitoring — if it increases in frequency over coming months, it may reflect broader market conditions. For now, it is worth having a value-led response prepared that speaks to ROI and efficiency gains rather than leading with product features."
-            },
-            {
-              "objection": "Team too small or solution not relevant",
+              "objection": "Team too small for the solution",
               "freq": 3,
               "quote": "Call recording analysis isn't relevant for them due to their manageable size of six sales reps.",
-              "analysis": "Several prospects self-disqualified on the basis of team size, suggesting that either targeting is pulling in companies below the ideal customer profile threshold, or that there is a perception issue around minimum viable team size. Tightening the target list to organisations with larger sales functions would reduce this friction."
+              "analysis": "Multiple prospects self-disqualified on the basis of team size, with one rep-count as low as two. This points to a targeting issue as much as an objection — if small teams are consistently reaching this conclusion, it may be worth reviewing the minimum viable team size within the ICP criteria and filtering these accounts out earlier in the prospecting process."
             },
             {
-              "objection": "Decision sits elsewhere (wrong contact or geography)",
-              "freq": 4,
+              "objection": "Not the right person / decision made elsewhere",
+              "freq": 5,
               "quote": "I need to reach someone in the US for further discussions.",
-              "analysis": "A recurring pattern of being directed to head offices, US-based decision-makers, or revenue operations leads suggests that the contact data may not always be mapping to the right level of seniority or the right geography. Where referrals to specific individuals or departments are given, these should be actively pursued as they represent a warmer route in than a cold dial."
+              "analysis": "A recurring pattern throughout May was reaching individuals who either lacked budget authority or whose decisions were made centrally — often in a US head office or by a revenue operations lead. This suggests that contact-level targeting may need to be adjusted to prioritise VP-level or RevOps titles with confirmed regional autonomy, rather than relying on job title alone as a qualifier."
             },
             {
-              "objection": "Internal team handles this already",
-              "freq": 3,
+              "objection": "Currently in cost-cutting mode",
+              "freq": 2,
+              "quote": "They are currently in a cost-cutting phase and not interested in new investments.",
+              "analysis": "Budget freeze objections are difficult to overcome in the short term but are time-bound by nature. These prospects are worth retaining in a nurture sequence with a planned re-engagement in Q4, as Laura specifically suggested 'the end of the year' as a natural re-evaluation point. The key is maintaining a light-touch presence without applying pressure."
+            },
+            {
+              "objection": "Internal team already handles this",
+              "freq": 2,
               "quote": "They have a large internal sales enablement team handling coaching and forecasting, so it's not relevant for her.",
-              "analysis": "Where companies have invested in building internal capability, they are unlikely to be receptive to an external platform unless there is a clear gap in what their team delivers. Messaging for this persona might focus on how Jiminny complements rather than replaces internal functions, or on the scalability and consistency benefits that even well-resourced teams struggle to maintain manually."
+              "analysis": "Prospects with dedicated enablement functions often perceive external tools as redundant rather than complementary. Jiminny's positioning in these conversations may benefit from reframing the solution as an augmentation of — rather than a replacement for — internal capability, with a focus on what human teams cannot do at scale or with consistency."
+            },
+            {
+              "objection": "Bad timing / personal circumstances",
+              "freq": 6,
+              "quote": "He's interested but can't engage right now due to ongoing interviews.",
+              "analysis": "A significant proportion of May's call outcomes were derailed not by disinterest but by personal or situational factors — illness, maternity leave, role transitions, and mid-meeting interruptions. While these cannot be predicted, they do reinforce the importance of a robust follow-up cadence. Several of these prospects explicitly asked to be contacted again, making them warm re-engagement targets rather than closed opportunities."
             }
           ]
         },
@@ -90,12 +96,17 @@
             {
               "question": "Can you call back at a better time?",
               "freq": 6,
-              "analysis": "The frequency of this soft deflection indicates that prospects are not immediately dismissive but are genuinely pressed for time. This is an invitation rather than a rejection, and following up with discipline on each of these instances could convert a proportion of them into conversations with a warmer starting point."
+              "analysis": "This was the most common prospect-initiated response across the month, arising from genuine busyness rather than avoidance. Its frequency suggests that many contacts were being reached at sub-optimal moments in their working day. Testing different call windows — particularly earlier morning slots or end-of-week timings — could improve initial engagement quality."
             },
             {
-              "question": "Who should you actually be speaking to?",
+              "question": "Who should you actually be speaking to instead?",
               "freq": 4,
-              "analysis": "Multiple prospects redirected calls to other individuals or departments, suggesting that contact mapping needs refinement. However, each redirect is also a small piece of organisational intelligence — understanding who owns the sales technology decision in each account is valuable even when the current contact is not the right person."
+              "analysis": "Several prospects actively redirected the call, suggesting a genuine awareness that the solution might be relevant elsewhere in their organisation. Names such as Mark, John Healy in the UK, and the revenue operations lead at Doxel were offered. These referrals, even when informal, are high-value signals and should be acted upon promptly with a warm introduction framing."
+            },
+            {
+              "question": "Are we already a customer of yours?",
+              "freq": 1,
+              "analysis": "One call revealed that the prospect was already a Jiminny customer, which was not flagged prior to the outreach. This highlights the importance of cross-referencing the target list against the existing customer base before dialling, both to avoid the embarrassment of cold-calling existing clients and to identify potential expansion opportunities that should be handled through account management rather than new business outreach."
             }
           ]
         },
@@ -104,24 +115,24 @@
           "title": "Market Themes",
           "items": [
             {
-              "heading": "Gong entrenchment is the primary competitive barrier",
-              "body": "Across several accounts, Gong was not simply in place but actively being expanded and deepened. This goes beyond standard incumbent resistance — these companies are doubling down on their existing investment, which makes a near-term switch unlikely. The practical implication is that Gong accounts may need a longer nurture cycle, with outreach timed around renewal windows rather than cold introductions."
+              "heading": "Gong's market grip remains strong",
+              "body": "Across conversations where incumbents were named, Gong dominated — and crucially, prospects were not merely using it but actively expanding their investment. This is a market entrenchment dynamic, not simple preference. Jiminny's outreach into Gong-heavy accounts needs a distinct competitive narrative that speaks specifically to what Gong does not do, rather than a general value proposition."
             },
             {
-              "heading": "Organisational complexity is routing decisions away from frontline contacts",
-              "body": "A consistent pattern this month involved being redirected to US head offices, revenue operations functions, or senior leaders in other geographies. This suggests that sales technology decisions are increasingly centralised and that reaching the right stakeholder requires more precise targeting at the outset. Where referrals to specific individuals were given, these should be followed up as high-priority leads."
+              "heading": "Decision-making authority is frequently misaligned with contact targeting",
+              "body": "A recurring theme in May was reaching people who either lacked the authority to act or whose decisions were controlled by a central function — typically in the US or within a revenue operations team. This structural mismatch is costing dial efficiency. Tightening ICP criteria to target regionally autonomous decision-makers, particularly those with direct ownership of sales coaching or forecasting budgets, would likely improve conversion rates meaningfully."
             },
             {
-              "heading": "Team size and relevance perception is filtering out smaller accounts",
-              "body": "Several prospects disqualified themselves on the basis that their team was too small to benefit from Jiminny's proposition. Whether or not this is accurate, the perception is real and is causing early exits from conversations. Reviewing the minimum team size threshold in the target criteria, and considering whether messaging needs to address smaller teams differently, would help reduce this form of self-disqualification."
+              "heading": "Small and partner-led organisations are consistently self-disqualifying",
+              "body": "Several prospects acknowledged Jiminny's relevance in principle but concluded it simply didn't apply to their context — either because their team was too small to justify the tooling or because their go-to-market model was partner-driven rather than direct. These are not objections to be overcome; they are genuine fit issues. Removing these account types from the prospecting list upstream would free up dial capacity for higher-probability targets."
             },
             {
-              "heading": "A notable portion of non-conversions were circumstantial rather than commercial",
-              "body": "Transitions between roles, illness, parental leave, and mid-travel encounters accounted for a meaningful share of conversations that went nowhere this month. These are not lost accounts — they are deferred conversations, and a structured follow-up approach timed appropriately could reactivate a good number of them over the next one to two months."
+              "heading": "A meaningful pool of 'not right now' prospects is building",
+              "body": "Multiple conversations this month ended with a specific future date offered by the prospect — end of year, six to eight months, next month after a new role is settled. Rather than treating these as soft rejections, they represent a warm pipeline that, if managed carefully, could convert in Q3 or Q4. A structured re-engagement sequence with personalised context would be the most effective way to capitalise on this."
             },
             {
-              "heading": "Data quality is reducing the effective reach of the campaign",
-              "body": "Several dials landed on entirely wrong contacts — a self-employed lawyer, a person who had already left the business, and existing customers who were inadvertently included. Each misdirected call represents not just a wasted dial but a potential reputational risk if the same contacts are reached repeatedly. A data audit ahead of June would likely improve both efficiency and the quality of first impressions."
+              "heading": "Personal and situational disruptions are suppressing conversation quality",
+              "body": "Illness, maternity leave, role changes, and mid-meeting calls accounted for a surprisingly high share of non-conversations in May. While unavoidable individually, their collective impact on this month's output was significant. Building a slightly larger contact pool with backup names per account would provide more dialling resilience when primary contacts are unavailable for extended periods."
             }
           ]
         },
@@ -129,35 +140,31 @@
           "type": "actions",
           "title": "Recommended Actions",
           "items": [
-            "Conduct a data quality audit on the contact list before June — remove confirmed leavers, existing customers, and contacts below the ideal company size threshold to reduce wasted dials and improve the signal-to-noise ratio in conversations.",
-            "Build a structured follow-up sequence for all 'call me back' and 'not now' outcomes from May — including Roger (settling into new VP of Sales role), Tom (recovering from illness), Laura (end-of-year budget review), Joe (six to eight months), and Melvin (requested callback next week) — as these represent the warmest near-term opportunities.",
-            "Develop a specific response to the Gong objection that does not attempt to displace it head-on, but instead identifies a gap or complementary use case — prospects who are expanding Gong contracts are unlikely to switch, but may be open to a conversation framed around what Gong does not cover.",
-            "Pursue the referrals received during May as priority outbound targets: John Healy in the UK (referred by Alex), the revenue operations lead at Doxel (referred by a RevOps-adjacent contact), and Mark (referred by Jamie who agreed to pass along information directly).",
-            "Review the targeting criteria to ensure contact records map to individuals with direct ownership of sales technology or coaching decisions — the volume of redirections to US offices and revenue operations functions suggests that current contacts are often one or two steps removed from the actual decision-maker."
+            "Pursue all named referrals from May immediately — John Healy in the UK, Mark (flagged by Jamie), and the revenue operations lead at Doxel were all offered as warm introductions and should be contacted with a clear reference to how the connection was made.",
+            "Build a structured re-engagement sequence for all 'not right now' prospects who gave a specific return date — including Roger (new VP of Sales role), Laura (end of year budget review), Joe (six to eight months), and Tom (follow-up post-illness) — with personalised context included in each touchpoint.",
+            "Review the target account list to remove companies with sub-ten-person sales teams and those operating primarily through channel or partner models, as these are consistently self-disqualifying and reducing overall dial efficiency.",
+            "Develop a Gong-specific competitive narrative for use when prospects cite Gong as their incumbent — focusing on a precise use case where Jiminny delivers differentiated value, rather than a broad comparison, to give reps a credible response to the most common barrier in the market right now.",
+            "Cross-reference the full prospect list against Jiminny's existing customer base before dialling to prevent cold-calling active customers — one such instance occurred in May and risks undermining trust with accounts that should be managed through a different channel entirely.",
+            "Audit contact-level targeting criteria to prioritise individuals with confirmed regional budget autonomy and direct ownership of sales coaching or revenue forecasting, reducing the frequency of calls that are redirected to US head offices or centralised RevOps functions."
           ]
         }
       ],
       "stats": {
-        "totalCalls": 461,
-        "connected": 56,
-        "conversations": 35,
+        "totalCalls": 463,
+        "connected": 57,
+        "conversations": 34,
         "meetings": 0,
-        "noAnswer": 400,
+        "noAnswer": 1,
         "voicemail": 0,
         "gatekeeper": 0,
         "other": 0,
         "dispositions": {
-          "No Answer": 400,
-          "No, Not Ever": 16,
-          "No, Not Me (No Ref)": 10,
-          "Wrong Number": 1,
-          "Connected - Not Completed": 21,
-          "No, Not Me (Ref)": 4,
-          "DNC": 2,
-          "Other": 2,
-          "Requested Email": 1,
+          "No Answer": 1,
           "Activated": 3,
-          "No, Not Now": 1
+          "No, Not Now": 1,
+          "No, Not Ever": 16,
+          "No, Not Me (Ref)": 4,
+          "No, Not Me (No Ref)": 10
         }
       },
       "handovers": [],
@@ -178,7 +185,7 @@
           "disposition": "No, Not Ever",
           "duration": "0:26",
           "notes": "Called Mark Jiminy, but he stated that he has reviewed our offerings before and they aren't a fit for them. He didn't have time to elaborate on his reasons for not being interested. No next steps were discussed.",
-          "summary": "Liam reviewed Jiminny's offerings previously and concluded they aren't a fit for Excelerate360. He had no time to elaborate on his reasoning, and no next steps were established. The disposition reflects a firm, final rejection.",
+          "summary": "Liam reviewed Jiminny's offerings previously and concluded they are not a fit. He had no time to elaborate on his reasons and no next steps were discussed.",
           "signal": "negative",
           "signalReason": "Previously reviewed and explicitly ruled out as a fit"
         },
@@ -218,9 +225,9 @@
           "disposition": "No, Not Ever",
           "duration": "2:22",
           "notes": "Spoke with Andy, who mentioned using Jiminy at Visibly and liked it but is currently focused on rolling out Gemini for internal and sales meetings. He appreciates our product but isn't looking to explore anything else for the foreseeable future. He suggested no follow-up is necessary but will consider us in the future if needs arise.",
-          "summary": "Andy has firsthand experience with Jiminny from a previous role at Visibly and speaks positively of the product. However, VoCoVo is currently mid-rollout of Gemini for internal and sales meetings, leaving no appetite for alternatives. He explicitly asked for no follow-up, though left a vague door open for the future.",
+          "summary": "Andy has prior positive experience with Jiminny from a previous role at Visibly but is currently committed to rolling out Gemini for internal and sales meetings at VoCoVo. He asked for no follow-up and sees no near-term need to explore alternatives.",
           "signal": "negative",
-          "signalReason": "Actively rolling out a competitor with no follow-up requested"
+          "signalReason": "Actively rolling out a competing tool with no near-term need"
         },
         {
           "id": "491302093044",
@@ -238,9 +245,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:03",
           "notes": "Spoke with Matt who expressed that they don't usually focus on what I was discussing, as they operate in a niche market with a longer sales cycle. He mentioned they have something in place but didn't provide specifics. I didn’t get a chance to explore further due to his limited time.",
-          "summary": "Matt operates in a niche market with longer sales cycles and pushed back on the relevance of the conversation to his context. He referenced having something already in place but gave no details, and limited time cut the call short. No meaningful discovery was completed.",
+          "summary": "Matt operates in a niche market with a longer sales cycle and indicated the discussed solution isn't aligned with their focus. Something is already in place, though details weren't shared, and limited time prevented deeper exploration.",
           "signal": "negative",
-          "signalReason": "Dismissed relevance due to niche market and existing solution"
+          "signalReason": "Niche model misalignment and existing solution already in place"
         },
         {
           "id": "491302463731",
@@ -278,9 +285,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:21",
           "notes": "I spoke with Simon, but the conversation quickly revealed that our offering isn't relevant to his needs. He mentioned that their focus is on a different distribution chain and has everything covered regarding coaching. No next steps discussed as he didn't see value in pursuing further.",
-          "summary": "Simon quickly signalled that Jiminny's offering doesn't align with Cowbell's distribution model or coaching needs. He stated everything is already covered and saw no value in continuing the conversation. No next steps were discussed.",
+          "summary": "Simon quickly identified that Jiminny isn't relevant to Cowbell's needs, citing a different distribution chain and existing coaching coverage. No value was seen in progressing further and no next steps were discussed.",
           "signal": "negative",
-          "signalReason": "Confirmed irrelevance citing different distribution model and covered needs"
+          "signalReason": "Different distribution model and coaching already fully covered"
         },
         {
           "id": "491305769161",
@@ -318,9 +325,9 @@
           "disposition": "Activated",
           "duration": "5:06",
           "notes": "I spoke with Jamie, who mentioned he doesn't manage the BDR team and suggested I contact Mark instead. Jamie indicated that the BDR function is shrinking at their company, but he thinks Mark is looking into similar solutions. He agreed to pass my information to Mark and will facilitate a conversation after I send him details later today. I'll follow up later this week.",
-          "summary": "Jamie Holland doesn't oversee the BDR team at Profitero but flagged that the BDR function is contracting and that a colleague named Mark may be exploring similar solutions. He agreed to pass along contact details and facilitate an intro after receiving information. A follow-up is planned for later in the week.",
+          "summary": "Jamie doesn't oversee the BDR team but believes Mark, who does, is actively exploring similar solutions. He agreed to pass along contact details and facilitate an introduction after receiving information today.",
           "signal": "positive",
-          "signalReason": "Warm referral to an active evaluator with agreed next steps"
+          "signalReason": "Warm referral to a decision-maker actively exploring similar solutions"
         },
         {
           "id": "491318871276",
@@ -338,9 +345,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:55",
           "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Using Gong. Just upgraded to the forecasting tool and love it. Spent a lot of money on new sales tech and will be renewing with Gong when it's due.</p></div>",
-          "summary": "Gary is a committed Gong customer at OneAdvanced who recently upgraded to their forecasting tool and is highly satisfied. Significant investment has already been made in new sales tech, and renewal with Gong is planned. There is no opening for an alternative at this time.",
+          "summary": "Gary is a committed Gong customer who recently upgraded to their forecasting tool and is very satisfied. Significant investment has already been made in new sales tech and he intends to renew with Gong at contract end.",
           "signal": "negative",
-          "signalReason": "Deep Gong commitment with recent upgrade and planned renewal"
+          "signalReason": "Deeply committed to Gong with recent upgrade and renewal intent"
         },
         {
           "id": "491319342319",
@@ -358,9 +365,9 @@
           "disposition": "No, Not Ever",
           "duration": "2:30",
           "notes": "Spoke with Joe about sales coaching solutions. He mentioned their internal team handles systems like Gong, and they're satisfied with their current setup. Joe suggested I check back in six to eight months for any changes. He indicated that it probably wouldn't be of interest for now, given their current situation.",
-          "summary": "Joe at GlobalData is satisfied with his current Gong setup, which is managed internally. He suggested checking back in six to eight months, implying a possible review window but no current interest. The tone was polite but the door is effectively closed for now.",
+          "summary": "Joe's internal team manages Gong and they are satisfied with their current setup. He suggested revisiting in six to eight months but indicated interest is unlikely given their current situation.",
           "signal": "neutral",
-          "signalReason": "Satisfied with Gong but offered a six-to-eight-month revisit window"
+          "signalReason": "Satisfied with Gong but offered a soft six-to-eight month revisit"
         },
         {
           "id": "491319344355",
@@ -378,9 +385,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:28",
           "notes": "Spoke with a leader from a very small sales team of two reps. They mentioned that my solution is probably not relevant for them at this time. I acknowledged their team size and recognized that I might be wasting their time. No further steps were discussed.",
-          "summary": "Mark leads a two-rep sales team at Laserfiche, which sits well below the threshold where Jiminny typically delivers value. He acknowledged the solution likely isn't relevant at their current scale. No next steps were discussed and the rep self-identified the poor fit.",
+          "summary": "Mark leads a very small sales team of just two reps, making Jiminny's solution unlikely to be relevant at this stage. The rep acknowledged the poor fit during the call and no further steps were taken.",
           "signal": "negative",
-          "signalReason": "Team too small to be a viable fit"
+          "signalReason": "Team too small to be a viable fit for the solution"
         },
         {
           "id": "491319575741",
@@ -398,9 +405,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:51",
           "notes": "Called John at a smaller sales team. He indicated that call recording analysis isn't relevant for them due to their manageable size of six sales reps. They have no plans to scale or hire at the moment. I thanked him for his time and left the conversation open for potential future relevance.",
-          "summary": "John at Ravelin leads a six-person international sales team and doesn't see call recording analysis as relevant at that size. There are no plans to scale or hire, removing a key trigger for future relevance. The conversation closed with no follow-up planned.",
+          "summary": "John's team of six sales reps is considered manageable without call recording analysis, and there are no plans to scale or hire. The conversation was left open for future relevance but no concrete follow-up was planned.",
           "signal": "negative",
-          "signalReason": "Small team with no growth plans makes solution irrelevant"
+          "signalReason": "Small team with no scaling plans makes solution irrelevant"
         },
         {
           "id": "491465395438",
@@ -418,9 +425,9 @@
           "disposition": "No, Not Ever",
           "duration": "3:10",
           "notes": "I reached out to Stephen, but he indicated that our services weren't relevant to his team as they already focus heavily on training and coaching, mitigating issues with call slips. He asked to have his number removed, and I explained how to opt-out. He appreciated the recommendation for the tool \"Surf\" and thanked me before ending the call.",
-          "summary": "Stephen at GlobalData stated that his team's existing focus on training and coaching already addresses the pain points Jiminny targets. He requested his number be removed from contact lists, signalling a hard stop. The call ended after an opt-out discussion.",
+          "summary": "Stephen confirmed his team already prioritises training and coaching internally, leaving no perceived gap for Jiminny to address. He asked to have his number removed from the contact list, signalling a hard opt-out.",
           "signal": "negative",
-          "signalReason": "Requested number removal indicating firm disengagement"
+          "signalReason": "Requested number removal indicating a firm and final refusal"
         },
         {
           "id": "491465408702",
@@ -438,9 +445,9 @@
           "disposition": "No, Not Ever",
           "duration": "0:36",
           "notes": "I reached out to Charlie for a cold call. He expressed that they are not interested in our services and mentioned they don't need any of the tools we offer. No specific objections were noted, but he appreciated the call. No next steps were discussed.",
-          "summary": "Charlie Walker at Ravelin declined interest on a cold call with no specific objections raised. He stated the tools offered aren't needed, and no further conversation was pursued. The rejection was polite but unambiguous.",
+          "summary": "Charlie gave a straightforward cold rejection, stating no interest in any of the tools on offer without providing specific objections. No next steps were established.",
           "signal": "negative",
-          "signalReason": "Blanket disinterest with no specific objections or openings"
+          "signalReason": "Flat refusal with no objections to address or opening left"
         },
         {
           "id": "491489413356",
@@ -458,9 +465,9 @@
           "disposition": "No, Not Ever",
           "duration": "2:38",
           "notes": "Called Isma to discuss solutions for sales team challenges. She mentioned they are already sorted with Gong and expanding their contract. No interest in alternatives at this time, so I ended the call respectfully. No further steps were discussed.",
-          "summary": "Isma confirmed that Storyblok is already on Gong and actively expanding their contract, leaving no room for a competing solution. The call was ended respectfully with no interest in exploring alternatives. No follow-up was planned.",
+          "summary": "Isma confirmed Storyblok is already using Gong and actively expanding that contract, leaving no appetite for alternatives. The call was ended respectfully with no further steps.",
           "signal": "negative",
-          "signalReason": "Expanding Gong contract with no interest in alternatives"
+          "signalReason": "Expanding existing Gong contract with zero interest in alternatives"
         },
         {
           "id": "491502271735",
@@ -478,9 +485,9 @@
           "disposition": "No, Not Ever",
           "duration": "2:05",
           "notes": "Spoke with Matthew who clarified that their business is heavily channel-driven (85-90% through partners). He mentioned that they rely on information from partners and it wouldn't be beneficial for him to pursue the solutions I offer. I acknowledged his perspective and thanked him for his time. No next steps were discussed.",
-          "summary": "Matthew explained that PCI Pal's go-to-market is 85–90% channel-driven, meaning direct sales tooling like Jiminny offers limited internal applicability. He politely but clearly dismissed the relevance of the solution to his role. No next steps were agreed.",
+          "summary": "Matthew explained that PCI Pal's business is 85–90% channel-driven through partners, making a direct sales coaching tool largely irrelevant to his function. He thanked the rep but saw no benefit in pursuing further.",
           "signal": "negative",
-          "signalReason": "Channel-dominated model creates a structural barrier to fit"
+          "signalReason": "Heavily channel-driven model creates a structural fit barrier"
         },
         {
           "id": "491510844637",
@@ -498,9 +505,9 @@
           "disposition": "Activated",
           "duration": "0:53",
           "notes": "Spoke with Tom, who is currently unwell. He indicated that he may be available for a follow-up call next week regarding call recording and coaching insights. I will reach out to him then, wishing him a speedy recovery.",
-          "summary": "Tom Stebbing is currently unwell but expressed openness to a follow-up call next week to discuss call recording and coaching insights. The conversation was brief due to his health, but a tentative next touchpoint was established. Sentiment appears receptive pending recovery.",
+          "summary": "Tom is currently unwell but left the door open for a follow-up call next week to discuss call recording and coaching insights. A specific follow-up timing was agreed.",
           "signal": "positive",
-          "signalReason": "Prospect agreed to a follow-up call next week"
+          "signalReason": "Agreed to a follow-up call with a specific timeframe next week"
         },
         {
           "id": "491510977725",
@@ -518,9 +525,9 @@
           "disposition": "No, Not Ever",
           "duration": "0:38",
           "notes": "I called to introduce Jiminy but spoke to someone who already knows the company well. They were honest that they weren't interested in having a conversation and wished me well. No further steps were discussed.",
-          "summary": "Adam Pang was already familiar with Jiminny and was candid that he had no interest in a conversation. No objections or context were shared beyond a polite but firm decline. No next steps were discussed.",
+          "summary": "Adam already knows Jiminny well and was candid that he had no interest in a conversation. No objections were elaborated on and no next steps were discussed.",
           "signal": "negative",
-          "signalReason": "Familiar with product and explicitly declined to engage"
+          "signalReason": "Familiar with Jiminny and explicitly declined engagement"
         },
         {
           "id": "491511592124",
@@ -538,9 +545,9 @@
           "disposition": "No, Not Now",
           "duration": "1:45",
           "notes": "Spoke with Laura, who indicated they are currently in a cost-cutting phase and not interested in new investments. She mentioned they are not using any similar tools at the moment. Laura advised that I could check back around the end of the year for potential re-evaluation of their situation.",
-          "summary": "Laura at Ion is navigating a company-wide cost-cutting phase that has put a freeze on new technology investment. She noted no similar tools are currently in use, which could signal future opportunity, and suggested revisiting at year-end. The timing is the primary blocker rather than a lack of fit.",
+          "summary": "Laura's organisation is in an active cost-cutting phase with no budget for new tools, though no competing solution is currently in use. She suggested revisiting around year-end when circumstances may change.",
           "signal": "neutral",
-          "signalReason": "Budget freeze is the sole barrier with a year-end revisit suggested"
+          "signalReason": "Budget freeze in place but suggested a specific year-end revisit"
         },
         {
           "id": "491512381626",
@@ -558,9 +565,9 @@
           "disposition": "Activated",
           "duration": "2:29",
           "notes": "I spoke with Roger, who mentioned he's currently in between positions and won't be able to focus on our discussion until he lands a new role as VP of Sales in Europe. He suggested I follow up in a month when he's settled. He's interested but can't engage right now due to ongoing interviews.",
-          "summary": "Roger Bailey is mid-transition between roles and expects to land as VP of Sales in Europe within a month. He expressed genuine interest in the conversation but is unable to engage meaningfully until he is settled in a new position. He asked for a follow-up in roughly four weeks.",
+          "summary": "Roger is actively transitioning into a new VP of Sales role in Europe and expressed genuine interest but is unable to engage until he is settled. He asked for a follow-up in one month once he's in position.",
           "signal": "positive",
-          "signalReason": "Expressed interest and requested follow-up once in new role"
+          "signalReason": "Expressed genuine interest and set a clear one-month follow-up window"
         }
       ]
     }
