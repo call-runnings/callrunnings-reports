@@ -1,0 +1,41 @@
+{
+  "handovers": [
+    {
+      "id": "mp3wmfhoktc4ph49j1e",
+      "savedAt": "2026-05-13T10:16:00.017Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Unison",
+        "contactName": "Wiebke Flach",
+        "jobTitle": "Sustainability Manager",
+        "phone": "+447951994304",
+        "email": "w.flach@unison.co.uk",
+        "linkedin": "https://linkedin.com/in/wiebke-flach"
+      },
+      "spiced": {
+        "situation": "Wiebke Flach is the Sustainability Manager at Unison. She is responsible for carbon reporting across scope 1, 2, and 3 and is currently managing data collection manually — contacting suppliers individually to gather spend data. There is no mention of any existing technology platform in use; the process appears to be entirely manual and relationship-driven.",
+        "pain": "Wiebke's immediate pain is not reporting — she explicitly stated she has no compliance requirements driving reporting right now. Her core problem is data collection. She needs to increase the quality and volume of data she collects from suppliers before reporting becomes viable. The current process of contacting suppliers one by one to request spend data is clearly manual, time-consuming, and unscalable. She confirmed this directly when Harry described the process: 'Exactly.'",
+        "impact": "Because her data collection is insufficient, Wiebke cannot meaningfully increase her carbon reporting — her own words were 'I do need to increase our data collection before I can increase the reporting.' This creates a bottleneck where the entire reporting function is stalled upstream at the data gathering stage. The operational impact is that she is likely spending significant time on manual supplier outreach with inconsistent results, and the strategic impact is that she cannot progress her sustainability programme until this foundation is resolved.",
+        "critical_event": "No specific deadline, regulatory trigger, or budget cycle was mentioned during the call. Wiebke confirmed there are currently no compliance requirements driving urgency around reporting. There is no confirmed critical event at this stage. The AE should probe for any internal targets, board-level sustainability commitments, or upcoming review cycles that might create a natural deadline.",
+        "decision": "No information was gathered about the decision-making process, budget authority, stakeholders involved, or sign-off requirements. Wiebke agreed to the meeting readily, which suggests reasonable autonomy, but the AE should not assume she is the sole decision-maker. Nothing was established about budget availability or procurement process. This is a significant gap from the discovery call that the AE must address in the meeting."
+      },
+      "objections": [
+        {
+          "objection": "Initial hesitation — Wiebke asked 'What company are you calling from?' in a tone suggesting unfamiliarity and mild suspicion about the call.",
+          "response": "Harry handled this smoothly by spelling out the company name and immediately pivoting to a relevant framing around sustainability managers and scope 1, 2, and 3 reporting. He did not dwell on it and moved quickly to qualification. This was handled well."
+        },
+        {
+          "objection": "Wiebke clarified that reporting is not her priority and she has no compliance requirements: 'The reporting is — I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.'",
+          "response": "Harry acknowledged this and pivoted the conversation to data collection, which was the right instinct. However, he did not probe deeply into what specifically makes the data collection difficult, how many suppliers are involved, or what a better process would need to look like. The pivot was made but the discovery was left shallow. The AE should treat this as an open thread."
+        }
+      ],
+      "recommended_approach": "Open the meeting by anchoring on Wiebke's own words: she cannot increase reporting until she improves data collection. Do not lead with the reporting or compliance angle — she was explicit that this is irrelevant to her right now. Frame the entire conversation around solving the upstream data collection problem. Early in the meeting, ask her to walk you through her current supplier data collection process in detail — how many suppliers she is contacting, how she tracks responses, what format the data comes back in, and where it breaks down. This will surface the real friction and allow you to map specific Furthr capabilities to specific steps in her workflow. You should also probe for what 'increasing data collection' means in measurable terms for her — is there a target number of suppliers, a coverage percentage, or an internal programme milestone she is working towards? This will help establish whether there is a critical event that did not emerge on the cold call. On the decision side, ask an open question about who else in the business would be involved in evaluating or implementing a new data collection process — procurement, IT, finance, or a sustainability director above her. Nothing was established on this and it is a priority gap to close. Finally, given the meeting scheduling was somewhat chaotic and a firm date did not appear to be locked in by the end of the call, confirm the meeting date and time directly with Wiebke before the AE joins.",
+      "key_quotes": [
+        "It is relevant. I do need to increase our data collection before I can increase the reporting though.",
+        "The reporting is — I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.",
+        "Exactly. [Confirming she is currently contacting all suppliers manually to request spend data]",
+        "Yes. [Confirming she is currently working from spend data for her carbon calculations]"
+      ]
+    }
+  ]
+}
