@@ -40,6 +40,51 @@
         "I can't quite see who I would push you onto. If you see what I mean. But I — it was worth — I certainly work for the investigation.",
         "FedRAMP in America — I mean just GB or across NATO."
       ]
+    },
+    {
+      "id": "mp3sklspgle647c1wha",
+      "savedAt": "2026-05-13T08:22:37.451Z",
+      "campaign": "Securilix",
+      "contact": {
+        "companyName": "Just After Midnight",
+        "contactName": "Karen Haydon",
+        "jobTitle": "Head of Information Security and Compliance",
+        "phone": "+447967330569",
+        "email": "karen.haydon@justaftermidnight247.com",
+        "linkedin": "https://linkedin.com/in/karenhaydon"
+      },
+      "spiced": {
+        "situation": "Karen Haydon is Head of Information Security and Compliance at Just After Midnight, a 24/7 operation (likely a managed services or digital operations company based on the domain). She is the sole owner of security questionnaire responses — there is no team or tooling supporting her. She handles a mix of formats: portal-based questionnaires, standalone documents, RFPs, and due diligence questionnaires (DDQs). She attempted to build an internal answer bank herself but never had time to complete it. No existing third-party solution or trust centre is in place. She receives questionnaires from clients across multiple regions and jurisdictions globally.",
+        "pain": "Karen is being buried by security questionnaires — she completed 16 in the year to date by mid-May, including five in February and five in March. She currently has three on the go within a single week. Individual questionnaires range from 10–30 minutes for simple ones up to four full days for complex ones — she cited one that had 326 questions and another that was a full RFP with a 150-page terms and conditions document she had to read in full before responding. A core frustration is the nuance required: many questionnaires are project-specific, requiring internal conversations to confirm what services are actually being provided before she can answer accurately. Others arrive via portals with requirements to upload supporting documents, redact sensitive policies, or confirm agreement with the client's own attached documentation. She also flags that questionnaires arrive while she is in external audits with do-not-disturb active, and stakeholders still demand same-day or next-day turnaround.",
+        "impact": "The questionnaire burden is directly crowding out Karen's core responsibilities. She explicitly listed internal auditing and security process updates as work that has fallen behind. The time cost is significant — four days on a single questionnaire is not unusual for her. There is also a sales cycle implication: Just After Midnight's ability to close deals is dependent on Karen completing these responses, and delays or errors could jeopardise contracts. The regional and jurisdictional complexity adds compliance risk — each new geography brings unfamiliar legislation she must interpret before she can respond. She described the situation as something that has been on her list for 'a very long time' with no resolution in sight, suggesting this is a sustained operational drag rather than a temporary spike.",
+        "critical_event": "No hard deadline, regulatory trigger, or budget cycle was mentioned explicitly. However, the current volume — three questionnaires in one week, 16 already in 2026 by mid-May — suggests the problem is live and acute right now rather than theoretical. The backlog of internal audits and security updates she referenced implies there is mounting pressure building alongside the questionnaire workload. No specific event was cited that would force a decision by a particular date.",
+        "decision": "Karen appeared to be the primary decision-maker and the sole user of any solution — she owns the problem entirely and booked the meeting on her own authority without mentioning needing sign-off from anyone else. No budget figure, procurement process, or additional stakeholders were referenced. The decision process appears straightforward at this stage, but this has not been confirmed. It is worth the AE probing whether there is a line manager, finance approval, or procurement step involved before any commercial conversation."
+      },
+      "objections": [
+        {
+          "objection": "Many questionnaires come in via portals, not as standalone documents — implying the tool may not be able to interact with them directly.",
+          "response": "Sean acknowledged this but did not address it substantively. He moved past it quickly by emphasising the human element of the service. This remains unresolved and Karen returned to it at the end of the call, listing portals and format variety as a key consideration. The AE must address this directly — Karen needs to understand specifically how Securilix handles portal-based submissions."
+        },
+        {
+          "objection": "Answers are often project-specific and require internal conversations to determine what services are actually being provided — meaning a static answer bank is insufficient.",
+          "response": "Sean handled this reasonably well, explaining that the service is fully customised per client and not a one-size-fits-all AI output, and that the human review layer exists precisely for this reason. Karen appeared satisfied with this response. The AE should reinforce this point with a concrete example or case study if available."
+        },
+        {
+          "objection": "Some questionnaires require Karen to read and formally confirm agreement with attached client policies and terms and conditions documents before she can respond.",
+          "response": "Sean acknowledged this was a common scenario but did not explain how Securilix actually handles it — he said he would 'get an answer' for her. This is a live, unresolved question the AE must come prepared to answer. Karen flagged it as something she would be 'interested' to understand, which signals it is a meaningful part of her use case."
+        },
+        {
+          "objection": "Policies and internal documents often cannot be shared externally — Karen needs to share only a contents page or redacted version, which requires judgement about what is and is not disclosable.",
+          "response": "Sean acknowledged this briefly but did not explain how the service navigates document sensitivity or confidentiality. The AE should be ready to address how Securilix handles restricted documentation and what the data sharing and confidentiality model looks like."
+        }
+      ],
+      "recommended_approach": "Open by referencing the specifics Karen shared on the call — do not make her repeat herself. She explicitly said she would not hold Sean to remembering everything, but she will respond well to an AE who clearly has been thoroughly briefed. Start with something like: 'I understand you had one questionnaire alone that took four days, and you are currently managing three at once — I want to make sure we are showing you something that actually fits the complexity you are dealing with, not just the straightforward cases.' This signals you have listened and sets the right tone.\n\nThe demo must address her four specific scenarios directly: (1) portal-based questionnaires — be explicit about what Securilix can and cannot do here; (2) project-specific responses that require internal alignment before answers can be confirmed — show how the human review layer accommodates this rather than just asserting it does; (3) documents attached by clients requiring formal confirmation of agreement — come with a clear answer, not a vague 'we can look into it'; (4) policy redaction and document sensitivity — explain the confidentiality model and what access Securilix requires.\n\nProbe on volume trajectory. She had 16 questionnaires by mid-May 2026, with five each in February and March. Ask whether she expects this to grow as Just After Midnight wins more business, particularly in new regions — this could strengthen the commercial case significantly.\n\nProbe on decision-making. She booked independently but no one else was mentioned. Ask directly: 'Is this something you would be in a position to move forward on yourself, or would others need to be involved?' Do this early to avoid a late-stage stall.\n\nQuantify the time cost together during the meeting. She mentioned four days on one questionnaire, 326 questions on another, and a 150-page T&C document on a third. Work with her to estimate total hours lost per month — this will make the ROI conversation concrete and personal rather than theoretical.\n\nDo not oversell automation. Karen is sophisticated and already understands the limitations of pure AI responses. She will be sceptical of anything that sounds like a generic AI tool. Lead with the human oversight and customisation angle, and use the AI tooling as a supporting capability rather than the headline.",
+      "key_quotes": [
+        "I spent about four days on one. Oh my God, it's hideous.",
+        "It's not as simple as setting something up and saying these are going to be all the answers — it's project specific, it comes down to internal conversations about what services we've actually agreed to provide.",
+        "One of them was a full RFP and it had a 150-page terms and conditions document I had to read.",
+        "I'd be interested actually as well in what you do about documentation that is sent with those that has to be read — even with due diligence things, they'll attach some of their own policies and terms and conditions and part of the response is please confirm you've read that and you're all right with it."
+      ]
     }
   ]
 }
