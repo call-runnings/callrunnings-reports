@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "mp3shn0qsxgdvjw63m",
+      "savedAt": "2026-05-13T08:20:19.070Z",
+      "campaign": "Securilix",
+      "contact": {
+        "companyName": "Basis Technologies",
+        "contactName": "Mark Holder",
+        "jobTitle": "Global Defence & Security Director",
+        "phone": "+447808575178",
+        "email": "mark.holder@basistechnologies.com",
+        "linkedin": "https://linkedin.com/in/mark-holder-uk"
+      },
+      "spiced": {
+        "situation": "Mark is the Global Defence & Security Director at Basis Technologies, a small (~180 person) SAP partner company selling SAP software to defence agencies globally. His role is sales-focused — he runs their global defence business and sells software to defence agencies across GB and NATO. The company holds ISO 27001 and Cyber Essentials Plus certifications. Mark is not the CISO or a technical security person — he is a sales leader who encounters security compliance as part of the sales process. He acknowledged there is no dedicated security director at the company, meaning security questionnaire ownership is unclear internally.",
+        "pain": "Mark immediately recognised what security questionnaires are and showed genuine intrigue, suggesting this is a real and familiar friction point. The company operates in the defence and regulated sector, meaning they are likely subject to demanding compliance requirements including FedRAMP in the US, NATO-related accreditations, and defence-specific clearance frameworks — all of which generate complex, time-consuming questionnaires. Mark could not clearly identify who internally would own this problem ('I can't quite see who I would push you onto'), which itself signals a pain point: there is no clear process or ownership for handling inbound security questionnaires.",
+        "impact": "No specific revenue figures or deal losses were cited, but the context is high-stakes: Basis Technologies sells into defence agencies across NATO and the US, where procurement processes are heavily compliance-driven. The SDR's framing — that questionnaires can take 3–7 days or weeks to complete, leaving competitors to submit RFIs and RFPs first — clearly resonated with Mark, who did not push back on it. In a defence sales context, losing ground in a competitive RFP cycle due to slow compliance responses could mean losing significant government or enterprise contracts. The risk is both competitive (being slower than rivals) and reputational (appearing unprepared to regulated buyers).",
+        "critical_event": "No hard deadline or specific regulatory trigger was explicitly mentioned. However, Mark referenced several compliance frameworks relevant to their business — FedRAMP, NATO accreditations, Cyber Essentials Plus, ISO 27001 — which suggests ongoing and evolving compliance obligations. He said 'there are things that are coming up' without specifying what those are. The AE should probe this directly on the Monday call to determine whether there is an upcoming procurement, audit, accreditation renewal, or new defence contract pursuit driving urgency.",
+        "decision": "Mark is a sales leader, not a technical or security decision-maker. He was candid that he is 'not in any way, shape or form' the security questionnaire owner. He struggled to identify who internally would be responsible, which suggests either the function is distributed or underdeveloped. He expressed personal curiosity and said it was 'worth investigation,' implying he could be an internal champion but is unlikely to be the sole decision-maker or budget holder. The AE needs to uncover who handles compliance and security documentation at Basis Technologies — likely someone in IT, InfoSec, or operations — and determine whether Mark has the influence or appetite to bring them into the conversation."
+      },
+      "objections": [
+        {
+          "objection": "Mark immediately said he was physically walking out the door to a doctor's appointment and his son's birthday — he was not available to speak.",
+          "response": "The SDR handled this well. Rather than pushing through, he asked a qualifying question ('If I told you it was about security questionnaires, is it worth calling you back?') which kept the door open without wasting Mark's time. This was an effective pattern interrupt that prompted Mark's curiosity rather than his resistance."
+        },
+        {
+          "objection": "Mark initially said he was not the right person — 'I'm selling SAP software, effectively' — distancing himself from security questionnaire ownership.",
+          "response": "The SDR broadened the framing to explain that Securilix works with sales-side people receiving questionnaires that slow down the sales cycle. This reframe landed well and shifted Mark from dismissive to curious. However, the SDR did not fully close the loop on who the right internal contact might be — this remains unresolved."
+        },
+        {
+          "objection": "Mark could not identify who internally should own this problem: 'I can't quite see who I would push you onto.'",
+          "response": "This was left unaddressed. The SDR did not probe further to help Mark think through who might be responsible — an IT manager, a compliance lead, or a bid/tender team member, for example. The AE must pick this up on the Monday call and help Mark map the internal stakeholder landscape."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the rushed nature of the first call and thank Mark for making time on a Monday. Briefly recap what was discussed to show continuity — reference that he mentioned ISO 27001, Cyber Essentials Plus, FedRAMP, and NATO accreditations specifically, so he knows the AE has been properly briefed and isn't starting from scratch. The strongest angle here is the defence sales cycle: Mark is a sales director selling into defence agencies, so frame Securilix's value in terms of competitive speed in RFP and RFI processes — losing ground to a competitor because a questionnaire took two weeks to complete is a tangible, credible risk in his world. Avoid leading with technical compliance language; lead with sales velocity and deal risk. Early in the call, probe the 'things that are coming up' comment — ask directly whether there is a specific contract pursuit, accreditation renewal, or new market entry (e.g. FedRAMP for US defence work) that is making this timely. This is the most likely route to surfacing a Critical Event. Separately, help Mark identify the right internal stakeholder — suggest that in companies without a dedicated security director, it is often the IT manager, bid manager, or head of operations who ends up owning questionnaire responses. Offer to involve that person in a follow-up if appropriate. Do not oversell on this first meeting — Mark's interest is genuine but exploratory. The goal is to confirm the pain is real, find the internal owner, and identify whether there is a near-term trigger that justifies moving forward.",
+      "key_quotes": [
+        "I am slightly intrigued, actually — security... are you talking about accreditations in the defence space, that kind of stuff?",
+        "We haven't got a security director. But this is why I'd like to explore it because there are things that are coming up.",
+        "I can't quite see who I would push you onto. If you see what I mean. But I — it was worth — I certainly work for the investigation.",
+        "FedRAMP in America — I mean just GB or across NATO."
+      ]
+    }
+  ]
+}
