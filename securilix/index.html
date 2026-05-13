@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Runnings — Securilix</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:#5558C8;background-image:radial-gradient(ellipse 80% 60% at 20% 10%,#7068D8 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,#3890C8 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 50% 50%,#5558C8 0%,#4048A8 100%);min-height:100vh;color:#fff;padding-bottom:80px}
+
+  /* ── Hero ── */
+  .hero{position:relative;overflow:hidden;padding:40px 56px 0;display:flex;align-items:flex-end;justify-content:space-between;min-height:220px;border-bottom:1px solid rgba(255,255,255,0.12)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,8,40,0.45) 0%,rgba(10,8,40,0.1) 60%,transparent 100%);pointer-events:none}
+  .hero-left{position:relative;z-index:2;padding-bottom:36px}
+  .hero-logo{height:52px;display:block;margin-bottom:24px}
+  .hero-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.55);margin-bottom:8px}
+  .hero-title{font-size:32px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:6px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,0.65);font-weight:400}
+  .hero-illustration{position:relative;z-index:1;height:200px;width:auto;object-fit:contain;object-position:bottom;flex-shrink:0;margin-left:32px;opacity:0.95;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.25))}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;gap:0;padding:0 56px;border-bottom:2px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.12)}
+  .tab{padding:14px 28px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.45);border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all 0.15s;letter-spacing:0.04em}
+  .tab.active,.tab:hover{color:#fff;border-bottom-color:#FE6601}
+
+  /* ── Panel ── */
+  .panel{display:none;padding:32px 56px 64px;max-width:960px}
+  .panel.active{display:block}
+
+  /* ── Meetings expandable ── */
+  details[open] summary span:first-child{transform:rotate(90deg);display:inline-block}
+  details summary::-webkit-details-marker{display:none}
+
+  /* ── Footer ── */
+  .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
+  .footer-logo{height:28px;opacity:0.45}
+  .footer-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-left">
+    <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="hero-logo" alt="Call Runnings">
+    <div class="hero-eyebrow">Monthly Market Intelligence Report</div>
+    <h1 class="hero-title">Securilix</h1>
+    <div class="hero-sub">Prepared by Call Runnings</div>
+  </div>
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
+</div>
+<div class="tabs">
+    <button class="tab active" onclick="showTab(0)">May 2026</button>
+  <button class="tab" onclick="showTab(1)">All Time</button></div>
+
+    <div class="panel active" id="panel-0">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">559</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">41</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">2</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">6</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">3</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">21</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">5</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">4</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+    </div>
+      <div>
+  <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">May 2026 was a month defined by a market that is largely self-sufficient — at least in its own estimation. The majority of conversations revealed prospects who had already found some form of answer to the security questionnaire problem, whether through dedicated tooling, AI-assisted automation, internal workarounds, or simply a low enough volume of questionnaires that the pain hadn't yet crystallised into urgency. The tone across the month was polite but firm: very few prospects were hostile, but equally very few felt the pull of an unsolved problem. Where doors opened, they opened narrowly — a callback agreed here, an email invited there — and the two meetings booked represent genuine interest in a market that took some patience to navigate.<br><br>What stood out most was the prevalence of prospects who have recently invested in solutions — Vanta, AI tools, public trust centres, home-built platforms — and are now in a period of settling into those decisions. This created a recurring dynamic where Securilix arrived just after the window had closed. That said, several of these conversations surfaced nuance worth tracking: tools were described as handling 'most of the heavy lifting' rather than all of it, and one prospect spoke candidly about 'strict internal thresholds' suggesting workarounds rather than true resolution. The ceiling on these solutions may not be as high as prospects currently believe.<br><br>Organisationally, the month also surfaced a consistent challenge around reaching the right person. A meaningful proportion of connected calls resulted in redirections — to gatekeepers, wrong departments, automated systems, or contacts on leave. Where referrals were given, they were specific and actionable, pointing toward CSOs and senior compliance engineers. The market is reachable, but the path to the right conversation requires persistence and sharper targeting at the contact level.</div>
+    
+  </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:4px">Competitor & Market Intelligence</div>
+        </div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" style="height:64px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04)">
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">Competitor</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">What was Said</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Freq</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Vanta</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Prospect stated they 'already use Vanta and AI tools, effectively managing their questionnaires' and felt 'fully covered' with no gaps in their current solution.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">AI tooling (unspecified)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple prospects referenced AI-assisted automation handling their questionnaire process. One said they had 'automated their security questionnaire process using AI, making it no longer an issue.'</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~3</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Public trust centre (self-built)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect described 'building a public trust centre to streamline their security questionnaire process,' finding it effective for engaging with both large enterprises and smaller distributors.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Home-built internal solution</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect described working on 'a home-baked solution for handling security questionnaires,' indicating active internal development rather than vendor procurement.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Existing internal process / compliance team</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Several prospects referenced having internal processes or compliance teams in place. One noted 'strict internal thresholds' resulting in very few requests reaching the team.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~3</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Anecdote (supplies list)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect explained they are 'on an anecdote supplies list, which keeps their sales team from having to deal with' security questionnaires entirely.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr></tbody>
+      </table>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Common Objections</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/yes-and-no.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Already have a tool or solution in place</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They already have a tool in place that handles most of the heavy lifting, so our solution isn't relevant for them currently."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This is the dominant objection of the month and reflects a market that has been actively investing in this problem space. However, language like 'most of the heavy lifting' and 'strict internal thresholds' suggests these solutions are managing volume downwards rather than eliminating the problem. The pitch should probe what falls through the gaps rather than accepting coverage claims at face value.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Security questionnaires are infrequent or not relevant to their business</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They receive security questionnaires infrequently — 2 to 6 times every few months. They have found a workaround, indicating it's not a significant issue for them."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A portion of the market simply does not sell into enterprise accounts and therefore rarely encounters security questionnaires. These are genuinely poor-fit prospects. However, the 'workaround' framing among those who do receive them suggests latent inefficiency — low frequency does not mean low effort per questionnaire. Reframing around time-per-response rather than volume may shift the conversation.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right person or not relevant to their role</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He indicated that security questionnaires aren't his area. He suggested I reach out to either Andy Hunter (CSO) or Stuart Hall (main DRC engineer)."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring pattern this month was reaching contacts who either genuinely sit outside the security questionnaire workflow or who deflected by citing a more relevant colleague. Where specific referrals were given — particularly to CSOs and DRC engineers — these represent warm leads worth pursuing. Where deflections were vague, they may reflect discomfort rather than genuine misdirection.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Bad timing or too busy</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He mentioned they have a process in place but is currently focused on more pressing tasks. He suggested I send information via email and follow up in Q1 next year."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects were not dismissive of the proposition but pushed engagement to a later date. This signals conditional interest rather than a hard no, and these contacts warrant structured follow-up. The volume of 'not now' responses also suggests that May may have landed during a period of competing internal priorities across the sector.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Request to be removed from contact list</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He was not interested and requested to have his details removed from our lists."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A small but consistent group of contacts requested removal. This is worth monitoring at the data level — if certain company types or job titles are generating repeated removal requests, it may indicate a targeting mismatch that can be corrected upstream before dials are made.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">What Prospects Asked</div>
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send information by email instead?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Prospects requesting email follow-up are rarely signalling strong intent — more often it is a polite deferral. However, in cases where a specific follow-up date was also given, such as Q1 next year, it represents a genuine breadcrumb. Email content sent in response should be concise, problem-led, and timed to arrive ahead of any agreed follow-up call.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">What exactly does the solution do / what is the company?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Where prospects asked for clarification on the proposition before disengaging, it suggests the opening framing may not immediately resonate. The question reveals that the value of security questionnaire support is not self-evident to all contacts, particularly those outside sales or pre-sales functions who may not encounter the pain directly.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you reach out on LinkedIn instead?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">One prospect redirected to LinkedIn as his preferred channel, suggesting a degree of openness that did not extend to the phone conversation itself. This reflects a broader preference among some senior contacts for asynchronous, low-commitment engagement as a first step. LinkedIn outreach following a call where this preference was stated should be treated as a warm touchpoint rather than a cold one.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Market Themes</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/shopkeepers.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The market has been buying — but not necessarily solving</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">The most consistent pattern across May was prospects citing recent investment in security questionnaire tooling, from named platforms like Vanta to AI automation and self-built solutions. However, the language used to describe these tools often contained caveats — 'most of the heavy lifting,' 'strict thresholds,' 'a workaround.' The market has spent money on this problem without necessarily closing it, and that gap is worth pressing on in future conversations.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Timing and internal focus are depressing engagement</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable share of prospects were not categorically opposed to the proposition but cited competing priorities, internal projects, or personal circumstances such as paternity leave as reasons not to engage. Several suggested follow-up windows months away. This suggests May was a difficult month for new vendor conversations across this segment, and that a portion of these contacts will be more receptive when revisited at the cadence they indicated.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Reaching the right person remains the core operational challenge</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Across the month, a significant number of connected calls did not result in a conversation with a decision-relevant contact. Gatekeepers, automated systems, wrong departments, and absent individuals all featured heavily. Where the right person was not reached, only a small proportion of calls yielded a useful referral. Sharpening contact data — particularly toward CSOs, DRC engineers, and heads of pre-sales — would materially improve the ratio of conversations to dials.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">A segment of the market has no enterprise exposure and will never be a fit</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects made clear that their business model does not involve selling to enterprises, meaning they never receive security questionnaires and have no use case for Securilix. One contact put it plainly: 'they don't sell to businesses.' These contacts represent a targeting issue rather than a sales challenge, and refining the prospect list to exclude B2C or SMB-only businesses would reduce wasted dials and improve overall conversion rates.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Recommended Actions</div>
+      </div>
+      <div style="padding:6px 24px 6px">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Refine the prospect list to exclude businesses that do not sell into enterprise accounts — contacts who confirmed they have no exposure to security questionnaires represent a structural mismatch that cannot be overcome in the call, and removing them from the data will improve the quality of every subsequent dial.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a specific rebuttal for the 'we already have a tool' objection that probes coverage gaps rather than accepting the claim — questions such as 'what happens to the questionnaires that fall outside the tool's scope?' or 'how are you handling the edge cases?' are likely to surface residual pain that prospects are not volunteering.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Prioritise follow-up on contacts who gave a specific callback window or agreed to email outreach — at least three prospects indicated future willingness to engage (including one who suggested Q1, one who agreed to a Monday or Tuesday callback, and one who asked to be reached via LinkedIn), and these represent the warmest pipeline from the month.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Where referrals to named individuals were given — specifically Andy Hunter (CSO) and Stuart Hall (DRC engineer) — treat these as warm entries and prioritise them in the June dial plan, referencing the conversation in which their name was provided.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Review targeting at the job title level to ensure dials are weighted toward pre-sales, sales engineering, and security leadership functions, as these roles are most likely to own the security questionnaire problem directly — contacts in operations, general IT, or non-enterprise-facing roles consistently confirmed the proposition was not relevant to them.</p>
+      </div></div>
+    </div></div>
+    </div>
+
+  <div class="panel" id="panel-1">
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">All Time — Month-on-Month Comparison</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px">Full campaign history at a glance</div>
+      </div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;min-width:680px">
+          <thead>
+            <tr style="background:rgba(255,255,255,0.04)">
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:left">Month</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(200,216,240,0.5);text-align:center">Dials</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">Connects</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#3090C0;text-align:center">Convos</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#32B241;text-align:center">Activated</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">No, Not Now</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#FE6601;text-align:center">Meetings</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Connect %</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Mtg %</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">May 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">559</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">51</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">41</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">6</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">3</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">2</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">9.1%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">4.9%</td>
+    </tr></tbody>
+          <tfoot>
+            <tr style="background:rgba(255,255,255,0.06)">
+              <td style="padding:12px 14px;font-weight:800;color:#fff;font-size:13px">Total</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(200,216,240,0.9)">559</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.65)">51</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#3090C0">41</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#32B241">6</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.55)">3</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#FE6601">2</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">9.1%</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">4.9%</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+<div class="footer">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
+  <span class="footer-tag">Phone First, Always</span>
+</div>
+<script>
+function showTab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
+}
+</script>
+</body>
+</html>
