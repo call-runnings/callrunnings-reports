@@ -36,6 +36,43 @@
         "Exactly. [Confirming she is currently contacting all suppliers manually to request spend data]",
         "Yes. [Confirming she is currently working from spend data for her carbon calculations]"
       ]
+    },
+    {
+      "id": "mp5mwyr7e3l0vremmm7",
+      "savedAt": "2026-05-14T15:19:48.386Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Buzzacott",
+        "contactName": "James Ross",
+        "jobTitle": "ESG Manager",
+        "phone": "+447787766668",
+        "email": "rossj@buzzacott.co.uk",
+        "linkedin": "https://linkedin.com/in/james-ross-csr"
+      },
+      "spiced": {
+        "situation": "James is the ESG Manager at Buzzacott, an accountancy and advisory firm. He is currently using a tool called Trace for embodied carbon and scope three reporting — they have used Trace both as a platform and on a consultancy basis. He describes himself as someone who supports the decision-making process around tools but is not the final decision-maker. Buzzacott is actively scoping what ESG tools are available, both for internal use and to potentially deliver services to clients in this space.",
+        "pain": "Two distinct pain points emerged. First, internally, Buzzacott has an incomplete understanding of their own scope three emissions — specifically around procurement and purchased goods and services. James acknowledged they are not currently publishing scope three data, suggesting gaps in their ability to capture and interpret it. Second, from a commercial standpoint, Buzzacott wants to be able to offer ESG-related services to clients, but James explicitly said they are 'not quite in the place to actually be delivering services to clients right now' — meaning their current tooling or capability is insufficient to support client-facing delivery. The SDR also raised the broader market pain of data gathering being time-consuming and lacking actionable insights, which James did not push back on.",
+        "impact": "The inability to fully understand scope three emissions has strategic and reputational consequences — James noted they need to 'bring it somewhat themselves to be able to sell it on,' meaning internal gaps are directly blocking a revenue opportunity. If Buzzacott cannot credibly demonstrate ESG capability, they cannot deliver those services to clients. On the internal side, even without a reporting obligation, James flagged that voluntary awareness of scope three — particularly around procurement — is important to him professionally and to the firm's positioning. The risk of falling behind on this is both commercial (losing client advisory revenue) and reputational (being seen as behind the curve on ESG).",
+        "critical_event": "No hard deadline or regulatory trigger was explicitly mentioned. However, James described the scoping exercise as ongoing and active — they are currently assessing what tools are available. The combination of an existing tool (Trace) under review and a clear desire to move toward client-facing ESG services suggests there is momentum, but no specific date or event was cited that creates urgency. The AE should probe for whether there is an internal review cycle, a client pitch, or a reporting deadline driving the timeline.",
+        "decision": "James is not the final decision-maker. He described his role as 'supporting in what is out there and what might be most appropriate for our purposes' and said he needs to discuss any information with 'my manager and some of the other parties.' He mentioned having 'a couple of people that I think could be interested.' No names, titles, or budget figures were shared. The process appears to be at an early scoping stage — James wants to gather information and present options upward. The AE should aim to understand who the manager is, what other parties are involved, and what the evaluation criteria look like."
+      },
+      "objections": [
+        {
+          "objection": "We already use another tool called Trace — both the platform and on a consultancy basis.",
+          "response": "The SDR handled this adequately by asking a clarifying question about whether they use Trace as a consultancy or just the platform, which showed curiosity rather than panic. However, the SDR did not directly address what Furthr offers that Trace does not, nor did they probe for any dissatisfaction with Trace. The response about Furthr offering 'a suite of different software tools' and helping choose the right one was vague and did not land a clear differentiation. The AE must come prepared with a specific, honest comparison and lead with questions about where Trace is falling short before positioning Furthr."
+        },
+        {
+          "objection": "I don't make the final call on these things.",
+          "response": "The SDR acknowledged this but did not probe further — no attempt was made to identify the decision-maker by name, understand the internal process, or ask what James would need to see in order to recommend Furthr internally. This is a significant gap. The AE should address this directly in the meeting and aim to either get the manager or other stakeholders involved in a subsequent call, or at minimum understand exactly what James needs to bring back to them."
+        }
+      ],
+      "recommended_approach": "Open by referencing the two-track interest James mentioned — internal scope three visibility and the ambition to deliver ESG services to clients — and ask him which of those is the more pressing priority right now. This shows you have listened and lets him set the agenda. On the internal side, probe specifically into what Trace is and is not giving them around procurement and purchased goods and services — he was specific about that category, so go deeper there. Ask what their current process looks like for gathering that data and where it breaks down. On the client-facing side, ask what 'not quite in the place to deliver services' actually means — is it a capability gap, a credibility gap, a tooling gap, or all three? This is a commercial growth conversation as much as a compliance one, and that angle may resonate more strongly with James's manager when he takes this upward. Avoid leading with a product demo or feature walkthrough. James needs ammunition to present internally, so think about what a one-page summary or internal business case would look like for him. Before closing the meeting, make a direct ask to understand who else needs to be involved and whether it is possible to bring James's manager into the next conversation. Given that Trace is already embedded, do not dismiss it — ask what they like about it and where it leaves gaps. That is where Furthr's positioning should live.",
+      "key_quotes": [
+        "We're sort of scoping out at the moment. So I would be interested certainly receiving some of your info that I can discuss with my manager and some of the other parties.",
+        "We're looking at our client position... not quite in the place to actually be delivering services to clients right now, but we're trying to understand what tools are out there that may be able to support with the delivery in that space.",
+        "Even from that voluntary point of view with scope three, and they're not publishing that, it's better for us to be aware and understand what we need to do mainly around procurement and our purchased goods and services.",
+        "You've got to bring it somewhat ourselves to be able to sell it on, I suppose."
+      ]
     }
   ]
 }
