@@ -6,7 +6,9 @@
         {
           "type": "overview",
           "title": "Campaign Overview",
-          "content": "May 2026 was a month characterised by a market that is broadly aware of the security questionnaire problem but has, in many cases, already moved to address it — either through dedicated tooling, AI-assisted automation, or internally-built workarounds. The overall tone of conversations was polite but largely unreceptive, with most prospects quick to signal that the pain point Securilix addresses had already been solved or deprioritised within their organisation. Where genuine engagement did occur, it tended to come from contacts who were still mid-journey in building their solution, suggesting that timing and pipeline stage are critical variables in this campaign.\n\nA notable pattern across the month was the high proportion of calls that never reached the intended decision-maker — gatekeepers, automated systems, voicemail services, and wrong contacts accounted for a significant portion of dials. Where conversations did take place, the market felt saturated with existing solutions: Vanta, AI tools, trust centres, and home-built processes were all cited as reasons why Securilix was not needed right now. This is not a market that lacks awareness of the problem; it is a market where many prospects believe they have already solved it.\n\nThe brighter signals came from contacts who are still actively figuring out their approach — those building internal solutions, relying on mixed methods, or sitting with low-volume questionnaire processes that have not yet justified a dedicated tool. Two meetings were booked and seven prospects were activated, which points to a real but narrow segment of receptive buyers in the pipeline. The opportunity lies in reaching those contacts before they commit to an alternative, and in sharpening the conversation around gaps that existing tools — particularly AI and Vanta — are unlikely to cover fully.",
+          "content": "May 2026 was a month that revealed a great deal about the current state of the security questionnaire market. Whilst connection rates were modest, the conversations that did take place were rich in intelligence — the market is clearly active, but a significant portion of it has already been moving to solve this problem independently. Many prospects had either recently implemented a tool, built an in-house workaround, or were mid-way through constructing their own solution, suggesting that urgency around security questionnaires is real, but the window to capture prospects before they self-solve is narrow.",
+          "content2": "Where genuine conversations were had, the tone was largely cordial and professional. Prospects were willing to explain their situations, and several provided useful referrals or suggested better-placed contacts within their organisations. The small number of meetings booked reflects a competitive and largely self-sufficient prospect pool in this cycle, rather than any lack of relevance in the proposition — the pain point itself was consistently validated throughout the month.",
+          "content3": "A recurring theme was prospects citing existing infrastructure — whether AI-assisted tooling, established internal processes, or compliance team ownership — as reasons the conversation wasn't timely. This points to a market that is increasingly sophisticated in how it handles questionnaire volume, and underlines the importance of reaching the right stakeholder, at the right stage of their maturity curve, before they arrive at a self-built answer.",
           "quotes": []
         },
         {
@@ -15,33 +17,39 @@
           "rows": [
             {
               "competitor": "Vanta",
-              "what_said": "Prospect stated they 'already use Vanta and AI tools, effectively managing their questionnaires' and feel 'fully covered'",
+              "what_said": "Prospect stated they already use Vanta alongside AI tools and feel fully covered, seeing no gaps in their current solution.",
               "freq": 1,
               "signal": "barrier"
             },
             {
-              "competitor": "AI tooling (general)",
-              "what_said": "Multiple prospects referenced AI-assisted automation — one had 'automated their security questionnaire process using AI, making it no longer an issue', another was 'working on a home-baked solution' using similar logic",
+              "competitor": "AI tooling (unspecified)",
+              "what_said": "Multiple prospects referenced AI-based approaches — one had automated their process entirely using AI, another used a mixed software and AI approach as a security consultancy.",
               "freq": 3,
               "signal": "barrier"
             },
             {
-              "competitor": "Internal / home-built process",
-              "what_said": "One prospect was 'building a public trust centre to streamline their security questionnaire process', another referenced 'strict internal thresholds' reducing volume significantly",
+              "competitor": "In-house / home-baked solutions",
+              "what_said": "One prospect described building a 'home-baked solution' for handling security questionnaires, whilst another was constructing a public trust centre to streamline the process.",
+              "freq": 3,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Anecdote (supplier list / pre-approved vendor)",
+              "what_said": "Prospect mentioned being on an 'anecdote supplies list' which effectively removes the need for their sales team to engage with questionnaires at all.",
+              "freq": 1,
+              "signal": "cold"
+            },
+            {
+              "competitor": "Existing internal process / compliance team ownership",
+              "what_said": "Several prospects indicated they have an established internal process or a dedicated compliance team managing questionnaires, making an external solution feel unnecessary.",
               "freq": 4,
               "signal": "barrier"
             },
             {
-              "competitor": "Mixed approach (software + manual)",
-              "what_said": "A security consultancy contact described 'a mixed approach with software solutions' as their current method for managing questionnaires",
+              "competitor": "Mixed software approach (security consultancy model)",
+              "what_said": "One prospect at a security consultancy noted they use a combination of software solutions and found the call relevant but no next steps were established.",
               "freq": 1,
-              "signal": "none"
-            },
-            {
-              "competitor": "Anecdote (compliance platform)",
-              "what_said": "Prospect said they 'are on an anecdote supplies list, which keeps their sales team from having to deal with' security questionnaires",
-              "freq": 1,
-              "signal": "barrier"
+              "signal": "hot"
             }
           ]
         },
@@ -52,32 +60,38 @@
             {
               "objection": "Already have a tool or process in place",
               "freq": 6,
-              "quote": "They already use Vanta and AI tools, effectively managing their questionnaires. Jack feels fully covered and sees no gaps in their current solution.",
-              "analysis": "This is the dominant objection across May and reflects a market where early adopters have already committed to a solution. The challenge for Securilix is not creating awareness of the problem — it is demonstrating a meaningful gap or limitation in what prospects already use. Messaging should probe the quality and completeness of existing solutions rather than leading with the problem statement alone."
+              "quote": "We already have a tool in place that handles most of the heavy lifting, so our solution isn't relevant for them currently.",
+              "analysis": "This was the single most common objection of the month, surfacing in multiple forms — existing software, AI tools, Vanta, and internal workflows. It signals that the market is maturing quickly and prospects are proactively solving for this pain. The opportunity lies in challenging the completeness of their current solution, particularly around edge cases, volume spikes, or sales cycle drag that legacy tools may not fully address."
             },
             {
-              "objection": "Don't receive enough questionnaires for it to matter",
-              "freq": 4,
+              "objection": "Not the right person / wrong contact reached",
+              "freq": 7,
+              "quote": "It isn't relevant to them as they don't handle such inquiries directly. He mentioned having a compliance team that might deal with it.",
+              "analysis": "A substantial number of calls landed with individuals who sit adjacent to the problem rather than owning it. This is a targeting and routing challenge — security questionnaire ownership often sits across sales ops, compliance, and security functions simultaneously. Sharpening the ideal contact profile and equipping the team with better referral-seeking language when reaching the wrong person will improve yield significantly."
+            },
+            {
+              "objection": "We don't receive enough questionnaires for this to matter",
+              "freq": 3,
               "quote": "They receive security questionnaires infrequently (2-6 times every few months). They have found a workaround, indicating it's not a significant issue for them.",
-              "analysis": "A segment of the market simply does not experience the volume of questionnaires that makes a dedicated solution feel justified. This objection signals that the prospect profile may need tightening — focusing on organisations selling into regulated sectors or enterprise customers where questionnaire volume is inherently higher. It also suggests a threshold-based qualification question should be introduced early in calls."
+              "analysis": "Low-volume prospects are self-disqualifying, which is useful market data. This objection suggests a filtering opportunity — companies that don't sell into enterprise or regulated sectors are unlikely to feel the pain acutely enough to act. Prioritising outreach to businesses with known enterprise sales motions or those in heavily regulated verticals should reduce encounters with this objection."
             },
             {
-              "objection": "Not the right person / not relevant to my role",
-              "freq": 5,
-              "quote": "Brendan indicated it isn't relevant to them as they don't handle such inquiries directly. He mentioned having a compliance team that might deal with it.",
-              "analysis": "Several contacts confirmed the topic is handled elsewhere in their organisation — typically by compliance, security, or a dedicated DRC function. This points to a contact data challenge: the campaign is reaching some individuals who are adjacent to the problem but not accountable for it. Referral-capture in these moments is valuable; the Yanis call, where two named contacts were offered, is the model to follow."
-            },
-            {
-              "objection": "Don't sell to businesses so questionnaires aren't applicable",
+              "objection": "Not relevant — we don't sell to businesses",
               "freq": 2,
               "quote": "They don't receive security questionnaires as they don't sell to businesses, so my solution isn't relevant.",
-              "analysis": "A small but consistent segment of contacts operate in B2C or non-enterprise contexts where security questionnaires are not part of the sales process. This is a data quality issue rather than a messaging one — these organisations should be filtered from the target list during research to preserve dial efficiency."
+              "analysis": "This is a fundamental ICP mismatch and points to a data quality issue in the contact list. Organisations that are B2C-only or do not operate in a vendor evaluation context will never have this pain. A cleaner segmentation filter based on business model should eliminate these calls from the pipeline."
             },
             {
-              "objection": "Bad timing / too busy right now",
+              "objection": "Bad timing / busy / on leave",
               "freq": 4,
-              "quote": "He is currently focused on more pressing tasks. He suggested I send information via email and follow up in Q1 next year.",
-              "analysis": "A recurring pattern of genuine interest deferred by competing priorities. These are not hard rejections and should be treated as long-cycle nurture opportunities. The Q1 follow-up request from Jethan at Joblogic is a concrete example — these prospects benefit from a structured re-engagement sequence rather than a single follow-up attempt."
+              "quote": "He's busy with other priorities but agreed to check the company website for more information.",
+              "analysis": "Several prospects were genuinely unavailable or distracted rather than fundamentally disinterested. Barry Shaw agreed to a callback, Jake invited a follow-up, and Jay engaged enough to request an email. These are not lost opportunities — they represent a warm follow-up list that should be actioned systematically in June."
+            },
+            {
+              "objection": "Prospect building their own solution",
+              "freq": 2,
+              "quote": "He's working on a home-baked solution for handling security questionnaires, indicating potential competition.",
+              "analysis": "Prospects mid-build on DIY solutions represent a nuanced opportunity. They have confirmed the pain exists and have already invested resource in solving it, but in-house builds carry risk, ongoing maintenance burden, and scale limitations. A value proposition focused on total cost of ownership and time-to-value versus a self-built approach could re-open these conversations."
             }
           ]
         },
@@ -87,18 +101,18 @@
           "items": [
             {
               "question": "Can you send information over by email?",
-              "freq": 3,
-              "analysis": "Prospects requesting email collateral are typically not rejecting the proposition outright — they are deferring engagement to a lower-commitment channel. This signals mild interest but insufficient urgency. It also suggests the verbal pitch alone is not yet compelling enough to hold attention on the call; stronger hooks or case-specific questions may be needed to convert these moments into booked conversations rather than inbox deferments."
-            },
-            {
-              "question": "Who should I redirect you to?",
               "freq": 2,
-              "analysis": "When prospects redirect rather than dismiss, it is a positive signal — they acknowledge the topic has relevance somewhere in their organisation, even if not with them. These moments represent warm referral opportunities and should be handled with a structured ask for a specific name, role, and ideally an internal introduction rather than a generic transfer."
+              "analysis": "When prospects requested email follow-up rather than continuing the conversation, it typically indicated mild interest without sufficient urgency to commit time in the moment. These contacts should receive concise, insight-led emails rather than generic brochures — the goal is to reframe the conversation around a specific gap in their current approach."
             },
             {
-              "question": "Can you remove me from your list?",
+              "question": "Who should I redirect you to instead?",
               "freq": 3,
-              "analysis": "List removal requests indicate either data quality issues (wrong contacts, B2C organisations) or prospect frustration with repeated outreach. These contacts should be honoured and suppressed promptly, but their frequency also warrants a review of the underlying data sources to reduce the proportion of clearly mismatched contacts in future dials."
+              "analysis": "Several prospects proactively offered referrals to more relevant internal contacts — including a CSO and a DRC engineer in one instance. This is a positive signal about the perceived legitimacy of the outreach. These referred contacts should be treated as warm leads with context already established."
+            },
+            {
+              "question": "Can you reach me via LinkedIn instead?",
+              "freq": 1,
+              "analysis": "One prospect directed the conversation to LinkedIn rather than engaging on the call, suggesting a preference for asynchronous, low-commitment communication. This is worth accommodating — a well-crafted LinkedIn message referencing the call and tailored to their context could be more effective than a phone follow-up for this type of contact."
             }
           ]
         },
@@ -107,20 +121,24 @@
           "title": "Market Themes",
           "items": [
             {
-              "heading": "The market is self-solving — but imperfectly",
-              "body": "The clearest pattern across May is that many prospects have already taken action on security questionnaire management, whether through Vanta, AI tools, trust centres, or internal thresholds. However, the diversity of approaches — and comments like 'home-baked solution' and 'mixed approach' — suggest these solutions are often stitched together rather than comprehensive. There is a credible opportunity for Securilix to reframe its value around the gaps and failure modes of DIY or patchwork approaches rather than the original problem."
+              "heading": "The DIY Race: Prospects Are Self-Solving Before Being Reached",
+              "body": "A striking number of prospects encountered this month were already mid-implementation on their own solutions — whether a public trust centre, an AI-assisted workflow, or a home-built questionnaire tool. This suggests the market is acutely aware of the problem but increasingly confident it can solve it without external help. The implication for Securilix is that speed-to-contact matters enormously; reaching prospects before they commit to a self-build is the highest-value timing window."
             },
             {
-              "heading": "Volume threshold is a key qualification variable",
-              "body": "Multiple prospects cited low questionnaire frequency as the primary reason Securilix felt irrelevant to them. This suggests that questionnaire volume — or the prospect's sales motion into regulated, enterprise, or public-sector buyers — should become a front-loaded qualification question in calls. Reaching contacts who demonstrably face higher volumes would significantly improve conversation quality and conversion rates."
+              "heading": "Ownership Is Fragmented Across Organisations",
+              "body": "Across multiple calls, it was clear that no single role consistently owns the security questionnaire function. Responsibility was spread across IT managers, compliance teams, CSOs, sales operations, and even individual engineers. This fragmentation means that landing on the right person often requires navigating two or three internal redirects. Building a multi-threaded outreach strategy that anticipates this and equips callers with referral-seeking language will reduce wasted connections."
             },
             {
-              "heading": "Decision-maker identification remains a structural challenge",
-              "body": "A meaningful share of May's dials landed with gatekeepers, automated systems, wrong numbers, or contacts who confirmed the topic sits with a different team. Where referrals were obtained — such as the contact who named Andy Hunter (CSO) and Stuart Hall (DRC engineer) — the intelligence gained was highly actionable. Building a more consistent referral-capture habit into calls that reach the wrong person would compound the value of every dial."
+              "heading": "AI Is the New Incumbent",
+              "body": "Where prospects previously cited spreadsheets or manual processes as their status quo, this month's conversations revealed that AI tooling — often in combination with platforms like Vanta — is rapidly becoming the default answer. Prospects described it as having already 'automated' the problem, which signals a shifting competitive landscape. Securilix's positioning will need to clearly articulate what it offers beyond general AI-assisted approaches, particularly around accuracy, auditability, or sales cycle speed."
             },
             {
-              "heading": "Timing and pipeline stage matter as much as fit",
-              "body": "Several prospects were in the process of building or finalising their own solution at the point of contact — a trust centre, an AI workflow, an internal process. These contacts may represent future opportunities once their home-built solutions prove insufficient, but they are effectively closed in the short term. Tracking these prospects for re-engagement in six to twelve months, when the limitations of their approach become apparent, could yield strong pipeline down the line."
+              "heading": "Low Volume as a Disqualifier — But a Useful One",
+              "body": "Several prospects indicated they simply do not receive enough security questionnaires to justify a dedicated solution, citing volumes as low as two to six per quarter. Whilst frustrating in the moment, this is genuinely useful segmentation data. Focusing effort on companies with known high questionnaire exposure — such as those actively selling into enterprise, financial services, or regulated sectors — should materially improve the quality of conversations."
+            },
+            {
+              "heading": "Timing Objections Are Masking Latent Interest",
+              "body": "A recurring pattern this month was prospects who were not hostile to the proposition but were simply not available, not focused, or not at the right stage — one was on paternity leave, another on a personal line, several on other calls. These contacts agreed to callbacks or email follow-ups, suggesting the interest is there but the timing was off. A structured follow-up cadence for this cohort could unlock meetings that the initial call couldn't secure."
             }
           ]
         },
@@ -128,38 +146,35 @@
           "type": "actions",
           "title": "Recommended Actions",
           "items": [
-            "Introduce a volume-qualification question within the first sixty seconds of every call — ask directly whether the prospect's team handles more than a defined threshold of security questionnaires per quarter. This will quickly separate high-fit prospects from those where the problem is too infrequent to justify a solution, preserving conversation time for the right contacts.",
-            "Develop a specific rebuttal sequence for the 'we already use Vanta / AI / an internal process' objection — rather than accepting this as a close, train the call approach to probe for gaps: completion rates, time still spent on edge cases, accuracy issues, or questionnaires that fall outside the tool's scope. The goal is to surface latent dissatisfaction with existing solutions rather than competing head-on.",
-            "Implement a structured referral-capture protocol for every call where the contact confirms the topic belongs to a different team. The Yanis call — where two named contacts with specific roles were volunteered — demonstrates the value of this moment. Every such call should end with a named contact and ideally a warm introduction rather than a generic redirect.",
-            "Review and tighten the contact data to filter out B2C organisations and companies that do not sell into enterprise or regulated markets. Several May dials revealed contacts who confirmed they never receive security questionnaires by the nature of their business — these represent wasted dials that better pre-call research would eliminate.",
-            "Create a structured re-engagement sequence for prospects who deferred with a specific timeframe — particularly those who requested Q1 follow-up or agreed to be called back the following week. These are not cold leads; they are time-delayed opportunities that require a reliable tracking and re-dial process to convert."
+            "Build a dedicated follow-up sequence for all 'timing' prospects from May — including Barry Shaw (agreed Monday/Tuesday callback), Jake (invited a later call), Jay (requested email and website review), and Jethan at Joblogic (suggested Q1 follow-up). Each should receive a personalised, insight-led message rather than a generic re-engagement, referencing the context from the original conversation.",
+            "Pursue the referred contacts provided by Yanis — specifically Andy Hunter (CSO) and Stuart Hall (DRC engineer) — as warm inbound referrals with pre-established context. These should be prioritised and dialled with a clear opening that references Yanis by name to establish credibility immediately.",
+            "Sharpen the ICP and contact list filtering to exclude organisations that are B2C-only or do not operate in a vendor evaluation context, and to prioritise companies with known enterprise sales motions or exposure to regulated sector procurement. This should reduce the proportion of calls that disqualify on fundamental fit grounds and increase the density of genuinely relevant conversations.",
+            "Develop a specific objection-handling narrative for the 'we already use AI / we've automated it' response — one that probes for edge cases, audit trail gaps, volume spikes, or sales cycle drag that generalised AI tools typically do not address. This objection is now frequent enough to warrant a dedicated reframe rather than an acceptance of the close.",
+            "Introduce a LinkedIn follow-up step as a standard parallel channel for prospects who either request it directly or who are repeatedly unavailable by phone. Several May contacts indicated LinkedIn as their preferred medium; a short, context-aware message from a named individual referencing the attempted call is likely to generate better engagement than continued dial attempts alone."
           ]
         }
       ],
       "stats": {
-        "totalCalls": 562,
-        "connected": 52,
-        "conversations": 42,
-        "meetings": 2,
-        "noAnswer": 490,
+        "totalCalls": 123,
+        "connected": 13,
+        "conversations": 8,
+        "meetings": 0,
+        "noAnswer": 101,
         "voicemail": 3,
         "gatekeeper": 0,
         "other": 0,
         "dispositions": {
-          "No Answer": 490,
-          "No, Not Ever": 21,
-          "Connected - Not Completed": 10,
-          "No, Not Me (No Ref)": 4,
-          "Other": 3,
+          "No Answer": 101,
+          "No, Not Ever": 5,
+          "Connected - Not Completed": 5,
+          "No, Not Me (No Ref)": 1,
+          "Other": 2,
           "Left Voicemail": 3,
-          "DNC": 7,
-          "Activated": 7,
-          "No, Not Me (Ref)": 5,
-          "Wrong Number": 3,
-          "Left Company": 3,
-          "Meeting Booked": 2,
-          "No, Not Now": 3,
-          "Voicemail - Confirmed": 1
+          "DNC": 2,
+          "Activated": 1,
+          "No, Not Me (Ref)": 1,
+          "Wrong Number": 1,
+          "Left Company": 1
         }
       },
       "handovers": [
@@ -267,9 +282,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:47",
           "notes": "Spoke with James Biggin, who noted they've dealt with security questionnaires and he's been part of that process. However, he mentioned they don’t have the budget to explore solutions this year. He suggested I follow up in a year as their needs might change, but he believes their current volume of requests is not significant enough to warrant a new platform right now.",
-          "summary": "James acknowledged familiarity with security questionnaires and has been involved in that process at Floww. However, no budget exists this year and current request volume is too low to justify a new platform. He suggested a follow-up in roughly a year if circumstances change.",
+          "summary": "James acknowledged familiarity with security questionnaires and has been involved in the process at Floww. However, no budget exists this year, and current request volume is too low to justify a new platform. He suggested a follow-up in 12 months if circumstances change.",
           "signal": "negative",
-          "signalReason": "No budget this year and volume too low to warrant a platform"
+          "signalReason": "No budget and volume too low to justify a platform"
         },
         {
           "id": "490380863694",
@@ -287,9 +302,9 @@
           "disposition": "No, Not Ever",
           "duration": "2:38",
           "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">I spoke with James at Secure Alex. He mentioned the defense industry hasn't modernized, leading to manual processes for security questionnaires. He acknowledges using supplier portals for submissions but expressed interest in our solution for handling these questionnaires faster. We discussed the potential relevance of our service for their needs, and he seemed open to further conversation.</p><p style=\"margin:0;\"><br class=\"hs-trailingbreak\"></p><p style=\"margin:0;\">was curious and went to the website. They sell into defense but have an internal team who apparently need specific clearance?<br>For their non-defense customers they usually log into their portals.</p></div>",
-          "summary": "Speaking with James at SecureCloud+, the conversation surfaced a clear pain point: manual processes for security questionnaires driven by the defense industry's lack of modernization. He acknowledged using supplier portals and expressed interest in handling questionnaires faster, showing openness to further conversation. He also visited the Securilix website after the call.",
+          "summary": "A conversation with James at SecureCloud+ surfaced a clear pain point: the defense industry relies on manual processes for security questionnaires, with submissions going through supplier portals. He expressed interest in handling questionnaires faster and seemed open to continuing the conversation. He also visited the website after the call, suggesting genuine curiosity.",
           "signal": "positive",
-          "signalReason": "Acknowledged pain, expressed interest, and visited website"
+          "signalReason": "Acknowledged manual process pain and open to further conversation"
         },
         {
           "id": "490381302988",
@@ -307,9 +322,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:56",
           "notes": "I spoke with John, who informed me that they already have tools in place for handling security questionnaires, specifically using a tool called Vanta. He felt my solution wasn't relevant to their current needs and mentioned they also provide a trust center for compliance information. No further steps were discussed.",
-          "summary": "John at Quorum Cyber confirmed they already use Vanta to manage security questionnaires and also maintain a trust center for compliance information. He felt Securilix wasn't relevant given their existing toolset. No next steps were discussed.",
+          "summary": "John at Quorum Cyber is already using Vanta to manage security questionnaires and supplements this with a trust center for compliance information. He did not see Securilix as relevant to their current setup, and no next steps were explored. The existing tooling makes this a poor near-term opportunity.",
           "signal": "negative",
-          "signalReason": "Deeply committed to Vanta with no perceived gap"
+          "signalReason": "Deeply committed to Vanta with no perceived need"
         },
         {
           "id": "490383849715",
@@ -327,9 +342,9 @@
           "disposition": "Activated",
           "duration": "1:08",
           "notes": "Spoke with Gary, who mentioned that they currently don't face issues with security questionnaires but would like to discuss it further when he’s less busy. He indicated that this matter falls under the compliance team. We agreed to schedule a meeting in a couple of weeks to explore this topic further.",
-          "summary": "Gary at Kao Data doesn't currently face significant issues with security questionnaires, and noted the topic sits with the compliance team rather than himself. Despite this, he was open enough to schedule a follow-up meeting in a couple of weeks to explore further. Timing is soft but a concrete next step was agreed.",
+          "summary": "Gary at Kao Data reported no current pain around security questionnaires but was willing to explore the topic further once his schedule clears. He noted the compliance team owns this area, flagging a potential stakeholder gap. A follow-up meeting in a couple of weeks was agreed upon.",
           "signal": "neutral",
-          "signalReason": "No current pain but agreed to a follow-up meeting"
+          "signalReason": "Open to a meeting but no pain or urgency expressed"
         },
         {
           "id": "490464596176",
@@ -347,9 +362,9 @@
           "disposition": "No, Not Ever",
           "duration": "1:04",
           "notes": "Spoke with Jack, who mentioned they handle everything internally and currently have no budget for outsourcing. He’s overwhelmed with sales calls and suggested it would be best not to pursue this conversation further. No next steps discussed.",
-          "summary": "Jack at Entrepreneur First handles everything internally and has no budget for outsourcing. He was clearly fatigued by sales outreach and explicitly asked not to be pursued further. No next steps were discussed.",
+          "summary": "Jack at Entrepreneur First handles security matters entirely in-house and has no budget for external solutions. He expressed frustration with sales outreach volume and explicitly asked not to be pursued further. No path forward exists with this contact.",
           "signal": "negative",
-          "signalReason": "Explicit request not to be contacted again"
+          "signalReason": "Explicit request not to pursue further, no budget"
         },
         {
           "id": "490464799942",
@@ -367,509 +382,9 @@
           "disposition": "No, Not Ever",
           "duration": "0:57",
           "notes": "Called regarding security questionnaires but the prospect indicated it's not relevant to them. They do not handle these requests, and no further interest was shown. I will not follow up with this individual.",
-          "summary": "Celine at Priavo Security indicated that security questionnaires are simply not part of their operations, making Securilix fundamentally irrelevant to their business. No interest was shown and no follow-up is planned. A structural fit issue rules out any future engagement.",
+          "summary": "Celine at Priavo Security confirmed that security questionnaires are not part of their workflow, making the core offering irrelevant to their business. No interest was shown and no follow-up was requested. The rep has noted this contact should not be revisited.",
           "signal": "negative",
-          "signalReason": "Security questionnaires are not part of their business"
-        },
-        {
-          "id": "490515996912",
-          "date": "1970-01-01",
-          "contactName": "Rowan Baker",
-          "jobTitle": "Head of Security",
-          "email": "rowan.baker@surrealdb.com",
-          "phone": "+447702137242",
-          "mobilephone": "+447702137242",
-          "linkedin": "https://linkedin.com/in/rowan-baker-40153b155",
-          "company": "SurrealDB",
-          "headcount": "",
-          "industry": "Information Technology",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "1:54",
-          "notes": "Rowan mentioned that while my call was relevant, they are not looking to purchase any services at the moment since they've already implemented automation with AI tools. They indicated they have created their own solution for handling security questionnaires, and there are no short-term changes anticipated. I wrapped up the call and thanked them for their time.",
-          "summary": "Rowan at SurrealDB acknowledged the relevance of the call but confirmed they have already built their own AI-powered automation solution for security questionnaires. No short-term changes are anticipated, and they are not looking to purchase any external services. The in-house solution acts as a direct structural barrier.",
-          "signal": "negative",
-          "signalReason": "Built proprietary solution with no plans to change"
-        },
-        {
-          "id": "490552636647",
-          "date": "1970-01-01",
-          "contactName": "Karen Haydon",
-          "jobTitle": "Head of Information Security and Compliance",
-          "email": "karen.haydon@justaftermidnight247.com",
-          "phone": "+447967330569",
-          "mobilephone": "+447967330569",
-          "linkedin": "https://linkedin.com/in/karenhaydon",
-          "company": "Just After Midnight",
-          "headcount": "",
-          "industry": "Information Technology",
-          "campaign": "Securilix",
-          "disposition": "Activated",
-          "duration": "0:41",
-          "notes": "I called to discuss security questionnaires but the prospect was too overwhelmed with work. They asked me to call back early next week once they have a couple of tasks out of the way.",
-          "summary": "Karen at Just After Midnight was too overwhelmed with work to have the conversation but did not dismiss the topic. She proactively asked to be called back early next week once she has cleared a few tasks. A soft but concrete callback was agreed.",
-          "signal": "neutral",
-          "signalReason": "Busy but invited a specific callback next week"
-        },
-        {
-          "id": "490641165527",
-          "date": "1970-01-01",
-          "contactName": "Mark Noble",
-          "jobTitle": "Co-head of Engineering",
-          "email": "mark.noble@instinctdigital.io",
-          "phone": "+447391432861",
-          "mobilephone": "+447391432861",
-          "linkedin": "https://linkedin.com/in/mark-noble-290a61263",
-          "company": "Instinct",
-          "headcount": "",
-          "industry": "Analytics",
-          "campaign": "Securilix",
-          "disposition": "Activated",
-          "duration": "0:34",
-          "notes": "Called Mark to discuss security questionnaires for new clients, but he was on another work call. He suggested I call back at a later time as he isn't the best person for this matter. I need to follow up and possibly find the correct contact for this topic.",
-          "summary": "Mark at Instinct was mid-call and unavailable when contacted about security questionnaires. He indicated he may not be the right person for the topic and suggested a callback. A correct contact still needs to be identified before meaningful progress can be made.",
-          "signal": "neutral",
-          "signalReason": "Wrong contact, no signal on pain or interest"
-        },
-        {
-          "id": "490643771604",
-          "date": "1970-01-01",
-          "contactName": "Jay Taylerson",
-          "jobTitle": "VP of Engineering",
-          "email": "jay.taylerson@genesis.global",
-          "phone": "+447921237336",
-          "mobilephone": "+447921237336",
-          "linkedin": "https://linkedin.com/in/jamestaylerson",
-          "company": "Genesis Global",
-          "headcount": "",
-          "industry": "FinTech",
-          "campaign": "Securilix",
-          "disposition": "Activated",
-          "duration": "3:09",
-          "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Had a cold call with Jay. He mentioned he's working on a home-baked solution for handling security questionnaires, indicating potential competition. He’s busy with other priorities but agreed to check the company website for more information. I’ll follow up with an email to provide details without hitting spam filters.</p><p style=\"margin:0;\"><br class=\"hs-trailingbreak\"></p><p style=\"margin:0;\">he's \"home baking\" his own solution but has better things to be doing so is interested. He was in the hospital with his daughter who has chicken pox and signal was horrendous so asked for an email. I'll ring him back nw as well.</p><p style=\"margin:0;\"><br class=\"hs-trailingbreak\"></p><p style=\"margin:0;\"><span style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\"><span style=\"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\">Hi Jay, good speaking with you just now.</span></span></span></p><p style=\"margin:0;\"><span style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\"><span style=\"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\">As mentioned, we're speaking to businesses who sell to regulated industries or large enterprise orgs and receive a lot of security questionnaires.</span></span></span></p><p style=\"margin:0;\"><span style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\"><span style=\"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\">This invariably takes people away from doing their jobs and slows down sales cycles.</span></span></span></p><p style=\"margin:0;\"><span style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\"><span style=\"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\">Securilix offers a 24-hour turnaround time on complex questionnaires and RFIs. Simply forward them to us and we do the rest based on your internal evidence.</span></span></span></p><p style=\"margin:0;\"><span style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\"><span style=\"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\">Is this worth a conversation to see how it would compare with what you're building?</span></span></span></p><p style=\"margin:0;\"><span style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\"><span style=\"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif;\">Thanks and all the best for your daughter</span></span></span></p></div>",
-          "summary": "Jay at Genesis Global is actively building a home-baked solution for security questionnaires, signalling he recognises the problem and is investing time to solve it. Despite being busy and personally occupied, he agreed to check the Securilix website and accepted a follow-up email. The DIY approach represents both a risk and an opportunity.",
-          "signal": "positive",
-          "signalReason": "Acknowledged pain, building own solution, open to follow-up"
-        },
-        {
-          "id": "490644767943",
-          "date": "1970-01-01",
-          "contactName": "Jack Axten",
-          "jobTitle": "Head of Service and Information Security",
-          "email": "jack.axten@coniq.com",
-          "phone": "+447801565758",
-          "mobilephone": "+447801565758",
-          "linkedin": "https://linkedin.com/in/jack-axten",
-          "company": "Coniq",
-          "headcount": "",
-          "industry": "Marketing",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "2:12",
-          "notes": "Called Jack at Securelix to discuss security questionnaire challenges. He mentioned they already use Vanta and AI tools, effectively managing their questionnaires. Jack feels fully covered and sees no gaps in their current solution. Concluded the call, recognizing that I was not offering any new value.",
-          "summary": "Jack at Coniq confirmed they use Vanta combined with AI tools and feel fully covered for security questionnaires with no gaps identified. He saw no incremental value in Securilix's offering. The call concluded without next steps.",
-          "signal": "negative",
-          "signalReason": "Fully covered by Vanta and AI, no perceived gap"
-        },
-        {
-          "id": "490644839610",
-          "date": "1970-01-01",
-          "contactName": "Becky McClory MSyl",
-          "jobTitle": "Head of Security & Compliance",
-          "email": "beckym@mypinpad.com",
-          "phone": "+447834785315",
-          "mobilephone": "+447834785315",
-          "linkedin": "https://linkedin.com/in/becky-mcclory-msyl-22538a78",
-          "company": "Mypinpad",
-          "headcount": "",
-          "industry": "Mobile Payments",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "2:14",
-          "notes": "Spoke with Becky who mentioned they've automated their security questionnaire process using AI, making it no longer an issue for them. She indicated they're ahead in this area, and my solution is not relevant. I acknowledged their progress and wished her a great weekend.",
-          "summary": "Becky at Mypinpad has already automated her security questionnaire process using AI and considers the problem solved. She positioned her team as ahead of the curve and found Securilix's solution irrelevant. No next steps were taken.",
-          "signal": "negative",
-          "signalReason": "Pain fully resolved with existing AI automation"
-        },
-        {
-          "id": "490645010640",
-          "date": "1970-01-01",
-          "contactName": "Kate Preston",
-          "jobTitle": "General Counsel, Head of Risk & Compliance",
-          "email": "kate.preston@birdie.care",
-          "phone": "",
-          "mobilephone": "",
-          "linkedin": "https://linkedin.com/in/katepreston1",
-          "company": "Birdie",
-          "headcount": "",
-          "industry": "Information Technology",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "1:36",
-          "notes": "I reached out to Kate at her personal number for a cold call. She mentioned they don't face issues with security questionnaires because they're on an anecdote supplies list, which keeps their sales team from having to deal with them. I offered to help her opt-out of the database, and she expressed thanks for the information.",
-          "summary": "Kate at Birdie explained that their placement on an approved supplier list largely removes the burden of security questionnaires from their sales process. She did not express any pain point or interest in the solution. The structural reality of their procurement position makes Securilix a poor fit.",
-          "signal": "negative",
-          "signalReason": "Approved supplier status removes the pain point entirely"
-        },
-        {
-          "id": "490645260483",
-          "date": "1970-01-01",
-          "contactName": "Barry G",
-          "jobTitle": "Head Of Information Security",
-          "email": "barry.gallagher@transactts.com",
-          "phone": "+447885660416",
-          "mobilephone": "+447885660416",
-          "linkedin": "https://linkedin.com/in/infosec-barryg",
-          "company": "TransACT a Presidio company",
-          "headcount": "",
-          "industry": "Information Services",
-          "campaign": "Securilix",
-          "disposition": "Activated",
-          "duration": "0:51",
-          "notes": "I reached out to Barry Shaw for a cold call about security questionnaires. He was out to lunch and indicated that it wasn't a good time to talk. He agreed to have me call back next week, either on Monday or Tuesday.",
-          "summary": "Barry at TransACT was out to lunch and unavailable for a substantive conversation about security questionnaires. He agreed to a callback on Monday or Tuesday of the following week without raising any objections. No signal on pain or interest was captured yet.",
-          "signal": "neutral",
-          "signalReason": "Unavailable but agreed to a specific callback window"
-        },
-        {
-          "id": "490736672970",
-          "date": "1970-01-01",
-          "contactName": "Kevin Garrod",
-          "jobTitle": "vChief Information Security Officer",
-          "email": "kgarrod@solaceglobal.com",
-          "phone": "+447789366066",
-          "mobilephone": "+447789366066",
-          "linkedin": "https://linkedin.com/in/kevingarrod",
-          "company": "Solace Global",
-          "headcount": "",
-          "industry": "Security",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "1:18",
-          "notes": "I spoke with a consultant from ZenC, who informed me that they are now a part of ZenSec after being acquired. They don’t handle CISO or VC roles and mentioned that my offering might not be relevant for their operations. I thanked them and wished them a good Friday.",
-          "summary": "The contact at Solace Global revealed that the company has been acquired and is now part of ZenSec, materially changing their structure and relevance. They no longer handle CISO or vCISO roles in the way previously understood, making Securilix's offering structurally irrelevant. No follow-up is warranted.",
-          "signal": "negative",
-          "signalReason": "Post-acquisition structure makes the offering irrelevant"
-        },
-        {
-          "id": "490736693454",
-          "date": "1970-01-01",
-          "contactName": "Russell Favell",
-          "jobTitle": "Head of Cyber Security",
-          "email": "russell@getabound.com",
-          "phone": "+447594559833",
-          "mobilephone": "+447594559833",
-          "linkedin": "https://linkedin.com/in/russell-favell-9566701",
-          "company": "Abound",
-          "headcount": "",
-          "industry": "Finance",
-          "campaign": "Securilix",
-          "disposition": "No, Not Now",
-          "duration": "2:27",
-          "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Spoke with Ross, who mentioned they receive security questionnaires but are still working towards ISO certification, meaning they can't automate responses yet. He suggested revisiting the conversation in 6 to 12 months. Ross indicated that, while potentially relevant in the future, they’re not ready to pursue a solution at this time.</p><p style=\"margin:0;\"><br class=\"hs-trailingbreak\"></p><p style=\"margin:0;\">Relevant but the focus is on working towards ISO 27001 and they haven't formally defined internal policies/evidence enough to automate or have someone referencing against that, all sounds a bit ad-hoc / manual. CB 6-12 months.</p></div>",
-          "summary": "Ross at Abound confirmed they do receive security questionnaires but are in the middle of pursuing ISO 27001 certification, meaning internal policies and evidence aren't yet formalised enough to automate responses. He suggested revisiting in 6–12 months once certification work is complete. The pain is real but the timing is a structural blocker.",
-          "signal": "neutral",
-          "signalReason": "Genuine pain but ISO certification work blocks near-term action"
-        },
-        {
-          "id": "490736728270",
-          "date": "1970-01-01",
-          "contactName": "Peter Davies",
-          "jobTitle": "Chief Information Security Officer",
-          "email": "pdavies@solaceglobal.com",
-          "phone": "+447500781299",
-          "mobilephone": "+447500781299",
-          "linkedin": "https://linkedin.com/in/peterdaviesuk",
-          "company": "Solace Global",
-          "headcount": "",
-          "industry": "Security",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "2:51",
-          "notes": "I reached out to Peter regarding our solution for handling security questionnaires. He mentioned they already have a specialized process in place using responsive.io. He expressed that their questions are high-end and often evolve, making it tough for us to fit in. He is not interested at this time. No next steps discussed.",
-          "summary": "Peter at Solace Global already has a dedicated process using Responsive.io for high-complexity, evolving security questionnaires. He expressed that the bespoke nature of their questions makes it difficult for a new solution to add value. No interest was shown and no next steps discussed.",
-          "signal": "negative",
-          "signalReason": "Committed to Responsive.io with complex questionnaires as barrier"
-        },
-        {
-          "id": "490737907927",
-          "date": "1970-01-01",
-          "contactName": "Nicholas Kyrkewood",
-          "jobTitle": "Head of Engineering",
-          "email": "nick.k@zeroheight.com",
-          "phone": "+447817150845",
-          "mobilephone": "+447817150845",
-          "linkedin": "https://linkedin.com/in/kyrkewood",
-          "company": "Zeroheight",
-          "headcount": "",
-          "industry": "Software",
-          "campaign": "Securilix",
-          "disposition": "No, Not Now",
-          "duration": "2:26",
-          "notes": "Spoke with Nick from ZeroHeight. They're currently satisfied with their solution, Conveyor, and not looking to change soon. He mentioned that when it’s time for renewals, he might consider our offerings. I’ll follow up with an email to provide more information. He indicated that there are other priorities for the next quarter.",
-          "summary": "Nick at Zeroheight is currently using Conveyor and satisfied with it, with no plans to switch in the near term due to other priorities. He mentioned he may consider alternatives at renewal time and accepted a follow-up email. The competitor relationship is established but a renewal window creates a future opportunity.",
-          "signal": "neutral",
-          "signalReason": "Satisfied with Conveyor but open to revisit at renewal"
-        },
-        {
-          "id": "490738535661",
-          "date": "1970-01-01",
-          "contactName": "Nick Mullally-Watts",
-          "jobTitle": "Head of Engineering",
-          "email": "nick.mullally-watts@cappfinity.com",
-          "phone": "+447718276865",
-          "mobilephone": "+447718276865",
-          "linkedin": "https://linkedin.com/in/nickmullally-watts",
-          "company": "Cappfinity",
-          "headcount": "",
-          "industry": "Consulting",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "1:34",
-          "notes": "I cold called Nick at Capfinity to discuss security questionnaires and compliance burdens. He mentioned they don’t experience significant issues with compliance or frequent requests for information. I acknowledged his feedback and thanked him for his time, realizing that my call wasn't relevant for them.",
-          "summary": "Nick at Cappfinity reported no meaningful compliance burden or frequent information requests, making security questionnaire automation a non-issue for them. The call was acknowledged as not relevant and concluded politely. No next steps were identified.",
-          "signal": "negative",
-          "signalReason": "No volume or pain to justify a solution"
-        },
-        {
-          "id": "490738823408",
-          "date": "1970-01-01",
-          "contactName": "Guy Bentley",
-          "jobTitle": "VP Engineering",
-          "email": "guy.bentley@redcloudtechnology.com",
-          "phone": "+447836568952",
-          "mobilephone": "+447836568952",
-          "linkedin": "https://linkedin.com/in/guybentley",
-          "company": "RedCloud",
-          "headcount": "",
-          "industry": "E-Commerce",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "2:14",
-          "notes": "Spoke with a contact who has four minutes before their next call. They are currently building a public trust center to streamline their security questionnaire process, which they find effective for engaging with both large enterprises and smaller distributors. Since they are already implementing this solution, they indicated that my services are likely not relevant at this time.",
-          "summary": "Guy at RedCloud is actively building a public trust center to handle security questionnaire engagement with both enterprise and SMB clients, positioning it as their chosen solution. With this initiative already underway, he viewed Securilix as unlikely to add value. No next steps were discussed.",
-          "signal": "negative",
-          "signalReason": "Actively building their own trust center as a solution"
-        },
-        {
-          "id": "490739937504",
-          "date": "1970-01-01",
-          "contactName": "Jake Rudkin-Wilson",
-          "jobTitle": "Director of Engineering",
-          "email": "jake.rudkin-wilson@feefo.com",
-          "phone": "+447495090854",
-          "mobilephone": "+447495090854",
-          "linkedin": "https://linkedin.com/in/jakerudkinwilson",
-          "company": "Feefo",
-          "headcount": "",
-          "industry": "Analytics",
-          "campaign": "Securilix",
-          "disposition": "Activated",
-          "duration": "0:46",
-          "notes": "Called Jake regarding security questionnaires and RFIs. He didn't recognize the number and was busy with another call. He mentioned I can try to reach him another time. No specific objections or difficulties were noted. Next steps include following up at a later point.",
-          "summary": "Jake at Feefo was on another call when contacted about security questionnaires and RFIs and couldn't engage substantively. He raised no objections and left the door open for a follow-up call. No pain or interest signals have been captured yet.",
-          "signal": "neutral",
-          "signalReason": "No objections raised, open to being contacted again"
-        },
-        {
-          "id": "491012735210",
-          "date": "1970-01-01",
-          "contactName": "Barry G",
-          "jobTitle": "Head Of Information Security",
-          "email": "barry.gallagher@transactts.com",
-          "phone": "+447885660416",
-          "mobilephone": "+447885660416",
-          "linkedin": "https://linkedin.com/in/infosec-barryg",
-          "company": "TransACT a Presidio company",
-          "headcount": "",
-          "industry": "Information Services",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "1:46",
-          "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Spoke with Barry who mentioned that since their recent acquisition, they now have a dedicated team for handling security questionnaires, so it's no longer relevant to him. Previously, they faced issues with this, but that has been resolved. I appreciated the update and wished him a good day.</p></div>",
-          "summary": "Barry at TransACT confirmed that following a recent acquisition, a dedicated team has been put in place to handle security questionnaires, eliminating the problem that previously existed. What had been a pain point is now resolved structurally. No further relevance or next steps were identified.",
-          "signal": "negative",
-          "signalReason": "Acquisition resolved the pain with a dedicated internal team"
-        },
-        {
-          "id": "491012971742",
-          "date": "1970-01-01",
-          "contactName": "Matthew Gerry",
-          "jobTitle": "Head of Cyber Security Practice",
-          "email": "matt.gerry@evalian.co.uk",
-          "phone": "+447833478756",
-          "mobilephone": "+447833478756",
-          "linkedin": "https://linkedin.com/in/matthew-gerry-5b070578",
-          "company": "Evalian",
-          "headcount": "",
-          "industry": "Compliance",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "2:02",
-          "notes": "Spoke with Matt, who found my call very relevant as they are also addressing security questionnaires for their clients. He mentioned they are a security consultancy utilizing a mixed approach with software solutions. I decided to end the call amicably without discussing specific next steps, but there might be potential for future conversations.",
-          "summary": "Matt at Evalian found the call highly relevant as his security consultancy actively helps clients navigate security questionnaires. He described a mixed approach using software solutions, suggesting familiarity with the space. However, the call ended without next steps, leaving the nature of any potential fit — partner, reseller, or customer — unclear.",
-          "signal": "neutral",
-          "signalReason": "Relevant but no next steps and unclear fit type"
-        },
-        {
-          "id": "491057936628",
-          "date": "1970-01-01",
-          "contactName": "Kaledupe Aiyegbusi",
-          "jobTitle": "Information Security Manager",
-          "email": "kaledupe.aiyegbusi@proofid.com",
-          "phone": "+447708383970",
-          "mobilephone": "+447708383970",
-          "linkedin": "https://linkedin.com/in/kaledupe-aiyegbusi-80a41b13b",
-          "company": "ProofID",
-          "headcount": "",
-          "industry": "Biometrics",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "1:55",
-          "notes": "Spoke with an unknown prospect who mentioned they receive security questionnaires infrequently (2-6 times every few months). They have found a workaround, indicating it's not a significant issue for them. I acknowledged their response and concluded the call respectfully, thankfulness for their time. No next steps were discussed.",
-          "summary": "The contact at ProofID receives security questionnaires only infrequently — roughly 2–6 times every few months — and has already developed a workaround. The low volume and existing approach mean Securilix doesn't address a meaningful pain. The call concluded without next steps.",
-          "signal": "negative",
-          "signalReason": "Low volume and existing workaround remove the pain"
-        },
-        {
-          "id": "491058147575",
-          "date": "1970-01-01",
-          "contactName": "Lloyd Allen",
-          "jobTitle": "VP of Engineering",
-          "email": "lloyd@focaldata.com",
-          "phone": "+447841639880",
-          "mobilephone": "+447841639880",
-          "linkedin": "https://linkedin.com/in/lloydallen8",
-          "company": "Focaldata",
-          "headcount": "",
-          "industry": "Analytics",
-          "campaign": "Securilix",
-          "disposition": "No, Not Now",
-          "duration": "1:20",
-          "notes": "I spoke with Lloyd, who mentioned he's currently on paternity leave and not focused on work matters. He indicated that our services aren't relevant to him at the moment since they're in a brief EMF stage and not dealing with enterprise issues. I offered my congratulations and ended the call politely.",
-          "summary": "Lloyd at Focaldata is currently on paternity leave and not engaged with work decisions. He also indicated they are in an early stage and not yet dealing with enterprise-level security questionnaire demands. Both timing and fit present barriers at this point.",
-          "signal": "negative",
-          "signalReason": "On paternity leave and too early-stage to have the pain"
-        },
-        {
-          "id": "491058337979",
-          "date": "1970-01-01",
-          "contactName": "Jack Waite",
-          "jobTitle": "Information Security Manager (UK&US)",
-          "email": "jack.waite@gearset.com",
-          "phone": "+447951084223",
-          "mobilephone": "+447951084223",
-          "linkedin": "https://linkedin.com/in/jack-waite",
-          "company": "Gearset",
-          "headcount": "",
-          "industry": "Information Technology",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "2:12",
-          "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Information Security Manager (UK&amp;US) at Gearset - Using Whistic. I explained what we can do beyond the SaaS aspect but they're 80+% automated with the rest easily handled internally. Hard thresholds in place which has reduced the number of questionnaires they do these days.</p></div>",
-          "summary": "Jack at Gearset is using Whistic and has achieved over 80% automation on security questionnaires, with the remainder handled internally. Hard volume thresholds have also reduced the number of questionnaires they engage with. Securilix offered no incremental value over their current setup.",
-          "signal": "negative",
-          "signalReason": "Highly automated with Whistic, no meaningful gap exists"
-        },
-        {
-          "id": "491062467831",
-          "date": "1970-01-01",
-          "contactName": "Finlay M",
-          "jobTitle": "Operational Risk Team Lead",
-          "email": "finlay@creditspring.co.uk",
-          "phone": "+447547136796",
-          "mobilephone": "+447547136796",
-          "linkedin": "https://linkedin.com/in/finlay-m-559210158",
-          "company": "Creditspring",
-          "headcount": "",
-          "industry": "Credit",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "0:26",
-          "notes": "I called Finley at Secure Elix for a cold introduction. He was unavailable and mentioned he had a call in four minutes, so he declined to talk. No objections were raised beyond his time constraints, and no next steps were discussed.",
-          "summary": "Finlay at Creditspring was unavailable with only four minutes before his next call and declined to engage. No objections to the product were raised, but no conversation took place either. There are no signals to assess and no next steps were agreed.",
-          "signal": "neutral",
-          "signalReason": "Purely a timing issue, no conversation took place"
-        },
-        {
-          "id": "491062469861",
-          "date": "1970-01-01",
-          "contactName": "Iain C",
-          "jobTitle": "Director Engineering Next Gen Platform",
-          "email": "iain.cartledge@featurespace.com",
-          "phone": "+447825636554",
-          "mobilephone": "+447825636554",
-          "linkedin": "https://linkedin.com/in/iaincodes",
-          "company": "Featurespace",
-          "headcount": "",
-          "industry": "Fraud Detection",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "0:48",
-          "notes": "Called Ian at his office, he requested I reach out via LinkedIn if something interests him. He wasn’t inclined to engage further on the call. I will follow up with a LinkedIn message instead.",
-          "summary": "Iain at Featurespace was unreceptive to a phone conversation and directed future outreach to LinkedIn instead. No product discussion took place and no interest was indicated. Engagement will depend on whether a LinkedIn message generates a response.",
-          "signal": "neutral",
-          "signalReason": "Redirected to LinkedIn with no indication of interest"
-        },
-        {
-          "id": "491062914234",
-          "date": "1970-01-01",
-          "contactName": "Jonathan Leigh",
-          "jobTitle": "Engineering Director",
-          "email": "jon.leigh@moneyboxapp.com",
-          "phone": "+447894670554",
-          "mobilephone": "+447894670554",
-          "linkedin": "https://linkedin.com/in/jonathanmathewleigh",
-          "company": "Moneybox",
-          "headcount": "",
-          "industry": "Financial Services",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "2:12",
-          "notes": "Called John at an unknown company. He mentioned they don't receive security questionnaires as they don't sell to businesses, so my solution isn't relevant. Appreciated his time but decided it was best to end the call without further discussion.",
-          "summary": "Jonathan at Moneybox explained that they sell only to consumers, not businesses, meaning security questionnaires from enterprise buyers are simply not part of their workflow. This is a fundamental fit issue with no workaround. No further engagement is appropriate.",
-          "signal": "negative",
-          "signalReason": "B2C company — security questionnaires not part of their process"
-        },
-        {
-          "id": "491319624949",
-          "date": "1970-01-01",
-          "contactName": "Marc Garner",
-          "jobTitle": "Head Of Engineering",
-          "email": "marc.garner@sedex.com",
-          "phone": "+447432724887",
-          "mobilephone": "+447432724887",
-          "linkedin": "https://linkedin.com/in/marc-garner-37154b82",
-          "company": "Sedex",
-          "headcount": "",
-          "industry": "Compliance",
-          "campaign": "Securilix",
-          "disposition": "No, Not Ever",
-          "duration": "0:27",
-          "notes": "Spoke with Mark, but he declined to discuss a meeting regarding security questionnaire support. He wasn't interested in the topic, so I ended the call.",
-          "summary": "Mark at Sedex was unwilling to discuss security questionnaire support and showed no interest in the topic. The call ended quickly without any substantive exchange. No next steps were identified.",
-          "signal": "negative",
-          "signalReason": "Flat refusal with no interest in the topic"
-        },
-        {
-          "id": "491665172674",
-          "date": "1970-01-01",
-          "contactName": "Jay Taylerson",
-          "jobTitle": "VP of Engineering",
-          "email": "jay.taylerson@genesis.global",
-          "phone": "+447921237336",
-          "mobilephone": "+447921237336",
-          "linkedin": "https://linkedin.com/in/jamestaylerson",
-          "company": "Genesis Global",
-          "headcount": "",
-          "industry": "FinTech",
-          "campaign": "Securilix",
-          "disposition": "Activated",
-          "duration": "0:43",
-          "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">I spoke with J, who mentioned he's currently in a meeting and is not moving forward anytime soon with our discussion. He has the email from my colleague Mark but needs to look into some things. We agreed I should call back in a week to follow up.</p></div>",
-          "summary": "Jay at Genesis Global was in a meeting and couldn't engage but confirmed he has received a prior email from Securilix colleague Mark. He asked for a callback in a week to continue the conversation, suggesting he hasn't ruled out engagement. This is a second touch and momentum, while slow, is present.",
-          "signal": "positive",
-          "signalReason": "Aware of Securilix, retained email, and requested follow-up call"
+          "signalReason": "Fundamental fit issue — security questionnaires not applicable"
         }
       ]
     }
