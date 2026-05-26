@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "mpmfc7m2sotitqwcwmo",
+      "savedAt": "2026-05-26T09:19:47.743Z",
+      "campaign": "Jiminny",
+      "contact": {
+        "companyName": "Swap",
+        "contactName": "Joshua Croghan",
+        "jobTitle": "Senior Strategy & Revenue Operations Manager",
+        "phone": "+447804867458",
+        "email": "joshua@swap-commerce.com",
+        "linkedin": ""
+      },
+      "spiced": {
+        "situation": "Joshua is Senior Strategy & Revenue Operations Manager at Swap, a company with 10 AEs in the UK and 24 in the US. They are currently using Gong as their conversation intelligence and forecasting tool. Gong was adopted under previous ownership of the tool (Joshua notes it was 'webbed over from the sales team') rather than chosen by the current RevOps function. They use HubSpot as their CRM. Gong is currently used primarily for forecasting, with call recording and AI functionality considered underutilised. Joshua is aware of alternatives including Attention and Momentum, suggesting he has already begun informal market research.",
+        "pain": "Joshua expressed several specific frustrations with Gong. First, cost: he flagged it as expensive relative to the value they are extracting. Second, weak AI and automation: Gong cannot reliably auto-populate data into HubSpot, meaning reps still have to fill in fields manually — a significant RevOps pain point. Third, poor cross-call search: you can search within a single call in Gong but not across all calls, limiting the ability to surface patterns or trends at scale. Fourth, poor data extraction: pulling data out of Gong is described as 'quite frustrating', and Joshua suggested Gong is deliberately limiting this capability, possibly to protect against churn. Fifth, information silos: insights from calls remain 'stuck in people's heads' or in siloed data rather than being accessible across the business. He gave a concrete example of wanting automated alerts sent to the partner team when a partner is mentioned on a call — something Gong cannot currently do well.",
+        "impact": "The manual data entry burden falls on the RevOps function, meaning Joshua is likely chasing reps for CRM updates rather than having them auto-populated. Strategic deal visibility is limited because call insights are not fully accessible or searchable across the team, which risks deals being mismanaged or dropped without leadership awareness. The partner team example illustrates a specific missed opportunity for cross-functional alignment — partner mentions on calls are not being surfaced automatically, which could be affecting partner revenue and relationship management. More broadly, Joshua acknowledged that in the first six months they effectively used Gong as 'the most expensive call recorder of all time', suggesting a prolonged period of poor ROI on a significant tool investment.",
+        "critical_event": "No hard deadline or regulatory trigger was mentioned. Joshua explicitly said this is not an immediate priority — other internal projects are taking precedence. He indicated that towards the end of 2026 they will 'probably be looking at alternatives.' The meeting has been booked for the first Friday of July 2026 (12:30pm), which Joshua himself proposed. This is a relatively early-stage conversation and the AE should treat this as a discovery and relationship-building meeting rather than a close opportunity in the near term.",
+        "decision": "Joshua is the RevOps lead and appears to be the primary evaluator and internal champion for any tooling decision of this kind. No other stakeholders were named explicitly, though the scale of the sales team (34 AEs across UK and US) suggests sign-off may involve sales leadership or finance. No budget figure was discussed. Joshua's framing of 'we probably wouldn't have chosen it ourselves' implies the previous Gong decision was made above or around the RevOps function, which may mean Joshua now has more influence in the next decision. No formal procurement process or RFP was mentioned. Timeline to decision is likely Q4 2026 at the earliest based on his comments."
+      },
+      "objections": [
+        {
+          "objection": "Not the right time — other priorities mean this is on the back burner until end of year.",
+          "response": "The SDR handled this adequately by pivoting to a future-dated meeting rather than pushing for an earlier slot. Joshua himself proposed the first week of July, which gives the AE a legitimate foot in the door. However, the SDR did not probe what those other priorities are, which would have been useful context for the AE to understand where this sits in the queue and whether anything could accelerate the timeline."
+        },
+        {
+          "objection": "Forecasting is working in Gong and Joshua wants to retain that capability — or find it elsewhere.",
+          "response": "The SDR did not address this directly or confirm whether Jiminny has a forecasting module. Joshua flagged forecasting as the one thing he values in Gong and explicitly asked whether Jiminny has a forecasting solution, saying it does not have to be in the same platform. This was left unresolved and is a meaningful gap the AE must address in the meeting — failure to do so risks the deal stalling on a perceived feature gap."
+        },
+        {
+          "objection": "Implicit concern about switching cost and timing given current tool is embedded (used for forecasting).",
+          "response": "Not directly raised as an objection but implied. The SDR did not explore this. The AE should be prepared to address migration complexity, HubSpot integration depth, and how Jiminny handles the transition from an existing Gong setup."
+        }
+      ],
+      "recommended_approach": "Open the meeting by acknowledging the context Joshua gave on the call — he is not starting from zero and has a considered view of what Gong is doing well (forecasting) and where it is falling short (automation, cross-call search, data extraction, HubSpot sync). Do not treat this as a standard discovery call. Joshua is analytically sharp and will disengage quickly if the AE runs a generic demo.\n\nLead with the automation and data extraction angle, not call recording. Joshua's most vivid frustrations were about manual CRM input, inability to search across calls, and insights being siloed. Use his own example — the partner mention alert — as a demonstration anchor. Show Jiminny's ability to detect signals in calls and push structured data automatically into HubSpot without rep involvement. This maps directly to his RevOps remit.\n\nAddress the forecasting question explicitly and early. Joshua asked whether Jiminny has a forecasting solution. If Jiminny has this capability, lead with it or have it ready to demonstrate. If it is limited, be honest and come prepared with how Jiminny complements rather than replaces a forecasting layer — potentially positioning Jiminny's deal and CRM data hygiene as what makes forecasting more accurate, even in another tool.\n\nOn cost, the SDR mentioned 90% of Gong's functionality at 50% of the cost. The AE should be ready to substantiate this with specifics — ideally a ballpark figure or ROI framing relevant to a 34-AE team. Joshua flagged cost as a concern with Gong, so this is a lever, but it needs to feel credible rather than a sales line.\n\nDo not rush towards a close. Joshua has been clear this is a Q4 decision at earliest. The goal of the July meeting is to earn Joshua's confidence as the internal champion and leave him with enough concrete evidence — a relevant demo, a clear feature comparison, and honest answers on forecasting — that when the formal evaluation begins, Jiminny is already the front-runner.",
+      "key_quotes": [
+        "The first six months we had Gong, we basically just used it as the most expensive call recorder of all time.",
+        "You can't really search fully across all your calls — okay for doing a search within a call in Gong, but not across all the calls. And extracting that data is also very hard, which is quite frustrating.",
+        "A lot of stuff is still a bit stuck in people's heads and in slightly siloed data rather than fully accessible to everyone — imagine if you sent an alert to the partner team when one of their partners is mentioned, for example.",
+        "If you do have any kind of forecasting solution, I'd be interested to see that as well — it doesn't have to be essential to being in this platform, it can be somewhere else."
+      ]
+    }
+  ]
+}
