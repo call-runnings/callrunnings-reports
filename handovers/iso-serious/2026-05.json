@@ -40,6 +40,43 @@
         "I've gone through ISO 27001 enough times. It feels like it's 85% box ticking and 10% actual usefulness.",
         "I'm sort of holding a list of a couple of people I want to speak to properly. When we sit down and say, right, we need to do this now."
       ]
+    },
+    {
+      "id": "mppmqvfpkpbj6yar8wq",
+      "savedAt": "2026-05-28T15:10:27.869Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "FlatPeak",
+        "contactName": "Matt Roderick",
+        "jobTitle": "Co-Founder & COO",
+        "phone": "+447718250457",
+        "email": "matt@flatpeak.com",
+        "linkedin": "https://linkedin.com/in/matroderick"
+      },
+      "spiced": {
+        "situation": "Matt Roderick is Co-Founder and COO at FlatPeak. ISO 27001 certification has been on the company's radar since at least January 2026, when Matt and the SDR first spoke. It has not progressed — he described it as still on a list of things to do but not having moved up it. There is no indication of a formal project, dedicated owner, or existing compliance framework in place. The company appears to be at an early, pre-commitment stage with no process formally underway.",
+        "pain": "Matt is not experiencing an acute internal pain point that he himself has articulated in strong terms. However, the underlying driver is external pressure from customers: he specifically said there are 'creeping, increasing questions from customers' about ISO 27001. This suggests that prospects or existing clients are beginning to make certification a condition of doing business, or at minimum are scrutinising FlatPeak's security posture more regularly. The pain is reputational and commercial rather than operational — they are being asked to evidence something they cannot yet evidence.",
+        "impact": "The impact is primarily commercial. If customer questions about ISO certification are increasing, FlatPeak risks losing deals or failing to progress enterprise conversations where ISO 27001 is a procurement requirement. There is no stated lost deal or specific revenue figure, but the direction of travel is clear: the longer certification is delayed, the more exposed they become to being disqualified by security-conscious buyers. There may also be a reputational dimension if they are seen as lacking maturity relative to competitors who are already certified.",
+        "critical_event": "No hard deadline was mentioned. Matt explicitly said 'there's no deadlines.' The softer driver is the accumulation of customer questions, which creates a slow-burn urgency rather than a fixed trigger. He did say he would like to get it done this year, which implies a loose target of completing certification before end of 2026. Given that the SDR noted ISO 27001 typically takes three to six months, a conversation in late June would need to result in a relatively prompt start to achieve certification within 2026.",
+        "decision": "Matt is Co-Founder and COO, which suggests he is likely one of the primary decision-makers. He referred to 'a couple of things we need to sort out first' before progressing ISO certification, implying there are internal dependencies or competing priorities, possibly involving his co-founder. No mention was made of a procurement process, budget sign-off requirements, or other stakeholders. However, given he is a co-founder, it is reasonable to assume any significant spend would involve at least one other founder-level conversation. This was not explored on the call."
+      },
+      "objections": [
+        {
+          "objection": "It's still on the list but hasn't moved — there are other things to sort out first.",
+          "response": "The SDR acknowledged this and moved on without probing what those blocking items are or what would need to happen for ISO to move up the priority list. This is a significant gap. The AE does not know what the competing priorities are or what would unlock forward movement."
+        },
+        {
+          "objection": "Preference to defer — asked the SDR to just send an email and he would call back when ready.",
+          "response": "The SDR handled this reasonably well by pivoting to suggest a short-term scoping conversation rather than simply agreeing to wait. Matt accepted the reframe and agreed to a meeting in the last week of June. However, the SDR framed the meeting as exploratory and low-stakes ('outline expectations, ask a few questions'), which may undersell the value of the conversation to Matt."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging that this is deliberately a no-pressure conversation — Matt agreed to it on that basis and will be sensitive to feeling sold to before he is ready. Frame the meeting as genuinely diagnostic: you are there to understand where FlatPeak is today and help Matt think through what the path to certification actually looks like in practical terms, so that when they do decide to move, they are not starting from zero. From there, probe hard on the customer questions angle — this is the real commercial nerve. Ask which types of customers are raising ISO questions, whether it has come up in any live deals or renewals, and whether any opportunity has been lost or stalled as a result. This will help Matt connect the delay to real revenue risk rather than treating it as an abstract compliance task. Also probe what the 'couple of things to sort out first' actually are — if those are blockers, the AE needs to understand them. If they are unrelated, Matt may not have fully considered that ISO work could run in parallel. Clarify who else would need to be involved in a decision to proceed — the co-founder relationship is unexplored and could be a hidden veto. On timeline, gently surface the three-to-six-month point the SDR mentioned: if Matt wants this done in 2026 and the meeting is end of June, the window is tight. Use that as a natural reason to think concretely about next steps rather than leaving it open-ended again. Avoid making this feel like a closing meeting — Matt's trust has been built on the basis that this is a scoping conversation, and that framing should be respected.",
+      "key_quotes": [
+        "It's still on the list of things to do, but it's not got any further left the list.",
+        "There's no deadlines. There's more creeping, increasing questions from customers going — yeah, that sort of thing.",
+        "I'd like to get it done this year. But there's a couple of things that we did sort out first.",
+        "Leave it with me. Actually drop him another email — as soon as I get around to it, I'll give you a call back."
+      ]
     }
   ]
 }
