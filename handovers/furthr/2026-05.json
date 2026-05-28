@@ -228,6 +228,47 @@
         "I need to have a read of your information first before I make any decision.",
         "You know the market better than my father and you know what your competitor is in general."
       ]
+    },
+    {
+      "id": "mppmos3lr9i8ttzfszj",
+      "savedAt": "2026-05-28T15:08:50.654Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Evg",
+        "contactName": "Francesca Bille",
+        "jobTitle": "Sustainability Manager",
+        "phone": "+447530027811",
+        "email": "francesca@evgltd.co.uk",
+        "linkedin": "https://linkedin.com/in/francesca-bille"
+      },
+      "spiced": {
+        "situation": "Francesca is the Sustainability Manager at Evg, a farming-sector business. She currently uses a specialist end-to-end carbon footprinting and data management tool that is sector-specific to farming. She describes herself as 'pretty happy with it' and 'pretty embedded with it'. For Scope 3, she does not use that tool — her current process is manual, supplemented by an external consultancy she brings in for support. She has submitted SBTi targets covering both FLAG and non-FLAG Scope 3 emissions, indicating a mature sustainability programme with formal external commitments in place.",
+        "pain": "Francesca's Scope 3 process is explicitly manual and relies on piecemeal external consultancy support rather than a structured, scalable data collection solution. She is not using her primary tool for Scope 3 at all, meaning there is a clear gap between her existing tooling and what she actually needs to deliver on her SBTi commitments. She did not express frustration in strong terms, but she confirmed the manual approach and acknowledged the priority of Scope 3 without defending the current process as sufficient.",
+        "impact": "Francesca has submitted SBTi targets for Scope 3 across both FLAG and non-FLAG categories. A manual, consultancy-dependent process creates operational risk in terms of data accuracy, consistency, and the ability to report with sufficient depth and granularity to meet those targets. As SBTi obligations require ongoing tracking and disclosure, the current approach is unlikely to scale with the complexity of her supply chain reporting requirements, particularly given the farming sector's data collection challenges. There is reputational and compliance risk if Scope 3 reporting falls short of committed targets.",
+        "critical_event": "Francesca has already submitted SBTi targets for Scope 3 — both FLAG and non-FLAG. This creates an ongoing and live reporting obligation rather than a future one. No specific internal deadline, budget cycle, or review date was mentioned on the call. The AE should probe for when the next SBTi progress report or internal sustainability review is due, as this is the most likely near-term trigger for urgency.",
+        "decision": "No decision-making process was discussed on the call. Francesca engaged on her own terms and booked the meeting herself, suggesting she has at least some autonomy in this space. It is unknown whether she has budget authority, whether procurement or a line manager would be involved, or whether there are other stakeholders. The AE should establish this early in the meeting — particularly who else would need to be involved given that she already has an existing consultancy relationship that may need to be displaced or integrated."
+      },
+      "objections": [
+        {
+          "objection": "She said she is 'pretty happy' with her existing farming-specific tool and is 'not looking to change'.",
+          "response": "The SDR handled this well by pivoting quickly — acknowledging her satisfaction with the tool but probing specifically on Scope 3 rather than trying to replace what she already has. This reframe was effective and opened the door to a genuine gap. The AE should be aware that Furthr is not positioned as a replacement for her primary tool, and should not attempt to be."
+        },
+        {
+          "objection": "She asked whether Furthr is sector agnostic, implying concern that a non-farming-specific tool might not meet her needs given how specialist her existing setup is.",
+          "response": "The SDR confirmed it is sector agnostic and mentioned different versions exist. However, this was handled briefly and somewhat vaguely. The AE should address this more substantively — specifically how Furthr can accommodate the nuances of agricultural supply chains and farming-sector Scope 3 data, rather than just asserting it can."
+        },
+        {
+          "objection": "She initially asked for information to be sent over rather than committing to a meeting — a classic deflection.",
+          "response": "The SDR handled this correctly, acknowledging the request but steering towards a meeting with Henry as the better next step. She accepted the meeting without significant resistance, so this was resolved effectively."
+        }
+      ],
+      "recommended_approach": "Open by anchoring the conversation in her SBTi commitments specifically — she has submitted both FLAG and non-FLAG Scope 3 targets, which is a significant and relatively advanced position. Ask her what her current reporting cadence looks like against those targets and where the process feels most fragile or time-consuming right now. This will surface whether the manual Scope 3 process is creating real pressure. Do not attempt to position Furthr as a replacement for her farming-specific footprinting tool — she is embedded in it and happy with it. The entire conversation should be framed around filling the Scope 3 gap that her existing tool does not cover. Probe the consultancy relationship — understand what they do for her, how often she engages them, and what the limitations are. This helps frame Furthr not as a threat to a relationship she values, but as a more scalable and structured alternative that reduces dependence on ad hoc external support. On the sector agnostic concern, come prepared with specific examples of how Furthr handles agricultural or food supply chain Scope 3 data — she will push on this. A vague reassurance will not land. Finally, establish the decision-making process early: who else would need to be involved, whether there is a budget already allocated for Scope 3 tooling or consultancy, and when she would ideally want something in place relative to her next SBTi reporting milestone.",
+      "key_quotes": [
+        "We don't use it for scope 3. It's a bit manual but I also have a consultancy I use for helping me.",
+        "We've submitted SBTi targets for scope three, both FLAG and non-FLAG. So it is a priority.",
+        "Is it all sector agnostic? Do they cover everyone always?",
+        "We have a tool that we use which is kind of end-to-end footprinting and data management... specifically for farming. So we're like pretty happy with it, pretty embedded with it. So I'm not looking into change."
+      ]
     }
   ]
 }
