@@ -40,6 +40,43 @@
         "A lot of stuff is still a bit stuck in people's heads and in slightly siloed data rather than fully accessible to everyone — imagine if you sent an alert to the partner team when one of their partners is mentioned, for example.",
         "If you do have any kind of forecasting solution, I'd be interested to see that as well — it doesn't have to be essential to being in this platform, it can be somewhere else."
       ]
+    },
+    {
+      "id": "mppmoj2chq5xkc0y8go",
+      "savedAt": "2026-05-28T15:08:38.534Z",
+      "campaign": "Jiminny",
+      "contact": {
+        "companyName": "TeamFeePay",
+        "contactName": "Barry Baggley",
+        "jobTitle": "Head of Sales Operations",
+        "phone": "+447540114434",
+        "email": "barry.baggley@teamfeepay.com",
+        "linkedin": "https://linkedin.com/in/barry-baggley-460880109"
+      },
+      "spiced": {
+        "situation": "Barry Baggley is Head of Sales Operations at TeamFeePay. The team is currently using Zoom as their primary tool for calls, and they are leveraging Zoom's native transcription functionality as part of their coaching process. There is no dedicated conversation intelligence or revenue intelligence platform in place beyond this. No CRM auto-fill tool or deal forecasting layer was mentioned as being in use.",
+        "pain": "Barry's current setup relies solely on Zoom's built-in transcription for coaching, which the SDR surfaced as a gap around objectivity and visibility. Barry did not explicitly articulate a burning pain in his own words — the call was very short and he was clearly distracted or busy ('give me a call back tomorrow'). The pain was largely framed by the SDR rather than drawn out from Barry directly. The closest signal of relevance was that Barry did not push back when the SDR described reps giving subjective forecast updates ('yeah, that deal is definitely coming in') and the lack of structured deal visibility — suggesting these resonate as real issues even if Barry did not confirm them verbally.",
+        "impact": "Again, impact was framed by the SDR rather than confirmed by Barry. The SDR referenced deal slippage due to lack of visibility into conversations, B players failing to learn from top performers, and reps not filling in the CRM accurately — leaving money on the table during live deals. Barry did not validate or quantify any of these impacts explicitly, so the AE should treat these as hypotheses to be confirmed, not established facts.",
+        "critical_event": "No critical event, deadline, budget cycle, or regulatory trigger was mentioned at any point during the call. There is no urgency factor on record. The meeting was booked for 3:30 PM on Thursday 29th May 2026 based purely on diary availability, not driven by any internal initiative or time-sensitive need.",
+        "decision": "No information was gathered on the decision-making process, budget ownership, stakeholders involved, or sign-off requirements. It is unknown whether Barry is the economic buyer, an influencer, or simply an evaluator. The AE must treat this as a blank slate and use the discovery meeting to map the full buying committee and understand TeamFeePay's procurement process."
+      },
+      "objections": [
+        {
+          "objection": "Barry was clearly busy or distracted during the call — he asked for a callback 'tomorrow' almost immediately and gave very short, disengaged responses throughout ('We zoom on later', 'All right, we're gonna do that. Kind of see. Maybe.').",
+          "response": "The SDR pushed through and booked the meeting regardless, which is a positive outcome. However, the lack of genuine engagement means Barry's commitment to attending is uncertain. The 'kind of see. Maybe' response when agreeing to the meeting is a weak buy-in signal. The SDR did ask Barry to email if anything changes, which was a reasonable close, but the overall level of Barry's investment in the conversation was low and the AE should not assume high intent going into the meeting."
+        },
+        {
+          "objection": "Barry indicated they are already using Zoom for transcription and using it as part of coaching — an implicit 'we already have something for that.'",
+          "response": "The SDR briefly acknowledged this and pivoted to differentiating Jiminny on objectivity, CRM auto-fill, forecasting accuracy, and deal visibility rather than just transcription. This was a reasonable direction but was not fully developed — the SDR did not probe how satisfied Barry actually is with Zoom's transcription for coaching or whether there are specific gaps in that workflow. The AE needs to revisit this properly in the meeting."
+        }
+      ],
+      "recommended_approach": "Open the meeting by acknowledging the brevity of the original call and that Barry did not have much time. Frame this as a proper introduction and give Barry space to talk first. Start with a situational question to confirm the current stack: 'You mentioned you're using Zoom for transcription and coaching — can you tell me a bit more about how that actually works day to day and where it fits into your wider sales process?' This will establish whether the Zoom usage is team-wide or ad hoc, and whether there is already dissatisfaction the SDR did not surface. From there, probe around the specific pains the SDR framed but Barry never confirmed — forecast accuracy, rep subjectivity, CRM hygiene, and deal slippage. Ask Barry directly: 'When your reps are updating you on pipeline, how confident are you that what they're telling you reflects what's actually happening in the conversations?' This targets the objectivity and forecasting angle from the SDR pitch and will either validate it as a real pain or redirect the conversation. Avoid leading too heavily with product demo early on — Barry showed very low engagement and arrived at this meeting with minimal context. Prioritise discovery for the first half of the meeting. When demoing, focus on the forecasting and coaching intelligence features specifically, tying back to whatever pains Barry confirms. Do not assume he is the sole decision-maker — ask explicitly: 'If this looked relevant, who else would typically be involved in a conversation like this at TeamFeePay?' Given that no critical event was identified, the AE should also probe for any internal initiatives, QBRs, or hiring plans that might create a natural hook for urgency.",
+      "key_quotes": [
+        "'We zoom on later.' — Barry's full description of the current tech stack. Confirms Zoom is the only tool in use for calls.",
+        "'We'll choose that first. Like it obviously transcripts the calls and things like that. We use that as part of our coaching.' — Barry acknowledging Zoom transcription is already being used for coaching, which is the primary objection the AE will need to address.",
+        "'All right, we're gonna do that. Kind of see. Maybe.' — Barry's agreement to the meeting. The hedging language suggests low commitment and the AE should be prepared for a no-show or a prospect who arrives with minimal recall of why the meeting was booked.",
+        "'Give me a call back tomorrow, we're gonna get a quick chat.' — Barry's initial response, signalling he was distracted and not in a position to engage properly. The SDR pushed through and booked rather than calling back, meaning Barry has had very little time to consider the proposition before the meeting."
+      ]
     }
   ]
 }
