@@ -425,6 +425,37 @@
         "Yes — [confirming she manages data collection by contacting suppliers directly and asking for information]",
         "Exactly. [confirming the manual supplier contact process Harry described]"
       ]
+    },
+    {
+      "id": "mppmyauf3q00146puky",
+      "savedAt": "2026-05-28T15:16:14.852Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "International Schools Partnership",
+        "contactName": "Jess Russell",
+        "jobTitle": "Group Sustainability Manager",
+        "phone": "+447483849315",
+        "email": "jrussell@ispschools.com",
+        "linkedin": "https://linkedin.com/in/jess-russell-7450b919"
+      },
+      "spiced": {
+        "situation": "This was a brief confirmation call only. No substantive discovery was conducted. Jess Russell holds the title of Group Sustainability Manager at International Schools Partnership, suggesting she has cross-group responsibility for sustainability initiatives across multiple schools. Beyond her role and company, no information about her current tools, processes, team structure, or existing sustainability reporting frameworks was gathered on this call.",
+        "pain": "No pain points were discussed on this call. The transcript contains no prospect-led commentary on challenges, frustrations, or gaps in their current approach. The AE is going into this meeting with zero discovery on pain. This is a significant gap that must be addressed in the opening of the AE meeting.",
+        "impact": "No impact was discussed or implied during this call. There is no data on the business, financial, operational, or reputational consequences of any pain. The AE cannot reference impact from this transcript and should treat this as a completely open discovery meeting.",
+        "critical_event": "No critical event, deadline, regulatory trigger, or budget cycle was mentioned at any point in this call. The only time-sensitive element was a scheduling correction — Jess confirmed Thursday the 14th rather than the 21st. No urgency factors were surfaced.",
+        "decision": "No information was gathered on the decision-making process, stakeholders, budget authority, or sign-off requirements. It is unknown whether Jess is the sole decision-maker, whether she requires sign-off from a CFO, Head of Operations, or school group leadership, or whether there is a formal procurement process. The AE must map this from scratch."
+      },
+      "objections": [
+        {
+          "objection": "No objections were raised during this call. The conversation was limited entirely to rescheduling the meeting date and lasted fewer than 30 seconds of substantive exchange.",
+          "response": null
+        }
+      ],
+      "recommended_approach": "The AE must treat this as a cold discovery meeting. There is no SPICED intelligence to build on beyond Jess's role and company. Open by acknowledging the context lightly — something like referencing that the initial outreach connected around sustainability challenges in an international schools environment — then move quickly into open discovery. Probe on what her remit as Group Sustainability Manager actually covers: is she responsible for reporting, supplier decisions, carbon reduction targets, ESG compliance, or all of the above? Ask what tools or processes her team currently uses to manage sustainability data across the school group, and where the biggest friction sits. Given the international and multi-site nature of International Schools Partnership, there is likely complexity around aggregating data across geographies and reporting to a central group level — this is a credible hypothesis to test, not a claim to assert. Do not pitch early. The SDR did not surface any pain, so the AE's first job is discovery, not demonstration. If Jess seems guarded or time-pressured, acknowledge the brevity of the original contact and position the meeting explicitly as a conversation to understand her world before talking about Furthr's capabilities. Map the decision process before the meeting ends — ask directly who else would be involved if this moved forward, and whether there are any budget cycles or internal reviews coming up that would set a natural timeline.",
+      "key_quotes": [
+        "Yeah, sorry, it was Thursday. The 14th is better.",
+        "Okay, no problem. Thanks so much."
+      ]
     }
   ]
 }
