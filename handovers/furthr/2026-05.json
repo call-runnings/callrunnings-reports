@@ -109,6 +109,47 @@
         "'Would you be able to drop me an email please and I'll see whether I have a call with you and kind of include you in my review?'",
         "'Probably Thursday or Friday would be best. Yeah, that's fine.'"
       ]
+    },
+    {
+      "id": "mppmfdxs0pp5w5h53gz",
+      "savedAt": "2026-05-28T15:01:32.347Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Dulux Decorator Centre",
+        "contactName": "Phoena Wilmott-Bayer",
+        "jobTitle": "Sustainability Project Manager",
+        "phone": "+447944641396",
+        "email": "phoena.wilmott-bayer@akzonobel.com",
+        "linkedin": "https://linkedin.com/in/phoena-wilmott-bayer-86ba331bb"
+      },
+      "spiced": {
+        "situation": "Phoena is a Sustainability Project Manager at Dulux Decorator Centre, responsible for carbon reporting across Scope 1, 2, and 3. The business manages all carbon reporting in-house, with no current external software or consultancy support. Their process involves mapping carbon product data from a global perspective, working with suppliers on upstream Scope 3 emissions, and tracking everything via a well-developed internal Excel report. That Excel file drives supplier conversations and has specific reduction targets attached to each supplier. They also have some global-level support for the broader mapping exercise.",
+        "pain": "The core pain is indirect and not fully admitted — Phoena described their Excel-based system as doing 'the job on a quick overview' and acknowledged it supports supplier conversations, but it remains a manually maintained spreadsheet. Harry surfaced the tension by noting 'Excel is really good until it isn't,' which Phoena did not push back on. The implied pain is the fragility and scalability risk of relying on Excel for multi-supplier, multi-scope carbon tracking with reduction targets attached. Phoena did not volunteer a specific frustration, but she also did not defend Excel robustly — she was receptive to the idea of comparing it against a software alternative.",
+        "impact": "No hard business impact was explicitly stated by Phoena. However, the operational risk is implicit: managing upstream Scope 3 supplier data and reduction targets in Excel at a global scale introduces meaningful data integrity and efficiency risk as reporting requirements grow. If supplier data is miscollated or targets are mistracked, it could undermine Dulux Decorator Centre's sustainability commitments and external reporting credibility. The AE should probe this angle — what happens if the Excel breaks, a formula errors, or a supplier's data is missed ahead of a reporting deadline?",
+        "critical_event": "No specific deadline, regulatory trigger, or budget cycle was mentioned during the call. Phoena did not reference an upcoming audit, a board reporting date, or a compliance deadline. The AE should treat this as an open gap and probe directly in the meeting — for example, whether there are internal sustainability reporting cycles, CSRD relevance to their business, or parent company (AkzoNobel) reporting timelines that create a natural urgency.",
+        "decision": "Phoena indicated she would need to review any information internally before progressing — she asked for slides to 'go through it internally and see if any contact you if that's something we're interested in.' This signals she is not the sole decision-maker. She did not name any colleagues or a line manager. The AE should establish early in the meeting who else would be involved in evaluating and signing off on a tool like this, what the internal review process looks like, and whether budget has been allocated or would need to be requested."
+      },
+      "objections": [
+        {
+          "objection": "We manage most of it in-house so it's not something we're looking at getting outside support on at the moment.",
+          "response": "Harry handled this well by normalising it — he noted that 99% of teams he speaks with manage it in-house — and then used it as a springboard to ask how they do it. This kept Phoena talking rather than ending the call. The reframe to 'we don't rip out and replace, it sits alongside what you've built' later in the call was a reasonable response to this objection, though it wasn't directly linked back to her opening resistance. The AE should not assume this objection is resolved — it will likely resurface and needs a more substantive answer in the demo."
+        },
+        {
+          "objection": "We don't have a massive gap — our Excel report is quite a well-developed one and it does the job.",
+          "response": "Harry acknowledged this but gently challenged it with the line 'Excel is really good until it isn't,' which landed without pushback from Phoena. However, he did not probe deeper to uncover where the gaps actually are — for example, how long it takes to update, how confident they are in data accuracy, or what happens as supplier numbers grow. The objection was softened rather than fully addressed. The AE should go back into this in the meeting and ask specific questions to surface latent dissatisfaction."
+        },
+        {
+          "objection": "Could you send me over a couple of slides and I can go through it internally — I'll contact you if we're interested.",
+          "response": "This was a classic 'send me something' brush-off. Harry recognised it as such and pushed back effectively, framing the email as something that tends to get lost and proposing a 20-minute meeting instead. Phoena agreed without much resistance. The AE should be aware that Phoena's default instinct was to defer rather than engage directly — she will likely need internal validation before committing to anything, so the AE should focus on making it easy for Phoena to sell this internally."
+        }
+      ],
+      "recommended_approach": "Open by referencing the specific conversation Phoena had with Harry — she knows this is a follow-up, not a cold call, so establish continuity immediately. Acknowledge that she told Harry her Excel process is well-developed and doing the job, and frame the meeting as being about helping her stress-test that assumption rather than pitching a replacement. The angle that resonated on the call was 'sits alongside rather than replaces' — lead with that positioning and be explicit that Furthr is not asking them to dismantle anything they've built. Early in the meeting, ask Phoena directly who else she has looped in internally, since she flagged she'd be reviewing with her team — understanding the internal stakeholder map is critical before going deep on the demo. Probe the Excel pain harder than Harry did: ask how long it takes to update the supplier report each cycle, how they handle a supplier who submits incomplete or inconsistent data, and what the consequences would be of a reporting error. These questions are likely to surface the real friction that Phoena didn't volunteer. Given Dulux Decorator Centre is part of the AkzoNobel group, it is worth asking whether there are group-level sustainability reporting requirements or timelines coming down from the parent company that create pressure on their process — this could unlock a critical event that wasn't surfaced on the call. Do not spend the meeting demoing features. Use the first half to qualify the pain more rigorously, then tailor what you show to the supplier data management and reduction target tracking use case specifically, since that is the workflow Phoena described. End with a clear next step that involves the internal stakeholders she mentioned — push for a follow-up that includes whoever would need to sign off.",
+      "key_quotes": [
+        "We have an internal report — it's an Excel report, a quite a well developed one. So yeah, that kind of does the job on a quick overview and then supports with supplier conversations to refer back to that and see where they're at and they've got specific targets attached to that.",
+        "We don't have a massive gap.",
+        "Could you send me over just even if it's a couple of slides and I can go through it internally and see if any contact you if that's something we're interested in.",
+        "We have to map it, obviously, from a global perspective. So we've got that support. So we have carbon product data and we map that through reporting, and then we work with our suppliers to be mapping kind of upstream scopes."
+      ]
     }
   ]
 }
