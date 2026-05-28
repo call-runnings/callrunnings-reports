@@ -150,6 +150,43 @@
         "Could you send me over just even if it's a couple of slides and I can go through it internally and see if any contact you if that's something we're interested in.",
         "We have to map it, obviously, from a global perspective. So we've got that support. So we have carbon product data and we map that through reporting, and then we work with our suppliers to be mapping kind of upstream scopes."
       ]
+    },
+    {
+      "id": "mppmjadyfifo47udapu",
+      "savedAt": "2026-05-28T15:04:34.402Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Trafford AND Stockport College Group",
+        "contactName": "Angela Payne",
+        "jobTitle": "Sustainability Manager",
+        "phone": "+447392851673",
+        "email": "angela.payne@tcg.ac.uk",
+        "linkedin": "https://linkedin.com/in/angela-payne-13340038"
+      },
+      "spiced": {
+        "situation": "Angela is the Sustainability Manager at Trafford and Stockport College Group. She joined the college six months ago and has personally built a Scope 1 and 2 carbon reporting setup in Excel. Data for Scope 1 and 2 is largely fed in from the finance team. For Scope 3, the college currently only captures travel data, which is derived from HR expense records. There is no dedicated carbon reporting tool in use — everything is manual and spreadsheet-based.",
+        "pain": "Angela's core pain is that Scope 3 reporting is essentially non-existent beyond travel expenses. She acknowledged 'we don't really do [Scope 3] yet' and described the current position as 'we need to think about that at some point — and that's as far as we've got.' Even Scope 1 and 2 are not where she wants them: she explicitly said 'I still wouldn't say that that was perfect.' The process is entirely manual, reliant on data from other teams (finance, HR), and Angela has had to build it herself having only been in post six months. The data collection burden and lack of a structured methodology for Scope 3 are the clearest operational pain points.",
+        "impact": "The operational impact is that Angela is carrying the entire sustainability reporting function manually, with no scalable infrastructure. Strategically, the college is behind on Scope 3 — a recognised gap she is aware of but has not yet addressed. She noted that Scope 3 reporting is currently a recommendation rather than a requirement for further education, which reduces immediate regulatory pressure but means there is reputational and compliance risk if requirements tighten. The lack of a clear Scope 3 strategy also limits the college's ability to set meaningful reduction targets or demonstrate sustainability progress to stakeholders.",
+        "critical_event": "No hard deadline or regulatory trigger was mentioned. Angela confirmed Scope 3 reporting is currently only a recommendation for further education, not a requirement. There is no stated budget cycle, board deadline, or external audit driving urgency. The AE should probe whether any internal sustainability commitments, funding conditions, or forthcoming reporting periods create a soft deadline. Urgency is self-generated at this stage rather than externally imposed.",
+        "decision": "Angela appears to be the primary point of contact and is clearly driving the sustainability agenda herself. No other stakeholders were named as part of a formal decision process. However, given that Scope 1 and 2 data comes from the finance team and travel data from HR, any tool adoption would likely require buy-in from those departments. Budget authority was not discussed. The AE should establish early in the meeting who else would need to be involved in a purchasing decision and whether there is an allocated budget for sustainability tools."
+      },
+      "objections": [
+        {
+          "objection": "Bad timing — Angela said 'it's really not a good time to be honest' at the start of the call and mentioned receiving a lot of unsolicited sales calls.",
+          "response": "Harry handled this well. He immediately offered to call back rather than push, then used a single-question pivot ('I could ask you one quick question now') to retain her attention without applying pressure. This was effective — she engaged and the conversation continued naturally."
+        },
+        {
+          "objection": "Volume of cold calls — Angela said 'I keep getting a lot of these random calls', signalling mild scepticism about the value of inbound sales outreach.",
+          "response": "Harry acknowledged this briefly but did not directly address the concern or differentiate Furthr from those other calls. The single-question technique redirected the conversation, but the underlying scepticism about cold calls was not fully neutralised. The AE should be aware Angela may arrive at the meeting with some residual guardedness and should work to establish credibility early."
+        }
+      ],
+      "recommended_approach": "Open the meeting by referencing the specific context Angela provided on the call — that she has been in post six months, built the Scope 1 and 2 process herself in Excel, and described Scope 3 as something the college knows it needs to address but has not yet properly started. This shows the AE has listened and avoids Angela having to repeat herself. Frame the meeting around Scope 3 as the primary opportunity, since that is where she expressed the clearest gap and the most openness. Avoid leading too heavily with technology — Angela is not yet at the stage of evaluating tools; she needs a credible partner who can help her understand what good Scope 3 reporting looks like for a further education college. The references Harry made to a college in Dudley and an international school are worth building on — if there are specific further education case studies or sector benchmarks, use them to establish relevance and credibility. On Scope 1 and 2, tread carefully — she said she is 'more comfortable' with it but acknowledged it is 'not perfect.' There may be an upsell opportunity here, but do not lead with it; let her raise it. The AE should probe: what sustainability commitments has the college made publicly or to funders? Are there any forthcoming reporting periods, inspections, or board reviews that would create a natural deadline? Who in finance and HR would need to be involved if a tool were adopted? What does budget look like for sustainability initiatives? Keep the tone consultative — Angela is clearly capable and has done a lot herself; she will respond better to a peer-level conversation than a product pitch.",
+      "key_quotes": [
+        "Scope one and two is relatively straightforward in terms of how we can gather our data for that. But scope three, we don't really do yet.",
+        "I still wouldn't say that that was perfect, but we're more comfortable with it. And scope three were like, yeah, we need to think about that at some point. And that's as far as we've got.",
+        "I've joined the college six months ago and I've just tried to set something up in Excel for that.",
+        "It's not even a requirement, it's a recommendation — it's just travel that's included at the moment, which basically comes down from our HR data, like expenses for travel. And that literally is all we've thought about."
+      ]
     }
   ]
 }
