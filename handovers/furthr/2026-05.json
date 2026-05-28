@@ -187,6 +187,47 @@
         "I've joined the college six months ago and I've just tried to set something up in Excel for that.",
         "It's not even a requirement, it's a recommendation — it's just travel that's included at the moment, which basically comes down from our HR data, like expenses for travel. And that literally is all we've thought about."
       ]
+    },
+    {
+      "id": "mppmlp2v38ta6o7nmb2",
+      "savedAt": "2026-05-28T15:06:26.742Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Pure Data Centres Group",
+        "contactName": "Karen Shi",
+        "jobTitle": "Senior Project Manager Sustainability",
+        "phone": "+447519581131",
+        "email": "karen.shi@puredc.com",
+        "linkedin": "https://linkedin.com/in/karenklshi"
+      },
+      "spiced": {
+        "situation": "Karen is a Senior Project Manager for Sustainability at Pure Data Centres Group. She is responsible for carbon reporting and works within a multi-platform environment — she described 'a combination of things' including 'stream live process to do data recording for order site and for the final report.' The data flows from site level through to a final report, and she is not the person directly inputting or collecting the data herself ('I would rather not directly get him through'). She acknowledged awareness of the broader market and competitor landscape, suggesting she is reasonably engaged with sustainability tech.",
+        "pain": "Karen's core pain is about data routing and aggregation — she wants raw sustainability data to flow automatically and accurately into the correct categories without manual intervention. She expressed this clearly: 'I generally want data to get through my head... is there any magical way I got a magical warn light that they don't get through directly to the right pigeonholes.' This suggests the current combination of platforms does not cleanly funnel data to where it needs to go, creating a management overhead. The data collection and preparation stage — getting information ready before it enters reporting tools — appears to be the weak link in her current setup.",
+        "impact": "Karen's framing is primarily operational and managerial. The burden appears to be on her to oversee data getting into the right place across multiple platforms, which creates cognitive load and inefficiency at the management level. She referenced wanting this resolved 'from our management perspective back to us,' suggesting this is not just a technical inconvenience but a recurring time drain that affects her ability to manage upwards and report cleanly. There is also an implicit risk of data inaccuracies if information is not routed correctly across platforms, though this was not explicitly stated.",
+        "critical_event": "No specific deadline, regulatory trigger, or budget cycle was mentioned during the call. Karen did not reference any upcoming reporting deadline, audit, or internal initiative that would create urgency. She was measured and unhurried in her approach, asking to read the materials first before making any decision. The AE should probe for any SBTi commitments, net zero target years, or internal sustainability reporting cycles that might create a natural deadline.",
+        "decision": "Karen has not indicated who else would be involved in a decision. She did not reference a manager, procurement process, or budget holder. Her language was largely personal ('I generally want,' 'from my own benefit'), which may suggest she has some influence but is unlikely to be the sole decision-maker. She was cautious about sharing platform details, which may indicate sensitivity around internal processes or procurement protocols. The AE should gently probe the decision-making structure — who else would need to be involved, whether there is a budget holder, and whether IT or procurement typically get involved in platform decisions."
+      },
+      "objections": [
+        {
+          "objection": "We already have platforms in place — a combination of tools handling data recording and final reporting.",
+          "response": "Harry handled this reasonably well by pivoting to the gap between collection and reporting, positioning Furthr as solving a different problem to what she already has rather than replacing it. However, he did not press deeply enough to understand what those platforms actually do or where the gaps genuinely are. Karen deflected when asked about her data preparation process, so the true extent of the gap in her current stack remains unclear."
+        },
+        {
+          "objection": "Karen preferred to read materials before committing to a meeting, and was reluctant to have a live conversation about specifics.",
+          "response": "Harry managed to convert this into a placeholder meeting on 10th June by framing it as a 'follow-up chat' with a colleague to answer questions after she'd reviewed the materials. However, the meeting is soft — Karen described it as a 'placeholder' and said she'd 'come back if problems,' which signals low commitment. The AE should be aware this may need re-confirmation and a stronger reason for Karen to attend beyond just Q&A."
+        },
+        {
+          "objection": "Karen was guarded about sharing details of her internal platforms and data processes, declining to go into specifics.",
+          "response": "Harry acknowledged this gracefully ('still your secret sauce') and did not push further. This was the right call in tone, but it means the AE enters the meeting with limited visibility into the actual tech stack and data workflow. The AE will need to rebuild trust and create a safe environment where Karen feels comfortable sharing more detail."
+        }
+      ],
+      "recommended_approach": "Open by referencing what Karen said she wants: data flowing automatically into the right categories without manual intervention. Use her exact framing — 'the right pigeonholes' — to show you have listened and understood her core frustration. Do not open with a product pitch or a capabilities walkthrough. Karen is analytical and self-directed; she has asked to read first and will have done so. Start by asking what resonated in the materials and what questions came up, then use those answers to anchor the demo or discussion. The key angle to push is the gap between data collection and reporting tools — Karen herself acknowledged this is relevant and Harry's framing landed. Probe what is currently happening in that middle layer: who is responsible for preparing the data before it enters the reporting platforms, how long that takes, and where errors or delays tend to occur. This will surface the operational pain more concretely. Ask about decision-making structure early — Karen spoke entirely in the first person and has not mentioned a team or manager. Understand whether she is a recommender or a decision-maker, and who else would need to be involved before any next step. Probe for critical events: ask whether Pure Data Centres Group has committed to SBTi targets or internal net zero milestones, and whether there are annual reporting cycles that create pressure points. These may unlock urgency that was absent on the cold call. Keep the tone consultative and patient — Karen is not in a hurry and will disengage if she feels sold to. Frame any demo around her stated vision of a frictionless, automated data routing system rather than leading with features.",
+      "key_quotes": [
+        "I generally want a data get through my head. Is there any magical way I got a magical warn light that they don't get through directly to the right pigeonholes and that would be perfect.",
+        "We have some stream live process to do data recording for order site and for the final report. It is not just one platform. As a combination of things.",
+        "I need to have a read of your information first before I make any decision.",
+        "You know the market better than my father and you know what your competitor is in general."
+      ]
     }
   ]
 }
