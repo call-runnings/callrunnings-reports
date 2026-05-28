@@ -310,6 +310,43 @@
         "I think we're still doing a gap assessment at the moment and allocating priorities or actions to everybody.",
         "I always say everything for CSF UK like as in whole of the sustainability aspect. We are also accredited B Corp and we hold BCOP assessment."
       ]
+    },
+    {
+      "id": "mppmu8bgpm44rt8cbl",
+      "savedAt": "2026-05-28T15:13:04.958Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Findel",
+        "contactName": "Chris Leonard",
+        "jobTitle": "ESG Manager",
+        "phone": "+447845316671",
+        "email": "chris.leonard@findel.co.uk",
+        "linkedin": "https://linkedin.com/in/chris-leonard-53a41939"
+      },
+      "spiced": {
+        "situation": "Chris is the ESG Manager at Findel, an education supplies business that has recently become part of a larger group called Manitan (a multi-billion dollar turnover organisation). Findel currently uses Plan A for Scope 3 calculation but is in the process of migrating away from it. Manitan has made a six-figure investment in a new platform specifically designed to evaluate product impact scores across more than one million products, with a focus on Scope 3 reporting around products and distribution. Chris has already completed the 'business emissions' side of Scope 3 — commuting, flights, events, hotels — and the primary outstanding challenge is the product-level emissions data. The new platform is intended to serve both customer-facing reporting and internal organisational reporting.",
+        "pain": "The pains were not heavily expressed by Chris — he is relatively well-resourced compared to many prospects in this space. However, two genuine gaps emerged during the call. First, tool adoption: as Findel integrates into the Manitan group structure and rolls out a sophisticated new emissions platform, there is an implicit risk that colleagues who are less ESG-literate will struggle to engage with or use it effectively. Chris did not explicitly flag this as a problem, but he acknowledged 'we're not out of the woods yet' and that the rollout is still in progress. Second, post-reporting action: Chris acknowledged the new platform does not provide offset plans, only 'ideas for how to reduce your carbon,' and that carbon reduction plans are already in place — but the challenge of identifying and partnering with the right offset or reduction initiatives at scale was left open. Harry introduced both of these angles and Chris did not push back on them.",
+        "impact": "The operational impact of poor tool adoption across a large, newly restructured group could slow down Findel's ability to meet its Scope 3 reporting obligations and undermine the value of Manitan's significant six-figure investment in the new platform. On the strategic side, Findel is now accountable to a much larger group with serious ESG investment behind it — getting reporting wrong, or failing to act on the data once it is collected, carries reputational and compliance risk at group level, not just company level. The product impact score project — evaluating emissions across over one million products by end of year — is a high-visibility initiative, meaning any gaps in the process will be conspicuous.",
+        "critical_event": "Chris indicated that Findel expects to have its emission report evaluated across over one million products 'by the end of the year.' This creates a loose but real deadline for having the right tools, processes, and support in place before that milestone. The platform migration away from Plan A is also actively underway, meaning the window to influence how things are set up is now, not later. No regulatory deadline or budget cycle was explicitly mentioned.",
+        "decision": "Chris is the ESG Manager and appears to be the primary practitioner driving this workstream. However, the broader ESG investment and platform decisions are being made at Manitan group level — he referenced 'a big team of people behind it' and the six-figure investment as a group-level decision. This suggests Chris may not have unilateral sign-off on new tools or partnerships, and any proposal may need to be compatible with or complementary to what the Manitan group has already invested in. No other named stakeholders were mentioned. Budget authority is unclear — he did not signal any budget availability, and the conversation was exploratory rather than commercial."
+      },
+      "objections": [
+        {
+          "objection": "Findel already has Scope 3 covered — they use Plan A currently and are migrating to a new platform with significant group-level investment behind it, covering both product impact scores and business emissions.",
+          "response": "Harry handled this reasonably well. Rather than pushing back or overselling, he acknowledged the strength of their position ('from what you guys have got it seems like in terms of the collection and the reporting seems like you're very much covered') and pivoted to two specific complementary angles — adoption support at the start of the process, and offset/reduction partnerships at the end. This was a credible reframe. However, Harry did not probe deeply enough into whether the new platform is fully live or still being implemented, which would have strengthened the case for engaging now. The pivot was logical but slightly rushed."
+        },
+        {
+          "objection": "Chris receives a lot of these calls and finds it difficult to distinguish between vendors — 'it's hard to sort of see the wood for the trees, we get loads of these off each week.'",
+          "response": "Harry acknowledged this but did not address it directly or differentiate Furthr in any meaningful way at this point. He moved quickly to booking the meeting rather than giving Chris a specific reason why Furthr is worth his time over the others. This was left unaddressed and is a risk going into the AE meeting — Chris is likely to arrive sceptical and will need a clear, differentiated value proposition early on."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging upfront that Chris is well set-up compared to most ESG Managers you speak to, and that you are not here to replace what Manitan has invested in. This will build credibility immediately and mirrors what Harry established on the call. Frame the conversation around the two gaps Harry identified: (1) adoption and ESG literacy across the wider Findel/Manitan team as the new platform rolls out, and (2) what happens after the data is collected — specifically, how Findel will act on emissions insights across a product catalogue of over one million items. Ask Chris directly how confident he is that the wider team will engage with the new platform effectively, and whether there is a plan for what comes after the reporting — who owns the reduction actions and how partnerships or offsets are being evaluated. Probe the group structure more carefully: find out how much autonomy Chris has at Findel level versus what is dictated from Manitan, and who else would need to be involved if there were something worth pursuing. Given he flagged 'we're not out of the woods yet,' there is an opening to explore where the friction points in the current transition actually are — do not assume the situation is as clean as it sounds. Come prepared with a specific example of how Furthr has supported a business going through a similar group restructure or platform migration, as Chris will need a concrete reason to engage beyond this call. Keep to the agreed 30-minute limit — he was explicit about this and running over will damage trust immediately.",
+      "key_quotes": [
+        "We're not out the woods yet. But we're obviously invested a lot together. And many times I've got a big team of people behind it.",
+        "They've literally just invested a hell of a lot of money. Like six-figure money into the bin system software to do that. Yeah, there's many time businesses over a billion dollar turnover.",
+        "We'll be evaluating our emission report on basically over a million products by the end of the year.",
+        "It's hard to sort of see the wood for the trees, we get loads of these off each week, but certainly if there's like a really, really great solution, then obviously we're always happy to have a look."
+      ]
     }
   ]
 }
