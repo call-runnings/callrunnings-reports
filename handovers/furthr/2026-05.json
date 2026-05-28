@@ -73,6 +73,42 @@
         "Even from that voluntary point of view with scope three, and they're not publishing that, it's better for us to be aware and understand what we need to do mainly around procurement and our purchased goods and services.",
         "You've got to bring it somewhat ourselves to be able to sell it on, I suppose."
       ]
+    },
+    {
+      "id": "mppmc7n7eelf4n144t",
+      "savedAt": "2026-05-28T14:59:04.232Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Sourcing @ MM Flowers",
+        "contactName": "Dan Baxter",
+        "jobTitle": "Carbon & ESG Data Manager",
+        "phone": "+447986495173",
+        "email": "dan.baxter@mm-flowers.com",
+        "linkedin": "https://linkedin.com/in/danbaxtereco"
+      },
+      "spiced": {
+        "situation": "Dan Baxter is the Carbon & ESG Data Manager at MM Flowers, responsible for carbon accounting and ESG data. He is actively conducting a structured market review of carbon accounting tools, having already identified and is evaluating named competitors including Watershed and Green Lead, alongside several others. He is therefore in an active buying cycle, not passively exploring — this is a warm, time-sensitive opportunity. No detail was shared about current tooling in place, so it is unclear whether MM Flowers is running manual processes, a legacy tool, or a patchwork of solutions at present.",
+        "pain": "Dan did not articulate a specific pain point himself during the call — the SDR introduced the pain hypothesis around Scope 3 data collection being time-consuming across multiple suppliers and complex supply chains, and Dan did not reject or confirm it. He redirected quickly to his review process. The core pain remains unvalidated at this stage. The AE must establish in the meeting whether slow or fragmented Scope 3 data collection is genuinely a live problem for Dan, or whether his priorities sit elsewhere in the carbon accounting workflow.",
+        "impact": "No business impact was discussed or confirmed on the call. Because Dan did not engage with the pain framing offered by the SDR, there is no validated downstream consequence — financial, operational, or reputational — to reference. The AE should treat impact discovery as a primary objective for this meeting. Key questions to explore: what does poor or delayed Scope 3 data cost MM Flowers in terms of reporting accuracy, supplier engagement, or regulatory exposure? What happens if the chosen tool does not solve the right problem?",
+        "critical_event": "Dan confirmed he is actively reviewing tools right now, which creates an implicit urgency — a decision is likely to be made within a defined window. However, no specific deadline, regulatory trigger, reporting cycle, or budget cut-off was mentioned. The AE should open by asking directly when Dan expects to complete the review and make a recommendation or decision, and whether there is a go-live date or reporting deadline driving that timeline.",
+        "decision": "Dan presented himself as the person conducting the review and implied he holds influence over which tools are shortlisted. He said he would 'see whether to have a call' and 'include you in my review', suggesting he is a key evaluator. However, it is unclear who else is involved in the final decision — whether there is a Head of Sustainability, Finance, Procurement, or a wider ESG team with sign-off authority. Budget has not been discussed at all. The AE must map the decision process: who else is in the room, what criteria are being used to evaluate tools, and what does a successful outcome of the review look like for Dan personally."
+      },
+      "objections": [
+        {
+          "objection": "Dan immediately asked for an email rather than engaging in a conversation, saying 'Would you be able to drop me an email please and I'll see whether I have a call with you and kind of include you in my review?' This is a classic deflection to avoid committing time on the spot.",
+          "response": "The SDR handled this reasonably well — he acknowledged the email request but did not simply agree to send one and hang up. He used it as a bridge to push for a diary commitment, saying he wanted to align a time with his colleague Dara. He successfully converted the deflection into a booked meeting. However, the handling was functional rather than consultative — no curiosity was shown about the review Dan is conducting, and no rapport or differentiation was established before closing for the meeting."
+        },
+        {
+          "objection": "Dan is already evaluating named competitors — Watershed and Green Lead specifically — meaning Furthr is entering a process that is already underway and potentially already has frontrunners. This was not treated as an objection on the call but represents a significant competitive challenge the AE must address.",
+          "response": "This was not addressed at all on the call. The SDR did not ask which tools Dan is leaning towards, what criteria matter most, or where existing tools in the review are falling short. The AE walks into this meeting with no competitive intelligence and no sense of where Furthr stands relative to Watershed or Green Lead in Dan's mind."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging that Dan is mid-review and position the meeting as useful to that process, not a sales pitch. A strong opening line might be: 'You mentioned you are reviewing Watershed, Green Lead and a few others — rather than us just running through a demo, it would be more useful to understand what you are actually trying to solve, so we can show you the parts that are genuinely relevant to your evaluation.' This frames Furthr as confident and consultative rather than desperate to be included.\n\nPrioritise discovery in the first half of the meeting. The SDR introduced a pain hypothesis around Scope 3 data collection across complex supply chains — MM Flowers is a large-scale flower sourcing business, likely with an extensive and geographically diverse supplier base, which makes this hypothesis plausible and worth probing. Ask Dan directly whether that is where the friction sits, or whether his challenge is elsewhere — emissions factors, reporting formats, supplier engagement, audit trails. Do not assume the Scope 3 collection angle lands just because Dan did not push back on it.\n\nGet competitive context early. Ask what tools he has already assessed, what he has liked and disliked, and what gaps he has found. This will reveal where Furthr needs to differentiate and what objections are likely to surface. Watershed in particular is a well-funded, well-regarded platform — if Dan is seriously considering it, the AE needs to understand why Furthr is the better fit for MM Flowers specifically, not generically.\n\nMap the decision. Before any demo, ask who else is involved in the review, what the evaluation criteria are, when Dan expects to make a recommendation, and what happens after the review is complete. This call booked cleanly but left the decision process entirely unexplored.\n\nClose the meeting with a clear next step tied to Dan's review timeline — whether that is a follow-up with additional stakeholders, a tailored proposal, or a second more technical session. Do not leave it open-ended.",
+      "key_quotes": [
+        "'I'm currently doing a quick review of available tools on the market, everything from Watershed to Green Lead to a few other names if we're talking about carbon accounting.'",
+        "'Would you be able to drop me an email please and I'll see whether I have a call with you and kind of include you in my review?'",
+        "'Probably Thursday or Friday would be best. Yeah, that's fine.'"
+      ]
     }
   ]
 }
