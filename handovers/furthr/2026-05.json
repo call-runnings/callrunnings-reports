@@ -347,6 +347,47 @@
         "We'll be evaluating our emission report on basically over a million products by the end of the year.",
         "It's hard to sort of see the wood for the trees, we get loads of these off each week, but certainly if there's like a really, really great solution, then obviously we're always happy to have a look."
       ]
+    },
+    {
+      "id": "mppmvh0luvwgc3iyvtn",
+      "savedAt": "2026-05-28T15:14:02.286Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Transport for London",
+        "contactName": "Simon Chung",
+        "jobTitle": "Head of Engineering Function - Infrastructure, Integration & Sustainability",
+        "phone": "+447738285728",
+        "email": "simon.chung@tube.tfl.gov.uk",
+        "linkedin": "https://linkedin.com/in/simon-chung-18259832"
+      },
+      "spiced": {
+        "situation": "Simon Chung is Head of Engineering covering Infrastructure, Integration & Sustainability at Transport for London. TfL is actively working towards net zero targets and has significant activity ongoing in the carbon and sustainability space. Crucially, Simon confirmed they are not currently using any dedicated platform for carbon reporting or sustainability planning — 'I don't think we're using any particular platform as far as I'm aware.' The team working directly on this is separate from Simon; he positioned himself as a senior stakeholder rather than the day-to-day owner of the sustainability work. This is a re-engaged prospect — initial contact was made in mid-March 2026, with Simon asking for a callback in late April or early May. An email sent on 16th March never reached him due to an incorrect email address (was going to simon.tfl.gov.uk rather than simon.chung@tube.tfl.gov.uk).",
+        "pain": "No specific, deeply articulated pain points were surfaced in this call — the conversation remained relatively high-level. Simon did not express frustration with a broken process or a specific failure. The closest signal to pain is that TfL is trying to meet net zero targets and there is 'quite a lot of activity going on in that space,' implying complexity and resource pressure without a clear system in place to manage it. The absence of a platform is a structural gap rather than an expressed pain. The AE will need to uncover the real pain in the discovery meeting — this call did not get there.",
+        "impact": "Not explicitly discussed. Simon acknowledged that efficiency gains would be valuable — 'if there are things that we can make ourselves more efficient, then of course that's always useful to hear' — but no specific operational, financial, or reputational consequences were explored. The strategic implication is that TfL, as a major public body, will face growing regulatory and public scrutiny around its net zero commitments, particularly around Scope 3 emissions. Without a platform, reporting is likely manual and inconsistent, but this was not confirmed. The AE must probe what the cost of inaction looks like — missed targets, reputational risk, or inefficient internal resource allocation.",
+        "critical_event": "Simon mentioned that TfL is currently 'in the process of planning objectives and what we're going to do this year' — this is a live planning cycle happening in the coming weeks as of early May 2026. This is a genuine time-sensitive hook: Furthr has an opportunity to influence how TfL structures its sustainability approach for the year ahead, rather than retrofitting into an already-defined plan. This is the most important urgency lever available and the AE should lead with it. No regulatory deadlines or budget cycle end-dates were specifically mentioned.",
+        "decision": "Simon is not the primary decision-maker for this work day-to-day. He said 'it's more important that they appear at it rather than myself because they're working on this side of it,' referring to colleagues he needs to consult before confirming attendance. He intends to involve his Head of Environmental Sustainability (mentioned in the original March call) and others working on the sustainability programme. The meeting has been tentatively booked for 13th May at 4:30pm but Simon made clear this needs to be ratified once he has spoken to the wider team, who may propose different slots. No budget, procurement process, or formal sign-off structure was discussed."
+      },
+      "objections": [
+        {
+          "objection": "Simon was waiting on an email that never arrived from the initial March call, which created a trust gap and a delayed first impression.",
+          "response": "The SDR identified the email address error during the call and resent to the correct address (simon.chung@tube.tfl.gov.uk) in real time, confirming receipt before the call ended. Handled adequately in the moment, though it is worth acknowledging briefly at the start of the AE meeting to close the loop cleanly."
+        },
+        {
+          "objection": "Simon signalled low personal ownership of the meeting — 'it's more important that they appear at it rather than myself' — suggesting he may not attend or may send junior members without decision-making authority.",
+          "response": "The SDR did not push back on this or reinforce Simon's value in the room. This was left unaddressed. The AE should proactively engage Simon before the meeting to reframe his role as a strategic sponsor and ensure the right people are confirmed as attendees in advance."
+        },
+        {
+          "objection": "Simon showed no urgency or strong motivation — his language was polite but non-committal throughout ('sure, sure', 'it might be', 'worthwhile having a session').",
+          "response": "The SDR did not attempt to deepen engagement or qualify the opportunity further. The meeting was booked on a thin foundation of curiosity rather than clear business need. The AE must do the heavy lifting on discovery to convert interest into intent."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the email situation briefly — confirm they have now received the materials and use it as a moment to reset and make a strong first impression. Do not dwell on it. Immediately anchor the conversation to Simon's planning cycle comment: 'You mentioned you're mid-way through planning objectives for the year — we want to make sure this session is genuinely useful to that process, not just a show-and-tell.' This frames Furthr as a strategic input rather than a vendor pitch. Before going into any demo or overview, spend the first third of the meeting on discovery. The SDR did not uncover real pain — the AE needs to establish what TfL's Scope 3 reporting actually looks like today: who owns it, how data is being collected, what gets reported, to whom, and against what timeline. Specifically probe what 'quite a lot of activity' means in practice — is it headcount, manual processes, inconsistent data sources? Ask what success looks like for TfL's net zero commitments and what would make hitting those targets harder. Given Simon said no platform is in use, the AE should explore how reporting is currently being done (spreadsheets, consultants, internal builds) and what the cost of that approach is — in time, accuracy, and confidence in the numbers. Prepare a relevant case study showing work with a comparable large infrastructure or public sector organisation if available. Given Simon may not attend or may send others, the AE should confirm attendees at least 48 hours before — call or email Simon directly — and ensure the Head of Environmental Sustainability is in the room. If Simon does not attend, open the meeting by asking the attendees what Simon has briefed them on so expectations are set. Do not lead with product features. Lead with TfL's situation, reflect it back, and let them confirm the gap before positioning Furthr as the solution.",
+      "key_quotes": [
+        "I think it's a new area so we are always looking at opportunities with like-minded people and even shared experience and understanding what capable we are. I think that's always useful to have.",
+        "No, I don't think we're using any particular platform as far as I'm aware.",
+        "We're in the process of actually planning objectives and what we're going to do this year and so forth. So it's a good time.",
+        "It's more important that they appear at it rather than myself because they're working on this side of it."
+      ]
     }
   ]
 }
