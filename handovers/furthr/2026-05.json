@@ -388,6 +388,43 @@
         "We're in the process of actually planning objectives and what we're going to do this year and so forth. So it's a good time.",
         "It's more important that they appear at it rather than myself because they're working on this side of it."
       ]
+    },
+    {
+      "id": "mppmvm0jnx7g4thywha",
+      "savedAt": "2026-05-28T15:14:09.370Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Unison",
+        "contactName": "Wiebke Flach",
+        "jobTitle": "Sustainability Manager",
+        "phone": "+447951994304",
+        "email": "w.flach@unison.co.uk",
+        "linkedin": "https://linkedin.com/in/wiebke-flach"
+      },
+      "spiced": {
+        "situation": "Wiebke Flach is the Sustainability Manager at Unison. She is responsible for carbon reporting across scope 1, 2, and 3. Currently, she manages data collection manually, relying on spend data and directly contacting suppliers to request emissions information. There is no mention of any dedicated software or platform in use — the process appears entirely manual.",
+        "pain": "Wiebke's core problem is inadequate data collection, not reporting. She explicitly stated: 'I do need to increase our data collection before I can increase the reporting.' The current process of contacting suppliers individually to gather spend data is slow and labour-intensive. She confirmed this is exactly her situation when Harry described it: 'Exactly.' The reporting side is not a current priority — she has no compliance requirements driving it.",
+        "impact": "Because data collection is incomplete and manual, Wiebke cannot progress to meaningful carbon reporting. This creates a bottleneck: the reporting capability is blocked upstream by poor data quality and collection processes. While she did not quantify financial cost or name specific strategic consequences, the implication is that Unison cannot scale its sustainability reporting until the data infrastructure is in place. The operational burden of manually chasing suppliers is absorbing time and resource without producing reliable output.",
+        "critical_event": "No deadlines, regulatory triggers, or budget cycles were mentioned during the call. Wiebke noted she has 'no compliance requirements' at present, which suggests there is no immediate external pressure forcing action. There is no confirmed critical event. The AE should probe for any internal targets, board-level sustainability commitments, or anticipated regulatory changes that might create urgency.",
+        "decision": "No information was gathered on decision-making process, budget, or other stakeholders. It is unknown whether Wiebke has sign-off authority, whether procurement or finance are involved, or what budget is available. The AE should treat this as a significant gap and aim to map the decision landscape early in the meeting."
+      },
+      "objections": [
+        {
+          "objection": "Initial hesitation — Wiebke asked 'What company are you calling from?' suggesting unfamiliarity with Furthr and possible scepticism about the call.",
+          "response": "Harry handled this adequately by spelling out the company name and immediately pivoting to a relevant, role-specific opener about scope 1, 2, and 3 reporting challenges. This was enough to earn continued engagement."
+        },
+        {
+          "objection": "Wiebke clarified that reporting is not her priority: 'The reporting is I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.' This was a redirect, not a hard objection, but it signals that leading with reporting as the core value proposition would be a misstep.",
+          "response": "Harry adapted reasonably in the moment, acknowledging and mirroring her language: 'All about the data collection.' However, he did not probe further into what specifically makes data collection difficult, how many suppliers are involved, or what a better process would need to look like. The pivot was made but not explored."
+        }
+      ],
+      "recommended_approach": "Open the meeting by anchoring on Wiebke's own language: she said it is 'all about the data collection, none about the reporting.' Do not lead with reporting functionality or compliance angles — she has no compliance requirements and this will lose her immediately. Instead, open by asking her to describe the current supplier data collection process in more detail: how many suppliers she is contacting, how frequently, what format the data comes back in, and where it breaks down. The goal is to surface the operational pain more precisely before demoing anything. Once the pain is clear, frame Furthr's value around automating or streamlining the supplier engagement and data intake process specifically. If the platform has supplier-facing tools, automated data requests, or integrations that reduce manual chasing, lead with those. Avoid positioning Furthr as a reporting platform in this meeting — reframe it as a data infrastructure solution that happens to enable reporting when she is ready for it. The AE should also use this meeting to map the decision process: Wiebke's authority level is unknown, and no budget or timeline signals were given. Ask directly whether she is evaluating this alone or with others, and whether there is any internal target or milestone — such as a board review or sustainability strategy deadline — that would make solving this more urgent. Probe for any upcoming regulatory changes in her sector that could shift the compliance picture, even if nothing is pressing today.",
+      "key_quotes": [
+        "It is relevant. I do need to increase our data collection before I can increase the reporting though.",
+        "The reporting is I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.",
+        "Yes — [confirming she manages data collection by contacting suppliers directly and asking for information]",
+        "Exactly. [confirming the manual supplier contact process Harry described]"
+      ]
     }
   ]
 }
