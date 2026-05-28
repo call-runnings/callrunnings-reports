@@ -456,6 +456,51 @@
         "Yeah, sorry, it was Thursday. The 14th is better.",
         "Okay, no problem. Thanks so much."
       ]
+    },
+    {
+      "id": "mppn03kpesz196in2r",
+      "savedAt": "2026-05-28T15:17:38.752Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "Virgin",
+        "contactName": "Pedro Lafargue",
+        "jobTitle": "Global Carbon Sustainability Manager",
+        "phone": "+447442490845",
+        "email": "pedro.lafargue@virgin.com",
+        "linkedin": "https://linkedin.com/in/pedro-lafargue-m"
+      },
+      "spiced": {
+        "situation": "Pedro is the Global Carbon Sustainability Manager at Virgin, responsible for Scope 1, 2, and 3 emissions reporting across what is presumably a large, complex, multi-site organisation. Virgin is currently locked into long-term contracts with existing carbon accounting suppliers — Pedro confirmed they have 'companies that we're working with' and have had 'current accounting for a couple of years now.' He named Sweep (Svara) and Watershed as competitors they are aware of or already engaged with, indicating a sophisticated, enterprise-level buying environment. The existing setup covers both corporate reporting and product carbon footprinting based on his questions.",
+        "pain": "No acute pain was surfaced during this call. Pedro was largely satisfied with the current state — he said 'we have everything in place right now' and confirmed the existing solution has been running for a couple of years. There was no expressed frustration with current tools, processes, or suppliers. The SDR attempted to probe by asking whether there were gaps or limitations, but Pedro did not bite. The only implicit tension is that enterprise carbon reporting requirements are evolving (Scope 3 complexity, regulatory pressure) which was raised by the SDR but not validated by Pedro. This is an assumption, not a confirmed pain.",
+        "impact": "No specific business impact was articulated by Pedro. Because no clear pain was uncovered, there is no stated downstream consequence — financial, operational, or reputational — that Furthr can attach to. The AE will need to work to uncover what risks or inefficiencies might emerge as regulatory demands intensify or as their current contracts age. The competitive landscape Pedro referenced (Watershed, Sweep) suggests Virgin is not underinvested in this space, which raises the bar for Furthr to demonstrate differentiated value.",
+        "critical_event": "No immediate critical event or deadline was mentioned. Pedro explicitly stated that a new tender process is approximately three years away — 'to get to a new tender process would be in just the next three years, probably.' There is no regulatory deadline, internal budget cycle, or urgent trigger that was surfaced. This is a long-cycle, relationship-building opportunity at best. The AE must not position this as a near-term deal.",
+        "decision": "Pedro appears to be an informed evaluator rather than a sole decision-maker. He described a tender process for new contracts, implying procurement involvement, and his instinct was to keep Furthr on a 'list of potential products to scope' rather than escalate internally. He asked about contract length and whether the software is proprietary, suggesting he conducts technical due diligence. No other stakeholders were named. Sign-off authority is unclear — given the seniority of his role (Global) and the scale of Virgin, it is likely that any new contract would involve procurement, legal, and possibly a Chief Sustainability Officer or equivalent. The AE should map the wider buying committee in the meeting."
+      },
+      "objections": [
+        {
+          "objection": "'We have everything in place right now' — Pedro's opening position was that Virgin already has functioning carbon accounting software and supplier relationships in place.",
+          "response": "The SDR pushed back by asking Pedro to elaborate — 'Could you elaborate a bit more? So are you in a contract with a supplier?' — which was a reasonable move and did extract some useful detail about the existing setup. However, the SDR did not then attempt to find a wedge or probe for any dissatisfaction within the current arrangement. The objection was acknowledged and worked around, but not truly dismantled."
+        },
+        {
+          "objection": "'To get to a new tender process would be in just the next three years, probably' — Pedro made clear there is no realistic switching opportunity in the near term due to long-term contracts.",
+          "response": "The SDR accepted this gracefully and reframed as 'a long-term type discussion,' which was appropriate given the circumstances. However, this means the AE must be careful not to oversell urgency or push for a commercial conversation the prospect has already indicated is years away."
+        },
+        {
+          "objection": "'We have big companies also offering the same services like Svara or Watershed' — Pedro signalled that Furthr is entering a crowded shortlist and that established, well-resourced competitors are already known to Virgin.",
+          "response": "The SDR did not address this at all — simply said 'Yeah, of course, I'm with you' and moved on. This is a significant gap. The AE will need to establish clear differentiation from Watershed and Sweep, who are both well-funded, credible platforms. If Furthr cannot articulate a compelling reason to be chosen over them, this meeting risks being a courtesy call that goes nowhere."
+        },
+        {
+          "objection": "'I don't know if you have like a showcase document or just an introduction letter to the software. You can send me up to email. I'll just keep you in the list of potential products to scope' — Pedro's instinct was to deprioritise this to a passive email rather than a live meeting.",
+          "response": "The SDR handled this well by not accepting the email brush-off and directly asking for a 15-minute meeting with the founder Henry. Pedro agreed, which is the key win from this call. However, the meeting was only secured because Pedro was broadly open to it — not because any specific value was articulated that made it feel necessary."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the context honestly — this is a long-term play and Pedro knows it. Do not walk into this meeting pretending there is urgency. Instead, frame the conversation as: 'We know you're set for now, and we're not here to disrupt that. We want to earn a place on your radar so that when your contracts do come up, you know exactly what Furthr can do.' This builds credibility and avoids the awkwardness of pushing a commercial angle Pedro has already closed off. Early in the meeting, probe around the current supplier experience — not to criticise competitors, but to understand what Pedro values, what he would change if he could, and where the friction is in day-to-day reporting. Ask specifically about Scope 3 complexity: given Virgin's supply chain breadth (aviation, hospitality, telecoms, etc.), the challenge of third-party emissions data is likely significant. Try to find the gap between what their current tools deliver and what Pedro actually needs. On differentiation: before the meeting, the AE must prepare a sharp, specific answer to why Furthr beats Watershed and Sweep. Pedro named both — he is clearly informed. Generic 'we do everything' positioning (which Harry fell into on the call) will not cut through. Furthr's proprietary development capability, white-label flexibility, consultancy layer, and founder-led engagement should each be tested as potential angles. Ask Pedro which of those elements would be most relevant to how Virgin operates. Map the buying committee: ask Pedro directly who else would be involved in evaluating or approving a new solution when the time comes — whether that is a procurement lead, a CSO, or a board-level ESG sponsor. This is critical for a multi-year, enterprise-level deal. Finally, end the meeting with a clear next step that has a timeline attached — even if that next step is a quarterly check-in or a follow-up in 12 months. The risk is that this meeting ends warmly but drifts into silence. Pedro is polite and engaged, but he has no burning need. The AE needs to create a structured reason to stay in contact.",
+      "key_quotes": [
+        "\"To get to a new tender process would be in just the next three years, probably.\" — Pedro, confirming there is no near-term commercial opportunity and that Furthr is being filed as a long-term consideration.",
+        "\"We have big companies also offering the same services like Svara or Watershed — so it does become a bit tricky to move.\" — Pedro, signalling both competitor awareness and the switching cost barrier Furthr will need to overcome.",
+        "\"I'll just keep you in the list of potential products to scope.\" — Pedro's default position before the SDR pushed for a meeting; sets the tone for how he is thinking about Furthr at this stage.",
+        "\"We have current accounting for a couple of years now, so we've been doing this.\" — Pedro confirming the existing solution is established and embedded, not new or under review."
+      ]
     }
   ]
 }
