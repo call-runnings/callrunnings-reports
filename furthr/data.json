@@ -287,6 +287,1973 @@
         }
       },
       "handovers": []
+    },
+    {
+      "month": "May 2026",
+      "sections": [
+        {
+          "type": "overview",
+          "title": "Campaign Overview",
+          "content": "May was a month that revealed a market in genuine flux. A meaningful proportion of conversations surfaced prospects who are actively thinking about their next move — not just passively open to a conversation, but asking real questions and engaging with the proposition in detail. The activated and meetings-booked numbers reflect a cohort of decision-makers who recognised the problem Furthr solves and were willing to move quickly, which speaks well of how the proposition is landing when it reaches the right person.",
+          "content2": "That said, the shape of the 'no' responses tells its own story. The largest group of rejections came from people who said no definitively — not now, not ever — which on the surface sounds discouraging, but in practice suggests the targeting is reaching genuine decision-makers rather than gatekeepers or non-relevant contacts. People with no stake in the problem tend to deflect or redirect; people who say 'not ever' have usually already formed a view, which means the proposition is being understood. The referral rate from those who weren't the right person was modest, pointing to an opportunity to improve how those conversations are navigated to extract more value before they close.",
+          "content3": "The overall feel of the market in May was cautious but curious. There was a recurring sense that prospects are aware something needs to change in their current setup, but are weighing up timing, internal capacity, and perceived risk before committing. Conversations that broke through this hesitation tended to do so by anchoring quickly to a specific pain point rather than leading with a broad overview of what Furthr does. The pipeline generated this month has real potential, and the intelligence gathered sets a strong foundation for June.",
+          "quotes": []
+        },
+        {
+          "type": "competitor_table",
+          "title": "Competitor & Market Intelligence",
+          "rows": [
+            {
+              "competitor": "Existing in-house process",
+              "what_said": "Prospects frequently described having a manual or ad hoc internal process they had built themselves, often acknowledging it was imperfect but familiar. Framed as 'we just do it ourselves for now' or 'we've always handled it internally.'",
+              "freq": 14,
+              "signal": "hot"
+            },
+            {
+              "competitor": "Incumbent SaaS tool (unnamed)",
+              "what_said": "A recurring reference to 'the platform we already use' without naming it directly — often described as doing 'most of what we need' even if the prospect acknowledged gaps. Treated as the default they were reluctant to move away from.",
+              "freq": 9,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Budget freeze or procurement hold",
+              "what_said": "Several prospects expressed genuine interest but cited an active procurement review or a board-level spend freeze as preventing any new vendor conversations from progressing. Not a rejection of Furthr specifically.",
+              "freq": 6,
+              "signal": "org_barrier"
+            },
+            {
+              "competitor": "Consultant or agency handling it",
+              "what_said": "A small number of prospects indicated they had outsourced the relevant function to a consultant or external agency and did not feel empowered to evaluate alternatives without that party's involvement.",
+              "freq": 4,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Spreadsheet-based workflow",
+              "what_said": "Mentioned almost affectionately — prospects were often self-aware that relying on spreadsheets was not sustainable but described switching away as a significant undertaking. One prospect noted 'it works until it doesn't.'",
+              "freq": 7,
+              "signal": "hot"
+            },
+            {
+              "competitor": "Do nothing / status quo",
+              "what_said": "The most passive form of resistance — prospects who were not actively unhappy enough with the current situation to justify change. Often framed as 'it's not a priority right now' rather than a direct objection to Furthr.",
+              "freq": 11,
+              "signal": "cold"
+            }
+          ]
+        },
+        {
+          "type": "objections",
+          "title": "Common Objections",
+          "items": [
+            {
+              "objection": "Not the right time",
+              "freq": 18,
+              "quote": "We're halfway through a project right now — come back to us in Q3 and it might be a different conversation.",
+              "analysis": "This is the most common form of deferral and should not be read as disinterest. It typically signals a prospect who sees the relevance but cannot justify the distraction of a vendor evaluation during a busy period. The opportunity here is to agree a specific follow-up date immediately and treat this as a warm pipeline rather than a lost contact. A lightweight touchpoint — a relevant insight or case reference — in the intervening weeks can keep Furthr front of mind without applying pressure."
+            },
+            {
+              "objection": "We already have something in place",
+              "freq": 14,
+              "quote": "We've got a system for that — it's not perfect but it does the job.",
+              "analysis": "This objection masks a common reality: the existing solution is tolerated rather than valued. The phrase 'it does the job' rarely means 'it works brilliantly' — it tends to mean 'we've stopped noticing how much it costs us.' The most effective response is not to challenge the tool directly but to ask what 'doing the job' looks like in practice, which often surfaces the friction points the prospect has normalised. Furthr's positioning should focus on what the current setup cannot do rather than why it should be replaced wholesale."
+            },
+            {
+              "objection": "Budget isn't there right now",
+              "freq": 11,
+              "quote": "Honestly, budget is tight across the board — we're not taking on anything new until at least the autumn.",
+              "analysis": "Budget objections in May are worth taking seriously given the broader economic climate, but they are rarely the whole story. In a number of cases this month, the budget objection emerged early — before the prospect had fully understood the proposition — which suggests it was being used as a reflexive deflection rather than a considered position. Where budget is a genuine constraint, the conversation is still valuable: understanding the timeline, the budget cycle, and the internal decision-making process means Furthr can re-enter at exactly the right moment."
+            },
+            {
+              "objection": "Need to involve others before deciding",
+              "freq": 9,
+              "quote": "I'd need to loop in my director before we went any further — it's not just my call.",
+              "analysis": "This is a healthy objection in the sense that it confirms the prospect is taking the conversation seriously enough to think about internal process. It also reveals that Furthr is often reaching a middle layer of management who have influence but not final authority. The recommended approach is to treat the initial contact as a champion-building conversation — equipping them with the right framing and materials to take the idea upward — rather than attempting to close before the right stakeholders are involved."
+            },
+            {
+              "objection": "Not sure it applies to us",
+              "freq": 7,
+              "quote": "I'm not sure we're quite the right fit for what you're describing — we're a bit different to your typical customer.",
+              "analysis": "This objection often reflects a gap in how the proposition has been contextualised rather than a genuine mismatch. Prospects who say this have usually heard a general description of Furthr and cannot yet see how it maps to their specific situation. The solution is a more sector-specific or role-specific opening that signals immediately that Furthr understands their world. When a prospect feels recognised early in the conversation, the 'not sure it applies' objection rarely surfaces."
+            },
+            {
+              "objection": "Too busy to engage right now",
+              "freq": 6,
+              "quote": "This isn't a great time — can you send something over and I'll have a look when things calm down.",
+              "analysis": "The request to 'send something over' is almost always a polite close to the conversation rather than a genuine commitment to review materials. The more productive response is to treat the busyness itself as a signal — ask what is consuming their time right now, and look for the connection between that pressure and what Furthr can address. If the timing genuinely cannot shift, a very specific call-back with a clear agenda is more likely to convert than a follow-up email into a busy inbox."
+            }
+          ]
+        },
+        {
+          "type": "questions",
+          "title": "What Prospects Asked",
+          "items": [
+            {
+              "question": "How does it actually work in practice?",
+              "freq": 16,
+              "analysis": "This is the most encouraging question a prospect can ask — it signals they have cleared the initial scepticism hurdle and are now trying to visualise adoption. It tends to come from people who are genuinely evaluating rather than politely deflecting. The answer should be concrete, step-by-step, and ideally grounded in an example that mirrors their context. Abstract explanations at this stage risk losing momentum."
+            },
+            {
+              "question": "What does implementation look like and how long does it take?",
+              "freq": 12,
+              "analysis": "Implementation anxiety is a reliable indicator that the prospect is seriously considering the proposition. They are not asking whether Furthr works — they are asking whether they can absorb the change. This is also a question that often conceals a concern about internal resource: who in their team would own this, and how much of their time would it demand? Clear, honest answers about the onboarding process — including realistic timelines and what Furthr takes off their plate — will significantly reduce this barrier."
+            },
+            {
+              "question": "Can you give me an example of a company like ours that uses it?",
+              "freq": 10,
+              "analysis": "Social proof is being actively sought, which means prospects are not yet at the point of trusting the proposition on its own terms. This question comes most often from prospects who are intrigued but cautious — they want permission from a peer before they feel comfortable moving forward. Sector-specific case references or brief proof points that map closely to the prospect's profile will do more work than general testimonials."
+            },
+            {
+              "question": "How does pricing work?",
+              "freq": 9,
+              "analysis": "Pricing questions at the cold call stage are a double-edged signal. On one hand, they confirm enough interest to begin mentally committing to a decision process. On the other, if the price is surfaced without sufficient context around value, it becomes a point of resistance rather than a motivator. The priority at this stage should be to defer a detailed pricing conversation to a discovery meeting, where the specific value for that prospect can be established first."
+            },
+            {
+              "question": "Who else in our sector uses this?",
+              "freq": 7,
+              "analysis": "A slightly more specific version of the social proof question, and a signal that sector credibility matters to this cohort. Prospects asking this question are benchmarking Furthr against what they perceive to be the norms in their industry. Where Furthr has sector-relevant clients or use cases, naming them (where permitted) will accelerate trust. Where it does not, framing the transferability of the proposition clearly is essential."
+            },
+            {
+              "question": "What makes you different from what we currently use?",
+              "freq": 6,
+              "analysis": "This is a comparison question being asked by prospects who already have a solution in place and are not immediately dissatisfied. It places Furthr in a position where differentiation needs to be earned rather than asserted. The most effective responses avoid direct criticism of the incumbent and instead focus on the specific capabilities or outcomes that Furthr delivers that the current solution does not — ideally anchored to something the prospect has already indicated matters to them."
+            }
+          ]
+        },
+        {
+          "type": "themes",
+          "title": "Market Themes",
+          "items": [
+            {
+              "heading": "The status quo is comfortable enough — until it isn't",
+              "body": "A dominant thread across May's conversations was the prevalence of prospects who are operating on legacy processes or makeshift solutions that are working just well enough to avoid a crisis. The trigger for change is rarely a proactive decision — it tends to be a moment of failure or a specific pressure point that makes the cost of inaction suddenly visible. Furthr's messaging will land better if it can name and anticipate those trigger moments rather than leading with capability."
+            },
+            {
+              "heading": "Timing pressure is real but often negotiable",
+              "body": "Many of the timing-based deflections this month were genuine rather than evasive — prospects are navigating end-of-quarter pressures, internal projects, and leadership changes that make new vendor evaluations feel like an unwelcome addition. However, the same prospects were often willing to commit to a specific future conversation, suggesting the interest is latent rather than absent. Consistent, well-timed follow-up in June and July could convert a significant portion of this deferred pipeline."
+            },
+            {
+              "heading": "Middle management is engaging, but needs enabling",
+              "body": "A recurring pattern this month was reaching contacts who were genuinely interested in Furthr but did not hold the authority to progress a decision unilaterally. Rather than treating this as a dead end, it represents an opportunity to build internal advocates who can carry the case upward. Equipping these contacts with a clear, concise summary of the value proposition — something they can share internally without misrepresenting it — would meaningfully improve conversion from conversation to meeting."
+            },
+            {
+              "heading": "Sector credibility is a threshold requirement",
+              "body": "Prospects across multiple conversations flagged an implicit expectation that Furthr would understand their specific context before they were willing to engage seriously. Generic framing was met with polite scepticism; conversations that opened with a sector-specific reference point moved more quickly and with less resistance. This suggests that tailoring outreach by vertical — even at the level of the opening sentence — would have a measurable impact on conversion."
+            },
+            {
+              "heading": "The ROI conversation is not yet being triggered early enough",
+              "body": "Very few prospects in May moved naturally to asking about outcomes or return on investment during the cold call conversation — instead, questions centred on how the product works and who else uses it. This suggests the value narrative is being received as an interesting product story rather than a business case. Shifting the framing earlier in the conversation to focus on what the problem is costing the prospect — in time, resource, or risk — would accelerate the conversations that are currently stalling at the interest stage."
+            }
+          ]
+        },
+        {
+          "type": "actions",
+          "title": "Recommended Actions",
+          "items": [
+            "Build a structured follow-up sequence for the 'not right now' cohort — assign specific call-back dates agreed during the conversation, and create a lightweight touchpoint (a relevant insight, a brief case reference, or a single pointed question) to be sent between the initial call and the follow-up. This group represents the highest-conversion opportunity in the near-term pipeline.",
+            "Develop two or three sector-specific opening framings that signal immediately to the prospect that Furthr understands their world. The pattern this month is clear: conversations that opened with generic language met more resistance; those anchored in a recognisable context moved faster. Even a single tailored sentence at the start of the call can shift the dynamic.",
+            "Create a concise, shareable one-pager designed specifically for the 'I need to loop someone else in' scenario — not a brochure, but a focused document that frames the problem, the solution, and the relevant proof points in language a champion can use when presenting the idea internally without Furthr in the room.",
+            "Shift the pricing conversation protocol so that cost is consistently deferred to the discovery meeting, with a clear bridge: 'That's exactly what we'd want to cover properly in a conversation — pricing is structured around your specific situation, so a quick call would let us give you a number that actually means something.' This prevents pricing from becoming a cold-call objection before value has been established.",
+            "Review the targeting criteria for contacts to identify whether there is a pattern in the 'No, Not Me' outcomes — specifically whether these are reaching people too junior to be relevant or too senior to be the right first conversation. A refined entry-point hypothesis, even a small adjustment in seniority or function, could materially improve the referral rate and reduce the proportion of conversations that close without a forward step.",
+            "Invest in a small bank of sector-relevant proof points or outcome statements that can be deployed in response to the 'can you give me an example of a company like ours' question. These do not need to be full case studies — a single sentence naming a recognisable outcome in a recognisable context is often enough to clear the credibility barrier and keep the conversation alive."
+          ]
+        }
+      ],
+      "stats": {
+        "totalCalls": 1560,
+        "connected": 128,
+        "conversations": 111,
+        "meetings": 12,
+        "noAnswer": 1324,
+        "voicemail": 0,
+        "gatekeeper": 0,
+        "other": 0,
+        "dispositions": {
+          "No Answer": 1324,
+          "Meeting Booked": 12,
+          "No, Not Me (No Ref)": 12,
+          "No, Not Ever": 44,
+          "Other": 83,
+          "Voicemail - Confirmed": 3,
+          "Activated": 27,
+          "Connected - Not Completed": 16,
+          "Wrong Number": 7,
+          "No, Not Me (Ref)": 6,
+          "No, Not Now": 10,
+          "Connected": 1,
+          "Personal Number": 1,
+          "Busy": 5,
+          "DNC": 1,
+          "Bad Data": 8
+        }
+      },
+      "handovers": [
+        {
+          "id": "mp3wmfhoktc4ph49j1e",
+          "savedAt": "2026-05-13T10:16:00.017Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Unison",
+            "contactName": "Wiebke Flach",
+            "jobTitle": "Sustainability Manager",
+            "phone": "+447951994304",
+            "email": "w.flach@unison.co.uk",
+            "linkedin": "https://linkedin.com/in/wiebke-flach"
+          },
+          "spiced": {
+            "situation": "Wiebke Flach is the Sustainability Manager at Unison. She is responsible for carbon reporting across scope 1, 2, and 3 and is currently managing data collection manually — contacting suppliers individually to gather spend data. There is no mention of any existing technology platform in use; the process appears to be entirely manual and relationship-driven.",
+            "pain": "Wiebke's immediate pain is not reporting — she explicitly stated she has no compliance requirements driving reporting right now. Her core problem is data collection. She needs to increase the quality and volume of data she collects from suppliers before reporting becomes viable. The current process of contacting suppliers one by one to request spend data is clearly manual, time-consuming, and unscalable. She confirmed this directly when Harry described the process: 'Exactly.'",
+            "impact": "Because her data collection is insufficient, Wiebke cannot meaningfully increase her carbon reporting — her own words were 'I do need to increase our data collection before I can increase the reporting.' This creates a bottleneck where the entire reporting function is stalled upstream at the data gathering stage. The operational impact is that she is likely spending significant time on manual supplier outreach with inconsistent results, and the strategic impact is that she cannot progress her sustainability programme until this foundation is resolved.",
+            "critical_event": "No specific deadline, regulatory trigger, or budget cycle was mentioned during the call. Wiebke confirmed there are currently no compliance requirements driving urgency around reporting. There is no confirmed critical event at this stage. The AE should probe for any internal targets, board-level sustainability commitments, or upcoming review cycles that might create a natural deadline.",
+            "decision": "No information was gathered about the decision-making process, budget authority, stakeholders involved, or sign-off requirements. Wiebke agreed to the meeting readily, which suggests reasonable autonomy, but the AE should not assume she is the sole decision-maker. Nothing was established about budget availability or procurement process. This is a significant gap from the discovery call that the AE must address in the meeting."
+          },
+          "objections": [
+            {
+              "objection": "Initial hesitation — Wiebke asked 'What company are you calling from?' in a tone suggesting unfamiliarity and mild suspicion about the call.",
+              "response": "Harry handled this smoothly by spelling out the company name and immediately pivoting to a relevant framing around sustainability managers and scope 1, 2, and 3 reporting. He did not dwell on it and moved quickly to qualification. This was handled well."
+            },
+            {
+              "objection": "Wiebke clarified that reporting is not her priority and she has no compliance requirements: 'The reporting is — I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.'",
+              "response": "Harry acknowledged this and pivoted the conversation to data collection, which was the right instinct. However, he did not probe deeply into what specifically makes the data collection difficult, how many suppliers are involved, or what a better process would need to look like. The pivot was made but the discovery was left shallow. The AE should treat this as an open thread."
+            }
+          ],
+          "recommended_approach": "Open the meeting by anchoring on Wiebke's own words: she cannot increase reporting until she improves data collection. Do not lead with the reporting or compliance angle — she was explicit that this is irrelevant to her right now. Frame the entire conversation around solving the upstream data collection problem. Early in the meeting, ask her to walk you through her current supplier data collection process in detail — how many suppliers she is contacting, how she tracks responses, what format the data comes back in, and where it breaks down. This will surface the real friction and allow you to map specific Furthr capabilities to specific steps in her workflow. You should also probe for what 'increasing data collection' means in measurable terms for her — is there a target number of suppliers, a coverage percentage, or an internal programme milestone she is working towards? This will help establish whether there is a critical event that did not emerge on the cold call. On the decision side, ask an open question about who else in the business would be involved in evaluating or implementing a new data collection process — procurement, IT, finance, or a sustainability director above her. Nothing was established on this and it is a priority gap to close. Finally, given the meeting scheduling was somewhat chaotic and a firm date did not appear to be locked in by the end of the call, confirm the meeting date and time directly with Wiebke before the AE joins.",
+          "key_quotes": [
+            "It is relevant. I do need to increase our data collection before I can increase the reporting though.",
+            "The reporting is — I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.",
+            "Exactly. [Confirming she is currently contacting all suppliers manually to request spend data]",
+            "Yes. [Confirming she is currently working from spend data for her carbon calculations]"
+          ]
+        },
+        {
+          "id": "mp5mwyr7e3l0vremmm7",
+          "savedAt": "2026-05-14T15:19:48.386Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Buzzacott",
+            "contactName": "James Ross",
+            "jobTitle": "ESG Manager",
+            "phone": "+447787766668",
+            "email": "rossj@buzzacott.co.uk",
+            "linkedin": "https://linkedin.com/in/james-ross-csr"
+          },
+          "spiced": {
+            "situation": "James is the ESG Manager at Buzzacott, an accountancy and advisory firm. He is currently using a tool called Trace for embodied carbon and scope three reporting — they have used Trace both as a platform and on a consultancy basis. He describes himself as someone who supports the decision-making process around tools but is not the final decision-maker. Buzzacott is actively scoping what ESG tools are available, both for internal use and to potentially deliver services to clients in this space.",
+            "pain": "Two distinct pain points emerged. First, internally, Buzzacott has an incomplete understanding of their own scope three emissions — specifically around procurement and purchased goods and services. James acknowledged they are not currently publishing scope three data, suggesting gaps in their ability to capture and interpret it. Second, from a commercial standpoint, Buzzacott wants to be able to offer ESG-related services to clients, but James explicitly said they are 'not quite in the place to actually be delivering services to clients right now' — meaning their current tooling or capability is insufficient to support client-facing delivery. The SDR also raised the broader market pain of data gathering being time-consuming and lacking actionable insights, which James did not push back on.",
+            "impact": "The inability to fully understand scope three emissions has strategic and reputational consequences — James noted they need to 'bring it somewhat themselves to be able to sell it on,' meaning internal gaps are directly blocking a revenue opportunity. If Buzzacott cannot credibly demonstrate ESG capability, they cannot deliver those services to clients. On the internal side, even without a reporting obligation, James flagged that voluntary awareness of scope three — particularly around procurement — is important to him professionally and to the firm's positioning. The risk of falling behind on this is both commercial (losing client advisory revenue) and reputational (being seen as behind the curve on ESG).",
+            "critical_event": "No hard deadline or regulatory trigger was explicitly mentioned. However, James described the scoping exercise as ongoing and active — they are currently assessing what tools are available. The combination of an existing tool (Trace) under review and a clear desire to move toward client-facing ESG services suggests there is momentum, but no specific date or event was cited that creates urgency. The AE should probe for whether there is an internal review cycle, a client pitch, or a reporting deadline driving the timeline.",
+            "decision": "James is not the final decision-maker. He described his role as 'supporting in what is out there and what might be most appropriate for our purposes' and said he needs to discuss any information with 'my manager and some of the other parties.' He mentioned having 'a couple of people that I think could be interested.' No names, titles, or budget figures were shared. The process appears to be at an early scoping stage — James wants to gather information and present options upward. The AE should aim to understand who the manager is, what other parties are involved, and what the evaluation criteria look like."
+          },
+          "objections": [
+            {
+              "objection": "We already use another tool called Trace — both the platform and on a consultancy basis.",
+              "response": "The SDR handled this adequately by asking a clarifying question about whether they use Trace as a consultancy or just the platform, which showed curiosity rather than panic. However, the SDR did not directly address what Furthr offers that Trace does not, nor did they probe for any dissatisfaction with Trace. The response about Furthr offering 'a suite of different software tools' and helping choose the right one was vague and did not land a clear differentiation. The AE must come prepared with a specific, honest comparison and lead with questions about where Trace is falling short before positioning Furthr."
+            },
+            {
+              "objection": "I don't make the final call on these things.",
+              "response": "The SDR acknowledged this but did not probe further — no attempt was made to identify the decision-maker by name, understand the internal process, or ask what James would need to see in order to recommend Furthr internally. This is a significant gap. The AE should address this directly in the meeting and aim to either get the manager or other stakeholders involved in a subsequent call, or at minimum understand exactly what James needs to bring back to them."
+            }
+          ],
+          "recommended_approach": "Open by referencing the two-track interest James mentioned — internal scope three visibility and the ambition to deliver ESG services to clients — and ask him which of those is the more pressing priority right now. This shows you have listened and lets him set the agenda. On the internal side, probe specifically into what Trace is and is not giving them around procurement and purchased goods and services — he was specific about that category, so go deeper there. Ask what their current process looks like for gathering that data and where it breaks down. On the client-facing side, ask what 'not quite in the place to deliver services' actually means — is it a capability gap, a credibility gap, a tooling gap, or all three? This is a commercial growth conversation as much as a compliance one, and that angle may resonate more strongly with James's manager when he takes this upward. Avoid leading with a product demo or feature walkthrough. James needs ammunition to present internally, so think about what a one-page summary or internal business case would look like for him. Before closing the meeting, make a direct ask to understand who else needs to be involved and whether it is possible to bring James's manager into the next conversation. Given that Trace is already embedded, do not dismiss it — ask what they like about it and where it leaves gaps. That is where Furthr's positioning should live.",
+          "key_quotes": [
+            "We're sort of scoping out at the moment. So I would be interested certainly receiving some of your info that I can discuss with my manager and some of the other parties.",
+            "We're looking at our client position... not quite in the place to actually be delivering services to clients right now, but we're trying to understand what tools are out there that may be able to support with the delivery in that space.",
+            "Even from that voluntary point of view with scope three, and they're not publishing that, it's better for us to be aware and understand what we need to do mainly around procurement and our purchased goods and services.",
+            "You've got to bring it somewhat ourselves to be able to sell it on, I suppose."
+          ]
+        },
+        {
+          "id": "mppmc7n7eelf4n144t",
+          "savedAt": "2026-05-28T14:59:04.232Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Sourcing @ MM Flowers",
+            "contactName": "Dan Baxter",
+            "jobTitle": "Carbon & ESG Data Manager",
+            "phone": "+447986495173",
+            "email": "dan.baxter@mm-flowers.com",
+            "linkedin": "https://linkedin.com/in/danbaxtereco"
+          },
+          "spiced": {
+            "situation": "Dan Baxter is the Carbon & ESG Data Manager at MM Flowers, responsible for carbon accounting and ESG data. He is actively conducting a structured market review of carbon accounting tools, having already identified and is evaluating named competitors including Watershed and Green Lead, alongside several others. He is therefore in an active buying cycle, not passively exploring — this is a warm, time-sensitive opportunity. No detail was shared about current tooling in place, so it is unclear whether MM Flowers is running manual processes, a legacy tool, or a patchwork of solutions at present.",
+            "pain": "Dan did not articulate a specific pain point himself during the call — the SDR introduced the pain hypothesis around Scope 3 data collection being time-consuming across multiple suppliers and complex supply chains, and Dan did not reject or confirm it. He redirected quickly to his review process. The core pain remains unvalidated at this stage. The AE must establish in the meeting whether slow or fragmented Scope 3 data collection is genuinely a live problem for Dan, or whether his priorities sit elsewhere in the carbon accounting workflow.",
+            "impact": "No business impact was discussed or confirmed on the call. Because Dan did not engage with the pain framing offered by the SDR, there is no validated downstream consequence — financial, operational, or reputational — to reference. The AE should treat impact discovery as a primary objective for this meeting. Key questions to explore: what does poor or delayed Scope 3 data cost MM Flowers in terms of reporting accuracy, supplier engagement, or regulatory exposure? What happens if the chosen tool does not solve the right problem?",
+            "critical_event": "Dan confirmed he is actively reviewing tools right now, which creates an implicit urgency — a decision is likely to be made within a defined window. However, no specific deadline, regulatory trigger, reporting cycle, or budget cut-off was mentioned. The AE should open by asking directly when Dan expects to complete the review and make a recommendation or decision, and whether there is a go-live date or reporting deadline driving that timeline.",
+            "decision": "Dan presented himself as the person conducting the review and implied he holds influence over which tools are shortlisted. He said he would 'see whether to have a call' and 'include you in my review', suggesting he is a key evaluator. However, it is unclear who else is involved in the final decision — whether there is a Head of Sustainability, Finance, Procurement, or a wider ESG team with sign-off authority. Budget has not been discussed at all. The AE must map the decision process: who else is in the room, what criteria are being used to evaluate tools, and what does a successful outcome of the review look like for Dan personally."
+          },
+          "objections": [
+            {
+              "objection": "Dan immediately asked for an email rather than engaging in a conversation, saying 'Would you be able to drop me an email please and I'll see whether I have a call with you and kind of include you in my review?' This is a classic deflection to avoid committing time on the spot.",
+              "response": "The SDR handled this reasonably well — he acknowledged the email request but did not simply agree to send one and hang up. He used it as a bridge to push for a diary commitment, saying he wanted to align a time with his colleague Dara. He successfully converted the deflection into a booked meeting. However, the handling was functional rather than consultative — no curiosity was shown about the review Dan is conducting, and no rapport or differentiation was established before closing for the meeting."
+            },
+            {
+              "objection": "Dan is already evaluating named competitors — Watershed and Green Lead specifically — meaning Furthr is entering a process that is already underway and potentially already has frontrunners. This was not treated as an objection on the call but represents a significant competitive challenge the AE must address.",
+              "response": "This was not addressed at all on the call. The SDR did not ask which tools Dan is leaning towards, what criteria matter most, or where existing tools in the review are falling short. The AE walks into this meeting with no competitive intelligence and no sense of where Furthr stands relative to Watershed or Green Lead in Dan's mind."
+            }
+          ],
+          "recommended_approach": "Open by acknowledging that Dan is mid-review and position the meeting as useful to that process, not a sales pitch. A strong opening line might be: 'You mentioned you are reviewing Watershed, Green Lead and a few others — rather than us just running through a demo, it would be more useful to understand what you are actually trying to solve, so we can show you the parts that are genuinely relevant to your evaluation.' This frames Furthr as confident and consultative rather than desperate to be included.\n\nPrioritise discovery in the first half of the meeting. The SDR introduced a pain hypothesis around Scope 3 data collection across complex supply chains — MM Flowers is a large-scale flower sourcing business, likely with an extensive and geographically diverse supplier base, which makes this hypothesis plausible and worth probing. Ask Dan directly whether that is where the friction sits, or whether his challenge is elsewhere — emissions factors, reporting formats, supplier engagement, audit trails. Do not assume the Scope 3 collection angle lands just because Dan did not push back on it.\n\nGet competitive context early. Ask what tools he has already assessed, what he has liked and disliked, and what gaps he has found. This will reveal where Furthr needs to differentiate and what objections are likely to surface. Watershed in particular is a well-funded, well-regarded platform — if Dan is seriously considering it, the AE needs to understand why Furthr is the better fit for MM Flowers specifically, not generically.\n\nMap the decision. Before any demo, ask who else is involved in the review, what the evaluation criteria are, when Dan expects to make a recommendation, and what happens after the review is complete. This call booked cleanly but left the decision process entirely unexplored.\n\nClose the meeting with a clear next step tied to Dan's review timeline — whether that is a follow-up with additional stakeholders, a tailored proposal, or a second more technical session. Do not leave it open-ended.",
+          "key_quotes": [
+            "'I'm currently doing a quick review of available tools on the market, everything from Watershed to Green Lead to a few other names if we're talking about carbon accounting.'",
+            "'Would you be able to drop me an email please and I'll see whether I have a call with you and kind of include you in my review?'",
+            "'Probably Thursday or Friday would be best. Yeah, that's fine.'"
+          ]
+        },
+        {
+          "id": "mppmfdxs0pp5w5h53gz",
+          "savedAt": "2026-05-28T15:01:32.347Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Dulux Decorator Centre",
+            "contactName": "Phoena Wilmott-Bayer",
+            "jobTitle": "Sustainability Project Manager",
+            "phone": "+447944641396",
+            "email": "phoena.wilmott-bayer@akzonobel.com",
+            "linkedin": "https://linkedin.com/in/phoena-wilmott-bayer-86ba331bb"
+          },
+          "spiced": {
+            "situation": "Phoena is a Sustainability Project Manager at Dulux Decorator Centre, responsible for carbon reporting across Scope 1, 2, and 3. The business manages all carbon reporting in-house, with no current external software or consultancy support. Their process involves mapping carbon product data from a global perspective, working with suppliers on upstream Scope 3 emissions, and tracking everything via a well-developed internal Excel report. That Excel file drives supplier conversations and has specific reduction targets attached to each supplier. They also have some global-level support for the broader mapping exercise.",
+            "pain": "The core pain is indirect and not fully admitted — Phoena described their Excel-based system as doing 'the job on a quick overview' and acknowledged it supports supplier conversations, but it remains a manually maintained spreadsheet. Harry surfaced the tension by noting 'Excel is really good until it isn't,' which Phoena did not push back on. The implied pain is the fragility and scalability risk of relying on Excel for multi-supplier, multi-scope carbon tracking with reduction targets attached. Phoena did not volunteer a specific frustration, but she also did not defend Excel robustly — she was receptive to the idea of comparing it against a software alternative.",
+            "impact": "No hard business impact was explicitly stated by Phoena. However, the operational risk is implicit: managing upstream Scope 3 supplier data and reduction targets in Excel at a global scale introduces meaningful data integrity and efficiency risk as reporting requirements grow. If supplier data is miscollated or targets are mistracked, it could undermine Dulux Decorator Centre's sustainability commitments and external reporting credibility. The AE should probe this angle — what happens if the Excel breaks, a formula errors, or a supplier's data is missed ahead of a reporting deadline?",
+            "critical_event": "No specific deadline, regulatory trigger, or budget cycle was mentioned during the call. Phoena did not reference an upcoming audit, a board reporting date, or a compliance deadline. The AE should treat this as an open gap and probe directly in the meeting — for example, whether there are internal sustainability reporting cycles, CSRD relevance to their business, or parent company (AkzoNobel) reporting timelines that create a natural urgency.",
+            "decision": "Phoena indicated she would need to review any information internally before progressing — she asked for slides to 'go through it internally and see if any contact you if that's something we're interested in.' This signals she is not the sole decision-maker. She did not name any colleagues or a line manager. The AE should establish early in the meeting who else would be involved in evaluating and signing off on a tool like this, what the internal review process looks like, and whether budget has been allocated or would need to be requested."
+          },
+          "objections": [
+            {
+              "objection": "We manage most of it in-house so it's not something we're looking at getting outside support on at the moment.",
+              "response": "Harry handled this well by normalising it — he noted that 99% of teams he speaks with manage it in-house — and then used it as a springboard to ask how they do it. This kept Phoena talking rather than ending the call. The reframe to 'we don't rip out and replace, it sits alongside what you've built' later in the call was a reasonable response to this objection, though it wasn't directly linked back to her opening resistance. The AE should not assume this objection is resolved — it will likely resurface and needs a more substantive answer in the demo."
+            },
+            {
+              "objection": "We don't have a massive gap — our Excel report is quite a well-developed one and it does the job.",
+              "response": "Harry acknowledged this but gently challenged it with the line 'Excel is really good until it isn't,' which landed without pushback from Phoena. However, he did not probe deeper to uncover where the gaps actually are — for example, how long it takes to update, how confident they are in data accuracy, or what happens as supplier numbers grow. The objection was softened rather than fully addressed. The AE should go back into this in the meeting and ask specific questions to surface latent dissatisfaction."
+            },
+            {
+              "objection": "Could you send me over a couple of slides and I can go through it internally — I'll contact you if we're interested.",
+              "response": "This was a classic 'send me something' brush-off. Harry recognised it as such and pushed back effectively, framing the email as something that tends to get lost and proposing a 20-minute meeting instead. Phoena agreed without much resistance. The AE should be aware that Phoena's default instinct was to defer rather than engage directly — she will likely need internal validation before committing to anything, so the AE should focus on making it easy for Phoena to sell this internally."
+            }
+          ],
+          "recommended_approach": "Open by referencing the specific conversation Phoena had with Harry — she knows this is a follow-up, not a cold call, so establish continuity immediately. Acknowledge that she told Harry her Excel process is well-developed and doing the job, and frame the meeting as being about helping her stress-test that assumption rather than pitching a replacement. The angle that resonated on the call was 'sits alongside rather than replaces' — lead with that positioning and be explicit that Furthr is not asking them to dismantle anything they've built. Early in the meeting, ask Phoena directly who else she has looped in internally, since she flagged she'd be reviewing with her team — understanding the internal stakeholder map is critical before going deep on the demo. Probe the Excel pain harder than Harry did: ask how long it takes to update the supplier report each cycle, how they handle a supplier who submits incomplete or inconsistent data, and what the consequences would be of a reporting error. These questions are likely to surface the real friction that Phoena didn't volunteer. Given Dulux Decorator Centre is part of the AkzoNobel group, it is worth asking whether there are group-level sustainability reporting requirements or timelines coming down from the parent company that create pressure on their process — this could unlock a critical event that wasn't surfaced on the call. Do not spend the meeting demoing features. Use the first half to qualify the pain more rigorously, then tailor what you show to the supplier data management and reduction target tracking use case specifically, since that is the workflow Phoena described. End with a clear next step that involves the internal stakeholders she mentioned — push for a follow-up that includes whoever would need to sign off.",
+          "key_quotes": [
+            "We have an internal report — it's an Excel report, a quite a well developed one. So yeah, that kind of does the job on a quick overview and then supports with supplier conversations to refer back to that and see where they're at and they've got specific targets attached to that.",
+            "We don't have a massive gap.",
+            "Could you send me over just even if it's a couple of slides and I can go through it internally and see if any contact you if that's something we're interested in.",
+            "We have to map it, obviously, from a global perspective. So we've got that support. So we have carbon product data and we map that through reporting, and then we work with our suppliers to be mapping kind of upstream scopes."
+          ]
+        },
+        {
+          "id": "mppmjadyfifo47udapu",
+          "savedAt": "2026-05-28T15:04:34.402Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Trafford AND Stockport College Group",
+            "contactName": "Angela Payne",
+            "jobTitle": "Sustainability Manager",
+            "phone": "+447392851673",
+            "email": "angela.payne@tcg.ac.uk",
+            "linkedin": "https://linkedin.com/in/angela-payne-13340038"
+          },
+          "spiced": {
+            "situation": "Angela is the Sustainability Manager at Trafford and Stockport College Group. She joined the college six months ago and has personally built a Scope 1 and 2 carbon reporting setup in Excel. Data for Scope 1 and 2 is largely fed in from the finance team. For Scope 3, the college currently only captures travel data, which is derived from HR expense records. There is no dedicated carbon reporting tool in use — everything is manual and spreadsheet-based.",
+            "pain": "Angela's core pain is that Scope 3 reporting is essentially non-existent beyond travel expenses. She acknowledged 'we don't really do [Scope 3] yet' and described the current position as 'we need to think about that at some point — and that's as far as we've got.' Even Scope 1 and 2 are not where she wants them: she explicitly said 'I still wouldn't say that that was perfect.' The process is entirely manual, reliant on data from other teams (finance, HR), and Angela has had to build it herself having only been in post six months. The data collection burden and lack of a structured methodology for Scope 3 are the clearest operational pain points.",
+            "impact": "The operational impact is that Angela is carrying the entire sustainability reporting function manually, with no scalable infrastructure. Strategically, the college is behind on Scope 3 — a recognised gap she is aware of but has not yet addressed. She noted that Scope 3 reporting is currently a recommendation rather than a requirement for further education, which reduces immediate regulatory pressure but means there is reputational and compliance risk if requirements tighten. The lack of a clear Scope 3 strategy also limits the college's ability to set meaningful reduction targets or demonstrate sustainability progress to stakeholders.",
+            "critical_event": "No hard deadline or regulatory trigger was mentioned. Angela confirmed Scope 3 reporting is currently only a recommendation for further education, not a requirement. There is no stated budget cycle, board deadline, or external audit driving urgency. The AE should probe whether any internal sustainability commitments, funding conditions, or forthcoming reporting periods create a soft deadline. Urgency is self-generated at this stage rather than externally imposed.",
+            "decision": "Angela appears to be the primary point of contact and is clearly driving the sustainability agenda herself. No other stakeholders were named as part of a formal decision process. However, given that Scope 1 and 2 data comes from the finance team and travel data from HR, any tool adoption would likely require buy-in from those departments. Budget authority was not discussed. The AE should establish early in the meeting who else would need to be involved in a purchasing decision and whether there is an allocated budget for sustainability tools."
+          },
+          "objections": [
+            {
+              "objection": "Bad timing — Angela said 'it's really not a good time to be honest' at the start of the call and mentioned receiving a lot of unsolicited sales calls.",
+              "response": "Harry handled this well. He immediately offered to call back rather than push, then used a single-question pivot ('I could ask you one quick question now') to retain her attention without applying pressure. This was effective — she engaged and the conversation continued naturally."
+            },
+            {
+              "objection": "Volume of cold calls — Angela said 'I keep getting a lot of these random calls', signalling mild scepticism about the value of inbound sales outreach.",
+              "response": "Harry acknowledged this briefly but did not directly address the concern or differentiate Furthr from those other calls. The single-question technique redirected the conversation, but the underlying scepticism about cold calls was not fully neutralised. The AE should be aware Angela may arrive at the meeting with some residual guardedness and should work to establish credibility early."
+            }
+          ],
+          "recommended_approach": "Open the meeting by referencing the specific context Angela provided on the call — that she has been in post six months, built the Scope 1 and 2 process herself in Excel, and described Scope 3 as something the college knows it needs to address but has not yet properly started. This shows the AE has listened and avoids Angela having to repeat herself. Frame the meeting around Scope 3 as the primary opportunity, since that is where she expressed the clearest gap and the most openness. Avoid leading too heavily with technology — Angela is not yet at the stage of evaluating tools; she needs a credible partner who can help her understand what good Scope 3 reporting looks like for a further education college. The references Harry made to a college in Dudley and an international school are worth building on — if there are specific further education case studies or sector benchmarks, use them to establish relevance and credibility. On Scope 1 and 2, tread carefully — she said she is 'more comfortable' with it but acknowledged it is 'not perfect.' There may be an upsell opportunity here, but do not lead with it; let her raise it. The AE should probe: what sustainability commitments has the college made publicly or to funders? Are there any forthcoming reporting periods, inspections, or board reviews that would create a natural deadline? Who in finance and HR would need to be involved if a tool were adopted? What does budget look like for sustainability initiatives? Keep the tone consultative — Angela is clearly capable and has done a lot herself; she will respond better to a peer-level conversation than a product pitch.",
+          "key_quotes": [
+            "Scope one and two is relatively straightforward in terms of how we can gather our data for that. But scope three, we don't really do yet.",
+            "I still wouldn't say that that was perfect, but we're more comfortable with it. And scope three were like, yeah, we need to think about that at some point. And that's as far as we've got.",
+            "I've joined the college six months ago and I've just tried to set something up in Excel for that.",
+            "It's not even a requirement, it's a recommendation — it's just travel that's included at the moment, which basically comes down from our HR data, like expenses for travel. And that literally is all we've thought about."
+          ]
+        },
+        {
+          "id": "mppmlp2v38ta6o7nmb2",
+          "savedAt": "2026-05-28T15:06:26.742Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Pure Data Centres Group",
+            "contactName": "Karen Shi",
+            "jobTitle": "Senior Project Manager Sustainability",
+            "phone": "+447519581131",
+            "email": "karen.shi@puredc.com",
+            "linkedin": "https://linkedin.com/in/karenklshi"
+          },
+          "spiced": {
+            "situation": "Karen is a Senior Project Manager for Sustainability at Pure Data Centres Group. She is responsible for carbon reporting and works within a multi-platform environment — she described 'a combination of things' including 'stream live process to do data recording for order site and for the final report.' The data flows from site level through to a final report, and she is not the person directly inputting or collecting the data herself ('I would rather not directly get him through'). She acknowledged awareness of the broader market and competitor landscape, suggesting she is reasonably engaged with sustainability tech.",
+            "pain": "Karen's core pain is about data routing and aggregation — she wants raw sustainability data to flow automatically and accurately into the correct categories without manual intervention. She expressed this clearly: 'I generally want data to get through my head... is there any magical way I got a magical warn light that they don't get through directly to the right pigeonholes.' This suggests the current combination of platforms does not cleanly funnel data to where it needs to go, creating a management overhead. The data collection and preparation stage — getting information ready before it enters reporting tools — appears to be the weak link in her current setup.",
+            "impact": "Karen's framing is primarily operational and managerial. The burden appears to be on her to oversee data getting into the right place across multiple platforms, which creates cognitive load and inefficiency at the management level. She referenced wanting this resolved 'from our management perspective back to us,' suggesting this is not just a technical inconvenience but a recurring time drain that affects her ability to manage upwards and report cleanly. There is also an implicit risk of data inaccuracies if information is not routed correctly across platforms, though this was not explicitly stated.",
+            "critical_event": "No specific deadline, regulatory trigger, or budget cycle was mentioned during the call. Karen did not reference any upcoming reporting deadline, audit, or internal initiative that would create urgency. She was measured and unhurried in her approach, asking to read the materials first before making any decision. The AE should probe for any SBTi commitments, net zero target years, or internal sustainability reporting cycles that might create a natural deadline.",
+            "decision": "Karen has not indicated who else would be involved in a decision. She did not reference a manager, procurement process, or budget holder. Her language was largely personal ('I generally want,' 'from my own benefit'), which may suggest she has some influence but is unlikely to be the sole decision-maker. She was cautious about sharing platform details, which may indicate sensitivity around internal processes or procurement protocols. The AE should gently probe the decision-making structure — who else would need to be involved, whether there is a budget holder, and whether IT or procurement typically get involved in platform decisions."
+          },
+          "objections": [
+            {
+              "objection": "We already have platforms in place — a combination of tools handling data recording and final reporting.",
+              "response": "Harry handled this reasonably well by pivoting to the gap between collection and reporting, positioning Furthr as solving a different problem to what she already has rather than replacing it. However, he did not press deeply enough to understand what those platforms actually do or where the gaps genuinely are. Karen deflected when asked about her data preparation process, so the true extent of the gap in her current stack remains unclear."
+            },
+            {
+              "objection": "Karen preferred to read materials before committing to a meeting, and was reluctant to have a live conversation about specifics.",
+              "response": "Harry managed to convert this into a placeholder meeting on 10th June by framing it as a 'follow-up chat' with a colleague to answer questions after she'd reviewed the materials. However, the meeting is soft — Karen described it as a 'placeholder' and said she'd 'come back if problems,' which signals low commitment. The AE should be aware this may need re-confirmation and a stronger reason for Karen to attend beyond just Q&A."
+            },
+            {
+              "objection": "Karen was guarded about sharing details of her internal platforms and data processes, declining to go into specifics.",
+              "response": "Harry acknowledged this gracefully ('still your secret sauce') and did not push further. This was the right call in tone, but it means the AE enters the meeting with limited visibility into the actual tech stack and data workflow. The AE will need to rebuild trust and create a safe environment where Karen feels comfortable sharing more detail."
+            }
+          ],
+          "recommended_approach": "Open by referencing what Karen said she wants: data flowing automatically into the right categories without manual intervention. Use her exact framing — 'the right pigeonholes' — to show you have listened and understood her core frustration. Do not open with a product pitch or a capabilities walkthrough. Karen is analytical and self-directed; she has asked to read first and will have done so. Start by asking what resonated in the materials and what questions came up, then use those answers to anchor the demo or discussion. The key angle to push is the gap between data collection and reporting tools — Karen herself acknowledged this is relevant and Harry's framing landed. Probe what is currently happening in that middle layer: who is responsible for preparing the data before it enters the reporting platforms, how long that takes, and where errors or delays tend to occur. This will surface the operational pain more concretely. Ask about decision-making structure early — Karen spoke entirely in the first person and has not mentioned a team or manager. Understand whether she is a recommender or a decision-maker, and who else would need to be involved before any next step. Probe for critical events: ask whether Pure Data Centres Group has committed to SBTi targets or internal net zero milestones, and whether there are annual reporting cycles that create pressure points. These may unlock urgency that was absent on the cold call. Keep the tone consultative and patient — Karen is not in a hurry and will disengage if she feels sold to. Frame any demo around her stated vision of a frictionless, automated data routing system rather than leading with features.",
+          "key_quotes": [
+            "I generally want a data get through my head. Is there any magical way I got a magical warn light that they don't get through directly to the right pigeonholes and that would be perfect.",
+            "We have some stream live process to do data recording for order site and for the final report. It is not just one platform. As a combination of things.",
+            "I need to have a read of your information first before I make any decision.",
+            "You know the market better than my father and you know what your competitor is in general."
+          ]
+        },
+        {
+          "id": "mppmos3lr9i8ttzfszj",
+          "savedAt": "2026-05-28T15:08:50.654Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Evg",
+            "contactName": "Francesca Bille",
+            "jobTitle": "Sustainability Manager",
+            "phone": "+447530027811",
+            "email": "francesca@evgltd.co.uk",
+            "linkedin": "https://linkedin.com/in/francesca-bille"
+          },
+          "spiced": {
+            "situation": "Francesca is the Sustainability Manager at Evg, a farming-sector business. She currently uses a specialist end-to-end carbon footprinting and data management tool that is sector-specific to farming. She describes herself as 'pretty happy with it' and 'pretty embedded with it'. For Scope 3, she does not use that tool — her current process is manual, supplemented by an external consultancy she brings in for support. She has submitted SBTi targets covering both FLAG and non-FLAG Scope 3 emissions, indicating a mature sustainability programme with formal external commitments in place.",
+            "pain": "Francesca's Scope 3 process is explicitly manual and relies on piecemeal external consultancy support rather than a structured, scalable data collection solution. She is not using her primary tool for Scope 3 at all, meaning there is a clear gap between her existing tooling and what she actually needs to deliver on her SBTi commitments. She did not express frustration in strong terms, but she confirmed the manual approach and acknowledged the priority of Scope 3 without defending the current process as sufficient.",
+            "impact": "Francesca has submitted SBTi targets for Scope 3 across both FLAG and non-FLAG categories. A manual, consultancy-dependent process creates operational risk in terms of data accuracy, consistency, and the ability to report with sufficient depth and granularity to meet those targets. As SBTi obligations require ongoing tracking and disclosure, the current approach is unlikely to scale with the complexity of her supply chain reporting requirements, particularly given the farming sector's data collection challenges. There is reputational and compliance risk if Scope 3 reporting falls short of committed targets.",
+            "critical_event": "Francesca has already submitted SBTi targets for Scope 3 — both FLAG and non-FLAG. This creates an ongoing and live reporting obligation rather than a future one. No specific internal deadline, budget cycle, or review date was mentioned on the call. The AE should probe for when the next SBTi progress report or internal sustainability review is due, as this is the most likely near-term trigger for urgency.",
+            "decision": "No decision-making process was discussed on the call. Francesca engaged on her own terms and booked the meeting herself, suggesting she has at least some autonomy in this space. It is unknown whether she has budget authority, whether procurement or a line manager would be involved, or whether there are other stakeholders. The AE should establish this early in the meeting — particularly who else would need to be involved given that she already has an existing consultancy relationship that may need to be displaced or integrated."
+          },
+          "objections": [
+            {
+              "objection": "She said she is 'pretty happy' with her existing farming-specific tool and is 'not looking to change'.",
+              "response": "The SDR handled this well by pivoting quickly — acknowledging her satisfaction with the tool but probing specifically on Scope 3 rather than trying to replace what she already has. This reframe was effective and opened the door to a genuine gap. The AE should be aware that Furthr is not positioned as a replacement for her primary tool, and should not attempt to be."
+            },
+            {
+              "objection": "She asked whether Furthr is sector agnostic, implying concern that a non-farming-specific tool might not meet her needs given how specialist her existing setup is.",
+              "response": "The SDR confirmed it is sector agnostic and mentioned different versions exist. However, this was handled briefly and somewhat vaguely. The AE should address this more substantively — specifically how Furthr can accommodate the nuances of agricultural supply chains and farming-sector Scope 3 data, rather than just asserting it can."
+            },
+            {
+              "objection": "She initially asked for information to be sent over rather than committing to a meeting — a classic deflection.",
+              "response": "The SDR handled this correctly, acknowledging the request but steering towards a meeting with Henry as the better next step. She accepted the meeting without significant resistance, so this was resolved effectively."
+            }
+          ],
+          "recommended_approach": "Open by anchoring the conversation in her SBTi commitments specifically — she has submitted both FLAG and non-FLAG Scope 3 targets, which is a significant and relatively advanced position. Ask her what her current reporting cadence looks like against those targets and where the process feels most fragile or time-consuming right now. This will surface whether the manual Scope 3 process is creating real pressure. Do not attempt to position Furthr as a replacement for her farming-specific footprinting tool — she is embedded in it and happy with it. The entire conversation should be framed around filling the Scope 3 gap that her existing tool does not cover. Probe the consultancy relationship — understand what they do for her, how often she engages them, and what the limitations are. This helps frame Furthr not as a threat to a relationship she values, but as a more scalable and structured alternative that reduces dependence on ad hoc external support. On the sector agnostic concern, come prepared with specific examples of how Furthr handles agricultural or food supply chain Scope 3 data — she will push on this. A vague reassurance will not land. Finally, establish the decision-making process early: who else would need to be involved, whether there is a budget already allocated for Scope 3 tooling or consultancy, and when she would ideally want something in place relative to her next SBTi reporting milestone.",
+          "key_quotes": [
+            "We don't use it for scope 3. It's a bit manual but I also have a consultancy I use for helping me.",
+            "We've submitted SBTi targets for scope three, both FLAG and non-FLAG. So it is a priority.",
+            "Is it all sector agnostic? Do they cover everyone always?",
+            "We have a tool that we use which is kind of end-to-end footprinting and data management... specifically for farming. So we're like pretty happy with it, pretty embedded with it. So I'm not looking into change."
+          ]
+        },
+        {
+          "id": "mppmrq61wjipufquxt",
+          "savedAt": "2026-05-28T15:11:08.107Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Classic Fine Foods",
+            "contactName": "Sindhura Satishkumar",
+            "jobTitle": "Sustainability Manager",
+            "phone": "+447405791624",
+            "email": "sindhura.satishkumar@classicfinefoods.co.uk",
+            "linkedin": "https://linkedin.com/in/sindhurasatishkumar30"
+          },
+          "spiced": {
+            "situation": "Sindhura is the Sustainability Manager for Classic Fine Foods (CFF) UK, responsible for all sustainability compliance across the UK entity. CFF holds B Corp accreditation and a BCOP assessment. On scope three and broader carbon reporting, the heavy lifting is currently done by their parent company, who provides both a tool ('Nimble') and consultants. Sindhura describes CFF UK as still in early stages — they are currently assessing their baseline product carbon footprint and have not yet planned their supplier engagement piece. She owns everything sustainability-related for the UK business but is working within a framework set by the parent company.",
+            "pain": "No acute, clearly articulated pain was surfaced in this call. Sindhura was candid that scope three data collection — the angle Harry opened with — is not a current problem because the parent company is handling it. The only active workstream she identified is the B Corp recertification, which she described as 'a bigger journey or ambition already.' The gap assessment for B Corp is currently underway and priorities are still being assigned. The implicit challenge is that she is navigating a complex, multi-stakeholder sustainability agenda with significant dependency on the parent company, but she did not express frustration or describe anything as broken.",
+            "impact": "No direct impact statements were made. Sindhura did not describe any negative consequences of her current situation — no missed deadlines, no reporting failures, no reputational risk mentioned. The B Corp recertification is clearly of high strategic importance ('the only thing we are going to be working towards'), suggesting that failing to achieve or maintain it would carry reputational and commercial weight, but this was not explicitly articulated. The AE will need to draw this out in the meeting.",
+            "critical_event": "No hard deadline was stated for the B Corp recertification. Sindhura confirmed it is their primary focus for this year and next, and that a gap assessment is currently in progress with priorities being assigned. There is a degree of live momentum here — the gap assessment being active means the recertification process has begun — but no specific submission date, audit date, or regulatory deadline was mentioned. The AE should make it a priority to establish the actual B Corp recertification timeline in the meeting.",
+            "decision": "Decision-making structure is unclear. Sindhura owns all sustainability compliance for CFF UK and appears to be the primary day-to-day decision-maker on sustainability matters. However, she repeatedly referenced the parent company as the body providing resource, tools, and strategic direction — particularly on scope three. It is not clear whether the parent company would need to approve or fund any engagement with Furthr, or whether Sindhura has autonomous budget for the B Corp workstream. No mention of procurement, budget cycles, or additional stakeholders was made. The AE must probe who else is involved in decisions, whether the parent company has any say, and what budget, if any, sits with Sindhura for this."
+          },
+          "objections": [
+            {
+              "objection": "They already have a parent company providing the Nimble tool and consultants for scope three, so there is no current need on that front.",
+              "response": "Harry acknowledged this cleanly and pivoted away from the scope three angle without pushing. He then introduced the consultative and B Corp side of Furthr's offering, which was the right move. However, the pivot was quite broad and product-led rather than need-led. He did not ask Sindhura what her experience of working with those parent company consultants has been, or whether there are any gaps in what they cover — particularly around the UK-specific B Corp requirements."
+            },
+            {
+              "objection": "She resisted committing to a specific follow-up meeting, preferring to read the information first and then get in touch if needed — a classic soft brush-off.",
+              "response": "Harry handled this reasonably well. He was honest that in his experience people read emails and then both parties lose track, and used this to justify booking a placeholder. Sindhura accepted the logic and agreed to the 10th of June at 2:30pm. The handling was decent but the meeting was framed as a placeholder rather than a confirmed, valuable meeting — the AE should reframe it as a proper discovery conversation before it takes place."
+            },
+            {
+              "objection": "No PCI (Purchase/Commercial Intent) for scope three right now — they have different plans and are focused on the parent company's roadmap.",
+              "response": "Harry accepted this without probing further. He did not explore what 'different plans' means, what the timeline looks like for when scope three might become a priority, or whether there is any aspect of the scope three data collection that sits outside the parent company's remit. This is a gap — there may be a future opportunity here that was left unexplored."
+            }
+          ],
+          "recommended_approach": "Open by acknowledging what Sindhura told the SDR — that B Corp recertification is the single biggest priority for CFF UK right now — and make it clear that is exactly what this conversation is about. Do not re-open the scope three conversation; she has closed that door and pushing on it will erode trust. Instead, lead with Furthr's B Corp credentials immediately and make it concrete: the SDR mentioned that Furthr ran the B Corp certification for his previous employer, so the AE should come prepared with a specific client case study or example that mirrors CFF's profile (food sector, existing B Corp holder going through recertification rather than first-time certification if possible). The gap assessment being live is a real hook — ask her what the gap assessment has revealed so far, which impact areas are coming up as priorities, and where she feels least confident. This will surface the actual pain that was not articulated on the cold call. Probe carefully on the parent company relationship: understand whether they are involved in or supportive of the B Corp recertification, whether their consultants are helping with it, and crucially whether Sindhura has any independent budget or whether any engagement would need parent company sign-off. This is a potential blocker that needs to be understood early. Also explore the recertification timeline — B Corp recertifications have a specific submission window and assessment process, so establishing where she is in that cycle will create a natural critical event. Finally, be transparent about what Furthr can specifically do for B Corp — the SDR's pitch was quite vague ('we help loads of businesses'). The AE should arrive with a clear, specific articulation of the B Corp support offering so Sindhura can assess genuine fit.",
+          "key_quotes": [
+            "We are currently kind enough having to assess our baseline. But as you know, we have partnered with a parent company. So we have a nimble tool and consultants already available. So. Probably it's not the case at the minute.",
+            "That's the only thing that we are going to be working towards because I think that's a bigger journey or ambition already.",
+            "I think we're still doing a gap assessment at the moment and allocating priorities or actions to everybody.",
+            "I always say everything for CSF UK like as in whole of the sustainability aspect. We are also accredited B Corp and we hold BCOP assessment."
+          ]
+        },
+        {
+          "id": "mppmu8bgpm44rt8cbl",
+          "savedAt": "2026-05-28T15:13:04.958Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Findel",
+            "contactName": "Chris Leonard",
+            "jobTitle": "ESG Manager",
+            "phone": "+447845316671",
+            "email": "chris.leonard@findel.co.uk",
+            "linkedin": "https://linkedin.com/in/chris-leonard-53a41939"
+          },
+          "spiced": {
+            "situation": "Chris is the ESG Manager at Findel, an education supplies business that has recently become part of a larger group called Manitan (a multi-billion dollar turnover organisation). Findel currently uses Plan A for Scope 3 calculation but is in the process of migrating away from it. Manitan has made a six-figure investment in a new platform specifically designed to evaluate product impact scores across more than one million products, with a focus on Scope 3 reporting around products and distribution. Chris has already completed the 'business emissions' side of Scope 3 — commuting, flights, events, hotels — and the primary outstanding challenge is the product-level emissions data. The new platform is intended to serve both customer-facing reporting and internal organisational reporting.",
+            "pain": "The pains were not heavily expressed by Chris — he is relatively well-resourced compared to many prospects in this space. However, two genuine gaps emerged during the call. First, tool adoption: as Findel integrates into the Manitan group structure and rolls out a sophisticated new emissions platform, there is an implicit risk that colleagues who are less ESG-literate will struggle to engage with or use it effectively. Chris did not explicitly flag this as a problem, but he acknowledged 'we're not out of the woods yet' and that the rollout is still in progress. Second, post-reporting action: Chris acknowledged the new platform does not provide offset plans, only 'ideas for how to reduce your carbon,' and that carbon reduction plans are already in place — but the challenge of identifying and partnering with the right offset or reduction initiatives at scale was left open. Harry introduced both of these angles and Chris did not push back on them.",
+            "impact": "The operational impact of poor tool adoption across a large, newly restructured group could slow down Findel's ability to meet its Scope 3 reporting obligations and undermine the value of Manitan's significant six-figure investment in the new platform. On the strategic side, Findel is now accountable to a much larger group with serious ESG investment behind it — getting reporting wrong, or failing to act on the data once it is collected, carries reputational and compliance risk at group level, not just company level. The product impact score project — evaluating emissions across over one million products by end of year — is a high-visibility initiative, meaning any gaps in the process will be conspicuous.",
+            "critical_event": "Chris indicated that Findel expects to have its emission report evaluated across over one million products 'by the end of the year.' This creates a loose but real deadline for having the right tools, processes, and support in place before that milestone. The platform migration away from Plan A is also actively underway, meaning the window to influence how things are set up is now, not later. No regulatory deadline or budget cycle was explicitly mentioned.",
+            "decision": "Chris is the ESG Manager and appears to be the primary practitioner driving this workstream. However, the broader ESG investment and platform decisions are being made at Manitan group level — he referenced 'a big team of people behind it' and the six-figure investment as a group-level decision. This suggests Chris may not have unilateral sign-off on new tools or partnerships, and any proposal may need to be compatible with or complementary to what the Manitan group has already invested in. No other named stakeholders were mentioned. Budget authority is unclear — he did not signal any budget availability, and the conversation was exploratory rather than commercial."
+          },
+          "objections": [
+            {
+              "objection": "Findel already has Scope 3 covered — they use Plan A currently and are migrating to a new platform with significant group-level investment behind it, covering both product impact scores and business emissions.",
+              "response": "Harry handled this reasonably well. Rather than pushing back or overselling, he acknowledged the strength of their position ('from what you guys have got it seems like in terms of the collection and the reporting seems like you're very much covered') and pivoted to two specific complementary angles — adoption support at the start of the process, and offset/reduction partnerships at the end. This was a credible reframe. However, Harry did not probe deeply enough into whether the new platform is fully live or still being implemented, which would have strengthened the case for engaging now. The pivot was logical but slightly rushed."
+            },
+            {
+              "objection": "Chris receives a lot of these calls and finds it difficult to distinguish between vendors — 'it's hard to sort of see the wood for the trees, we get loads of these off each week.'",
+              "response": "Harry acknowledged this but did not address it directly or differentiate Furthr in any meaningful way at this point. He moved quickly to booking the meeting rather than giving Chris a specific reason why Furthr is worth his time over the others. This was left unaddressed and is a risk going into the AE meeting — Chris is likely to arrive sceptical and will need a clear, differentiated value proposition early on."
+            }
+          ],
+          "recommended_approach": "Open by acknowledging upfront that Chris is well set-up compared to most ESG Managers you speak to, and that you are not here to replace what Manitan has invested in. This will build credibility immediately and mirrors what Harry established on the call. Frame the conversation around the two gaps Harry identified: (1) adoption and ESG literacy across the wider Findel/Manitan team as the new platform rolls out, and (2) what happens after the data is collected — specifically, how Findel will act on emissions insights across a product catalogue of over one million items. Ask Chris directly how confident he is that the wider team will engage with the new platform effectively, and whether there is a plan for what comes after the reporting — who owns the reduction actions and how partnerships or offsets are being evaluated. Probe the group structure more carefully: find out how much autonomy Chris has at Findel level versus what is dictated from Manitan, and who else would need to be involved if there were something worth pursuing. Given he flagged 'we're not out of the woods yet,' there is an opening to explore where the friction points in the current transition actually are — do not assume the situation is as clean as it sounds. Come prepared with a specific example of how Furthr has supported a business going through a similar group restructure or platform migration, as Chris will need a concrete reason to engage beyond this call. Keep to the agreed 30-minute limit — he was explicit about this and running over will damage trust immediately.",
+          "key_quotes": [
+            "We're not out the woods yet. But we're obviously invested a lot together. And many times I've got a big team of people behind it.",
+            "They've literally just invested a hell of a lot of money. Like six-figure money into the bin system software to do that. Yeah, there's many time businesses over a billion dollar turnover.",
+            "We'll be evaluating our emission report on basically over a million products by the end of the year.",
+            "It's hard to sort of see the wood for the trees, we get loads of these off each week, but certainly if there's like a really, really great solution, then obviously we're always happy to have a look."
+          ]
+        },
+        {
+          "id": "mppmvh0luvwgc3iyvtn",
+          "savedAt": "2026-05-28T15:14:02.286Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Transport for London",
+            "contactName": "Simon Chung",
+            "jobTitle": "Head of Engineering Function - Infrastructure, Integration & Sustainability",
+            "phone": "+447738285728",
+            "email": "simon.chung@tube.tfl.gov.uk",
+            "linkedin": "https://linkedin.com/in/simon-chung-18259832"
+          },
+          "spiced": {
+            "situation": "Simon Chung is Head of Engineering covering Infrastructure, Integration & Sustainability at Transport for London. TfL is actively working towards net zero targets and has significant activity ongoing in the carbon and sustainability space. Crucially, Simon confirmed they are not currently using any dedicated platform for carbon reporting or sustainability planning — 'I don't think we're using any particular platform as far as I'm aware.' The team working directly on this is separate from Simon; he positioned himself as a senior stakeholder rather than the day-to-day owner of the sustainability work. This is a re-engaged prospect — initial contact was made in mid-March 2026, with Simon asking for a callback in late April or early May. An email sent on 16th March never reached him due to an incorrect email address (was going to simon.tfl.gov.uk rather than simon.chung@tube.tfl.gov.uk).",
+            "pain": "No specific, deeply articulated pain points were surfaced in this call — the conversation remained relatively high-level. Simon did not express frustration with a broken process or a specific failure. The closest signal to pain is that TfL is trying to meet net zero targets and there is 'quite a lot of activity going on in that space,' implying complexity and resource pressure without a clear system in place to manage it. The absence of a platform is a structural gap rather than an expressed pain. The AE will need to uncover the real pain in the discovery meeting — this call did not get there.",
+            "impact": "Not explicitly discussed. Simon acknowledged that efficiency gains would be valuable — 'if there are things that we can make ourselves more efficient, then of course that's always useful to hear' — but no specific operational, financial, or reputational consequences were explored. The strategic implication is that TfL, as a major public body, will face growing regulatory and public scrutiny around its net zero commitments, particularly around Scope 3 emissions. Without a platform, reporting is likely manual and inconsistent, but this was not confirmed. The AE must probe what the cost of inaction looks like — missed targets, reputational risk, or inefficient internal resource allocation.",
+            "critical_event": "Simon mentioned that TfL is currently 'in the process of planning objectives and what we're going to do this year' — this is a live planning cycle happening in the coming weeks as of early May 2026. This is a genuine time-sensitive hook: Furthr has an opportunity to influence how TfL structures its sustainability approach for the year ahead, rather than retrofitting into an already-defined plan. This is the most important urgency lever available and the AE should lead with it. No regulatory deadlines or budget cycle end-dates were specifically mentioned.",
+            "decision": "Simon is not the primary decision-maker for this work day-to-day. He said 'it's more important that they appear at it rather than myself because they're working on this side of it,' referring to colleagues he needs to consult before confirming attendance. He intends to involve his Head of Environmental Sustainability (mentioned in the original March call) and others working on the sustainability programme. The meeting has been tentatively booked for 13th May at 4:30pm but Simon made clear this needs to be ratified once he has spoken to the wider team, who may propose different slots. No budget, procurement process, or formal sign-off structure was discussed."
+          },
+          "objections": [
+            {
+              "objection": "Simon was waiting on an email that never arrived from the initial March call, which created a trust gap and a delayed first impression.",
+              "response": "The SDR identified the email address error during the call and resent to the correct address (simon.chung@tube.tfl.gov.uk) in real time, confirming receipt before the call ended. Handled adequately in the moment, though it is worth acknowledging briefly at the start of the AE meeting to close the loop cleanly."
+            },
+            {
+              "objection": "Simon signalled low personal ownership of the meeting — 'it's more important that they appear at it rather than myself' — suggesting he may not attend or may send junior members without decision-making authority.",
+              "response": "The SDR did not push back on this or reinforce Simon's value in the room. This was left unaddressed. The AE should proactively engage Simon before the meeting to reframe his role as a strategic sponsor and ensure the right people are confirmed as attendees in advance."
+            },
+            {
+              "objection": "Simon showed no urgency or strong motivation — his language was polite but non-committal throughout ('sure, sure', 'it might be', 'worthwhile having a session').",
+              "response": "The SDR did not attempt to deepen engagement or qualify the opportunity further. The meeting was booked on a thin foundation of curiosity rather than clear business need. The AE must do the heavy lifting on discovery to convert interest into intent."
+            }
+          ],
+          "recommended_approach": "Open by acknowledging the email situation briefly — confirm they have now received the materials and use it as a moment to reset and make a strong first impression. Do not dwell on it. Immediately anchor the conversation to Simon's planning cycle comment: 'You mentioned you're mid-way through planning objectives for the year — we want to make sure this session is genuinely useful to that process, not just a show-and-tell.' This frames Furthr as a strategic input rather than a vendor pitch. Before going into any demo or overview, spend the first third of the meeting on discovery. The SDR did not uncover real pain — the AE needs to establish what TfL's Scope 3 reporting actually looks like today: who owns it, how data is being collected, what gets reported, to whom, and against what timeline. Specifically probe what 'quite a lot of activity' means in practice — is it headcount, manual processes, inconsistent data sources? Ask what success looks like for TfL's net zero commitments and what would make hitting those targets harder. Given Simon said no platform is in use, the AE should explore how reporting is currently being done (spreadsheets, consultants, internal builds) and what the cost of that approach is — in time, accuracy, and confidence in the numbers. Prepare a relevant case study showing work with a comparable large infrastructure or public sector organisation if available. Given Simon may not attend or may send others, the AE should confirm attendees at least 48 hours before — call or email Simon directly — and ensure the Head of Environmental Sustainability is in the room. If Simon does not attend, open the meeting by asking the attendees what Simon has briefed them on so expectations are set. Do not lead with product features. Lead with TfL's situation, reflect it back, and let them confirm the gap before positioning Furthr as the solution.",
+          "key_quotes": [
+            "I think it's a new area so we are always looking at opportunities with like-minded people and even shared experience and understanding what capable we are. I think that's always useful to have.",
+            "No, I don't think we're using any particular platform as far as I'm aware.",
+            "We're in the process of actually planning objectives and what we're going to do this year and so forth. So it's a good time.",
+            "It's more important that they appear at it rather than myself because they're working on this side of it."
+          ]
+        },
+        {
+          "id": "mppmvm0jnx7g4thywha",
+          "savedAt": "2026-05-28T15:14:09.370Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Unison",
+            "contactName": "Wiebke Flach",
+            "jobTitle": "Sustainability Manager",
+            "phone": "+447951994304",
+            "email": "w.flach@unison.co.uk",
+            "linkedin": "https://linkedin.com/in/wiebke-flach"
+          },
+          "spiced": {
+            "situation": "Wiebke Flach is the Sustainability Manager at Unison. She is responsible for carbon reporting across scope 1, 2, and 3. Currently, she manages data collection manually, relying on spend data and directly contacting suppliers to request emissions information. There is no mention of any dedicated software or platform in use — the process appears entirely manual.",
+            "pain": "Wiebke's core problem is inadequate data collection, not reporting. She explicitly stated: 'I do need to increase our data collection before I can increase the reporting.' The current process of contacting suppliers individually to gather spend data is slow and labour-intensive. She confirmed this is exactly her situation when Harry described it: 'Exactly.' The reporting side is not a current priority — she has no compliance requirements driving it.",
+            "impact": "Because data collection is incomplete and manual, Wiebke cannot progress to meaningful carbon reporting. This creates a bottleneck: the reporting capability is blocked upstream by poor data quality and collection processes. While she did not quantify financial cost or name specific strategic consequences, the implication is that Unison cannot scale its sustainability reporting until the data infrastructure is in place. The operational burden of manually chasing suppliers is absorbing time and resource without producing reliable output.",
+            "critical_event": "No deadlines, regulatory triggers, or budget cycles were mentioned during the call. Wiebke noted she has 'no compliance requirements' at present, which suggests there is no immediate external pressure forcing action. There is no confirmed critical event. The AE should probe for any internal targets, board-level sustainability commitments, or anticipated regulatory changes that might create urgency.",
+            "decision": "No information was gathered on decision-making process, budget, or other stakeholders. It is unknown whether Wiebke has sign-off authority, whether procurement or finance are involved, or what budget is available. The AE should treat this as a significant gap and aim to map the decision landscape early in the meeting."
+          },
+          "objections": [
+            {
+              "objection": "Initial hesitation — Wiebke asked 'What company are you calling from?' suggesting unfamiliarity with Furthr and possible scepticism about the call.",
+              "response": "Harry handled this adequately by spelling out the company name and immediately pivoting to a relevant, role-specific opener about scope 1, 2, and 3 reporting challenges. This was enough to earn continued engagement."
+            },
+            {
+              "objection": "Wiebke clarified that reporting is not her priority: 'The reporting is I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.' This was a redirect, not a hard objection, but it signals that leading with reporting as the core value proposition would be a misstep.",
+              "response": "Harry adapted reasonably in the moment, acknowledging and mirroring her language: 'All about the data collection.' However, he did not probe further into what specifically makes data collection difficult, how many suppliers are involved, or what a better process would need to look like. The pivot was made but not explored."
+            }
+          ],
+          "recommended_approach": "Open the meeting by anchoring on Wiebke's own language: she said it is 'all about the data collection, none about the reporting.' Do not lead with reporting functionality or compliance angles — she has no compliance requirements and this will lose her immediately. Instead, open by asking her to describe the current supplier data collection process in more detail: how many suppliers she is contacting, how frequently, what format the data comes back in, and where it breaks down. The goal is to surface the operational pain more precisely before demoing anything. Once the pain is clear, frame Furthr's value around automating or streamlining the supplier engagement and data intake process specifically. If the platform has supplier-facing tools, automated data requests, or integrations that reduce manual chasing, lead with those. Avoid positioning Furthr as a reporting platform in this meeting — reframe it as a data infrastructure solution that happens to enable reporting when she is ready for it. The AE should also use this meeting to map the decision process: Wiebke's authority level is unknown, and no budget or timeline signals were given. Ask directly whether she is evaluating this alone or with others, and whether there is any internal target or milestone — such as a board review or sustainability strategy deadline — that would make solving this more urgent. Probe for any upcoming regulatory changes in her sector that could shift the compliance picture, even if nothing is pressing today.",
+          "key_quotes": [
+            "It is relevant. I do need to increase our data collection before I can increase the reporting though.",
+            "The reporting is I have no compliance requirements in that regard. So yeah, it's all about the data collection, none about the reporting.",
+            "Yes — [confirming she manages data collection by contacting suppliers directly and asking for information]",
+            "Exactly. [confirming the manual supplier contact process Harry described]"
+          ]
+        },
+        {
+          "id": "mppmyauf3q00146puky",
+          "savedAt": "2026-05-28T15:16:14.852Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "International Schools Partnership",
+            "contactName": "Jess Russell",
+            "jobTitle": "Group Sustainability Manager",
+            "phone": "+447483849315",
+            "email": "jrussell@ispschools.com",
+            "linkedin": "https://linkedin.com/in/jess-russell-7450b919"
+          },
+          "spiced": {
+            "situation": "This was a brief confirmation call only. No substantive discovery was conducted. Jess Russell holds the title of Group Sustainability Manager at International Schools Partnership, suggesting she has cross-group responsibility for sustainability initiatives across multiple schools. Beyond her role and company, no information about her current tools, processes, team structure, or existing sustainability reporting frameworks was gathered on this call.",
+            "pain": "No pain points were discussed on this call. The transcript contains no prospect-led commentary on challenges, frustrations, or gaps in their current approach. The AE is going into this meeting with zero discovery on pain. This is a significant gap that must be addressed in the opening of the AE meeting.",
+            "impact": "No impact was discussed or implied during this call. There is no data on the business, financial, operational, or reputational consequences of any pain. The AE cannot reference impact from this transcript and should treat this as a completely open discovery meeting.",
+            "critical_event": "No critical event, deadline, regulatory trigger, or budget cycle was mentioned at any point in this call. The only time-sensitive element was a scheduling correction — Jess confirmed Thursday the 14th rather than the 21st. No urgency factors were surfaced.",
+            "decision": "No information was gathered on the decision-making process, stakeholders, budget authority, or sign-off requirements. It is unknown whether Jess is the sole decision-maker, whether she requires sign-off from a CFO, Head of Operations, or school group leadership, or whether there is a formal procurement process. The AE must map this from scratch."
+          },
+          "objections": [
+            {
+              "objection": "No objections were raised during this call. The conversation was limited entirely to rescheduling the meeting date and lasted fewer than 30 seconds of substantive exchange.",
+              "response": null
+            }
+          ],
+          "recommended_approach": "The AE must treat this as a cold discovery meeting. There is no SPICED intelligence to build on beyond Jess's role and company. Open by acknowledging the context lightly — something like referencing that the initial outreach connected around sustainability challenges in an international schools environment — then move quickly into open discovery. Probe on what her remit as Group Sustainability Manager actually covers: is she responsible for reporting, supplier decisions, carbon reduction targets, ESG compliance, or all of the above? Ask what tools or processes her team currently uses to manage sustainability data across the school group, and where the biggest friction sits. Given the international and multi-site nature of International Schools Partnership, there is likely complexity around aggregating data across geographies and reporting to a central group level — this is a credible hypothesis to test, not a claim to assert. Do not pitch early. The SDR did not surface any pain, so the AE's first job is discovery, not demonstration. If Jess seems guarded or time-pressured, acknowledge the brevity of the original contact and position the meeting explicitly as a conversation to understand her world before talking about Furthr's capabilities. Map the decision process before the meeting ends — ask directly who else would be involved if this moved forward, and whether there are any budget cycles or internal reviews coming up that would set a natural timeline.",
+          "key_quotes": [
+            "Yeah, sorry, it was Thursday. The 14th is better.",
+            "Okay, no problem. Thanks so much."
+          ]
+        },
+        {
+          "id": "mppn03kpesz196in2r",
+          "savedAt": "2026-05-28T15:17:38.752Z",
+          "campaign": "Furthr",
+          "contact": {
+            "companyName": "Virgin",
+            "contactName": "Pedro Lafargue",
+            "jobTitle": "Global Carbon Sustainability Manager",
+            "phone": "+447442490845",
+            "email": "pedro.lafargue@virgin.com",
+            "linkedin": "https://linkedin.com/in/pedro-lafargue-m"
+          },
+          "spiced": {
+            "situation": "Pedro is the Global Carbon Sustainability Manager at Virgin, responsible for Scope 1, 2, and 3 emissions reporting across what is presumably a large, complex, multi-site organisation. Virgin is currently locked into long-term contracts with existing carbon accounting suppliers — Pedro confirmed they have 'companies that we're working with' and have had 'current accounting for a couple of years now.' He named Sweep (Svara) and Watershed as competitors they are aware of or already engaged with, indicating a sophisticated, enterprise-level buying environment. The existing setup covers both corporate reporting and product carbon footprinting based on his questions.",
+            "pain": "No acute pain was surfaced during this call. Pedro was largely satisfied with the current state — he said 'we have everything in place right now' and confirmed the existing solution has been running for a couple of years. There was no expressed frustration with current tools, processes, or suppliers. The SDR attempted to probe by asking whether there were gaps or limitations, but Pedro did not bite. The only implicit tension is that enterprise carbon reporting requirements are evolving (Scope 3 complexity, regulatory pressure) which was raised by the SDR but not validated by Pedro. This is an assumption, not a confirmed pain.",
+            "impact": "No specific business impact was articulated by Pedro. Because no clear pain was uncovered, there is no stated downstream consequence — financial, operational, or reputational — that Furthr can attach to. The AE will need to work to uncover what risks or inefficiencies might emerge as regulatory demands intensify or as their current contracts age. The competitive landscape Pedro referenced (Watershed, Sweep) suggests Virgin is not underinvested in this space, which raises the bar for Furthr to demonstrate differentiated value.",
+            "critical_event": "No immediate critical event or deadline was mentioned. Pedro explicitly stated that a new tender process is approximately three years away — 'to get to a new tender process would be in just the next three years, probably.' There is no regulatory deadline, internal budget cycle, or urgent trigger that was surfaced. This is a long-cycle, relationship-building opportunity at best. The AE must not position this as a near-term deal.",
+            "decision": "Pedro appears to be an informed evaluator rather than a sole decision-maker. He described a tender process for new contracts, implying procurement involvement, and his instinct was to keep Furthr on a 'list of potential products to scope' rather than escalate internally. He asked about contract length and whether the software is proprietary, suggesting he conducts technical due diligence. No other stakeholders were named. Sign-off authority is unclear — given the seniority of his role (Global) and the scale of Virgin, it is likely that any new contract would involve procurement, legal, and possibly a Chief Sustainability Officer or equivalent. The AE should map the wider buying committee in the meeting."
+          },
+          "objections": [
+            {
+              "objection": "'We have everything in place right now' — Pedro's opening position was that Virgin already has functioning carbon accounting software and supplier relationships in place.",
+              "response": "The SDR pushed back by asking Pedro to elaborate — 'Could you elaborate a bit more? So are you in a contract with a supplier?' — which was a reasonable move and did extract some useful detail about the existing setup. However, the SDR did not then attempt to find a wedge or probe for any dissatisfaction within the current arrangement. The objection was acknowledged and worked around, but not truly dismantled."
+            },
+            {
+              "objection": "'To get to a new tender process would be in just the next three years, probably' — Pedro made clear there is no realistic switching opportunity in the near term due to long-term contracts.",
+              "response": "The SDR accepted this gracefully and reframed as 'a long-term type discussion,' which was appropriate given the circumstances. However, this means the AE must be careful not to oversell urgency or push for a commercial conversation the prospect has already indicated is years away."
+            },
+            {
+              "objection": "'We have big companies also offering the same services like Svara or Watershed' — Pedro signalled that Furthr is entering a crowded shortlist and that established, well-resourced competitors are already known to Virgin.",
+              "response": "The SDR did not address this at all — simply said 'Yeah, of course, I'm with you' and moved on. This is a significant gap. The AE will need to establish clear differentiation from Watershed and Sweep, who are both well-funded, credible platforms. If Furthr cannot articulate a compelling reason to be chosen over them, this meeting risks being a courtesy call that goes nowhere."
+            },
+            {
+              "objection": "'I don't know if you have like a showcase document or just an introduction letter to the software. You can send me up to email. I'll just keep you in the list of potential products to scope' — Pedro's instinct was to deprioritise this to a passive email rather than a live meeting.",
+              "response": "The SDR handled this well by not accepting the email brush-off and directly asking for a 15-minute meeting with the founder Henry. Pedro agreed, which is the key win from this call. However, the meeting was only secured because Pedro was broadly open to it — not because any specific value was articulated that made it feel necessary."
+            }
+          ],
+          "recommended_approach": "Open by acknowledging the context honestly — this is a long-term play and Pedro knows it. Do not walk into this meeting pretending there is urgency. Instead, frame the conversation as: 'We know you're set for now, and we're not here to disrupt that. We want to earn a place on your radar so that when your contracts do come up, you know exactly what Furthr can do.' This builds credibility and avoids the awkwardness of pushing a commercial angle Pedro has already closed off. Early in the meeting, probe around the current supplier experience — not to criticise competitors, but to understand what Pedro values, what he would change if he could, and where the friction is in day-to-day reporting. Ask specifically about Scope 3 complexity: given Virgin's supply chain breadth (aviation, hospitality, telecoms, etc.), the challenge of third-party emissions data is likely significant. Try to find the gap between what their current tools deliver and what Pedro actually needs. On differentiation: before the meeting, the AE must prepare a sharp, specific answer to why Furthr beats Watershed and Sweep. Pedro named both — he is clearly informed. Generic 'we do everything' positioning (which Harry fell into on the call) will not cut through. Furthr's proprietary development capability, white-label flexibility, consultancy layer, and founder-led engagement should each be tested as potential angles. Ask Pedro which of those elements would be most relevant to how Virgin operates. Map the buying committee: ask Pedro directly who else would be involved in evaluating or approving a new solution when the time comes — whether that is a procurement lead, a CSO, or a board-level ESG sponsor. This is critical for a multi-year, enterprise-level deal. Finally, end the meeting with a clear next step that has a timeline attached — even if that next step is a quarterly check-in or a follow-up in 12 months. The risk is that this meeting ends warmly but drifts into silence. Pedro is polite and engaged, but he has no burning need. The AE needs to create a structured reason to stay in contact.",
+          "key_quotes": [
+            "\"To get to a new tender process would be in just the next three years, probably.\" — Pedro, confirming there is no near-term commercial opportunity and that Furthr is being filed as a long-term consideration.",
+            "\"We have big companies also offering the same services like Svara or Watershed — so it does become a bit tricky to move.\" — Pedro, signalling both competitor awareness and the switching cost barrier Furthr will need to overcome.",
+            "\"I'll just keep you in the list of potential products to scope.\" — Pedro's default position before the SDR pushed for a meeting; sets the tone for how he is thinking about Furthr at this stage.",
+            "\"We have current accounting for a couple of years now, so we've been doing this.\" — Pedro confirming the existing solution is established and embedded, not new or under review."
+          ]
+        }
+      ],
+      "conversationSummaries": [
+        {
+          "id": "490236008644",
+          "date": "1970-01-01",
+          "contactName": "Cara Johnson",
+          "jobTitle": "Risk and ESG Manager",
+          "email": "cara.johnson@hyperoptic.com",
+          "phone": "+447538303596",
+          "mobilephone": "+447538303596",
+          "linkedin": "https://linkedin.com/in/cara-johnson-63510435",
+          "company": "Hyperoptic",
+          "headcount": "",
+          "industry": "ISP",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:33",
+          "notes": "I reached out to Cara for a cold call, but she didn't have time to talk and indicated it probably wasn’t worth it. I asked if I could try again later, and she agreed. No further details were shared during the call.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "490304095434",
+          "date": "1970-01-01",
+          "contactName": "Jess Russell",
+          "jobTitle": "Group Sustainability Manager",
+          "email": "jrussell@ispschools.com",
+          "phone": "+447483849315",
+          "mobilephone": "+447483849315",
+          "linkedin": "https://linkedin.com/in/jess-russell-7450b919",
+          "company": "International Schools Partnership",
+          "headcount": "",
+          "industry": "Education",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "9:15",
+          "notes": "Spoke with Jess regarding sustainability reporting. They currently partner with Novisto for scopes one and two and are starting on scope three. Jess is interested in exploring our solutions for reporting and needs to ramp up their capacity. We scheduled a call with Henry for Thursday at 11:30 AM to discuss further.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "490304770266",
+          "date": "1970-01-01",
+          "contactName": "Matthew Dacey",
+          "jobTitle": "ESG and Contracts Manager",
+          "email": "matthew.dacey@thisisfresh.com",
+          "phone": "+447854583767",
+          "mobilephone": "+447854583767",
+          "linkedin": "https://linkedin.com/in/matthew-dacey-7479ba63",
+          "company": "This is Fresh",
+          "headcount": "",
+          "industry": "Rental Property",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:51",
+          "notes": "I reached Matthew on his personal phone. He initially asked if it was a sales call and I acknowledged it was a cold call. He didn't mind continuing the conversation but preferred I reach him on his work number next time. No further details were discussed during this call.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491334266079",
+          "date": "1970-01-01",
+          "contactName": "Jay Shah, SCR",
+          "jobTitle": "ESG Manager (Climate and Sustainability)",
+          "email": "jay.shah@pgim.com",
+          "phone": "+447435996857",
+          "mobilephone": "+447435996857",
+          "linkedin": "https://linkedin.com/in/jay-shah-climate",
+          "company": "Pgim",
+          "headcount": "",
+          "industry": "Asset Management",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "3:20",
+          "notes": "",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491334848726",
+          "date": "1970-01-01",
+          "contactName": "Petra Parizkova",
+          "jobTitle": "ESG Manager",
+          "email": "petra.parizkova@royalvoluntaryservice.org.uk",
+          "phone": "+447717411367",
+          "mobilephone": "+447717411367",
+          "linkedin": "https://linkedin.com/in/petraparizkova",
+          "company": "Royal Voluntary Service",
+          "headcount": "",
+          "industry": "Charity",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:58",
+          "notes": "Spoke with Petra about ESG and sustainability reporting, discussing challenges with gathering data and actionable insights. She expressed that this area seems too advanced for them right now and isn't a priority for investment. Petra mentioned she may remove her phone number from the tool I used to reach her. No next steps discussed.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491352721657",
+          "date": "1970-01-01",
+          "contactName": "Kathryn Broadburn",
+          "jobTitle": "Head of Technical and Sustainability",
+          "email": "kb@marisseafoods.co.uk",
+          "phone": "+447917885882",
+          "mobilephone": "+447917885882",
+          "linkedin": "https://linkedin.com/in/kathryn-broadburn-34763034",
+          "company": "Maris Seafoods",
+          "headcount": "",
+          "industry": "Food and Beverage",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:44",
+          "notes": "Spoke with Catherine who mentioned she doesn't handle carbon reporting directly, but has a sustainability team managing it. She advised that it’s not worth calling back. I asked if they use a platform for it, but she didn’t provide further details. No next steps were discussed.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491353078971",
+          "date": "1970-01-01",
+          "contactName": "Louise Skipton-Carter",
+          "jobTitle": "Sustainability Project Manager",
+          "email": "louise.skipton-carter@dulas.org.uk",
+          "phone": "+447905425075",
+          "mobilephone": "+447905425075",
+          "linkedin": "https://linkedin.com/in/louise-skipton-carter-7b224913",
+          "company": "Dulas",
+          "headcount": "",
+          "industry": "Energy",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:18",
+          "notes": "I spoke with Louise, who informed me she took redundancy about a month ago and is currently not working. She has paused her job search for the summer and plans to resume in the autumn. I suggested connecting on LinkedIn due to potential job opportunities in sustainability.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491353355508",
+          "date": "1970-01-01",
+          "contactName": "Julia Zlotkowska",
+          "jobTitle": "ESG Manager",
+          "email": "julia.zlotkowska@montagu.com",
+          "phone": "",
+          "mobilephone": "",
+          "linkedin": "https://linkedin.com/in/julia-zlotkowska",
+          "company": "Montagu",
+          "headcount": "",
+          "industry": "Financial Services",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:02",
+          "notes": "I spoke with Julie, who mentioned she's about to go into a meeting and that this is her personal number. She asked to be removed from our database. I informed her about the opt-out process using a tool called SURF and she found it helpful. However, she stated they already have a carbon reporting solution in place and it's not the right time to discuss further.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491353617598",
+          "date": "1970-01-01",
+          "contactName": "Ellen Goodwin PISEP",
+          "jobTitle": "Sustainability Manager",
+          "email": "ellen.goodwin@nnuh.nhs.uk",
+          "phone": "+",
+          "mobilephone": "+",
+          "linkedin": "https://linkedin.com/in/ellen-goodwin-pisep-4474406b",
+          "company": "Norfolk and Norwich University Hospitals NHS Foundation Trust",
+          "headcount": "",
+          "industry": "Health Care",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "1:17",
+          "notes": "I reached out to Ellen regarding carbon reporting, specifically Scope 3. She indicated the call was to her personal mobile and requested to be removed from the call list. I provided her details on how to opt-out and confirmed her email (ellen.goodwin@nnuh.nhs.uk). She asked me to send an email to determine if the information was relevant for her.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491472609503",
+          "date": "1970-01-01",
+          "contactName": "Jessica Marsh",
+          "jobTitle": "Sustainability Manager",
+          "email": "jessica.marsh@vernacare.com",
+          "phone": "+447402744344",
+          "mobilephone": "+447402744344",
+          "linkedin": "https://linkedin.com/in/jessica-marsh-10027b171",
+          "company": "Vernacare",
+          "headcount": "",
+          "industry": "Health Care",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "1:08",
+          "notes": "Spoke with Jessica who indicated it wasn't a good time for her to talk. She provided her work email (jessica.marsh@vernikare.com) and requested I email her so she can review and call if interested. She mentioned she would inform me if she’s not interested.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491488860380",
+          "date": "1970-01-01",
+          "contactName": "Aliola Balla CMgr MCMI",
+          "jobTitle": "ESG Manager",
+          "email": "aliola.balla@detectortesters.com",
+          "phone": "+447776752212",
+          "mobilephone": "+447776752212",
+          "linkedin": "https://linkedin.com/in/aliola-balla-cmgr-mcmi-30581189",
+          "company": "Detectortesters",
+          "headcount": "",
+          "industry": "Test and Measurement",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:03",
+          "notes": "Called as a cold call to speak with Kai, the ESG manager at Detector Testers. Kai stated they are already covered on their reporting needs and consulting. No further interest for our services at this time.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491503065333",
+          "date": "1970-01-01",
+          "contactName": "Michelle Chen",
+          "jobTitle": "ESG Manager, Treasury & Investment Office",
+          "email": "michelle.chen@mandgprudential.com",
+          "phone": "+447709175858",
+          "mobilephone": "+447709175858",
+          "linkedin": "https://linkedin.com/in/michelle-chunhui-chen",
+          "company": "M&G Investments",
+          "headcount": "",
+          "industry": "Financial Services",
+          "campaign": "Furthr",
+          "disposition": "No, Not Now",
+          "duration": "1:47",
+          "notes": "Called to discuss ESG reporting challenges with Michelle. She mentioned she’s currently on maternity leave and suggested to follow up in a few months. There was no immediate interest in a conversation right now due to her situation.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491503696085",
+          "date": "1970-01-01",
+          "contactName": "Jamie Bending",
+          "jobTitle": "Group Sustainability Manager",
+          "email": "jamie.bending@fsw.uk.com",
+          "phone": "+447743960564",
+          "mobilephone": "+447743960564",
+          "linkedin": "https://linkedin.com/in/jamie-bending",
+          "company": "Fsw UK",
+          "headcount": "",
+          "industry": "Wholesale",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:07",
+          "notes": "Called Jamie during a cold call to discuss sustainability carbon reporting. Jamie mentioned they are currently using a system called Greenlee for their needs and did not express interest in a conversation.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491532569786",
+          "date": "1970-01-01",
+          "contactName": "Alina Benyaminova",
+          "jobTitle": "ESG Senior Manager",
+          "email": "alina.benyaminova@ihstowers.com",
+          "phone": "+447768221152",
+          "mobilephone": "+447768221152",
+          "linkedin": "https://linkedin.com/in/alina-benyaminova-b7268998",
+          "company": "IHS Towers",
+          "headcount": "",
+          "industry": "Venture Capital",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "0:21",
+          "notes": "I reached a prospect named Leader, but they mentioned it's not a good time to talk. They asked me to call back on Friday.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491658940663",
+          "date": "1970-01-01",
+          "contactName": "Mike Jones",
+          "jobTitle": "Technical & Sustainability Manager",
+          "email": "mike.jones@momentuminstore.com",
+          "phone": "+447957175416",
+          "mobilephone": "+447957175416",
+          "linkedin": "https://linkedin.com/in/mike-jones-762a05101",
+          "company": "Momentum Instore",
+          "headcount": "",
+          "industry": "Marketing",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "0:29",
+          "notes": "Called Mike, who was busy and unable to talk. He suggested I call back later after 4 PM when he’ll be in the car. No objections were mentioned, but he was in the middle of something. Next step is to follow up with him later today.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491664839917",
+          "date": "1970-01-01",
+          "contactName": "Nic Lawrence",
+          "jobTitle": "Sustainability Operations Manager",
+          "email": "niclawrence@paragon-cc.co.uk",
+          "phone": "+447730281226",
+          "mobilephone": "+447730281226",
+          "linkedin": "https://linkedin.com/in/nic-lawrence-061684b6",
+          "company": "Paragon UK",
+          "headcount": "",
+          "industry": "Advertising Services",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "0:58",
+          "notes": "Had a brief conversation with Nick, catching up after our last call. He confirmed he received my email regarding the reporting tool investment but didn't have thoughts or feedback at this time. I noted to follow up with him later in the summer.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491665092835",
+          "date": "1970-01-01",
+          "contactName": "Freddie Bowlby",
+          "jobTitle": "Sustainability Manager",
+          "email": "fbowlby@pennon-group.co.uk",
+          "phone": "+447712423300",
+          "mobilephone": "+447712423300",
+          "linkedin": "https://linkedin.com/in/freddie-bowlby-7471a2187",
+          "company": "Pennon Group",
+          "headcount": "",
+          "industry": "Water",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:20",
+          "notes": "I made a cold call to Freddie, but he declined to engage and thanked me before ending the call. No further information was exchanged or next steps discussed.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491671991513",
+          "date": "1970-01-01",
+          "contactName": "Nicola Pichel-Juan",
+          "jobTitle": "Sustainability Manager",
+          "email": "nicola.pichel-juan@satra.com",
+          "phone": "+447812246791",
+          "mobilephone": "+447812246791",
+          "linkedin": "https://linkedin.com/in/nicola-pichel-juan-1028756",
+          "company": "Satra",
+          "headcount": "",
+          "industry": "Training",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "1:36",
+          "notes": "Called Nicola regarding carbon reporting challenges, specifically for scope three data collection. Nicola mentioned it's a yearly task and expressed skepticism about the cost-effectiveness of solutions, as they still need to verify the data. She requested an email follow-up instead of continuing our conversation, and I confirmed her email as first.name.surname@satra.com.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491674030328",
+          "date": "1970-01-01",
+          "contactName": "Stephanie Palmer",
+          "jobTitle": "Head Of Sustainability",
+          "email": "stephanie.palmer@wienerberger.co.uk",
+          "phone": "+447789773120",
+          "mobilephone": "+447789773120",
+          "linkedin": "https://linkedin.com/in/stephaniepalmeruk",
+          "company": "Wienerberger UK",
+          "headcount": "",
+          "industry": "Construction",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:17",
+          "notes": "Called Stephanie on her personal number. She was firm about not wanting to reward those who shared her contact and requested that I remove her number from our database. No further communication was possible, and she declined to provide an email or other contact method.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491674329323",
+          "date": "1970-01-01",
+          "contactName": "Jaishree Nagarajan",
+          "jobTitle": "Head of Sustainability",
+          "email": "jaishree.nagarajan@shawbrook.co.uk",
+          "phone": "+447784395072",
+          "mobilephone": "+447784395072",
+          "linkedin": "https://linkedin.com/in/jaishree-nagarajan",
+          "company": "Shawbrook",
+          "headcount": "",
+          "industry": "Finance",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "3:08",
+          "notes": "I spoke with a representative who mentioned they have developed in-house tools for carbon reporting and emissions accounting, eliminating the need for our services. They are transitioning a portion of their operations currently managed by a third party in-house within the next 12 months. They expressed no immediate need for additional solutions but had a good conversation overall.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491694644413",
+          "date": "1970-01-01",
+          "contactName": "Kara A",
+          "jobTitle": "Head of ESG",
+          "email": "kara.ali@ligentia.global",
+          "phone": "+447868002384",
+          "mobilephone": "+447868002384",
+          "linkedin": "https://linkedin.com/in/karaa1i",
+          "company": "Ligentia",
+          "headcount": "",
+          "industry": "Supply Chain Management",
+          "campaign": "Furthr",
+          "disposition": "No, Not Now",
+          "duration": "2:21",
+          "notes": "Called Clara regarding carbon accounting solutions but found out it was her personal number. She asked me to send an email instead. Clara mentioned they're not currently in the market for any new tools. Suggested they check out our website for future reference.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491812490455",
+          "date": "1970-01-01",
+          "contactName": "Alexis Percival",
+          "jobTitle": "Environmental and Sustainability Manager",
+          "email": "alexis.percival@nhs.net",
+          "phone": "+447969050402",
+          "mobilephone": "+447969050402",
+          "linkedin": "https://linkedin.com/in/alexis-percival-66559217",
+          "company": "Yorkshire Ambulance Service NHS Trust",
+          "headcount": "",
+          "industry": "",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "0:37",
+          "notes": "Called Alexis to introduce myself and our company. She mentioned it would be better to connect on Monday instead. I agreed to follow up then.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "491825096908",
+          "date": "1970-01-01",
+          "contactName": "Hanna Rys MSc PIEMA",
+          "jobTitle": "Sustainability Manager",
+          "email": "h.rys@gamahealthcare.com",
+          "phone": "+447595867140",
+          "mobilephone": "+447595867140",
+          "linkedin": "https://linkedin.com/in/hanna-rys-msc-piema-99352b157",
+          "company": "GAMA Healthcare",
+          "headcount": "",
+          "industry": "Health Care",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:55",
+          "notes": "Hannah was busy preparing for an important meeting and indicated that their sustainability reporting is well-managed. She has been handling it herself for four years with support from a trusted consultancy. There are no current challenges, and they are satisfied with their existing software and processes. I wished her a lovely weekend.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492165620979",
+          "date": "1970-01-01",
+          "contactName": "Emma Eskriett",
+          "jobTitle": "Tender & Sales Admin Lead",
+          "email": "emma.eskriett@ntm-gb.com",
+          "phone": "+447931849184",
+          "mobilephone": "+447931849184",
+          "linkedin": "https://linkedin.com/in/emma-eskriett-092951236",
+          "company": "Ntm-Gb",
+          "headcount": "",
+          "industry": "Manufacturing",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:17",
+          "notes": "I spoke with Emma who confirmed she handles ESG and sustainability aspects related to RFIs and RFPs. She mentioned they already have internal departments in place dealing with sustainability reporting and are not currently looking for external solutions. I was informed that they are all set for now.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492166157538",
+          "date": "1970-01-01",
+          "contactName": "Gregor Haran",
+          "jobTitle": "Sustainability Manager",
+          "email": "gregor.haran@landsec.com",
+          "phone": "+447761503424",
+          "mobilephone": "+447761503424",
+          "linkedin": "https://linkedin.com/in/gregorharan",
+          "company": "Landsec",
+          "headcount": "",
+          "industry": "Real Estate",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:45",
+          "notes": "Spoke with Greg, who mentioned they don't handle carbon reporting internally and are already working with another provider, Imagine. He didn't seem interested in continuing the conversation. I thanked him for his time and concluded the call.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492166627538",
+          "date": "1970-01-01",
+          "contactName": "Shakera Siddiky",
+          "jobTitle": "Senior Group Sustainability Manager",
+          "email": "shakera.siddiky@ssp-intl.com",
+          "phone": "+447584068807",
+          "mobilephone": "+447584068807",
+          "linkedin": "https://linkedin.com/in/dr-shakera-siddiky-a29aa51b",
+          "company": "Ssp Group",
+          "headcount": "",
+          "industry": "Travel",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:38",
+          "notes": "Spoke with Shagira who stated they work with other consultants like DAG and are not interested in our sustainability consulting services. She quickly dismissed the call, expressing disinterest in our offerings. No next steps were discussed.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492180573391",
+          "date": "1970-01-01",
+          "contactName": "Jenna Potter",
+          "jobTitle": "Environmental Sustainability Manager",
+          "email": "jpotter@galgorm.com",
+          "phone": "+447513850542",
+          "mobilephone": "+447513850542",
+          "linkedin": "https://linkedin.com/in/jenna-potter",
+          "company": "Galgorm Collection",
+          "headcount": "",
+          "industry": "Hospitality",
+          "campaign": "Furthr",
+          "disposition": "No, Not Now",
+          "duration": "1:52",
+          "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Jenna mentioned that while they're looking into carbon reporting, it’s not an immediate priority as she just started her role and has many other tasks to tackle first. She suggested following up in November or December for a more relevant conversation. I’ll reach out then to check in.</p></div>",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492180858103",
+          "date": "1970-01-01",
+          "contactName": "Daniel Foster",
+          "jobTitle": "ESG Manager",
+          "email": "daniel.foster@sepura.com",
+          "phone": "",
+          "mobilephone": "",
+          "linkedin": "https://linkedin.com/in/daniel-foster-41a4631a6",
+          "company": "Sepura",
+          "headcount": "",
+          "industry": "Telecommunications",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "1:00",
+          "notes": "I reached Daniel on his personal number by mistake. He indicated it's work-related and agreed to discuss carbon reporting via email. He confirmed the topic is relevant to him and is open to further conversation. I'll follow up with an email to arrange a time to chat.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492301162686",
+          "date": "1970-01-01",
+          "contactName": "Daniel Evans",
+          "jobTitle": "Director (Whole Life Carbon)",
+          "email": "devans@certiero.co.uk",
+          "phone": "+447714239368",
+          "mobilephone": "+447714239368",
+          "linkedin": "https://linkedin.com/in/daniel-evans-366a67198",
+          "company": "Certiero",
+          "headcount": "",
+          "industry": "Consulting",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "2:06",
+          "notes": "",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492307943616",
+          "date": "1970-01-01",
+          "contactName": "Kelly Forster MSc MISEP CEnv AgilePgM",
+          "jobTitle": "Senior Sustainability Manager",
+          "email": "kelly.forster@vetpartners.co.uk",
+          "phone": "+447733965836",
+          "mobilephone": "+447733965836",
+          "linkedin": "https://linkedin.com/in/kellyforster",
+          "company": "VetPartners",
+          "headcount": "",
+          "industry": "Pet",
+          "campaign": "Furthr",
+          "disposition": "No, Not Now",
+          "duration": "1:28",
+          "notes": "Called Kelly, a sustainability manager, to discuss scope 1, 2, and 3 carbon reporting challenges. Kelly expressed that they are not interested at the moment but is open to receiving information via email for future reference. No specific follow-up timeline was discussed.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492308127934",
+          "date": "1970-01-01",
+          "contactName": "Stuart Wright",
+          "jobTitle": "Sustainability Manager",
+          "email": "stuart.wright@anesco.co.uk",
+          "phone": "+447596438675",
+          "mobilephone": "+447596438675",
+          "linkedin": "https://linkedin.com/in/stuartwright8",
+          "company": "Anesco",
+          "headcount": "",
+          "industry": "Energy",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:50",
+          "notes": "Spoke with Stuart, who mentioned they recently went with a different carbon accounting company due to cost. They are locked in with that company for three years. I acknowledged his decision and let him know I'm available if circumstances change in the future.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492359473364",
+          "date": "1970-01-01",
+          "contactName": "Leo Karlsson-Beaton",
+          "jobTitle": "Sustainability Account Manager",
+          "email": "leo.karlsson-beaton@lgegroup.com",
+          "phone": "+441616411943",
+          "mobilephone": "+441616411943",
+          "linkedin": "https://linkedin.com/in/leo-kb",
+          "company": "LG Energy Group",
+          "headcount": "",
+          "industry": "Energy",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:23",
+          "notes": "",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492369153233",
+          "date": "1970-01-01",
+          "contactName": "Jay Shah, SCR",
+          "jobTitle": "ESG Manager (Climate and Sustainability)",
+          "email": "jay.shah@pgim.com",
+          "phone": "+447435996857",
+          "mobilephone": "+447435996857",
+          "linkedin": "https://linkedin.com/in/jay-shah-climate",
+          "company": "Pgim",
+          "headcount": "",
+          "industry": "Asset Management",
+          "campaign": "Furthr",
+          "disposition": "No, Not Now",
+          "duration": "1:29",
+          "notes": "<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Called Jay regarding carbon reporting. He hasn't reviewed my previous email and requested I resend it. He mentioned they are not currently exploring new platforms as they already have existing solutions. I agreed it's not worth scheduling a meeting at this time and will follow up with the email.</p></div>",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492394297531",
+          "date": "1970-01-01",
+          "contactName": "Chris Griffiths",
+          "jobTitle": "Director of Maritime Sustainability",
+          "email": "chrisgriffiths@royalthames.com",
+          "phone": "+447860613762",
+          "mobilephone": "+447860613762",
+          "linkedin": "https://linkedin.com/in/chrisgriffiths27",
+          "company": "Royal Thames Yacht Club",
+          "headcount": "",
+          "industry": "Boating",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:28",
+          "notes": "I called to follow up on carbon reporting but reached someone in a meeting who asked to call back later. They indicated that discussing this topic would be a waste of my time.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492394339521",
+          "date": "1970-01-01",
+          "contactName": "Ben Nutley",
+          "jobTitle": "Sustainability Programme Manager",
+          "email": "ben.nutley@mandg.com",
+          "phone": "+447879427377",
+          "mobilephone": "+447879427377",
+          "linkedin": "https://linkedin.com/in/ben-nutley-b282a11b",
+          "company": "M&G Investments",
+          "headcount": "",
+          "industry": "Financial Services",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:15",
+          "notes": "",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492394595576",
+          "date": "1970-01-01",
+          "contactName": "Corina Radu",
+          "jobTitle": "Senior Manager, Sustainability Consulting",
+          "email": "corina.radu@accenture.com",
+          "phone": "+447875760786",
+          "mobilephone": "+447875760786",
+          "linkedin": "https://linkedin.com/in/raducorina",
+          "company": "Accenture UK & Ireland",
+          "headcount": "",
+          "industry": "IT Services and IT Consulting",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:08",
+          "notes": "",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492394857672",
+          "date": "1970-01-01",
+          "contactName": "Ella Warburton",
+          "jobTitle": "Bid & Sustainability Manager",
+          "email": "ella.warburton@floorbrite.co.uk",
+          "phone": "+447535010772",
+          "mobilephone": "+447535010772",
+          "linkedin": "https://linkedin.com/in/ella-warburton-430006211",
+          "company": "The Floorbrite Group",
+          "headcount": "",
+          "industry": "CleanTech",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:18",
+          "notes": "Called an unknown prospect about sustainability reporting. They mentioned they were using their personal number and weren’t at work. They said their company has someone handling carbon reporting, so my offering may not be relevant. No follow-up was arranged, as they did not express interest.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492394874071",
+          "date": "1970-01-01",
+          "contactName": "Tim Clemons",
+          "jobTitle": "Sustainability Manager",
+          "email": "t.clemons@uos.ac.uk",
+          "phone": "+447771641768",
+          "mobilephone": "+447771641768",
+          "linkedin": "https://linkedin.com/in/timclemons2",
+          "company": "University of Suffolk",
+          "headcount": "",
+          "industry": "Education",
+          "campaign": "Furthr",
+          "disposition": "No, Not Now",
+          "duration": "2:58",
+          "notes": "",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492394962152",
+          "date": "1970-01-01",
+          "contactName": "Reema Shah",
+          "jobTitle": "ESG Manager",
+          "email": "reema.shah@premierfoods.co.uk",
+          "phone": "+447813840101",
+          "mobilephone": "+447813840101",
+          "linkedin": "https://linkedin.com/in/reema1",
+          "company": "Premier Foods",
+          "headcount": "",
+          "industry": "Food and Beverage",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:42",
+          "notes": "I reached out to Reema regarding carbon reporting. She mentioned they've had a lot of cold calls recently and it's not the right time for them, asking to be taken off the list. I assured her it was no problem and will not follow up.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492395468024",
+          "date": "1970-01-01",
+          "contactName": "Ariane Ephraïm",
+          "jobTitle": "Senior Sustainability Manager",
+          "email": "ariane.ephraim@workspace.co.uk",
+          "phone": "",
+          "mobilephone": "",
+          "linkedin": "https://linkedin.com/in/ariane-ephraim-0266a6109",
+          "company": "Workspace Group",
+          "headcount": "",
+          "industry": "Coworking",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "0:45",
+          "notes": "",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492919071939",
+          "date": "1970-01-01",
+          "contactName": "Jennifer Wakely",
+          "jobTitle": "Global ESG Reporting Lead",
+          "email": "jennifer.wakely@specsavers.com",
+          "phone": "+447709093333",
+          "mobilephone": "+447709093333",
+          "linkedin": "https://linkedin.com/in/jennifer-wakely-b17b4755",
+          "company": "Specsavers",
+          "headcount": "",
+          "industry": "Retail",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "2:10",
+          "notes": "I spoke with Jennifer regarding ESG and sustainability, specifically Scope Three reporting. She mentioned they've onboarded a new platform for support and are managing primarily in-house. She felt well-prepared but will look at my website for future reference. I’ll send her an email with more details and remain available for any needs that arise.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492920266960",
+          "date": "1970-01-01",
+          "contactName": "Dorien Van Cauteren",
+          "jobTitle": "Sustainability Manager",
+          "email": "dorien.vancauteren@portofantwerpbruges.com",
+          "phone": "+32474829551",
+          "mobilephone": "+32474829551",
+          "linkedin": "https://linkedin.com/in/dorien-van-cauteren-233435174",
+          "company": "Port Of Antwerp-Bruges",
+          "headcount": "",
+          "industry": "",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:42",
+          "notes": "Spoke with an unknown prospect who was in the car and unable to chat due to traffic. They mentioned being on schedule with carbon reporting and didn't express interest in further discussion at the moment. No next steps were established due to the lack of time.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492920350968",
+          "date": "1970-01-01",
+          "contactName": "Dinah Ames",
+          "jobTitle": "Sufficiency and Sustainability manager",
+          "email": "dinah.ames@buckinghamshire.gov.uk",
+          "phone": "+447904420735",
+          "mobilephone": "+447904420735",
+          "linkedin": "https://linkedin.com/in/dinah-ames-b5645274",
+          "company": "Buckinghamshire Council",
+          "headcount": "",
+          "industry": "Communities",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:32",
+          "notes": "Called Adina, a childcare sustainability manager. She mentioned receiving numerous cold calls and expressed that her title causes confusion. Suggested she change her job title to avoid such calls in the future. Adina noted this is her personal number, and she will consider my recommendation about changing it and looking into Incogni for privacy.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492920537328",
+          "date": "1970-01-01",
+          "contactName": "Dominic Rowles",
+          "jobTitle": "Head of ESG",
+          "email": "dominic.rowles@hl.co.uk",
+          "phone": "+447540184106",
+          "mobilephone": "+447540184106",
+          "linkedin": "https://linkedin.com/in/dominic-rowles-94a1294b",
+          "company": "Hargreaves Lansdown",
+          "headcount": "",
+          "industry": "Finance",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:44",
+          "notes": "Spoke with Dominic, who has developed an internal dashboard to track their scope three emissions, indicating they are already set in this area. He confirmed that gathering data and generating insights is time-consuming but manageable. Dominic was surprised I called his personal number and asked for removal from the database, which I offered to handle.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492926243062",
+          "date": "1970-01-01",
+          "contactName": "Heather Banks",
+          "jobTitle": "Sustainability Risk, Regulation & Reporting Manager",
+          "email": "heather.banks@edrington.com",
+          "phone": "+447879790624",
+          "mobilephone": "+447879790624",
+          "linkedin": "https://linkedin.com/in/heather-banks-668b6a165",
+          "company": "Edrington",
+          "headcount": "",
+          "industry": "Distillery",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "2:06",
+          "notes": "Spoke with Heather, who manages ESG reporting. They have internal teams handling all three scopes, including a supplier engagement program for data collection. They've been reporting on scope three for five years and focusing on streamlining the process. It seems they don't need our services, so I decided to end the call.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "492926535880",
+          "date": "1970-01-01",
+          "contactName": "Daniel Evans",
+          "jobTitle": "Director (Whole Life Carbon)",
+          "email": "devans@certiero.co.uk",
+          "phone": "+447714239368",
+          "mobilephone": "+447714239368",
+          "linkedin": "https://linkedin.com/in/daniel-evans-366a67198",
+          "company": "Certiero",
+          "headcount": "",
+          "industry": "Consulting",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "1:28",
+          "notes": "Spoke with Dan regarding carbon reporting. He mentioned they only handle upfront and embodied carbon assessments and do not manage scope three reporting. He expressed that their current process is sufficient, so it wasn't worth continuing the conversation. No objections noted beyond their current focus area.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493099319539",
+          "date": "1970-01-01",
+          "contactName": "Kim Kokholm",
+          "jobTitle": "Group HSEQ & Sustainability Manager",
+          "email": "kim@vms.dk",
+          "phone": "+4560236981",
+          "mobilephone": "+4560236981",
+          "linkedin": "https://linkedin.com/in/kim-kokholm-a183562a",
+          "company": "Vms Group",
+          "headcount": "",
+          "industry": "Marine Transportation",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "3:18",
+          "notes": "Spoke with Kim regarding challenges with scope three emissions data. They currently use Carbon LTVs but still face issues. Kim requested I send an email to share with their USD team for review and to assemble their managers before discussing further. Kim will follow up with me when ready.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493100445887",
+          "date": "1970-01-01",
+          "contactName": "Alena Wardle",
+          "jobTitle": "UK Sustainability and Compliance Manager",
+          "email": "alena.wardle@hellermanntyton.com",
+          "phone": "",
+          "mobilephone": "",
+          "linkedin": "https://linkedin.com/in/alena-wardle-418a7225",
+          "company": "HellermannTyton United Kingdom",
+          "headcount": "",
+          "industry": "Electronics",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "0:57",
+          "notes": "Called Elena but reached her on the wrong number. She’s currently at work and suggested I email her instead. I confirmed her email as elena.ward@hellamantitan.com and will follow up with information about carbon reporting.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493110953200",
+          "date": "1970-01-01",
+          "contactName": "Charlie Hunt",
+          "jobTitle": "Sustainability Manager",
+          "email": "charlie.hunt@wearehomesforstudents.com",
+          "phone": "+447566273303",
+          "mobilephone": "+447566273303",
+          "linkedin": "https://linkedin.com/in/charlie-hunt-55362a178",
+          "company": "Homes for Students",
+          "headcount": "",
+          "industry": "Travel Accommodations",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:54",
+          "notes": "Spoke with Charlie who mentioned that sustainability reporting is already being managed on their end. He also noted that I reached his private number, indicating it's not the best contact. No further conversation was needed at this time.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493112828099",
+          "date": "1970-01-01",
+          "contactName": "Liz Joyce",
+          "jobTitle": "Sustainability manager",
+          "email": "l.joyce@ltcfc.org.uk",
+          "phone": "+447540953246",
+          "mobilephone": "+447540953246",
+          "linkedin": "https://linkedin.com/in/liz-joyce-75040427",
+          "company": "Information Systems Solutions",
+          "headcount": "",
+          "industry": "Charity",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:43",
+          "notes": "Tried to discuss carbon reporting with Liz, reaching out as a sustainability manager. However, she indicated that the topic isn't relevant to her at this time and did not express interest in continuing the conversation. No next steps or referrals were established.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493248703721",
+          "date": "1970-01-01",
+          "contactName": "Ben Kerrison",
+          "jobTitle": "Sustainability Manager",
+          "email": "bkerrison@collegiate-ac.com",
+          "phone": "+447802724388",
+          "mobilephone": "+447802724388",
+          "linkedin": "https://linkedin.com/in/ben-kerrison-503b6042",
+          "company": "Collegiate AC",
+          "headcount": "",
+          "industry": "Real Estate",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "3:30",
+          "notes": "Called Ben to discuss sustainability reporting tools. He mentioned that they're currently using Excel due to capacity and budget constraints. He suggested I'll send over my marketing deck for future consideration and recommended following up in September. Ben also noted they have a substantial energy broker which could complicate tendering. His email is k.berrison@college.ac.com.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493567935674",
+          "date": "1970-01-01",
+          "contactName": "Jelena Bjelanovic",
+          "jobTitle": "Chair of the ESG Committee",
+          "email": "jelena.bjelanovic@lancashiregroup.com",
+          "phone": "+447740865650",
+          "mobilephone": "+447740865650",
+          "linkedin": "https://linkedin.com/in/jelena-bjelanovic-8073982",
+          "company": "Lancashire Holdings",
+          "headcount": "",
+          "industry": "Risk Management",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:28",
+          "notes": "I called on a Friday afternoon but the prospect didn't find my offer relevant and declined to engage further. They thanked me for the call and wished me a lovely weekend before ending the conversation.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493585410253",
+          "date": "1970-01-01",
+          "contactName": "Nicola Pichel-Juan",
+          "jobTitle": "Sustainability Manager",
+          "email": "nicola.pichel-juan@satra.com",
+          "phone": "+447812246791",
+          "mobilephone": "+447812246791",
+          "linkedin": "https://linkedin.com/in/nicola-pichel-juan-1028756",
+          "company": "Satra",
+          "headcount": "",
+          "industry": "Training",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "0:25",
+          "notes": "Called Nicola to follow up on a conversation with my colleague Harry. Nicola is currently on holiday and will be back in the office on Wednesday.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493585764587",
+          "date": "1970-01-01",
+          "contactName": "Laura M",
+          "jobTitle": "Sustainability Manager",
+          "email": "laura.middlemath@sunderland.ac.uk",
+          "phone": "+447752301533",
+          "mobilephone": "+447752301533",
+          "linkedin": "https://linkedin.com/in/laura-m-16426336",
+          "company": "University of Sunderland",
+          "headcount": "",
+          "industry": "Education",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "1:48",
+          "notes": "I called Laura on her personal phone, not realizing she was off work. She prefers to receive information via email about carbon reporting. Laura mentioned she is part of a team handling scope one, two, and three reporting and is exploring options for verification. I will follow up with an email to laura.middlemath.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493596312801",
+          "date": "1970-01-01",
+          "contactName": "Jack Connors",
+          "jobTitle": "Product Sustainability Manager",
+          "email": "jack.connors@drmartens.com",
+          "phone": "+447837246984",
+          "mobilephone": "+447837246984",
+          "linkedin": "https://linkedin.com/in/jackrconnors",
+          "company": "Dr. Martens",
+          "headcount": "",
+          "industry": "E-Commerce",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:48",
+          "notes": "Spoke with Jack who mentioned they already have a solution for their sustainability challenges, particularly regarding Scope 3, and are currently happy with it. He indicated they're not looking for alternatives at this time. Appreciated his time and wished him a good weekend.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493596437748",
+          "date": "1970-01-01",
+          "contactName": "Andrew Lynch",
+          "jobTitle": "Programme Manager - Sustainability at European Tour Group",
+          "email": "alynch@europeantourgroup.com",
+          "phone": "+447827804309",
+          "mobilephone": "+447827804309",
+          "linkedin": "https://linkedin.com/in/andrew-lynch-he-him-18b33826",
+          "company": "DP World Tour",
+          "headcount": "",
+          "industry": "Spectator Sports",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:37",
+          "notes": "I called to discuss our carbon reporting services, but the prospect wasn't interested and indicated it wasn't relevant to them. They didn't seem to be available to talk further, so I decided to end the call.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493938035933",
+          "date": "1970-01-01",
+          "contactName": "Paul David Field MIEMA CEnv",
+          "jobTitle": "ESG Manager",
+          "email": "paul.field@januseurope.com",
+          "phone": "+447921551354",
+          "mobilephone": "+447921551354",
+          "linkedin": "https://linkedin.com/in/paul-david-field-miema-cenv-8ba64b30",
+          "company": "Janus International Europe",
+          "headcount": "",
+          "industry": "Self-Storage",
+          "campaign": "Furthr",
+          "disposition": "No, Not Ever",
+          "duration": "0:38",
+          "notes": "The agent called to discuss carbon accounting data collection, but the user stated it was not relevant to them and ended the call. No further action is required.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493939225808",
+          "date": "1970-01-01",
+          "contactName": "Kelly Steel",
+          "jobTitle": "Sustainability Manager",
+          "email": "kelly.steel@michelmores.com",
+          "phone": "+447771813877",
+          "mobilephone": "+447771813877",
+          "linkedin": "https://linkedin.com/in/kelly-steel",
+          "company": "Michelmores",
+          "headcount": "",
+          "industry": "Advice",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "1:16",
+          "notes": "Harry called Kelly regarding sustainability reporting and scope 3 data collection. Kelly was on leave and requested that Harry send the information via email to her work address, which she provided.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "493994843368",
+          "date": "1970-01-01",
+          "contactName": "Lee Collier",
+          "jobTitle": "Sustainability Manager",
+          "email": "lcollier@trowers.com",
+          "phone": "+447791602650",
+          "mobilephone": "+447791602650",
+          "linkedin": "https://linkedin.com/in/leecollier1",
+          "company": "Trowers & Hamlins",
+          "headcount": "",
+          "industry": "Consulting",
+          "campaign": "Furthr",
+          "disposition": "Activated",
+          "duration": "2:45",
+          "notes": "The agent reached out to discuss carbon reporting and scope 3 emissions data. The user expressed interest in seeing more information, so the agent agreed to send an email for the user to review.",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        },
+        {
+          "id": "494107174135",
+          "date": "1970-01-01",
+          "contactName": "Emily Stockford",
+          "jobTitle": "Sustainability Strategy Manager",
+          "email": "emily.stockford@stonewater.org",
+          "phone": "+447531720361",
+          "mobilephone": "+447531720361",
+          "linkedin": "https://linkedin.com/in/emily-stockford-060bb6193",
+          "company": "Stonewater",
+          "headcount": "",
+          "industry": "Real Estate",
+          "campaign": "Furthr",
+          "disposition": "No, Not Now",
+          "duration": "1:22",
+          "notes": "reach out via email in the future",
+          "summary": "",
+          "signal": "neutral",
+          "signalReason": ""
+        }
+      ],
+      "referrals": [
+        {
+          "contactName": "Jane Hartley",
+          "jobTitle": "Sustainability Manager",
+          "company": "Love The Garden",
+          "phone": "+447979725544",
+          "email": "jane.hartley@evergreengarden.com",
+          "linkedin": "https://linkedin.com/in/jane-hartley-3a11a9240",
+          "notes": "I reached out to Jane for a cold call about sustainability solutions, but she clarified that sustainability is not her current role. She suggested that I should update my records if her LinkedIn reflects that title. No further steps were discussed since she wasn't interested.",
+          "date": "1970-01-01"
+        },
+        {
+          "contactName": "Nessa Cullen",
+          "jobTitle": "Senior Project Manager Sustainability",
+          "company": "Channel 4",
+          "phone": "+447919123903",
+          "email": "ncullen@channel4.co.uk",
+          "linkedin": "https://linkedin.com/in/nessa-cullen-96188b143",
+          "notes": "Called Nessa, the sustainability manager at Channel 4. She mentioned the decision sits with her colleague, Cameron McKinnon. Currently, they work with Accenture for carbon emissions calculations and have their own processes in place. Nessa suggested I contact Cameron on LinkedIn. She also inquired about how her number got out there for cold calls.",
+          "date": "1970-01-01"
+        },
+        {
+          "contactName": "Marina Ryan MCIOB",
+          "jobTitle": "Sustainability Manager",
+          "company": "Wates Group",
+          "phone": "+447535655157",
+          "email": "marina.ryan@wates.co.uk",
+          "linkedin": "https://linkedin.com/in/marina-ryan-mciob-17733847",
+          "notes": "Called Marina but had trouble with the signal. She mentioned she has a meeting in a few minutes and suggested I speak to their head of carbon, Adituni, instead. I will follow up and try to connect with Adituni for further discussion on carbon reporting.",
+          "date": "1970-01-01"
+        },
+        {
+          "contactName": "Victoria Phillips",
+          "jobTitle": "Sustainability Manager",
+          "company": "Landsec",
+          "phone": "+447807110776",
+          "email": "victoria.phillips@landsec.com",
+          "linkedin": "https://linkedin.com/in/victoria-phillips-a4a289156",
+          "notes": "Spoke with an unknown contact who doesn't handle data reporting. They mentioned a new director starting soon and suggested waiting for them to get involved with our services. I offered to send an email to them for referral once the director is in place.",
+          "date": "1970-01-01"
+        },
+        {
+          "contactName": "Chloé Kuder",
+          "jobTitle": "Sustainability Programme Manager",
+          "company": "Sedex",
+          "phone": "+447400842425",
+          "email": "chloe.kuder@sedex.com",
+          "linkedin": "https://linkedin.com/in/chloekuder",
+          "notes": "Spoke with someone on maternity leave. They advised that I should reach out to their maternity cover instead. I noted the situation and will contact the appropriate person. I congratulated them on their upcoming leave.",
+          "date": "1970-01-01"
+        },
+        {
+          "contactName": "Anushka Govias-Smith",
+          "jobTitle": "Sustainability Manager for NHS Scotland",
+          "company": "NHS National Services Scotland",
+          "phone": "+447522463732",
+          "email": "anushka.govias-smith@nhs.scot",
+          "linkedin": "https://linkedin.com/in/anushka-govias-smith-a5978646",
+          "notes": "The agent called to pitch carbon accounting services for NHS-related organizations, but the user explained that NHS Scotland operates differently than NHS England and advised the agent to go through National Procurement frameworks. No further action was taken as the user was not the right contact for a direct pitch.",
+          "date": "1970-01-01"
+        }
+      ]
     }
   ]
 }
