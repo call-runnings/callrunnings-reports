@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Runnings — ISO Serious</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:#5558C8;background-image:radial-gradient(ellipse 80% 60% at 20% 10%,#7068D8 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,#3890C8 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 50% 50%,#5558C8 0%,#4048A8 100%);min-height:100vh;color:#fff;padding-bottom:80px}
+
+  /* ── Hero ── */
+  .hero{position:relative;overflow:hidden;padding:40px 56px 0;display:flex;align-items:flex-end;justify-content:space-between;min-height:220px;border-bottom:1px solid rgba(255,255,255,0.12)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,8,40,0.45) 0%,rgba(10,8,40,0.1) 60%,transparent 100%);pointer-events:none}
+  .hero-left{position:relative;z-index:2;padding-bottom:36px}
+  .hero-logo{height:52px;display:block;margin-bottom:24px}
+  .hero-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.55);margin-bottom:8px}
+  .hero-title{font-size:32px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:6px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,0.65);font-weight:400}
+  .hero-illustration{position:relative;z-index:1;height:200px;width:auto;object-fit:contain;object-position:bottom;flex-shrink:0;margin-left:32px;opacity:0.95;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.25))}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;gap:0;padding:0 56px;border-bottom:2px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.12)}
+  .tab{padding:14px 28px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.45);border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all 0.15s;letter-spacing:0.04em}
+  .tab.active,.tab:hover{color:#fff;border-bottom-color:#FE6601}
+
+  /* ── Panel ── */
+  .panel{display:none;padding:32px 56px 64px;max-width:960px}
+  .panel.active{display:block}
+
+  /* ── Meetings expandable ── */
+  details[open] summary>span:first-child{transform:rotate(90deg);display:inline-block}
+  details summary::-webkit-details-marker{display:none}
+
+  /* ── Footer ── */
+  .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
+  .footer-logo{height:28px;opacity:0.45}
+  .footer-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-left">
+    <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="hero-logo" alt="Call Runnings">
+    <div class="hero-eyebrow">Monthly Market Intelligence Report</div>
+    <h1 class="hero-title">ISO Serious</h1>
+    <div class="hero-sub">Prepared by Call Runnings</div>
+  </div>
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
+</div>
+<div class="tabs">
+    <button class="tab active" data-panel="0">May 2026</button>
+  <button class="tab" data-panel="1">All Time</button></div>
+
+    <div class="panel active" id="panel-0">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1321</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">120</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">1</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">14</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">13</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">76</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div>
+    </div>
+      <div>
+  <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">May 2026 was a month that revealed the true texture of the ISO compliance market — busy, opinionated, and largely committed elsewhere. The dial volume was strong, and when conversations did happen, they were substantive enough to surface clear patterns about how organisations think about certification, who owns it internally, and what it takes to displace an existing arrangement. The market is not apathetic; if anything, it is engaged — but that engagement is frequently already directed at someone else.</div>
+    
+  </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:4px">Competitor & Market Intelligence</div>
+        </div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" style="height:64px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04)">
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">Competitor</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">What was Said</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Freq</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">BSI (British Standards Institution)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect named BSI explicitly alongside ISO 9000, 14,000 and 27,001 certifications, indicating a fully established relationship with a recognised institutional provider.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Unnamed external auditing partner</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect described managing ISO certifications internally whilst using a separate external partner specifically for auditing — a split model that left no obvious entry point.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Unnamed provider (recently signed, multi-year contract)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect had signed a three-year contract and booked an audit for June, effectively closing the door for the foreseeable future.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Unnamed provider (signed last week)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect acknowledged the offering was relevant to them but had completed a months-long evaluation process and signed with another company just the week prior.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Unnamed provider (five-year incumbent)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A prospect on holiday mentioned they had used the same provider for five years and expressed no interest in reconsidering.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Internal team (India-based)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect stated that ongoing ISO maintenance is handled by an internal team based in India, removing the perceived need for any external support.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Internal compliance or security team</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple prospects referenced in-house teams responsible for ISO and audit readiness, with no appetite for external partners.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~4</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr></tbody>
+      </table>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Common Objections</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/yes-and-no.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Already have a provider or internal solution</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~9 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They have their own security and compliance team and he is not interested in external partners for managing audit readiness."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the dominant objection of the month. It appeared in multiple forms — long-standing external providers, recently signed contracts, and internal teams — but the underlying message was consistent: the need is recognised, but the position is already filled. The opportunity here lies in timing and trigger events. Businesses that have recently acquired other companies, changed structure, or are approaching renewal windows are the most likely to be open. These should be prioritised in future sequencing.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right person / no decision-making authority</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~6 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"She informed me that she has no decision-making power and is not the right contact for this matter."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring structural barrier where the call reached someone aware of ISO but not empowered to act on it. In several cases no referral was offered. This points to a contact data challenge — the list may be reaching operational contacts rather than those with procurement or compliance authority. Refining targeting towards roles such as Head of Compliance, Quality Manager, or Operations Director is likely to improve conversation quality.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not relevant to our business</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"ISO certifications are not relevant to their digital marketing work. He doubts this will change in the future."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Some prospects are genuinely outside the addressable market — digital agencies, businesses that have relocated from the UK, or organisations whose work does not require accreditation. These are clean disqualifications and are useful for tightening the list. However, it is worth examining whether sector filtering at the list-building stage could reduce the volume of these calls and free up dial capacity for higher-probability targets.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Bad timing — on holiday, in a meeting, or too busy</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"It wasn't a good time for him. I will need to follow up later when he's available."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several calls landed at genuinely inconvenient moments without resulting in a scheduled callback. These are not hard rejections and should not be treated as such. Building a structured follow-up process for timing-based rebuffs — with a specific agreed date and time where possible — would recover value from these touches.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Do not take cold calls / please remove me from the list</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He does not take cold calls and was busy with another call."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A small but consistent cohort of prospects reacted negatively to the call itself rather than the proposition. One contact requested removal; another was frustrated about calls to a personal number. This reinforces the importance of data hygiene and opt-out management, but does not indicate a broader problem with the campaign approach.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Just signed with a competitor / recently completed a review</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They've just signed up with another company last week after months of research, so my timing was off."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Two separate prospects had concluded procurement processes within weeks of being called. This is a timing problem as much as a competitive one. Prospects deep in an evaluation rarely reverse course, but they are worth flagging for re-engagement at the point their contract comes up for renewal. Adding these contacts to a long-cycle nurture sequence with a note of their likely renewal window would be a productive use of the intelligence gathered.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">What Prospects Asked</div>
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send an email with pricing and an overview of how you can help?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">This came from a prospect actively navigating ISO accreditation following a business acquisition — one of the strongest signals of the month. The request for pricing alongside an overview suggests they are in early evaluation rather than passive curiosity. This type of request indicates a prospect who is self-educating and likely comparing options, meaning a well-structured follow-up email with clear value articulation and transparent pricing tiers would carry real weight.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you call back on Friday?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">A prospect who was mid-conference call but did not dismiss the conversation — instead proposing a specific alternative time. This is a meaningful buying signal and suggests genuine openness. Prospects who offer a callback time are worth treating as warm leads rather than standard follow-ups.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">What is your name and reason for calling? (via receptionist or gatekeeper)</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Several calls were intercepted by gatekeepers or receptionists before reaching the intended contact. This is a normal part of B2B outreach but indicates that a proportion of the target list sits behind organisational switchboards. Having a concise, confident response to the gatekeeper question — one that communicates relevance without triggering a deflection — is worth refining as a consistent part of the call approach.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Market Themes</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/shopkeepers.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Business acquisitions are creating live compliance pressure</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">At least one prospect explicitly flagged that ISO accreditation had become a hot topic internally as a direct result of recent business acquisitions. This is a meaningful trigger — mergers and acquisitions frequently disrupt existing compliance arrangements and force organisations to reassess their certification posture from scratch. Companies that have recently completed acquisitions or are undergoing post-merger integration represent a high-priority segment worth targeting proactively.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The market is committed, not indifferent</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">The volume of prospects who already hold ISO certifications, have active providers, or have recently completed procurement processes confirms that demand in this space is real and ongoing. The challenge is not persuading organisations that ISO matters — most already know — but reaching them before or during a decision window rather than after it has closed. Intelligence gathered this month about recently signed contracts and incumbent providers can inform when to re-engage these contacts.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Data quality and contact accuracy are limiting conversion</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable number of calls resulted in the wrong person answering, disconnected numbers, leavers still on the list, or contacts reached on personal phones. Each of these represents a wasted dial and, in some cases, a negative brand impression. Investing in regular list hygiene and more precise role-level targeting would materially improve the ratio of conversations to dials and reduce unnecessary friction.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Timing is the single biggest variable in this market</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Two prospects had signed with competitors within the previous week; others were mid-holiday, in meetings, or had just completed internal reviews. The proposition was rarely the issue — the moment of contact was. This suggests that sequencing strategy, persistence across multiple touchpoints, and trigger-based outreach (based on firmographic signals like growth, acquisitions, or new certifications) would increase the likelihood of landing calls at genuinely receptive moments.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Internal ownership of ISO is deeply entrenched in some organisations</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects described mature, well-resourced internal compliance functions — including dedicated security teams and offshore maintenance teams — that left no obvious entry point for an external partner. These organisations are unlikely prospects in the short term, but may become relevant if headcount pressures, restructuring, or new certification requirements stretch their internal capacity. Flagging them for longer-cycle follow-up is more productive than pursuing them actively now.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Recommended Actions</div>
+      </div>
+      <div style="padding:6px 24px 6px">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a trigger-based re-engagement sequence for prospects who cited recently signed contracts — note their likely contract lengths (one prospect mentioned three years) and schedule outreach timed to 60–90 days before probable renewal windows, using the market intelligence gathered this month as context for the conversation.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Prioritise companies that have recently completed acquisitions or mergers as a distinct target segment — at least one prospect this month confirmed ISO accreditation had become a live internal issue as a direct result of business acquisitions, and this trigger consistently creates genuine urgency and openness to external support.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Review and refresh the contact list to improve role-level accuracy — a significant proportion of May's calls reached people with no decision-making authority, former employees, or incorrect numbers. Targeting compliance, quality, or operations leads directly at the point of list building will increase the ratio of productive conversations to total dials.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a structured callback protocol for prospects who cite poor timing rather than disinterest — where a specific day or time is agreed on the call, these should be treated as warm leads and prioritised accordingly. The prospect who asked for a Friday callback is a clear example of an opportunity that deserves deliberate follow-through.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Create a concise, well-structured follow-up email template specifically designed for prospects who request written information — the Nick Sibly lead from Solid Solutions is an active opportunity where ISO accreditation is a current priority. The email should include pricing clarity, a brief overview of the process, and a low-friction call to action to move the conversation forward.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Meetings Booked This Month</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px">Click a meeting to expand the full handover</div>
+      </div>
+      <div style="padding:12px 24px 18px">
+        
+        <details style="margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);border-radius:10px;overflow:hidden">
+          <summary style="padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.03);list-style:none;user-select:none">
+            <span style="font-size:16px;flex-shrink:0;transition:transform 0.2s">▶</span>
+            <div style="flex:1">
+              <div style="font-size:14px;font-weight:700;color:#fff">FlatPeak</div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:2px">Matt Roderick · Co-Founder & COO</div>
+            </div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.35)">12/05/2026</div>
+          </summary>
+          <div style="padding:18px 20px;border-top:1px solid rgba(255,255,255,0.08)">
+            
+            <div style="margin-bottom:12px;border-left:3px solid #6060D0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#6060D0;margin-bottom:4px">Situation</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Matt is Co-Founder and COO at FlatPeak. He has been aware of ISO 27001 for some time — this is the second contact, with the first call in October 2025 and a follow-up in May 2026. ISO certification has been on his radar but has not progressed. He has personal prior experience with ISO 27001, describing having 'gone through it enough times' before, which means he is not coming in blind. The company appears to be in a growth phase, fielding increasing questions from customers about certification.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FC3A33;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FC3A33;margin-bottom:4px">Pain</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Matt is experiencing what he described as 'creeping, increasing questions from customers' about ISO certification. There is no acute crisis, but the pressure is building from the customer base rather than from any internal deadline. He is also sceptical about the value of the process itself, having characterised ISO 27001 as '85% box ticking and 10% actual usefulness' — suggesting his pain includes a frustration with the bureaucratic weight of certification, not just the absence of it. He is time-poor and has deprioritised this repeatedly despite acknowledging it needs doing.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FE6601;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FE6601;margin-bottom:4px">Impact</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">The growing customer enquiries signal that the absence of ISO 27001 is becoming a friction point in commercial conversations — consistent with the SDR's pitch about it being 'a bit of a bottleneck to bring in more revenue.' While Matt did not explicitly confirm lost deals, the pattern of customers asking 'that sort of thing' suggests it is increasingly affecting trust or eligibility in enterprise or regulated client conversations. The strategic risk is that continued delay allows this to compound as FlatPeak moves upmarket.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #3090C0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#3090C0;margin-bottom:4px">Critical Event</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">No hard deadline was mentioned. Matt explicitly said 'there's no deadlines.' However, he did say he would like to get certification done this year (2026), and the meeting has been booked for the last week of June 2026. The SDR flagged that the typical process takes three to six months, which Matt did not push back on — meaning if he wants certification by end of year, the window to start is narrowing. This is a soft urgency lever the AE can use, not a genuine critical event.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #32B241;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:4px">Decision</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Matt appears to be the primary decision-maker and likely holds sign-off given his Co-Founder and COO title. He referred to 'a couple of things we need to sort out first' without naming other stakeholders, suggesting he is driving this himself. There is no indication of a formal procurement process, committee, or budget cycle. He did mention he has 'a list of a couple of people I want to speak to properly' before deciding, which implies he is comparing providers. No budget figure or approval process was discussed.</div>
+            </div>
+            
+            <div style="margin-top:14px;padding:14px 16px;background:rgba(50,178,65,0.08);border-left:3px solid #32B241;border-radius:0 8px 8px 0">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:6px">Recommended AE Approach</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.75">Open by acknowledging the history — Matt knows who you are, you have spoken twice, and he knows this has been on the back burner. Do not treat this as a cold introduction. Start by validating his situation directly: something like, 'You mentioned customers are increasingly asking for this — I wanted to understand what that looks like for you in practice before we talk about anything on our side.' This gets him talking about commercial reality before you pitch anything. The most important thing to probe is what the 'couple of things to sort out first' actually are — these may be internal blockers, competing priorities, or even a co-founder who needs convincing. You need to know whether those blockers have been resolved or whether this meeting is still premature. His '85% box ticking' comment is the framing he will arrive with, so get ahead of it early. Do not be defensive. Instead, use it as an opening: ask him what his previous experience looked like and what he would want to be different this time. This positions ISO Serious as a pragmatic, efficient operator rather than a consultancy trying to inflate scope. Frame the conversation around speed to certification and minimal internal disruption — he wants this done, not drawn out. Use the three-to-six month window the SDR mentioned to create gentle urgency: if he wants this wrapped up in 2026, the conversation is timely. Do not oversell. Matt is experienced, sceptical, and comparing providers. Come in as a peer who is helping him make a practical decision, not a salesperson trying to close him.</div>
+            </div>
+          </div>
+        </details>
+        <details style="margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);border-radius:10px;overflow:hidden">
+          <summary style="padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.03);list-style:none;user-select:none">
+            <span style="font-size:16px;flex-shrink:0;transition:transform 0.2s">▶</span>
+            <div style="flex:1">
+              <div style="font-size:14px;font-weight:700;color:#fff">FlatPeak</div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:2px">Matt Roderick · Co-Founder & COO</div>
+            </div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.35)">28/05/2026</div>
+          </summary>
+          <div style="padding:18px 20px;border-top:1px solid rgba(255,255,255,0.08)">
+            
+            <div style="margin-bottom:12px;border-left:3px solid #6060D0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#6060D0;margin-bottom:4px">Situation</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Matt Roderick is Co-Founder and COO at FlatPeak. ISO 27001 certification has been on the company's radar since at least January 2026, when Matt and the SDR first spoke. It has not progressed — he described it as still on a list of things to do but not having moved up it. There is no indication of a formal project, dedicated owner, or existing compliance framework in place. The company appears to be at an early, pre-commitment stage with no process formally underway.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FC3A33;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FC3A33;margin-bottom:4px">Pain</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Matt is not experiencing an acute internal pain point that he himself has articulated in strong terms. However, the underlying driver is external pressure from customers: he specifically said there are 'creeping, increasing questions from customers' about ISO 27001. This suggests that prospects or existing clients are beginning to make certification a condition of doing business, or at minimum are scrutinising FlatPeak's security posture more regularly. The pain is reputational and commercial rather than operational — they are being asked to evidence something they cannot yet evidence.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FE6601;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FE6601;margin-bottom:4px">Impact</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">The impact is primarily commercial. If customer questions about ISO certification are increasing, FlatPeak risks losing deals or failing to progress enterprise conversations where ISO 27001 is a procurement requirement. There is no stated lost deal or specific revenue figure, but the direction of travel is clear: the longer certification is delayed, the more exposed they become to being disqualified by security-conscious buyers. There may also be a reputational dimension if they are seen as lacking maturity relative to competitors who are already certified.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #3090C0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#3090C0;margin-bottom:4px">Critical Event</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">No hard deadline was mentioned. Matt explicitly said 'there's no deadlines.' The softer driver is the accumulation of customer questions, which creates a slow-burn urgency rather than a fixed trigger. He did say he would like to get it done this year, which implies a loose target of completing certification before end of 2026. Given that the SDR noted ISO 27001 typically takes three to six months, a conversation in late June would need to result in a relatively prompt start to achieve certification within 2026.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #32B241;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:4px">Decision</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Matt is Co-Founder and COO, which suggests he is likely one of the primary decision-makers. He referred to 'a couple of things we need to sort out first' before progressing ISO certification, implying there are internal dependencies or competing priorities, possibly involving his co-founder. No mention was made of a procurement process, budget sign-off requirements, or other stakeholders. However, given he is a co-founder, it is reasonable to assume any significant spend would involve at least one other founder-level conversation. This was not explored on the call.</div>
+            </div>
+            
+            <div style="margin-top:14px;padding:14px 16px;background:rgba(50,178,65,0.08);border-left:3px solid #32B241;border-radius:0 8px 8px 0">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:6px">Recommended AE Approach</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.75">Open by acknowledging that this is deliberately a no-pressure conversation — Matt agreed to it on that basis and will be sensitive to feeling sold to before he is ready. Frame the meeting as genuinely diagnostic: you are there to understand where FlatPeak is today and help Matt think through what the path to certification actually looks like in practical terms, so that when they do decide to move, they are not starting from zero. From there, probe hard on the customer questions angle — this is the real commercial nerve. Ask which types of customers are raising ISO questions, whether it has come up in any live deals or renewals, and whether any opportunity has been lost or stalled as a result. This will help Matt connect the delay to real revenue risk rather than treating it as an abstract compliance task. Also probe what the 'couple of things to sort out first' actually are — if those are blockers, the AE needs to understand them. If they are unrelated, Matt may not have fully considered that ISO work could run in parallel. Clarify who else would need to be involved in a decision to proceed — the co-founder relationship is unexplored and could be a hidden veto. On timeline, gently surface the three-to-six-month point the SDR mentioned: if Matt wants this done in 2026 and the meeting is end of June, the window is tight. Use that as a natural reason to think concretely about next steps rather than leaving it open-ended again. Avoid making this feel like a closing meeting — Matt's trust has been built on the basis that this is a scoping conversation, and that framing should be respected.</div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#32B24122;border:1px solid #32B241;color:#32B241;font-size:10px;font-weight:700;flex-shrink:0">✓</span>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#32B241">Activated</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">10 conversations</div>
+      </div>
+      <div style="padding:8px 16px 14px">
+        
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Paul McGuinness</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">BoscaSports</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head Of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Paul is just returning from paternity leave and is currently overwhelmed with emails. He hasn't spoken to Fergal yet about ISO certifications. I offered to send him an email for reference and will follow up next week for feedback on whether a further conversation is warranted. Paul agreed to read the information and reply.
+
+Morning Paul, good speaking with you just now.
+
+As mentioned, Fergal suggested reaching out as the topic of ISO certifications has come up a few times at board level.
+
+We work with startups and scaleups pursuing larger, regulated clients who are asking for ISO certifications or up-to-date audit evidence before contracts progress.
+
+This means that:
+Deals end up stalling at procurement
+Repeated compliance questionnaires
+Revenue delayed while certification is completed
+Losing opportunities to already-certified competitors
+At ISO Serious, we simplify the process. We help you get certified and stay audit-ready year-round; no last-minute scrambles or strain on you and your team.
+
+Here's some more info on how we work.
+
+Conscious you've only just come back so if I don't hear anything I'll give you a quick call next week to see if this is worth a further conversation.
+
+Please shout with any questions in the meantime.
+
+Thanks,
+Mark</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Oliver Ross</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">edyn.care</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-Founder & COO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Oliver at ISO Sirius, but he is currently on holiday. He will be back in a week, and I will follow up with him then.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Alan Farrelly</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">CitySwift</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to discuss ISO certifications, but the prospect was driving and asked me to call back tomorrow. They mentioned being out of the office on a work trip and confirmed a time to speak further.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ben Gatford</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">SDLT Check</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Brendan Traynor</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Ralco</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Brendan about ISO certifications. He mentioned they need to be compliant before year-end due to their payroll provider. He wants to focus on pricing and requested I send over the best price. Brendan also mentioned potential expansion into the Nordics, needing GDPR and ISO pricing too. Will follow up next month after sending the information.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Conor Moran</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Eskimo Software</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Connor, who expressed interest in the need for ISO certifications due to their new organization structure. He provided his email conrad@eskimo-software.com to send more information. Connor mentioned he needs to discuss it with his security team but is open to reviewing the details.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ian Kerr</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Idaso</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder & Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Had a conversation with Ian about ISO certifications. He mentioned they have an internal team working on it, but he wasn't sure if they engaged a contractor. He requested my email address to forward relevant information to his team. I collected his email (ian.cur@idas.limited.com) and offered to include pricing details in my follow-up email.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Usman Munir</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">National Renewable Energy Centre</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached Osman during a short call as they're in the middle of an office move. He expressed interest in discussing ISO certifications once they're settled and mentioned he wants to build a QMS system to standardize processes. We agreed for me to call back next Monday to schedule a follow-up for later that week.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Irena Fradin Klug</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Foresight</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Manager</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached Arena regarding ISO certifications and audit support. They mentioned they already have ISO certifications in place. Arena agreed to receive an email with more information about our offerings for further review.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">George Smithies CEng MICE</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">InnDex</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called George to follow up on our previous conversation regarding ISO certifications. He mentioned he’s currently in Dubai and said it’s not the best time to talk. He asked me to call him back next week.</div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#3090C022;border:1px solid #3090C0;color:#3090C0;font-size:10px;font-weight:700;flex-shrink:0">⏸</span>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">No, Not Now</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">10 conversations</div>
+      </div>
+      <div style="padding:8px 16px 14px">
+        
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Lyndon W</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Movin</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Operating Officer</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with an unknown contact who mentioned their priority is increasing sales due to diminished consumer confidence. They asked for three months before rescheduling our meeting, as they are focused on gaining traction in the conveyancing industry. I agreed to follow up in three months.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Elise Kidd</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">ai-for-education.org</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to discuss ISO certifications and audits, but the prospect was in the middle of a meeting and stated it's not a good time for them. They expressed that it's not a priority for them at the moment. I acknowledged their response and ended the call respectfully.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jason O'Regan</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Planufacture</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder and CEO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Jason who mentioned their focus is on smaller companies, so ISO certifications aren't currently required. He indicated they plan to target larger enterprises in the future, suggesting a follow-up in 12 months might be worthwhile. I concluded the call and thanked him for his time.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mark Gibbons</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">TAPiTAG</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">CEO & Co-Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Mark, who mentioned he had a call and couldn't talk. He suggested I follow up in six months as they are not looking at our services at the moment. He appreciated my call and I will reach out again in six months.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Olly Cogan</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Ratemyshift</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder and CEO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Contacted Ollie to follow up on ISO certification discussed last year. He is interested but busy with other projects, so he suggested I email him now and follow up in four months. He mentioned they have three employees in the UK and about seven developers in India. He requested indicative pricing for the certification. Overall, it’s not a top priority at the moment.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ashwin Saddul</span>
+                
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder and Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Had a conversation with Ashwin regarding ISO certifications. He mentioned it's too early for them as they are still in the foundational stage of their startup and have several priorities. We agreed it would be best to revisit the conversation in Q1 next year when they have more clarity on their funding and needs.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Melanie Dobson</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">MyMobileWorkers</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Melanie, who mentioned it's still not the right time for ISO certifications and suggested following up later this year. She emailed my colleague about it recently, but he’s on holiday, so I’ll update him when he returns.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Dan Cohen</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Residently</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Executive Officer</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Dan who mentioned they don't have an intentional budget for ISO certifications right now. He indicated it might be worth revisiting in a few months as they scale up and aim for a sensible revenue level before investing. I’ll follow up in a few months to check in on their progress.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Christopher Allen</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Chartwise UK</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director Of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Chris regarding potential ISO 27001 accreditation. He mentioned they're still testing their applications and have no set timeline for pursuing accreditation, considering it a side project. He agreed to follow up in three to six months when they might be ready to discuss it further.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Liam Melia</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Pelidum Trust AND Safety</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-founder & COO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Leo regarding ISO certifications. He mentioned it’s not a top priority at the moment and couldn’t specify when it might become relevant. I offered to follow up in a few months to check in. He acknowledged that clients requiring certifications often trigger the need.</div>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#FC3A3322;border:1px solid #FC3A33;color:#FC3A33;font-size:10px;font-weight:700;flex-shrink:0">✕</span>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#FC3A33">No, Not Ever</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">40 conversations</div>
+      </div>
+      <div style="padding:8px 16px 14px">
+        
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Dan Short</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Just Develop It</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Operating Officer</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Dan at ISO Serious, but he indicated they already handle ISO certifications and audits with no issues. No further discussion possible as he seemed satisfied with their current provider.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">John Green</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">IXICO</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Senior Vice President Quality, Compliance and Regulatory Affairs</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with John Green, who mentioned they have ISO 3485 and 27001 certifications. He and his team handle maintenance, and they consider their management system quite mature. There seems to be no immediate need for our services, as they are already compliant and well-prepared for audits. Concluded the call amicably without any next steps.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Tony Ling</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">ISx4</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Finance & Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Tony but he was busy and not interested. He expressed that he's in the middle of something before bed and didn’t want to discuss ISO certifications or audits. No next steps or referrals were mentioned.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Fred Okwute</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Fitfactory Technology</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Fred who mentioned that while ISO certifications might be relevant for his customers, they are not necessary for his business directly. He didn’t express interest in pursuing ISO certifications himself. I appreciated his time and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Fabian L</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Caxton</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Compliance</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Fabian and discussed ISO certifications. He mentioned that they are already compliant with a mix of an internal team and external consultants. He didn't express interest in our services, so I decided not to pursue further at this time.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Natalie Fanning</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">QGLaw</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Natalie and introduced myself. She mentioned they hold legal business and didn't want me to waste her time with sales. I respected her request and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Lindsey Newman</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Loney Stewart Holland</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Lindsay, who indicated that they rarely encounter requests for ISO certifications since most of their clients are SMEs and come from referrals. She mentioned they don’t have any ISO certifications, and it hasn't posed a problem so far. Lindsay will reach out if that changes in the future.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">John Vaughan</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Most</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Technology Officer / co-founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called John for a cold call, but he was not interested and declined to engage. He preferred not to speak at this time.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Daniel L</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">UrbanFox</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder & CEO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Daniel, who mentioned they use VANTA for compliance and have no issues. He requested to be removed from my contact list, as I reached him on his personal number. He expressed frustration with companies using third-party tools in relation to GDPR. I agreed to remove his details and provided instructions to opt out from the database.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Michelle O'Donnell</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Waynua</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head Of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Michelle regarding ISO certifications. She mentioned using her personal phone and indicated she was referred by Craig. She opted out of further contact and didn't find value in an email follow-up. No next steps were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Eoin Barry</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">DreamDev</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Owen, who mentioned they are getting ISO certified in the next few months, making my offering not relevant at this time. He didn't express any current difficulties or needs related to ISO certifications. We wrapped up the call amicably. No next steps were discussed as they are already in the process of certification.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Patrick Mullen</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Trig</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called to discuss ISO certifications with Patrick but reached an unknown individual. They requested to be removed from my CRM and mentioned similar issues with Stripe. No further steps were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Levent Ozalp</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Continuous Software</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder and CEO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Levant from their company. They are already using a consultancy agency for ISO certifications, so they're all sorted with their audits. They also mentioned that they have shut down their UK operation and are only operating in Ireland now. No further steps were discussed as they are satisfied with their current provider.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Paul Mc Nulty</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">3D Issue</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Paul about ISO certifications. He mentioned they don’t operate in a sector requiring these certifications, so there isn't a need for them. He seemed uninterested in pursuing this further.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Elsa Ebbersten</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Aave</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called for a cold introduction regarding ISO certifications, but the prospect declined to engage and didn't have time for further discussion. I acknowledged their response and decided not to pursue further.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ciarán Mac Donncha</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Inneall</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Co-Founder/Director at Inneall</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Kieran for a cold call regarding ISO certifications. He mentioned he was busy with a meeting and stated that it would be a waste of time to follow up. I appreciated his honesty and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Simon Slater</span>
+                
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Owner / Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Simon, but he wasn't interested in our offerings even with the mention of certifications. He stated that it wouldn't change his mind and thanked me for the call. No next steps were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Samashwin Paul</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Nova Law UK</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder and CTO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with an unknown representative who stated that they already have ISO certifications and didn't see a need for my call. I ended the conversation respectfully without any further follow-up needed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jamil Kanfoud</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">HyBird</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Vice President of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Jamil about ISO certifications. He mentioned they are already handling it due to their shipping needs and did not see value in discussing further. No next steps were agreed upon as he wasn't interested.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Hamish Jefford</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Fireflai®</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Amy regarding ISO certifications. She mentioned they already have a provider lined up for their 2001 certification. I acknowledged her current engagement and decided to leave it for now.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Gail Moore</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">AssetGo</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Manager</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Gail regarding ISO certifications. She mentioned they don’t have ISO certifications and aren’t considering them as clients aren't requesting it. No further interest was expressed, so I ended the call politely.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mick Deol</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Tahola</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Director /Owner</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Sarah Power</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Vable</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of People & Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Sarah regarding ISO certifications. She mentioned that they already have everything sorted and are working with someone to ensure they are audit-ready every year. I decided not to press further and ended the call politely.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Will Neale</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Fonix</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Liam McMahon</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Continuous Software</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Operating Officer</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Dina Patel</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">TestSet</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Director, Europe</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached Dina, but she was about to step into a meeting. She mentioned that someone else in the company already manages ISO certifications and audits, so my call wasn't relevant to her. I decided to let her go to her meeting without needing a follow-up.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Oleksandr Kravets</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Netfully</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">CTO & Co-founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I called to discuss ISO certifications and support for audits, but the prospect was not interested. They declined the conversation, indicating it was not a good time for them. No next steps or referrals were mentioned.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Daisy Nelson</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Castlebridge Finance</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Manager</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Daisy, who mentioned she couldn't talk as she was at work. I inquired if my ISO certifications were relevant, but she confirmed it wouldn't be. I appreciate her time and won't be following up.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Nigel Freddy</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Dot Group</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations and Professional Services at the DOT Group</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Nigel, who mentioned they are already engaged with another company for ISO certifications. He found the topic relevant but confirmed they are sorted for now. No further steps were discussed as they are already covered.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ben Gatford</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">SDLT Check</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Ben, who mentioned that ISO certifications haven't been on his radar and are not relevant for his software firm's operations, as they sell to non-regulated solicitor firms. He confirmed that it's not a requirement for them at this point, so he doesn't see us as a fit. I appreciated his time and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Pauline Connolly</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Document Direct</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Pauline to follow up on ISO certifications. She confirmed she is retiring next Thursday but will continue with audits on an ad hoc basis due to CEO's courses. She is transitioning towards a consultant role. Wished her well on her semi-retirement.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Avais Bhutta</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">TVbeat</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Operating Officer</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Had a cold call with a prospect who mentioned that ISO certifications are relevant but they are currently working with a partner agency for support. No further discussions were warranted at this time, and I wished them luck with their ongoing projects.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Richard Hartland</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Data8</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">CIO and Co-founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Richard to follow up on ISO certifications as requested earlier this year. He mentioned their processes are all sorted and they have everything under control, so there's currently no need for our services. I thanked him for his time and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ken O'Shaughnessy</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">B4B Payments Group</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">COO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to Ken, but he was on a day off and picking up a prescription for his dog. He indicated that discussing ISO certifications wasn't necessary, so I chose not to pursue the call further.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Maria Flygare</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">BCR Publishing</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Operating Officer</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Alice Rossini</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Got Capital Business Funding</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Manager</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Alice but she was too busy to talk. Mentioned it was about ISO certifications, but she didn't think it was relevant for her. No follow-up was set, and I thanked her for her time before ending the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jonathan Amrani</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">PSI - Pay</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">COO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Jonathan regarding certifications. He mentioned they already have their certifications and an advisement team, making our services irrelevant for them. He needed to go on a call soon, so I respected his time and ended the conversation. No next steps were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Maxime de Guillebon</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">OpenTrade Technology</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">COO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mark Bannon</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">VT Electron</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder & CEO</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Patrick F</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Idiro Analytics</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Operating Officer</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            
+            
+          </div>
+        </details>
+      </div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#9060D0">Referral Leads</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px">Contacts who referred us with permission to reach out</div>
+      </div>
+      <div style="padding:12px 24px 18px">
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+              <th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Name</th><th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Job Title</th><th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Company</th><th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Eddie Drew</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Operations Manager</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">X3 Consulting</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447980118738 · eddie.drew@x3consulting.com</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Shaun Ward</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Operations Manager</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Knight Training UK</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447542040812 · shaun@knighttraining.co.uk</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div></div>
+    </div>
+
+  <div class="panel" id="panel-1">
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">All Time — Month-on-Month Comparison</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px">Full campaign history at a glance</div>
+      </div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;min-width:680px">
+          <thead>
+            <tr style="background:rgba(255,255,255,0.04)">
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:left">Month</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(200,216,240,0.5);text-align:center">Dials</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">Connects</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#3090C0;text-align:center">Convos</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#32B241;text-align:center">Activated</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#FE6601;text-align:center">Meetings</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Connect %</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Mtg %</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">May 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1321</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">154</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">120</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">14</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">1</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">11.7%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">0.8%</td>
+    </tr></tbody>
+          <tfoot>
+            <tr style="background:rgba(255,255,255,0.06)">
+              <td style="padding:12px 14px;font-weight:800;color:#fff;font-size:13px">Total</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(200,216,240,0.9)">1321</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.65)">154</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#3090C0">120</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#32B241">14</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#FE6601">1</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">11.7%</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">0.8%</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+<div class="footer">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
+  <span class="footer-tag">Phone First, Always</span>
+</div>
+<script>
+(function(){
+  // ── Tab switching ─────────────────────────────────────────────
+  function showPanel(id){
+    document.querySelectorAll('.tab').forEach(function(t){
+      t.classList.toggle('active', t.getAttribute('data-panel')===String(id));
+    });
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+    var target=document.getElementById('panel-'+id);
+    if(target) target.classList.add('active');
+  }
+  document.querySelectorAll('[data-panel].tab').forEach(function(tab){
+    tab.addEventListener('click',function(){showPanel(tab.getAttribute('data-panel'));});
+  });
+
+
+})();
+</script>
+</body>
+</html>
