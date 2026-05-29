@@ -28,6 +28,10 @@
   .panel{display:none;padding:32px 56px 64px;max-width:960px}
   .panel.active{display:block}
 
+  /* ── Meetings expandable ── */
+  details[open] summary>span:first-child{transform:rotate(90deg);display:inline-block}
+  details summary::-webkit-details-marker{display:none}
+
   /* ── Footer ── */
   .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
   .footer-logo{height:28px;opacity:0.45}
@@ -45,22 +49,22 @@
   <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
 </div>
 <div class="tabs">
-    <button class="tab active" onclick="showTab(0)">April 2026</button>
-  </div>
+    <button class="tab active" data-panel="0">May 2026</button>
+  <button class="tab" data-panel="1">All Time</button></div>
 
     <div class="panel active" id="panel-0">
       
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">501</div>
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">238</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">62</div>
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">33</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">3</div>
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">0</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
@@ -69,12 +73,12 @@
       </div>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
-      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">4</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">48</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">1</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">2</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">2</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">27</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div>
     </div>
       <div>
   <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
     <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
-    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">April 2026 was a month of genuine market contact — the field service sector is clearly active, opinionated, and mid-movement on technology decisions. A meaningful portion of conversations revealed prospects who are either freshly committed to a new system, deep in implementation, or cautiously watching a home-built solution take shape. The market is not dormant; it is in transition, and that transition is creating both short-term resistance and identifiable future opportunity. The calls that landed best were the ones that found prospects who recognised the pain — manual processes, ageing or expensive platforms, and the operational drag of paper-based workflows — even when the timing wasn't right to act.</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">May 2026 was a month that revealed a great deal about the market landscape for Identify Digital's proposition. The volume of dials generated a solid number of connected conversations, and while those conversations were largely substantive enough to qualify prospects clearly, the overwhelming pattern was one of an entrenched market — contacts who are already using something, committed to something else, or structurally unable to make a decision even if they wanted to. The month felt less like resistance to the proposition itself and more like resistance to the moment: the timing, the incumbent system, the organisational layer above.</div>
     
   </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -96,51 +100,63 @@
         <tbody>
       <tr>
         <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Simpro</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Paul had completed twelve months of due diligence before selecting Simpro and was already in implementation. A deeply considered, locked-in decision with no near-term re-evaluation likely.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Daniel described Simpro as deeply embedded after 12 years and 120 users, saying a transition would be 'chaotic'. Requested an email rather than a conversation.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Job Watch</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Stuart described Job Watch as 'becoming expensive and less effective' — he's actively dissatisfied and is planning to look for alternatives from around June or July as his contract approaches its December end.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Red Sky (Bespoke)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Andrew stated they are locked into a bespoke version of Red Sky, indicating a customised deployment that raises the cost and complexity of switching.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">eWorks</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Jake confirmed they use eWorks for job management but acknowledged challenges with procurement management and compliance — he is building his own system and requested a demo link for future consideration.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">HubSpot (repurposed for field ops)</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Dominic mentioned using HubSpot for booking and timesheets, framing it as a sign they were 'ahead of the game' — using a CRM tool to cover field service functions rather than a dedicated platform.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Oracle (Group Migration)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect confirmed the pain points were relevant but explained that software decisions are controlled by their parent company, which is currently mid-migration to Oracle.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Quantum</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Andrew described Quantum as working well for timesheets and related tasks, expressing no interest in exploring alternatives.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">PinPro</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Matthew's merged company had moved to PinPro for field management. He acknowledged it was challenging but said they were committed to it for now. No immediate opportunity.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">PaperDrop</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Carl stated they are satisfied with PaperDrop and plan to stick with it for at least the next 12 months.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Paper Drop</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">James had recently implemented Paper Drop to handle job booking and timesheets. He confirmed they were set up and the timing wasn't right for a conversation.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Connect Team</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Prospect described Connect Team as working well and expressed no need for change.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Propeller (Field Management Software)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Andy revealed he works for Propeller, a field management software provider, making him a direct competitor. He noted their system makes clients 'fully compliant'.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">In-house / Bespoke-built Systems</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple contacts referenced handling everything in-house or developing their own platforms — Jake is actively building a system; others cited internal software as the reason for disinterest.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~3</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">NetSuite (ERP with in-house customisation)</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">David referenced an in-house expert who had spent over a year building out their NetSuite ERP. A heavily invested internal solution with no appetite for change.</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
-      </tr>
-      <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">In-house / bespoke development</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Multiple prospects — including Gavin (fully bespoke ERP), Nathan (own software developer), Chris (in-house IT team with automated systems), Andy (near-completion proprietary app), and Ben (trialling an in-house platform) — cited internal builds as their reason for not engaging.</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~5</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
-      </tr>
-      <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Parent company / group-mandated systems</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Darren works under larger firms' systems and adapts to their requirements. Tristan's business is part of a large French conglomerate. Neither had autonomy over technology decisions.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Existing Automated CRM (unnamed)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Jason confirmed they already use an automated, integrated CRM and expressed satisfaction with it.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
       </tr></tbody>
       </table>
     </div>
@@ -152,43 +168,51 @@
       <div style="padding:18px 24px">
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Already committed to a recently implemented system</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Already using a system</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~12 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"We've been using Simpro for 12 years with 120 users — transitioning from it would be chaotic."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the dominant objection of the month and spans everything from well-known platforms to unnamed internal tools. The depth of entrenchment varies significantly — some contacts are locked in contractually or by scale, whilst others simply haven't been given a compelling reason to look. The opportunity here lies in identifying which contacts are satisfied versus which are merely habituated. Jake's case, for instance, shows that an existing system and genuine pain can coexist.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right person / decision goes elsewhere</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"All IT-related decisions go through the CFO."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring structural blocker — contacts either don't hold budget authority or actively deflect to another department. In one case the parent company controlled all software decisions. This suggests the contact lists may be reaching operational rather than strategic decision-makers. Identifying CFO, IT Director, or Operations Director-level contacts within the same organisations could unlock conversations that the current contacts are willing to facilitate.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not relevant to our business</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~6 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He conducted extensive due diligence over 12 months before choosing Simpro, so no immediate opportunities for us."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the single most common reason for a firm 'no' in April. Prospects like Paul, James (Paper Drop), Matthew (PinPro), and others had made recent, considered technology decisions and were not willing to revisit them. These are not lost causes permanently — they are prospects who will become re-evaluators when their current system disappoints or their contract ends. The priority is to log contract timelines where known and re-enter the conversation at the right moment.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Our site visits are mostly escorted and we follow the site owner's procedures — we don't face issues with job management or risk assessments."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several contacts felt the proposition simply didn't map to how their business operates — either because they don't perform on-site work, don't manage timesheets directly, or rely on their supply chain for document management. This points to a targeting refinement opportunity: filtering for businesses with field-based workforces and direct responsibility for compliance and scheduling before dialling.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">We handle it in-house</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Too busy / bad timing</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They have an in-house IT team that has already automated their tasks with their own system."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A significant cluster of prospects cited internal development — bespoke ERPs, proprietary apps, or dedicated software developers — as their reason for disengaging. This objection often signals a business that has invested heavily in a solution and has organisational pride attached to it. However, prospects like Andy, who admitted their app was 'still being assessed', and Ben, who acknowledged their platform 'has a long way to go', suggest the in-house objection can mask underlying uncertainty. Probing questions about reliability, maintenance cost, and scalability may open these conversations back up.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He was busy wrapping up for the day — suggested calling back early afternoon."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A proportion of calls ended due to poor timing rather than genuine disinterest. Several contacts requested callbacks at specific times or agreed to receive emails, which represents a warmer response than a hard no. These contacts should be prioritised for structured re-engagement rather than being recycled into the general dial pool.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Not the right time — too much going on</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Committed for the next 12 months</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They are currently focused on implementing AI and moving offices, making it hard to fit in new projects."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects acknowledged the relevance of the proposition but cited competing priorities — office moves, AI implementation projects, trade shows, or simply being mid-transition. Ian's response was particularly telling: he expressed genuine frustration with a previous technology investment that underdelivered, which suggests he is a future candidate once his current pressures ease. These prospects warrant a structured follow-up cadence rather than a hard close attempt.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They plan to stick with their current solution for at least the next 12 months."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A time-based objection that is not a permanent no. These contacts have effectively given a future re-engagement date. Logging these with a specific follow-up trigger — rather than a vague future callback — would ensure they are contacted when contract review cycles are more likely to be open.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Happy with current setup / not broke, won't fix</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Doesn't accept cold calls / prefers email</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He has everything covered with different programs for managing jobs and is happy with their current setup."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A number of prospects — James (field service), Jason, Steve, Peter — gave variants of 'we're fine as we are.' This is the hardest objection to move because it reflects a lack of perceived pain rather than a timing or budget issue. The implication for messaging is that the opening hook needs to introduce tension earlier — surfacing the cost of manual processes or the risk of incumbent systems becoming obsolete — before the prospect self-categorises as 'covered'.</p>
-      </div>
-      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">No decision-making authority / wrong contact</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
-        </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Tom informed me that I reached his personal mobile rather than a work number. He asked how I obtained his contact information."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A portion of calls reached individuals who were retired, had sold their business, were no longer in a relevant role, or were contacted on personal numbers. This points to a data quality issue worth reviewing with the data provider. Tom specifically asked how his details were obtained — a reputational consideration worth flagging for data hygiene purposes.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He stated they don't accept cold calls and are too busy. He requested an email instead."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A small but consistent group of contacts redirected to email rather than engaging on the call. This is worth treating as a warm signal rather than a rejection — these individuals are not categorically uninterested, they are simply controlling the channel. A well-crafted follow-up email that references the specific pain points mentioned in the call could reopen the conversation.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -198,24 +222,24 @@
       <div style="padding:18px 24px">
       <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#3090C0">How did you get my contact details?</span>
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send more information / a demo link by email?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Multiple contacts — including Jake, Daniel, Tom, and Brian's referral route — requested email follow-ups rather than continuing the conversation live. This signals a degree of interest that didn't convert to a booked meeting, but represents a pipeline of warm email contacts. The quality of the follow-up email sent in these cases is critical to whether that interest progresses.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">What does the platform actually do for procurement and compliance?</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
         </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Tom's direct question about data sourcing — and the fact that he was reached on a personal mobile — highlights the importance of data accuracy and the sensitivity prospects have around personal contact information. When this question arises, a clear and confident answer about the data provider (as given referencing Surf) is essential. It also signals that data quality checks should be a recurring part of campaign hygiene.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Jake raised procurement management and compliance as genuine pain points even whilst explaining why he wasn't switching from eWorks. This is one of the clearest buying signals in the month's transcripts — a prospect who can articulate specific problems and is actively seeking solutions, even if the timing isn't right. This specific capability deserves more prominent positioning in opening conversations.</p>
       </div>
       <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send me an email with information instead?</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Are you able to call back at a better time?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
         </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Both Jen and Liam redirected the conversation towards email rather than committing to a meeting or call. This is a common deflection, but Liam's response was more substantive — he acknowledged the relevance of the topic and gave a specific email address, suggesting genuine interest at a low-commitment level. For these prospects, a well-constructed follow-up email that mirrors the pain points discussed in the call is the most productive next step, with a clear and soft call to action.</p>
-      </div>
-      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#3090C0">When should I call back? / Can you call back later?</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
-        </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">A recurring pattern across the month was prospects asking for a callback at a better time — Gary (call back in the morning), Steve (call back in an hour), Simon (try again later), Nigel (on holiday, call back). While these are not warm leads, they do represent contacts who did not reject the proposition outright. The conversion potential here depends entirely on whether the follow-up actually happens and whether the second call catches the prospect in a more receptive moment.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Several contacts didn't object to the proposition but asked for a different time — early afternoon was mentioned specifically. This is a meaningful signal that the proposition wasn't dismissed, and that call scheduling and timing discipline could meaningfully increase the conversion rate of connected calls into real conversations.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -225,24 +249,20 @@
       </div>
       <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The market is mid-cycle, not static</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A striking number of prospects in April were in the middle of something — implementing a new system, building an app, merging with another company, or preparing to move offices. This is not a dormant market; it is a market in active transition. For Identify Digital, this means the pipeline is not primarily about prospects who will never buy, but about prospects who are not ready yet — and timing re-entry correctly will be critical.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The Market is Well-Served but Not Fully Satisfied</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Almost every contact who engaged substantively already had a system in place — yet Jake's conversation revealed that having a system and having a problem are not mutually exclusive. Contacts using eWorks, in-house tools, or off-the-shelf software still cited compliance gaps, procurement challenges, and limitations that they were working around. The opportunity is not to displace satisfaction but to surface the gaps beneath it.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Incumbent dissatisfaction is present but quiet</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Stuart's situation with Job Watch — expensive, declining in effectiveness, contract ending in December — is likely not unique. Several other prospects mentioned platforms that were described as difficult (PinPro), not fully mastered (Ben's in-house tool), or compromised by other priorities (Ian's AI project complications). The market contains a meaningful cohort of users who are tolerating their current solution rather than championing it, and these prospects are worth identifying and revisiting on a structured timeline.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Structural Decision-Making Blocks Are Common</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable pattern this month was contacts who were personally receptive but structurally unable to act — purchasing decisions gated by CFOs, IT departments, parent companies, or group-wide migrations to platforms like Oracle. These are not soft rejections; they are genuine organisational realities. Identifying the correct decision-maker tier — and in some cases asking current contacts to facilitate an introduction upward — could unlock a layer of the market that is currently inaccessible at first contact.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">In-house development is a growing objection category</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Five separate prospects cited internal development as their reason for not engaging — ranging from fully bespoke ERPs to near-complete proprietary apps to dedicated internal software teams. This suggests a segment of the field service market that is investing in building rather than buying. However, prospects like Andy and Ben revealed cracks in this confidence, with Andy suggesting a six-month review and Ben admitting their platform had 'a long way to go'. The in-house objection deserves a specific counter-narrative around the long-term cost and risk of maintaining custom solutions.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Timing and Re-engagement Represent a Meaningful Pipeline</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring theme was not permanent disinterest but misaligned timing — contacts committed for 12 months, mid-implementation, heading into meetings, or building their own systems in the interim. Tom suggested revisiting in six months; Carl gave a 12-month window; Jake requested a demo link for future use. If these contacts are tracked and re-engaged at the right moment, they represent a pipeline that has already been partially qualified this month.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Referral potential is largely untapped</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Harrison at Maine Electrical mentioned his brother works at a related company, Severn Trent. Jason — though personally out of the workforce — provided a referral to Mike, the MD at Greens. These are early signals that the network around engaged prospects can yield secondary contacts. A light-touch referral ask, embedded naturally into discovery conversations, could extend the reach of each productive call without additional dials.</p>
-      </div>
-      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Data quality is affecting reach at the margins</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A small but notable portion of calls reached individuals who were retired, had sold or closed their business, or were contacted on personal rather than work numbers. Andrew was closing his business within two months; Lee was retired and frustrated by sales calls; Tom was reached on a personal mobile. While these represent a small fraction of dials, they represent wasted effort and, in Tom's case, a potential reputational touchpoint. A periodic data audit would reduce this friction.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">List Quality Is Surfacing Mismatched Contacts</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several calls this month reached contacts who were categorically outside the target profile — a recruitment professional who shouldn't have been on the list, a prospect at Hampshire County Council reached in error, a contact whose business operates entirely escorted on third-party sites, and a company that doesn't operate on-site at all. Each of these calls represents a dial that couldn't have converted regardless of the conversation. Tightening the target criteria around field-based, directly-responsible-for-compliance businesses would increase the proportion of genuinely qualified conversations.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -252,39 +272,754 @@
       <div style="padding:6px 24px 6px">
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a structured follow-up sequence for Stuart (Job Watch contract ending December 2026) — re-engage in early June as discussed, with a focused message around the cost and disruption of staying on a declining platform. This is one of the highest-value prospects from the month.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a structured re-engagement sequence for the contacts who requested email follow-ups — Jake (eWorks user with compliance pain), Tom (revisiting in ~six months), Carl (12-month contract window), and Brian's MD referral at Fenner Group (BShannon@FennerGroup.com) — with tailored messaging that references the specific pain points each raised rather than a generic outreach.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Create a dedicated 'future pipeline' tracker for prospects who cited implementation timelines or self-suggested review windows — specifically Andy (six months), Ian (post-office move and AI project), and Matthew (PinPro commitment under review). Schedule re-contact dates now rather than relying on recall.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Refine the contact list criteria to prioritise field-based businesses with direct operational responsibility for compliance, job management, and timesheets — filtering out businesses that rely on supply chains for document management, operate escorted-only on third-party sites, or are non-contracting office-based operations, to increase the proportion of genuinely qualifying conversations per dial session.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a specific counter-narrative for the in-house development objection — focusing on the total cost of ownership, maintenance burden, and scalability risk of custom-built solutions. This objection appeared five times in April and will recur; a practised, non-confrontational response that plants a seed of doubt without alienating the prospect will compound in value over time.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a secondary outreach strategy for contacts where the decision-making authority sits above the person reached — asking current contacts to facilitate introductions to their CFO, IT Director, or Operations Director where they've confirmed the proposition is relevant but the decision isn't theirs to make, and targeting those senior roles directly within the same organisations.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Follow up promptly and meaningfully with Liam at Connolly Limited (norbury@connollylimited.co.uk) — he engaged with the automation and time-loss angle and requested literature. A targeted email that reflects the specific conversation, with a low-friction next step, gives this contact the best chance of converting.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Introduce call-back scheduling discipline for contacts who requested a specific time or indicated better availability — such as the contact who suggested early afternoon — to ensure that timing-based deflections are treated as warm callbacks rather than returned to the general pool, improving the conversion rate of already-connected numbers.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Conduct a data quality review with the data provider, Surf — specifically targeting the accuracy of job titles, employment status, and contact type (work vs. personal numbers). The volume of calls reaching retired individuals, business closures, and personal mobiles in April suggests a cleanliness issue that is suppressing conversion rates at the top of the funnel.</p>
-      </div>
-      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">6</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Explore the referral opportunity surfaced by Harrison at Maine Electrical — his mention of a brother at Severn Trent is a warm introduction waiting to be activated. A direct ask during the follow-up call on Thursday would be a natural and low-effort way to extend the conversation into a new account.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Incorporate procurement management and compliance as primary pain-point hooks in the opening conversation, given that Jake's transcript demonstrated these are live, named challenges even among contacts currently using a competitor platform — leading with these specific problems rather than general job management and timesheets may open more substantive conversations earlier in the call.</p>
       </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#32B24122;border:1px solid #32B241;color:#32B241;font-size:10px;font-weight:700;flex-shrink:0">✓</span>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#32B241">Activated</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">1 conversation</div>
+      </div>
+      <div style="padding:8px 16px 14px">
+        
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jake Tute</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Secure Contracting NW</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+      </div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#3090C022;border:1px solid #3090C0;color:#3090C0;font-size:10px;font-weight:700;flex-shrink:0">⏸</span>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">No, Not Now</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">2 conversations</div>
+      </div>
+      <div style="padding:8px 16px 14px">
+        
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Tom O Brien</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Beechfield Tree Services</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(50,178,65,0.15);border:1px solid #32B241;color:#32B241;letter-spacing:0.04em;white-space:nowrap">Positive signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Tom at Beechfield Tree Services has a system in place and isn't looking to change anything this year, but voluntarily suggested revisiting in around six months. He agreed to receive an email with more details and a follow-up was explicitly scheduled. There is a clear future opportunity flagged by the prospect himself.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect set a six-month review window and requested follow-up email</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Tom from an unknown company. He mentioned they have a system in place and are not looking to change anything this year, but might consider options in about six months. He agreed to receive an email with more details. I will follow up in six months as discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Karl Davies</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Sealability</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+      </div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#FC3A3322;border:1px solid #FC3A33;color:#FC3A33;font-size:10px;font-weight:700;flex-shrink:0">✕</span>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#FC3A33">No, Not Ever</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">27 conversations</div>
+      </div>
+      <div style="padding:8px 16px 14px">
+        
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Kat Kitchener</span>
+                
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Reached Zach (listed under Kat Kitchener) briefly during school pickup. He clarified that scheduling and assessment pain points aren't relevant to his role since he doesn't directly manage site labor. No path forward was identified and pursuit was dropped.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Pain points fall outside his scope of responsibility</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Zach but he is busy with school pickup. He mentioned that our discussion regarding time wasted on scheduling and assessments is not relevant to his current scope of work as he doesn't directly manage site labor. I decided to let him go and not pursue further at this time.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Dan Carter</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">GW Power</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Contracts Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Dan Carter's contact uses monday.com with an AI integration and has already cycled through multiple CRMs without finding one that fits. They feel their current setup is working and no value was identified in switching. No referrals or next steps were offered.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Deeply embedded in existing internal process with no gap identified</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with an unknown prospect who mentioned they have their own internal process using monday.com and an AI integration for project management. They have tried various CRMs but found them inadequate. I acknowledged they are managing their tasks effectively and concluded that I wasn't adding value. No next steps or referrals were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Steve James</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Lithos Consulting</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Steve at Lithos Consulting does use timesheets and risk assessments but finds available apps too generic for ground investigation work. Despite acknowledging the fit issue, he doesn't consider his current situation a significant problem worth solving. No follow-up was requested.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Acknowledged pain but dismissed it as not worth addressing</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Steve at a ground investigation company. He mentioned they do time sheets and risk assessments but have found existing apps too generic for their specific needs. He indicated it’s not worth pursuing further, as their current situation isn’t a significant headache. No next steps discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Marc Thompson</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Sound Interiors</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Mark at Sound Interiors outsources health and safety via an external company for RAMs and relies on subcontractors for the work itself, making the solution structurally irrelevant. He confirmed no changes are being considered right now. The conversation was brief with no opening for follow-up.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Structural mismatch — subcontractors and outsourced H&S remove the use case</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Had a brief conversation with Mark regarding time management issues related to job bookings and timesheets. He mentioned they use an external health and safety company for RAMs and that subcontractors handle the work, so our solutions aren't currently relevant. Mark indicated they aren’t considering changes at this moment.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jeremy Shorrocks</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Elland Steel</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Commercial Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Jeremy regarding job booking and timesheet management. He mentioned they use their own Excel and Visual Basic programs, and subcontractors handle their own timesheets for additional work. He confirmed that tracking isn't a headache for them and expressed that our solution isn't relevant. Concluded call amicably, appreciating his time.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Andy Hunter</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Ohmega Group</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Founder</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Andy Hunter at Ohmega Group handles everything in-house and expressed general disinterest in sales calls from the outset. He declined to continue the conversation and offered no opening for a future follow-up. No next steps were established.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Hostile to cold calls and firmly handles everything in-house</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Andy regarding managing jobs and timesheets. He expressed disinterest in sales calls and mentioned they currently handle everything in-house. He declined the conversation but thanked me. No next steps were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mark Read</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Full Circle Workplace</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Mark Read at Full Circle Workplace says things are fine operationally but offered to forward an email to Simon, who manages their job management system. He doesn't see himself as the right contact but provided his email address. There is a weak referral lead to Simon worth pursuing.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Polite referral offered but no direct interest expressed</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Mark who mentioned that things are currently fine in their office. He suggested I send an email with information to circulate. He doesn't think he's the right person for a discussion, but he will forward it to Simon, who is involved with their job management system. Mark confirmed his email as markerfc@workplace.com.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Frances McCann</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">John Planck Ltd | Architectural Hardware Experts</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director Of Operations</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">James Wood</span>
+                
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">James at an unnamed field service company uses off-the-shelf timesheet software and feels their internal systems are adequate. He saw no relevant need and the call was wrapped up quickly with mutual acknowledgment. No follow-up path was identified.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Satisfied with existing software, no need identified</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called James at a field service company. He stated they use an off-the-shelf program for timesheets and manage everything well with their existing internal software. He didn't see a relevant need for our services at this time, so I acknowledged that I may be wasting his time and thanked him for the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Alex F.</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">MAC Construction Consultants</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Associate Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Alex at MAC Construction Consultants is not in contracting and has no on-site operations, making the solution a fundamental mismatch. The call was brief and concluded without any discussion of alternatives or referrals. Structurally not a fit.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No on-site operations — fundamental product mismatch</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Alex regarding our services for streamlining job bookings and timesheets. He mentioned they are not in contracting and don't operate on-site, indicating my solution isn't relevant to them. We concluded the conversation without further discussion.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Rachel Thackray</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Insite International - Recruitment</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Rachel Thackray was contacted in error — she works in recruitment and was never a valid prospect for this outreach. The call was acknowledged as a targeting mistake and ended quickly. No value or follow-up possible.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Wrong contact reached due to targeting error</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I mistakenly called Rachel from the recruitment department and realized she shouldn't be on my list. I acknowledged being a cold caller with a terrible target. Rachel offered to assist briefly, but I decided to end the call. No further actions or referrals discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Peter Liddiard</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Topping Engineers</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Associate Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Peter at Topping Engineers generally avoids cold calls and expressed disinterest at the time of contact. He didn't provide a timeframe for a potential follow-up despite being asked. The door wasn't fully closed but no actionable signal was given.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Soft refusal with no future timeframe offered</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I called Peter at identified digital to discuss automation solutions for job bookings and timesheets. He expressed disinterest at the moment and mentioned he generally doesn't take cold calls. I asked if there might be an opportunity to follow up in the future, but he didn't provide a timeframe.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Louise Baillie</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Awb and Son</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Commercial Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Louise at AWB and Son has been using a provider called Boris for timesheets and risk assessments for several years and is satisfied with the arrangement. She expressed no interest in exploring alternatives and the call ended without any opening. Firmly committed to their current supplier.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Long-standing satisfaction with existing provider Boris</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to Louise at Identify Digital. She mentioned they currently use a company called Boris for managing tasks like timesheets and risk assessments, which they've found effective over the years. She expressed no interest in exploring new solutions since everything is working well for them at the moment. Thanked her for her time and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Andrew Radcliffe</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">ARP Consulting Engineers</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Andrew at ARP Consulting Engineers uses Quantum for timesheet management and described everything as working well. He showed no curiosity about alternatives and offered no referrals or future follow-up window. A clean, closed-door response.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Satisfied with Quantum, no interest in exploring alternatives</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Andrew who mentioned they are currently satisfied with their software, Quantum, for managing timesheets and related tasks. He feels everything is working well and did not express any interest in exploring other solutions at this time. No follow-up or referrals were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Kiy V</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Vames</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Kiy at Vames already uses Connect Team for time management and is happy with how it performs. No pain points were surfaced and no interest in switching was expressed. The call ended without any path forward.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Satisfied with Connect Team, no need for change</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to discuss our time management solutions but the prospect mentioned they already use a system called Connect Team which works well for them. They’re satisfied with their current setup and see no need for change. I thanked them for their time and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Craig White</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Central Alliance</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Joint Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Martin Thomas</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Wordsworth Construction Management</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Andy Barker</span>
+                
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Andy works for Propeller, a field management software company, making him a direct competitor rather than a prospect. The pitch was immediately irrelevant and the call was concluded professionally. No follow-up warranted.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect works for a direct competitor — not a fit</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Andy, who mentioned he is part of a software company called Propeller, which provides field management software. He indicated that using their system makes them fully compliant, effectively making them a competitor. Concluded that my pitch was not relevant and thanked him for his time.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ian Crossley</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Stonewest</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Operations Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mark Brewer</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Ivor King-The Piling People</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Group Commercial Manager</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Mark at Ivor King operates with only two staff and already has job management and timesheet systems in place for their small team. He expressed disinterest in cold calls and the solution wasn't considered relevant given their size. No opportunity identified.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Two-person team already covered, too small to be a fit</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Mark at a small company. He mentioned they only have two staff and already have systems in place for job management and timesheets. He indicated that my digital solutions weren't relevant to them and expressed disinterest in cold calls. I decided to end the call amicably.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Daniel Walsh EngTech MIET</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">AC Group</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Associate Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Daniel at AC Group has used Simpro for 12 years across 120 users, making it deeply embedded in their operations. He acknowledged a conversation could happen via email but explicitly described transitioning away from Simpro as chaotic. Effectively closed despite the email suggestion.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">12-year Simpro commitment with 120 users — switching is unfeasible</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Daniel to discuss potential software solutions for job management. He mentioned their company has been using Simpro for 12 years with 120 users, indicating it's deeply embedded in their processes. He suggested I email more information instead, as transitioning from Simpro would be chaotic.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Charlie Bayston</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">DSMC.UK Diving Survey and Marine Contracting</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Charlie at DSMC.UK declined the cold call outright, citing being too busy, and requested an email instead. He showed no interest in discussing job management, timesheets, or risk assessments. The email route was noted but no genuine engagement occurred.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Rejected cold call outright with no interest in the topic</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Charlie at identify digital for a cold call, but he stated they don't accept cold calls and are too busy. He requested an email instead and expressed no interest in discussing job management, timesheets, or risk assessments. I'll follow up via email as suggested.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ian Chalk</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Harley Haddow</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mick Wood</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Hanson Buildings</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">John G.</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Layer Surveys</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">John at Layer Surveys already has a system covering job booking and timesheet management and confirmed they are set. No pain points were explored and the call ended once the existing setup was established. No opportunity to develop.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Existing system in place, prospect confirmed no need</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">The agent reached out to discuss automation for booking jobs and managing timesheets, but the user stated they already have a system in place for those tasks. The call ended with the agent acknowledging the user is all set.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jason Spain</span>
+                
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Jason uses an automated, integrated CRM that already handles job booking and timesheets and expressed full satisfaction with it. No gaps or frustrations were surfaced during the conversation. Clean close with no follow-up path.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Fully satisfied with automated integrated CRM already in use</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">The agent reached out to Jason to discuss digital automation for job booking and timesheets, but Jason confirmed they already use an automated, integrated CRM. No further action is required as the prospect is satisfied with their current solution.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Andrew Stubbs FCMI,FGBC,APM Associate</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">MCP Environmental</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Managing Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Andrew at MCP Environmental is locked into a bespoke version of Red Sky, making a switch both contractually and operationally difficult. He declined a follow-up and was heading into a meeting at the time of the call. No realistic near-term opportunity.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Locked into bespoke Red Sky contract with no switching appetite</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">The agent called Andrew to discuss automation for job bookings and timesheets. Andrew declined a follow-up because they are currently locked into a bespoke version of Red Sky and are about to join a meeting.</div>
+          </div>
+        </details>
+      </div>
     </div></div>
     </div>
+
+  <div class="panel" id="panel-1">
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">All Time — Month-on-Month Comparison</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px">Full campaign history at a glance</div>
+      </div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;min-width:680px">
+          <thead>
+            <tr style="background:rgba(255,255,255,0.04)">
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:left">Month</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(200,216,240,0.5);text-align:center">Dials</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">Connects</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#3090C0;text-align:center">Convos</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#32B241;text-align:center">Activated</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#FE6601;text-align:center">Meetings</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Connect %</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Mtg %</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">May 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">238</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">41</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">33</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">1</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">—</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">17.2%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">0.0%</td>
+    </tr></tbody>
+          <tfoot>
+            <tr style="background:rgba(255,255,255,0.06)">
+              <td style="padding:12px 14px;font-weight:800;color:#fff;font-size:13px">Total</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(200,216,240,0.9)">238</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.65)">41</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#3090C0">33</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#32B241">1</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#FE6601">0</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">17.2%</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">0.0%</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
 <div class="footer">
   <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
   <span class="footer-tag">Phone First, Always</span>
 </div>
 <script>
-function showTab(i){
-  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
-  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
-}
+(function(){
+  // ── Tab switching ─────────────────────────────────────────────
+  function showPanel(id){
+    document.querySelectorAll('.tab').forEach(function(t){
+      t.classList.toggle('active', t.getAttribute('data-panel')===String(id));
+    });
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+    var target=document.getElementById('panel-'+id);
+    if(target) target.classList.add('active');
+  }
+  document.querySelectorAll('[data-panel].tab').forEach(function(tab){
+    tab.addEventListener('click',function(){showPanel(tab.getAttribute('data-panel'));});
+  });
+
+
+})();
 </script>
 </body>
 </html>
