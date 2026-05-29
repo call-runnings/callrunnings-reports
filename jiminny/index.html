@@ -49,44 +49,36 @@
   <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
 </div>
 <div class="tabs">
-    <button class="tab active" onclick="showTab(0)">May 2026</button>
-  <button class="tab" onclick="showTab(1)">All Time</button></div>
+    <button class="tab active" data-panel="0">May 2026</button>
+  <button class="tab" data-panel="1">All Time</button></div>
 
     <div class="panel active" id="panel-0">
       
-    <div style="display:flex;justify-content:flex-end;margin-bottom:18px">
-      <button onclick="openCsvModal('p0')"
-        style="padding:8px 18px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.06);
-               color:rgba(255,255,255,0.8);font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:0.04em">
-        ⬇ Export conversations as CSV
-      </button>
-    </div>
-      
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">463</div>
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">1028</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">34</div>
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">71</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">0</div>
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">2</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
       </div>
       <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
-        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">3</div>
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">8</div>
         <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
       </div>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
-      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">1</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">16</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">4</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (Ref)</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">10</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">Not Me (No Ref)</span></div>
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">8</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">28</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div>
     </div>
       <div>
   <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
     <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
-    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">May 2026 was a month defined more by market conditions than by resistance to Jiminny itself. The overall tone across conversations was polite but deflective — prospects were rarely hostile, yet the vast majority were unable to engage meaningfully, whether due to personal circumstances, organisational constraints, or timing. What stood out most was how frequently the blockers were structural rather than attitudinal: people in transition, teams locked into existing contracts, companies mid-cost-cut, and decision-makers sitting in the wrong geography entirely. The market did not push back hard on Jiminny's proposition — it simply wasn't ready to receive it.</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">May 2026 was a month defined more by market mapping than market conversion. The volume of dials was substantial, yet the proportion that turned into genuine two-way conversations was modest, reflecting a market that is largely saturated with competing outreach and, in many cases, already committed to incumbent tools. The conversations that did happen were revealing: a clear divide emerged between prospects who have recently invested in call analysis or coaching technology and are locked in, and those who simply do not prioritise call recording or performance analytics as a discipline at all. Both camps present different challenges and require different responses going forward.</div>
     
   </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -108,33 +100,45 @@
         <tbody>
       <tr>
         <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Gong</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Mentioned by two prospects as their current, actively-used solution. One was expanding their Gong contract, another had an internal team managing it and expressed satisfaction with their setup.</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">The most frequently cited incumbent. Mentioned across multiple conversations as a recently implemented or actively used tool. Elliot had just signed a 12-month contract with Gong; Richard had recently implemented it; Wayne's incoming tech stack at his new company includes Gong; Rohit tested it but found it inadequate for a partnership model.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~4</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Outreach</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Referenced by Chris as a tool currently in use, though he was not the decision-maker and directed the conversation toward a US-based contact.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Nooks</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Mentioned by Elliot alongside Gong as part of a recently signed 12-month contract bundle, suggesting it is being positioned as a complementary tool to Gong in some stacks.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Zoom (with call transcription add-on)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Barry mentioned using Zoom alongside a transcription tool but acknowledged they are missing full optimisation, suggesting the combination is seen as functional but incomplete.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Aircall</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Suzette described using Aircall for all calling needs with CRM logging. She noted it is working for now but flagged potential for change as the team grows.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.18);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Hot</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Labspot and Cloud Code</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Rohit referenced these tools for call recording and coaching, noting early positive results. He had evaluated Gong and rejected it, suggesting an openness to alternatives — though no immediate interest was expressed.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Surf</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Mentioned in the context of a prospect who had already heard of the tool and found it relevant — cited approvingly alongside a request to opt out of further contact.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Existing AI note-taking / CRM-integrated tools (unnamed)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Ash described satisfaction with an unnamed AI tool that integrates with their CRM and provides sentiment analysis and performance metrics, indicating the space is becoming crowded with point solutions.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"></td>
-      </tr>
-      <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Large internal sales enablement teams</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Two prospects cited substantial in-house enablement functions as the reason third-party coaching tools were not relevant. One noted 'a large internal sales enablement team handling coaching and forecasting.'</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~2</td>
         <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
       </tr>
       <tr>
-        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Channel/partner-driven model</td>
-        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Matthew explained that 85–90% of their business flows through partners, meaning direct sales intelligence tooling had no natural home in their organisation.</td>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Internal training and existing tooling investment (unnamed)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect stated they had already invested in training and other tools and were not interested in further discussions, without specifying what those tools were.</td>
         <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
-        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.12);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Org barrier</span></td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
       </tr></tbody>
       </table>
     </div>
@@ -146,51 +150,51 @@
       <div style="padding:18px 24px">
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Already using a competing tool</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Already under contract with a competitor</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They are already sorted with Gong and expanding their contract. No interest in alternatives at this time."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This is the most commercially significant objection in the dataset. Prospects locked into Gong are not just satisfied — they are deepening their investment. Jiminny messaging needs to address this head-on, ideally with a clear articulation of what it offers that Gong does not, particularly around specific use cases such as forecasting accuracy or manager-led coaching workflows. Timing plays a role here too — approaching these accounts at or near contract renewal would be far more productive.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"The prospect recently signed a 12-month contract with Gong and Nooks, so the agent agreed to follow up in 11 months."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Contract lock-in is the single most concrete blocker encountered this month, with Gong appearing repeatedly as the chosen platform. These prospects are not lost — they are timed. Building a follow-up sequence timed to contract renewal windows (typically months 10–11) is essential, and the intervening period should be used to nurture with content that highlights gaps Gong does not address, particularly for non-standard sales models.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Team too small for the solution</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Call analysis is not a priority or practice we follow</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Call recording analysis isn't relevant for them due to their manageable size of six sales reps."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Multiple prospects self-disqualified on the basis of team size, with one rep-count as low as two. This points to a targeting issue as much as an objection — if small teams are consistently reaching this conclusion, it may be worth reviewing the minimum viable team size within the ICP criteria and filtering these accounts out earlier in the prospecting process.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They are not interested in analysing calls or call recordings as they do not actively monitor them. When asked if they have an established process in place, he confirmed that it is simply not something they do."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A meaningful segment of the market has not yet adopted call analysis as a management discipline. This is a category education challenge as much as a product sell. These prospects may require a different entry point — perhaps starting with pain around coaching consistency or forecast accuracy — rather than leading with the technology itself.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Not the right person / decision made elsewhere</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
-        </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"I need to reach someone in the US for further discussions."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring pattern throughout May was reaching individuals who either lacked budget authority or whose decisions were made centrally — often in a US head office or by a revenue operations lead. This suggests that contact-level targeting may need to be adjusted to prioritise VP-level or RevOps titles with confirmed regional autonomy, rather than relying on job title alone as a qualifier.</p>
-      </div>
-      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Currently in cost-cutting mode</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Team too small to justify the tool</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They are currently in a cost-cutting phase and not interested in new investments."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Budget freeze objections are difficult to overcome in the short term but are time-bound by nature. These prospects are worth retaining in a nurture sequence with a planned re-engagement in Q4, as Laura specifically suggested 'the end of the year' as a natural re-evaluation point. The key is maintaining a light-touch presence without applying pressure.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He indicated that it might not be relevant for their small team right now."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Small team size is being used both as a genuine constraint and as a soft rejection. Where the prospect has shown any openness (as Jason did in agreeing to receive more information), there is a case for positioning free or entry-level options to establish a foothold before the team scales. Suzette's follow-up in six months is another version of this — a growth-gated opportunity.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Internal team already handles this</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right time — returning in a few months</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"It's not relevant now but could be in three to six months when they expect to have a bigger team."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Timing objections clustered around team growth, budget cycles, and personal transitions. These are warmer than flat rejections and should be managed in a structured follow-up sequence with clear re-engagement dates. Richard (3–6 months), Jason (3–4 months), and Suzette (6 months) all warrant diarised outreach with context carried forward.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">We've been contacted before and it wasn't a fit</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They have a large internal sales enablement team handling coaching and forecasting, so it's not relevant for her."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Prospects with dedicated enablement functions often perceive external tools as redundant rather than complementary. Jiminny's positioning in these conversations may benefit from reframing the solution as an augmentation of — rather than a replacement for — internal capability, with a focus on what human teams cannot do at scale or with consistency.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They've spoken to us before and it wasn't a fit, so he politely declined to continue the conversation."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Repeat outreach to prospects who have already declined is damaging both to brand perception and to dial efficiency. This points to a CRM or list hygiene issue where prior contact outcomes are not being surfaced before a call is made. Addressing this will reduce wasted dials and prevent unnecessary friction.</p>
       </div>
       <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#fff">Bad timing / personal circumstances</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~6 conversations</span>
+          <span style="font-size:14px;font-weight:700;color:#fff">Decision is made by a different team or geography</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
         </div>
-        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He's interested but can't engage right now due to ongoing interviews."</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A significant proportion of May's call outcomes were derailed not by disinterest but by personal or situational factors — illness, maternity leave, role transitions, and mid-meeting interruptions. While these cannot be predicted, they do reinforce the importance of a robust follow-up cadence. Several of these prospects explicitly asked to be contacted again, making them warm re-engagement targets rather than closed opportunities.</p>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"Such purchasing decisions are made by their US-based team."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Organisational structure is diverting conversations away from local contacts who may be users but not buyers. Where prospects flag a centralised or overseas decision-making function, effort should shift quickly to identifying the correct stakeholder rather than attempting to convert an individual with no purchasing authority.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -200,24 +204,31 @@
       <div style="padding:18px 24px">
       <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you call back at a better time?</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~6 conversations</span>
-        </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">This was the most common prospect-initiated response across the month, arising from genuine busyness rather than avoidance. Its frequency suggests that many contacts were being reached at sub-optimal moments in their working day. Testing different call windows — particularly earlier morning slots or end-of-week timings — could improve initial engagement quality.</p>
-      </div>
-      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#3090C0">Who should you actually be speaking to instead?</span>
-          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
-        </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Several prospects actively redirected the call, suggesting a genuine awareness that the solution might be relevant elsewhere in their organisation. Names such as Mark, John Healy in the UK, and the revenue operations lead at Doxel were offered. These referrals, even when informal, are high-value signals and should be acted upon promptly with a warm introduction framing.</p>
-      </div>
-      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
-          <span style="font-size:14px;font-weight:700;color:#3090C0">Are we already a customer of yours?</span>
+          <span style="font-size:14px;font-weight:700;color:#3090C0">What does the tool do around automation and AI?</span>
           <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
         </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">One call revealed that the prospect was already a Jiminny customer, which was not flagged prior to the outreach. This highlights the importance of cross-referencing the target list against the existing customer base before dialling, both to avoid the embarrassment of cold-calling existing clients and to identify potential expansion opportunities that should be handled through account management rather than new business outreach.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Joshua specifically raised data automation and AI capability as the gaps in his current tool. This is a high-intent signal — he is already in the market and evaluating on the basis of specific feature gaps. Automation and AI-led insights should be foregrounded in the pitch for technically literate prospects who have already adopted a first-generation tool and are looking to upgrade.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Do you have a free or entry-level option?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Jason's openness to hearing about free options suggests price sensitivity and risk aversion among smaller teams. If a freemium or trial pathway exists, it should be referenced earlier in conversations with small teams as a way to lower the barrier to engagement and allow self-qualification.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Who is this call from and why are you calling?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">The presence of this basic challenge — prospects asking for name and reason before engaging — indicates that the opening seconds of calls are not always landing with sufficient clarity or confidence. A sharper, more immediately credible opening line that signals relevance within the first sentence would reduce the number of calls that stall at this stage.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send me an email overview instead?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Both Louisa and Jason (in different forms) requested written follow-up rather than continued verbal engagement. This is a deferral rather than a rejection, and should be treated as a warm handoff — the email sent in these cases should be tailored, brief, and include a clear call to action to re-engage rather than being a generic brochure.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -227,24 +238,24 @@
       </div>
       <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Gong's market grip remains strong</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Across conversations where incumbents were named, Gong dominated — and crucially, prospects were not merely using it but actively expanding their investment. This is a market entrenchment dynamic, not simple preference. Jiminny's outreach into Gong-heavy accounts needs a distinct competitive narrative that speaks specifically to what Gong does not do, rather than a general value proposition.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Gong dominance is creating a cycle of 12-month lock-ins</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Gong appeared in four separate conversations and is consistently being cited as a recently signed or actively used solution, often bundled with other tools as part of a broader tech stack commitment. The 12-month contract structure means that prospects who have adopted Gong are unavailable not merely by preference but by obligation. The opportunity lies in tracking these renewal windows precisely and re-engaging with a differentiated case — particularly around partnership models and AI automation, where Gong was noted as falling short.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Decision-making authority is frequently misaligned with contact targeting</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A recurring theme in May was reaching people who either lacked the authority to act or whose decisions were controlled by a central function — typically in the US or within a revenue operations team. This structural mismatch is costing dial efficiency. Tightening ICP criteria to target regionally autonomous decision-makers, particularly those with direct ownership of sales coaching or forecasting budgets, would likely improve conversion rates meaningfully.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">A significant segment has not yet adopted call analysis as a practice</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Multiple prospects — Martin, Mark, and others — were explicit that call recording and analysis is simply not part of how they manage their teams, and several indicated they do not see a need for it in the future. This represents a category adoption challenge rather than a competitive one. Messaging that leads with the business outcomes of call analysis (coaching consistency, ramp speed, forecast accuracy) rather than the technology itself may be better suited to moving these prospects.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Small and partner-led organisations are consistently self-disqualifying</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several prospects acknowledged Jiminny's relevance in principle but concluded it simply didn't apply to their context — either because their team was too small to justify the tooling or because their go-to-market model was partner-driven rather than direct. These are not objections to be overcome; they are genuine fit issues. Removing these account types from the prospecting list upstream would free up dial capacity for higher-probability targets.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Contact data quality is suppressing effective outreach</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Across the month, several calls were lost to prospects who had changed roles, were on extended leave, or had never been the right contact. Calls were made to personal numbers and to individuals who had already been contacted and declined. These are not market signals — they are data quality issues — but they are quietly eroding the efficiency of every dial made and creating friction that reflects on the brand.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">A meaningful pool of 'not right now' prospects is building</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Multiple conversations this month ended with a specific future date offered by the prospect — end of year, six to eight months, next month after a new role is settled. Rather than treating these as soft rejections, they represent a warm pipeline that, if managed carefully, could convert in Q3 or Q4. A structured re-engagement sequence with personalised context would be the most effective way to capitalise on this.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Growth-gated interest is creating a genuine pipeline — but one that requires active management</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A cluster of prospects — Suzette, Richard, Jason, Joshua — expressed openness contingent on team growth or timing, with specific timeframes mentioned. This is a real and actionable pipeline, but only if those conversations are tracked with context and re-engaged at the right moment. Without structured nurture, these warm signals will cool and the effort invested in the initial conversations will be lost.</p>
       </div>
       <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
-        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Personal and situational disruptions are suppressing conversation quality</div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Illness, maternity leave, role changes, and mid-meeting calls accounted for a surprisingly high share of non-conversations in May. While unavoidable individually, their collective impact on this month's output was significant. Building a slightly larger contact pool with backup names per account would provide more dialling resilience when primary contacts are unavailable for extended periods.</p>
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Existing customers appearing in cold outreach lists is a risk</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Jane was identified mid-call as an existing Jiminny customer, and the interaction revealed a possible data discrepancy in the HubSpot instance. Dialling existing customers as cold prospects risks undermining the relationship and signals an internal data synchronisation gap between the customer base and the outreach list. This warrants an immediate audit.</p>
       </div></div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
@@ -254,34 +265,119 @@
       <div style="padding:6px 24px 6px">
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Pursue all named referrals from May immediately — John Healy in the UK, Mark (flagged by Jamie), and the revenue operations lead at Doxel were all offered as warm introductions and should be contacted with a clear reference to how the connection was made.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Audit the outreach list immediately against the existing customer database to prevent existing clients being dialled as cold prospects — Jane's call this month flagged a live HubSpot discrepancy that needs resolution with Becky and Ollie as a priority.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a structured re-engagement sequence for all 'not right now' prospects who gave a specific return date — including Roger (new VP of Sales role), Laura (end of year budget review), Joe (six to eight months), and Tom (follow-up post-illness) — with personalised context included in each touchpoint.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Build a Gong renewal tracker: for every prospect who cited a recent Gong contract, log the contract start date and set a re-engagement reminder for month 10 — Elliot (follow up in 11 months) and Richard are already flagged, and any similar conversations going forward should be captured in the same way.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Review the target account list to remove companies with sub-ten-person sales teams and those operating primarily through channel or partner models, as these are consistently self-disqualifying and reducing overall dial efficiency.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Create a structured follow-up sequence for the growth-gated pipeline — Richard (3–6 months), Jason (3–4 months), Suzette (6 months), and Joshua (first week of July confirmed) all require diarised outreach with the context of their original conversation carried forward, not a generic re-dial.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a Gong-specific competitive narrative for use when prospects cite Gong as their incumbent — focusing on a precise use case where Jiminny delivers differentiated value, rather than a broad comparison, to give reps a credible response to the most common barrier in the market right now.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Refine the opening line for calls to ensure relevance and credibility are communicated within the first two sentences — the number of calls ending at the 'who are you and why are you calling' stage suggests the initial hook is not consistently landing before the prospect disengages.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Cross-reference the full prospect list against Jiminny's existing customer base before dialling to prevent cold-calling active customers — one such instance occurred in May and risks undermining trust with accounts that should be managed through a different channel entirely.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a tailored email follow-up template for prospects who request written information — Louisa and Jason both deferred to email, and a short, specific, outcome-led email with a clear next step will convert more of these deferrals than a standard overview document.</p>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
         <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">6</span>
-        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Audit contact-level targeting criteria to prioritise individuals with confirmed regional budget autonomy and direct ownership of sales coaching or revenue forecasting, reducing the frequency of calls that are redirected to US head offices or centralised RevOps functions.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Suppress from active dialling any contact record flagged as: previously declined, no longer in role, on extended leave, or confirmed as a personal number — these records are consuming dial capacity and in some cases generating reputational risk.</p>
       </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Meetings Booked This Month</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px">Click a meeting to expand the full handover</div>
+      </div>
+      <div style="padding:12px 24px 18px">
+        
+        <details style="margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);border-radius:10px;overflow:hidden">
+          <summary style="padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.03);list-style:none;user-select:none">
+            <span style="font-size:16px;flex-shrink:0;transition:transform 0.2s">▶</span>
+            <div style="flex:1">
+              <div style="font-size:14px;font-weight:700;color:#fff">Swap</div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:2px">Joshua Croghan · Senior Strategy & Revenue Operations Manager</div>
+            </div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.35)">26/05/2026</div>
+          </summary>
+          <div style="padding:18px 20px;border-top:1px solid rgba(255,255,255,0.08)">
+            
+            <div style="margin-bottom:12px;border-left:3px solid #6060D0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#6060D0;margin-bottom:4px">Situation</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Joshua is Senior Strategy & Revenue Operations Manager at Swap, a company with 10 AEs in the UK and 24 in the US. They are currently using Gong as their conversation intelligence and forecasting tool. Gong was adopted under previous ownership of the tool (Joshua notes it was 'webbed over from the sales team') rather than chosen by the current RevOps function. They use HubSpot as their CRM. Gong is currently used primarily for forecasting, with call recording and AI functionality considered underutilised. Joshua is aware of alternatives including Attention and Momentum, suggesting he has already begun informal market research.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FC3A33;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FC3A33;margin-bottom:4px">Pain</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Joshua expressed several specific frustrations with Gong. First, cost: he flagged it as expensive relative to the value they are extracting. Second, weak AI and automation: Gong cannot reliably auto-populate data into HubSpot, meaning reps still have to fill in fields manually — a significant RevOps pain point. Third, poor cross-call search: you can search within a single call in Gong but not across all calls, limiting the ability to surface patterns or trends at scale. Fourth, poor data extraction: pulling data out of Gong is described as 'quite frustrating', and Joshua suggested Gong is deliberately limiting this capability, possibly to protect against churn. Fifth, information silos: insights from calls remain 'stuck in people's heads' or in siloed data rather than being accessible across the business. He gave a concrete example of wanting automated alerts sent to the partner team when a partner is mentioned on a call — something Gong cannot currently do well.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FE6601;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FE6601;margin-bottom:4px">Impact</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">The manual data entry burden falls on the RevOps function, meaning Joshua is likely chasing reps for CRM updates rather than having them auto-populated. Strategic deal visibility is limited because call insights are not fully accessible or searchable across the team, which risks deals being mismanaged or dropped without leadership awareness. The partner team example illustrates a specific missed opportunity for cross-functional alignment — partner mentions on calls are not being surfaced automatically, which could be affecting partner revenue and relationship management. More broadly, Joshua acknowledged that in the first six months they effectively used Gong as 'the most expensive call recorder of all time', suggesting a prolonged period of poor ROI on a significant tool investment.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #3090C0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#3090C0;margin-bottom:4px">Critical Event</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">No hard deadline or regulatory trigger was mentioned. Joshua explicitly said this is not an immediate priority — other internal projects are taking precedence. He indicated that towards the end of 2026 they will 'probably be looking at alternatives.' The meeting has been booked for the first Friday of July 2026 (12:30pm), which Joshua himself proposed. This is a relatively early-stage conversation and the AE should treat this as a discovery and relationship-building meeting rather than a close opportunity in the near term.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #32B241;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:4px">Decision</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Joshua is the RevOps lead and appears to be the primary evaluator and internal champion for any tooling decision of this kind. No other stakeholders were named explicitly, though the scale of the sales team (34 AEs across UK and US) suggests sign-off may involve sales leadership or finance. No budget figure was discussed. Joshua's framing of 'we probably wouldn't have chosen it ourselves' implies the previous Gong decision was made above or around the RevOps function, which may mean Joshua now has more influence in the next decision. No formal procurement process or RFP was mentioned. Timeline to decision is likely Q4 2026 at the earliest based on his comments.</div>
+            </div>
+            
+            <div style="margin-top:14px;padding:14px 16px;background:rgba(50,178,65,0.08);border-left:3px solid #32B241;border-radius:0 8px 8px 0">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:6px">Recommended AE Approach</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.75">Open the meeting by acknowledging the context Joshua gave on the call — he is not starting from zero and has a considered view of what Gong is doing well (forecasting) and where it is falling short (automation, cross-call search, data extraction, HubSpot sync). Do not treat this as a standard discovery call. Joshua is analytically sharp and will disengage quickly if the AE runs a generic demo.<br><br>Lead with the automation and data extraction angle, not call recording. Joshua's most vivid frustrations were about manual CRM input, inability to search across calls, and insights being siloed. Use his own example — the partner mention alert — as a demonstration anchor. Show Jiminny's ability to detect signals in calls and push structured data automatically into HubSpot without rep involvement. This maps directly to his RevOps remit.<br><br>Address the forecasting question explicitly and early. Joshua asked whether Jiminny has a forecasting solution. If Jiminny has this capability, lead with it or have it ready to demonstrate. If it is limited, be honest and come prepared with how Jiminny complements rather than replaces a forecasting layer — potentially positioning Jiminny's deal and CRM data hygiene as what makes forecasting more accurate, even in another tool.<br><br>On cost, the SDR mentioned 90% of Gong's functionality at 50% of the cost. The AE should be ready to substantiate this with specifics — ideally a ballpark figure or ROI framing relevant to a 34-AE team. Joshua flagged cost as a concern with Gong, so this is a lever, but it needs to feel credible rather than a sales line.<br><br>Do not rush towards a close. Joshua has been clear this is a Q4 decision at earliest. The goal of the July meeting is to earn Joshua's confidence as the internal champion and leave him with enough concrete evidence — a relevant demo, a clear feature comparison, and honest answers on forecasting — that when the formal evaluation begins, Jiminny is already the front-runner.</div>
+            </div>
+          </div>
+        </details>
+        <details style="margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);border-radius:10px;overflow:hidden">
+          <summary style="padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.03);list-style:none;user-select:none">
+            <span style="font-size:16px;flex-shrink:0;transition:transform 0.2s">▶</span>
+            <div style="flex:1">
+              <div style="font-size:14px;font-weight:700;color:#fff">TeamFeePay</div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:2px">Barry Baggley · Head of Sales Operations</div>
+            </div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.35)">28/05/2026</div>
+          </summary>
+          <div style="padding:18px 20px;border-top:1px solid rgba(255,255,255,0.08)">
+            
+            <div style="margin-bottom:12px;border-left:3px solid #6060D0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#6060D0;margin-bottom:4px">Situation</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Barry Baggley is Head of Sales Operations at TeamFeePay. The team is currently using Zoom as their primary tool for calls, and they are leveraging Zoom's native transcription functionality as part of their coaching process. There is no dedicated conversation intelligence or revenue intelligence platform in place beyond this. No CRM auto-fill tool or deal forecasting layer was mentioned as being in use.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FC3A33;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FC3A33;margin-bottom:4px">Pain</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Barry's current setup relies solely on Zoom's built-in transcription for coaching, which the SDR surfaced as a gap around objectivity and visibility. Barry did not explicitly articulate a burning pain in his own words — the call was very short and he was clearly distracted or busy ('give me a call back tomorrow'). The pain was largely framed by the SDR rather than drawn out from Barry directly. The closest signal of relevance was that Barry did not push back when the SDR described reps giving subjective forecast updates ('yeah, that deal is definitely coming in') and the lack of structured deal visibility — suggesting these resonate as real issues even if Barry did not confirm them verbally.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FE6601;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FE6601;margin-bottom:4px">Impact</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Again, impact was framed by the SDR rather than confirmed by Barry. The SDR referenced deal slippage due to lack of visibility into conversations, B players failing to learn from top performers, and reps not filling in the CRM accurately — leaving money on the table during live deals. Barry did not validate or quantify any of these impacts explicitly, so the AE should treat these as hypotheses to be confirmed, not established facts.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #3090C0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#3090C0;margin-bottom:4px">Critical Event</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">No critical event, deadline, budget cycle, or regulatory trigger was mentioned at any point during the call. There is no urgency factor on record. The meeting was booked for 3:30 PM on Thursday 29th May 2026 based purely on diary availability, not driven by any internal initiative or time-sensitive need.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #32B241;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:4px">Decision</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">No information was gathered on the decision-making process, budget ownership, stakeholders involved, or sign-off requirements. It is unknown whether Barry is the economic buyer, an influencer, or simply an evaluator. The AE must treat this as a blank slate and use the discovery meeting to map the full buying committee and understand TeamFeePay's procurement process.</div>
+            </div>
+            
+            <div style="margin-top:14px;padding:14px 16px;background:rgba(50,178,65,0.08);border-left:3px solid #32B241;border-radius:0 8px 8px 0">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:6px">Recommended AE Approach</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.75">Open the meeting by acknowledging the brevity of the original call and that Barry did not have much time. Frame this as a proper introduction and give Barry space to talk first. Start with a situational question to confirm the current stack: 'You mentioned you're using Zoom for transcription and coaching — can you tell me a bit more about how that actually works day to day and where it fits into your wider sales process?' This will establish whether the Zoom usage is team-wide or ad hoc, and whether there is already dissatisfaction the SDR did not surface. From there, probe around the specific pains the SDR framed but Barry never confirmed — forecast accuracy, rep subjectivity, CRM hygiene, and deal slippage. Ask Barry directly: 'When your reps are updating you on pipeline, how confident are you that what they're telling you reflects what's actually happening in the conversations?' This targets the objectivity and forecasting angle from the SDR pitch and will either validate it as a real pain or redirect the conversation. Avoid leading too heavily with product demo early on — Barry showed very low engagement and arrived at this meeting with minimal context. Prioritise discovery for the first half of the meeting. When demoing, focus on the forecasting and coaching intelligence features specifically, tying back to whatever pains Barry confirms. Do not assume he is the sole decision-maker — ask explicitly: 'If this looked relevant, who else would typically be involved in a conversation like this at TeamFeePay?' Given that no critical event was identified, the AE should also probe for any internal initiatives, QBRs, or hiring plans that might create a natural hook for urgency.</div>
+            </div>
+          </div>
+        </details>
+      </div>
     </div>
     <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
       <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
         <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#32B24122;border:1px solid #32B241;color:#32B241;font-size:10px;font-weight:700;flex-shrink:0">✓</span>
         <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#32B241">Activated</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">3 conversations</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">8 conversations</div>
       </div>
       <div style="padding:8px 16px 14px">
         
@@ -301,8 +397,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Jamie doesn't oversee the BDR team but believes Mark, who does, is actively exploring similar solutions. He agreed to pass along contact details and facilitate an introduction after receiving information today.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Warm referral to a decision-maker actively exploring similar solutions</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Jamie Holland doesn't own the BDR function but indicated that Mark is actively exploring similar solutions, making him a warmer prospect. Despite the BDR team shrinking at Profitero, Jamie agreed to pass along contact details and facilitate an introduction to Mark. A follow-up is planned for later in the week.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Warm referral to decision-maker actively exploring similar solutions.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Jamie, who mentioned he doesn't manage the BDR team and suggested I contact Mark instead. Jamie indicated that the BDR function is shrinking at their company, but he thinks Mark is looking into similar solutions. He agreed to pass my information to Mark and will facilitate a conversation after I send him details later today. I'll follow up later this week.</div>
           </div>
         </details>
@@ -317,13 +413,13 @@
               </div>
             </div>
             <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
-              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(50,178,65,0.15);border:1px solid #32B241;color:#32B241;letter-spacing:0.04em;white-space:nowrap">Positive signal</span>
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
               <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Tom is currently unwell but left the door open for a follow-up call next week to discuss call recording and coaching insights. A specific follow-up timing was agreed.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Agreed to a follow-up call with a specific timeframe next week</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Tom Stebbing was unwell at the time of the call but showed openness to discussing call recording and coaching insights next week. A follow-up has been agreed for when he recovers. The conversation was brief but positive in tone.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Open to a follow-up but no pain or buying intent confirmed yet.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Tom, who is currently unwell. He indicated that he may be available for a follow-up call next week regarding call recording and coaching insights. I will reach out to him then, wishing him a speedy recovery.</div>
           </div>
         </details>
@@ -343,9 +439,114 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Roger is actively transitioning into a new VP of Sales role in Europe and expressed genuine interest but is unable to engage until he is settled. He asked for a follow-up in one month once he's in position.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Expressed genuine interest and set a clear one-month follow-up window</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Roger Bailey is currently between VP of Sales roles and can't engage meaningfully until he starts his new position. He expressed genuine interest in the solution and proactively suggested a one-month follow-up once he's settled. Timing is the only barrier.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Expressed genuine interest and requested a specific follow-up timeframe.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Roger, who mentioned he's currently in between positions and won't be able to focus on our discussion until he lands a new role as VP of Sales in Europe. He suggested I follow up in a month when he's settled. He's interested but can't engage right now due to ongoing interviews.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jamie Holland</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Profitero</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Senior Sales Director Enterprise</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(50,178,65,0.15);border:1px solid #32B241;color:#32B241;letter-spacing:0.04em;white-space:nowrap">Positive signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">A follow-up with Jamie Holland confirmed interest in connecting with Marco, the relevant decision-maker, who had not received the original email. Jamie asked for the email to be resent so he can forward it to reignite the conversation. Momentum is being maintained through this warm internal referral.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Decision-maker referral confirmed and email resend actively requested.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Had a conversation with Jamie Hoy regarding an email I sent about our discussion with Marco. Jamie mentioned not receiving it, possibly due to spam filters. He expressed interest in the information and asked me to resend it so he can forward it to Marco to reignite the conversation. I will resend the email shortly.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jerome Couty</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Arrow ECS United Kingdom</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Sales Director EMEA - Symantec/Carbon Black</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(50,178,65,0.15);border:1px solid #32B241;color:#32B241;letter-spacing:0.04em;white-space:nowrap">Positive signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Jerome Couty acknowledged genuine challenges with deal management and coaching within his sales organisation, aligning well with Jiminny's value proposition. He proposed looping in his marketing team for budget approval and agreed to a follow-up call on Wednesday afternoon or the following Tuesday. Supporting materials and a meeting link will be sent via email.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Acknowledged deal management pain and agreed to a follow-up meeting.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Jerome, who mentioned challenges with deal management and coaching in their sales organization. He suggested discussing Jiminy with his marketing team for budget approval. I’ll send him an email with relevant materials and a meeting link. Follow-up call scheduled for either Wednesday afternoon or the following Tuesday since he’s booked later this week.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jason F</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Document Logistix</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Sales Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Jason F leads a small three-person sales team with no current call recording in place, relying only on weekly and monthly catch-ups. He agreed to receive information including details on free options, though acknowledged the solution may not be relevant at their size. A light follow-up opportunity remains open.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Agreed to receive info but expressed doubt about relevance for small team.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Jason, who leads a small sales team of three. They don't currently use call recorders, just have weekly and monthly catch-ups. He agreed to receive more information about our technology and its free options, but indicated that it might not be relevant for their small team right now. He'll review the info and we can follow up later if needed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mohammed Omer</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">RedoQ Software Services Private</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Revenue Officer (CRO)</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Mohammed Omer appeared unresponsive and indicated he hadn't opted in to receive the call. Despite the rocky start, an offer was made to reach out at a better time. The interaction was too brief to assess any fit or interest.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect was unresponsive and hadn't consented to contact.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Muhammad but he was unresponsive and seemed uninterested. He indicated he hadn't asked to receive my call and I offered him the option to hang up. I asked if I could try to reach him again at another time.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Louisa Gard</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Unaric Holding</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Revenue Operations Manager</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(50,178,65,0.15);border:1px solid #32B241;color:#32B241;letter-spacing:0.04em;white-space:nowrap">Positive signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Louisa Gard at Unaric was out of the office but already familiar with Jiminny and receptive to the pitch. She proactively requested an overview email with supporting resources to review on her return. A clear next step is in place.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect requested follow-up email and resources despite being out of office.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">The agent reached out to Louisa, who was out of office but familiar with the company. The agent provided a brief pitch, and Louisa requested an email with an overview and resources for review upon her return.</div>
           </div>
         </details>
       </div>
@@ -354,7 +555,7 @@
       <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
         <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#3090C022;border:1px solid #3090C0;color:#3090C0;font-size:10px;font-weight:700;flex-shrink:0">⏸</span>
         <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">No, Not Now</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">1 conversation</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">8 conversations</div>
       </div>
       <div style="padding:8px 16px 14px">
         
@@ -374,9 +575,156 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Laura's organisation is in an active cost-cutting phase with no budget for new tools, though no competing solution is currently in use. She suggested revisiting around year-end when circumstances may change.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Budget freeze in place but suggested a specific year-end revisit</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Laura West at Ion is in an active cost-cutting phase, ruling out any new technology investment in the near term. Notably, they aren't using any similar tools currently, leaving an opening once budgets recover. She suggested revisiting toward year-end.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Cost-cutting freeze deferred interest but no competing tool in place.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Laura, who indicated they are currently in a cost-cutting phase and not interested in new investments. She mentioned they are not using any similar tools at the moment. Laura advised that I could check back around the end of the year for potential re-evaluation of their situation.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Paddy Thorpe</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">GlobalData</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Sales and Business Development</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Melvyn White</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Rewst</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director of Sales (EMEA)</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Melvyn White at Rewst considers his sales process solid and doesn't see current deal slippage as a problem worth spending on. He was engaged enough to recommend relevant books and agreed to reconnect in a couple of months. No immediate budget or urgency, but the door is open.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No current pain or budget but agreed to reconnect in two months.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Connected with Melvin who mentioned that he follows a good sales process and is currently not facing issues with deals slipping. He’s interested in tactical implementations but isn’t looking to spend money right now. He recommended "Cracking the Sales Management Code" and "Qualified Sales Leader" as good reads. We agreed to reconnect in a couple of months to discuss further.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Susanna Pitcaithly</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Syrve</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Sales UK</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Susanna Pitcaithly's small team is currently using Aircall alongside their CRM and finds it sufficient for now. She suggested following up in around six months when potential team growth could create a stronger use case. No immediate interest was expressed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Current setup sufficient but suggested revisiting in six months for growth.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Suzette, who mentioned they're a small team currently using Aircall for all their calling needs and logging everything in their CRM. She expressed that it’s working for them now but suggested I follow up in about six months when their team might grow. No immediate interest, but potential for future discussions.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Jason F</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Document Logistix</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Sales Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Richard Zeff</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Nurtur</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Sales Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Elliott Clayton</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Feefo Holdings</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Revenue Officer (CRO)</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Elliott Clayton recently signed a 12-month contract with both Gong and Nooks, locking out any near-term opportunity. The agent agreed to circle back in 11 months once the contract approaches renewal. Timing is the sole barrier, with the category fit established.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Locked into a 12-month Gong contract but follow-up agreed near renewal.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">The agent reached out to Elliot to discuss call analysis and sales coaching tools. The prospect recently signed a 12-month contract with Gong and Nooks, so the agent agreed to follow up in 11 months.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Donald Bain</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Tickettailor</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Sales</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Donald Bain at Tickettailor is currently using Apollo for sales coaching and transcription and sees no budget or need for Jiminny at this stage. He was appreciative of the outreach and connected on LinkedIn, leaving a soft channel open. No formal next steps were agreed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Polite but no budget or need with only a LinkedIn connection made.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Donald, who is currently using Apollo for sales coaching and transcription. He mentioned there’s no budget or need for Jiminy right now but will reach out if that changes. He appreciates the outreach and connection on LinkedIn. No next steps were discussed.</div>
           </div>
         </details>
       </div>
@@ -385,7 +733,7 @@
       <div style="padding:14px 24px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;gap:10px">
         <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#FC3A3322;border:1px solid #FC3A33;color:#FC3A33;font-size:10px;font-weight:700;flex-shrink:0">✕</span>
         <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#FC3A33">No, Not Ever</div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">16 conversations</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-left:4px">28 conversations</div>
       </div>
       <div style="padding:8px 16px 14px">
         
@@ -405,8 +753,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Liam reviewed Jiminny's offerings previously and concluded they are not a fit. He had no time to elaborate on his reasons and no next steps were discussed.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Previously reviewed and explicitly ruled out as a fit</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Liam Huskinson confirmed he had already reviewed Jiminny's offering and determined it isn't a fit. He declined to elaborate on his reasoning and had no time to discuss further. No next steps were established.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect explicitly reviewed and rejected the offering previously.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Mark Jiminy, but he stated that he has reviewed our offerings before and they aren't a fit for them. He didn't have time to elaborate on his reasons for not being interested. No next steps were discussed.</div>
           </div>
         </details>
@@ -447,8 +795,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Andy has prior positive experience with Jiminny from a previous role at Visibly but is currently committed to rolling out Gemini for internal and sales meetings at VoCoVo. He asked for no follow-up and sees no near-term need to explore alternatives.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Actively rolling out a competing tool with no near-term need</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Andy Earnshaw is familiar with Jiminny from a previous role at Visibly and holds the product in good regard. However, he is fully committed to rolling out Gemini for internal and sales meetings and sees no reason to explore alternatives for the foreseeable future. He requested no follow-up.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Actively rolling out a competing tool with no intent to switch.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Andy, who mentioned using Jiminy at Visibly and liked it but is currently focused on rolling out Gemini for internal and sales meetings. He appreciates our product but isn't looking to explore anything else for the foreseeable future. He suggested no follow-up is necessary but will consider us in the future if needs arise.</div>
           </div>
         </details>
@@ -468,8 +816,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Matt operates in a niche market with a longer sales cycle and indicated the discussed solution isn't aligned with their focus. Something is already in place, though details weren't shared, and limited time prevented deeper exploration.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Niche model misalignment and existing solution already in place</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Matt Parkes operates in a niche market with a longer sales cycle and indicated that Jiminny's offering doesn't align with their focus. He has something in place already but didn't share details, and limited time prevented deeper exploration. No next steps were agreed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Niche model mismatch and existing solution already in place.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Matt who expressed that they don't usually focus on what I was discussing, as they operate in a niche market with a longer sales cycle. He mentioned they have something in place but didn't provide specifics. I didn’t get a chance to explore further due to his limited time.</div>
           </div>
         </details>
@@ -510,8 +858,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Simon quickly identified that Jiminny isn't relevant to Cowbell's needs, citing a different distribution chain and existing coaching coverage. No value was seen in progressing further and no next steps were discussed.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Different distribution model and coaching already fully covered</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Simon Hughes quickly identified that Jiminny isn't relevant to Cowbell's needs, citing a different distribution chain and existing coaching coverage. He saw no value in continuing the conversation. No next steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Structural mismatch with different distribution model and coaching covered.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I spoke with Simon, but the conversation quickly revealed that our offering isn't relevant to his needs. He mentioned that their focus is on a different distribution chain and has everything covered regarding coaching. No next steps discussed as he didn't see value in pursuing further.</div>
           </div>
         </details>
@@ -552,8 +900,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Gary is a committed Gong customer who recently upgraded to their forecasting tool and is very satisfied. Significant investment has already been made in new sales tech and he intends to renew with Gong at contract end.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Deeply committed to Gong with recent upgrade and renewal intent</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Gary Rigler is a committed Gong customer who recently upgraded to their forecasting tool and is highly satisfied. He has invested heavily in new sales tech and intends to renew with Gong when the contract is due. No interest in evaluating alternatives.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Deeply committed to Gong with a confirmed renewal intention.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Using Gong. Just upgraded to the forecasting tool and love it. Spent a lot of money on new sales tech and will be renewing with Gong when it's due.</div>
           </div>
         </details>
@@ -573,8 +921,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Joe's internal team manages Gong and they are satisfied with their current setup. He suggested revisiting in six to eight months but indicated interest is unlikely given their current situation.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Satisfied with Gong but offered a soft six-to-eight month revisit</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Joe Woolerton at GlobalData is satisfied with Gong, which is managed by their internal team. He acknowledged there could be future opportunity but pushed back any meaningful conversation by six to eight months. No immediate interest was expressed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Suggested checking back in six to eight months with no urgency.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Joe about sales coaching solutions. He mentioned their internal team handles systems like Gong, and they're satisfied with their current setup. Joe suggested I check back in six to eight months for any changes. He indicated that it probably wouldn't be of interest for now, given their current situation.</div>
           </div>
         </details>
@@ -594,8 +942,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Mark leads a very small sales team of just two reps, making Jiminny's solution unlikely to be relevant at this stage. The rep acknowledged the poor fit during the call and no further steps were taken.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Team too small to be a viable fit for the solution</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Mark Eyden leads a very small European sales team of just two reps, which falls below the threshold where Jiminny would deliver meaningful value. The solution was acknowledged as likely not relevant for their current scale. No further steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Team too small to make the solution relevant.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with a leader from a very small sales team of two reps. They mentioned that my solution is probably not relevant for them at this time. I acknowledged their team size and recognized that I might be wasting their time. No further steps were discussed.</div>
           </div>
         </details>
@@ -615,8 +963,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">John's team of six sales reps is considered manageable without call recording analysis, and there are no plans to scale or hire. The conversation was left open for future relevance but no concrete follow-up was planned.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Small team with no scaling plans makes solution irrelevant</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">John Barton at Ravelin has a six-person sales team and sees no need for call recording or analysis at their current size. With no plans to scale or hire, the structural fit simply isn't there. The call was left open-ended for potential future relevance.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Team size too small with no growth or scaling plans.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called John at a smaller sales team. He indicated that call recording analysis isn't relevant for them due to their manageable size of six sales reps. They have no plans to scale or hire at the moment. I thanked him for his time and left the conversation open for potential future relevance.</div>
           </div>
         </details>
@@ -636,8 +984,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Stephen confirmed his team already prioritises training and coaching internally, leaving no perceived gap for Jiminny to address. He asked to have his number removed from the contact list, signalling a hard opt-out.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Requested number removal indicating a firm and final refusal</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Stephen M confirmed that his GlobalData team already invests heavily in training and coaching, eliminating the pain point Jiminny addresses. He requested removal from the contact list and the call ended after guidance on opting out. No further engagement is appropriate.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Requested contact removal and has no relevant pain point.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to Stephen, but he indicated that our services weren't relevant to his team as they already focus heavily on training and coaching, mitigating issues with call slips. He asked to have his number removed, and I explained how to opt-out. He appreciated the recommendation for the tool "Surf" and thanked me before ending the call.</div>
           </div>
         </details>
@@ -657,8 +1005,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Charlie gave a straightforward cold rejection, stating no interest in any of the tools on offer without providing specific objections. No next steps were established.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Flat refusal with no objections to address or opening left</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Charlie Walker at Ravelin gave a straightforward cold rejection, stating they have no need for the tools on offer. No specific objections or pain points were surfaced. No next steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Flat refusal with no interest or pain points identified.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to Charlie for a cold call. He expressed that they are not interested in our services and mentioned they don't need any of the tools we offer. No specific objections were noted, but he appreciated the call. No next steps were discussed.</div>
           </div>
         </details>
@@ -678,8 +1026,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Isma confirmed Storyblok is already using Gong and actively expanding that contract, leaving no appetite for alternatives. The call was ended respectfully with no further steps.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Expanding existing Gong contract with zero interest in alternatives</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Isma Delgado confirmed Storyblok is already using Gong and actively expanding their contract. There is no interest in evaluating alternatives at this time. The call was ended respectfully with no next steps.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Expanding existing Gong contract with no appetite for alternatives.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Isma to discuss solutions for sales team challenges. She mentioned they are already sorted with Gong and expanding their contract. No interest in alternatives at this time, so I ended the call respectfully. No further steps were discussed.</div>
           </div>
         </details>
@@ -699,8 +1047,8 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Matthew explained that PCI Pal's business is 85–90% channel-driven through partners, making a direct sales coaching tool largely irrelevant to his function. He thanked the rep but saw no benefit in pursuing further.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Heavily channel-driven model creates a structural fit barrier</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Matthew Livingstone explained that PCI Pal's business is 85–90% channel-driven, meaning the direct sales use case for Jiminny simply doesn't apply. He acknowledged the offering politely but saw no benefit in pursuing it. No next steps were agreed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Channel-heavy business model creates a structural fit barrier.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Matthew who clarified that their business is heavily channel-driven (85-90% through partners). He mentioned that they rely on information from partners and it wouldn't be beneficial for him to pursue the solutions I offer. I acknowledged his perspective and thanked him for his time. No next steps were discussed.</div>
           </div>
         </details>
@@ -720,11 +1068,329 @@
             </div>
           </summary>
           <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
-            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Adam already knows Jiminny well and was candid that he had no interest in a conversation. No objections were elaborated on and no next steps were discussed.</p>
-            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Familiar with Jiminny and explicitly declined engagement</div>
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Adam Pang was already familiar with Jiminny but was straightforward in declining further conversation. No reasons or pain points were shared, and no next steps were discussed. The call ended cordially.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect familiar with Jiminny and explicitly declined engagement.</div>
             <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I called to introduce Jiminy but spoke to someone who already knows the company well. They were honest that they weren't interested in having a conversation and wished me well. No further steps were discussed.</div>
           </div>
         </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Simon Cartwright</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Netscout</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Senior Sales Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">A poor connection and a busy, over-called prospect at Netscout made meaningful engagement impossible. Simon Cartwright showed no interest in discussing the offering and the interaction was too brief to surface any relevant context. No further contact is planned.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect too busy and unreceptive to engage at all.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to a prospect but the call was difficult due to a bad connection. They mentioned they are busy and have already received numerous calls, showing they don't have time to discuss my offering. I will not pursue further contact for now.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Robert Pickett</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">MetaCompliance</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Revenue Officer (CRO)</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Robert Pickett is a former Jiminny customer who switched to Gong and is now three years into a renewal he finds highly valuable, particularly for forecasting and revenue intelligence. He sees no reason to consider a replacement. No next steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Former customer now on a multi-year Gong renewal with no interest in switching.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Robert, who used to be a Jiminy customer but is now with Gong on a three-year renewal. He believes Gong provides significant value for forecasting and revenue intelligence, and wouldn't consider a replacement. No next steps discussed, but he expressed solid satisfaction with their current solution.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ebun Oriade</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">GlobalData</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Sales Enablement</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Ebun Oriade at GlobalData refused to engage in the cold call and explicitly requested no further contact. No information about challenges or current tools was shared. The interaction was hostile and closed immediately.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Prospect demanded no further contact and refused to engage.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out to discuss coaching and AI solutions but encountered a prospect who declined to engage in a cold call. They insisted that I shouldn't call back and preferred to be left alone. No further contact methods were pursued.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Dean S.</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">IndieBI</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Director of Business Development</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Dean S. at IndieBI indicated he receives many similar calls and showed minimal interest from the outset. No pain points were explored and the conversation didn't progress beyond an initial brush-off. No next steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Generic disengagement with no interest in further discussion.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Dean from Jiminy. He mentioned that he receives many similar calls and expressed that he's not very interested. No further discussion on challenges or next steps took place.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Rohit Kanwara</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">ZAP Business Intelligence</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Revenue</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Rohit Kanwara at ZAP Business Intelligence is already using Labspot and Cloud Code for call recording and coaching, and is getting early positive results. He tested Gong and rejected it for not fitting their partnership model, but showed no interest in evaluating Jiminny either. No follow-up was requested.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Satisfied with current tools and not open to exploring alternatives.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Rohit, who is currently using Labspot and Cloud Code for call recording and coaching. He mentioned they've been getting good initial results and are adding agents for better orchestration. He tested Gong but found it inadequate for their partnership model. No interest in exploring our tool at the moment. I will share his feedback with our team.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Wayne Adams</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">CloudM Software</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Sales</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Wayne Adams is between jobs and starting at GlobalData on June 1st, where Gong is already part of the planned tech stack. His previous role was constrained by budget and tool limitations, but his upcoming setup leaves no room for Jiminny. No next steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Joining a new role with Gong already embedded in the tech stack.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Had a conversation with Wayne, who is currently between jobs and starting a new position at Global Data PLC on June 1st. He mentioned that his previous role at Cloud M was chaotic, and he was limited by budget and tool restrictions. Wayne is satisfied with his upcoming tech stack, which includes Gong. No immediate need for our services, but we had a good discussion on shared experiences.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ben Scales</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Elephants Don't Forget</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Sales</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Mark Howes</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Service Geeni</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Revenue Officer (CRO) & Board Member</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Mark Howes confirmed that Service Geeni doesn't use call analysis tools and has no intention of adopting them in the future. He was transparent and direct, and the call ended on a positive note but with no path forward. No follow-up was scheduled.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Explicitly ruled out any future need for call analysis tools.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Mark, who indicated that their team isn't using a call analysis tool and doesn't find it necessary. He expressed that it's not something they will need in the future either. I thanked him for his time and transparency, ending the call positively. No follow-up was scheduled.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Martin Rothwell</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">ProofID</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">EMEA Business Development Manager</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Martin Rothwell confirmed that ProofID doesn't monitor or analyse calls at all, with no established process in place. Rather than a cost or timing issue, this reflects a fundamental absence of the workflow Jiminny supports. No next steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call monitoring process exists and no interest in establishing one.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Spoke with Martin, he stated they are not interested in analyzing calls or call recordings as they do not actively monitor them. When asked if they have an established process in place, he confirmed that it is simply not something they do. No next steps were discussed.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Richard Jones-Penny</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">NoBlue2</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Chief Revenue Officer (CRO)</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Richard Jones-Penny has invested in a hybrid tech stack combining purchased tools and in-house development for call analysis and content production. While he didn't name specific tools due to an NDA, he made clear he considers the organisation well-equipped. No follow-up was requested.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Proprietary and purchased tech stack fully covers the use case.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">Called Richard to follow up on our previous conversation. He explained that they have a robust technology stack for call analysis and content production, combining purchased tools and in-house development. He didn't disclose specific tools due to an NDA but feels they are well-equipped. He wished me luck in my outreach before ending the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Ashvin Varsani</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">CoreStream GRC</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Sales Director</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(252,58,51,0.15);border:1px solid #FC3A33;color:#FC3A33;letter-spacing:0.04em;white-space:nowrap">Negative signal</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            <p style="font-size:13px;color:rgba(255,255,255,0.78);line-height:1.75;margin:0 0 10px">Ashvin Varsani at CoreStream GRC noted that the Jiminny team in Germany had already contacted him the previous week, and he remained uninterested. The duplicate outreach added friction to an already cold interaction. No next steps were discussed.</p>
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">Duplicate outreach from another team reinforced disinterest.</div>
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;white-space:pre-wrap">I reached out for a cold call but the prospect mentioned they had already received a call from our team in Germany last week. They were not interested and indicated that we had contacted them before. I apologized for any confusion and ended the call.</div>
+          </div>
+        </details>
+        <details style="margin-top:8px;border:1px solid rgba(255,255,255,0.08);border-radius:10px;overflow:hidden">
+          <summary style="padding:12px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.02);list-style:none;user-select:none">
+            <span style="font-size:14px;flex-shrink:0">▶</span>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                <span style="font-size:13px;font-weight:700;color:#fff">Fendy Jiang</span>
+                <span style="font-size:11px;color:rgba(255,255,255,0.45)">Kayana for Business</span>
+                <span style="font-size:10px;color:rgba(255,255,255,0.3)">Head of Sales</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+              <span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(48,144,192,0.12);border:1px solid #3090C0;color:#3090C0;letter-spacing:0.04em;white-space:nowrap">Neutral</span>
+              <span style="font-size:10px;color:rgba(255,255,255,0.3)">1970-01-01</span>
+            </div>
+          </summary>
+          <div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.07)">
+            
+            <div style="font-size:11px;color:rgba(255,255,255,0.4);font-style:italic">No call notes recorded</div>
+            
+          </div>
+        </details>
+      </div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#9060D0">Referral Leads</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px">Contacts who referred us with permission to reach out</div>
+      </div>
+      <div style="padding:12px 24px 18px">
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+              <th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Name</th><th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Job Title</th><th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Company</th><th style="padding:8px 10px;text-align:left;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)">Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Matt Robbins</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Strategic Accounts - EMEA</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Island</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447515900479 · matt@island.io</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Faiz Alidina</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Director of Sales, EMEA</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">doxel.ai</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447527444563 · faiz@doxel.ai</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Roger Martin</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Sales Director</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">BigChange</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447725846880 · roger.martin@bigchange.com</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Alex Maxfield</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Vice President of Sales</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Beamex</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447809846931 · alex.maxfield@beamex.com</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Ijaz Bhattee</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Sales Director UK & Ireland</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Amplience</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447974925902 · ibhattee@amplience.com</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Satish Morjaria</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Sales Director</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Commusoft</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447595003676 · satish.morjaria@commusoft.com</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Stephanie Maclaurin</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Head Of Sales</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Birdie</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447900800452 · stephanie.maclaurin@birdie.care</td>
+            </tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+              <td style="padding:10px 10px;font-weight:700;color:#fff">Rob Earles</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Head of Sales</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.65)">Paiger</td>
+              <td style="padding:10px 10px;color:rgba(255,255,255,0.5);font-size:11px">+447740369661 · rob@paiger.co</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div></div>
     </div>
@@ -744,7 +1410,6 @@
               <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">Connects</th>
               <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#3090C0;text-align:center">Convos</th>
               <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#32B241;text-align:center">Activated</th>
-              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">No, Not Now</th>
               <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#FE6601;text-align:center">Meetings</th>
               <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Connect %</th>
               <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Mtg %</th>
@@ -752,26 +1417,24 @@
           </thead>
           <tbody><tr>
       <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">May 2026</td>
-      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">463</td>
-      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">57</td>
-      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">34</td>
-      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">3</td>
-      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07)">1</td>
-      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">—</td>
-      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">12.3%</td>
-      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">0.0%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">1028</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">107</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">71</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">8</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">2</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">10.4%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">2.8%</td>
     </tr></tbody>
           <tfoot>
             <tr style="background:rgba(255,255,255,0.06)">
               <td style="padding:12px 14px;font-weight:800;color:#fff;font-size:13px">Total</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(200,216,240,0.9)">463</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.65)">57</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#3090C0">34</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#32B241">3</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.55)">1</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#FE6601">0</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">12.3%</td>
-              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">0.0%</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(200,216,240,0.9)">1028</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.65)">107</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#3090C0">71</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#32B241">8</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#FE6601">2</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">10.4%</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">2.8%</td>
             </tr>
           </tfoot>
         </table>
@@ -783,56 +1446,22 @@
   <span class="footer-tag">Phone First, Always</span>
 </div>
 <script>
-function showTab(i){
-  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',i===j));
-  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',i===j));
-}
-window.__csvData={"p0":{"meetings":[],"conversations":[{"date":"1970-01-01","contact":"Liam Huskinson","company":"Excelerate360","title":"Sales Director","email":"liamhuskinson@excelerate360.com","phone":"+447590500732","mobile":"","linkedin":"https://linkedin.com/in/liam-huskinson-10b95896","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Liam reviewed Jiminny's offerings previously and concluded they are not a fit. He had no time to elaborate on his reasons and no next steps were discussed.","notes":"Called Mark Jiminy, but he stated that he has reviewed our offerings before and they aren't a fit for them. He didn't have time to elaborate on his reasons for not being interested. No next steps were discussed."},{"date":"1970-01-01","contact":"Addy Spearman","company":"Leah formerly ContractPodAi","title":"Director of Sales","email":"addy.spearman@leahai.com","phone":"+447766597847","mobile":"","linkedin":"","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"neutral","summary":"","notes":""},{"date":"1970-01-01","contact":"Andy Earnshaw","company":"VoCoVo","title":"Head of Sales Operations","email":"andy.earnshaw@vocovo.com","phone":"+447775334988","mobile":"","linkedin":"https://linkedin.com/in/andrew-earnshaw","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Andy has prior positive experience with Jiminny from a previous role at Visibly but is currently committed to rolling out Gemini for internal and sales meetings at VoCoVo. He asked for no follow-up and sees no near-term need to explore alternatives.","notes":"Spoke with Andy, who mentioned using Jiminy at Visibly and liked it but is currently focused on rolling out Gemini for internal and sales meetings. He appreciates our product but isn't looking to explore anything else for the foreseeable future. He suggested no follow-up is necessary but will consider us in the future if needs arise."},{"date":"1970-01-01","contact":"Matt Parkes","company":"Chartbeat","title":"Senior Sales Director - Rest of the World","email":"mparkes@chartbeat.com","phone":"+447769641778","mobile":"","linkedin":"","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Matt operates in a niche market with a longer sales cycle and indicated the discussed solution isn't aligned with their focus. Something is already in place, though details weren't shared, and limited time prevented deeper exploration.","notes":"Spoke with Matt who expressed that they don't usually focus on what I was discussing, as they operate in a niche market with a longer sales cycle. He mentioned they have something in place but didn't provide specifics. I didn’t get a chance to explore further due to his limited time."},{"date":"1970-01-01","contact":"Matt Mackender","company":"Equus Software","title":"Regional Sales Director","email":"matt.mackender@equusoft.com","phone":"+447785426238","mobile":"","linkedin":"","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"neutral","summary":"","notes":""},{"date":"1970-01-01","contact":"Simon Hughes","company":"Cowbell","title":"Chief Commercial Officer","email":"simon@cowbellcyber.ai","phone":"+447765784567","mobile":"","linkedin":"https://linkedin.com/in/simon-hughes-99934223","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Simon quickly identified that Jiminny isn't relevant to Cowbell's needs, citing a different distribution chain and existing coaching coverage. No value was seen in progressing further and no next steps were discussed.","notes":"I spoke with Simon, but the conversation quickly revealed that our offering isn't relevant to his needs. He mentioned that their focus is on a different distribution chain and has everything covered regarding coaching. No next steps discussed as he didn't see value in pursuing further."},{"date":"1970-01-01","contact":"Lucy Roberts","company":"Mixpanel","title":"Revenue Strategy & Operations Manager","email":"lucy.roberts@mixpanel.com","phone":"+447501722113","mobile":"","linkedin":"","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"neutral","summary":"","notes":""},{"date":"1970-01-01","contact":"Jamie Holland","company":"Profitero","title":"Senior Sales Director Enterprise","email":"jamie.holland@profitero.com","phone":"+447892794664","mobile":"","linkedin":"https://linkedin.com/in/jamie-holland-151bbb17","industry":"","headcount":"","campaign":"Jiminny","outcome":"Activated","signal":"positive","summary":"Jamie doesn't oversee the BDR team but believes Mark, who does, is actively exploring similar solutions. He agreed to pass along contact details and facilitate an introduction after receiving information today.","notes":"I spoke with Jamie, who mentioned he doesn't manage the BDR team and suggested I contact Mark instead. Jamie indicated that the BDR function is shrinking at their company, but he thinks Mark is looking into similar solutions. He agreed to pass my information to Mark and will facilitate a conversation after I send him details later today. I'll follow up later this week."},{"date":"1970-01-01","contact":"Gary Rigler","company":"OneAdvanced","title":"Sales Director - OneAdvanced","email":"gary.rigler@oneadvanced.com","phone":"+447711133844","mobile":"+447711133844","linkedin":"https://linkedin.com/in/gary-rigler-1b37121","industry":"Software","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Gary is a committed Gong customer who recently upgraded to their forecasting tool and is very satisfied. Significant investment has already been made in new sales tech and he intends to renew with Gong at contract end.","notes":"<div style=\"\" dir=\"auto\" data-top-level=\"true\"><p style=\"margin:0;\">Using Gong. Just upgraded to the forecasting tool and love it. Spent a lot of money on new sales tech and will be renewing with Gong when it's due.</p></div>"},{"date":"1970-01-01","contact":"Joe Woolerton","company":"GlobalData","title":"Head of Sales","email":"joe.woolerton@globaldata.com","phone":"+447525498670","mobile":"+447525498670","linkedin":"https://linkedin.com/in/joe-woolerton-a2603559","industry":"Analytics","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"neutral","summary":"Joe's internal team manages Gong and they are satisfied with their current setup. He suggested revisiting in six to eight months but indicated interest is unlikely given their current situation.","notes":"Spoke with Joe about sales coaching solutions. He mentioned their internal team handles systems like Gong, and they're satisfied with their current setup. Joe suggested I check back in six to eight months for any changes. He indicated that it probably wouldn't be of interest for now, given their current situation."},{"date":"1970-01-01","contact":"Mark Eyden","company":"Laserfiche","title":"Sales Director - Europe & Director Partner Development EMEA @ Laserfiche | Strategic Partnerships","email":"mark.eyden@laserfiche.com","phone":"+447728720784","mobile":"","linkedin":"","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Mark leads a very small sales team of just two reps, making Jiminny's solution unlikely to be relevant at this stage. The rep acknowledged the poor fit during the call and no further steps were taken.","notes":"Spoke with a leader from a very small sales team of two reps. They mentioned that my solution is probably not relevant for them at this time. I acknowledged their team size and recognized that I might be wasting their time. No further steps were discussed."},{"date":"1970-01-01","contact":"John Barton","company":"Ravelin","title":"Head of Sales - International","email":"john.barton@ravelin.com","phone":"+447800667887","mobile":"+447800667887","linkedin":"https://linkedin.com/in/john-barton-737797140","industry":"Fraud Detection","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"John's team of six sales reps is considered manageable without call recording analysis, and there are no plans to scale or hire. The conversation was left open for future relevance but no concrete follow-up was planned.","notes":"Called John at a smaller sales team. He indicated that call recording analysis isn't relevant for them due to their manageable size of six sales reps. They have no plans to scale or hire at the moment. I thanked him for his time and left the conversation open for potential future relevance."},{"date":"1970-01-01","contact":"Stephen M","company":"GlobalData","title":"Head of Sales","email":"smckenzie@globaldata.com","phone":"+447702135804","mobile":"+447702135804","linkedin":"https://linkedin.com/in/stephenmckenzie1","industry":"Analytics","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Stephen confirmed his team already prioritises training and coaching internally, leaving no perceived gap for Jiminny to address. He asked to have his number removed from the contact list, signalling a hard opt-out.","notes":"I reached out to Stephen, but he indicated that our services weren't relevant to his team as they already focus heavily on training and coaching, mitigating issues with call slips. He asked to have his number removed, and I explained how to opt-out. He appreciated the recommendation for the tool \"Surf\" and thanked me before ending the call."},{"date":"1970-01-01","contact":"Charlie Walker","company":"Ravelin","title":"VP of Sales","email":"charlie.walker@ravelin.com","phone":"+447765223441","mobile":"+447765223441","linkedin":"https://linkedin.com/in/charlie-walker-401aa740","industry":"Fraud Detection","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Charlie gave a straightforward cold rejection, stating no interest in any of the tools on offer without providing specific objections. No next steps were established.","notes":"I reached out to Charlie for a cold call. He expressed that they are not interested in our services and mentioned they don't need any of the tools we offer. No specific objections were noted, but he appreciated the call. No next steps were discussed."},{"date":"1970-01-01","contact":"Isma Delgado, ACCA","company":"Storyblok","title":"Revenue Strategy and Operations Team Manager","email":"isma.delgado@storyblok.com","phone":"+447523389284","mobile":"","linkedin":"https://linkedin.com/in/ismadelgado","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Isma confirmed Storyblok is already using Gong and actively expanding that contract, leaving no appetite for alternatives. The call was ended respectfully with no further steps.","notes":"Called Isma to discuss solutions for sales team challenges. She mentioned they are already sorted with Gong and expanding their contract. No interest in alternatives at this time, so I ended the call respectfully. No further steps were discussed."},{"date":"1970-01-01","contact":"Matthew Livingstone","company":"PCI Pal","title":"Channel Sales Director","email":"matthew.livingstone@pcipal.com","phone":"+447802589149","mobile":"","linkedin":"https://linkedin.com/in/matthew-livingstone-b1076051","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Matthew explained that PCI Pal's business is 85–90% channel-driven through partners, making a direct sales coaching tool largely irrelevant to his function. He thanked the rep but saw no benefit in pursuing further.","notes":"Spoke with Matthew who clarified that their business is heavily channel-driven (85-90% through partners). He mentioned that they rely on information from partners and it wouldn't be beneficial for him to pursue the solutions I offer. I acknowledged his perspective and thanked him for his time. No next steps were discussed."},{"date":"1970-01-01","contact":"Tom Stebbing","company":"Pod","title":"Senior Director Business Development","email":"tom.stebbing@pod-point.com","phone":"+447809429540","mobile":"","linkedin":"https://linkedin.com/in/tom-stebbing-096b78129","industry":"","headcount":"","campaign":"Jiminny","outcome":"Activated","signal":"positive","summary":"Tom is currently unwell but left the door open for a follow-up call next week to discuss call recording and coaching insights. A specific follow-up timing was agreed.","notes":"Spoke with Tom, who is currently unwell. He indicated that he may be available for a follow-up call next week regarding call recording and coaching insights. I will reach out to him then, wishing him a speedy recovery."},{"date":"1970-01-01","contact":"Adam Pang","company":"Unimed","title":"Chief Revenue Officer (CRO)","email":"adam.pang@ummsc.com","phone":"+447747808189","mobile":"","linkedin":"","industry":"","headcount":"","campaign":"Jiminny","outcome":"No, Not Ever","signal":"negative","summary":"Adam already knows Jiminny well and was candid that he had no interest in a conversation. No objections were elaborated on and no next steps were discussed.","notes":"I called to introduce Jiminy but spoke to someone who already knows the company well. They were honest that they weren't interested in having a conversation and wished me well. No further steps were discussed."},{"date":"1970-01-01","contact":"Laura West","company":"Ion","title":"Global Head of Sales - Legal Segment","email":"laura.west@iongroup.com","phone":"+447876132458","mobile":"+447876132458","linkedin":"https://linkedin.com/in/lauramwest-","industry":"Software","headcount":"","campaign":"Jiminny","outcome":"No, Not Now","signal":"neutral","summary":"Laura's organisation is in an active cost-cutting phase with no budget for new tools, though no competing solution is currently in use. She suggested revisiting around year-end when circumstances may change.","notes":"Spoke with Laura, who indicated they are currently in a cost-cutting phase and not interested in new investments. She mentioned they are not using any similar tools at the moment. Laura advised that I could check back around the end of the year for potential re-evaluation of their situation."},{"date":"1970-01-01","contact":"Roger Bailey","company":"Provar","title":"Vice President of Sales","email":"roger.bailey@provartesting.com","phone":"+447814474239","mobile":"","linkedin":"","industry":"","headcount":"","campaign":"Jiminny","outcome":"Activated","signal":"positive","summary":"Roger is actively transitioning into a new VP of Sales role in Europe and expressed genuine interest but is unable to engage until he is settled. He asked for a follow-up in one month once he's in position.","notes":"I spoke with Roger, who mentioned he's currently in between positions and won't be able to focus on our discussion until he lands a new role as VP of Sales in Europe. He suggested I follow up in a month when he's settled. He's interested but can't engage right now due to ongoing interviews."}]}};
-function openCsvModal(panelId){
-  const d=window.__csvData[panelId]||{};
-  const hasMtg=(d.meetings||[]).length>0;
-  const hasConv=(d.conversations||[]).length>0;
-  const outcomes=[...new Set((d.conversations||[]).map(c=>c.outcome))].filter(Boolean);
-  document.getElementById('csvModalOverlay').style.display='flex';
-  const body=document.getElementById('csvModalBody');
-  body.innerHTML='<div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.45);margin-bottom:12px">Choose what to include:</div>'
-    +(hasMtg?'<label style="display:flex;align-items:center;gap:10px;margin-bottom:10px;cursor:pointer"><input type="checkbox" id="chk_meetings" checked style="width:15px;height:15px;accent-color:#FE6601"><span style="font-size:13px;color:#fff;font-weight:600">Meetings Booked <span style="color:rgba(255,255,255,0.4);font-weight:400">('+d.meetings.length+')</span></span></label>':'')
-    +outcomes.map(o=>'<label style="display:flex;align-items:center;gap:10px;margin-bottom:10px;cursor:pointer"><input type="checkbox" class="chk_outcome" data-outcome="'+o+'" checked style="width:15px;height:15px;accent-color:#3090C0"><span style="font-size:13px;color:#fff;font-weight:600">'+o+' <span style="color:rgba(255,255,255,0.4);font-weight:400">('+d.conversations.filter(c=>c.outcome===o).length+')</span></span></label>').join('')
-    +'<div style="margin-top:6px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.1);display:flex;gap:8px">'
-    +'<button onclick="exportCsv(''+panelId+'')" style="flex:1;padding:9px;border-radius:7px;border:none;background:#5558C8;color:#fff;font-weight:700;font-size:12px;cursor:pointer;font-family:inherit">Download CSV</button>'
-    +'<button onclick="document.getElementById('csvModalOverlay').style.display='none'" style="padding:9px 14px;border-radius:7px;border:1px solid rgba(255,255,255,0.2);background:transparent;color:rgba(255,255,255,0.6);font-size:12px;cursor:pointer;font-family:inherit">Cancel</button>'
-    +'</div>';
-  window.__activeCsvPanel=panelId;
-}
-function exportCsv(panelId){
-  const d=window.__csvData[panelId]||{};
-  const rows=[];
-  const hdrs=['Date','Contact','Company','Job Title','Email','Phone','Mobile','LinkedIn','Industry','Headcount','Campaign','Outcome','Signal','Summary','Notes'];
-  rows.push(hdrs.join(','));
-  const esc=v=>'"'+String(v||'').replace(/"/g,'""')+'"';
-  const mtgChk=document.getElementById('chk_meetings');
-  if(mtgChk&&mtgChk.checked){
-    (d.meetings||[]).forEach(m=>rows.push([m.date,m.contact,m.company,m.title,m.email,m.phone,m.mobile,m.linkedin,m.industry,m.headcount,m.campaign,m.outcome,m.signal,m.summary,m.notes].map(esc).join(',')));
+(function(){
+  // ── Tab switching ─────────────────────────────────────────────
+  function showPanel(id){
+    document.querySelectorAll('.tab').forEach(function(t){
+      t.classList.toggle('active', t.getAttribute('data-panel')===String(id));
+    });
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+    var target=document.getElementById('panel-'+id);
+    if(target) target.classList.add('active');
   }
-  document.querySelectorAll('.chk_outcome').forEach(chk=>{
-    if(!chk.checked)return;
-    const o=chk.dataset.outcome;
-    (d.conversations||[]).filter(c=>c.outcome===o).forEach(c=>rows.push([c.date,c.contact,c.company,c.title,c.email,c.phone,c.mobile,c.linkedin,c.industry,c.headcount,c.campaign,c.outcome,c.signal,c.summary,c.notes].map(esc).join(',')));
+  document.querySelectorAll('[data-panel].tab').forEach(function(tab){
+    tab.addEventListener('click',function(){showPanel(tab.getAttribute('data-panel'));});
   });
-  const blob=new Blob([rows.join('
-')],{type:'text/csv'});
-  const url=URL.createObjectURL(blob);
-  const a=document.createElement('a');a.href=url;a.download='conversations-export.csv';a.click();
-  URL.revokeObjectURL(url);
-  document.getElementById('csvModalOverlay').style.display='none';
-}
+
+
+})();
 </script>
-<!-- CSV export modal -->
-<div id="csvModalOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:1000;align-items:center;justify-content:center">
-  <div style="background:#1a1540;border:1px solid rgba(255,255,255,0.15);border-radius:16px;padding:28px;width:380px;max-width:90vw">
-    <div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:18px">Export conversations</div>
-    <div id="csvModalBody"></div>
-  </div>
-</div>
 </body>
 </html>
