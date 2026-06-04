@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Call Runnings — Notch</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',sans-serif;background:#5558C8;background-image:radial-gradient(ellipse 80% 60% at 20% 10%,#7068D8 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,#3890C8 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 50% 50%,#5558C8 0%,#4048A8 100%);min-height:100vh;color:#fff;padding-bottom:80px}
+
+  /* ── Hero ── */
+  .hero{position:relative;overflow:hidden;padding:40px 56px 0;display:flex;align-items:flex-end;justify-content:space-between;min-height:220px;border-bottom:1px solid rgba(255,255,255,0.12)}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(10,8,40,0.45) 0%,rgba(10,8,40,0.1) 60%,transparent 100%);pointer-events:none}
+  .hero-left{position:relative;z-index:2;padding-bottom:36px}
+  .hero-logo{height:52px;display:block;margin-bottom:24px}
+  .hero-eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.55);margin-bottom:8px}
+  .hero-title{font-size:32px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:6px}
+  .hero-sub{font-size:13px;color:rgba(255,255,255,0.65);font-weight:400}
+  .hero-illustration{position:relative;z-index:1;height:200px;width:auto;object-fit:contain;object-position:bottom;flex-shrink:0;margin-left:32px;opacity:0.95;filter:drop-shadow(0 8px 32px rgba(0,0,0,0.25))}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;gap:0;padding:0 56px;border-bottom:2px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.12)}
+  .tab{padding:14px 28px;font-size:12px;font-family:'Poppins',sans-serif;font-weight:600;background:transparent;color:rgba(255,255,255,0.45);border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all 0.15s;letter-spacing:0.04em}
+  .tab.active,.tab:hover{color:#fff;border-bottom-color:#FE6601}
+
+  /* ── Panel ── */
+  .panel{display:none;padding:32px 56px 64px;max-width:960px}
+  .panel.active{display:block}
+
+  /* ── Meetings expandable ── */
+  details[open] summary>span:first-child{transform:rotate(90deg);display:inline-block}
+  details summary::-webkit-details-marker{display:none}
+
+  /* ── Footer ── */
+  .footer{display:flex;align-items:center;justify-content:space-between;padding:24px 56px;border-top:1px solid rgba(255,255,255,0.1)}
+  .footer-logo{height:28px;opacity:0.45}
+  .footer-tag{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-left">
+    <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="hero-logo" alt="Call Runnings">
+    <div class="hero-eyebrow">Monthly Market Intelligence Report</div>
+    <h1 class="hero-title">Notch</h1>
+    <div class="hero-sub">Prepared by Call Runnings</div>
+  </div>
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" class="hero-illustration" alt="" onerror="this.style.display='none'">
+</div>
+<div class="tabs">
+    <button class="tab active" data-panel="0">June 2026</button>
+  <button class="tab" data-panel="1">All Time</button></div>
+
+    <div class="panel active" id="panel-0">
+      
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:12px">
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#C8D8F0;line-height:1;margin-bottom:6px">415</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Dials</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#3090C0;line-height:1;margin-bottom:6px">26</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Conversations</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#FE6601;line-height:1;margin-bottom:6px">1</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Meetings Booked</div>
+      </div>
+      <div style="background:rgba(10,8,40,0.4);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:20px 16px;text-align:center">
+        <div style="font-size:38px;font-weight:800;color:#32B241;line-height:1;margin-bottom:6px">8</div>
+        <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.13em;color:rgba(255,255,255,0.45)">Activated</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">5</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Now</span></div><div style="display:flex;align-items:center;gap:7px;padding:5px 14px;background:rgba(10,8,40,0.3);border:1px solid rgba(255,255,255,0.09);border-radius:20px"><span style="font-size:13px;font-weight:700;color:rgba(200,216,240,0.9)">8</span><span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">No, Not Ever</span></div>
+    </div>
+      <div>
+  <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;padding:24px;margin-bottom:14px">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:14px">Campaign Overview</div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.85">June 2026 was a month defined by a market that is deeply engaged with AI — but largely on its own terms. The vast majority of conversations revealed prospects who are not ignoring the space; quite the opposite. They are actively implementing, experimenting, and in many cases already running internal AI programmes. The challenge this month was not scepticism about AI agents, but rather the confidence — sometimes self-assurance — of teams who believe they have the problem solved in-house. The pipeline that did open came from prospects willing to pause and consider whether their current approach might benefit from external expertise, even if they needed a little time to get there.</div>
+    
+  </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div>
+          <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0;margin-bottom:4px">Competitor & Market Intelligence</div>
+        </div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/scientists.png" style="height:64px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="background:rgba(255,255,255,0.04)">
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">Competitor</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:left">What was Said</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Freq</th>
+            <th style="padding:8px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-align:center">Signal</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Claude (Anthropic)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">The most frequently cited existing tool. Prospects mentioned actively using Claude across business functions, with some describing it as embedded across multiple teams. One said they have 'invested heavily in Claude and are satisfied with their current trajectory.' Another noted their team is 'currently managing Claude effectively.' The recurring framing was confidence rather than frustration — suggesting Claude is seen as a solved problem, not a pain point.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~6</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Zoom AI Agent</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect mentioned using Zoom's AI agent with 'all necessary guardrails set up,' positioning it as a complete and settled solution. Mentioned alongside Zapier as part of a satisfied, integrated stack.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Zapier</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">Referenced as part of an existing automation stack alongside Zoom's AI agent. Not discussed in depth, but signals that the prospect has already assembled a working workflow without external help.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">HubSpot CRM</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect stated they are 'focused on improving their existing HubSpot CRM' and have no timeline for exploring AI agent services. Indicates a competing internal priority rather than a competing AI product.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">In-house / custom-built AI infrastructure</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">A significant proportion of prospects cited internal AI teams, custom-built CRMs, or bespoke agent builds as reasons they do not need external support. Phrases included 'we handle things internally,' 'a dedicated internal AI Ops team,' and 'in-house GTM engineers.' One founding team explicitly referenced recent funding as the reason they feel confident going it alone.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~8</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(254,102,1,0.15);border:1px solid #FE6601;color:#FE6601;letter-spacing:0.04em;white-space:nowrap">Barrier</span></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Claude Code (development tooling)</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect mentioned developing tools in Claude Code for their own automation agency, indicating awareness of the developer-facing layer of the Claude ecosystem. Not directly competitive but signals a technically sophisticated audience building their own solutions.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"></td>
+      </tr>
+      <tr>
+        <td style="padding:12px 14px;font-weight:600;font-size:13px;color:#fff;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap">Internal AI sold as own product</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.8);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;line-height:1.6">One prospect noted their company sells an AI agent and is 'planning to implement it internally,' suggesting the pitch was immediately irrelevant. A distinct signal that some targets in the list are themselves AI vendors rather than buyers.</td>
+        <td style="padding:12px 14px;font-size:13px;color:rgba(255,255,255,0.55);border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;white-space:nowrap;text-align:center">~1</td>
+        <td style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.07);vertical-align:top;text-align:center"><span style="display:inline-block;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:700;background:rgba(160,176,224,0.15);border:1px solid #A0B0E0;color:#A0B0E0;letter-spacing:0.04em;white-space:nowrap">Cold</span></td>
+      </tr></tbody>
+      </table>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Common Objections</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/yes-and-no.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Already built it in-house</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~8 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"We have a dedicated internal AI Ops team but agreed to review more information via email."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">This was the dominant objection of the month. Prospects across varying company sizes and sectors have invested in internal capability and feel ownership over their AI stack. The objection is rarely hostile — it is confident. The opportunity lies in reframing the conversation away from replacement and towards risk reduction or acceleration. Prospects who have built in-house are often unaware of the failure modes they have not yet encountered. Messaging that leads with 'common mistakes' or 'what we see go wrong at your stage' is more likely to create a crack in this objection than any capability claim.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Not the right person / wrong contact</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He's not involved with the relevant teams anymore. He suggested I reach out to founder Carlos in Madrid."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several calls landed on contacts who had moved on, changed roles, or were never the correct decision-maker for AI infrastructure. This is a list quality and targeting signal as much as an objection. Each redirect — to a CTO, an IT Ops lead, a founder — is valuable intelligence that should be captured and actioned immediately. The referrals provided this month represent warm paths into accounts that would otherwise remain cold.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Wrong time — other priorities or budget constraints</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They currently have other priority projects and lack the budget and bandwidth for new initiatives."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A cluster of prospects acknowledged the relevance of AI agents but cited competing internal demands. This is a timing objection, not a fit objection. These contacts have not ruled Notch out — they have deferred. The appropriate response is a structured follow-up sequence that keeps Notch visible without being intrusive, timed to the windows prospects themselves named (end of July, September, October).</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Satisfied with current AI trajectory</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~3 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"They have already invested heavily in Claude and are satisfied with their current trajectory."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A more entrenched version of the in-house objection, where the prospect is not just building but actively progressing and feels momentum. These contacts are harder to move in the short term but are worth monitoring — satisfaction with a self-built trajectory tends to erode as complexity scales. A light-touch nurture approach positioning Notch as a future safety net is more appropriate than pushing for an immediate meeting.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Personal number — remove me</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"She requested to be removed from the database as it was her personal number."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Two separate contacts were reached on personal numbers and immediately requested removal. This is a data hygiene issue with direct implications for brand perception and compliance. Any contact reached on a personal number who has not opted in should be flagged and removed immediately, and the source of those numbers reviewed to prevent recurrence.</p>
+      </div>
+      <div style="border-left:3px solid #3090C0;padding:14px 18px;margin-bottom:14px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#fff">Prefers email over cold calls</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~4 conversations</span>
+        </div>
+        <div style="margin-bottom:10px;padding:10px 16px;background:rgba(48,144,192,0.1);border-left:2px solid rgba(48,144,192,0.5);border-radius:0 8px 8px 0;font-size:13px;color:rgba(255,255,255,0.85);font-style:italic;line-height:1.65">"He doesn't answer cold calls. He asked me to send an email instead, stating he would review it and respond if there's interest."</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A meaningful minority of prospects are not opposed to Notch's proposition but are opposed to the channel. This is not a disqualification — it is a channel preference that should be respected and used. Every prospect who requests an email has provided a pathway; the quality and relevance of what is sent matters enormously. Personalised, concise follow-ups tied specifically to what was said on the call will outperform generic outreach.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">What Prospects Asked</div>
+      </div>
+      <div style="padding:18px 24px">
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you send me more information by email first?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~7 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">The most common response to a cold introduction was a request to receive information before committing to a conversation. This reveals a market that is cautious with its time but not closed to the proposition. Prospects want to evaluate on their own terms before agreeing to a call. It also suggests the verbal pitch alone is not yet landing the hook — there is a need for a sharp, well-structured leave-behind document or one-pager that can do the work asynchronously.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Can you call me back at a better time?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~5 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Multiple prospects asked to be called back — some with specific windows (after June 8th, in a few months, September or October). This is a positive signal in aggregate: these prospects did not hang up or refuse to engage. They are managing their calendar, not dismissing the topic. Each of these represents a concrete follow-up task with a named date, and the quality of the callback will determine whether this interest converts.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">What specifically do you offer around Claude / AI agent deployment?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~2 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">Where prospects did engage substantively, questions focused on what Notch's offering looked like in the context of tools they already use — particularly Claude. This signals that generic AI messaging is less effective than Claude-specific positioning. Prospects who are already in the ecosystem want to know what Notch adds to something they are already using, not a replacement or a parallel track.</p>
+      </div>
+      <div style="border-left:3px solid rgba(48,144,192,0.5);padding:14px 18px;margin-bottom:12px;background:rgba(255,255,255,0.03);border-radius:0 10px 10px 0">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
+          <span style="font-size:14px;font-weight:700;color:#3090C0">Are you the same company as Notch (prospect confusion)?</span>
+          <span style="font-size:10px;color:rgba(255,255,255,0.45);font-weight:600">~1 conversations</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.7;margin:0">One call produced confusion between the calling party identifying as Notch and the prospect's own context. This may reflect a targeting issue where a prospect's company name or brand overlaps with the Notch identity, or it may indicate that the opening line did not clearly establish who was calling and why. Worth monitoring for recurrence.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Market Themes</div>
+        <img src="https://call-runnings.github.io/callrunnings-reports/assets/shopkeepers.png" style="height:60px;opacity:0.9;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))" alt="" onerror="this.style.display='none'">
+      </div>
+      <div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The 'We've Already Done It' Market</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">The standout theme of June was the prevalence of prospects who have not just heard of AI agents but have already deployed them — internally, with custom builds, or through platforms like Claude and Zoom. This is a market that has moved faster than many anticipated, and the early self-builders are now in a phase of consolidation rather than exploration. The implication for Notch is that the pitch cannot start from 'here is what AI agents can do' — it must start from 'here is what typically goes wrong once you've built one.'</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Claude as the Default Incumbent</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Claude appeared more than any other named tool across the transcripts, and consistently as a source of confidence rather than frustration. Prospects who use Claude feel they have made a serious, credible choice and are progressing well. This creates both a barrier and an opportunity: Notch can reposition around being Claude-specialist expertise — not a competitor to Claude, but a layer of experience that helps teams get more from it safely and at scale.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Q3 Is When the Conversations Restart</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A notable number of prospects named specific future windows — late July, September, October — as when they would be ready to revisit AI investment conversations. This clustering suggests that June sits at the tail end of a planning cycle, with teams heads-down on current projects and not open to new initiatives until Q3. The callbacks and LinkedIn connections made this month are seeds for a more receptive market in autumn, and the follow-up discipline between now and then will determine how many of those seeds convert.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">Organisational Churn Is Disrupting Decision-Making</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">Several calls uncovered contacts who were leaving their companies, mid-restructure, or no longer involved in the relevant teams. This level of personnel movement means that even well-researched contact lists can go stale quickly. It also means that referrals gathered during these calls — to CTOs, IT Ops leads, and founders — carry genuine value as navigational intelligence within accounts.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:18px 20px">
+        <div style="font-size:14px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:8px">The Technical Founder Cohort Is Self-Sufficient — For Now</div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;margin:0">A subset of prospects came from founding teams or early-stage companies with in-house engineering capability, recent funding, and a strong conviction that they can build and maintain their own AI infrastructure. These are not the right targets for an immediate conversion, but they are worth tracking. As their AI programmes scale and complexity compounds, the case for external expertise typically strengthens. Notch would benefit from a nurture track specifically designed for this cohort.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Recommended Actions</div>
+      </div>
+      <div style="padding:6px 24px 6px">
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">1</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Activate all named callbacks with specific dates — Joe (September/October), Musa (a few months), Emma (end of July), Georgie (after 8th June), Isaac (next week), and the prospect on holiday in Italy (one to two weeks) — and build a structured follow-up sequence so none of these windows are missed. These are the highest-probability near-term opportunities from the month.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">2</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Chase every referral captured this month before the trail goes cold — specifically Tom Underhill (CTO, referred by Diane), Hayden Lawrence in IT Ops (referred by Simon), and Carlos in Madrid (referred by Richard). Each of these was an unsolicited warm redirect from someone inside the account, which carries significantly more weight than a cold approach.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">3</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Develop a Claude-specific one-pager or email asset that positions Notch not as a replacement for Claude but as a deployment and risk-reduction layer for teams already using it. The most receptive prospects this month were Claude users open to a conversation about common mistakes — that framing should be standardised and systematically used in follow-up emails to the cluster of prospects who requested more information.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">4</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">Review and clean the contact database to remove personal mobile numbers and flag contacts who have departed their companies or changed roles. Two personal number complaints in a single month is a pattern that risks reputational and compliance exposure if left unaddressed, and stale contacts (such as the prospect who confirmed they are leaving their company) should be replaced with the referrals gathered.</p>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <span style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(48,144,192,0.2);border:1px solid rgba(48,144,192,0.4);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#3090C0">5</span>
+        <p style="font-size:13px;color:rgba(255,255,255,0.85);line-height:1.7;margin:2px 0 0">For the cohort of prospects who cited budget constraints, competing priorities, or being mid-restructure, implement a lightweight quarterly nurture sequence rather than leaving them on a static callback date. This audience is not closed — they are waiting — and staying visible with relevant, low-pressure content between now and Q3 will differentiate Notch when their window opens.</p>
+      </div></div>
+    </div>
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">Meetings Booked This Month</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);margin-top:4px">Click a meeting to expand the full handover</div>
+      </div>
+      <div style="padding:12px 24px 18px">
+        
+        <details style="margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);border-radius:10px;overflow:hidden">
+          <summary style="padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.03);list-style:none;user-select:none">
+            <span style="font-size:16px;flex-shrink:0;transition:transform 0.2s">▶</span>
+            <div style="flex:1">
+              <div style="font-size:14px;font-weight:700;color:#fff">IVigee Digital</div>
+              <div style="font-size:11px;color:rgba(255,255,255,0.55);margin-top:2px">John Sinclair · Head of Revenue Operations</div>
+            </div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.35)">04/06/2026</div>
+          </summary>
+          <div style="padding:18px 20px;border-top:1px solid rgba(255,255,255,0.08)">
+            
+            <div style="margin-bottom:12px;border-left:3px solid #6060D0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#6060D0;margin-bottom:4px">Situation</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">John Sinclair is co-CRO (transitioning to full CRO) at IVigee Digital, a funded early-stage tech company with £1.5m/year in funding, a 15-man Silicon Valley dev team, and significant AI capability already in-house. He also runs a separate personal venture called Persuasion Jiu-Jitsu, where he operates as a fractional CRO/commercial engine builder for early-stage funded startups — helping them build GTM strategy, sales teams, and commercial infrastructure before they go to seed. He described his core work as: 'I build commercial engines... I go in as CRO effectively and build out your strategies and maps.' He is active on LinkedIn, familiar with AI tools including Claude, and is clearly well-networked at decision-maker level across multiple early-stage tech businesses.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FC3A33;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FC3A33;margin-bottom:4px">Pain</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">Two distinct pain contexts emerged. First, for IVigee Digital specifically: no pain was surfaced — they already have a large dev team and are fully resourced on AI. John explicitly closed that door. Second, and more relevantly for Notch, the pain John articulated was around the wider market he operates in — sales teams not reaching out, over-relying on technology, and unqualified pipeline being generated by junior BDRs who lack commercial judgement. He said: 'Half the problems I had with teams that I put in place, they're just not reaching out. Calling people, emailing, they're just expecting technology to do it for them.' He also described the broader RevOps/GTM AI deployment pain Sean opened with — integrations, guardrails, CRM hygiene, and adoption — as familiar and credible, even if not personally acute at IVigee right now.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #FE6601;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#FE6601;margin-bottom:4px">Impact</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">The operational impact John references is around wasted pipeline capacity and poor qualification in the teams he builds and advises. He told one of his sales reps this morning to 'stop filling your diary with useless crap' — indicating that low-quality, unqualified activity is a live issue in the companies he works with. Strategically, John is well-positioned as a connector and influencer: he is regularly approached for introductions and referrals at CRO/RevOps level, and explicitly said 'I get asked all the time' for exactly the kind of introductions Notch needs. The impact of winning John as a partner rather than a direct customer could be significant — he has ongoing access to multiple early-stage funded startups who are actively building commercial infrastructure and would be natural Notch prospects.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #3090C0;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#3090C0;margin-bottom:4px">Critical Event</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">No formal deadline or trigger event was mentioned for IVigee Digital — and John ruled them out as a near-term prospect entirely due to existing funding and dev resource. For his Persuasion Jiu-Jitsu work, he mentioned 'once the politics changes, I know there'll be different opportunities' which is vague and not a firm trigger. No budget cycle, contract renewal, or regulatory deadline was referenced. The meeting was booked for Wednesday at 11:15 (implied to be 4th June 2026) — the urgency here is relationship-driven rather than event-driven. The AE should not go in expecting a deal timeline; this is a partnership/referral conversation first.</div>
+            </div>
+            <div style="margin-bottom:12px;border-left:3px solid #32B241;padding-left:12px">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:4px">Decision</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.7">For IVigee Digital: John is co-CRO moving to CRO, but he explicitly stated they have a full Silicon Valley dev team, existing AI investment, and funding in place — he does not see himself as the right fit as a buyer there right now. For the Persuasion Jiu-Jitsu / partner angle: John is the sole decision-maker for his own consultancy. He indicated he can influence and introduce at decision-maker level within the startups he advises, saying 'I'm at that level so I get that I can influence the decision. So I'm a decision maker level.' No other stakeholders or sign-off processes were mentioned for the partner conversation. Budget was not discussed for any potential referral or partner arrangement.</div>
+            </div>
+            
+            <div style="margin-top:14px;padding:14px 16px;background:rgba(50,178,65,0.08);border-left:3px solid #32B241;border-radius:0 8px 8px 0">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#32B241;margin-bottom:6px">Recommended AE Approach</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);line-height:1.75">Open by acknowledging this is a two-track conversation — you are not coming in to sell Notch to IVigee Digital. Frame it explicitly as: (1) understanding whether John could be a referral partner for Notch given his access to early-stage funded startups building commercial engines, and (2) giving John a proper look at what Notch does so he can make an informed decision about whether it is something worth pointing his network toward. This framing respects the dynamic John himself set up on the call. Do not pitch IVigee Digital — John will shut this down immediately and you will lose credibility. On the partner angle, probe specifically: how many early-stage companies is he actively working with right now, what does their typical AI and RevOps maturity look like, and at what stage does he usually bring in external tooling recommendations? John said he is 'always getting asked' for exactly the kind of introductions Notch needs — understand the volume and quality of that flow. Ask him to describe the profile of a company he would feel comfortable introducing Notch to. This helps qualify the partner opportunity without it feeling like an interrogation. On Notch's product, lead with the CRM automation and inbound lead routing use cases Sean mentioned — these resonated enough for John to stay on the call. John values qualification rigour highly (he explicitly coaches his teams on it), so frame Notch around the quality of commercial output, not just efficiency or volume. Tobiah should be prepared for John to ask sharp questions about how the product actually works in production — John is technically literate and commercially experienced, so avoid vague demos or high-level positioning. He will probe. Finally, explore the 'politics changing' comment — something is shifting in John's world that he thinks will open up opportunities. Understanding what that is could reveal a future direct buying opportunity or a near-term referral trigger.</div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div></div>
+    </div>
+
+  <div class="panel" id="panel-1">
+    <div style="background:rgba(10,8,40,0.32);border:1px solid rgba(255,255,255,0.13);border-radius:16px;overflow:hidden;margin-bottom:14px">
+      <div style="padding:18px 24px 14px;border-bottom:1px solid rgba(255,255,255,0.1)">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#3090C0">All Time — Month-on-Month Comparison</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px">Full campaign history at a glance</div>
+      </div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;min-width:680px">
+          <thead>
+            <tr style="background:rgba(255,255,255,0.04)">
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:left">Month</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(200,216,240,0.5);text-align:center">Dials</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-align:center">Connects</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#3090C0;text-align:center">Convos</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#32B241;text-align:center">Activated</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#FE6601;text-align:center">Meetings</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Connect %</th>
+              <th style="padding:10px 14px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.3);text-align:center">Mtg %</th>
+            </tr>
+          </thead>
+          <tbody><tr>
+      <td style="padding:11px 14px;font-weight:600;color:#fff;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,0.07)">June 2026</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(200,216,240,0.9);border-bottom:1px solid rgba(255,255,255,0.07)">415</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.07)">43</td>
+      <td style="padding:11px 14px;text-align:center;color:#3090C0;border-bottom:1px solid rgba(255,255,255,0.07)">26</td>
+      <td style="padding:11px 14px;text-align:center;color:#32B241;border-bottom:1px solid rgba(255,255,255,0.07)">8</td>
+      <td style="padding:11px 14px;text-align:center;color:#FE6601;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.07)">1</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">10.4%</td>
+      <td style="padding:11px 14px;text-align:center;color:rgba(255,255,255,0.45);font-size:11px;border-bottom:1px solid rgba(255,255,255,0.07)">3.8%</td>
+    </tr></tbody>
+          <tfoot>
+            <tr style="background:rgba(255,255,255,0.06)">
+              <td style="padding:12px 14px;font-weight:800;color:#fff;font-size:13px">Total</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(200,216,240,0.9)">415</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:rgba(255,255,255,0.65)">43</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#3090C0">26</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#32B241">8</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:700;color:#FE6601">1</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">10.4%</td>
+              <td style="padding:12px 14px;text-align:center;font-weight:600;color:rgba(255,255,255,0.45);font-size:11px">3.8%</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+<div class="footer">
+  <img src="https://call-runnings.github.io/callrunnings-reports/assets/logo_bobsled.png" class="footer-logo" alt="Call Runnings">
+  <span class="footer-tag">Phone First, Always</span>
+</div>
+<script>
+(function(){
+  // ── Tab switching ─────────────────────────────────────────────
+  function showPanel(id){
+    document.querySelectorAll('.tab').forEach(function(t){
+      t.classList.toggle('active', t.getAttribute('data-panel')===String(id));
+    });
+    document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+    var target=document.getElementById('panel-'+id);
+    if(target) target.classList.add('active');
+  }
+  document.querySelectorAll('[data-panel].tab').forEach(function(tab){
+    tab.addEventListener('click',function(){showPanel(tab.getAttribute('data-panel'));});
+  });
+
+
+})();
+</script>
+</body>
+</html>
