@@ -1,0 +1,232 @@
+{
+  "months": [
+    {
+      "month": "June 2026",
+      "sections": [
+        {
+          "type": "overview",
+          "title": "Campaign Overview",
+          "content": "June 2026 was a month defined by a market that is deeply engaged with AI — but largely on its own terms. The vast majority of conversations revealed prospects who are not ignoring the space; quite the opposite. They are actively implementing, experimenting, and in many cases already running internal AI programmes. The challenge this month was not scepticism about AI agents, but rather the confidence — sometimes self-assurance — of teams who believe they have the problem solved in-house. The pipeline that did open came from prospects willing to pause and consider whether their current approach might benefit from external expertise, even if they needed a little time to get there.",
+          "content2": "What stood out was a recurring pattern of soft deferrals rather than hard rejections. Prospects frequently asked for follow-up emails, suggested callbacks in September or October, or requested information to review at their own pace. This is a market in motion — budgets are tight or allocated, bandwidth is stretched, and priorities are already set for Q3. Several contacts were unreachable due to holidays, restructures, or being mid-transition out of their roles, which added a layer of organisational noise to an already busy month.",
+          "content3": "The single meeting booked and the eight activated conversations represent genuine interest from a market that requires patience and precision. The strongest signals came from prospects using Claude who showed openness to a conversation about best practices and deployment mistakes — suggesting that Notch's positioning around expertise and risk reduction resonates more than a pure capability pitch. The groundwork laid this month — referrals captured, emails sent, LinkedIn connections made, and callbacks agreed — sets up a more productive Q3 if followed through systematically.",
+          "quotes": []
+        },
+        {
+          "type": "competitor_table",
+          "title": "Competitor & Market Intelligence",
+          "rows": [
+            {
+              "competitor": "Claude (Anthropic)",
+              "what_said": "The most frequently cited existing tool. Prospects mentioned actively using Claude across business functions, with some describing it as embedded across multiple teams. One said they have 'invested heavily in Claude and are satisfied with their current trajectory.' Another noted their team is 'currently managing Claude effectively.' The recurring framing was confidence rather than frustration — suggesting Claude is seen as a solved problem, not a pain point.",
+              "freq": 6,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Zoom AI Agent",
+              "what_said": "One prospect mentioned using Zoom's AI agent with 'all necessary guardrails set up,' positioning it as a complete and settled solution. Mentioned alongside Zapier as part of a satisfied, integrated stack.",
+              "freq": 1,
+              "signal": "cold"
+            },
+            {
+              "competitor": "Zapier",
+              "what_said": "Referenced as part of an existing automation stack alongside Zoom's AI agent. Not discussed in depth, but signals that the prospect has already assembled a working workflow without external help.",
+              "freq": 1,
+              "signal": "cold"
+            },
+            {
+              "competitor": "HubSpot CRM",
+              "what_said": "One prospect stated they are 'focused on improving their existing HubSpot CRM' and have no timeline for exploring AI agent services. Indicates a competing internal priority rather than a competing AI product.",
+              "freq": 1,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "In-house / custom-built AI infrastructure",
+              "what_said": "A significant proportion of prospects cited internal AI teams, custom-built CRMs, or bespoke agent builds as reasons they do not need external support. Phrases included 'we handle things internally,' 'a dedicated internal AI Ops team,' and 'in-house GTM engineers.' One founding team explicitly referenced recent funding as the reason they feel confident going it alone.",
+              "freq": 8,
+              "signal": "barrier"
+            },
+            {
+              "competitor": "Claude Code (development tooling)",
+              "what_said": "One prospect mentioned developing tools in Claude Code for their own automation agency, indicating awareness of the developer-facing layer of the Claude ecosystem. Not directly competitive but signals a technically sophisticated audience building their own solutions.",
+              "freq": 1,
+              "signal": "none"
+            },
+            {
+              "competitor": "Internal AI sold as own product",
+              "what_said": "One prospect noted their company sells an AI agent and is 'planning to implement it internally,' suggesting the pitch was immediately irrelevant. A distinct signal that some targets in the list are themselves AI vendors rather than buyers.",
+              "freq": 1,
+              "signal": "cold"
+            }
+          ]
+        },
+        {
+          "type": "objections",
+          "title": "Common Objections",
+          "items": [
+            {
+              "objection": "Already built it in-house",
+              "freq": 8,
+              "quote": "We have a dedicated internal AI Ops team but agreed to review more information via email.",
+              "analysis": "This was the dominant objection of the month. Prospects across varying company sizes and sectors have invested in internal capability and feel ownership over their AI stack. The objection is rarely hostile — it is confident. The opportunity lies in reframing the conversation away from replacement and towards risk reduction or acceleration. Prospects who have built in-house are often unaware of the failure modes they have not yet encountered. Messaging that leads with 'common mistakes' or 'what we see go wrong at your stage' is more likely to create a crack in this objection than any capability claim."
+            },
+            {
+              "objection": "Not the right person / wrong contact",
+              "freq": 4,
+              "quote": "He's not involved with the relevant teams anymore. He suggested I reach out to founder Carlos in Madrid.",
+              "analysis": "Several calls landed on contacts who had moved on, changed roles, or were never the correct decision-maker for AI infrastructure. This is a list quality and targeting signal as much as an objection. Each redirect — to a CTO, an IT Ops lead, a founder — is valuable intelligence that should be captured and actioned immediately. The referrals provided this month represent warm paths into accounts that would otherwise remain cold."
+            },
+            {
+              "objection": "Wrong time — other priorities or budget constraints",
+              "freq": 5,
+              "quote": "They currently have other priority projects and lack the budget and bandwidth for new initiatives.",
+              "analysis": "A cluster of prospects acknowledged the relevance of AI agents but cited competing internal demands. This is a timing objection, not a fit objection. These contacts have not ruled Notch out — they have deferred. The appropriate response is a structured follow-up sequence that keeps Notch visible without being intrusive, timed to the windows prospects themselves named (end of July, September, October)."
+            },
+            {
+              "objection": "Satisfied with current AI trajectory",
+              "freq": 3,
+              "quote": "They have already invested heavily in Claude and are satisfied with their current trajectory.",
+              "analysis": "A more entrenched version of the in-house objection, where the prospect is not just building but actively progressing and feels momentum. These contacts are harder to move in the short term but are worth monitoring — satisfaction with a self-built trajectory tends to erode as complexity scales. A light-touch nurture approach positioning Notch as a future safety net is more appropriate than pushing for an immediate meeting."
+            },
+            {
+              "objection": "Personal number — remove me",
+              "freq": 2,
+              "quote": "She requested to be removed from the database as it was her personal number.",
+              "analysis": "Two separate contacts were reached on personal numbers and immediately requested removal. This is a data hygiene issue with direct implications for brand perception and compliance. Any contact reached on a personal number who has not opted in should be flagged and removed immediately, and the source of those numbers reviewed to prevent recurrence."
+            },
+            {
+              "objection": "Prefers email over cold calls",
+              "freq": 4,
+              "quote": "He doesn't answer cold calls. He asked me to send an email instead, stating he would review it and respond if there's interest.",
+              "analysis": "A meaningful minority of prospects are not opposed to Notch's proposition but are opposed to the channel. This is not a disqualification — it is a channel preference that should be respected and used. Every prospect who requests an email has provided a pathway; the quality and relevance of what is sent matters enormously. Personalised, concise follow-ups tied specifically to what was said on the call will outperform generic outreach."
+            }
+          ]
+        },
+        {
+          "type": "questions",
+          "title": "What Prospects Asked",
+          "items": [
+            {
+              "question": "Can you send me more information by email first?",
+              "freq": 7,
+              "analysis": "The most common response to a cold introduction was a request to receive information before committing to a conversation. This reveals a market that is cautious with its time but not closed to the proposition. Prospects want to evaluate on their own terms before agreeing to a call. It also suggests the verbal pitch alone is not yet landing the hook — there is a need for a sharp, well-structured leave-behind document or one-pager that can do the work asynchronously."
+            },
+            {
+              "question": "Can you call me back at a better time?",
+              "freq": 5,
+              "analysis": "Multiple prospects asked to be called back — some with specific windows (after June 8th, in a few months, September or October). This is a positive signal in aggregate: these prospects did not hang up or refuse to engage. They are managing their calendar, not dismissing the topic. Each of these represents a concrete follow-up task with a named date, and the quality of the callback will determine whether this interest converts."
+            },
+            {
+              "question": "What specifically do you offer around Claude / AI agent deployment?",
+              "freq": 2,
+              "analysis": "Where prospects did engage substantively, questions focused on what Notch's offering looked like in the context of tools they already use — particularly Claude. This signals that generic AI messaging is less effective than Claude-specific positioning. Prospects who are already in the ecosystem want to know what Notch adds to something they are already using, not a replacement or a parallel track."
+            },
+            {
+              "question": "Are you the same company as Notch (prospect confusion)?",
+              "freq": 1,
+              "analysis": "One call produced confusion between the calling party identifying as Notch and the prospect's own context. This may reflect a targeting issue where a prospect's company name or brand overlaps with the Notch identity, or it may indicate that the opening line did not clearly establish who was calling and why. Worth monitoring for recurrence."
+            }
+          ]
+        },
+        {
+          "type": "themes",
+          "title": "Market Themes",
+          "items": [
+            {
+              "heading": "The 'We've Already Done It' Market",
+              "body": "The standout theme of June was the prevalence of prospects who have not just heard of AI agents but have already deployed them — internally, with custom builds, or through platforms like Claude and Zoom. This is a market that has moved faster than many anticipated, and the early self-builders are now in a phase of consolidation rather than exploration. The implication for Notch is that the pitch cannot start from 'here is what AI agents can do' — it must start from 'here is what typically goes wrong once you've built one.'"
+            },
+            {
+              "heading": "Claude as the Default Incumbent",
+              "body": "Claude appeared more than any other named tool across the transcripts, and consistently as a source of confidence rather than frustration. Prospects who use Claude feel they have made a serious, credible choice and are progressing well. This creates both a barrier and an opportunity: Notch can reposition around being Claude-specialist expertise — not a competitor to Claude, but a layer of experience that helps teams get more from it safely and at scale."
+            },
+            {
+              "heading": "Q3 Is When the Conversations Restart",
+              "body": "A notable number of prospects named specific future windows — late July, September, October — as when they would be ready to revisit AI investment conversations. This clustering suggests that June sits at the tail end of a planning cycle, with teams heads-down on current projects and not open to new initiatives until Q3. The callbacks and LinkedIn connections made this month are seeds for a more receptive market in autumn, and the follow-up discipline between now and then will determine how many of those seeds convert."
+            },
+            {
+              "heading": "Organisational Churn Is Disrupting Decision-Making",
+              "body": "Several calls uncovered contacts who were leaving their companies, mid-restructure, or no longer involved in the relevant teams. This level of personnel movement means that even well-researched contact lists can go stale quickly. It also means that referrals gathered during these calls — to CTOs, IT Ops leads, and founders — carry genuine value as navigational intelligence within accounts."
+            },
+            {
+              "heading": "The Technical Founder Cohort Is Self-Sufficient — For Now",
+              "body": "A subset of prospects came from founding teams or early-stage companies with in-house engineering capability, recent funding, and a strong conviction that they can build and maintain their own AI infrastructure. These are not the right targets for an immediate conversion, but they are worth tracking. As their AI programmes scale and complexity compounds, the case for external expertise typically strengthens. Notch would benefit from a nurture track specifically designed for this cohort."
+            }
+          ]
+        },
+        {
+          "type": "actions",
+          "title": "Recommended Actions",
+          "items": [
+            "Activate all named callbacks with specific dates — Joe (September/October), Musa (a few months), Emma (end of July), Georgie (after 8th June), Isaac (next week), and the prospect on holiday in Italy (one to two weeks) — and build a structured follow-up sequence so none of these windows are missed. These are the highest-probability near-term opportunities from the month.",
+            "Chase every referral captured this month before the trail goes cold — specifically Tom Underhill (CTO, referred by Diane), Hayden Lawrence in IT Ops (referred by Simon), and Carlos in Madrid (referred by Richard). Each of these was an unsolicited warm redirect from someone inside the account, which carries significantly more weight than a cold approach.",
+            "Develop a Claude-specific one-pager or email asset that positions Notch not as a replacement for Claude but as a deployment and risk-reduction layer for teams already using it. The most receptive prospects this month were Claude users open to a conversation about common mistakes — that framing should be standardised and systematically used in follow-up emails to the cluster of prospects who requested more information.",
+            "Review and clean the contact database to remove personal mobile numbers and flag contacts who have departed their companies or changed roles. Two personal number complaints in a single month is a pattern that risks reputational and compliance exposure if left unaddressed, and stale contacts (such as the prospect who confirmed they are leaving their company) should be replaced with the referrals gathered.",
+            "For the cohort of prospects who cited budget constraints, competing priorities, or being mid-restructure, implement a lightweight quarterly nurture sequence rather than leaving them on a static callback date. This audience is not closed — they are waiting — and staying visible with relevant, low-pressure content between now and Q3 will differentiate Notch when their window opens."
+          ]
+        }
+      ],
+      "stats": {
+        "totalCalls": 415,
+        "connected": 43,
+        "conversations": 26,
+        "meetings": 1,
+        "noAnswer": 0,
+        "voicemail": 0,
+        "gatekeeper": 0,
+        "other": 0,
+        "dispositions": {
+          "Activated": 8,
+          "No, Not Now": 5,
+          "No, Not Ever": 8,
+          "No, Not Me (Ref)": 3,
+          "No, Not Me (No Ref)": 1
+        }
+      },
+      "handovers": [
+        {
+          "id": "mpz9l80ayay8qliweq",
+          "savedAt": "2026-06-04T08:59:50.916Z",
+          "campaign": "Notch",
+          "contact": {
+            "companyName": "IVigee Digital",
+            "contactName": "John Sinclair",
+            "jobTitle": "Head of Revenue Operations",
+            "phone": "+447814193308",
+            "email": "john@ivigee.io",
+            "linkedin": "https://linkedin.com/in/john-sinclair-06822a40"
+          },
+          "spiced": {
+            "situation": "John Sinclair is co-CRO (transitioning to full CRO) at IVigee Digital, a funded early-stage tech company with £1.5m/year in funding, a 15-man Silicon Valley dev team, and significant AI capability already in-house. He also runs a separate personal venture called Persuasion Jiu-Jitsu, where he operates as a fractional CRO/commercial engine builder for early-stage funded startups — helping them build GTM strategy, sales teams, and commercial infrastructure before they go to seed. He described his core work as: 'I build commercial engines... I go in as CRO effectively and build out your strategies and maps.' He is active on LinkedIn, familiar with AI tools including Claude, and is clearly well-networked at decision-maker level across multiple early-stage tech businesses.",
+            "pain": "Two distinct pain contexts emerged. First, for IVigee Digital specifically: no pain was surfaced — they already have a large dev team and are fully resourced on AI. John explicitly closed that door. Second, and more relevantly for Notch, the pain John articulated was around the wider market he operates in — sales teams not reaching out, over-relying on technology, and unqualified pipeline being generated by junior BDRs who lack commercial judgement. He said: 'Half the problems I had with teams that I put in place, they're just not reaching out. Calling people, emailing, they're just expecting technology to do it for them.' He also described the broader RevOps/GTM AI deployment pain Sean opened with — integrations, guardrails, CRM hygiene, and adoption — as familiar and credible, even if not personally acute at IVigee right now.",
+            "impact": "The operational impact John references is around wasted pipeline capacity and poor qualification in the teams he builds and advises. He told one of his sales reps this morning to 'stop filling your diary with useless crap' — indicating that low-quality, unqualified activity is a live issue in the companies he works with. Strategically, John is well-positioned as a connector and influencer: he is regularly approached for introductions and referrals at CRO/RevOps level, and explicitly said 'I get asked all the time' for exactly the kind of introductions Notch needs. The impact of winning John as a partner rather than a direct customer could be significant — he has ongoing access to multiple early-stage funded startups who are actively building commercial infrastructure and would be natural Notch prospects.",
+            "critical_event": "No formal deadline or trigger event was mentioned for IVigee Digital — and John ruled them out as a near-term prospect entirely due to existing funding and dev resource. For his Persuasion Jiu-Jitsu work, he mentioned 'once the politics changes, I know there'll be different opportunities' which is vague and not a firm trigger. No budget cycle, contract renewal, or regulatory deadline was referenced. The meeting was booked for Wednesday at 11:15 (implied to be 4th June 2026) — the urgency here is relationship-driven rather than event-driven. The AE should not go in expecting a deal timeline; this is a partnership/referral conversation first.",
+            "decision": "For IVigee Digital: John is co-CRO moving to CRO, but he explicitly stated they have a full Silicon Valley dev team, existing AI investment, and funding in place — he does not see himself as the right fit as a buyer there right now. For the Persuasion Jiu-Jitsu / partner angle: John is the sole decision-maker for his own consultancy. He indicated he can influence and introduce at decision-maker level within the startups he advises, saying 'I'm at that level so I get that I can influence the decision. So I'm a decision maker level.' No other stakeholders or sign-off processes were mentioned for the partner conversation. Budget was not discussed for any potential referral or partner arrangement."
+          },
+          "objections": [
+            {
+              "objection": "IVigee Digital is not a viable prospect — they have £1.5m/year in funding, a 15-man Silicon Valley dev team already across AI, and John said plainly: 'that's a dead duck for you, that one.'",
+              "response": "Sean accepted this cleanly and pivoted quickly to exploring John's Persuasion Jiu-Jitsu work and the partner/referral angle. This was handled well — no attempt to push back or force the IVigee angle. The pivot preserved the conversation and kept John engaged."
+            },
+            {
+              "objection": "John initially questioned whether Sean had done his homework — 'I'm just checking if you've done your homework, that's all' — probing whether Sean had actually researched IVigee Digital before calling.",
+              "response": "Sean's response was weak here. He stumbled and said 'Persuasive... Persuasion Jiu-Jitsu' which appeared to be him reading from a screen rather than demonstrating genuine research. John let it go, but the AE should be aware that John is sharp and will test preparation. Sean recovered through honesty and rapport rather than substance."
+            },
+            {
+              "objection": "John noted that Notch specifically may not be relevant to him personally right now: 'not saying it wouldn't be a dead duck in the future because things are about to change.'",
+              "response": "This was partially addressed by framing the meeting as a partner/referral conversation rather than a direct sale. However, it was not probed further — the AE should explore what 'things about to change' means and whether there is a future direct opportunity within his consultancy work."
+            }
+          ],
+          "recommended_approach": "Open by acknowledging this is a two-track conversation — you are not coming in to sell Notch to IVigee Digital. Frame it explicitly as: (1) understanding whether John could be a referral partner for Notch given his access to early-stage funded startups building commercial engines, and (2) giving John a proper look at what Notch does so he can make an informed decision about whether it is something worth pointing his network toward. This framing respects the dynamic John himself set up on the call. Do not pitch IVigee Digital — John will shut this down immediately and you will lose credibility. On the partner angle, probe specifically: how many early-stage companies is he actively working with right now, what does their typical AI and RevOps maturity look like, and at what stage does he usually bring in external tooling recommendations? John said he is 'always getting asked' for exactly the kind of introductions Notch needs — understand the volume and quality of that flow. Ask him to describe the profile of a company he would feel comfortable introducing Notch to. This helps qualify the partner opportunity without it feeling like an interrogation. On Notch's product, lead with the CRM automation and inbound lead routing use cases Sean mentioned — these resonated enough for John to stay on the call. John values qualification rigour highly (he explicitly coaches his teams on it), so frame Notch around the quality of commercial output, not just efficiency or volume. Tobiah should be prepared for John to ask sharp questions about how the product actually works in production — John is technically literate and commercially experienced, so avoid vague demos or high-level positioning. He will probe. Finally, explore the 'politics changing' comment — something is shifting in John's world that he thinks will open up opportunities. Understanding what that is could reveal a future direct buying opportunity or a near-term referral trigger.",
+          "key_quotes": [
+            "Considering you're using my strategy every time. Always happy got 30 seconds. Go for it. — John acknowledged the cold call approach immediately, signalling he respects the method and practises it himself. This is a peer-level conversation, not a standard prospect meeting.",
+            "I'm at that level so I get that I can influence the decision. So I'm a decision maker level so you've got the right point on that front. But obviously sadly with IVigee I can't do any inquiry on that one. — John explicitly confirmed his influence and decision-making authority while cleanly closing the door on IVigee. The partner opportunity is the real one here.",
+            "I get asked all the time and because I'm now at a certain top level view perspective, I don't always have time to filter them out, but I'm always getting asked for exactly what you're after and what you're looking for. So if I can help you pass stuff on, then I'm more than happy to support you. — This is the core commercial opportunity. John has inbound demand for exactly what Notch offers and no current mechanism to refer it efficiently.",
+            "Half the problems I had with teams that I put in place, they're just not reaching out. Calling people, emailing, they're just expecting technology to do it for them. — John's articulation of a live pain in the companies he advises. This is the wedge for Notch — not AI for its own sake, but AI that supports human-led commercial activity rather than replacing it."
+          ]
+        }
+      ],
+      "conversationSummaries": [],
+      "referrals": []
+    }
+  ]
+}
