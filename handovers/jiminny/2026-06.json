@@ -1,0 +1,49 @@
+{
+  "handovers": [
+    {
+      "id": "mq0nw97mf2j0abi4kzc",
+      "savedAt": "2026-06-05T08:28:06.495Z",
+      "campaign": "Jiminny",
+      "contact": {
+        "companyName": "Juro Online",
+        "contactName": "Emma Blackburne",
+        "jobTitle": "Head of Revenue Operations",
+        "phone": "+447563152964",
+        "email": "emma@juro.com",
+        "linkedin": "https://linkedin.com/in/emma-blackburne-914155154"
+      },
+      "spiced": {
+        "situation": "Emma is Head of Revenue Operations at Juro Online. They have been using Gong as their conversation intelligence and call recording platform, with 25 paid seats and 35 free viewer licences — so a total user base of 60. They have already completed a formal evaluation process and have provisionally selected Grain as their replacement tool. The decision to move away from Gong was triggered by a significant price increase. They are in a live transition period but have not yet signed with Grain.",
+        "pain": "Gong attempted to increase Juro's annual contract from £40k to £60k — a 50% uplift — and wanted to remove existing discounts all in one go. Emma described this as 'way too much for us.' The core frustration is not with conversation intelligence as a category but with the cost and the aggressive repricing behaviour from Gong. Notably, Emma also indicated they had previously considered Jiminny at some point but ruled them out for reasons she cannot immediately recall — she mentioned having notes somewhere on why Jiminny was disqualified.",
+        "impact": "The financial impact is direct and quantifiable. A jump from £40k to £60k represented an unsustainable cost increase for the team, forcing a full re-evaluation of their tooling. This has already consumed internal time and resource — Emma has been through a full evaluation cycle and landed on Grain. The strategic impact is that they are now scoping down their ambitions: Grain is described as focused 'purely on the transcription side of things rather than the coaching,' which suggests Juro may be accepting a reduction in capability in order to hit a lower price point (£10k–£15k target).",
+        "critical_event": "Urgency is moderate but real. The meeting is booked for Monday and Emma explicitly said 'if you wanted to be considered' when referencing that timeframe — implying there is a soft deadline around when a decision will be finalised. They have not yet signed with Grain, which is the key window. If Jiminny cannot get in front of Emma by early next week with a compelling and credibly priced proposal, the Grain decision is likely to be rubber-stamped. No hard contract date or renewal deadline was stated explicitly.",
+        "decision": "Emma appears to be the primary decision-maker or at least the lead evaluator, given her Head of RevOps title and the level of detail she shared on pricing and user counts without hesitation. No other stakeholders were named. The decision process has already been through a formal evaluation stage — Jiminny was not included in that round. Emma indicated she had previously looked at Jiminny and had notes on why they were ruled out. The budget expectation is clearly stated: £10k–£15k per year. She is willing to reconsider if Jiminny can address her prior objections and come in at or near that price point."
+      },
+      "objections": [
+        {
+          "objection": "Timing is off — they have already completed an evaluation and have provisionally chosen Grain.",
+          "response": "The SDR handled this reasonably well. Rather than abandoning the call, he reframed the timing as actually being in Jiminny's favour — they haven't signed with Grain yet. He used the 'we have 90% of Gong's functionality at 50% of the cost' line to create enough curiosity to keep Emma engaged. The reframe worked and she agreed to the meeting, though it was a light close rather than a deeply persuasive one. The AE should not assume this objection is resolved — Emma's default position is still Grain."
+        },
+        {
+          "objection": "Jiminny was previously evaluated and ruled out — Emma has notes on why.",
+          "response": "This was not handled in any depth on the call. The SDR acknowledged it and asked Emma to dig out those notes before the meeting, which is a sensible move. However, the SDR did not probe to find out even a rough sense of what the concerns were. This is the single biggest risk going into Monday's meeting. The AE is walking in blind on what previously disqualified Jiminny, and Emma may have a firmly held objection that resurfaces immediately."
+        },
+        {
+          "objection": "Grain is significantly cheaper — they are targeting £10k–£15k, compared to the £40k they were paying for Gong.",
+          "response": "The SDR did not directly address whether Jiminny can hit this price point. He pivoted to 'we'll come with pricing on the call,' which keeps the door open but also means Emma's expectation is anchored at £10k–£15k. If Jiminny cannot get close to that range for 25 paid seats, the meeting will likely end quickly. The AE needs to arrive with a concrete and competitive number."
+        },
+        {
+          "objection": "They are not looking for the full coaching and forecasting suite — just transcription and recordings.",
+          "response": "The SDR acknowledged this but did not explore it further. It is unclear whether this is a genuine strategic decision or simply a cost-driven compromise. The AE should probe whether Emma actually wants to deprioritise coaching and forecasting, or whether she is settling for less because she believes full-featured tools are too expensive."
+        }
+      ],
+      "recommended_approach": "Open the meeting by acknowledging the context directly: Jiminny was previously ruled out, Emma has notes on why, and the AE is there to address those specific concerns head-on. Do not dance around this — ask Emma at the very start to share what those hesitations were. This demonstrates confidence and stops the prior objection from hanging over the entire conversation. Once those are surfaced, address each one clearly and honestly. If there is a genuine gap, say so. If the concern is outdated or based on an older version of the product, explain what has changed with specifics. On pricing, come prepared with a concrete number for 25 paid seats that is as close to the £10k–£15k range as possible. Emma has been explicit about this ceiling. If Jiminny cannot meet it exactly, frame the delta in terms of what additional value justifies the difference versus Grain — particularly around coaching functionality, which Grain does not offer. This is the key strategic angle: Emma said they are 'focusing purely on the transcription side' with Grain, but as Head of RevOps her remit almost certainly includes pipeline visibility and rep coaching. Probe whether that capability gap is acceptable to her or whether she is compromising. Ask what happens to coaching and forecasting if Grain only does transcription — who owns that problem and what is the plan? This may reveal latent pain that reopens the door to a fuller Jiminny package. Do not oversell. Emma is sceptical, time-pressured, and has already been through one evaluation. Be direct, be specific on price, and let her reach her own conclusion. The SDR's framing of 'if it's not a fit we'll say so' resonated with her — the AE should carry that same tone throughout.",
+      "key_quotes": [
+        "We were paying 40K for Gong. They were looking to increase it to 60, which is why we started reevaluating.",
+        "We had some quite good discounts that they wanted to remove — to do all in one go was way too much for us.",
+        "The tool we're looking at now is more in the region of like 10 to 15k — so yeah, certainly that comes in around there is kind of what we're looking for.",
+        "I feel like I've got some notes somewhere on why Jiminny was ruled out — so let me see if I can find that. Maybe if you could set my mind at ease on those points, you might be able to show you're still in."
+      ]
+    }
+  ]
+}
