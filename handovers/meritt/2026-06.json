@@ -1,0 +1,41 @@
+{
+  "handovers": [
+    {
+      "id": "mq0o21g74lbtuf1i5m6",
+      "savedAt": "2026-06-05T08:32:36.609Z",
+      "campaign": "Meritt",
+      "contact": {
+        "companyName": "Actian",
+        "contactName": "Paul Zeila",
+        "jobTitle": "Vice President - Head of Sales UKI, ANZ and APAC",
+        "phone": "44 7917 681266",
+        "email": "paul.zeila@actian.com",
+        "linkedin": "https://www.linkedin.com/in/paul-zeila-3152622"
+      },
+      "spiced": {
+        "situation": "Paul is VP of Sales covering UKI, ANZ and APAC at Actian. He has a direct report called Richard Mattis (French, so likely pronounced 'Ree-shard') who is hiring significantly, specifically for roles around data governance. The two have spoken before in March, at which point the team was mid-restructuring. Actian has a dedicated enablement function led by a guy called Trevor Robertson, and a COO named Steve Lennon who Paul describes as operating more like a Chief Revenue Officer. Paul was caught out and about running errands and heading to a client meeting, so the conversation was somewhat distracted.",
+        "pain": "No explicit pain was articulated in traditional terms — Paul was not complaining about a broken process. However, the fact he responded positively and quickly to the assessment tool pitch ('yes it is, short answer') suggests there is an underlying need around understanding and developing his sales team. He paused to think, indicating he saw genuine relevance but had not previously framed it as an active problem. The hiring activity under Richard Mattis also signals there may be a need to screen incoming talent beyond just CV-based or traditional recruitment methods.",
+        "impact": "Paul said the tool 'ticks a few boxes' and would appeal to him 'massively,' which signals he sees strategic value — likely around building a stronger, more coachable sales team and having data to back decisions on people. He also noted that having a free trial result to show internally would give him 'more clout' to push something like this through, implying the impact of not having it is that internal advocacy for people development tools is currently difficult without evidence.",
+        "critical_event": "No hard deadline or regulatory trigger was mentioned. The urgency is soft — Richard Mattis is actively hiring now, which creates a natural window to position the assessment tool as a screening mechanism in an active process. The free trial offer was the hook that created momentum for the meeting booking. No budget cycle or deadline was referenced.",
+        "decision": "Paul was clear that this touches multiple stakeholders and that he would need buy-in before proceeding. He named three people: (1) Trevor Robertson — Head of Enablement, who Paul thinks would be directly interested; (2) Steve Lennon — COO, described as functioning more like a CRO, who Paul also flagged as relevant; (3) Richard (pronounced Rishard as he's French) Mattis — the direct report actively hiring, for whom the screening use case is most immediately relevant. Paul said he would need their buy-in 'to allow me to go and do something like that.' He is a strong internal champion but not the sole decision-maker. No budget figure or formal procurement process was discussed."
+      },
+      "objections": [
+        {
+          "objection": "The tool touches two or three different people in the company — Paul needs buy-in from Trevor Robertson (Enablement) and Steve Lennon (COO/CRO) at minimum.",
+          "response": "Mark acknowledged this and offered to speak to them directly if Paul felt that was the better route. Paul did not take him up on that directly but was comfortable proceeding with a free trial as a way of building internal evidence. The handling was adequate in the moment but the AE should note this multi-stakeholder dynamic was not fully explored — it is unclear how involved or accessible Trevor and Steve are, or what their individual priorities are."
+        },
+        {
+          "objection": "Paul was mid-errand, distracted, and about to head into a client meeting — his engagement was limited in terms of depth of conversation.",
+          "response": "Mark kept things brief and did not overload Paul with information. He pivoted smoothly to locking in a meeting rather than trying to have a full discovery conversation on the spot. This was sensible, though it does mean the AE is going into the meeting with relatively shallow discovery."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging Paul's situation honestly — he was parked up running errands when he booked this, so recap briefly what was discussed to re-establish context and make him feel heard. Reference the specific things he said: that it 'ticks a few boxes,' that it appeals to him 'massively,' and that he sees Trevor Robertson and Steve Lennon as key people who would need to be on board. Do not treat this as a standard demo — Paul has already bought into the concept emotionally. The priority is (1) deepening discovery on what 'ticking boxes' actually means for him day-to-day with his team, and (2) understanding what it would take to get Trevor and Steve engaged. Ask Paul directly what Trevor's current priorities in enablement are and whether Steve is driving any specific people performance agenda at the moment — this will tell you how to frame the tool differently for each stakeholder. On the free trial: Paul committed to one enthusiastically. Use the meeting to agree the specifics — which reps, how many, what outcome would he want to see to feel confident presenting it internally. Anchor on that outcome so you have a clear next step beyond the meeting. Also flag the hiring activity under Richard Mattis as a near-term hook — if Richard is actively recruiting for data governance profiles now, the assessment tool could be deployed almost immediately in that process, giving Paul something tangible to show colleagues quickly. Do not oversell the product; Paul is already warm. Focus on making the internal business case easy for him to carry to Steve and Trevor.",
+      "key_quotes": [
+        "That will probably touch two or three different people in our company — we have a guy called Trevor and I think it's Robertson, he's in charge of enablement... and it could also be of interest to our COO, Steve Lennon... I would need their buy-in to allow me to go and do something like that.",
+        "I would be open to a free trial 100% because that might give me more clout to push it through as well if we see value there.",
+        "That does tick a few boxes.",
+        "He is firing quite significantly — he will be looking for hires around data governance and people with that kind of background."
+      ]
+    }
+  ]
+}
