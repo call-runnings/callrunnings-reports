@@ -40,6 +40,51 @@
         "I get asked all the time and because I'm now at a certain top level view perspective, I don't always have time to filter them out, but I'm always getting asked for exactly what you're after and what you're looking for. So if I can help you pass stuff on, then I'm more than happy to support you. — This is the core commercial opportunity. John has inbound demand for exactly what Notch offers and no current mechanism to refer it efficiently.",
         "Half the problems I had with teams that I put in place, they're just not reaching out. Calling people, emailing, they're just expecting technology to do it for them. — John's articulation of a live pain in the companies he advises. This is the wedge for Notch — not AI for its own sake, but AI that supports human-led commercial activity rather than replacing it."
       ]
+    },
+    {
+      "id": "mq6eeo49m2r9uvcgz7q",
+      "savedAt": "2026-06-09T08:49:04.448Z",
+      "campaign": "Notch",
+      "contact": {
+        "companyName": "Xentral ERP Software",
+        "contactName": "Nadya Farahdiba",
+        "jobTitle": "RevOps Manager",
+        "phone": "+4915224763087",
+        "email": "nadya.farahdiba@xentral.com",
+        "linkedin": "https://linkedin.com/in/nadya-farahdiba"
+      },
+      "spiced": {
+        "situation": "Nadya is a RevOps Manager at Xentral ERP Software. She and her team have built their own AI agent in-house, currently being used for outbound lead clean-ups and internal process automation across their toolstack. Their core tech stack includes HubSpot (CRM and source of truth), PlanHat (CSM), ChartMogul (subscription management), an unnamed partnerships tool, and n8n as their primary integration layer for connecting these platforms. They are actively mid-journey in their AI and automation build — Nadya described herself as 'still new in this AI agency thing' and acknowledged they are 'working towards it' rather than having a mature, stable setup.",
+        "pain": "The central pain is data hygiene and sync failures across their multi-tool stack. Nadya explicitly described situations where data updated in one platform — such as a partner record — fails to reflect in HubSpot, which is supposed to be the single source of truth. She said 'the data hygiene behind it is still a little bit of chaos.' They are using n8n to bridge integrations but find native/local integrations 'very limited.' They have manual workarounds in place — backups, cross-comparisons, a waterfall approval system — but these are clearly labour-intensive and do not fully solve the problem. There is also an implicit risk around AI agents making unguarded changes to live systems, which the SDR raised and Nadya acknowledged as relevant: 'yeah, that happens.'",
+        "impact": "The operational impact is that HubSpot — their declared source of truth — cannot be fully trusted because data arriving from multiple platforms via n8n is inconsistent and sometimes simply missing. This undermines RevOps' ability to provide reliable data to sales, CS, and partnerships. Nadya confirmed 'a couple of data they are missing' and described the overall situation as 'a bit complicated.' Strategically, this limits how far they can scale their AI automation ambitions: they are trying to solve complexity with AI but the underlying data integrity issues mean the AI is operating on unreliable inputs. The team is spending time on manual reconciliation (backups, cross-comparatives) rather than higher-value RevOps work.",
+        "critical_event": "No specific deadline, budget cycle, or regulatory trigger was mentioned. The urgency is self-generated — Nadya and the team are actively building and want to make progress — but there is no stated forcing function. The AE should probe in the meeting for any upcoming business milestones, product launches, headcount growth, or internal review points that could create a natural deadline.",
+        "decision": "No explicit decision-making process was discussed. Nadya appears to be the relevant contact for RevOps tooling and automation, and she engaged with the topic knowledgeably, suggesting she has real influence. However, she initially questioned whether she was 'the right person to speak to,' which may indicate budget or sign-off sits elsewhere — possibly with a Head of RevOps, VP of Sales, or a technical lead. No budget signals were given. The meeting was booked as a learning session with the CTO rather than a formal evaluation, which means commercial conversations have not yet been framed. The AE should aim to understand the internal structure and identify other stakeholders before the meeting progresses."
+      },
+      "objections": [
+        {
+          "objection": "Questioned whether the agent was human — 'You're not a human?' — suggesting possible distrust or scepticism about the nature of the call.",
+          "response": "The SDR confirmed he was human and moved past it quickly. Nadya accepted this and continued the conversation. Not a major issue but worth noting — she may have a degree of scepticism about AI-led outreach given the volume of inbound she receives."
+        },
+        {
+          "objection": "'I'm not sure if we kind of need it' and 'I'm the right person to speak to' — initial deflection suggesting she wasn't convinced of relevance and was uncertain of her own authority.",
+          "response": "The SDR handled this by asking a discovery question about what they had built, which drew Nadya into the conversation and revealed genuine pain. The authority question was not directly addressed and remains unresolved — the AE should treat this as an open thread."
+        },
+        {
+          "objection": "'I'm quite busy' — pushed back on the meeting ask.",
+          "response": "The SDR handled this softly by deferring to her availability rather than pitching the value of the session again. The meeting was booked, but the value proposition for attending was not strongly reinforced — the AE should open the meeting by reaffirming what Nadya will get out of it, specifically around her data hygiene challenges."
+        },
+        {
+          "objection": "Implied self-sufficiency — 'we built our own agent and we've been using it' and 'we are working towards it by building it ourselves.' She did not express a strong desire to buy an external solution.",
+          "response": "The SDR did not directly challenge the build-vs-buy framing. The meeting was positioned as a free learning session with the CTO rather than a sales conversation, which lowered the barrier to entry but also means the commercial case has not been made. The AE will need to navigate this carefully — Nadya is open to learning but has not expressed intent to purchase."
+        }
+      ],
+      "recommended_approach": "Open the meeting by anchoring on what Nadya said she wanted to get out of it — learning how others have solved the data sync and integrity problems she described. Reference her specific situation back to her: 'You mentioned HubSpot is supposed to be your source of truth, but when a partner updates a record in another platform it doesn't always reflect there — and you're using n8n to bridge things but finding it limited. That's exactly the kind of scenario we want to walk through.' This signals you listened and frames the session as tailored rather than generic. Avoid leading with product features. Instead, use the first ten minutes to deepen discovery — specifically probe on: (1) how many automations are currently running and who has access to edit them, (2) what a data error has cost them in practice (missed follow-ups, wrong routing, CS working off stale data), and (3) whether there have been any incidents where an AI or automation change broke something in HubSpot. The guardrails angle the SDR introduced resonated — Nadya said 'yeah, that happens' — so there is a real opening around the risk of ungoverned changes to a live system. The CTO demo should show, specifically, how Notch handles change management and testing in a multi-tool environment, not just the build capability. On the decision side, ask directly: 'If you came away from today thinking this could genuinely solve your data hygiene problem, who else would you want to involve in a next conversation?' This surfaces stakeholders without being confrontational. Be careful not to oversell — Nadya is still in a learning mindset and is building in-house. Position Notch as accelerating and de-risking what she is already trying to do, not replacing it.",
+      "key_quotes": [
+        "'The data hygiene behind it is still a little bit of chaos. And we really want to overcome that with AI.'",
+        "'A partner updated in one platform and then it just didn't update in HubSpot when the source of truth should be in HubSpot — so it's a bit complicated at the moment.'",
+        "'I'm still also learning. I'm also still new in this AI agency thing, but I think at the moment for us, it's kind of like we are working towards it by building it our own.'",
+        "'That would be maybe nice for me to learn other things to open the possibility of what we can do in teams.'"
+      ]
     }
   ]
 }
