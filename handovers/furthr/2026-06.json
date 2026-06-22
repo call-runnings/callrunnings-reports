@@ -1,0 +1,41 @@
+{
+  "handovers": [
+    {
+      "id": "mqp36qj33keopgobypr",
+      "savedAt": "2026-06-22T10:42:37.973Z",
+      "campaign": "Furthr",
+      "contact": {
+        "companyName": "L and P Group",
+        "contactName": "Hannah O'Brien",
+        "jobTitle": "Head of Sustainability",
+        "phone": "+447943943404",
+        "email": "hannaho@lpgroup.co.uk",
+        "linkedin": "https://linkedin.com/in/hannah-o-brien-88a748158"
+      },
+      "spiced": {
+        "situation": "Hannah O'Brien is Head of Sustainability at L and P Group. The company has not yet implemented any meaningful carbon reporting — scope three in particular has not been a priority and little progress has been made since a previous conversation before Christmas 2025. In early 2026, L and P Group began exploring ISO 14001 environmental management accreditation and are currently at the very beginning of that process, working with a company called Auditel to pursue certification. There are no existing tools or processes in place for scope three reporting.",
+        "pain": "Scope three carbon reporting has remained unaddressed — Hannah acknowledged it is something she would like to change but has not been able to move forward with. The ISO 14001 process has now started but Hannah is navigating it without a clear strategy for aligning it with broader carbon reporting obligations. She is essentially managing two parallel sustainability workstreams — accreditation and carbon reporting — with no framework connecting them. She explicitly said she has not really looked into carbon reporting at the start of this year, suggesting internal bandwidth and prioritisation are limiting progress.",
+        "impact": "Without progress on scope three, L and P Group risks falling behind on carbon transparency and emissions reduction at a time when they are actively seeking ISO 14001 accreditation — a process that requires environmental monitoring and measurement. The lack of alignment between the ISO process and carbon reporting means the company could duplicate effort or miss the opportunity to use the ISO buy-in to also advance scope three. Hannah identified this risk herself, noting that if they could align the two workstreams, the internal momentum behind ISO might help get scope three over the line. The strategic and reputational risk of inaction on scope three is an implicit undercurrent, though not stated explicitly.",
+        "critical_event": "The ISO 14001 process with Auditel has just begun — Hannah described being at the very beginning. This creates a natural and time-sensitive window: if Furthr can align its scope three offering with the ISO process now, it becomes embedded in a programme that already has internal buy-in and budget commitment. Hannah herself flagged this timing as significant, saying 'it's probably good timing actually.' There is no regulatory deadline or formal budget cycle mentioned, but the early stage of the ISO engagement is a practical urgency trigger — the window to influence the process is now, not later.",
+        "decision": "Hannah appears to be the primary internal driver for sustainability initiatives and is the relevant decision-maker for this conversation. No other internal stakeholders were mentioned, and she did not reference needing sign-off from a line manager, finance, or a procurement team. However, given this is early stage and involves a cost commitment she alluded to ('we know there's going to be some costs'), it is likely a budget holder above her would need to be involved before any contract. The AE should probe who holds the budget for sustainability spend and whether Hannah has autonomy to move forward or needs to build an internal business case. Auditel is already engaged on the ISO side, so there is a pre-existing third-party relationship the AE should understand and potentially complement rather than compete with."
+      },
+      "objections": [
+        {
+          "objection": "Scope three carbon reporting has not been a priority and was not feasible at the time of the previous conversation.",
+          "response": "This was addressed contextually by the SDR using the prior conversation as the hook — framing the call as a follow-up on Hannah's own instruction to reconnect in six months. This was handled well as a reframe rather than a direct rebuttal. However, the underlying feasibility concern — likely cost or internal resource — was not explored or resolved. The AE should revisit what 'not feasible' actually meant: budget constraints, lack of internal resource, lack of leadership buy-in, or something else."
+        },
+        {
+          "objection": "Hannah queried whether ISO 14001 overlaps with what Furthr does, implying she may not see a need for both.",
+          "response": "The SDR gave a reasonable high-level distinction — ISO 14001 is about certification, Furthr is about ongoing carbon reporting, project management, and reduction strategy. However, the explanation was slightly rambling and did not land with precision. The AE should come prepared with a clean, confident articulation of where the two complement each other, particularly given Auditel is already in the picture. The risk is Hannah or her internal stakeholders conclude Auditel covers enough ground and Furthr is redundant."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the ISO 14001 process directly and positioning Furthr as a complement to what Auditel is doing, not a competitor. Hannah has already made this conceptual connection herself — she said she wants to 'align the process' — so the AE's job is to make that alignment concrete and show exactly where Furthr picks up where ISO certification ends. Lead with the idea that ISO 14001 gives L and P Group the environmental management framework, but Furthr gives them the ongoing carbon intelligence — scope three measurement, insights reporting, and reduction planning — that turns the certification into something commercially and reputationally meaningful. Probe early on what 'not feasible' meant previously: was it budget, internal appetite, or resource? This will tell the AE how hard a business case needs to be built and for whom. Ask whether Hannah is the sole decision-maker for sustainability spend or whether she needs to bring someone else along — she alluded to costs without specifying who controls that budget. The ISO buy-in is a genuine lever: if L and P Group's leadership is already committing to the ISO process, the AE should help Hannah frame scope three as the logical next layer of that same commitment rather than a separate initiative requiring fresh approval. Avoid going too deep into product features before understanding where the ISO process currently sits and what Auditel is specifically delivering — there may be gaps Furthr can fill that are not yet obvious.",
+      "key_quotes": [
+        "As the company is sort of buying into that ISO process, we might be able to get a bit of interest in pushing forward with this scope three as well.",
+        "We're at the very beginning at the moment, so it's probably good timing actually.",
+        "It would definitely be worth having a bit of a catch-up — have a review of where we're at.",
+        "I haven't really looked into it at the start of this year."
+      ]
+    }
+  ]
+}
