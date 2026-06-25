@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "mqtk9j7f7ootmr0hgzc",
+      "savedAt": "2026-06-25T13:51:46.686Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "Collection Pot",
+        "contactName": "Christina Di Nolfo",
+        "jobTitle": "CEO",
+        "phone": "+44 7555 719637",
+        "email": "christina@di-nolfo.com",
+        "linkedin": "https://linkedin.com/in/christina-di-nolfo-b233677"
+      },
+      "spiced": {
+        "situation": "Christina is CEO of Collection Pot, a seven-person scale-up that operates like a 'mini bank without the licences' due to a safeguarding partnership. The business already has a surprisingly robust compliance infrastructure for its size — including an MLRO, a compliance expert, and experience passing a live ICO complaint from a disgruntled former employee. Christina herself is currently the named DPO and the person accountable to the ICO. They have no in-house data protection officer and no dedicated GDPR resource. They are actively pursuing B Corp certification. ISO certification has not yet been formally prioritised but is described as 'loosely somewhere rolling around in my head but hasn't crystallised yet.'",
+        "pain": "Three distinct pain points surfaced. First, Christina is acting as her own DPO despite being a decision-maker — she acknowledged this herself, saying she is not 'necessarily close enough to everything that's going on and all changes on an ongoing basis.' The SDR correctly flagged that a founder acting as DPO creates a conflict of interest around impartiality. Second, Collection Pot has no ISO certification despite having strong underlying compliance, meaning they cannot evidence their standards formally — relevant both for upmarket sales conversations and for the B Corp process. Third, the B Corp certification they are actively pursuing requires compliance criteria across 70 impact areas (governance, workers, environment, community), and Christina was unaware of the crossover between ISO and B Corp requirements until the SDR explained it.",
+        "impact": "The absence of a certified, independent DPO creates regulatory and reputational exposure — Christina is both a decision-maker on data and the person accountable to the ICO, which the SDR noted is a structural conflict. While they sailed through one ICO complaint, this was luck as much as process. Without ISO certification, Collection Pot cannot formally demonstrate compliance standards when going upmarket or seeking investment, which is a commercial blocker as they scale. The B Corp goal is also at risk of being delayed or complicated if the compliance foundations are not properly structured and evidenced — Christina was not aware ISO could accelerate or de-risk that process.",
+        "critical_event": "No hard regulatory deadline was mentioned. The B Corp certification is the closest thing to a triggering initiative but has no stated timeline. Christina mentioned she may raise the topic 'at the next board meeting' and flagged August as the likely point she would look at this properly. She is away next week (week of 30 June 2026). The meeting has been booked provisionally for Wednesday 29 July 2026 at 12pm in London, which Christina herself suggested bringing forward from August — a positive signal of growing interest during the call.",
+        "decision": "Christina is CEO and appears to be the sole decision-maker. No other stakeholders were mentioned in connection with this decision. She referenced potentially raising it at a board meeting, which suggests the board may need to be informed, but she did not indicate they would block or approve the decision. She asked about pricing directly and engaged with the £800/month figure without objecting to it, which suggests budget is not an immediate concern. She self-selected the 'work with us' model (collaborative rather than fully white-glove) based on their existing compliance infrastructure. No formal procurement process or sign-off chain was mentioned."
+      },
+      "objections": [
+        {
+          "objection": "Not on my radar right now — Christina said ISO certification 'is not on my razor right now' and set an expectation of responding around August at the earliest.",
+          "response": "The SDR handled this well by not pushing for urgency and instead proposing a meeting with Tom to give Christina context before she needs to decide. Christina herself moved the meeting forward to July, which suggests the objection softened during the call. However, the SDR did not ask what would need to be true for this to move up the priority list — a missed qualifying question."
+        },
+        {
+          "objection": "We already have a lot of compliance in place — Christina pushed back on the assumption that Collection Pot would need significant work, citing their safeguarding partner requirements, MLRO, compliance expert, and the ICO complaint they sailed through.",
+          "response": "The SDR acknowledged this and pivoted to the 'work with us' model rather than the fully managed white-glove option, which Christina immediately accepted. This was well handled. However, the SDR did not explore what specific gaps remain or probe whether their existing compliance documentation would map cleanly to ISO requirements — Tom should do this in the meeting."
+        },
+        {
+          "objection": "Slow timeline — Christina explicitly said not to expect a quick response, that she is travelling next week, and that she would 'probably look at this around August time.'",
+          "response": "The SDR absorbed this without resistance and used it to justify booking a meeting — 'would it make sense to put some time in the first or second week of August?' Christina then voluntarily suggested July instead, which was the right outcome. The SDR did not probe the reason for the August timeline or whether the board meeting had a specific date, which would have been useful context for Tom."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging what Christina told the SDR about their compliance setup — she will expect Tom to be briefed. Do not start from scratch or make assumptions that Collection Pot is a blank slate. A strong opener would be: 'From what Sean shared with me, you've already got quite a sophisticated compliance infrastructure for a team of seven — MLRO, compliance expert, and you've been through a live ICO challenge. So I want to understand what's actually in place before we talk about what we'd do.' This signals you have listened and earns credibility immediately.\n\nThe DPO conflict is the sharpest pain point and the one most likely to create urgency — Christina acknowledged she may not be close enough to ongoing GDPR changes, and the SDR made her laugh by pointing out the structural conflict. Tom should return to this directly: ask her how comfortable she is with that dual role and what would happen if a more complex data incident arose. This is where risk and personal accountability land hardest for a CEO.\n\nOn B Corp, this is a genuine strategic hook. Christina is actively pursuing it and did not know there was crossover with ISO until the SDR explained it. Tom should come prepared with a clear, specific explanation of how ISO 27001 or relevant standards map to B Corp impact areas — particularly governance and workers — and frame ISO not as a separate workstream but as infrastructure that de-risks and accelerates B Corp. Ask her what stage they are at with the B Corp process and whether they have a target date.\n\nOn pricing, Christina asked directly about cost for seven people and was told approximately £800/month. She did not flinch. Do not re-open price as a source of uncertainty — confirm the figure and focus on value and scope. She self-selected the collaborative model, so position the engagement as expert oversight of what they have already built, not a rebuild from scratch.\n\nFinally, probe the board meeting reference. Ask when the next board meeting is and whether compliance or B Corp is on the agenda. If it is within the next six to eight weeks, that is a real critical event and the output from Tom's meeting could serve as material Christina takes into the room.",
+      "key_quotes": [
+        "You might have caught me ahead of time on a topic that is loosely somewhere rolling around in my head but hasn't crystallised yet.",
+        "We've got a very, very, very robust compliance structure — we're like a mini bank without the licences because we work with a safeguarding partner.",
+        "The DPO and the person answerable to the ICO is myself — I do have a background in data, but that doesn't mean to say that I'm necessarily close enough to everything that's going on and all changes on an ongoing basis.",
+        "It might be that it comes up in conversation at the next board meeting and then I've got to act on it."
+      ]
+    }
+  ]
+}
