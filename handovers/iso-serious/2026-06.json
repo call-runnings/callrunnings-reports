@@ -40,6 +40,51 @@
         "The DPO and the person answerable to the ICO is myself — I do have a background in data, but that doesn't mean to say that I'm necessarily close enough to everything that's going on and all changes on an ongoing basis.",
         "It might be that it comes up in conversation at the next board meeting and then I've got to act on it."
       ]
+    },
+    {
+      "id": "mqtl2paft375kgmz36s",
+      "savedAt": "2026-06-25T14:14:27.401Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "National Renewable Energy Centre",
+        "contactName": "Usman Munir",
+        "jobTitle": "Head of Operations",
+        "phone": "+447766402878",
+        "email": "usman.munir@hvm.catapult.org.uk",
+        "linkedin": "https://linkedin.com/in/u-munir"
+      },
+      "spiced": {
+        "situation": "Usman Munir is Head of Operations at the National Renewable Energy Centre (NaREC/HVM Catapult). He is relatively new to the organisation. The company has grown rapidly from 15 to 50 staff over roughly two years. They are currently mid-office move. They have no standardised processes, no QMS in place, and no ISO certifications. They have an existing consultant helping on data transformation, but no compliance or quality management support. Usman is aware of ISO standards and referenced ISO 9001 and others by name, and has internal colleagues who previously held ISO auditor qualifications.",
+        "pain": "Usman described the core problem directly: 'We don't have any standardisation. Everybody's working in silos. Nobody knows how to do stuff.' Policies and procedures are missing or inconsistent. The rapid headcount growth from 15 to 50 has outpaced the organisation's processes and governance frameworks. Usman came from a 10,000-person, century-old organisation and can clearly see the structural gaps at NaREC. There is no QMS, no audit readiness, and no compliance infrastructure. He wants to build the foundations before pursuing formal ISO accreditation, not the other way around.",
+        "impact": "The operational impact is that staff are working without standardised procedures, creating inefficiency and risk across the organisation. Strategically, without compliance foundations in place, NaREC cannot credibly pursue ISO accreditation when clients or stakeholders require it — which is a likely bottleneck given they operate in the energy sector. Usman explicitly wants to present a structured proposal to the Executive Leadership Team (ELT) and the COO, suggesting he sees this as a board-level priority. He framed it as defining a 'North Star' for the organisation. The reputational and operational risk of continued ad hoc working as the headcount grows further is the implicit driver.",
+        "critical_event": "No hard regulatory deadline or contractual trigger was mentioned explicitly. However, Usman stated this is a priority for the current year: 'That's what we're looking to do as an organisation this year.' He also referenced a Friday call with the COO during the second conversation, suggesting internal momentum is building. The urgency is self-imposed and board-facing rather than externally mandated. The AE should probe for whether any client contracts, tenders, or sector-specific requirements are creating indirect pressure to get compliant.",
+        "decision": "Usman is the internal champion and the person driving this initiative, but he is not the sole decision-maker. He explicitly said he wants to 'present at the management board' and share a proposal with the ELT. He mentioned his boss the COO by title during the second call and indicated he was briefing them on Friday. He also wants to involve internal colleagues who have ISO auditor backgrounds, saying 'it would benefit me if I get the traction not just me' — meaning he wants internal buy-in before progressing. He asked for a two-sentence summary to relay to the COO, which he is using to socialise the idea upward. Budget has not been confirmed — he said 'there's not a budget or nothing for it' at the point of the second call, framing this as an exploratory proposal stage. The meeting with Tom is positioned as a landscape conversation leading to a formal proposal."
+      },
+      "objections": [
+        {
+          "objection": "Not currently pursuing ISO accreditation — 'At the minute we're probably not going to do any ISO accreditation'",
+          "response": "The SDR handled this well by reframing the conversation away from certification and towards QMS foundation-building and compliance readiness. Usman accepted this framing and remained engaged. However, the AE should be careful not to assume the certification conversation is permanently off the table — Usman said 'I'm not saying that's not going to be a long-term goal.' This reframe needs reinforcing at the top of the meeting."
+        },
+        {
+          "objection": "No confirmed budget — 'There's not a budget or nothing for it'",
+          "response": "The SDR did not probe this at all. It was left unaddressed. The AE needs to establish budget appetite early in the meeting — the proposal is being built to present to the ELT, so understanding what figure Usman is comfortable bringing to the board is essential before any proposal is drafted."
+        },
+        {
+          "objection": "Wants to involve internal stakeholders before committing — 'I want to engage the right people inside'",
+          "response": "The SDR acknowledged this and encouraged it, which was the right instinct. However, there was no attempt to get those stakeholders on the discovery call itself. The AE should actively encourage Usman to bring the internal ISO-experienced colleagues and potentially a line into the COO for the meeting, to accelerate internal alignment rather than letting it become a reason to delay."
+        },
+        {
+          "objection": "Busy context throughout — office move, half term holiday, back-to-back calls",
+          "response": "The SDR handled Usman's time constraints throughout all three calls with patience and flexibility, following his preferred contact method (phone over email) and respecting his schedule. This built rapport effectively. Not a substantive objection but worth noting as context for the AE — Usman is operationally stretched and will value a tight, well-prepared meeting rather than an open-ended exploration."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging where Usman is in his journey — new to the organisation, building from scratch, presenting a vision upward to the ELT and COO. Frame the meeting as helping him build that business case, not selling him a product. He has explicitly said he wants to understand the landscape and get a proposal he can take to the board. Give him that structure early so he knows the meeting has a tangible output. Probe the budget question directly but tactfully — something like: 'When you take this to the ELT, what kind of investment level do you think they'd be open to, even in principle?' He has framed it as a North Star initiative, so position ISO Serious as the strategic partner that helps define and then deliver that North Star, not just a certification vendor. Ask specifically about whether any client relationships, tenders, or sector requirements are creating indirect pressure to get compliant — NaREC operates in the regulated energy and innovation space, and there may be external triggers he has not volunteered. Ask about the internal colleagues with ISO auditor backgrounds — understanding who they are and what they know will help Tom pitch at the right level and potentially turn them into internal champions. Do not spend the whole meeting on ISO 9001 as an end goal. Usman's stated priority is QMS standardisation and process foundations — lead with that, and let certification come up naturally as the logical next step. End the meeting with a clear next action: a proposal Usman can take to the ELT, with a named timeline so it does not drift.",
+      "key_quotes": [
+        "We don't have any standardisation. Everybody's working in silos. Nobody knows how to do stuff. So I want to try and create a way where we can sort of work with all our procedures and policies.",
+        "They've gone from 15 members of staff to 50 members of staff. So they've had quite a lot of growth. I feel like there's quite a lot of gaps what we need to sort of fill in with standards and how we best operate.",
+        "There's not a budget or nothing for it — it's just about what I would probably like to sort of present at the management board, say look this is what's out there, this is what we should be — our North Star — whatever you want to call it, we should be going towards that.",
+        "It would benefit me if I get the traction not just me and Tom or somebody else who's within the organisation — I want to try and gauge a couple of people who I can have a chat with."
+      ]
     }
   ]
 }
