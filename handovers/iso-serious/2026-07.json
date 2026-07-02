@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "mr3jw04h8xmkmieqvd5",
+      "savedAt": "2026-07-02T13:38:57.023Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "Savvy",
+        "contactName": "Renaldo De Souza",
+        "jobTitle": "Founder",
+        "phone": "+44 7792 255902",
+        "email": "renaldo.desouza11@gmail.com",
+        "linkedin": "https://linkedin.com/in/renaldodesouza"
+      },
+      "spiced": {
+        "situation": "Renaldo is a non-technical founder, a couple of months into the ideation phase of building a SaaS platform called Savvy. He attended the Founders Nation event hosted by ISO Serious and heard their compliance talk. He is currently working with a software developer to build the platform and is actively searching for a CTO — he has someone in mind who is 21 years old. He has no formal technical leadership in place yet, is building on what sounds like AI-assisted or low-code tooling, and is operating from a personal Gmail address before domains are set up. He previously messaged Tom on LinkedIn to signal future interest.",
+        "pain": "Renaldo openly acknowledged that as a non-technical founder new to the SaaS world, he does not know how to handle GDPR, data compliance, or security requirements. He expressed concern that the young developer he has in mind likely lacks clarity on the data compliance side. He is also worried about the risks of building on AI-generated or low-code solutions — he referenced others warning him about 'flawed code' and the security vulnerabilities that can expose backend code publicly. He understands that if he approaches enterprise or mid-market clients without proper compliance credentials, he will be perceived as unprofessional or untrustworthy.",
+        "impact": "Renaldo was explicit that his target customers are mid-market and enterprise-level companies, and he knows from firsthand experience that these buyers will not engage without legal and compliance credentials in place. He gave a specific example: asking someone for a £20,000 subscription and then admitting the product was built with AI-generated code would make him look like a 'cowboy.' He also referenced service level agreements and flagged that security is a core part of those legal documents. The strategic risk is clear — without ISO certification and GDPR compliance in place before going to market, he will be unable to close enterprise deals or pass procurement checks.",
+        "critical_event": "No hard regulatory deadline or audit was mentioned. However, Renaldo identified two practical triggers that will accelerate his need: first, getting more clarity from his software developer on the product build and its compliance gaps — he expects this conversation to happen within the next two to three weeks after he returns from holiday; second, the point at which he pursues a POC or early enterprise customer, at which point he believes security and compliance will need to be in place. He booked the meeting for 4th August 2026 but explicitly said he may bring it forward if the developer conversation surfaces urgent gaps.",
+        "decision": "Renaldo is the founder and appears to be the sole decision-maker at this stage. He mentioned no board, investors, or co-founders involved in this decision. The young developer he is considering as CTO may have some technical influence over what compliance gaps exist, but Renaldo framed himself as the one driving the process. He asked about pricing on the call and was given a high-level overview — he knows cost is based on company size and service scope. No budget figure was discussed and no formal procurement process was referenced, which is consistent with a very early-stage startup."
+      },
+      "objections": [
+        {
+          "objection": "Timing — he is only a couple of months into ideation and said compliance is not relevant right now.",
+          "response": "The SDR handled this reasonably well by normalising the timing objection — noting that compliance rarely becomes a focus until a customer demands it or a problem arises. He also reframed it by pointing out that ISO certification takes six months or more, so starting early makes sense. This shifted Renaldo's thinking and he moved from 'not relevant' to 'let's book a meeting in a month.' Solid handling without being pushy."
+        },
+        {
+          "objection": "He needs to speak to his software developer first before he can have a meaningful conversation with ISO Serious.",
+          "response": "The SDR did not directly challenge this but acknowledged it and used it to agree on a timeline — suggesting the 4th of August to give Renaldo time to have that developer conversation. He also left the door open for an earlier call if needed. The response was pragmatic and kept momentum without pressuring. The AE should be aware that Renaldo may arrive at the meeting with more technical context from the developer, which could be useful, or may have developed misconceptions the AE will need to correct."
+        },
+        {
+          "objection": "Implicit concern about cost — he asked directly how ISO Serious charges.",
+          "response": "The SDR gave a vague but honest answer — pricing is based on company size and service scope, not one size fits all — and deferred detail to Tom. This was acceptable for a qualification call but the AE should expect pricing to come up early in the meeting. Renaldo is clearly cost-conscious in the context of building lean as a startup."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging that Renaldo has likely now spoken to his software developer and ask what came out of that conversation — specifically whether any compliance or security gaps surfaced. This will ground the entire meeting in something concrete and position the AE as genuinely prepared rather than starting from scratch. Frame the conversation around Renaldo's stated ambition of selling to mid-market and enterprise clients — he said it himself: 'if you're going to do something, do it properly.' Use that language back to him. The AE should focus early on the timeline to market and work backwards — if he needs ISO certification before approaching his first enterprise client or POC, and certification takes six months or more, when does he actually need to start? This creates urgency without manufactured pressure. On the technical side, probe what the 21-year-old developer actually knows about data handling and security architecture, and position ISO Serious as the expert layer that sits above technical delivery — not a replacement for a CTO but a compliance safety net that makes the product enterprise-ready. Be prepared to discuss pricing in real terms since Renaldo asked on the call — come with a ballpark range for an early-stage startup so he does not feel stonewalled again. Finally, follow up on his suggestion about Ram in Space and the contact Charlie — this signals he is well-networked in the founder community and could be a referral source if the relationship is handled well.",
+      "key_quotes": [
+        "If you're gonna do something, do it properly — so on the security side, obviously I'm trying to find a CTO at the moment and even he's quite young, he's like 21, so I reckon he can build stuff but I reckon he hasn't got clear about the data side.",
+        "Even before we go to get a POC or someone to test this, there's going to be some security stuff we need to cover.",
+        "If you say to someone we want 20 grand, and they ask you what's your background and you say I'm a non-technical founder but I've crawled code to this thing — they're just gonna think you're cowboys.",
+        "I've seen it for myself firsthand — they just don't work with you unless you cover all the legal stuff. The legal and compliance stuff is massive in these industries."
+      ]
+    }
+  ]
+}
