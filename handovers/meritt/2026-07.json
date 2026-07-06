@@ -1,0 +1,49 @@
+{
+  "handovers": [
+    {
+      "id": "mr973s2iwbmw3vxbjui",
+      "savedAt": "2026-07-06T12:27:42.194Z",
+      "campaign": "Meritt",
+      "contact": {
+        "companyName": "NEC",
+        "contactName": "Dolly Bansal Mba",
+        "jobTitle": "Director of UK Sales",
+        "phone": "44 7947 193139",
+        "email": "dollybansal@thenec.co.uk",
+        "linkedin": "https://www.linkedin.com/in/dollybansal"
+      },
+      "spiced": {
+        "situation": "Dolly Bansal is Director of UK Sales at NEC Group, having joined approximately three months before the booked meeting (she started at NEC around late March/early April 2026). She was previously at a company called Enterpryze, where she had only been eight days in when first contacted in March. She is still in the process of getting to grips with her new team and the people side of her function. It is quarter end for her at the time of the June call, indicating a sales-led, target-driven environment. No existing tools or processes for screening or assessing sales hires were mentioned — the conversation has not yet reached that level of discovery.",
+        "pain": "Dolly signalled openness to solving a recognisable problem: identifying whether sales hires are genuinely capable or simply good interviewers. She said she is 'always looking for different things to look at salespeople and trying to get them coached with the right behaviour,' which suggests she has experienced or anticipates the difficulty of distinguishing high performers from passengers at the point of hire. The SDR's pitch — that AEs and SDRs 'interview well but being a good talker doesn't mean they're coachable or can handle rejection or follow a solid sales process' — landed with her, as she did not push back on the framing and agreed to a meeting on that basis. However, she has not yet explicitly articulated a specific pain in her own words beyond being newly in post and yet to review the people side of things.",
+        "impact": "No explicit impact was stated by Dolly in her own words. The SDR's framing referenced an inability to hit revenue targets with consistency and the risk of not knowing whether you have an A player or a passenger until it is too late. Dolly did not confirm or expand on this, but she did not reject it either. Given she is a newly appointed Director of UK Sales with a sales team to assess and quarter-end pressure visible in the calls, the likely impact to probe is: hiring risk, inconsistent sales performance, and time lost on underperforming reps. These are assumptions to be validated in the meeting, not confirmed discoveries.",
+        "critical_event": "No hard deadline, budget cycle, or regulatory trigger was mentioned. Dolly is three months into her role at NEC and indicated in the original March call that reviewing the people side of things would not happen immediately given it was end of financial year. The meeting is booked for Thursday 16th July 2026 at 10am. The natural critical event to explore is whether she is planning to hire into her sales team imminently, or whether there is a performance review cycle coming up that would create urgency. This must be uncovered in the meeting — nothing concrete was established on the call.",
+        "decision": "No information was gathered on the decision-making process, stakeholders, budget, or sign-off. Dolly is Director of UK Sales, so she likely has influence over hiring decisions but may not hold sole authority, particularly in a large organisation like NEC Group. The AE must establish early in the meeting who else would be involved — HR, a VP or MD above her, or a procurement function — and what a typical buying process looks like for tools of this nature. No budget signals were given."
+      },
+      "objections": [
+        {
+          "objection": "Only eight days into her new role and had not yet reviewed the people side of things. End of financial year made it a non-priority.",
+          "response": "Handled well by Sean in the March call. He acknowledged the timing cleanly, suggested calling back in three months, and Dolly proactively said 'put me in your diary for three months time and I'd be happy to have a chat either way.' A solid, low-pressure close on a future date."
+        },
+        {
+          "objection": "In the June follow-up, Dolly had moved companies again — she was no longer at Enterpryze but at NEC Group, and had only been there three months.",
+          "response": "Mark recovered adequately by acknowledging the mix-up quickly and pivoting to ask whether the original topic was still relevant. However, no real discovery was done here — Dolly cut the call short due to quarter end and the conversation was deferred again. The company data had not been updated between Sean's March call and Mark's June follow-up, which Dolly had already flagged to Sean in March ('you need to work real time')."
+        },
+        {
+          "objection": "Poor timing — quarter end in the June call meant she was 'absolutely stacked out.'",
+          "response": "Mark handled this gracefully, acknowledged it with a light touch ('my timing is impeccable'), and agreed to call back in a few days. Not a substantive objection, handled fine."
+        },
+        {
+          "objection": "Monday was a bad day to call (July 6th call). She pushed back on the day before agreeing to Tuesday afternoon.",
+          "response": "Sean pivoted immediately and offered to call back the following afternoon. No issue. Meeting was then booked for Thursday 16th July at 10am after a diary check."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the journey to get here — she has spoken to two different people across four months and two companies. Keep it brief and use it to show you have done your homework: 'You first spoke to Sean when you were eight days into a role you have since left — I want to make sure we are talking about what is actually relevant to where you are now at NEC, not where you were.' This resets the conversation on her current reality rather than the original pitch context. From there, your first priority is situation and pain discovery. She has given almost nothing concrete yet. You need to understand the size and shape of her sales team at NEC, whether she has inherited a team or is building one, and whether she has already identified performance or hiring concerns. The pitch that landed — the gap between interviewing well and actually being coachable or process-driven — resonated enough to get the meeting, so use that as your opening probe: ask her whether that dynamic is something she has already seen play out, or something she is trying to get ahead of. She said she is 'always looking for different things to look at salespeople and trying to get them coached with the right behaviour' — this is your thread to pull. She is coaching-orientated, so frame the assessment tool around its coaching utility as much as its screening utility. Do not lead with filtering out bad hires; lead with giving her a data-backed view of where each rep sits on coachability, curiosity, and communication so she can target her coaching effort. On critical event and decision, you must establish both from scratch. Ask directly whether she is actively hiring, whether there is a headcount plan, and who else would need to be involved for something like this. Given she is three months into a Director role at a large group like NEC, there is a reasonable chance she is either building a business case for her team or has a performance review conversation coming up — probe for both. Finally, be aware that the data accuracy issue came up twice. Dolly clocked in March that Sean was working from outdated LinkedIn data, and by June the company record was still wrong. Do not let this surface again — make sure everything you reference about her role, company, and team is confirmed as current before you walk into the meeting.",
+      "key_quotes": [
+        "I never regret answering the phone call, but I'm very open and honest as to whether something's going to benefit me. I'm staying on the call or not.",
+        "I'm yet to review the people side of things and see where we are in terms of where we need to be.",
+        "Always looking for different things to look at salespeople and trying to get them coached with the right behaviour. So yeah, I'd be open to having a conversation to hear all about it.",
+        "You need to work real time, Sean."
+      ]
+    }
+  ]
+}
