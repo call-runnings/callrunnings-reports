@@ -1,0 +1,41 @@
+{
+  "handovers": [
+    {
+      "id": "mrdjcqzat6onr06xc9l",
+      "savedAt": "2026-07-09T13:21:40.761Z",
+      "campaign": "Machine Mesh AI",
+      "contact": {
+        "companyName": "Remix Dry Mortar Limited",
+        "contactName": "Aneta Pilch",
+        "jobTitle": "Plant Manager",
+        "phone": "+44 7795 457837",
+        "email": "aneta.pilch@remixdrymortar.co.uk",
+        "linkedin": "https://www.linkedin.com/in/aneta-pilch-a62b36124"
+      },
+      "spiced": {
+        "situation": "Aneta Pilch is Plant Manager at Remix Dry Mortar Limited. The business is currently in a maintenance system transition — they trialled a CMMS called Maintainly, which did not work for them, and have since reverted to paper-based records. They are now evaluating a tool called CheckProof as their next CMMS. Aneta confirmed she will be joined in the meeting by her supervisor and someone else from one of the plants, suggesting this is a multi-site or multi-stakeholder operation.",
+        "pain": "Aneta immediately recognised the core pain described in the pitch — engineers holding critical maintenance knowledge in their heads rather than in a usable system. The failed Maintainly implementation has left them on paper copies, meaning there is currently no structured digital repository for maintenance knowledge, SOPs, or manuals. The phrase 'it rings a bell, if you know what I mean' indicates this is a lived, recognised problem rather than a hypothetical one. She also acknowledged she may not know everything herself, implying knowledge is siloed across individuals in the plant.",
+        "impact": "With no functioning CMMS and reliance on paper records, the business is exposed to significant downtime risk if a key engineer is unavailable, leaves, or retires. The failed Maintainly rollout suggests prior investment of time and resource with no return, and they are now mid-transition with a knowledge gap in the interim period. The reliance on individuals rather than systems creates fragility — if the people who hold the knowledge are not present, maintenance decisions are harder to make safely and quickly.",
+        "critical_event": "No hard deadline or regulatory trigger was explicitly mentioned. However, the business is actively mid-transition between maintenance systems — currently on paper while evaluating CheckProof — which creates a natural window of opportunity. The timing is relevant because they have not yet committed to a new CMMS, making Machine Mesh AI a complementary rather than competing proposition. This is a soft urgency based on an open evaluation period, not a fixed event. The AE should probe whether there is a target go-live date for CheckProof or a broader digital transformation timeline driving this.",
+        "decision": "Aneta is the Plant Manager and the direct contact, but she was clear that her supervisor will attend the meeting alongside someone from one of the plants. She stated 'I might not actually know everything' — suggesting she is an influencer and operational gatekeeper rather than the sole decision-maker. The supervisor attending is likely the economic buyer or a senior sign-off authority. The AE should identify who the supervisor is in advance if possible and tailor the meeting to speak to both operational credibility (for Aneta and the plant colleague) and business value (for the supervisor). Budget and procurement process were not discussed."
+      },
+      "objections": [
+        {
+          "objection": "Aneta asked directly whether Machine Mesh AI is similar to CheckProof — implying she may see it as a duplicate or competing product to what they are already evaluating.",
+          "response": "Sean handled this well. He drew a clear distinction between the 'record layer' (CMMS tools like CheckProof and Maintainly) and the 'intelligence layer' (Machine Mesh AI), explaining that the product sits on top of a CMMS and answers the 'how do I actually do this?' question. He used the example of knowledge buried in PDFs to make it concrete. Aneta accepted this and moved on. The AE should reinforce this framing at the start of the meeting because the supervisor may raise the same objection afresh."
+        },
+        {
+          "objection": "Aneta noted that Sean had called her private number without realising it, which caused a moment of friction.",
+          "response": "Sean acknowledged it, expressed genuine gratitude that she called back, and moved the conversation forward without dwelling on it. It did not derail the call. No further concern was raised, but the AE should be aware that the initial contact was via a personal number — Aneta may be slightly cautious about how her details are used going forward."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging that Aneta is bringing her supervisor and a plant colleague, and frame the session as a working conversation rather than a pitch — this will land better with a plant operations audience who are likely sceptical of sales meetings. Revisit the intelligence layer versus record layer distinction early and clearly, before the supervisor has a chance to raise it as an objection. Use the CheckProof evaluation as a hook: position Machine Mesh AI as something that makes their CheckProof investment more effective, not something that competes with it or adds another decision to make. Ask specifically what went wrong with Maintainly — the answer will reveal what the team's real frustrations are and what they will not tolerate in a new system. Probe on the human knowledge risk: who are the two or three engineers whose knowledge would cause the most damage if they were unavailable tomorrow? Making it personal and operational will resonate with a Plant Manager. Ask the supervisor directly what a successful outcome looks like for them — this will surface budget authority and any strategic drivers Aneta may not be aware of. Since Adrian is the founder and builder of the platform, lean into a live product walkthrough if possible — Aneta specifically responded positively to the idea that she would be speaking to the person building it.",
+      "key_quotes": [
+        "Yeah, it rings the bell if you know what I mean — said in response to the pitch about engineers keeping knowledge in their heads rather than in accessible systems.",
+        "So we had something that was called Maintainly, which was, we didn't work for us at all. And now because we don't have anything as such, so we're using just a paper copy.",
+        "I will get my supervisor with me and one of the plants with us. So obviously, you know, I might not actually know everything, but it would be good to see things from other people's point of view.",
+        "Oh, so he's just tracking people down — said when told Adrian is the founder building the platform. She said it with a knowing tone, suggesting she appreciated the directness of the early-stage founder approach."
+      ]
+    }
+  ]
+}
