@@ -36,6 +36,47 @@
         "I will get my supervisor with me and one of the plants with us. So obviously, you know, I might not actually know everything, but it would be good to see things from other people's point of view.",
         "Oh, so he's just tracking people down — said when told Adrian is the founder building the platform. She said it with a knowing tone, suggesting she appreciated the directness of the early-stage founder approach."
       ]
+    },
+    {
+      "id": "mres5qc3vfmtqfkds2",
+      "savedAt": "2026-07-10T10:15:56.058Z",
+      "campaign": "Machine Mesh AI",
+      "contact": {
+        "companyName": "Supreme",
+        "contactName": "Sven Deregowski",
+        "jobTitle": "Head of Operations",
+        "phone": "+44 7717 714024",
+        "email": "sven.deregowski@supreme.co.uk",
+        "linkedin": "https://www.linkedin.com/in/sven-deregowski-961a5b3"
+      },
+      "spiced": {
+        "situation": "Sven is Head of Operations at Supreme, a multi-site manufacturing business with at least four sites: Manchester, Sunderland, and a tea business in Gloucester, plus at least one other. The Sunderland site already uses an existing maintenance and repair tool (name unknown to Sven) that runs on an asset number system, logging activity and scheduling diary events against each asset. Engineers on that site are happy with it because it is simple to use. The Manchester site covers two manufacturing sites but has no equivalent system in place. The Gloucester tea business situation is unclear even to Sven. A new Group Manufacturing Director-level figure has recently been brought in specifically to standardise processes and tooling across all sites.",
+        "pain": "The other sites — particularly Manchester — have no formal maintenance knowledge management system. As Sven put it, critical operational knowledge is almost certainly sitting in engineers' heads and is likely inadequate. He acknowledged they are 'not absolutely delighted with the way things are currently arranged.' The existing tool in Sunderland is not being rolled out to other sites, creating a fragmented, inconsistent picture across the business. There is a known risk of knowledge loss when engineers are absent or leave.",
+        "impact": "The lack of a standardised system across sites creates operational inconsistency and knowledge vulnerability. Sven is responsible for manufacturing and health and safety, so the risk of inadequate maintenance records or undocumented processes has direct H&S implications, not just operational ones. The business is aware enough of the problem that a new cross-site standardisation role has been created to address it. The fragmentation also means the business cannot easily compare performance or ensure consistent reporting across sites, which is a strategic concern for leadership.",
+        "critical_event": "No hard deadline or regulatory trigger was mentioned. Sven was explicit that timing is unclear — it could be next month or October, he has no idea yet. However, there is a soft forcing function: a newly appointed Group Manufacturing Director is actively working to standardise tools and reporting across all sites, and Sven intends to speak to this person before or around the meeting date. The project is live in the sense that internal conversations are already happening, but it has not yet been formally scoped or prioritised.",
+        "decision": "Sven is not the decision-maker. He has an interest in manufacturing and health and safety but was clear that 'the guy that runs manufacturing is the guy ultimately who's going to have to make it happen.' There is also a newly appointed Group Manufacturing Director (title uncertain) who is tasked with cross-site standardisation — this person is likely the primary decision-maker or gatekeeper. Sven said he will try to bring this person onto the meeting invite, depending on the outcome of his internal conversations. Budget and formal sign-off process were not discussed. The decision will likely be a team effort involving Sven, the manufacturing lead, and potentially the Group Manufacturing Director."
+      },
+      "objections": [
+        {
+          "objection": "Sven suggested calling back in three to four weeks rather than booking a meeting now, preferring to have internal conversations first before engaging further.",
+          "response": "The SDR reframed it well by proposing a short, low-commitment half-hour introductory call with the founder Adrian rather than a full sales meeting. Sven accepted this framing. However, the SDR then booked it for the 22nd — roughly a fortnight away — which is slightly shorter than Sven's suggested three to four weeks. This was not explicitly challenged by Sven, but it is worth the AE being aware that Sven may not have fully completed his internal conversations by that date."
+        },
+        {
+          "objection": "Sven floated the possibility that the outcome of his internal conversations could be 'Glenn lovely idea but can you leave me alone for three months,' meaning the timeline could slip significantly.",
+          "response": "The SDR acknowledged this but did not probe further or attempt to qualify the likelihood or mitigate it. This was left unaddressed and represents a genuine risk of the meeting leading nowhere if the internal stakeholder is not engaged or prioritised before the 22nd."
+        },
+        {
+          "objection": "Sven is not close to the technical detail of the existing tool in Sunderland and was cautious about being too far ahead of the internal stakeholders who actually own this decision.",
+          "response": "The SDR did not probe this further. The AE needs to be mindful that Sven is an interested party but not the champion with full authority. The real champion is likely the Group Manufacturing Director or the Manchester-based manufacturing lead."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging Sven's time constraint and position — he is not the operational owner of this problem, he is an interested stakeholder with H&S oversight. Do not pitch to him as though he is the buyer. Instead, use the first ten minutes to validate your understanding of the situation: multiple sites, one site with a working tool, others with nothing, a new cross-site standardisation mandate underway. Ask whether he managed to speak to the Group Manufacturing Director before the call, and if so, what their appetite looks like — this will tell you immediately how live the opportunity is. If that person is on the call, shift your attention to them and let Sven play the sponsor role. Frame Machine Mesh AI not as a replacement for what Sunderland already has, but as the solution that can bring the other sites up to that standard and give leadership a single, consistent view across all locations — this maps directly to the new Group Manufacturing Director's remit. Do not go deep into feature demonstrations unless asked. Sven was explicit: no more than half an hour. Use the time to qualify timeline and decision process, and to secure a second meeting with the manufacturing lead if they are not already present. Probe the Gloucester tea site — Sven said he was unsure what they are doing, which suggests it is an untouched opportunity within the same group. Also probe the H&S angle directly with Sven, as this is his personal area of responsibility and likely his strongest motivation for wanting a solution in place.",
+      "key_quotes": [
+        "We know we're not absolutely delighted with the way things are currently arranged. Let's put it like that. So it's a project for somebody at some point.",
+        "It's almost certainly in somebody's head. And it's almost certainly inadequate as well.",
+        "You're knocking on a door that's ready to be opened.",
+        "Glenn lovely idea but can you leave me alone for three months? That might be the outcome but let me see — you're near in your timing so it's fine."
+      ]
     }
   ]
 }
