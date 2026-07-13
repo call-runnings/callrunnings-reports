@@ -40,6 +40,43 @@
         "If you say to someone we want 20 grand, and they ask you what's your background and you say I'm a non-technical founder but I've crawled code to this thing — they're just gonna think you're cowboys.",
         "I've seen it for myself firsthand — they just don't work with you unless you cover all the legal stuff. The legal and compliance stuff is massive in these industries."
       ]
+    },
+    {
+      "id": "mrj5mrvx5c572uv80c2",
+      "savedAt": "2026-07-13T11:44:10.635Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "Axira",
+        "contactName": "Felicity McCallum",
+        "jobTitle": "Director",
+        "phone": "+44 7772 478070",
+        "email": "felicity.mccallum@axira.co.uk",
+        "linkedin": "https://linkedin.com/in/felicity-mccallum-4b109555"
+      },
+      "spiced": {
+        "situation": "Felicity McCallum is the Director of Axira, which she describes as an accountancy and fractional finance business. She met Tom socially at an event ISO Serious sponsored, though she clarifies it was a social encounter rather than a sales conversation. She already has some compliance infrastructure in place — she completed a membership practice process for her accounting body, has documents stored in a shared drive, and maintains a spreadsheet tracking what she has done. She has been using Claude (AI) to draft documentation, including her member practice materials, which were signed off by her accounting body (SEMA). Her existing compliance work is largely self-managed and informal rather than professionally structured.",
+        "pain": "Felicity knows she is missing key data protection documentation — specifically a GDPR policy, a data protection policy, and a data processing agreement (ROPA). She openly acknowledged these are not properly in place. Her current approach is a DIY spreadsheet and shared drive system, which she recognises is insufficient as her firm grows. She is aware these documents need annual review cycles and that she does not have a proper process for that. She also flagged that some of the data she handles is sensitive in nature, making her conscious that she needs to get this right rather than take shortcuts.",
+        "impact": "The primary risk is regulatory exposure — she is growing the firm quickly and is aware that having gaps in data compliance becomes increasingly dangerous as the business scales. She explicitly said she wants to 'tighten all of that stuff up before the firm grows any further and faster than it already has,' which signals she understands the risk compounds with growth. Handling sensitive financial data without proper documentation in place creates audit risk and reputational risk with clients who may expect compliance to be evidenced. There is also a competitive risk — as the SDR noted during the call, enterprise and regulated clients increasingly expect suppliers to have this in order before engaging.",
+        "critical_event": "No hard deadline or specific regulatory trigger was mentioned. However, Felicity's stated intention is to get compliance in order before further growth, which she implied is already happening at pace. The urgency is self-imposed and growth-driven rather than tied to a specific audit, client demand, or regulatory deadline. The AE should probe whether there is a specific client, contract, or growth milestone on the horizon that sharpens the timeline.",
+        "decision": "Felicity appears to be a sole or primary decision-maker — she runs the business and there was no mention of a board, finance committee, or other stakeholder needing to be involved. She made the meeting booking independently and quickly. No budget or commercial signal was discussed on this call. The AE should establish budget early in the meeting given the absence of any commercial qualification. It is also worth clarifying her current spend or planned budget for compliance, given she had been planning to use Claude as a free alternative."
+      },
+      "objections": [
+        {
+          "objection": "Felicity initially flagged that she had been planning to use Claude to handle this herself — 'my plan was to approach it and it might be smarter to do it this way than the other way' — and confirmed Claude was the alternative approach, having already used it to draft her entire member practice documentation.",
+          "response": "The SDR acknowledged Claude positively ('I'm a massive, massive fan of it') but did not directly address why a professional service would be preferable to AI for this specific use case. This was a weak handling. The AE needs to pick this up properly — the strongest angle is the sensitivity of the data Felicity herself raised, the need for defensible, professionally signed-off documentation in the event of an audit, and the risk of relying on AI-generated policies that have not been reviewed by a qualified DPO. Felicity herself opened the door by saying 'the data that I deal with, some of it's obviously quite sensitive, so I'm conscious I do want to be straight as straight.'"
+        },
+        {
+          "objection": "Felicity has already done significant compliance work herself and has existing documentation in place for her accounting body requirements, which could lead her to underestimate how much is still missing or to feel the gap is small and manageable on her own.",
+          "response": "The SDR did not directly challenge this or probe what specifically is still missing versus what is genuinely complete. The AE should map out what she has versus what is required for full GDPR compliance, particularly around ROPA, privacy notices, data processing agreements with third parties, and annual review governance — areas she acknowledged are not in place. Making the gap visible and concrete will sharpen the case for engaging."
+        }
+      ],
+      "recommended_approach": "Open by referencing the context Felicity provided on the call — that she runs an accountancy and fractional finance business, handles sensitive financial data, and has been actively trying to tighten up compliance ahead of further growth. Do not start from scratch; acknowledge what she already has in place and position the conversation around closing the specific gaps she named: GDPR policy, data protection policy, ROPA, and a review cadence. This will demonstrate that the SDR listened and build credibility quickly.\n\nThe Claude objection is the central issue the AE needs to neutralise. Do not dismiss it — Felicity has already used it successfully for regulated documentation. Instead, reframe the risk: AI-generated policies are not independently reviewed, cannot act as your DPO, and will not hold up to scrutiny in an ICO audit or a client due diligence process. Her own words — 'I do want to be straight as straight' — are the hook. Ask her what 'straight as straight' looks like in practice and what her liability exposure would be if a data subject complaint or client audit revealed her policies were AI-drafted and never professionally reviewed.\n\nProbe for a growth trigger or client catalyst. She mentioned wanting to get this done before the firm grows further, but no specific milestone was named. Ask directly: is there a client, contract, or new service line coming up where this will need to be evidenced? This could sharpen the timeline considerably and move this from a 'to-do list' item to an active priority.\n\nQualify commercially. No budget discussion took place on the cold call. Given that her alternative was free (Claude), price sensitivity is a realistic risk. Frame the engagement in terms of the cost of non-compliance or losing a client over missing documentation versus the cost of getting it done properly. Establish what she is willing to invest before building out a proposal.",
+      "key_quotes": [
+        "The bits that I know I need paperwork on that I maybe don't have in place properly — not necessarily ISO stuff — but it's things like a GDPR policy, data protection policy, a data processing policy like ROPA. That stuff.",
+        "I'm trying to tighten all of that stuff up before the firm grows any further and faster than it already has.",
+        "The data that I deal with, some of it's obviously quite sensitive, so I'm conscious I do want to be straight as straight.",
+        "I reacted my whole member in practice through Claude, so you can't do Claude too hard because SEMA signed it off."
+      ]
     }
   ]
 }
