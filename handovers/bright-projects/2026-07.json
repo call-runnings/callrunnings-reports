@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "mrvuj2nyjgysvuj8fv8",
+      "savedAt": "2026-07-22T08:54:22.893Z",
+      "campaign": "Bright Projects",
+      "contact": {
+        "companyName": "Handelsbanken",
+        "contactName": "Neetean Limbachia",
+        "jobTitle": "Facilities Manager",
+        "phone": "07484538182",
+        "email": "neetean.limbachia@handelsbanken.com",
+        "linkedin": "https://www.linkedin.com/in/neetean-limbachia-9286a114a"
+      },
+      "spiced": {
+        "situation": "Neetean Limbachia is a Facilities Manager at Handelsbanken. He was reached on a business trip and stated he works from home for the remainder of the week. He manages large-scale office fit-outs, design and build projects, and refurbishments across multiple geographical locations. He references having 'other counterparts', suggesting he operates across a portfolio of sites or regions rather than a single office. The context of the call was an outbound reach around office leases potentially coming to an end, though no specific lease details were confirmed or discussed.",
+        "pain": "No explicit pain was surfaced during this call. The SDR did not ask a single discovery question. Neetean was not given the opportunity to articulate a specific challenge. The closest signal to a pain point is his comment about needing to 'pick the right contractor in the right geographical location', which implies he has had poor experiences with contractors who were not the right fit — either geographically or in terms of capability. He also implied a heavy volume of unsolicited approaches, suggesting he is time-poor and selective.",
+        "impact": "No business impact was discussed or drawn out. Because no pain was established, there is nothing to qualify here beyond inference. The geographical fit concern suggests that choosing the wrong contractor could result in project delays, quality issues, or wasted procurement time. His mention of 'large scale fit-outs' signals that the financial and operational stakes of his decisions are significant — but this was not explored.",
+        "critical_event": "No critical event was identified or discussed. There is no confirmed lease expiry, no project start date, and no budget cycle mentioned. The SDR referenced speaking with companies 'whose leases might be coming towards an end' as a broad framing device, but Neetean did not confirm this applied to him. The meeting is booked for this Friday, which creates a short-term time pressure for the AE to prepare, but there is no urgency on the client's side that has been established.",
+        "decision": "Neetean appears to be a key gatekeeper and likely decision-influencer for contractor selection. He mentioned 'other counterparts', suggesting he is not the sole decision-maker and that projects may be distributed across a wider team or regional structure. He explicitly said he would want to start with a 'very small light refurb project' to build trust before committing to larger work, which signals a cautious, relationship-first procurement approach. No budget, formal procurement process, or sign-off hierarchy was discussed. The SDR mentioned CC'ing a director from Bright Projects onto the email, so the AE will be introduced via that email prior to Friday's call."
+      },
+      "objections": [
+        {
+          "objection": "Volume of unsolicited approaches — Neetean explicitly said 'I get a lot of calls from people hounding me for work and opportunities' and made clear he is selective about who he engages.",
+          "response": "This was not handled. The SDR responded with a series of single-word affirmations ('Yes', 'Okay', 'Yep') and did not acknowledge the objection, differentiate Bright Projects, or give Neetean a compelling reason to prioritise this meeting over others. The objection was left entirely unaddressed."
+        },
+        {
+          "objection": "Geographical fit concern — Neetean said he needs to 'pick the right contractor in the right geographical location', implying that if Bright Projects cannot service his locations, the conversation ends there.",
+          "response": "Not handled. The SDR did not ask where Neetean's sites are located or confirm that Bright Projects can cover those areas. This is an open risk going into Friday's meeting — if geography is not confirmed as a fit beforehand, the AE may spend the meeting disqualifying the opportunity."
+        },
+        {
+          "objection": "Preference to start small — Neetean said 'it may well be that we kind of start off slow with a very small light refurb project and kind of build the relationship and trust from there', which signals reluctance to commit to larger work immediately.",
+          "response": "The SDR agreed passively ('I bet you', 'Yes', 'Okay') without exploring what a small project might look like, what the pathway to larger work could be, or what would need to be true for Neetean to move faster. A missed opportunity to qualify the longer-term opportunity."
+        }
+      ],
+      "recommended_approach": "The AE is walking into a meeting with very little qualification behind it. There is no confirmed pain, no known lease situation, no established urgency, and no clarity on geography or decision-making structure. The priority for Friday is to run a proper first discovery call and avoid pitching prematurely. Open by acknowledging the introduction honestly — Neetean knows this is an exploratory conversation and has already set expectations accordingly by suggesting a small project to start. Use that as a springboard rather than fighting it. Begin by asking directly what is currently on his desk in terms of fit-out or refurbishment work, and whether anything is time-sensitive. Probe the geographical question early: ask him to walk you through where his sites are and how he currently manages contractor relationships across those locations. This will tell you whether Bright Projects is even a viable option and will show Neetean that you are thinking about fit rather than just chasing a contract. Given his comment about choosing 'the right contractor', position Bright Projects around reliability, geographic capability, and a track record on large-scale design and build — but only after you understand what he has done before and what went well or poorly. His suggestion to 'start slow with a small light refurb' should be treated as a legitimate commercial entry point, not brushed aside. Ask him what project that might be, what the timeline looks like, and what success would look like to him. This builds trust and surfaces a real opportunity. Do not use this meeting to deliver a credentials pitch. Neetean has already said he gets too many of those. Ask more than you tell.",
+      "key_quotes": [
+        "I get a lot of calls from people hounding me for work and opportunities — I just need to make sure that I pick the right contractor in the right geographical location.",
+        "I do large scale fit-outs from design and build and all of that sort of stuff — so it may well be that we kind of start off slow with a very small light refurb project and kind of build the relationship and trust from there.",
+        "If it doesn't work for me, then I do have other counterparts and that sort of stuff.",
+        "Send me an email with some dates for Friday — and then I'll have a look at my diary, we can go from there."
+      ]
+    }
+  ]
+}
