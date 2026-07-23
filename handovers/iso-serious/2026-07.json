@@ -77,6 +77,51 @@
         "The data that I deal with, some of it's obviously quite sensitive, so I'm conscious I do want to be straight as straight.",
         "I reacted my whole member in practice through Claude, so you can't do Claude too hard because SEMA signed it off."
       ]
+    },
+    {
+      "id": "mrx9eo34k0jsyk8cbws",
+      "savedAt": "2026-07-23T08:38:36.489Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "Ralco",
+        "contactName": "Brendan Traynor",
+        "jobTitle": "Co-Founder",
+        "phone": "+353834421464",
+        "email": "brendan@ralco.io",
+        "linkedin": "https://linkedin.com/in/brendan-traynor"
+      },
+      "spiced": {
+        "situation": "Brendan Traynor is Co-Founder at Ralco, a startup with approximately five staff. They are currently operating primarily in the US market but have a potential expansion opportunity into the Nordics, specifically targeting data centres. They have recently released payroll, suggesting they are in an early but active growth phase. They already have a payroll provider, and ISO/compliance requirements have been surfaced as part of that commercial relationship. Brendan works in sales himself, which means he is commercially literate and time-sensitive by nature.",
+        "pain": "Ralco does not currently hold ISO certifications or SOC 2 compliance, and Brendan openly admitted he does not know the difference between the available certifications or what the deliverables look like — 'I don't even know what's good and bad in terms of service or intensive deliverables.' The business is being pulled in multiple directions as a startup, and compliance has not yet been prioritised despite being a known requirement. Brendan also flagged that cost is the primary lens through which any decision will be made, indicating budget is tight and there is no existing allocation for this spend.",
+        "impact": "There are two concrete business consequences driving this. First, their payroll provider agreement requires them to have compliance in place — 'we're now sanity a rule, it's part of our agreement with our payroll provider' — meaning failure to act could jeopardise that commercial relationship. Second, a potential deal with Nordic data centre clients is contingent on being GDPR compliant and ISO certified. Brendan noted that an investor has flagged the Nordics opportunity as highly applicable to what Ralco is doing in the US, and that winning those accounts would only make sense if the business scales enough to justify targeting them. Without certifications, both the payroll provider relationship and the Nordic expansion are at risk.",
+        "critical_event": "Brendan stated clearly that they need compliance in place before the end of 2026 — 'we do need it before the end of the year.' The payroll provider agreement is the formal trigger. The Nordic opportunity adds additional urgency, as certification would need to be in place before they can credibly pursue those prospects. In the June follow-up call, Brendan pushed the conversation to September or October, citing a recently completed payroll release and too many competing priorities, so the practical window for re-engagement is Q3 2026.",
+        "decision": "Brendan appears to be the primary decision-maker as Co-Founder, and there is no mention of other stakeholders needing to sign off. However, he referenced needing to check internally whether they actually need ISO specifically — 'I actually don't know if we need ISO, I need to check' — which suggests the decision is not yet fully defined. He also mentioned another supplier had already emailed him about this, indicating there is at least one competitor in play. Decision criteria are heavily price-led: 'it's very much going to come down to cost' and 'send me your best number.' The AE should expect a cost-first conversation with little initial appetite to explore value differentiation unless framed carefully."
+      },
+      "objections": [
+        {
+          "objection": "Timing — too many competing priorities as a startup, just released payroll, not the right moment to act",
+          "response": "The SDR acknowledged this and agreed to follow up in September or October. The handling was reasonable in that it respected Brendan's position and avoided pushing too hard, but no attempt was made to explore whether any part of the process could begin now to protect the end-of-year deadline. The urgency of the payroll provider requirement and the Nordic opportunity were not used to gently challenge the delay. Left partially unaddressed."
+        },
+        {
+          "objection": "Price sensitivity — Brendan made clear that cost is the dominant factor and explicitly asked for 'your best number'",
+          "response": "The SDR said he would speak to Tom about pricing and acknowledged that SOC 2 pricing differs. He gathered that Ralco has five staff, which is a useful data point for pricing. However, the SDR's comment about emailing if the pricing was 'crap' was poorly worded and briefly created confusion, with Brendan questioning whether a bad email response would yield a better price. The handling recovered but was clumsy. No value framing was used to contextualise cost against the risk of losing the payroll provider relationship or the Nordic deal. Objection was acknowledged but not reframed."
+        },
+        {
+          "objection": "Uncertainty about which certifications they actually need — Brendan was unsure whether ISO or SOC 2 applied to their situation",
+          "response": "The SDR asked a useful qualifying question about which markets they sell into (US vs UK/EMEA) and correctly noted that selling only into the US might mean SOC 2 is sufficient. Brendan then raised the Nordic opportunity, which introduced GDPR compliance as an additional requirement. The SDR did not attempt to educate Brendan further or position ISO Serious as the expert who could advise on this — a missed opportunity to build credibility. Left largely unaddressed."
+        },
+        {
+          "objection": "Competitor already in play — Brendan mentioned another company had emailed him about ISO recently",
+          "response": "The SDR did not acknowledge or probe this at all. No attempt was made to understand who the competitor is, what they had proposed, or how far along that conversation was. This is a significant gap the AE must address."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the timing Brendan requested and demonstrate that you have respected it — do not rush straight into a pitch. Reference the specific context he gave you: the payroll provider requirement, the five-person team, and the Nordic data centre opportunity. This shows the AE has done their homework and immediately builds credibility with a founder who works in sales and will see through a generic opener immediately.\n\nBrendan's instinct is to anchor on price, but the AE should gently reframe this early. The two business risks — jeopardising the payroll provider relationship and losing the ability to credibly pursue Nordic clients — are both real and concrete. Use these to shift the framing from 'what does this cost' to 'what does it cost you not to have this in place before the end of the year.' Do not avoid price, but sequence it correctly: establish the value and urgency first, then present pricing in that context.\n\nBrendan admitted he does not know the difference between ISO, SOC 2, and GDPR compliance. The AE should position themselves as a trusted adviser here rather than a vendor, offering a clear and jargon-free explanation of which certifications apply to Ralco's situation given their US focus and Nordic ambition. This is a genuine differentiator if handled well, especially given that a competitor is already in play with at least an email conversation.\n\nProbe the competitor situation directly but without making it adversarial — ask what Brendan has seen so far and whether anything stood out to him. This surfaces pricing benchmarks, deliverable expectations, and any gaps the AE can address.\n\nFinally, because Brendan said he would need to check internally whether ISO is even the right certification for them, the AE should come prepared with a simple, clear recommendation based on their profile — five staff, US-primary, GDPR and ISO required for the Nordics. Remove the ambiguity for him. A founder with 100 competing priorities will gravitate towards the supplier who makes the decision easiest, not the one who asks the most questions.",
+      "key_quotes": [
+        "It's very much going to come down to cost. I don't even know what's good and bad in terms of service or intensive deliverables. So it's literally going to be cost for us.",
+        "We're now sanity a rule. It's part of our agreement with our payroll provider. We need to have stuff too. So it's something that we do need action.",
+        "There is a potential for us to win Nordics by Zoom and we need to be GDPR compliant and ISO. So could you send me a list of pricing for GDPR and SOC 2.",
+        "I genuinely, it's not the right time. If you reach out to me too early, you're just going to keep getting told next month, next month."
+      ]
     }
   ]
 }
