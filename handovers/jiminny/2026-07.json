@@ -1,0 +1,49 @@
+{
+  "handovers": [
+    {
+      "id": "ms33ys6yo3g9j5dbogl",
+      "savedAt": "2026-07-27T10:52:55.130Z",
+      "campaign": "Jiminny",
+      "contact": {
+        "companyName": "WhoisXML API",
+        "contactName": "David Hagberg",
+        "jobTitle": "Director of Revenue Operations",
+        "phone": "+46790276879",
+        "email": "david.hagberg@whoisxmlapi.com",
+        "linkedin": "https://linkedin.com/in/david-hagberg-a4920545"
+      },
+      "spiced": {
+        "situation": "David Hagberg is Director of Revenue Operations at WhoisXML API, a US-based company operating in the security/data industry. He is based in Europe (Sweden) but works American hours. The sales team consists of approximately 10 people: 3 account managers, 4 account executives, and a sales director. They use HubSpot as their CRM. Currently, they have no dedicated conversation intelligence or revenue intelligence platform. Instead, they have built a bespoke in-house solution using LLMs — specifically Claude and ChatGPT — where a small group 'vibe codes' workflows and plugs transcripts in to get coaching feedback. This is a fully custom, internally maintained setup rather than an off-the-shelf product.",
+        "pain": "David's core pain is that their current in-house LLM solution is unreliable and high-maintenance. He explicitly said it 'is not perfect' and described needing it to 'run reliably' and be 'low maintenance.' The broader operational problem he acknowledged — and said 'occupies a lot of my time' — is the classic rev ops challenge: deals slipping, reps not qualifying properly, and the inability of sales leadership to listen to every call or coach reps effectively at an individual level. The in-house fix is consuming engineering or operational bandwidth that he would rather direct elsewhere — he noted he has 'a hundred other things I want to vibe code,' signalling that the current solution is a drain on his capacity rather than a solved problem.",
+        "impact": "The in-house tooling is consuming David's time and attention that should be going elsewhere in the business. Because the solution is not reliable, it cannot be fully trusted, which means the underlying problems — inconsistent rep qualification, inaccurate forecasting, and lack of targeted coaching — are not being solved systematically. The business is effectively carrying the cost of building and maintaining a tool that doesn't fully work, whilst still suffering the revenue risk of deals slipping and forecasts being unreliable. There is also an opportunity cost: David referenced freeing up time as a direct goal, implying that the current setup is an active bottleneck for him personally and for the rev ops function.",
+        "critical_event": "No formal business deadline, budget cycle, or regulatory trigger was mentioned. The only timing factor is logistical: David is travelling to a security industry conference in Las Vegas from Friday 1st August through the week of 4th August. He is unavailable until the week commencing 10th August. The meeting has been booked for 3pm Swedish time (2pm UK time) on Tuesday 11th August 2026. The AE should be aware there is no expressed urgency beyond availability — the prospect is open but not under pressure to act quickly.",
+        "decision": "David appears to be a key decision-maker or at least a primary evaluator in his capacity as Director of Revenue Operations. He was comfortable booking a demo independently and did not mention needing to involve others before taking a meeting. However, given the team structure (sales director plus AEs and AMs), it is likely that the sales director would need to be involved or signed off for a purchase of this nature. David's second qualifying question — 'does it integrate with HubSpot?' — suggests he is thinking practically about implementation fit, which is a buyer-side concern. No budget figure, formal procurement process, or additional stakeholders were named. The AE should probe who else would be involved in evaluating and approving a tool like this, and whether the sales director has visibility of this conversation."
+      },
+      "objections": [
+        {
+          "objection": "They are already building their own in-house solution using Claude and ChatGPT, and David said he is 'seeing an improvement for sure.' There is a risk he views this as 'good enough for now' and deprioritises a paid platform.",
+          "response": "The SDR handled this well by asking 'what would make it perfect for you?' — which drew out the key weaknesses: reliability and maintenance burden. The SDR then reflected those back clearly ('work reliability, easily to trust, and you can actually then carry on with your day-to-day instead of having to vibe code through Claude'). David confirmed this framing. However, the AE should not assume this objection is fully resolved — it will likely resurface when cost is introduced, and the AE needs a strong narrative around total cost of ownership versus the hidden cost of building and maintaining in-house tooling."
+        },
+        {
+          "objection": "David asked directly whether Jiminny integrates with HubSpot, framing it as a qualifying question on his side.",
+          "response": "The SDR confirmed HubSpot integration exists and described it as 'very, very good.' This was adequate but brief. The AE should be prepared to demonstrate or detail the depth of the HubSpot integration specifically — what data flows where, whether it auto-updates deal stages, activity logging, and so on — as this is clearly a non-negotiable for David given HubSpot is their system of record."
+        },
+        {
+          "objection": "Timing — David is unavailable until the week of 10th August due to the Las Vegas conference.",
+          "response": "This was handled cleanly. The SDR offered to let David name the date, confirmed the week commencing 10th August, and proposed 3pm Swedish time on 11th August, which David accepted enthusiastically. The SDR also committed to a reminder call the day before. No concerns here, but the AE should be aware that David will have just returned from a busy conference and may need re-engaging on context."
+        },
+        {
+          "objection": "The SDR introduced the '90% of the functionality of Gong for 50% of the cost' positioning unprompted, without David mentioning Gong or raising price as a concern.",
+          "response": "This was a weak moment. Volunteering a competitive comparison without being asked can introduce doubt and anchor the conversation around price before value has been fully established. David's response — 'it could be worth looking at for that reason' — suggests he received it neutrally, but the AE should be cautious: if Gong is now in David's head as the benchmark, the AE needs to understand whether WhoisXML API has ever evaluated Gong, and reframe Jiminny on its own merits rather than as a cheaper alternative."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging the conference — ask how Las Vegas was and use it to re-establish rapport before getting into business. Then re-anchor quickly on what David said in the call: that the in-house LLM solution is not perfect and that reliability and low maintenance are what would make it work. Do not assume he still feels urgency — re-qualify that the problem is still live and that the DIY approach is still costing him time. \n\nThe core demo narrative should be built around reliability and trust, not features. David's exact words were 'something that runs reliably, works, and is low maintenance.' Frame every capability you show through that lens — this is a system that works every day without him having to touch it. \n\nFor the HubSpot integration, go deeper than the SDR did. Show specifically how Jiminny writes back to HubSpot — deal field updates, call logging, activity capture — because David's implicit concern is whether this replaces his in-house stack or adds to his maintenance burden. Make it clear it reduces complexity, not adds to it. \n\nProbe on the decision process early. Ask whether the sales director is aware of this conversation and whether they would want to be involved in a demo or a second conversation. Identify who signs off on new tooling — is this a rev ops budget, sales budget, or does it go through a procurement or finance layer? \n\nDo not lead with the Gong comparison again. If David raises it himself, address it, but the AE should position Jiminny on its own value rather than as a cheaper Gong. If it comes up, lean into the purpose-built coaching and qualification angle rather than price. \n\nFinally, size the opportunity carefully. With roughly 10 people in the sales function, this is a modest deal. Understand whether there is appetite to roll this out across the full team from day one or whether David would want to pilot it with a subset of reps first. Set realistic next steps — likely a follow-up with the sales director in the loop before any commercial conversation.",
+      "key_quotes": [
+        "That's always relevant. That occupies a lot of my time for sure.",
+        "What would make it perfect is to have something that runs reliably, works and it's low maintenance — stuff like that.",
+        "Then I have a hundred other things I want to vibe code, right? So always try to free up time.",
+        "We have a little group that we kind of vibe code what we need and plug in stuff like Claude. It's not perfect, but it's getting there."
+      ]
+    }
+  ]
+}
