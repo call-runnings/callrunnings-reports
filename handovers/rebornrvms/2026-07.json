@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "ms4q35n1i5lp2nhh768",
+      "savedAt": "2026-07-28T13:59:57.099Z",
+      "campaign": "RebornRVMS",
+      "contact": {
+        "companyName": "London Stadium",
+        "contactName": "Sacha Giovannoni",
+        "jobTitle": "Sustainability Manager",
+        "phone": "+447734360649",
+        "email": "sacha.giovannoni@londonstadium185.com",
+        "linkedin": "https://www.linkedin.com/in/sacha-giovannoni-20ab3919b"
+      },
+      "spiced": {
+        "situation": "London Stadium is operated separately from West Ham United — the initial call was made to West Ham but the correct stakeholder sits on the stadium operations side. Sacha Giovannoni is the Sustainability Manager at London Stadium, and her team works directly with the onsite caterers and concession operators, Delaware North. The DRS legislation is not yet in place, and it is unclear how far along London Stadium's planning for it is. Sacha was introduced via a chain of internal referrals (Alima at West Ham → Gemma Turner → Sacha), which suggests no direct relationship existed beforehand and the topic had not yet reached Sacha through official channels.",
+        "pain": "No pain was directly articulated by Sacha, as she was not on the call and has only exchanged brief introductory emails. The initial call prospect (believed to be Alima) acknowledged awareness of DRS but gave no detail on their current position or preparedness. The core implied pain is operational and compliance-based: London Stadium will be legally required to provide reverse vending facilities for drinks containers sold on site once the Deposit Return Scheme launches in October 2027, affecting all concession and catering activity run by Delaware North. There is no evidence yet of how prepared or unprepared they are, and this must be explored in the meeting.",
+        "impact": "The financial impact is significant — a 20p government surcharge will be applied to every bottle or can sold inside the stadium, creating a direct cost burden unless a compliant reverse vending solution is in place. For a venue of London Stadium's scale and matchday footfall, the volume of containers sold across Delaware North's concessions will be substantial. Failure to comply risks financial penalty and reputational damage as a high-profile sustainability-conscious venue. Conversely, the SDR's email framed a potential upside — a new revenue opportunity — which was not yet explored or validated with Sacha.",
+        "critical_event": "The DRS legislation comes into force in October 2027, which is the primary regulatory deadline driving urgency. Sacha is going on annual leave from 8th August 2026, meaning the meeting must take place in the week prior to that. There is a natural time pressure to have the initial AE conversation before she goes off, and to begin any procurement or planning process well in advance of the legislative deadline. No internal budget cycle or procurement timeline has been mentioned.",
+        "decision": "Sacha is the Sustainability Manager at London Stadium and appears to be the correct primary contact for this topic. However, Gemma Turner (who made the introduction) noted that Sacha's team would 'look into this with the onsite caterers and concession operators Delaware North.' This means Delaware North are likely a critical stakeholder in any decision, potentially holding budget and operational authority over what gets installed in the concessions. It is unclear whether London Stadium or Delaware North would lead procurement, sign off on the solution, or hold the budget. This must be one of the first questions the AE asks. No budget signals, timeline, or formal decision process has been discussed at any point."
+      },
+      "objections": [
+        {
+          "objection": "The initial call prospect appeared distracted and confused — there were references to 'match day party', 'wristbands', and 'green ones', suggesting the rep had either reached the wrong person initially or the prospect was mid-conversation with someone else and not fully engaged.",
+          "response": "The SDR navigated away from the confusion by staying focused on the DRS message and asking for the right person rather than pushing forward with a disengaged prospect. This was the correct move and ultimately led to the referral chain. However, it means almost no discovery was done on the call itself."
+        },
+        {
+          "objection": "No objections were raised by Sacha in the email exchange — her response was warm and cooperative, agreeing to meet before her annual leave.",
+          "response": null
+        },
+        {
+          "objection": "The involvement of Delaware North as the onsite caterer and concession operator introduces a potential blocker — London Stadium may not have direct authority to procure or install RVMs if Delaware North control the concession infrastructure.",
+          "response": "This was not addressed at any point in the call or emails. The AE must surface this early in the meeting to understand who truly owns the decision and whether Sacha can drive it or simply influence it."
+        }
+      ],
+      "recommended_approach": "Open the meeting by thanking Sacha for making time before her leave and acknowledge that she came via an internal referral, which means she may have limited context — briefly re-explain what Reborn RVMs does and why it is relevant to London Stadium specifically. Do not assume she has read the emails in detail. Lead with the regulatory framing: the DRS legislation in October 2027 is non-negotiable, and for a venue of London Stadium's size and profile, getting ahead of it is both a compliance necessity and a reputational opportunity. Reference the Ipswich Town work as a credible proof point — the SDR already used this and it helped generate engagement, so the AE should build on it rather than drop it. The single most important thing to establish early is the Delaware North question: Gemma explicitly said Sacha's team would look into this 'with the onsite caterers and concession operators Delaware North.' The AE needs to understand whether Delaware North are a partner in this decision, a gatekeeper, or the actual budget holder. Ask directly: 'When it comes to what gets installed in the concessions, how does the decision typically work between London Stadium and Delaware North?' Also probe Sacha's current awareness and planning stage — there is no intelligence on whether London Stadium has already begun scoping solutions, spoken to other suppliers, or is at square one. Ask what their current thinking is and whether any internal conversations have already taken place. Finally, the SDR's email mentioned a 'new revenue opportunity' as part of the value proposition — this has not been explained or validated. The AE should be ready to articulate this clearly, as it could be a strong hook for both Sacha (sustainability outcomes, circular economy narrative) and Delaware North (commercial upside from container return deposits).",
+      "key_quotes": [
+        "As stadium operators it's Sacha's team who would look into this with the onsite caterers and concession operators Delaware North. — Gemma Turner, via email, clarifying that Delaware North are involved in any decision",
+        "I am around next week before I go on annual leave from the 8th. — Sacha Giovannoni, confirming availability and creating a hard deadline for the meeting",
+        "Everyone's got to do it. We just know it's a little bit out yet. So yeah, we're just trying to find the right people to speak with each club. — SDR Sean, framing the compliance angle and referencing the Ipswich relationship",
+        "Let me see who's the right person for this would be. And I can get back to you. — Initial call prospect, triggering the referral chain that ultimately reached Sacha"
+      ]
+    }
+  ]
+}
