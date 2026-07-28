@@ -122,6 +122,43 @@
         "There is a potential for us to win Nordics by Zoom and we need to be GDPR compliant and ISO. So could you send me a list of pricing for GDPR and SOC 2.",
         "I genuinely, it's not the right time. If you reach out to me too early, you're just going to keep getting told next month, next month."
       ]
+    },
+    {
+      "id": "ms4gd1wjzyzacfuy30p",
+      "savedAt": "2026-07-28T09:27:42.847Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "Infocus Resources",
+        "contactName": "Sam Jaffe",
+        "jobTitle": "Operations Director",
+        "phone": "+44 7979 898356",
+        "email": "samjaffe@infocusresources.com",
+        "linkedin": "https://www.linkedin.com/in/samjaffe"
+      },
+      "spiced": {
+        "situation": "Sam Jaffe is Operations Director at Infocus Resources. The company currently holds ISO certification(s) but is actively looking to expand or update their ISO scope. They are specifically looking to incorporate highways work into their certification, suggesting they are either winning new contracts in that sector or clients are requiring it as a prerequisite. The business operates across both projects and resources, and Sam indicated there may be a group-level structure that could affect how the ISO is scoped and priced. The exact headcount is unknown — Sam was unsure of the figure and said he would need to come back on it.",
+        "pain": "Infocus Resources need to add highways work to their existing ISO certification but are unclear on which specific ISO standard covers it. Sam explicitly said he did not know which standard applied, and the SDR was also unable to confirm this on the call — suggesting there is a knowledge gap on both sides that needs addressing before the meeting. There is also complexity around how the ISO should be scoped: whether it covers the group as a whole incorporating both projects and resources, or is structured differently. Sam acknowledged he was not sure on the headcount threshold either, indicating internal clarity on the structure of the business may still be needed.",
+        "impact": "The driving force behind this is client pressure — Sam stated directly that their clients have asked them to ensure the right certifications are in place. This means failure to obtain or extend the relevant ISO could result in lost contracts or inability to bid for highways-related work. The reputational and commercial risk of not being compliant with what clients are requiring is the core business consequence here.",
+        "critical_event": "No specific deadline was mentioned. However, the urgency is implied by client demand — Sam said clients have asked them to get this in order, which suggests there is external pressure with an unconfirmed timeline. The AE should probe this directly in the meeting to establish whether there is a contract renewal, tender deadline, or client review driving the timeline.",
+        "decision": "Sam appears to be the operational lead on this but indicated uncertainty on key details such as headcount and how the business should be classified for ISO purposes, which suggests he may need to consult internally before decisions are made. It is unclear whether there is a procurement process, a budget holder above him, or other stakeholders involved. No budget figure or timeline was discussed. The AE must establish who else is involved in sign-off and whether a budget has been allocated for this."
+      },
+      "objections": [
+        {
+          "objection": "Sam was reluctant to give headcount figures immediately, saying 'let me come back to you with that figure' and asking about thresholds before committing.",
+          "response": "The SDR explained that headcount is used for pricing because people represent the biggest compliance risk — this was a reasonable and accurate response that Sam accepted. However, Sam never actually provided a number, so headcount remains unknown going into the meeting."
+        },
+        {
+          "objection": "Sam asked for an email rather than engaging further on the call, effectively deflecting deeper discovery.",
+          "response": "The SDR agreed to send an email and book a time, which secured the meeting. However, no further discovery was attempted after this point. Key questions around company size, decision-making process, budget, and timeline were left entirely unasked. The handling secured the booking but left the handover thin."
+        }
+      ],
+      "recommended_approach": "Open the meeting by demonstrating that you have done your homework on the highways ISO question — confirm before the call which standard applies (most likely ISO 9001 with PAS 91 or Sector Scheme requirements depending on the nature of their highways work) and lead with that answer. Sam will immediately see value if you resolve the knowledge gap the SDR left open. From there, anchor the conversation around the client pressure he mentioned — 'you said your clients have asked you to get this in place, can you tell me more about what they've specifically asked for and when you need to have it sorted by?' This will surface the critical event that the SDR did not uncover. You also need to establish the scope question he raised: whether this is a group-level certification covering both projects and resources, or a more limited scope. This directly affects commercial structure and pricing, so get clarity on it early. On headcount, come prepared with a clear explanation of the pricing tiers so Sam can give you the right figure quickly — make it easy for him. Finally, use this meeting to map the decision process: Sam seemed knowledgeable but uncertain on key details, which may mean he is not the sole decision-maker. Ask directly who else would be involved in approving this and whether budget has been set aside.",
+      "key_quotes": [
+        "We are currently looking at the moment to change ISO quotation to incorporate several graphical highways work.",
+        "Our clients have asked us if we need to apply more on that site — just got to make sure everything's in place.",
+        "It depends how we classify and what level we do the ISO. So if we do the ISO group level, they incorporate both projects and resources.",
+        "I'll have to come back to you on that because I'll be honest with you, I'm not too sure."
+      ]
     }
   ]
 }
