@@ -1,0 +1,41 @@
+{
+  "handovers": [
+    {
+      "id": "mshd2awrvcqqide1vlb",
+      "savedAt": "2026-08-06T10:16:22.846Z",
+      "campaign": "RebornRVMS",
+      "contact": {
+        "companyName": "Ashton Gate",
+        "contactName": "Ross Wormald",
+        "jobTitle": "Chief Operating Officer",
+        "phone": "447766405704",
+        "email": "ross.wormald@ashtongate.co.uk",
+        "linkedin": "https://linkedin.com/in/ross-wormald-90584a304"
+      },
+      "spiced": {
+        "situation": "Ross Wormald is the COO at Ashton Gate, home of Bristol City FC. He works across a large stadium operation that includes multiple staff and departments. The call was booked for a Zoom on Wednesday at 3pm. Ross was mid-preparation for a Carabao Cup match against Walsall on the evening of the call (6 August), and mentioned the club is also navigating a complex week due to Bristol's International Balloon Fiesta displacing them from their venue across Friday to Sunday. He gave his work email (ross.wormald@ashtongatedotcomdotuk) and work mobile during the call, having been reached initially on a personal number sourced via Prospeo.",
+        "pain": "No specific operational pains were surfaced during this call — the conversation was too brief and was derailed early by the personal number issue. Ross did not express any frustration with current recycling or waste processes, nor did he confirm awareness of the DRS legislation. The SDR explained the scheme but received no reaction indicating whether Ross saw it as a problem or opportunity. The only frustration explicitly voiced was about being contacted on his private number.",
+        "impact": "No business impact was discussed. The SDR did not get far enough into discovery to uncover what the financial, operational, or reputational consequences of non-compliance with the DRS scheme might mean for Ashton Gate. This is a key gap the AE must address in the meeting.",
+        "critical_event": "The Deposit Return Scheme (DRS) legislation is the primary urgency driver. The SDR referenced a government-mandated 20p surcharge on every bottle or can sold, with any premises above 100 square feet required to offer on-site recycling and refunds to purchasers. The SDR stated this comes into effect 'next October', which in context of the August 2026 call date would mean October 2027. This is a hard regulatory deadline that creates a compliance obligation for a venue of Ashton Gate's size and footfall.",
+        "decision": "Ross was candid that this likely falls outside his direct remit — he said 'if it's not directly me, which it probably won't be, I can certainly start you off in the right direction with who the right person is.' He acknowledged having multiple people within the business and positioned himself as a connector rather than the decision-maker on this topic. The AE should treat this meeting as a stakeholder mapping exercise as much as a discovery call. No budget, procurement process, or sign-off structure was discussed."
+      },
+      "objections": [
+        {
+          "objection": "Ross was contacted on his personal mobile number, which he described as private. He was visibly unsettled by this and questioned how his personal details appeared on a data tool.",
+          "response": "The SDR handled this reasonably well under pressure — he was transparent about the tool used (Prospeo), offered to show Ross how to opt out, and committed to deleting the number from his end. He also offered to send an email explaining how to remove the data. This turned a potentially call-ending moment into goodwill. However, the AE should be aware Ross may still carry some residual wariness about data privacy, and a professional, trust-building tone at the top of the Zoom will be important."
+        },
+        {
+          "objection": "Ross indicated he is not likely the right person for this topic and may need to redirect the conversation to someone else in the business.",
+          "response": "The SDR acknowledged this and framed the Zoom as an opportunity to 'see who might be best to bring in', which Ross accepted. However, this objection was not probed further — the AE does not yet know which department or role owns sustainability, compliance, or stadium operations at Ashton Gate. This needs to be explored in the meeting."
+        }
+      ],
+      "recommended_approach": "Open the Zoom by acknowledging the slightly unusual circumstances of the first call — Ross will likely remember it, and a light, self-aware reference ('I appreciate you being good-natured about how we first got in touch') will reset the tone and rebuild rapport before getting into business. Do not dwell on it, but do not ignore it either.\n\nFrom there, your primary goal for this meeting is twofold: educate and map. Ross has received a high-level pitch about the DRS legislation but showed no visible reaction to it — you do not yet know whether Ashton Gate is aware of it, actively planning for it, or completely in the dark. Start by asking what their current awareness of the DRS scheme is and whether it has come up internally yet. This frames you as a knowledgeable partner rather than a vendor.\n\nProbe specifically on who within the business would own compliance with legislation like this — is it operations, sustainability, commercial, or facilities? Ross said 'we have a lot of people within the business' and positioned himself as a gateway, so use this meeting to get a named referral or, ideally, agree to bring that person into a follow-up call.\n\nReference the scale of the obligation clearly: every bottle and can sold across what is a high-footfall matchday venue will carry a 20p surcharge, and the venue must facilitate on-site redemption. For a stadium of Ashton Gate's size and event volume, this is not a minor operational tweak — frame the financial and logistical exposure of getting this wrong or leaving it late.\n\nFinally, mention other football and rugby stadiums you are already working with (as the SDR alluded to). Social proof in this sector is powerful — if Ross hears that comparable venues are already in planning mode, it creates urgency without you having to manufacture it.",
+      "key_quotes": [
+        "If it's not directly me, which it probably won't be, I can certainly kind of start you off in the right direction with who the right person is.",
+        "This is my personal number, which is private. I work in a football stadium.",
+        "Yeah, I'm not happy to have a conversation — we're preparing for a football match tonight in the Carabao Cup.",
+        "We get locked out of our own venue for Friday, Saturday, Sunday, so we've had to play on Thursday."
+      ]
+    }
+  ]
+}
