@@ -1,0 +1,45 @@
+{
+  "handovers": [
+    {
+      "id": "msnew8v0lp2e0j0xi69",
+      "savedAt": "2026-08-10T15:54:16.564Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "Camgenium",
+        "contactName": "James Belcher",
+        "jobTitle": "Chief Operating Officer",
+        "phone": "+44 7741 302631",
+        "email": "james.belcher@camgenium.com",
+        "linkedin": "https://www.linkedin.com/in/james-belcher-7469b05b"
+      },
+      "spiced": {
+        "situation": "James Belcher is COO at Camgenium, a company with long-standing ISO compliance history — their policies date back to 2014. They have just completed their ISO 27001 recertification two weeks prior to this call, securing certification for the next couple of years. Their current compliance setup is largely self-built: they developed their own Quality Management System (QMS) to handle reporting and compliance tracking, and they use a mix of Microsoft tooling and other monitoring systems. Much of the data feeding into their QMS is pulled in manually from various internal sources.",
+        "pain": "James explicitly flagged that while their self-built QMS generates reports and tracks compliance, there is 'a lot of manual stuff there.' The current process requires someone to go in, pull data from various reporting tools and services, and feed it into the QMS by hand. This is time-consuming and creates friction in their day-to-day operations. He also noted that Camgenium has 'a lot of systems that are sensitive,' meaning any solution needs to integrate securely within those parameters — adding a layer of complexity to how they can adopt external tools.",
+        "impact": "The manual nature of their compliance maintenance means staff time is being absorbed by low-value data-gathering and report-generation tasks rather than core operational work. James indicated this inefficiency is already on their radar, describing automation as something 'we are going to be looking at going forward.' The implication is that as the business and its compliance obligations grow, the current manual approach will become increasingly unsustainable. There is also an implicit risk: a self-built, manually maintained system is more vulnerable to gaps, inconsistencies, or human error ahead of future audits.",
+        "critical_event": "No hard deadline or immediate regulatory trigger was mentioned. However, the recent recertification (completed approximately two weeks before this call) creates a natural window: they are now in the maintenance phase of a multi-year certification cycle. James framed automation as a forward-looking priority, suggesting it is an active consideration rather than a distant one. The AE should probe whether there is a specific internal review point or budget cycle tied to this initiative. No budget cycle or financial year-end was referenced on the call.",
+        "decision": "James is the COO and appears to be the primary evaluator at this stage. He wants to review materials first, do his own online research, and then come to the meeting prepared. He referenced 'we' throughout, suggesting there may be other internal stakeholders involved, but no other names or titles were given. He did not mention a procurement process, formal tender, or sign-off hierarchy. The decision process appears relatively informal at this point — he is in early evaluation mode. Tom, ISO Serious's founder, has been booked in for the meeting, which James accepted without hesitation."
+      },
+      "objections": [
+        {
+          "objection": "They have just completed their ISO 27001 recertification and are covered for the next couple of years, implying there is no immediate compliance pressure.",
+          "response": "The SDR handled this reasonably well by pivoting from certification to ongoing maintenance, which James acknowledged as a valid concern. However, the SDR could have been sharper in distinguishing between passing an audit and the operational burden of maintaining standards day-to-day. The pivot was made but not fully reinforced."
+        },
+        {
+          "objection": "Camgenium has a lot of sensitive systems and needs to be confident any external tool or service can work within their security parameters before committing to a conversation.",
+          "response": "This was not directly addressed on the call. James raised it as a condition for engagement — he wants to review materials and check online before committing further. The SDR acknowledged this and agreed to send information, but offered no specific reassurance about security compatibility or integration capability. This is left unaddressed and the AE must be prepared to handle it directly in the meeting."
+        },
+        {
+          "objection": "James asked to see details first before agreeing to a meeting, showing a preference for self-directed research over being sold to directly.",
+          "response": "The SDR respected this and agreed to send materials ahead of time. A meeting was still booked, so the outcome was positive. However, the materials sent before the meeting will heavily influence James's mindset going in — the AE should ensure what is sent is specific to ISO 27001 maintenance and automation, not generic company collateral."
+        }
+      ],
+      "recommended_approach": "Open the meeting by acknowledging that James has had a chance to review the materials and invite his initial reaction — this respects his stated preference for doing his own research and immediately positions the conversation as a two-way dialogue rather than a pitch. From there, anchor the conversation around the manual reporting problem he described: the fact that data from multiple internal tools and services has to be manually pulled and fed into their self-built QMS. Ask him to quantify this — how many hours per week or per month does this take, and who owns it? This will surface the real operational cost and create the foundation for a value conversation. Probe whether the automation initiative has any internal sponsorship, budget, or timeline attached to it, since James described it as something they 'are going to be looking at' — you need to understand whether this is actively prioritised or still aspirational. The security and system sensitivity point James raised is the biggest potential blocker: he will not move forward unless he is confident ISO Serious can operate within Camgenium's secure environment. Tom should come prepared with specific examples of how the service has been deployed within similarly security-conscious organisations, and be ready to speak to integration approach and data handling. Do not lead with a platform or software pitch — James described their situation as involving 'a lot of manual stuff' and the SDR correctly noted that ISO Serious's value can come through expert support rather than just tooling. Frame the offering around reducing the human burden of compliance maintenance, freeing up internal resource, and reducing audit risk — all of which James touched on directly.",
+      "key_quotes": [
+        "There's a lot of manual stuff there. So if there's tools out there that can either feed it or generate the reports and then put the summaries into the quantum rental system, it would be of use.",
+        "We have a lot of systems that are sensitive and secure — nicely to see if it can work within those parameters and then we can reach out and discuss more.",
+        "It's something that we are going to be looking at for a bit more automation going forward.",
+        "All the policies we've had for 2014, so it's not new that we've done the policies and how we run stuff."
+      ]
+    }
+  ]
+}
