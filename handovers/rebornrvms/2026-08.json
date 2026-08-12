@@ -36,6 +36,43 @@
         "Yeah, I'm not happy to have a conversation — we're preparing for a football match tonight in the Carabao Cup.",
         "We get locked out of our own venue for Friday, Saturday, Sunday, so we've had to play on Thursday."
       ]
+    },
+    {
+      "id": "msq1xf8q11j81vsq3n9r",
+      "savedAt": "2026-08-12T12:14:34.617Z",
+      "campaign": "RebornRVMS",
+      "contact": {
+        "companyName": "Burton Albion FC",
+        "contactName": "Paul Calladine",
+        "jobTitle": "Site services/operations",
+        "phone": "+447572730795",
+        "email": "paul.calladine@burtonalbionfc.co.uk",
+        "linkedin": "https://www.linkedin.com/in/paul-calladine-664809166"
+      },
+      "spiced": {
+        "situation": "Paul Calladine handles site services and operations at Burton Albion FC. He is aware of the incoming Deposit Return Scheme (DRS) legislation but has not yet taken any concrete steps to address it. The club sells bottles and cans on-site, meaning they will be legally required to offer a reverse vending facility once the legislation comes into force. There is no existing reverse vending solution in place, and no formal evaluation process has begun. Paul indicated this has been sitting in the back of his mind as a known obligation rather than an active project.",
+        "pain": "Paul and the club are aware of the DRS legislation but have not yet got to grips with it. His own words were that it is 'one of them things that you sort of knows in the back of your mind that you need to get the grips with sooner rather than later.' There is no plan in place, no supplier shortlisted, and no internal process started. The pain at this stage is primarily one of inaction and uncertainty — they know something is coming but have not translated that awareness into preparation.",
+        "impact": "The legislative deadline creates a compliance risk. If Burton Albion FC does not have an approved reverse vending facility in place before the DRS legislation comes into force, they risk being non-compliant as a premises over 100 square feet selling bottles and cans. Beyond the compliance risk, there is a missed commercial opportunity — the club is currently not generating any revenue from this obligation, whereas Reborn's machines offer a 55-inch screen with a 20-slot sponsorship carousel and a wrappable exterior, meaning the machine could be sponsor-funded and potentially revenue-generating rather than a straight cost.",
+        "critical_event": "The DRS legislation is the hard regulatory deadline driving urgency. Sean referenced that clubs need to be 'six or seven months ahead of it' to be properly prepared. The legislation is described as coming into place 'next year' (relative to the call date of 12 August 2026), suggesting a likely 2027 implementation window. This is the primary critical event. No internal budget cycle, board sign-off deadline, or club-specific trigger was mentioned beyond the legislation itself.",
+        "decision": "Paul is not the sole decision-maker. He explicitly named Becky Hunter, the club's Events Manager, as someone who needs to be involved in these conversations. Both Paul and Becky have been invited to the meeting on Wednesday 26 August 2026 at 3:00 PM via Teams. Paul's email is calladine@burtonalbion.co.uk and Becky's is becky.hunter@burtonalbion.co.uk. It is not yet clear whether there are further stakeholders above Paul and Becky — for example, a commercial director, finance lead, or CEO — who would need to sign off on procurement. The decision process, budget authority, and formal sign-off chain have not been established."
+      },
+      "objections": [
+        {
+          "objection": "No explicit objections were raised. Paul was receptive throughout and quickly agreed to a meeting.",
+          "response": "N/A — however, the AE should note that Paul's openness may reflect polite engagement rather than active intent. The lack of any pushback means key commercial and procurement questions remain completely untested. There was no probing of budget, no challenge on timing, and no exploration of whether a rival supplier has already been spoken to. The AE should not mistake warmth for buying intent."
+        },
+        {
+          "objection": "Implicit inertia — Paul acknowledged awareness of DRS but admitted the club has not looked into it yet, framing it as something he 'knows in the back of his mind'.",
+          "response": "Sean handled this reasonably by reinforcing the six-to-seven-month preparation window and flagging that other clubs are already moving. This was a light touch on urgency but not fully developed. The AE should press this harder in the meeting — specifically, what happens to the club operationally and commercially if they are non-compliant at launch, and what the reputational risk looks like for a Football League club."
+        }
+      ],
+      "recommended_approach": "Open by acknowledging that both Paul and Becky are coming in at an early stage — frame the meeting explicitly as an education and planning session, not a sales pitch, which is consistent with what Sean promised. Quickly establish what Becky's remit covers relative to Paul's, as her events management role suggests she may be closer to the commercial and sponsorship angle, while Paul owns the operational compliance piece. Probe whether anyone else in the club — commercial director, finance, or senior management — has been briefed on DRS or needs to be involved before any decision is made. On the solution, lead with the compliance story first to validate urgency, then pivot to the revenue angle: the fact that the machine can be sponsor-wrapped and that the 55-inch screen with 20 sponsorship slots means the capital cost could be offset or eliminated by a sponsor is a genuinely differentiated commercial hook for a football club with an existing sponsor ecosystem. Ask directly whether Burton Albion has sponsors who might value pitch-side or concourse brand visibility — this reframes the conversation from 'cost of compliance' to 'new inventory you can sell.' Probe timeline: when does the club's commercial or sponsorship planning cycle run? If sponsors are agreed in pre-season, there may be a natural window to package this in. Also establish whether there is a preferred supplier or procurement process for capital equipment at the club, and who holds budget authority. Do not leave the meeting without clarity on next steps and who else needs to be in the room.",
+      "key_quotes": [
+        "We're aware of it, but we haven't necessarily looked into it yet. And like you say, it's sort of one of them things that you sort of knows in the back of your mind that you need to get the grips with sooner rather than later.",
+        "I could probably do with speaking somebody like yourself. And also our events manager, Becky Hunter would also joining them conversations.",
+        "Instead of it being a cost function for a club, we are a 55 inch screen on our machines. You can have a 20 roll screen so you can bring in your sponsors as well.",
+        "A lot of people were speaking to, they get unwrapped, get the sponsor to pay for it. So it actually starts making you money as opposed to being a cost."
+      ]
     }
   ]
 }
