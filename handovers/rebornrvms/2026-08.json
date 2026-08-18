@@ -73,6 +73,47 @@
         "Instead of it being a cost function for a club, we are a 55 inch screen on our machines. You can have a 20 roll screen so you can bring in your sponsors as well.",
         "A lot of people were speaking to, they get unwrapped, get the sponsor to pay for it. So it actually starts making you money as opposed to being a cost."
       ]
+    },
+    {
+      "id": "msyhsu41vpvuolzk4m",
+      "savedAt": "2026-08-18T10:01:04.113Z",
+      "campaign": "RebornRVMS",
+      "contact": {
+        "companyName": "Stadium MK",
+        "contactName": "Andrew Slann",
+        "jobTitle": "Operations Manager",
+        "phone": "+44 7802 752433",
+        "email": "andrew.slann@mk-bb.com",
+        "linkedin": "https://www.linkedin.com/in/andrew-slann-440210214"
+      },
+      "spiced": {
+        "situation": "Andrew Slann is the General Manager of MK Bites and Brews, the in-house catering company for Stadium MK. He is not an MK Dons employee directly but operates within the stadium group, which also includes the MK Bowl. The stadium group has a commercial director and a group director, both of whom Andrew has already briefed following the first call. Andrew had no prior awareness of the DRS legislation before Sean's outreach. The business is currently mid-season preparation — the football season started on 16 August 2026 — and the team is under significant operational pressure with budgets also being reviewed at the same time.",
+        "pain": "Andrew and his colleagues were entirely unaware of the DRS (Deposit Return Scheme) legislation coming into force on 1 October 2027, which will require all premises over 100 square metres to provide reverse vending facilities for recyclable containers. The 20p surcharge per bottle or can sold represents a significant cost exposure across a multi-site operation. Andrew acknowledged that once he made the wider team aware, everyone parked it due to busyness — suggesting there is no plan, no budget allocated, and no vendor engagement in place yet. The operational complexity is clearly dawning on him: he unprompted identified that 'there'll be a few parts of the business which need to be involved in this actually when I think about it.'",
+        "impact": "The financial exposure is substantial. Stadium MK, MK Bowl, and any training or academy facilities within the group will all fall under the legislation, meaning multiple reverse vending machines may be required across sites. Without action, compliance costs could be significant. However, Andrew responded positively to the revenue angle — the advertising screen (up to 20 rotating ads) and the option to wrap the machine represent a commercial upside that he immediately flagged as relevant to the commercial director. The risk of non-compliance with a government-mandated scheme by October 2027 is also a reputational and legal exposure, though this was not discussed in depth on the calls.",
+        "critical_event": "The hard regulatory deadline is 1 October 2027 — DRS legislation mandates reverse vending facilities at all qualifying premises from that date. This is the primary urgency driver. Andrew also mentioned he is going into budget discussions and is meeting his group director, which suggests there may be a budget cycle in play in the near term. The football season starting (first games 22 and 29 August 2026) was cited as the reason for the current pause, so the post-22nd window should be treated as the earliest realistic moment for internal traction at their end.",
+        "decision": "Multiple stakeholders have already been looped in by Andrew. He mentioned: (1) a commercial director, relevant specifically because of the advertising screen and revenue potential; (2) a group director, who oversees both Stadium MK and the MK Bowl; and (3) implicitly, other parts of the business he has not yet specified. Andrew said after the Monday 7 September meeting the next step would be 'to see if it's worth bringing everyone else in,' indicating he is acting as the internal champion and gatekeeper at this stage. He does not appear to have sign-off authority alone — the commercial and group directors will almost certainly need to be involved before any commitment is made. No budget figure or timeline for procurement was discussed."
+      },
+      "objections": [
+        {
+          "objection": "Andrew was not prepared to go further after the two-week follow-up period, despite having spoken with the commercial director and group director.",
+          "response": "Sean handled this well — he did not push hard or get defensive. He acknowledged the busyness sympathetically and redirected to booking the discovery meeting. The objection was essentially capacity rather than disinterest, and Sean correctly identified that and moved on. However, Sean did not probe why it had been parked or what the internal reaction from the directors had been, which would have been valuable intelligence. The AE should open that thread in the Monday meeting."
+        },
+        {
+          "objection": "The team was very busy due to the football season starting and budget season running concurrently.",
+          "response": "Sean acknowledged this without challenging it, which was appropriate given the context. He used it as a reason to give Andrew a clean two-week window before booking the meeting, which was a sensible tactical move. No attempt was made to create urgency around the October 2027 deadline at this point — that lever remains available for the AE to use if needed."
+        },
+        {
+          "objection": "Andrew immediately flagged that the advertising and commercial wrapping elements would need to go via the commercial director rather than being his decision alone.",
+          "response": "Sean acknowledged this and confirmed it made sense, but did not use it as an opportunity to ask for a multi-stakeholder meeting or attempt to get the commercial director's name or contact details. This is a gap the AE should address — ideally the Monday meeting should be scoped to include or quickly lead to the commercial director, since the revenue angle is clearly a key hook."
+        }
+      ],
+      "recommended_approach": "Open the Monday 7 September meeting by acknowledging how busy the last few weeks have been for Andrew and validating that he took the time to brief both the commercial director and the group director — that shows internal credibility and should be reinforced. Then use a single open question to understand what the reaction in those conversations actually was: what did the directors say, what were their concerns, and is there any appetite to move forward? This will tell you immediately how warm or cold the internal audience is before you present anything. From there, structure the meeting around two angles that Andrew has already shown interest in: (1) compliance necessity — every part of their estate (stadium, bowl, training facilities, academy) will need to be covered by October 2027, and doing nothing is not an option; (2) commercial upside — the advertising screen and machine wrap are not just bolt-ons, they are a new revenue stream that the commercial director will care about directly. Use the Ipswich Town example as social proof that forward-thinking clubs are already moving. Push to get the commercial director in the room or on a follow-up call — Andrew has already said this is a commercial venture, so the deal cannot close without that person involved. Before closing the meeting, try to establish whether there is a budget cycle deadline you need to hit and what the group director's role in sign-off looks like. Do not let the meeting end without a clear next step that involves at least one of the other stakeholders Andrew mentioned.",
+      "key_quotes": [
+        "I'm the general manager of MK Bites and Brews, which is the catering company for the stadium.",
+        "There'll be a few parts of the business which need to be involved in this actually when I think about it.",
+        "What I'll do is if you send me some stuff over, I'll catch up with our commercial director — and we'll take it from there.",
+        "Nobody was aware of the legislation, so I made everybody aware of it. And then since then, to be honest, we just parked it because everyone just concentrated on... we're going through budgets and the football season starts on Saturday."
+      ]
     }
   ]
 }
