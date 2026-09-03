@@ -1,0 +1,41 @@
+{
+  "handovers": [
+    {
+      "id": "mtla3qdodje8agnt6i",
+      "savedAt": "2026-09-03T08:44:17.611Z",
+      "campaign": "ISO Serious",
+      "contact": {
+        "companyName": "Primary Care IT",
+        "contactName": "Mike Sayers",
+        "jobTitle": "Chief Operating Officer",
+        "phone": "+44 7747 848910",
+        "email": "mike@primarycareit.co.uk",
+        "linkedin": "https://www.linkedin.com/in/mike-sayers-7a05b35b"
+      },
+      "spiced": {
+        "situation": "Mike Sayers is the COO at Primary Care IT. The business currently manages its ISO compliance using a platform called ISMS Online, into which policies are loaded and then adopted and implemented internally by the team. Mike is the primary person overseeing this process, which is typical of the ops-lead compliance ownership pattern Shaun referenced on the call. No mention was made of an external compliance consultancy or managed service being in place.",
+        "pain": "Mike did not express acute frustration on the call, but he did not push back on the pain framing either. Shaun positioned the core pain as compliance management being time-consuming, stressful, and falling on the ops person — Mike acknowledged this as relevant by engaging rather than dismissing. The implicit pain is that ISMS Online requires Primary Care IT to do the work themselves: loading policies, adopting them, and maintaining standards internally without specialist compliance expertise. Mike said the current approach 'has worked for us so far' but stopped short of saying it was ideal or that he was fully satisfied.",
+        "impact": "No hard business impact was explicitly stated by Mike. However, the fact that he said it 'might be something we look to change in the future' and that they are 'constantly looking at stuff like that' suggests an underlying recognition that the current approach may not be scalable or optimal long term. The operational impact of compliance falling on the COO — distraction from core responsibilities, audit scramble risk — was framed by Shaun and not contradicted by Mike. The AE should probe what audit cycles look like, how much internal time is actually being spent, and whether there have been any near-misses or stressful audit periods.",
+        "critical_event": "No specific deadline, upcoming audit, contract renewal, or regulatory trigger was mentioned by Mike during the call. There is no known critical event driving urgency at this stage. The AE should treat this as a warm but unpressured conversation and use the discovery meeting to uncover whether any audit dates, certification renewals, or internal reviews are on the horizon that could create a natural decision window.",
+        "decision": "Mike indicated he would share the information sent by Shaun with colleagues, suggesting he is not the sole decision-maker. He said 'I can look at that and share with my colleagues' which implies others will need to be involved, though their roles and seniority were not identified. As COO, Mike likely has significant influence but may need buy-in from finance, IT, or a board-level stakeholder. The AE needs to identify who those colleagues are, what their roles are, and what the internal evaluation process looks like before any commercial conversation."
+      },
+      "objections": [
+        {
+          "objection": "They already have a solution in place — ISMS Online — and it has worked for them so far.",
+          "response": "Shaun handled this softly by asking whether Mike would ever consider a different approach, which kept the door open without being confrontational. However, the handling was fairly weak — Shaun did not probe what 'worked for us so far' actually means, whether there are frustrations with the platform, how much internal time it consumes, or what good would look like. The AE should revisit this directly in the meeting rather than assuming ISMS Online is a soft objection. It may be a genuine barrier if Mike and the team are satisfied with the status quo."
+        },
+        {
+          "objection": "Not looking to change right now — 'not at this moment in time.'",
+          "response": "Shaun pivoted by asking when it would make sense to follow up, which led Mike to suggest sending information over and booking a meeting. This was a reasonable recovery — it moved the conversation forward without forcing urgency that wasn't there. However, the AE should be aware that Mike agreed to the meeting in a low-commitment, exploratory way. There is no strong pull from the prospect yet. The AE's job is to create that pull in the meeting by uncovering real pain and impact."
+        }
+      ],
+      "recommended_approach": "Open the meeting by anchoring back to what resonated on the call — specifically Shaun's framing about compliance landing on the ops person and the scramble before audits. Ask Mike directly: 'When Shaun described that audit-scramble scenario, what was going through your mind — is that something you've experienced?' This invites him to self-identify the pain rather than being sold to. From there, probe the ISMS Online relationship more honestly: how long have they used it, who manages it day-to-day, how much time is spent on it monthly, and what a typical audit preparation period looks like. You are looking to surface the hidden cost of the current approach. Push on the 'colleagues' comment — ask Mike who else he had in mind to share the information with and whether it would make sense to include them in a follow-up conversation. Getting the right stakeholders in the room early will prevent the deal from stalling post-meeting. Frame ISO Serious's value around complete ownership and audit-readiness without operational disruption — Shaun's line about 'taking complete control of it all and managing on your behalf' landed well enough for Mike to say 'that seems like something that could be of interest.' Build on that by making the contrast with ISMS Online concrete: with ISMS Online, the work still sits with Mike's team; with ISO Serious, it doesn't. Finally, use the meeting to uncover any upcoming audit dates or certification renewals — this is your most likely route to establishing a critical event and creating genuine urgency.",
+      "key_quotes": [
+        "It's worked for us so far. It might be something that we look to change in the future, but not at this moment in time.",
+        "If you get the information over to me — we're constantly looking at stuff like that.",
+        "I can look at that and share with my colleagues.",
+        "That seems like something that could be of interest."
+      ]
+    }
+  ]
+}
